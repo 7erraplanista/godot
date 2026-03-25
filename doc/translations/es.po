@@ -2,7 +2,7 @@
 # Copyright (c) 2007-2022 Juan Linietsky, Ariel Manzur.
 # Copyright (c) 2014-2022 Godot Engine contributors (cf. AUTHORS.md).
 # This file is distributed under the same license as the Godot source code.
-# 
+#
 # 44pes Games <44pes.games@gmail.com>, 2020.
 # Megamega53 <Christopher.Morales21@myhunter.cuny.edu>, 2020, 2021.
 # Javier Ocampos <xavier.ocampos@gmail.com>, 2020, 2021, 2022.
@@ -2332,9 +2332,8 @@ msgid ""
 "The circle constant, the circumference of the unit circle in radians. This "
 "is equivalent to [code]PI * 2[/code], or 360 degrees in rotations."
 msgstr ""
-"La constante del círculo, la circunferencia de la unidad círculo en radianes."
-"La constante del círculo, la circunferencia del círculo unitario en radianes."
-" Es equivalente a [code]PI * 2[/code], o una rotación de 360 grados."
+"La constante del círculo, la circunferencia del círculo unitario en "
+"radianes. Es equivalente a [code]PI * 2[/code], o una rotación de 360 grados."
 
 #: modules/gdscript/doc_classes/@GDScript.xml
 msgid ""
@@ -2353,10 +2352,10 @@ msgstr ""
 "punto flotante cuando el divisor es [code]0.0[/code]. Para el infinito "
 "negativo, usa [code]-INF[/code]. Dividir por [code]-0.0[/code] dará como "
 "resultado el infinito negativo si el numerador es positivo, por lo que "
-"dividir por [code]0.0[/code] no es lo mismo que dividir por [code]-0.0[/code]"
-" (a pesar de que [code]0.0 == -0.0[/code] devuelva [code]true[/code]).\n"
-"[b]Note:[/b] El infinito numérico es solo un concepto de los números de punto"
-" flotante y no tiene un equivalente para los enteros. Dividir un número "
+"dividir por [code]0.0[/code] no es lo mismo que dividir por [code]-0.0[/"
+"code] (a pesar de que [code]0.0 == -0.0[/code] devuelva [code]true[/code]).\n"
+"[b]Note:[/b] El infinito numérico es solo un concepto de los números de "
+"punto flotante y no tiene un equivalente para los enteros. Dividir un número "
 "entero por [code]0[/code] no resultará en [constant INF], sino que provocará "
 "un error en tiempo de ejecución."
 
@@ -2378,9 +2377,9 @@ msgstr ""
 "de algunas operaciones inválidas, como dividir el valor de punto flotante "
 "[code]0.0[/code] por [code]0.0[/code].\n"
 "[b]Nota:[/b] \"Not a Number\" es solo un concepto de los números de punto "
-"flotante y no tiene un equivalente para los enteros. Dividiendo un entero por"
-" [code]0[/code] no resultará en [constant NAN], sino que provocará un error "
-"en tiempo de ejecución."
+"flotante y no tiene un equivalente para los enteros. Dividiendo un entero "
+"por [code]0[/code] no resultará en [constant NAN], sino que provocará un "
+"error en tiempo de ejecución."
 
 #: doc/classes/@GlobalScope.xml
 msgid "Global scope constants and variables."
@@ -5525,8 +5524,8 @@ msgstr ""
 #: doc/classes/AudioStreamPlayer.xml doc/classes/Button.xml
 #: doc/classes/CanvasLayer.xml doc/classes/CollisionShape2D.xml
 #: doc/classes/ColorRect.xml doc/classes/Input.xml doc/classes/InputEvent.xml
-#: doc/classes/InputEventAction.xml doc/classes/Label.xml
-#: doc/classes/Timer.xml doc/classes/VisibilityNotifier2D.xml
+#: doc/classes/InputEventAction.xml doc/classes/Label.xml doc/classes/Timer.xml
+#: doc/classes/VisibilityNotifier2D.xml
 msgid "2D Dodge The Creeps Demo"
 msgstr ""
 
@@ -6700,11 +6699,10 @@ msgstr "AnimationTree"
 #: doc/classes/Camera.xml doc/classes/CollisionShape.xml
 #: doc/classes/CylinderShape.xml doc/classes/Environment.xml
 #: doc/classes/GIProbe.xml doc/classes/GIProbeData.xml
-#: doc/classes/KinematicBody.xml doc/classes/Light.xml
-#: doc/classes/Material.xml doc/classes/Mesh.xml doc/classes/MeshInstance.xml
-#: doc/classes/Particles.xml doc/classes/Quat.xml doc/classes/Skeleton.xml
-#: doc/classes/SpotLight.xml doc/classes/StaticBody.xml
-#: doc/classes/WorldEnvironment.xml
+#: doc/classes/KinematicBody.xml doc/classes/Light.xml doc/classes/Material.xml
+#: doc/classes/Mesh.xml doc/classes/MeshInstance.xml doc/classes/Particles.xml
+#: doc/classes/Quat.xml doc/classes/Skeleton.xml doc/classes/SpotLight.xml
+#: doc/classes/StaticBody.xml doc/classes/WorldEnvironment.xml
 msgid "Third Person Shooter Demo"
 msgstr "Demo de shooter en tercera persona"
 
@@ -7485,7 +7483,7 @@ msgstr ""
 #: doc/classes/AnimationNodeTimeSeek.xml
 msgid "A time-seeking animation node to be used with [AnimationTree]."
 msgstr ""
-"Una nodo de animacion de busqueda de tiempo para ser usado con "
+"Nodo de animación de posicionamiento temporal para usarse con "
 "[AnimationTree]."
 
 #: doc/classes/AnimationNodeTimeSeek.xml
@@ -7508,6 +7506,24 @@ msgid ""
 "animation_tree[\"parameters/Seek/seek_position\"] = 12.0\n"
 "[/codeblock]"
 msgstr ""
+"Este nodo puede usarse para aplicar un comando de posicionamiento (seek) a "
+"cualquier nodo inferior del grafo de animación. Utilice este tipo de nodo "
+"para reproducir una [Animation] desde el inicio o desde una posición "
+"concreta dentro del [AnimationNodeBlendTree]. Una vez establecido el tiempo, "
+"el nodo cambia la reproducción de la animación. Luego, en el siguiente "
+"cuadro de proceso (frame), el nodo entra automáticamente en modo de espera "
+"al resetear su valor [code]seek_position[/code] a [code]-1.0[/code].\n"
+"[codeblock]\n"
+"# Reproduce la animación hija desde el principio.\n"
+"animation_tree.set(\"parameters/Seek/seek_position\", 0.0)\n"
+"# Sintaxis alternativa (mismo resultado que el anterior).\n"
+"animation_tree[\"parameters/Seek/seek_position\"] = 0.0\n"
+"\n"
+"# Reproduce la animación hija desde la marca de tiempo de 12 segundos.\n"
+"animation_tree.set(\"parameters/Seek/seek_position\", 12.0)\n"
+"# Sintaxis alternativa (mismo resultado que el anterior).\n"
+"animation_tree[\"parameters/Seek/seek_position\"] = 12.0\n"
+"[/codeblock]"
 
 #: doc/classes/AnimationNodeTransition.xml
 msgid "A generic animation transition node for [AnimationTree]."
@@ -10180,11 +10196,10 @@ msgid ""
 "A camera node with a few overrules for AR/VR applied, such as location "
 "tracking."
 msgstr ""
-"Un nodo de cámara con unas cuantas desviaciones para AR/VR aplicadas, como "
-"el seguimiento de la ubicación."
+"Un nodo de cámara con algunas reglas anuladas por el sistema AR/VR, como el "
+"seguimiento de la posición."
 
 #: doc/classes/ARVRCamera.xml
-#, fuzzy
 msgid ""
 "This is a helper spatial node for our camera; note that, if stereoscopic "
 "rendering is applicable (VR-HMD), most of the camera properties are ignored, "
@@ -10197,18 +10212,18 @@ msgid ""
 "tracking data of the HMD and the location of the ARVRCamera can lag a few "
 "milliseconds behind what is used for rendering as a result."
 msgstr ""
-"Este es un nodo espacial de ayuda para nuestra cámara; tenga en cuenta que, "
-"si la representación estereoscópica es aplicable (VR-HMD), la mayoría de las "
-"propiedades de la cámara son ignoradas, ya que la información del HMD las "
-"anula. Las únicas propiedades en las que se puede confiar son los planos "
-"cercanos y lejanos.\n"
-"La posición y la orientación de este nodo se actualiza automáticamente por "
-"el Servidor XR para representar la ubicación del HMD si dicho seguimiento "
-"está disponible y puede ser utilizado por la lógica del juego. Ten en cuenta "
-"que, a diferencia del Controlador XR, el hilo de renderizado tiene acceso a "
-"los datos de seguimiento más actualizados del HMD y la ubicación de la "
-"XRCamera3D puede quedarse unos milisegundos atrás de lo que se utiliza para "
-"el renderizado como resultado."
+"Este es un nodo Spatial auxiliar para la cámara; tenga en cuenta que, si el "
+"renderizado estereoscópico es aplicable (HMD de VR), la mayoría de las "
+"propiedades de la cámara se ignoran, ya que la información del HMD las "
+"sobrescribe. Las únicas propiedades fiables son los planos cercano (near) y "
+"lejano (far).\n"
+"La posición y orientación de este nodo son actualizadas automáticamente por "
+"el servidor ARVR para representar la ubicación del HMD (si dicho seguimiento "
+"está disponible) y, por lo tanto, pueden ser utilizadas por la lógica del "
+"juego. Tenga en cuenta que, a diferencia del ARVRController, el hilo de "
+"renderizado tiene acceso a los datos de seguimiento más actualizados del "
+"HMD; como resultado, la ubicación de la ARVRCamera puede tener un desfase de "
+"unos milisegundos respecto a la utilizada para el renderizado."
 
 #: doc/classes/ARVRController.xml
 msgid "A spatial node representing a spatially-tracked controller."
@@ -10612,21 +10627,19 @@ msgstr ""
 "etc.)."
 
 #: modules/gdnative/doc_classes/ARVRInterfaceGDNative.xml
-#, fuzzy
 msgid "GDNative wrapper for an ARVR interface."
-msgstr "Envoltura GDNative para una interfaz XR."
+msgstr "Capa de enlace (wrapper) GDNative para una interfaz ARVR."
 
 #: modules/gdnative/doc_classes/ARVRInterfaceGDNative.xml
-#, fuzzy
 msgid ""
 "This is a wrapper class for GDNative implementations of the ARVR interface. "
 "To use a GDNative ARVR interface, simply instantiate this object and set "
 "your GDNative library containing the ARVR interface implementation."
 msgstr ""
-"Esta es una clase de envoltura para las implementaciones GDNative de la "
-"interfaz XR. Para usar una interfaz GDNative XR, simplemente instale este "
-"objeto y establezca su biblioteca GDNative que contiene la implementación de "
-"la interfaz XR."
+"Esta es una clase envolvente para las implementaciones GDNative de la "
+"interfaz ARVR. Para utilizar una interfaz ARVR de GDNative, simplemente "
+"instancie este objeto y configure la biblioteca GDNative que contiene la "
+"implementación de la interfaz."
 
 #: doc/classes/ARVROrigin.xml
 msgid "The origin point in AR/VR."
@@ -11917,8 +11930,7 @@ msgid ""
 msgstr ""
 
 #: doc/classes/AudioEffectCapture.xml doc/classes/AudioEffectDistortion.xml
-#: doc/classes/AudioEffectFilter.xml
-#: doc/classes/AudioEffectHighShelfFilter.xml
+#: doc/classes/AudioEffectFilter.xml doc/classes/AudioEffectHighShelfFilter.xml
 #: doc/classes/AudioEffectLowShelfFilter.xml doc/classes/AudioServer.xml
 msgid "Audio buses"
 msgstr "Buses de audio"
@@ -12501,8 +12513,8 @@ msgstr ""
 #: doc/classes/AudioEffectHighShelfFilter.xml
 msgid "Reduces all frequencies above the [member AudioEffectFilter.cutoff_hz]."
 msgstr ""
-"Reduce todas las frecuencias por encima de [member "
-"AudioEffectFilter.cutoff_hz]."
+"Reduce todas las frecuencias por encima de [member AudioEffectFilter."
+"cutoff_hz]."
 
 #: doc/classes/AudioEffectLimiter.xml
 msgid "Adds a soft-clip limiter audio effect to an Audio bus."
@@ -12564,8 +12576,8 @@ msgstr ""
 #: doc/classes/AudioEffectLowShelfFilter.xml
 msgid "Reduces all frequencies below the [member AudioEffectFilter.cutoff_hz]."
 msgstr ""
-"Reduce todas las frecuencias por debajo de [member "
-"AudioEffectFilter.cutoff_hz]."
+"Reduce todas las frecuencias por debajo de [member AudioEffectFilter."
+"cutoff_hz]."
 
 #: doc/classes/AudioEffectNotchFilter.xml
 msgid "Adds a notch filter to the Audio bus."
@@ -13328,7 +13340,7 @@ msgstr ""
 
 #: doc/classes/AudioStreamMicrophone.xml
 msgid "Plays real-time audio input data."
-msgstr ""
+msgstr "Reproduce en tiempo real la señal de audio capturada por el micrófono."
 
 #: doc/classes/AudioStreamMicrophone.xml
 msgid ""
@@ -13340,6 +13352,14 @@ msgid ""
 "description for caveats related to permissions and operating system privacy "
 "settings."
 msgstr ""
+"Si se utiliza directamente en un nodo [AudioStreamPlayer], "
+"[AudioStreamMicrophone] reproduce en tiempo real la entrada del micrófono. "
+"Puede emplearse junto con [AudioEffectCapture] para procesar los datos o "
+"guardarlos.\n"
+"[b]Nota:[/b] [member ProjectSettings.audio/enable_audio_input] debe ser "
+"[code]true[/code] para que la entrada de audio funcione. Consulte también la "
+"descripción de ese ajuste para las salvedades relativas a permisos y a la "
+"configuración de privacidad del sistema operativo."
 
 #: modules/minimp3/doc_classes/AudioStreamMP3.xml
 #, fuzzy
@@ -14267,11 +14287,19 @@ msgid ""
 "lighting or emissive materials), adjust [member BakedLightmap."
 "bounce_indirect_energy] and bake lightmaps again."
 msgstr ""
+"Multiplicador de energía global para objetos horneados y con captura "
+"dinámica. Esto se puede cambiar en tiempo de ejecución sin tener que volver "
+"a hornear los mapas de luz.\n"
+"Para ajustar solo la energía de la iluminación indirecta (sin afectar a la "
+"iluminación directa o a los materiales emisivos), ajuste [member "
+"BakedLightmap.bounce_indirect_energy] y vuelva a hornear los mapas de luz."
 
 #: doc/classes/BakedLightmapData.xml
 msgid ""
 "Controls whether dynamic capture objects receive environment lighting or not."
 msgstr ""
+"Controla si los objetos de captura dinámica reciben la iluminación del "
+"entorno o no."
 
 #: doc/classes/BaseButton.xml
 msgid "Base class for different kinds of buttons."
@@ -14970,6 +14998,8 @@ msgstr "Altura total de la fuente (ascenso más descenso) en píxeles."
 #: doc/classes/BlobFocus.xml
 msgid "Prioritizes a region in which to show blob shadows."
 msgstr ""
+"Prioriza una región en la que deben mostrarse las sombras circulares (blob "
+"shadows)."
 
 #: doc/classes/BlobFocus.xml
 msgid ""
@@ -14981,6 +15011,13 @@ msgid ""
 "player.\n"
 "Where multiple cameras are used, each [Camera] can have its own [BlobFocus]."
 msgstr ""
+"El número de sombras circulares (blob shadows) visibles a la vez es limitado "
+"por motivos de rendimiento.\n"
+"El nodo [BlobFocus] permite definir zonas concretas donde deben priorizarse "
+"los proyectores de sombra disponibles.\n"
+"Lo habitual es situar [BlobFocus] en relación con una [Camera] o adjuntarlo "
+"al jugador.\n"
+"Si hay varias cámaras, cada [Camera] puede tener su propio [BlobFocus]."
 
 #: doc/classes/BlobShadow.xml
 msgid "Casts spherical or capsular geometrical shadows."
@@ -20344,8 +20381,7 @@ msgstr ""
 "La torsión se bloquea si está por debajo de 0,05."
 
 #: doc/classes/ConeTwistJoint.xml doc/classes/Generic6DOFJoint.xml
-#: doc/classes/HingeJoint.xml doc/classes/Light.xml
-#: doc/classes/SliderJoint.xml
+#: doc/classes/HingeJoint.xml doc/classes/Light.xml doc/classes/SliderJoint.xml
 msgid "Represents the size of the [enum Param] enum."
 msgstr "Representa el tamaño del enum [enum Param]."
 
@@ -24048,7 +24084,6 @@ msgid "A CSG node that allows you to combine other CSG modifiers."
 msgstr "Un nodo CSG que permite combinar otros modificadores CSG."
 
 #: modules/csg/doc_classes/CSGCombiner.xml
-#, fuzzy
 msgid ""
 "For complex arrangements of shapes, it is sometimes needed to add structure "
 "to your CSG nodes. The CSGCombiner node allows you to create this structure. "
@@ -24064,14 +24099,18 @@ msgid ""
 "node also has a significant CPU cost, so it should be avoided during "
 "gameplay."
 msgstr ""
-"Para arreglos complejos de formas, a veces es necesario añadir estructura a "
-"sus nodos CSG. El nodo CSGCombiner3D te permite crear esta estructura. El "
-"nodo encapsula el resultado de las operaciones CSG de sus hijos. De esta "
-"manera, es posible hacer operaciones en un conjunto de figuras que son hijos "
-"de un nodo CSGCombiner3D, y un conjunto de operaciones separadas en un "
-"segundo conjunto de figuras que son hijos de un segundo nodo CSGCombiner3D, "
-"y luego hacer una operación que toma los dos resultados finales como su "
-"entrada para crear la forma final."
+"Para combinaciones complejas de formas, a veces es necesario añadir "
+"estructura a los nodos CSG. El nodo CSGCombiner permite crear dicha "
+"estructura: encapsula el resultado de las operaciones CSG de sus hijos. De "
+"esta forma, es posible realizar operaciones sobre un conjunto de formas "
+"hijas de un CSGCombiner, y otro conjunto distinto de operaciones en un "
+"segundo CSGCombiner, para luego realizar una operación que tome ambos "
+"resultados como entrada para crear la forma final.\n"
+"[b]Nota:[/b] los nodos CSG están pensados para el prototipado de niveles. "
+"Crear nodos CSG tiene un coste de CPU significativo frente a un "
+"[MeshInstance] con un [PrimitiveMesh]. Mover un nodo CSG dentro de otro nodo "
+"CSG también tiene un coste de CPU elevado, por lo que debe evitarse durante "
+"el transcurso del juego."
 
 #: modules/csg/doc_classes/CSGCylinder.xml
 msgid "A CSG Cylinder shape."
@@ -29259,13 +29298,16 @@ msgid ""
 "To use [EditorSceneImporter], register it using the [method EditorPlugin."
 "add_scene_import_plugin] method first."
 msgstr ""
+"[EditorSceneImporter] permite definir un script importador para un formato "
+"3D de terceros.\n"
+"Para usar [EditorSceneImporter], antes se debe registrar con el método "
+"[method EditorPlugin.add_scene_import_plugin]."
 
 #: modules/fbx/doc_classes/EditorSceneImporterFBX.xml
 msgid "FBX 3D asset importer."
-msgstr ""
+msgstr "Importador de activos 3D FBX."
 
 #: modules/fbx/doc_classes/EditorSceneImporterFBX.xml
-#, fuzzy
 msgid ""
 "This is an FBX 3D asset importer with full support for most FBX features.\n"
 "If exporting a FBX scene from Autodesk Maya, use these FBX export settings:\n"
@@ -29292,35 +29334,32 @@ msgid ""
 "- Binary format in FBX 2017\n"
 "[/codeblock]"
 msgstr ""
-"Este es un importador de recursos FBX 3D basado en [url=http://assimp."
-"org/]Assimp[/url]. Actualmente tiene muchas limitaciones conocidas y "
-"funciona mejor con mallas estáticas. La mayoría de las mallas animadas no se "
-"importan correctamente.\n"
+"Importador de activos 3D FBX con soporte amplio para la mayoría de las "
+"características de FBX.\n"
 "Si exporta una escena FBX desde Autodesk Maya, use estos ajustes de "
 "exportación FBX:\n"
 "[codeblock]\n"
-"- Smoothing Groups -Suavizado de grupos\n"
-"- Smooth Mesh - Suavizado de malla.\n"
-"- Triangulate (for meshes with blend shapes) - Triangular (para mallas con "
-"formas mezcladas)\n"
-"- Bake Animation -Cocinado de animación\n"
+"- Smoothing Groups\n"
+"- Smooth Mesh\n"
+"- Triangluate (para mallas con blend shapes)\n"
+"- Bake Animation\n"
 "- Resample All\n"
-"- Deformed Models - Modelos deformados\n"
-"- Skins -Pieles\n"
-"- Blend Shapes - Formas mezcladas\n"
-"- Curve Filters -Filtros de Curvas\n"
-"- Constant Key Reducer - Reductor clave Constante\n"
-"- Auto Tangents Only - Solo auto tangentes\n"
-"-  No compruebe las Constraints (ya que romperá el archivo)\n"
-"- Puede checkear la media embebida (texturas incrustadas en el archivo FBX "
+"- Deformed Models\n"
+"- Skins\n"
+"- Blend Shapes\n"
+"- Curve Filters\n"
+"- Constant Key Reducer\n"
+"- Auto Tangents Only\n"
+"- *No marcar* Constraints (ya que romperá el archivo)\n"
+"- Se puede marcar Embed Media (incrusta las texturas en el archivo FBX "
 "exportado)\n"
-"- Note que cuando se importa media incrustada, las textura y malla estará  "
-"contenida en únicor archivo immutable.\n"
-"- Tendrás que reexportar y despues reimportar a FBX si la textura ha "
-"cambiado.\n"
-"- Unidades: Centímetros\n"
-"- Eje superior: Y\n"
-"- Formatio Binario en FBX 2017\n"
+"  - Ten en cuenta que al importar archivos con medios incrustados, la "
+"textura y la malla serán un único archivo inmutable.\n"
+"  - Tendrás que volver a exportar y luego reimportar el FBX si la textura "
+"cambia.\n"
+"- Units: Centimeters\n"
+"- Up Axis: Y\n"
+"- Formato Binary en FBX 2017\n"
 "[/codeblock]"
 
 #: modules/gltf/doc_classes/EditorSceneImporterGLTF.xml
@@ -36936,6 +36975,10 @@ msgid ""
 "loading and saving is [i]not[/i] available in exported projects. References "
 "to [GLTFTexture] within a script will cause an error in an exported project."
 msgstr ""
+"[b]Nota:[/b] Esta clase solo se incluye en las compilaciones del editor. La "
+"carga y guardado de glTF en tiempo de ejecución [i]no[/i] están disponibles "
+"en proyectos exportados. Las referencias a [GLTFTexture] dentro de un script "
+"producirán un error en el proyecto exportado."
 
 #: modules/gltf/doc_classes/GLTFTexture.xml
 msgid ""
@@ -36943,6 +36986,9 @@ msgid ""
 "default texture sampler is used (linear filtering, and repeat wrapping in "
 "both axes)."
 msgstr ""
+"Identificador del muestreador de textura a usar al muestrear la imagen. Si "
+"es -1, se usa el muestreador por defecto (filtrado lineal y repetición en "
+"ambos ejes)."
 
 #: modules/gltf/doc_classes/GLTFTextureSampler.xml
 msgid "Represents a GLTF texture sampler"
@@ -38085,12 +38131,12 @@ msgstr ""
 #: doc/classes/GridContainer.xml doc/classes/HFlowContainer.xml
 #: doc/classes/VFlowContainer.xml
 msgid "The horizontal separation of children nodes."
-msgstr "La separación horizontal de los nodos de los niños."
+msgstr "Separación horizontal entre nodos hijos."
 
 #: doc/classes/GridContainer.xml doc/classes/HFlowContainer.xml
 #: doc/classes/VFlowContainer.xml
 msgid "The vertical separation of children nodes."
-msgstr "La separación vertical de los nodos de los hijos."
+msgstr "Separación vertical entre nodos hijos."
 
 #: modules/gridmap/doc_classes/GridMap.xml
 msgid "Node for 3D tile-based maps."
@@ -38512,14 +38558,12 @@ msgstr ""
 "el [member map_data]."
 
 #: doc/classes/HFlowContainer.xml
-#, fuzzy
 msgid "Horizontal flow container."
-msgstr "Contenedor de caja horizontal."
+msgstr "Contenedor de flujo horizontal."
 
 #: doc/classes/HFlowContainer.xml
-#, fuzzy
 msgid "Horizontal version of [FlowContainer]."
-msgstr "Contenedor dividido horizontalmente."
+msgstr "Versión horizontal de [FlowContainer]."
 
 #: doc/classes/HingeJoint.xml
 #, fuzzy
@@ -43407,7 +43451,7 @@ msgstr ""
 
 #: doc/classes/IntervalTweener.xml
 msgid "Creates an idle interval in a [SceneTreeTween] animation."
-msgstr ""
+msgstr "Crea un intervalo de espera en una animación [SceneTreeTween]."
 
 #: doc/classes/IntervalTweener.xml
 msgid ""
@@ -43417,6 +43461,11 @@ msgid ""
 "to create [IntervalTweener]. Any [IntervalTweener] created manually will not "
 "function correctly."
 msgstr ""
+"[IntervalTweener] sirve para introducir retardos en una secuencia de tween. "
+"Consulte [method SceneTreeTween.tween_interval] para más detalles de uso.\n"
+"[b]Nota:[/b] [method SceneTreeTween.tween_interval] es la única forma "
+"correcta de crear un [IntervalTweener]. Cualquier [IntervalTweener] creado "
+"manualmente no funcionará correctamente."
 
 #: doc/classes/IP.xml
 msgid "Internet protocol (IP) support functions such as DNS resolution."
@@ -44241,9 +44290,8 @@ msgid ""
 msgstr ""
 
 #: doc/classes/JavaScriptObject.xml
-#, fuzzy
 msgid "A wrapper class for native JavaScript objects."
-msgstr "Clase base para todos los objetos [i]escena[/i]."
+msgstr "Clase envolvente para objetos JavaScript nativos."
 
 #: doc/classes/JavaScriptObject.xml
 msgid ""
@@ -44283,6 +44331,42 @@ msgid ""
 "[/codeblock]\n"
 "[b]Note:[/b] Only available in the HTML5 platform."
 msgstr ""
+"JavaScriptObject permite interactuar con objetos JavaScript obtenidos o "
+"creados mediante [method JavaScript.get_interface], [method JavaScript."
+"create_object] o [method JavaScript.create_callback].\n"
+"Ejemplo:\n"
+"[codeblock]\n"
+"extends Node\n"
+"\n"
+"var _my_js_callback = JavaScript.create_callback(self, \"myCallback\") # "
+"Esta referencia debe mantenerse (evitar que se borre)\n"
+"var console = JavaScript.get_interface(\"console\")\n"
+"\n"
+"func _init():\n"
+"    var buf = JavaScript.create_object(\"ArrayBuffer\", 10) # equivale a: "
+"new ArrayBuffer(10)\n"
+"    print(buf) # imprime [JavaScriptObject:OBJECT_ID]\n"
+"    var uint8arr = JavaScript.create_object(\"Uint8Array\", buf) # equivale "
+"a: new Uint8Array(buf)\n"
+"    uint8arr[1] = 255\n"
+"    prints(uint8arr[1], uint8arr.byteLength) # imprime 255 10\n"
+"    console.log(uint8arr) # imprime en la consola del navegador "
+"\"Uint8Array(10) [ 0, 255, 0, 0, 0, 0, 0, 0, 0, 0 ]\"\n"
+"\n"
+"    # Equivalente en JavaScript: Array.from(uint8arr).forEach(myCallback)\n"
+"    JavaScript.get_interface(\"Array\").from(uint8arr)."
+"forEach(_my_js_callback)\n"
+"\n"
+"func myCallback(args):\n"
+"    # Se llamará con los parámetros pasados al callback de \"forEach\"\n"
+"    # [valor, índice, array_completo]\n"
+"    # [0, 0, [JavaScriptObject:1173]]\n"
+"    # [255, 1, [JavaScriptObject:1173]]\n"
+"    # ...\n"
+"    # [0, 9, [JavaScriptObject:1180]]\n"
+"    print(args)\n"
+"[/codeblock]\n"
+"[b]Nota:[/b] Solo disponible en la plataforma HTML5."
 
 #: doc/classes/JNISingleton.xml
 #, fuzzy
@@ -56761,6 +56845,8 @@ msgstr ""
 #: doc/classes/Occluder.xml
 msgid "Allows [OccluderShape]s to be used for occlusion culling."
 msgstr ""
+"Permite utilizar [OccluderShape] para el recorte por oclusión (occlusion "
+"culling)."
 
 #: doc/classes/Occluder.xml
 msgid ""
@@ -56785,6 +56871,27 @@ msgid ""
 "placed in rooms (based on their origin), and can block portals (and thus "
 "entire rooms) as well as objects from rendering."
 msgstr ""
+"Los nodos [Occluder] (oclusores) situados en tu escena descartarán (cull) "
+"automáticamente los objetos que queden ocultos a la vista por el oclusor. "
+"Esto puede mejorar el rendimiento al reducir la cantidad de objetos "
+"dibujados.\n"
+"Los [Occluder] son totalmente dinámicos; puedes moverlos como desees. Esto "
+"significa que puedes, por ejemplo, colocar oclusores en una nave espacial en "
+"movimiento y hacer que oculte objetos mientras vuela cerca de ellos.\n"
+"Puedes colocar una gran cantidad de [Occluder] en una escena. Como sería "
+"contraproducente realizar el descarte contra cientos de ellos, el sistema "
+"seleccionará automáticamente un conjunto para su uso activo en cada cuadro "
+"(frame), basándose en una métrica de espacio en pantalla. Se favorecen los "
+"oclusores más grandes, así como los cercanos a la cámara. Ten en cuenta que "
+"un oclusor pequeño cerca de la cámara puede ser mejor en términos de espacio "
+"en pantalla que uno grande a mucha distancia.\n"
+"El tipo de primitiva de oclusión lo determina el [OccluderShape] que añadas "
+"al [Occluder]. Algunos [OccluderShape] pueden permitir más de una primitiva "
+"en un solo nodo para mayor eficiencia.\n"
+"Aunque los [Occluder] funcionan en uso general, son aún más potentes cuando "
+"se usan junto con el sistema de portales. Los oclusores se colocan en salas "
+"(basándose en su origen) y pueden bloquear el renderizado de portales (y, "
+"por tanto, de salas enteras), además de objetos individuales."
 
 #: doc/classes/OccluderPolygon2D.xml
 msgid "Defines a 2D polygon for LightOccluder2D."
@@ -56846,10 +56953,14 @@ msgstr ""
 msgid ""
 "Base class for shapes used for occlusion culling by the [Occluder] node."
 msgstr ""
+"Clase base de las formas empleadas en el recorte por oclusión del nodo "
+"[Occluder]."
 
 #: doc/classes/OccluderShape.xml
 msgid "[Occluder]s can use any primitive shape derived from [OccluderShape]."
 msgstr ""
+"Los [Occluder] pueden utilizar cualquier primitiva derivada de "
+"[OccluderShape]."
 
 #: doc/classes/OccluderShapePolygon.xml
 msgid "Polygon occlusion primitive for use with the [Occluder] node."
@@ -57405,13 +57516,15 @@ msgstr "[StyleBox] utilizado cuando se presiona el [OptionButton]."
 
 #: doc/classes/ORMSpatialMaterial.xml
 msgid "ORM 3D rendering material, based on [Material3D]."
-msgstr ""
+msgstr "Material 3D de renderizado ORM, basado en [Material3D]."
 
 #: doc/classes/ORMSpatialMaterial.xml
 msgid ""
 "This is a variant of the SpatialMaterial that uses an ORM texture to store "
 "AO, roughness and metallic information."
 msgstr ""
+"Variante de [SpatialMaterial] que utiliza una textura ORM para almacenar la "
+"oclusión ambiental (AO), la rugosidad y la metalicidad."
 
 #: doc/classes/OS.xml
 msgid "Operating System functions."
@@ -64295,6 +64408,17 @@ msgid ""
 "When using PointMeshes, properties that normally alter vertices will be "
 "ignored, including billboard mode, grow, and cull face."
 msgstr ""
+"El PointMesh consta de un solo punto. En lugar de triángulos, los puntos se "
+"dibujan como un rectángulo en pantalla de tamaño constante. Están pensados "
+"para sistemas de partículas, pero sirven como forma económica de dibujar "
+"sprites en billboard de tamaño fijo (por ejemplo en una nube de puntos).\n"
+"Los PointMesh deben usarse con un material que defina un tamaño de punto. En "
+"un shader puede accederse con [code]POINT_SIZE[/code], o en "
+"[SpatialMaterial] activando [member Material3D.flags_use_point_size] y la "
+"variable [member Material3D.params_point_size].\n"
+"Al usar PointMeshes, se ignorarán las propiedades que normalmente alteran "
+"los vértices, incluyendo el modo billboard, el crecimiento (grow) y el "
+"descarte de caras (cull face)."
 
 #: doc/classes/Polygon2D.xml
 msgid "A 2D polygon."
@@ -66110,16 +66234,15 @@ msgstr ""
 
 #: doc/classes/Position3D.xml
 msgid "Generic 3D position hint for editing."
-msgstr "Sugerencia de posición 3D genérica para la edición."
+msgstr "Indicador de posición 3D genérico para la edición."
 
 #: doc/classes/Position3D.xml
-#, fuzzy
 msgid ""
 "Generic 3D position hint for editing. It's just like a plain [Spatial], but "
 "it displays as a cross in the 3D editor at all times."
 msgstr ""
-"Sugerencia de posición 3D genérica para la edición. Es como un plano "
-"[Spatial], pero se muestra como una cruz en el editor 3D en todo momento."
+"Indicador de posición 3D genérico para la edición. Equivale a un [Spatial] "
+"ordinario, pero en el editor 3D se muestra siempre como una cruz."
 
 #: doc/classes/PrimitiveMesh.xml
 msgid ""
@@ -78781,7 +78904,7 @@ msgstr ""
 
 #: doc/classes/SpatialMaterial.xml
 msgid "Default 3D rendering material, based on [Material3D]."
-msgstr ""
+msgstr "Material 3D de renderizado por defecto, basado en [Material3D]."
 
 #: doc/classes/SpatialMaterial.xml
 msgid ""
@@ -78789,9 +78912,10 @@ msgid ""
 "and properties without the need to write shader code. See the tutorial below "
 "for details."
 msgstr ""
-"Esto proporciona un material por defecto con una amplia variedad de "
+"Proporciona un material predeterminado con una amplia variedad de "
 "características y propiedades de renderizado sin necesidad de escribir "
-"codigo shader. Consulte el siguiente tutorial para obtener más detalles."
+"código de sombreado (shader). Consulte el tutorial siguiente para más "
+"detalles."
 
 #: doc/classes/SphereMesh.xml
 msgid "Class representing a spherical [PrimitiveMesh]."
@@ -90646,14 +90770,12 @@ msgstr ""
 "valor de 0.0 resistirá el balanceo de la carrocería."
 
 #: doc/classes/VFlowContainer.xml
-#, fuzzy
 msgid "Vertical flow container."
-msgstr "Contenedor de caja vertical."
+msgstr "Contenedor de flujo vertical."
 
 #: doc/classes/VFlowContainer.xml
-#, fuzzy
 msgid "Vertical version of [FlowContainer]."
-msgstr "Versión vertical del [Separator]."
+msgstr "Versión vertical de [FlowContainer]."
 
 #: doc/classes/VideoPlayer.xml
 msgid "Control for playing video streams."
@@ -93094,9 +93216,8 @@ msgid "The singleton's name."
 msgstr "El nombre del singleton."
 
 #: modules/visual_script/doc_classes/VisualScriptExpression.xml
-#, fuzzy
 msgid "A Visual Script node that can execute a custom expression."
-msgstr "Un nodo Visual Script usado para llamar a las funciones incorporadas."
+msgstr "Nodo de VisualScript que puede ejecutar una expresión personalizada."
 
 #: modules/visual_script/doc_classes/VisualScriptExpression.xml
 msgid ""
@@ -93104,11 +93225,13 @@ msgid ""
 "provided for the input and the expression result can be retrieved from the "
 "output."
 msgstr ""
+"Nodo de VisualScript que puede ejecutar una expresión personalizada. Puede "
+"asignarse valores a la entrada y obtener el resultado de la expresión por la "
+"salida."
 
 #: modules/visual_script/doc_classes/VisualScriptFunction.xml
-#, fuzzy
 msgid "A Visual Script node representing a function."
-msgstr "Un nodo Visual Script usado para llamar a las funciones incorporadas."
+msgstr "Nodo de VisualScript que representa una función."
 
 #: modules/visual_script/doc_classes/VisualScriptFunction.xml
 msgid ""
@@ -93116,6 +93239,9 @@ msgid ""
 "point for the function body and can be used to tweak the function's "
 "properties (e.g. RPC mode)."
 msgstr ""
+"[VisualScriptFunction] representa la cabecera de una función. Es el punto de "
+"inicio del cuerpo y permite ajustar propiedades de la función (p. ej. el "
+"modo RPC)."
 
 #: modules/visual_script/doc_classes/VisualScriptFunctionCall.xml
 #, fuzzy
@@ -93285,39 +93411,38 @@ msgid "Resumes the function to run from the point it was yielded."
 msgstr ""
 
 #: modules/visual_script/doc_classes/VisualScriptGlobalConstant.xml
-#, fuzzy
 msgid "A Visual Script node returning a constant from [@GlobalScope]."
-msgstr ""
-"Un nodo de Visual Script que devuelve un solo singleton de [@GlobalScope]."
+msgstr "Nodo de VisualScript que devuelve una constante de [@GlobalScope]."
 
 #: modules/visual_script/doc_classes/VisualScriptGlobalConstant.xml
-#, fuzzy
 msgid "The constant to be used."
-msgstr "El tipo de la constante."
+msgstr "Constante a utilizar."
 
 #: modules/visual_script/doc_classes/VisualScriptIndexGet.xml
-#, fuzzy
 msgid "A Visual Script node for getting a value from an array or a dictionary."
 msgstr ""
-"Un nodo de Visual Script que devuelve un solo singleton de [@GlobalScope]."
+"Nodo de VisualScript para obtener un valor de un array o un diccionario."
 
 #: modules/visual_script/doc_classes/VisualScriptIndexGet.xml
 msgid ""
 "[VisualScriptIndexGet] will return the value stored in an array or a "
 "dictionary under the given index."
 msgstr ""
+"[VisualScriptIndexGet] devuelve el valor almacenado en un array o un "
+"diccionario en el índice indicado."
 
 #: modules/visual_script/doc_classes/VisualScriptIndexSet.xml
-#, fuzzy
 msgid "A Visual Script node for setting a value in an array or a dictionary."
 msgstr ""
-"Un nodo de Visual Script que representa una constante de los tipos de base."
+"Nodo de VisualScript para asignar un valor en un array o un diccionario."
 
 #: modules/visual_script/doc_classes/VisualScriptIndexSet.xml
 msgid ""
 "[VisualScriptIndexSet] will set the value stored in an array or a dictionary "
 "under the given index to the provided new value."
 msgstr ""
+"[VisualScriptIndexSet] asigna al índice indicado el valor nuevo "
+"proporcionado en un array o un diccionario."
 
 #: modules/visual_script/doc_classes/VisualScriptInputAction.xml
 #, fuzzy
@@ -99169,20 +99294,17 @@ msgstr ""
 "que internamente convierte la textura para su uso adecuado como mapa normal."
 
 #: doc/classes/VisualShaderNodeCubeMapUniform.xml
-#, fuzzy
 msgid "A [CubeMap] uniform node to be used within the visual shader graph."
-msgstr ""
-"Un nodo uniforme [Cubemap] para ser usado dentro del gráfico de shader "
-"visual."
+msgstr "Nodo uniforme [CubeMap] para el gráfico del sombreador visual."
 
 #: doc/classes/VisualShaderNodeCubeMapUniform.xml
-#, fuzzy
 msgid ""
 "Translated to [code]uniform samplerCube[/code] in the shader language. The "
 "output value can be used as port for [VisualShaderNodeCubeMap]."
 msgstr ""
-"Traducido al [code]samplerCube[/code] uniforme en el lenguaje shader. El "
-"valor de salida puede ser usado como puerto para [VisualShaderNodeCubemap]."
+"Equivale a [code]uniform samplerCube[/code] en el lenguaje de sombreado "
+"(shader). El valor de salida puede conectarse como puerto de "
+"[VisualShaderNodeCubeMap]."
 
 #: doc/classes/VisualShaderNodeCustom.xml
 msgid ""
@@ -99435,12 +99557,12 @@ msgstr ""
 msgid ""
 "Calculates the determinant of a [Transform] within the visual shader graph."
 msgstr ""
-"Calcula el determinante de una [Transform] dentro del gráfico shader visual."
+"Calcula el determinante de una [Transform] dentro del grafo del sombreador "
+"visual."
 
 #: doc/classes/VisualShaderNodeDeterminant.xml
-#, fuzzy
 msgid "Translates to [code]determinant(x)[/code] in the shader language."
-msgstr "Se traduce a [code]deteminant(x)[/code] en el lenguaje shader."
+msgstr "Equivale a [code]determinant(x)[/code] en el lenguaje de sombreado."
 
 #: doc/classes/VisualShaderNodeDotProduct.xml
 msgid "Calculates a dot product of two vectors within the visual shader graph."
@@ -99496,10 +99618,9 @@ msgid ""
 "within the visual shader graph."
 msgstr ""
 "Devuelve el vector que apunta en la misma dirección que un vector de "
-"referencia dentro del gráfico shader visual."
+"referencia dentro del grafo del sombreador visual."
 
 #: doc/classes/VisualShaderNodeFaceForward.xml
-#, fuzzy
 msgid ""
 "Translates to [code]faceforward(N, I, Nref)[/code] in the shader language. "
 "The function has three vector parameters: [code]N[/code], the vector to "
@@ -99508,12 +99629,12 @@ msgid ""
 "is smaller than zero the return value is [code]N[/code]. Otherwise, [code]-"
 "N[/code] is returned."
 msgstr ""
-"Se traduce a [code]faceforward(N, I, Nref)[/code] en el lenguaje shader. La "
-"función tiene tres parámetros vectoriales: [code]N[/code], el vector a "
-"orientar, [code]I[/code], el vector incidente, y [code]Nref[/code], el "
+"Equivale a [code]faceforward(N, I, Nref)[/code] en el lenguaje de sombreado. "
+"La función tiene tres parámetros vectoriales: [code]N[/code], el vector a "
+"orientar; [code]I[/code], el vector incidente; y [code]Nref[/code], el "
 "vector de referencia. Si el producto escalar de [code]I[/code] y [code]Nref[/"
-"code] es menor que cero, el valor de retorno es [code]N[/code]. En caso "
-"contrario, se devuelve [code]-N[/code]."
+"code] es menor que cero, el resultado es [code]N[/code]; en caso contrario, "
+"sería [code]-N[/code]."
 
 #: doc/classes/VisualShaderNodeFresnel.xml
 msgid "A Fresnel effect to be used within the visual shader graph."

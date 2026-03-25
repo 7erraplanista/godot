@@ -2,7 +2,7 @@
 # Copyright (c) 2007-2022 Juan Linietsky, Ariel Manzur.
 # Copyright (c) 2014-2022 Godot Engine contributors (cf. AUTHORS.md).
 # This file is distributed under the same license as the Godot source code.
-#
+# 
 # 44pes Games <44pes.games@gmail.com>, 2020.
 # Megamega53 <Christopher.Morales21@myhunter.cuny.edu>, 2020, 2021.
 # Javier Ocampos <xavier.ocampos@gmail.com>, 2020, 2021, 2022.
@@ -271,6 +271,14 @@ msgid ""
 "s = asin(0.5)\n"
 "[/codeblock]"
 msgstr ""
+"Devuelve el arco seno de [code]s[/code] en radianes. Se utiliza para obtener "
+"el ángulo cuyo seno es [code]s[/code]. [code]s[/code] será delimitado entre "
+"[code]-1.0[/code] y [code]1.0[/code] (inclusive), para evitar que [method "
+"asin] devuelva [constant NAN].\n"
+"[codeblock]\n"
+"# s es 0.523599 o 30 grados si se convierte con rad2deg(s)\n"
+"s = asin(0.5)\n"
+"[/codeblock]"
 
 #: modules/gdscript/doc_classes/@GDScript.xml
 msgid ""
@@ -600,6 +608,24 @@ msgid ""
 "See also [method smoothstep]. If you need to perform more advanced "
 "transitions, use [Tween] or [AnimationPlayer]."
 msgstr ""
+"Devuelve un valor \"suavizado\" de [code]x[/code] basado en una función de "
+"suavizado (easing) definida con [code]curve[/code]. Esta función de "
+"suavizado se basa en un exponente. El valor de [code]curve[/code] puede ser "
+"cualquier número de punto flotante, y los valores concretos conducen a los "
+"siguientes comportamientos:\n"
+"[codeblock]\n"
+"- Menor que -1.0 (excluido): Suavizado de entrada-salida (Ease in-out)\n"
+"- 1.0: Lineal\n"
+"- Entre -1.0 y 0.0 (excluidos): Suavizado de salida-entrada (Ease out-in)\n"
+"- 0.0: Constante\n"
+"- Entre 0.0 y 1.0 (excluidos): Suavizado de salida (Ease out)\n"
+"- 1.0: Lineal\n"
+"- Mayor que 1.0 (excluido): Suavizado de entrada (Ease in)\n"
+"[/codeblock]\n"
+"[url=https://raw.githubusercontent.com/godotengine/godot-docs/3.6/img/"
+"ease_cheatsheet.png]Hoja de referencia de valores de curve de ease()[/url]\n"
+"Véase también [method smoothstep]. Si necesitas realizar transiciones más "
+"avanzadas, usa [Tween] o [AnimationPlayer]."
 
 #: modules/gdscript/doc_classes/@GDScript.xml
 msgid ""
@@ -944,7 +970,6 @@ msgstr ""
 "[/codeblock]"
 
 #: modules/gdscript/doc_classes/@GDScript.xml
-#, fuzzy
 msgid ""
 "Linearly interpolates between two values by the factor defined in "
 "[code]weight[/code]. To perform interpolation, [code]weight[/code] should be "
@@ -966,20 +991,27 @@ msgid ""
 "ease] or [method smoothstep]. See also [method range_lerp] to map a "
 "continuous series of values to another."
 msgstr ""
-"Interpola linealmente entre dos valores por un valor normalizado. Esto es la "
-"función inversa de [method inverse_lerp].\n"
+"Interpola linealmente entre dos valores usando el factor definido en "
+"[code]weight[/code]. Para realizar la interpolación, [code]weight[/code] "
+"debe estar entre [code]0.0[/code] y [code]1.0[/code] (inclusive). Sin "
+"embargo, se permiten valores fuera de este rango y pueden usarse para "
+"realizar [i]extrapolación[/i]. Si no se desea, aplica [method clamp] al "
+"resultado de [method lerp].\n"
 "Si los argumentos [code]from[/code] y [code]to[/code] son de tipo [int] o "
 "[float], el valor devuelto es un [float].\n"
 "Si ambos son del mismo tipo de vector ([Vector2], [Vector3] o [Color]), el "
-"valor devuelto será del mismo tipo ,([code]lerp[/code] entonces llama al "
+"valor devuelto será del mismo tipo ([code]lerp[/code] entonces llama al "
 "método [code]linear_interpolate[/code] del tipo de vector).\n"
 "[codeblock]\n"
 "lerp(0, 4, 0.75) # Devuelve 3.0\n"
 "lerp(Vector2(1, 5), Vector2(3, 2), 0.5) # Devuelve Vector2(2, 3.5)\n"
-"[/codeblock]"
+"[/codeblock]\n"
+"Véase también [method inverse_lerp], que realiza la operación inversa. Para "
+"una interpolación con suavizado usando [method lerp], combínalo con [method "
+"ease] o [method smoothstep]. Véase también [method range_lerp] para mapear "
+"una serie continua de valores a otra."
 
 #: modules/gdscript/doc_classes/@GDScript.xml
-#, fuzzy
 msgid ""
 "Linearly interpolates between two angles (in radians) by a normalized "
 "value.\n"
@@ -1002,10 +1034,12 @@ msgid ""
 "example, [code]lerp_angle(0, PI, weight)[/code] lerps counter-clockwise, "
 "while [code]lerp_angle(0, PI + 5 * TAU, weight)[/code] lerps clockwise."
 msgstr ""
-"Interpola linealmente entre dos ángulos (en radianes) por un valor "
+"Interpola linealmente entre dos ángulos (en radianes) mediante un valor "
 "normalizado.\n"
-"Similar al [method lerp], pero interpola correctamente cuando los ángulos se "
+"Similar a [method lerp], pero interpola correctamente cuando los ángulos se "
 "envuelven alrededor de [constant @GDScript.TAU].\n"
+"Para realizar una interpolación con suavizado con [method lerp_angle], "
+"combínalo con [method ease] o [method smoothstep].\n"
 "[codeblock]\n"
 "extends Sprite\n"
 "var elapsed = 0.0\n"
@@ -1014,7 +1048,15 @@ msgstr ""
 "    var max_angle = deg2rad(90.0)\n"
 "    rotation = lerp_angle(min_angle, max_angle, elapsed)\n"
 "    elapsed += delta\n"
-"[/codeblock]"
+"[/codeblock]\n"
+"[b]Note:[/b] Este método interpola siguiendo la trayectoria más corta entre "
+"[code]from[/code] y [code]to[/code]. Sin embargo, cuando estos dos ángulos "
+"están aproximadamente separados por [code]PI + k * TAU[/code] para cualquier "
+"entero [code]k[/code], no es obvio en qué sentido se interpola debido a "
+"errores de precisión de punto flotante. Por ejemplo, [code]lerp_angle(0, PI, "
+"weight)[/code] interpola en sentido antihorario, mientras que "
+"[code]lerp_angle(0, PI + 5 * TAU, weight)[/code] interpola en sentido "
+"horario."
 
 #: modules/gdscript/doc_classes/@GDScript.xml
 msgid ""
@@ -1101,6 +1143,18 @@ msgid ""
 "[b]Note:[/b] The logarithm of [code]0[/code] returns [code]-inf[/code], "
 "while negative values return [code]-nan[/code]."
 msgstr ""
+"Devuelve el logaritmo natural de [code]s[/code] (con base [url=https://en."
+"wikipedia.org/wiki/E_(mathematical_constant)][i]e[/i][/url], donde [i]e[/i] "
+"es aproximadamente 2.71828). Esta es la cantidad de tiempo necesaria para "
+"alcanzar un cierto nivel de crecimiento continuo.\n"
+"[b]Nota:[/b] Esto no es lo mismo que la función \"log\" de la mayoría de "
+"calculadoras, que utiliza un logaritmo en base 10. Para usar logaritmo en "
+"base 10, usa [code]log(x) / log(10)[/code].\n"
+"[codeblock]\n"
+"log(10) # Devuelve 2.302585\n"
+"[/codeblock]\n"
+"[b]Nota:[/b] El logaritmo de [code]0[/code] devuelve [code]-inf[/code], "
+"mientras que los valores negativos devuelven [code]-nan[/code]."
 
 #: modules/gdscript/doc_classes/@GDScript.xml
 msgid ""
@@ -1389,6 +1443,17 @@ msgid ""
 "print_stack] will not work in projects exported in release mode, or in "
 "projects exported in debug mode if not connected to a debugging server."
 msgstr ""
+"Imprime un seguimiento de la pila en la ubicación actual del código. Ver "
+"también [method get_stack].\n"
+"La salida en la consola se vería de forma similar a esto:\n"
+"[codeblock]\n"
+"Frame 0 - res://test.gd:16 in function '_process'\n"
+"[/codeblock]\n"
+"[b]Nota:[/b] [method print_stack] solo funciona si la instancia en ejecución "
+"está conectada a un servidor de depuración (es decir, una instancia del "
+"editor). [method print_stack] no funcionará en proyectos exportados en modo "
+"de lanzamiento (release), ni en proyectos exportados en modo de depuración "
+"(debug) si no están conectados a un servidor de depuración."
 
 #: modules/gdscript/doc_classes/@GDScript.xml
 msgid ""
@@ -1625,6 +1690,44 @@ msgid ""
 "3\n"
 "[/codeblock]"
 msgstr ""
+"Devuelve un array con el rango indicado. [method range] se puede llamar de "
+"tres maneras:\n"
+"[code]range(n: int)[/code]: Empieza en 0, incrementa con pasos de 1 y se "
+"detiene [i]antes[/i] de [code]n[/code]. El argumento [code]n[/code] es "
+"[b]exclusivo[/b].\n"
+"[code]range(b: int, n: int)[/code]: Empieza en [code]b[/code], incrementa "
+"con pasos de 1 y se detiene [i]antes[/i] de [code]n[/code]. Los argumentos "
+"[code]b[/code] y [code]n[/code] son [b]inclusivos[/b] y [b]exclusivos[/b], "
+"respectivamente.\n"
+"[code]range(b: int, n: int, s: int)[/code]: Empieza en [code]b[/code], "
+"incrementa o decrementa con pasos de [code]s[/code] y se detiene [i]antes[/"
+"i] de [code]n[/code]. Los argumentos [code]b[/code] y [code]n[/code] son "
+"[b]inclusivos[/b] y [b]exclusivos[/b], respectivamente. El argumento "
+"[code]s[/code] [b]puede[/b] ser negativo, pero no [code]0[/code]. Si "
+"[code]s[/code] es [code]0[/code], se imprime un mensaje de error.\n"
+"[method range] convierte todos los argumentos a [int] antes de procesarlos.\n"
+"[b]Nota:[/b] Devuelve un array vacío si ningún valor cumple la restricción "
+"del rango (p. ej. [code]range(2, 5, -1)[/code] o [code]range(5, 5, 1)[/"
+"code]).\n"
+"Ejemplos:\n"
+"[codeblock]\n"
+"print(range(4))        # Imprime [0, 1, 2, 3]\n"
+"print(range(2, 5))     # Imprime [2, 3, 4]\n"
+"print(range(0, 6, 2))  # Imprime [0, 2, 4]\n"
+"print(range(4, 1, -1)) # Imprime [4, 3, 2]\n"
+"[/codeblock]\n"
+"Para iterar un [Array] en sentido inverso, usa:\n"
+"[codeblock]\n"
+"var array = [3, 6, 9]\n"
+"for i in range(array.size(), 0, -1):\n"
+"    print(array[i - 1])\n"
+"[/codeblock]\n"
+"Salida:\n"
+"[codeblock]\n"
+"9\n"
+"6\n"
+"3\n"
+"[/codeblock]"
 
 #: modules/gdscript/doc_classes/@GDScript.xml
 msgid ""
@@ -1639,9 +1742,19 @@ msgid ""
 "For complex use cases where you need multiple ranges, consider using [Curve] "
 "or [Gradient] instead."
 msgstr ""
+"Mapea un valor [code]value[/code] desde el rango [code][istart, istop][/"
+"code] al rango [code][ostart, ostop][/code]. Ver también [method lerp] y "
+"[method inverse_lerp]. Si [code]value[/code] está fuera de [code][istart, "
+"istop][/code], el valor resultante también quedará fuera de [code][ostart, "
+"ostop][/code]. Usa [method clamp] sobre el resultado de [method range_lerp] "
+"si no se desea.\n"
+"[codeblock]\n"
+"range_lerp(75, 0, 100, -1, 1) # Devuelve 0.5\n"
+"[/codeblock]\n"
+"Para casos de uso complejos en los que necesites varios rangos, considera "
+"usar [Curve] o [Gradient] en su lugar."
 
 #: modules/gdscript/doc_classes/@GDScript.xml
-#, fuzzy
 msgid ""
 "Rounds [code]s[/code] to the nearest whole number, with halfway cases "
 "rounded away from zero.\n"
@@ -1652,11 +1765,14 @@ msgid ""
 "[/codeblock]\n"
 "See also [method floor], [method ceil], [method stepify], and [int]."
 msgstr ""
-"Redondea [code]s[/code] al número entero más cercano, con los casos "
-"intermedios redondeados desde el cero.\n"
+"Redondea [code]s[/code] al entero más cercano, redondeando los casos "
+"exactamente a la mitad alejándose de cero.\n"
 "[codeblock]\n"
-"round(2.6) # Devuelve 3\n"
-"[/codeblock]"
+"a = round(2.49) # a es 2.0\n"
+"a = round(2.5)  # a es 3.0\n"
+"a = round(2.51) # a es 3.0\n"
+"[/codeblock]\n"
+"Véase también [method floor], [method ceil], [method stepify] y [int]."
 
 #: modules/gdscript/doc_classes/@GDScript.xml
 msgid ""
@@ -1741,9 +1857,32 @@ msgid ""
 "smoothstep_ease_comparison.png]Comparison between smoothstep() and ease(x, "
 "-1.6521) return values[/url]"
 msgstr ""
+"Devuelve el resultado de interpolar suavemente el valor de [code]s[/code] "
+"entre [code]0[/code] y [code]1[/code], basado en el lugar donde [code]s[/"
+"code] se encuentra respecto a los bordes [code]from[/code] y [code]to[/"
+"code].\n"
+"El valor de retorno es [code]0[/code] si [code]s <= from[/code], y [code]1[/"
+"code] si [code]s >= to[/code]. Si [code]s[/code] está entre [code]from[/"
+"code] y [code]to[/code], el valor devuelto sigue una curva en forma de S que "
+"mapea [code]s[/code] entre [code]0[/code] y [code]1[/code].\n"
+"Esta curva en forma de S es el interpolador cúbico de Hermite, dado por "
+"[code]f(y) = 3*y^2 - 2*y^3[/code] donde [code]y = (x-from) / (to-from)[/"
+"code].\n"
+"[codeblock]\n"
+"smoothstep(0, 2, -5.0) # Devuelve 0.0\n"
+"smoothstep(0, 2, 0.5) # Devuelve 0.15625\n"
+"smoothstep(0, 2, 1.0) # Devuelve 0.5\n"
+"smoothstep(0, 2, 2.0) # Devuelve 1.0\n"
+"[/codeblock]\n"
+"Comparado con [method ease] con un valor de curva de [code]-1.6521[/code], "
+"[method smoothstep] devuelve la curva más suave posible sin cambios abruptos "
+"en la derivada. Si necesitas realizar transiciones más avanzadas, usa "
+"[Tween] o [AnimationPlayer].\n"
+"[url=https://raw.githubusercontent.com/godotengine/godot-docs/3.6/img/"
+"smoothstep_ease_comparison.png]Comparación entre smoothstep() y ease(x, "
+"-1.6521): valores de retorno[/url]"
 
 #: modules/gdscript/doc_classes/@GDScript.xml
-#, fuzzy
 msgid ""
 "Returns the square root of [code]s[/code], where [code]s[/code] is a non-"
 "negative number.\n"
@@ -1758,11 +1897,10 @@ msgstr ""
 "[codeblock]\n"
 "sqrt(9) # Devuelve 3\n"
 "[/codeblock]\n"
-"[b]Nota:[/b]Los valores negativos de [code]s[/code] devuelven NaN. Si "
-"necesita entradas negativas, use [code]System.Numerics.Complex[/code] en C#."
+"[b]Nota:[/b] Los valores negativos de [code]s[/code] devuelven NaN. Si "
+"necesitas entradas negativas, usa [code]System.Numerics.Complex[/code] en C#."
 
 #: modules/gdscript/doc_classes/@GDScript.xml
-#, fuzzy
 msgid ""
 "Returns the position of the first non-zero digit, after the decimal point. "
 "Note that the maximum return value is 10, which is a design decision in the "
@@ -1777,16 +1915,12 @@ msgstr ""
 "Observe que el valor máximo de retorno es 10, el cual es una decisión de "
 "diseño en la implementación.\n"
 "[codeblock]\n"
-"# n es 0\n"
-"n = step_decimals(5)\n"
-"# n es 4\n"
-"n = step_decimals(1.0005)\n"
-"# n es 9\n"
-"n = step_decimals(0.000000005)\n"
+"n = step_decimals(5)           # n es 0\n"
+"n = step_decimals(1.0005)      # n es 4\n"
+"n = step_decimals(0.000000005) # n es 9\n"
 "[/codeblock]"
 
 #: modules/gdscript/doc_classes/@GDScript.xml
-#, fuzzy
 msgid ""
 "Snaps float value [code]s[/code] to a given [code]step[/code]. This can also "
 "be used to round a floating point number to an arbitrary number of "
@@ -1797,16 +1931,16 @@ msgid ""
 "[/codeblock]\n"
 "See also [method ceil], [method floor], [method round], and [int]."
 msgstr ""
-"Ajusta el valor real [code]s[/code] a un determinado [code]step[/code]. "
-"También puede utilizarse para redondear un número real a un número variable "
-"de decimales.\n"
+"Ajusta el valor real [code]s[/code] al [code]step[/code] especificado. "
+"También puede utilizarse para redondear un número de punto flotante a un "
+"número arbitrario de decimales.\n"
 "[codeblock]\n"
-"stepify(100, 32) # Devuelve 96\n"
+"stepify(100, 32) # Devuelve 96.0\n"
 "stepify(3.14159, 0.01) # Devuelve 3.14\n"
-"[/codeblock]"
+"[/codeblock]\n"
+"Véase también [method ceil], [method floor], [method round] y [int]."
 
 #: modules/gdscript/doc_classes/@GDScript.xml
-#, fuzzy
 msgid ""
 "Converts one or more arguments of any type to string in the best way "
 "possible.\n"
@@ -1817,7 +1951,8 @@ msgid ""
 "len(b) # Returns 12\n"
 "[/codeblock]"
 msgstr ""
-"Convierte uno o mas argumentos a string de la mejor manera posible.\n"
+"Convierte uno o más argumentos de cualquier tipo a string de la mejor manera "
+"posible.\n"
 "[codeblock]\n"
 "var a = [10, 20, 30]\n"
 "var b = str(a);\n"
@@ -1856,7 +1991,6 @@ msgstr ""
 "[/codeblock]"
 
 #: modules/gdscript/doc_classes/@GDScript.xml
-#, fuzzy
 msgid ""
 "Returns the hyperbolic tangent of [code]s[/code].\n"
 "[codeblock]\n"
@@ -1864,7 +1998,7 @@ msgid ""
 "b = tanh(a)  # b is 0.6\n"
 "[/codeblock]"
 msgstr ""
-"Devuelve la tangente hiperbólica de[code]s[/code].\n"
+"Devuelve la tangente hiperbólica de [code]s[/code].\n"
 "[codeblock]\n"
 "a = log(2.0) # Devuelve 0.693147\n"
 "tanh(a)      # Devuelve 0.6\n"
@@ -1905,7 +2039,6 @@ msgstr ""
 "[Variant] a JSON."
 
 #: modules/gdscript/doc_classes/@GDScript.xml
-#, fuzzy
 msgid ""
 "Returns whether the given class exists in [ClassDB].\n"
 "[codeblock]\n"
@@ -1915,7 +2048,7 @@ msgid ""
 msgstr ""
 "Devuelve si la clase dada existe en [ClassDB].\n"
 "[codeblock]\n"
-"type_exists(\"Sprite2D\") # Devuelve true\n"
+"type_exists(\"Sprite\") # Devuelve true\n"
 "type_exists(\"Variant\") # Devuelve false\n"
 "[/codeblock]"
 
@@ -2195,15 +2328,15 @@ msgstr ""
 "encuentra contenido en su perímetro.Esto equivale a [code]TAU / 2[/code]."
 
 #: modules/gdscript/doc_classes/@GDScript.xml
-#, fuzzy
 msgid ""
 "The circle constant, the circumference of the unit circle in radians. This "
 "is equivalent to [code]PI * 2[/code], or 360 degrees in rotations."
 msgstr ""
 "La constante del círculo, la circunferencia de la unidad círculo en radianes."
+"La constante del círculo, la circunferencia del círculo unitario en radianes."
+" Es equivalente a [code]PI * 2[/code], o una rotación de 360 grados."
 
 #: modules/gdscript/doc_classes/@GDScript.xml
-#, fuzzy
 msgid ""
 "Positive floating-point infinity. This is the result of floating-point "
 "division when the divisor is [code]0.0[/code]. For negative infinity, use "
@@ -2216,18 +2349,18 @@ msgid ""
 "code] will not result in [constant INF] and will result in a run-time error "
 "instead."
 msgstr ""
-"Infinito como número de punto flotante. Este es el resultado de una división "
-"real cuando el divisor es [code]0.0[/code]. Para el infinito negativo, "
-"utilizar [code]-INF[/code]. Dividir por [code]-0.0[/code] otorgará como "
-"resultado el infinito negativo si el numerador es positivo, de manera que no "
-"es lo mismo que dividir por [code]0.0[/code] (a pesar de que [code]0.0 == "
-"-0.0[/code] devuelve [code]true[/code]). [b]Nota:[/b] El infinito numérico "
-"solo es un concepto para números de punto flotante y no tiene un equivalente "
-"para enteros. La división de un entero por [code]0[/code] no resultará en "
-"[constant INF] y en su lugar arrojará un error en tiempo de ejecución."
+"Infinito positivo de punto flotante. Este es el resultado de una división de "
+"punto flotante cuando el divisor es [code]0.0[/code]. Para el infinito "
+"negativo, usa [code]-INF[/code]. Dividir por [code]-0.0[/code] dará como "
+"resultado el infinito negativo si el numerador es positivo, por lo que "
+"dividir por [code]0.0[/code] no es lo mismo que dividir por [code]-0.0[/code]"
+" (a pesar de que [code]0.0 == -0.0[/code] devuelva [code]true[/code]).\n"
+"[b]Note:[/b] El infinito numérico es solo un concepto de los números de punto"
+" flotante y no tiene un equivalente para los enteros. Dividir un número "
+"entero por [code]0[/code] no resultará en [constant INF], sino que provocará "
+"un error en tiempo de ejecución."
 
 #: modules/gdscript/doc_classes/@GDScript.xml
-#, fuzzy
 msgid ""
 "\"Not a Number\", an invalid floating-point value. [constant NAN] has "
 "special properties, including that it is not equal to itself ([code]NAN == "
@@ -2239,15 +2372,15 @@ msgid ""
 "[code]0[/code] will not result in [constant NAN] and will result in a run-"
 "time error instead."
 msgstr ""
-"\"Not a Number\" (\"No es un Número\"), un decimal de valor inválido. "
+"\"Not a Number\" (No es un número), un valor de punto flotante inválido. "
 "[constant NAN] tiene propiedades especiales, incluyendo que no es igual a si "
-"mismo([code]NAN==NAN[/code] devuelve [code]false[/code]). Es una salida dada "
-"por algunas operaciones inválidas, como dividir un decimal [code]0.0[/code] "
-"por [code]0.0[/code].\n"
-"[b]Nota:[/b] \"Not a Number\" es solo un concepto con números decimales, y "
-"no tiene un equivalente para enteros. Dividiendo un entero por [code]0[/"
-"code] no resultará en [constante NAN] y en su lugar arrojará un error en "
-"tiempo de ejecución."
+"mismo ([code]NAN == NAN[/code] devuelve [code]false[/code]). Es el resultado "
+"de algunas operaciones inválidas, como dividir el valor de punto flotante "
+"[code]0.0[/code] por [code]0.0[/code].\n"
+"[b]Nota:[/b] \"Not a Number\" es solo un concepto de los números de punto "
+"flotante y no tiene un equivalente para los enteros. Dividiendo un entero por"
+" [code]0[/code] no resultará en [constant NAN], sino que provocará un error "
+"en tiempo de ejecución."
 
 #: doc/classes/@GlobalScope.xml
 msgid "Global scope constants and variables."
@@ -2289,9 +2422,8 @@ msgid "The [Engine] singleton."
 msgstr "El singleton [Engine]."
 
 #: doc/classes/@GlobalScope.xml
-#, fuzzy
 msgid "The [Geometry] singleton."
-msgstr "El singleton [Geometry2D]."
+msgstr "El singleton [Geometry]."
 
 #: doc/classes/@GlobalScope.xml
 msgid "The [IP] singleton."
@@ -5393,8 +5525,8 @@ msgstr ""
 #: doc/classes/AudioStreamPlayer.xml doc/classes/Button.xml
 #: doc/classes/CanvasLayer.xml doc/classes/CollisionShape2D.xml
 #: doc/classes/ColorRect.xml doc/classes/Input.xml doc/classes/InputEvent.xml
-#: doc/classes/InputEventAction.xml doc/classes/Label.xml doc/classes/Timer.xml
-#: doc/classes/VisibilityNotifier2D.xml
+#: doc/classes/InputEventAction.xml doc/classes/Label.xml
+#: doc/classes/Timer.xml doc/classes/VisibilityNotifier2D.xml
 msgid "2D Dodge The Creeps Demo"
 msgstr ""
 
@@ -6568,12 +6700,13 @@ msgstr "AnimationTree"
 #: doc/classes/Camera.xml doc/classes/CollisionShape.xml
 #: doc/classes/CylinderShape.xml doc/classes/Environment.xml
 #: doc/classes/GIProbe.xml doc/classes/GIProbeData.xml
-#: doc/classes/KinematicBody.xml doc/classes/Light.xml doc/classes/Material.xml
-#: doc/classes/Mesh.xml doc/classes/MeshInstance.xml doc/classes/Particles.xml
-#: doc/classes/Quat.xml doc/classes/Skeleton.xml doc/classes/SpotLight.xml
-#: doc/classes/StaticBody.xml doc/classes/WorldEnvironment.xml
+#: doc/classes/KinematicBody.xml doc/classes/Light.xml
+#: doc/classes/Material.xml doc/classes/Mesh.xml doc/classes/MeshInstance.xml
+#: doc/classes/Particles.xml doc/classes/Quat.xml doc/classes/Skeleton.xml
+#: doc/classes/SpotLight.xml doc/classes/StaticBody.xml
+#: doc/classes/WorldEnvironment.xml
 msgid "Third Person Shooter Demo"
-msgstr ""
+msgstr "Demo de shooter en tercera persona"
 
 #: doc/classes/AnimationNodeAnimation.xml
 msgid "Input animation to use in an [AnimationNodeBlendTree]."
@@ -6598,7 +6731,7 @@ msgstr ""
 #: doc/classes/MeshInstance.xml doc/classes/MeshLibrary.xml
 #: doc/classes/ProjectSettings.xml doc/classes/Transform.xml
 msgid "3D Platformer Demo"
-msgstr ""
+msgstr "Demo de plataformas 3D"
 
 #: doc/classes/AnimationNodeAnimation.xml
 msgid ""
@@ -11784,10 +11917,11 @@ msgid ""
 msgstr ""
 
 #: doc/classes/AudioEffectCapture.xml doc/classes/AudioEffectDistortion.xml
-#: doc/classes/AudioEffectFilter.xml doc/classes/AudioEffectHighShelfFilter.xml
+#: doc/classes/AudioEffectFilter.xml
+#: doc/classes/AudioEffectHighShelfFilter.xml
 #: doc/classes/AudioEffectLowShelfFilter.xml doc/classes/AudioServer.xml
 msgid "Audio buses"
-msgstr ""
+msgstr "Buses de audio"
 
 #: doc/classes/AudioEffectCapture.xml
 #, fuzzy
@@ -12365,11 +12499,10 @@ msgstr ""
 "y permite que pasen las frecuencias más altas."
 
 #: doc/classes/AudioEffectHighShelfFilter.xml
-#, fuzzy
 msgid "Reduces all frequencies above the [member AudioEffectFilter.cutoff_hz]."
 msgstr ""
-"Corta las frecuencias más bajas que el [member AudioEffectFilter.cutoff_hz] "
-"y permite que pasen las frecuencias más altas."
+"Reduce todas las frecuencias por encima de [member "
+"AudioEffectFilter.cutoff_hz]."
 
 #: doc/classes/AudioEffectLimiter.xml
 msgid "Adds a soft-clip limiter audio effect to an Audio bus."
@@ -12429,11 +12562,10 @@ msgstr ""
 "y permite que pasen las frecuencias más bajas."
 
 #: doc/classes/AudioEffectLowShelfFilter.xml
-#, fuzzy
 msgid "Reduces all frequencies below the [member AudioEffectFilter.cutoff_hz]."
 msgstr ""
-"Corta las frecuencias más bajas que el [member AudioEffectFilter.cutoff_hz] "
-"y permite que pasen las frecuencias más altas."
+"Reduce todas las frecuencias por debajo de [member "
+"AudioEffectFilter.cutoff_hz]."
 
 #: doc/classes/AudioEffectNotchFilter.xml
 msgid "Adds a notch filter to the Audio bus."
@@ -20212,7 +20344,8 @@ msgstr ""
 "La torsión se bloquea si está por debajo de 0,05."
 
 #: doc/classes/ConeTwistJoint.xml doc/classes/Generic6DOFJoint.xml
-#: doc/classes/HingeJoint.xml doc/classes/Light.xml doc/classes/SliderJoint.xml
+#: doc/classes/HingeJoint.xml doc/classes/Light.xml
+#: doc/classes/SliderJoint.xml
 msgid "Represents the size of the [enum Param] enum."
 msgstr "Representa el tamaño del enum [enum Param]."
 
@@ -29197,6 +29330,10 @@ msgid ""
 "to [EditorSceneImporterGLTF] within a script will cause an error in an "
 "exported project."
 msgstr ""
+"[b]Nota:[/b] Esta clase solo se incluye en las compilaciones del editor. La "
+"carga y el guardado de glTF en tiempo de ejecución [i]no[/i] está disponible "
+"en proyectos exportados. Las referencias a [EditorSceneImporterGLTF] dentro "
+"de un script provocarán un error en el proyecto exportado."
 
 #: doc/classes/EditorScenePostImport.xml
 msgid "Post-processes scenes after import."
@@ -36078,6 +36215,10 @@ msgid ""
 "loading and saving is [i]not[/i] available in exported projects. References "
 "to [GLTFAccessor] within a script will cause an error in an exported project."
 msgstr ""
+"[b]Nota:[/b] Esta clase solo se incluye en las compilaciones del editor. La "
+"carga y el guardado de glTF en tiempo de ejecución [i]no[/i] está disponible "
+"en proyectos exportados. Las referencias a [GLTFAccessor] dentro de un "
+"script provocarán un error en el proyecto exportado."
 
 #: modules/gltf/doc_classes/GLTFAnimation.xml
 msgid ""
@@ -36086,6 +36227,10 @@ msgid ""
 "to [GLTFAnimation] within a script will cause an error in an exported "
 "project."
 msgstr ""
+"[b]Nota:[/b] Esta clase solo se incluye en las compilaciones del editor. La "
+"carga y el guardado de glTF en tiempo de ejecución [i]no[/i] está disponible "
+"en proyectos exportados. Las referencias a [GLTFAnimation] dentro de un "
+"script provocarán un error en el proyecto exportado."
 
 #: modules/gltf/doc_classes/GLTFBufferView.xml
 msgid ""
@@ -36094,6 +36239,10 @@ msgid ""
 "to [GLTFBufferView] within a script will cause an error in an exported "
 "project."
 msgstr ""
+"[b]Nota:[/b] Esta clase solo se incluye en las compilaciones del editor. La "
+"carga y el guardado de glTF en tiempo de ejecución [i]no[/i] está disponible "
+"en proyectos exportados. Las referencias a [GLTFBufferView] dentro de un "
+"script provocarán un error en el proyecto exportado."
 
 #: modules/gltf/doc_classes/GLTFCamera.xml
 msgid "Represents a GLTF camera."
@@ -36446,6 +36595,10 @@ msgid ""
 "loading and saving is [i]not[/i] available in exported projects. References "
 "to [GLTFMesh] within a script will cause an error in an exported project."
 msgstr ""
+"[b]Nota:[/b] Esta clase solo se incluye en las compilaciones del editor. La "
+"carga y el guardado de glTF en tiempo de ejecución [i]no[/i] está disponible "
+"en proyectos exportados. Las referencias a [GLTFMesh] dentro de un script "
+"provocarán un error en el proyecto exportado."
 
 #: modules/gltf/doc_classes/GLTFNode.xml
 msgid "GLTF node class."
@@ -36615,6 +36768,10 @@ msgid ""
 "loading and saving is [i]not[/i] available in exported projects. References "
 "to [GLTFSkeleton] within a script will cause an error in an exported project."
 msgstr ""
+"[b]Nota:[/b] Esta clase solo se incluye en las compilaciones del editor. La "
+"carga y el guardado de glTF en tiempo de ejecución [i]no[/i] está disponible "
+"en proyectos exportados. Las referencias a [GLTFSkeleton] dentro de un "
+"script provocarán un error en el proyecto exportado."
 
 #: modules/gltf/doc_classes/GLTFSpecGloss.xml
 msgid ""
@@ -42564,6 +42721,9 @@ msgid ""
 "input_devices/pointing/android/enable_pan_and_scale_gestures] project "
 "setting to be enabled."
 msgstr ""
+"[b]Nota:[/b] En Android, esto requiere que se habilite la opción del "
+"proyecto [member ProjectSettings.input_devices/pointing/android/"
+"enable_pan_and_scale_gestures]."
 
 #: doc/classes/InputEventMIDI.xml
 #, fuzzy
@@ -43118,7 +43278,7 @@ msgstr ""
 
 #: doc/classes/int.xml
 msgid "Integer built-in type."
-msgstr "Tipo entero interno."
+msgstr "Tipo de dato entero integrado."
 
 #: doc/classes/int.xml
 msgid ""
@@ -59445,6 +59605,10 @@ msgid ""
 "to [PackedSceneGLTF] within a script will cause an error in an exported "
 "project."
 msgstr ""
+"[b]Nota:[/b] Esta clase solo se incluye en las compilaciones del editor. La "
+"carga y el guardado de glTF en tiempo de ejecución [i]no[/i] está disponible "
+"en proyectos exportados. Las referencias a [PackedSceneGLTF] dentro de un "
+"script provocarán un error en el proyecto exportado."
 
 #: doc/classes/PacketPeer.xml
 msgid "Abstraction and base class for packet-based protocols."
@@ -61216,6 +61380,10 @@ msgid ""
 "function as expected. Please make sure to keep its scale uniform (i.e. the "
 "same on all axes), and change the size(s) of its collision shape(s) instead."
 msgstr ""
+"[b]Advertencia:[/b] Con una escala no uniforme, este nodo probablemente no "
+"funcionará como se espera. Asegúrate de mantener su escala uniforme (es "
+"decir, la misma en todos los ejes) y, en su lugar, cambia el o los tamaños "
+"de sus formas de colisión."
 
 #: doc/classes/Physics2DDirectBodyState.xml
 #, fuzzy
@@ -86193,7 +86361,7 @@ msgstr "[StyleBox] que se usa cuando se presiona el [Button]."
 
 #: doc/classes/TorusMesh.xml
 msgid "Class representing a torus [PrimitiveMesh]."
-msgstr ""
+msgstr "Clase que representa un [PrimitiveMesh] con forma de toroide."
 
 #: doc/classes/TouchScreenButton.xml
 #, fuzzy
@@ -93763,9 +93931,8 @@ msgid "The node's path in the scene tree."
 msgstr "La ruta del nodo en el árbol de la escena."
 
 #: modules/visual_script/doc_classes/VisualScriptSceneTree.xml
-#, fuzzy
 msgid "A Visual Script node for accessing [SceneTree] methods."
-msgstr "Un nodo Visual Script que ramifica el flujo."
+msgstr "Un nodo de Visual Script para acceder a los métodos de [SceneTree]."
 
 #: modules/visual_script/doc_classes/VisualScriptSelect.xml
 msgid "Chooses between two input values."

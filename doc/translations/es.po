@@ -98820,9 +98820,8 @@ msgstr "Traducido a [code]bool[/code] uniforme en el lenguaje de los shaders."
 #: doc/classes/VisualShaderNodeScalarUniform.xml
 #: doc/classes/VisualShaderNodeTransformUniform.xml
 #: doc/classes/VisualShaderNodeVec3Uniform.xml
-#, fuzzy
 msgid "A default value to be assigned within the shader."
-msgstr "Un efecto Fresnel para ser usado dentro del gráfico shader visual."
+msgstr "Valor por defecto que se asignará en el sombreador."
 
 #: doc/classes/VisualShaderNodeBooleanUniform.xml
 #: doc/classes/VisualShaderNodeColorUniform.xml
@@ -98830,7 +98829,7 @@ msgstr "Un efecto Fresnel para ser usado dentro del gráfico shader visual."
 #: doc/classes/VisualShaderNodeTransformUniform.xml
 #: doc/classes/VisualShaderNodeVec3Uniform.xml
 msgid "Enables usage of the [member default_value]."
-msgstr ""
+msgstr "Activa el uso de [member default_value]."
 
 #: doc/classes/VisualShaderNodeColorConstant.xml
 msgid "A [Color] constant to be used within the visual shader graph."
@@ -99086,12 +99085,11 @@ msgstr ""
 
 #: doc/classes/VisualShaderNodeColorUniform.xml
 msgid "A [Color] uniform to be used within the visual shader graph."
-msgstr ""
-"Un uniforme [Color] para ser usado dentro del gráfico de shader visual."
+msgstr "Uniforme [Color] para el grafo del sombreador visual."
 
 #: doc/classes/VisualShaderNodeColorUniform.xml
 msgid "Translated to [code]uniform vec4[/code] in the shader language."
-msgstr "Traducido a [code]uniform vec4[/code] en el lenguaje shader."
+msgstr "Equivale a [code]uniform vec4[/code] en el lenguaje de sombreado."
 
 #: doc/classes/VisualShaderNodeCompare.xml
 msgid "A comparison function for common types within the visual shader graph."
@@ -99567,11 +99565,12 @@ msgstr "Equivale a [code]determinant(x)[/code] en el lenguaje de sombreado."
 #: doc/classes/VisualShaderNodeDotProduct.xml
 msgid "Calculates a dot product of two vectors within the visual shader graph."
 msgstr ""
-"Calcula un producto escalar de dos vectores dentro del gráfico shader visual."
+"Calcula el producto escalar de dos vectores dentro del grafo del sombreador "
+"visual."
 
 #: doc/classes/VisualShaderNodeDotProduct.xml
 msgid "Translates to [code]dot(a, b)[/code] in the shader language."
-msgstr "Se traduce a [code]dot(a, b)[/code] en el lenguaje shader."
+msgstr "Equivale a [code]dot(a, b)[/code] en el lenguaje de sombreado."
 
 #: doc/classes/VisualShaderNodeExpression.xml
 msgid ""
@@ -99638,24 +99637,25 @@ msgstr ""
 
 #: doc/classes/VisualShaderNodeFresnel.xml
 msgid "A Fresnel effect to be used within the visual shader graph."
-msgstr "Un efecto Fresnel para ser usado dentro del gráfico shader visual."
+msgstr ""
+"Un efecto Fresnel para ser utilizado dentro del grafo del sombreador visual."
 
 #: doc/classes/VisualShaderNodeFresnel.xml
 msgid ""
 "Returns falloff based on the dot product of surface normal and view "
 "direction of camera (pass associated inputs to it)."
 msgstr ""
-"Los retornos decrecen en función del producto punto de la superficie normal "
-"y de la dirección de visión de la cámara (pasando las entradas asociadas a "
-"este)."
+"Devuelve una atenuación (falloff) según el producto escalar entre la normal "
+"de la superficie y la dirección de visión de la cámara (pasa las entradas "
+"asociadas a éste)."
 
 #: doc/classes/VisualShaderNodeGlobalExpression.xml
 msgid ""
 "A custom global visual shader graph expression written in Godot Shading "
 "Language."
 msgstr ""
-"Una expresión gráfica de shader visual global personalizada, escrita en el "
-"Lenguaje Shader de Godot."
+"Una expresión global personalizada para el grafo del sombreador visual, "
+"escrita en el Lenguaje de Sombreado de Godot (GDShader)."
 
 #: doc/classes/VisualShaderNodeGlobalExpression.xml
 msgid ""
@@ -99665,11 +99665,12 @@ msgid ""
 "shader functions). You can also declare varyings, uniforms and global "
 "constants."
 msgstr ""
-"La expresión del Lenguaje Shader Godot personalizado, que se coloca sobre el "
-"shader generado. Puedes colocar varias definiciones de funciones dentro para "
-"llamarlas más tarde en [VisualShaderNodeExpression]s (que se inyectan en las "
-"principales funciones shader). También puedes declarar variaciones, "
-"uniformes y constantes globales."
+"Expresión personalizada del lenguaje de sombreado de Godot (GDShader) que se "
+"sitúa en la parte superior del sombreador generado. Puedes incluir diversas "
+"definiciones de funciones para llamarlas más tarde en nodos "
+"[VisualShaderNodeExpression] (que se inyectan en las funciones principales "
+"del sombreador). También puedes declarar varyings, uniforms y constantes "
+"globales."
 
 #: doc/classes/VisualShaderNodeGroupBase.xml
 msgid ""
@@ -99833,18 +99834,21 @@ msgid ""
 "the shading reference for the list of available built-ins for each shader "
 "type (check [code]Tutorials[/code] section for link)."
 msgstr ""
-"Da acceso a las variables de entrada (built-ins) disponibles para el shader. "
-"Consulte la referencia del shader para ver la lista de built-ins disponibles "
-"para cada tipo de shader (consulte la sección [code]Tutorials[/code] para el "
-"enlace)."
+"Permite acceder a las variables de entrada (incorporadas) disponibles para "
+"el sombreador. Consulte la referencia de sombreado para la lista de valores "
+"incorporados de cada tipo (véase la sección [code]Tutorials[/code] del "
+"enlace).Permite acceder a las variables de entrada integradas (built-ins) "
+"disponibles para el sombreador (shader). Consulta la referencia de sombreado "
+"para ver la lista de variables integradas de cada tipo de sombreador (el "
+"enlace se encuentra en la sección [code]Tutorials[/code])."
 
 #: doc/classes/VisualShaderNodeInput.xml
 msgid ""
 "One of the several input constants in lower-case style like: "
 "\"vertex\"([code]VERTEX[/code]) or \"point_size\"([code]POINT_SIZE[/code])."
 msgstr ""
-"Una de las varias constantes de entrada en minúsculas como: "
-"\"vértice\"([code]VERTEX[/code]) o \"tamaño_punto\"([code]POINT_SIZE[/code])."
+"Una de las diversas constantes de entrada en estilo minúsculas, como: "
+"\"vertex\" ([code]VERTEX[/code]) o \"point_size\" ([code]POINT_SIZE[/code])."
 
 #: doc/classes/VisualShaderNodeIs.xml
 msgid ""
@@ -99881,7 +99885,7 @@ msgstr ""
 msgid ""
 "Calculates an outer product of two vectors within the visual shader graph."
 msgstr ""
-"Calcula un producto exterior de dos vectores dentro del gráfico shader "
+"Calcula el producto exterior de dos vectores dentro del grafo del sombreador "
 "visual."
 
 #: doc/classes/VisualShaderNodeOuterProduct.xml
@@ -99893,29 +99897,31 @@ msgid ""
 "is the number of components in [code]c[/code] and whose number of columns is "
 "the number of components in [code]r[/code]."
 msgstr ""
-"[code]OuterProduct[/code] trata el primer parámetro [code]c[/code] como un "
-"vector de columna (matriz con una columna) y el segundo parámetro [code]r[/"
-"code] como un vector de fila (matriz con una fila) y hace una matriz "
-"algebraica lineal multiplicando [code]c * r[/code], obteniendo una matriz "
-"cuyo número de filas es el número de componentes en [code]c[/code] y cuyo "
-"número de columnas es el número de componentes en [code]r[/code]."
+"[code]OuterProduct[/code] interpreta el primer parámetro [code]c[/code] como "
+"vector columna (matriz de una columna) y el segundo [code]r[/code] como "
+"vector fila (matriz de una fila) y realiza el producto matricial [code]c * "
+"r[/code], obteniendo una matriz cuyo número de filas coincide con las "
+"componentes de [code]c[/code] y cuyo número de columnas con las de [code]r[/"
+"code]."
 
 #: doc/classes/VisualShaderNodeOutput.xml
 msgid "Represents the output shader parameters within the visual shader graph."
 msgstr ""
-"Representa los parámetros shader de salida dentro del gráfico shader visual."
+"Representa los parámetros de salida del sombreador dentro del grafo del "
+"sombreador visual."
 
 #: doc/classes/VisualShaderNodeOutput.xml
 msgid ""
 "This visual shader node is present in all shader graphs in form of "
 "\"Output\" block with multiple output value ports."
 msgstr ""
-"Este nodo shader visual está presente en todos los gráficos shader en forma "
-"de bloque de \"Salida\" con múltiples puertos de valor de salida."
+"Este nodo de sombreador visual está presente en todos los grafos en forma de "
+"un bloque «Output» con múltiples puertos de salida de valor."
 
 #: doc/classes/VisualShaderNodeScalarClamp.xml
 msgid "Clamps a scalar value within the visual shader graph."
-msgstr "Engancha un valor escalar dentro del gráfico shader visual."
+msgstr ""
+"Limita un valor escalar (clamp) dentro del grafo del sombreador visual."
 
 #: doc/classes/VisualShaderNodeScalarClamp.xml
 msgid ""
@@ -99940,37 +99946,39 @@ msgstr ""
 
 #: doc/classes/VisualShaderNodeScalarDerivativeFunc.xml
 msgid "The derivative type. See [enum Function] for options."
-msgstr "El tipo derivado. Ver [enum Function] para las opciones."
+msgstr "El tipo de derivada. Consulta [enum Function] para ver las opciones."
 
 #: doc/classes/VisualShaderNodeScalarDerivativeFunc.xml
 #: doc/classes/VisualShaderNodeVectorDerivativeFunc.xml
 msgid "Sum of absolute derivative in [code]x[/code] and [code]y[/code]."
-msgstr "Suma del derivado absoluto en [code]x[/code] y [code]y[/code]."
+msgstr "Suma de las derivadas absolutas en [code]x[/code] y [code]y[/code]."
 
 #: doc/classes/VisualShaderNodeScalarDerivativeFunc.xml
 #: doc/classes/VisualShaderNodeVectorDerivativeFunc.xml
 msgid "Derivative in [code]x[/code] using local differencing."
-msgstr "Derivado en [code]x[/code] utilizando la diferenciación local."
+msgstr "Derivada en [code]x[/code] mediante diferenciación local."
 
 #: doc/classes/VisualShaderNodeScalarDerivativeFunc.xml
 #: doc/classes/VisualShaderNodeVectorDerivativeFunc.xml
 msgid "Derivative in [code]y[/code] using local differencing."
-msgstr "Derivado en [code]y[/code] utilizando la diferenciación local."
+msgstr "Derivada en [code]y[/code] mediante diferenciación local."
 
 #: doc/classes/VisualShaderNodeScalarInterp.xml
 msgid ""
 "Linearly interpolates between two scalars within the visual shader graph."
 msgstr ""
-"Interpola linealmente entre dos escalares dentro del gráfico shader visual."
+"Interpola linealmente entre dos escalares dentro del grafo del sombreador "
+"visual."
 
 #: doc/classes/VisualShaderNodeScalarInterp.xml
 msgid "Translates to [code]mix(a, b, weight)[/code] in the shader language."
-msgstr "Se traduce a [code]mix(a, b, weight)[/code] en el lenguaje shader."
+msgstr "Equivale a [code]mix(a, b, weight)[/code] en el lenguaje de sombreado."
 
 #: doc/classes/VisualShaderNodeScalarSmoothStep.xml
 msgid "Calculates a scalar SmoothStep function within the visual shader graph."
 msgstr ""
-"Calcula una función escalar de SmoothStep dentro del gráfico shader visual."
+"Calcula una función escalar SmoothStep dentro del grafo del sombreador "
+"visual."
 
 #: doc/classes/VisualShaderNodeScalarSmoothStep.xml
 msgid ""
@@ -99981,24 +99989,25 @@ msgid ""
 "code]. Otherwise the return value is interpolated between [code]0.0[/code] "
 "and [code]1.0[/code] using Hermite polynomials."
 msgstr ""
-"Se traduce a [code]smoothstep(edge0, edge1, x)[/code] en el lenguaje "
-"shader.\n"
-"Devuelve [code]0.0[/code] si [code]x[/code] es más pequeño que [code]edge0[/"
-"code] y [code]1.0[/code] si [code]x[/code] es más grande que [code]edge1[/"
-"code]. De lo contrario, el valor de retorno se interpola entre [code]0.0[/"
-"code] y [code]1.0[/code] utilizando polinomios de Hermite."
+"Equivale a [code]smoothstep(edge0, edge1, x)[/code] en el lenguaje de "
+"sombreado.\n"
+"Devuelve [code]0.0[/code] si [code]x[/code] es menor que [code]edge0[/code] "
+"y [code]1.0[/code] si [code]x[/code] es mayor que [code]edge1[/code]. En "
+"caso contrario, el valor de retorno se interpola entre [code]0.0[/code] y "
+"[code]1.0[/code] mediante polinomios de Hermite."
 
 #: doc/classes/VisualShaderNodeScalarSwitch.xml
 msgid "A boolean/scalar function for use within the visual shader graph."
 msgstr ""
-"Una función booleana/escalar para usar dentro del gráfico shader visual."
+"Una función booleana/escalar para su uso dentro del grafo del sombreador "
+"visual."
 
 #: doc/classes/VisualShaderNodeScalarSwitch.xml
 msgid ""
 "Returns an associated scalar if the provided boolean value is [code]true[/"
 "code] or [code]false[/code]."
 msgstr ""
-"Devuelve un escalar asociado si el valor booleano proporcionado es "
+"Devuelve el escalar asociado según si el valor booleano de entrada es "
 "[code]true[/code] o [code]false[/code]."
 
 #: doc/classes/VisualShaderNodeScalarUniform.xml
@@ -100051,14 +100060,15 @@ msgstr "Representa el tamaño del enum [enum Monitor]."
 #: doc/classes/VisualShaderNodeSwitch.xml
 msgid "A boolean/vector function for use within the visual shader graph."
 msgstr ""
-"Una función booleana/vectorial para usar dentro del gráfico shader visual."
+"Una función booleana/vectorial para su uso dentro del grafo del sombreador "
+"visual."
 
 #: doc/classes/VisualShaderNodeSwitch.xml
 msgid ""
 "Returns an associated vector if the provided boolean value is [code]true[/"
 "code] or [code]false[/code]."
 msgstr ""
-"Devuelve un vector asociado si el valor booleano proporcionado es "
+"Devuelve el vector asociado según si el valor booleano de entrada es "
 "[code]true[/code] o [code]false[/code]."
 
 #: doc/classes/VisualShaderNodeTexture.xml
@@ -100162,23 +100172,23 @@ msgid ""
 "Performs a uniform texture lookup with triplanar within the visual shader "
 "graph."
 msgstr ""
-"Realiza una búsqueda de textura uniforme con triplanar dentro del gráfico "
-"shader visual."
+"Muestrea una textura uniforme con mapeo triplanar dentro del grafo del "
+"sombreador visual."
 
 #: doc/classes/VisualShaderNodeTextureUniformTriplanar.xml
 msgid ""
 "Performs a lookup operation on the texture provided as a uniform for the "
 "shader, with support for triplanar mapping."
 msgstr ""
-"Realiza una operación de búsqueda en la textura proporcionada como un "
-"uniforme para el shader, con soporte para el mapeo triplanar."
+"Muestrea la textura definida como uniforme del sombreador, con soporte para "
+"mapeado triplanar."
 
 #: doc/classes/VisualShaderNodeTransformCompose.xml
 msgid ""
 "Composes a [Transform] from four [Vector3]s within the visual shader graph."
 msgstr ""
-"Compone una [Transform] a partir de cuatro [Vector3]s dentro del gráfico "
-"shader visual."
+"Compone un [Transform] a partir de cuatro [Vector3] dentro del grafo del "
+"sombreador visual."
 
 #: doc/classes/VisualShaderNodeTransformCompose.xml
 msgid ""
@@ -100186,9 +100196,8 @@ msgid ""
 "Each vector is one row in the matrix and the last column is a [code]vec4(0, "
 "0, 0, 1)[/code]."
 msgstr ""
-"Crea una matriz de transformación 4x4 utilizando cuatro vectores de tipo "
-"[code]vec3[/code]. Cada vector es una fila de la matriz y la última columna "
-"es un [code]vec4(0, 0, 0, 1)[/code]."
+"Crea una matriz de transformación 4×4 con cuatro vectores [code]vec3[/code]: "
+"cada uno es una fila; la última columna es [code]vec4(0, 0, 0, 1)[/code]."
 
 #: doc/classes/VisualShaderNodeTransformConstant.xml
 msgid "A [Transform] constant for use within the visual shader graph."
@@ -100207,16 +100216,16 @@ msgstr "Una constante [Transform] que representa el estado de este nodo."
 msgid ""
 "Decomposes a [Transform] into four [Vector3]s within the visual shader graph."
 msgstr ""
-"Descompone una [Transform] en cuatro [Vector3]s dentro del gráfico shader "
-"visual."
+"Descompone un [Transform] en cuatro [Vector3] dentro del grafo del "
+"sombreador visual."
 
 #: doc/classes/VisualShaderNodeTransformDecompose.xml
 msgid ""
 "Takes a 4x4 transform matrix and decomposes it into four [code]vec3[/code] "
 "values, one from each row of the matrix."
 msgstr ""
-"Toma una matriz de transformación de 4x4 y la descompone en cuatro valores "
-"[code]vec3[/code], uno de cada fila de la matriz."
+"Toma una matriz de transformación 4×4 y la descompone en cuatro [code]vec3[/"
+"code], uno por fila."
 
 #: doc/classes/VisualShaderNodeTransformFunc.xml
 msgid "Computes a [Transform] function within the visual shader graph."
@@ -100290,11 +100299,12 @@ msgstr ""
 
 #: doc/classes/VisualShaderNodeTransformUniform.xml
 msgid "A [Transform] uniform for use within the visual shader graph."
-msgstr "Un uniforme [Transform] para usar dentro del gráfico shader visual."
+msgstr ""
+"Un [Transform] uniforme para su uso dentro del grafo del sombreador visual."
 
 #: doc/classes/VisualShaderNodeTransformUniform.xml
 msgid "Translated to [code]uniform mat4[/code] in the shader language."
-msgstr "Traducido a [code]uniform mat4[/code] en el lenguaje shader."
+msgstr "Equivale a [code]uniform mat4[/code] en el lenguaje de sombreado."
 
 #: doc/classes/VisualShaderNodeTransformVecMult.xml
 msgid ""
@@ -100396,15 +100406,16 @@ msgstr "Una constante [Vector3] que representa el estado de este nodo."
 
 #: doc/classes/VisualShaderNodeVec3Uniform.xml
 msgid "A [Vector3] uniform to be used within the visual shader graph."
-msgstr "Un uniforme [Vector3] para ser usado dentro del gráfico shader visual."
+msgstr ""
+"Un [Vector3] uniforme para su uso dentro del grafo del sombreador visual."
 
 #: doc/classes/VisualShaderNodeVec3Uniform.xml
 msgid "Translated to [code]uniform vec3[/code] in the shader language."
-msgstr "Traducido a [code]uniform vec3[/code] en el lenguaje shader."
+msgstr "Equivale a [code]uniform vec3[/code] en el lenguaje de sombreado."
 
 #: doc/classes/VisualShaderNodeVectorClamp.xml
 msgid "Clamps a vector value within the visual shader graph."
-msgstr "Bloquea un vector de valores dentro del gráfico shader visual."
+msgstr "Limita un vector (clamp) dentro del grafo del sombreador visual."
 
 #: doc/classes/VisualShaderNodeVectorClamp.xml
 msgid ""
@@ -100446,19 +100457,19 @@ msgstr ""
 
 #: doc/classes/VisualShaderNodeVectorDerivativeFunc.xml
 msgid "Calculates a vector derivative within the visual shader graph."
-msgstr "Calcula un derivado vectorial dentro del gráfico shader visual."
+msgstr "Calcula una derivada vectorial dentro del grafo del sombreador visual."
 
 #: doc/classes/VisualShaderNodeVectorDerivativeFunc.xml
 msgid "A derivative type. See [enum Function] for options."
-msgstr "Un tipo de derivado. Véase [enum Function] para las opciones."
+msgstr "Tipo de derivada. Véase [enum Function] para las opciones."
 
 #: doc/classes/VisualShaderNodeVectorDistance.xml
 msgid ""
 "Returns the distance between two points. To be used within the visual shader "
 "graph."
 msgstr ""
-"Devuelve la distancia entre dos puntos. Para ser usado dentro del gráfico "
-"shader visual."
+"Devuelve la distancia entre dos puntos para ser usada dentro del grafo del "
+"sombreador visual."
 
 #: doc/classes/VisualShaderNodeVectorDistance.xml
 msgid ""
@@ -100466,9 +100477,9 @@ msgid ""
 "vector [code]p1[/code].\n"
 "Translated to [code]distance(p0, p1)[/code] in the shader language."
 msgstr ""
-"Calcula la distancia desde el punto representado por el vector [code]p0[/"
-"code] hasta el vector [code]p1[/code].\n"
-"Traducido a [code]distance(p0, p1)[/code] en el lenguaje shader."
+"Calcula la distancia entre el punto [code]p0[/code] y el punto [code]p1[/"
+"code].\n"
+"Equivale a [code]distance(p0, p1)[/code] en el lenguaje de sombreado."
 
 #: doc/classes/VisualShaderNodeVectorFunc.xml
 msgid "A vector function to be used within the visual shader graph."
@@ -100644,23 +100655,25 @@ msgstr "Devuelve [code]1.0 - vector[/code]."
 msgid ""
 "Linearly interpolates between two vectors within the visual shader graph."
 msgstr ""
-"Interpola linealmente entre dos vectores dentro del gráfico shader visual."
+"Interpola linealmente entre dos vectores dentro del grafo del sombreador "
+"visual."
 
 #: doc/classes/VisualShaderNodeVectorInterp.xml
 msgid ""
 "Translates to [code]mix(a, b, weight)[/code] in the shader language, where "
 "[code]weight[/code] is a [Vector3] with weights for each component."
 msgstr ""
-"Se traduce a [code]mix(a, b, weight)[/code] en el lenguaje shader, donde "
-"[code]weight[/code] es un [Vector3] con pesos para cada componente."
+"Equivale a [code]mix(a, b, weight)[/code] en el lenguaje de sombreado; "
+"[code]weight[/code] es un [Vector3] con un peso por componente."
 
 #: doc/classes/VisualShaderNodeVectorLen.xml
 msgid "Returns the length of a [Vector3] within the visual shader graph."
-msgstr "Devuelve la longitud de un [Vector3] dentro del gráfico shader visual."
+msgstr ""
+"Devuelve la longitud de un [Vector3] dentro del grafo del sombreador visual."
 
 #: doc/classes/VisualShaderNodeVectorLen.xml
 msgid "Translated to [code]length(p0)[/code] in the shader language."
-msgstr "Traducido a [code]length(p0)[/code] en el lenguaje shader."
+msgstr "Equivale a [code]length(p0)[/code] en el lenguaje de sombreado."
 
 #: doc/classes/VisualShaderNodeVectorOp.xml
 msgid "A vector operator to be used within the visual shader graph."
@@ -100745,8 +100758,8 @@ msgid ""
 "Returns the [Vector3] that points in the direction of refraction. For use "
 "within the visual shader graph."
 msgstr ""
-"Devuelve el [Vector3] que apunta en la dirección de refracción. Para usar "
-"dentro de visual shader graph."
+"Devuelve el [Vector3] en la dirección de refracción dentro del grafo del "
+"sombreador visual."
 
 #: doc/classes/VisualShaderNodeVectorRefract.xml
 msgid ""
@@ -100754,17 +100767,17 @@ msgid ""
 "[code]I[/code] is the incident vector, [code]N[/code] is the normal vector "
 "and [code]eta[/code] is the ratio of the indices of the refraction."
 msgstr ""
-"Traducido a [code]refract(I, N, eta)[/code] en el lenguaje shader, donde "
-"[code]I[/code] es el vector incidente, [code]N[/code] es el vector normal y "
-"[code]eta[/code] es la relación de los índices de la refracción."
+"Equivale a [code]refract(I, N, eta)[/code] en el lenguaje de sombreado: "
+"[code]I[/code] es el vector incidente, [code]N[/code] la normal y [code]eta[/"
+"code] el cociente de índices de refracción."
 
 #: doc/classes/VisualShaderNodeVectorScalarMix.xml
 msgid ""
 "Linearly interpolates between two vectors using a scalar. For use within the "
 "visual shader graph."
 msgstr ""
-"Interpola linealmente entre dos vectores usando un escalar. Para usar dentro "
-"del visual shader graph."
+"Interpola linealmente entre dos vectores con un peso escalar. Para usarse "
+"dentro del grafo del sombreador visual."
 
 #: doc/classes/VisualShaderNodeVectorScalarMix.xml
 msgid ""
@@ -100772,8 +100785,8 @@ msgid ""
 "[code]a[/code] and [code]b[/code] are vectors and [code]weight[/code] is a "
 "scalar."
 msgstr ""
-"Se traduce a [code]mix(a, b, weight)[/code] en el lenguaje shader, donde "
-"[code]a[/code] y [code]b[/code] son vectores y [code]weight[/code] es un "
+"Equivale a [code]mix(a, b, weight)[/code] en el lenguaje de sombreado; "
+"[code]a[/code] y [code]b[/code] son vectores y [code]weight[/code] un "
 "escalar."
 
 #: doc/classes/VisualShaderNodeVectorScalarSmoothStep.xml
@@ -100781,8 +100794,8 @@ msgid ""
 "Calculates a vector SmoothStep function using scalar within the visual "
 "shader graph."
 msgstr ""
-"Calcula una función vectorial SmoothStep usando el escalar dentro del "
-"gráfico shader visual."
+"Calcula una función SmoothStep de vector usando un escalar dentro del grafo "
+"del sombreador visual."
 
 #: doc/classes/VisualShaderNodeVectorScalarSmoothStep.xml
 msgid ""
@@ -100793,17 +100806,17 @@ msgid ""
 "code]. Otherwise the return value is interpolated between [code]0.0[/code] "
 "and [code]1.0[/code] using Hermite polynomials."
 msgstr ""
-"Se traduce a [code]smoothstep(edge0, edge1, x)[/code] en el lenguaje shader, "
-"donde [code]x[/code] es un escalar.\n"
-"Devuelve [code]0.0[/code] si [code]x[/code] es más pequeño que [code]edge0[/"
-"code] y [code]1.0[/code] si [code]x[/code] es más grande que [code]edge1[/"
-"code]. De lo contrario, el valor de retorno se interpola entre [code]0.0[/"
-"code] y [code]1.0[/code] utilizando polinomios de Hermite."
+"Equivale a [code]smoothstep(edge0, edge1, x)[/code] con [code]x[/code] "
+"escalar.\n"
+"Devuelve [code]0.0[/code] si [code]x[/code] es menor que [code]edge0[/code], "
+"[code]1.0[/code] si [code]x[/code] es mayor que [code]edge1[/code]; en otro "
+"caso interpola entre [code]0.0[/code] y [code]1.0[/code] con polinomios de "
+"Hermite."
 
 #: doc/classes/VisualShaderNodeVectorScalarStep.xml
 msgid "Calculates a vector Step function within the visual shader graph."
 msgstr ""
-"Calcula una función de paso vectorial dentro del gráfico shader visual."
+"Calcula una función Step de vector dentro del grafo del sombreador visual."
 
 #: doc/classes/VisualShaderNodeVectorScalarStep.xml
 msgid ""
@@ -100811,14 +100824,15 @@ msgid ""
 "Returns [code]0.0[/code] if [code]x[/code] is smaller than [code]edge[/code] "
 "and [code]1.0[/code] otherwise."
 msgstr ""
-"Se traduce a [code]step(edge, x)[/code] en el lenguaje shader.\n"
-"Devuelve [code]0.0[/code] si [code]x[/code] es más pequeño que [code]edge[/"
-"code] y [code]1.0[/code] en caso contrario."
+"Equivale a [code]step(edge, x)[/code] en el lenguaje de sombreado.\n"
+"Devuelve [code]0.0[/code] si [code]x[/code] es menor que [code]edge[/code] y "
+"[code]1.0[/code] en caso contrario."
 
 #: doc/classes/VisualShaderNodeVectorSmoothStep.xml
 msgid "Calculates a vector SmoothStep function within the visual shader graph."
 msgstr ""
-"Calcula una función vectorial SmoothStep dentro del gráfico shader visual."
+"Calcula una función SmoothStep de vector dentro del grafo del sombreador "
+"visual."
 
 #: doc/classes/VisualShaderNodeVectorSmoothStep.xml
 msgid ""
@@ -100829,12 +100843,12 @@ msgid ""
 "code]. Otherwise the return value is interpolated between [code]0.0[/code] "
 "and [code]1.0[/code] using Hermite polynomials."
 msgstr ""
-"Se traduce a [code]smoothstep(edge0, edge1, x)[/code] en el lenguaje shader, "
-"donde [code]x[/code] es un vector.\n"
-"Devuelve [code]0.0[/code] si [code]x[/code] es más pequeño que [code]edge0[/"
-"code] y [code]1.0[/code] si [code]x[/code] es más grande que [code]edge1[/"
-"code]. De lo contrario, el valor de retorno se interpola entre [code]0.0[/"
-"code] y [code]1.0[/code] utilizando polinomios de Hermite."
+"Equivale a [code]smoothstep(edge0, edge1, x)[/code] con [code]x[/code] "
+"vector por componentes.\n"
+"Devuelve [code]0.0[/code] si [code]x[/code] es menor que [code]edge0[/code], "
+"[code]1.0[/code] si [code]x[/code] es mayor que [code]edge1[/code]; en otro "
+"caso interpola entre [code]0.0[/code] y [code]1.0[/code] con polinomios de "
+"Hermite."
 
 #: doc/classes/VScrollBar.xml
 msgid "Vertical scroll bar."

@@ -5527,7 +5527,7 @@ msgstr ""
 #: doc/classes/InputEventAction.xml doc/classes/Label.xml doc/classes/Timer.xml
 #: doc/classes/VisibilityNotifier2D.xml
 msgid "2D Dodge The Creeps Demo"
-msgstr ""
+msgstr "Demo 2D «Dodge The Creeps»"
 
 #: doc/classes/AnimatedSprite.xml
 msgid ""
@@ -6647,9 +6647,9 @@ msgid ""
 "code] when calling [method AnimationNode.blend_input], forcing the blended "
 "animations to update every frame."
 msgstr ""
-"Si [code]true[/code], establece la optimización [code]optimization[/code] a "
-"[code]false[/code] al llamar al [method AnimationNode.blend_input], "
-"obligando a las animaciones mezcladas a actualizar cada fotograma."
+"Si es [code]true[/code], se establece la [code]optimization[/code] en "
+"[code]false[/code] al llamar a [method AnimationNode.blend_input], lo que "
+"obliga a las animaciones mezcladas a actualizarse en cada fotograma."
 
 #: doc/classes/AnimationNodeAdd3.xml
 msgid ""
@@ -6750,8 +6750,7 @@ msgid ""
 "linearly based on an amount value in the [code][0.0, 1.0][/code] range."
 msgstr ""
 "Un recurso para añadir a un [AnimationNodeBlendTree]. Mezcla dos animaciones "
-"linealmente basadas en un valor de cantidad en el rango de [code][0.0, 1.0][/"
-"code]."
+"de forma lineal según un factor en el rango [code][0.0, 1.0][/code]."
 
 #: doc/classes/AnimationNodeBlend3.xml
 msgid ""
@@ -6773,15 +6772,15 @@ msgid ""
 "- A +blend animation to blend with when the blend amount is in the [code]"
 "[0.0, 1.0][/code] range"
 msgstr ""
-"Un recurso para añadir a un [AnimationNodeBlendTree]. Mezcla dos animaciones "
-"juntas linealmente de tres basadas en un valor en el rango de [code][-1.0, "
-"1.0][/code].\n"
-"Este nodo tiene tres entradas:\n"
-"- La animación base\n"
-"- Una - animación de mezcla para mezclar cuando la cantidad de mezcla está "
-"en el rango de [code][-1.0, 0.0][/code].\n"
-"- Una + animación de mezcla para mezclar cuando la cantidad de mezcla está "
-"en el rango de [code][0.0, 1.0][/code]"
+"Un recurso para añadir a un [AnimationNodeBlendTree]. De entre tres "
+"animaciones, mezcla dos de forma lineal según un valor en el rango [code]"
+"[-1.0, 1.0][/code].\n"
+"El nodo tiene tres entradas:\n"
+"- Animación base\n"
+"- Animación de mezcla negativa (-), usada cuando el factor está en [code]"
+"[-1.0, 0.0][/code]\n"
+"- Animación de mezcla positiva (+), usada cuando el factor está en [code]"
+"[0.0, 1.0][/code]"
 
 #: doc/classes/AnimationNodeBlendSpace1D.xml
 msgid ""
@@ -7468,17 +7467,15 @@ msgstr ""
 
 #: doc/classes/AnimationNodeTimeScale.xml
 msgid "A time-scaling animation node to be used with [AnimationTree]."
-msgstr ""
-"Un nodo de animacion de tiempo escalada para ser utilizado con "
-"[AnimationTree]."
+msgstr "Nodo de animación de escala temporal para usar con [AnimationTree]."
 
 #: doc/classes/AnimationNodeTimeScale.xml
 msgid ""
 "Allows scaling the speed of the animation (or reversing it) in any children "
 "nodes. Setting it to 0 will pause the animation."
 msgstr ""
-"Permite escalar la velocidad de la animacion (o revertirla) en cualquiera de "
-"los nodos hijos. Colocandolo a 0 pausara la animacion."
+"Permite escalar la velocidad de la animación (o invertirla) en los nodos "
+"hijos. Si el valor es 0, la animación queda en pausa."
 
 #: doc/classes/AnimationNodeTimeSeek.xml
 msgid "A time-seeking animation node to be used with [AnimationTree]."
@@ -8547,7 +8544,7 @@ msgstr ""
 #: doc/classes/Area.xml doc/classes/QuadMesh.xml doc/classes/Viewport.xml
 #: doc/classes/ViewportTexture.xml
 msgid "GUI in 3D Demo"
-msgstr ""
+msgstr "GUI en la demostración 3D"
 
 #: doc/classes/Area.xml
 #, fuzzy
@@ -10646,7 +10643,6 @@ msgid "The origin point in AR/VR."
 msgstr "El punto de origen en AR/VR."
 
 #: doc/classes/ARVROrigin.xml
-#, fuzzy
 msgid ""
 "This is a special node within the AR/VR system that maps the physical "
 "location of the center of our tracking space to the virtual location within "
@@ -10661,23 +10657,22 @@ msgid ""
 "be a child node of this car. Or, if you're implementing a teleport system to "
 "move your character, you should change the position of this node."
 msgstr ""
-"Este es un nodo especial dentro del sistema AR/VR que mapea la ubicación "
+"Este es un nodo especial dentro del sistema AR/VR que asigna la ubicación "
 "física del centro de nuestro espacio de rastreo a la ubicación virtual "
 "dentro de nuestro mundo de juego.\n"
-"Sólo debe haber uno de estos nodos en tu escena y debes tener uno. Todos los "
-"nodos XRCamera3D, XRController3D y XRAnchor3D deben ser hijos directos de "
-"este nodo para que el rastreo espacial funcione correctamente.\n"
-"Es la posición de este nodo la que se actualiza cuando tu personaje necesita "
-"moverse por el mundo del juego mientras que nosotros no nos movemos en el "
-"mundo real. El movimiento en el mundo real siempre está en relación con este "
-"punto de origen.\n"
-"Por ejemplo, si tu personaje conduce un coche, el nodo XROrigin3D debería "
-"ser un nodo hijo de este coche. O, si estás implementando un sistema de "
-"teletransporte para mover tu personaje, deberías cambiar la posición de este "
+"Debe haber sólo un nodo de este tipo en su escena y usted debe tener uno. "
+"Los nodos [ARVRCamera], [ARVRController] y [ARVRAnchor] deben ser hijos "
+"directos de este nodo para que el rastreo espacial funcione correctamente.\n"
+"Es la posición de este nodo la que debe actualizarse cuando su personaje "
+"necesita moverse por su mundo de juego mientras no nos movemos en el mundo "
+"real. El movimiento en el mundo real siempre está en relación con este punto "
+"de origen.\n"
+"Por ejemplo, si su personaje conduce un coche, el nodo [ARVROrigin] debe ser "
+"un nodo hijo de este coche. O, si está implementando un sistema de "
+"teletransporte para mover a su personaje, debe cambiar la posición de este "
 "nodo."
 
 #: doc/classes/ARVROrigin.xml
-#, fuzzy
 msgid ""
 "Allows you to adjust the scale to your game's units. Most AR/VR platforms "
 "assume a scale of 1 game world unit = 1 real world meter.\n"
@@ -10686,7 +10681,7 @@ msgstr ""
 "Le permite ajustar la escala a las unidades de su juego. La mayoría de las "
 "plataformas AR/VR asumen una escala de 1 unidad del mundo del juego = 1 "
 "metro del mundo real.\n"
-"[b]Nota:[/b] Este método es un paso al [ARVRServer] mismo."
+"[b]Nota:[/b] Este método es un reenvío hacia el propio [ARVRServer]."
 
 #: doc/classes/ARVRPositionalTracker.xml
 msgid "A tracked object."
@@ -11835,15 +11830,16 @@ msgstr "La region utilizada del AtlasTexture."
 
 #: doc/classes/AudioBusLayout.xml
 msgid "Stores information about the audio buses."
-msgstr "Almacena informacion sobre los buses de audio."
+msgstr "Almacena la información de los buses de audio."
 
 #: doc/classes/AudioBusLayout.xml
 msgid ""
 "Stores position, muting, solo, bypass, effects, effect position, volume, and "
 "the connections between buses. See [AudioServer] for usage."
 msgstr ""
-"Almacena posicion, muteado, solo, bypass, efectos, posicion de efecto, "
-"volumen, y las conexiones entre buses. Ver [AudioServer] para su uso."
+"Almacena la posición, el silenciamiento (muting), el modo solo, el bypass, "
+"los efectos, la posición de los efectos, el volumen y las conexiones entre "
+"buses. Consulta [AudioServer] para su uso."
 
 #: doc/classes/AudioEffect.xml
 msgid "Audio effect for audio."
@@ -11862,7 +11858,7 @@ msgstr ""
 #: doc/classes/AudioStream.xml doc/classes/AudioStreamMicrophone.xml
 #: doc/classes/AudioStreamPlayer.xml
 msgid "Audio Mic Record Demo"
-msgstr ""
+msgstr "Demostración de grabación de audio con micrófono"
 
 #: doc/classes/AudioEffectAmplify.xml
 msgid ""
@@ -11887,15 +11883,16 @@ msgstr ""
 
 #: doc/classes/AudioEffectBandLimitFilter.xml
 msgid "Adds a band limit filter to the audio bus."
-msgstr "Añade un filtro de limite de banda al bus de audio."
+msgstr "Añade un filtro limitador de banda al bus de audio."
 
 #: doc/classes/AudioEffectBandLimitFilter.xml
 msgid ""
 "Limits the frequencies in a range around the [member AudioEffectFilter."
 "cutoff_hz] and allows frequencies outside of this range to pass."
 msgstr ""
-"Limita la frecuencia en un rango alrededor de [member AudioEffectFilter."
-"cutoff_hz] y permite frecuencia fuera de este rango pasar."
+"Limita las frecuencias en un intervalo alrededor de [member "
+"AudioEffectFilter.cutoff_hz] y deja pasar las que quedan fuera de ese "
+"intervalo."
 
 #: doc/classes/AudioEffectBandPassFilter.xml
 msgid "Adds a band pass filter to the audio bus."
@@ -11906,8 +11903,9 @@ msgid ""
 "Attenuates the frequencies inside of a range around the [member "
 "AudioEffectFilter.cutoff_hz] and cuts frequencies outside of this band."
 msgstr ""
-"Atenua las frecuencias dentro de un rango alrededor del [member "
-"AudioEffectFilter.cutoff_hz] y recorta la frecuencias fuera de esta banda."
+"Atenúa las frecuencias dentro de un intervalo alrededor de [member "
+"AudioEffectFilter.cutoff_hz] y atenúa o elimina las que quedan fuera de la "
+"banda."
 
 #: doc/classes/AudioEffectCapture.xml
 msgid "Captures audio from an audio bus in real-time."
@@ -12354,9 +12352,9 @@ msgid ""
 "over frequencies from 31 Hz to 16000 Hz.\n"
 "Each frequency can be modulated between -60/+24 dB."
 msgstr ""
-"Añade un efecto de audio ecualizador de 10 bandas a un bus de audio. Te da "
-"control sobre las frecuencias de 31 Hz a 16000 Hz.\n"
-"Cada frecuencia puede ser modulada entre -60/+24 dB."
+"Añade un ecualizador de 10 bandas al bus de audio. Permite controlar "
+"frecuencias de 31 Hz a 16000 Hz.\n"
+"Cada banda puede modularse entre -60 y +24 dB."
 
 #: doc/classes/AudioEffectEQ10.xml
 msgid ""
@@ -12392,9 +12390,9 @@ msgid ""
 "over frequencies from 22 Hz to 22000 Hz.\n"
 "Each frequency can be modulated between -60/+24 dB."
 msgstr ""
-"Añade un efecto de audio ecualizador de 21 bandas a un Audiobus. Te da "
-"control sobre las frecuencias de 22 Hz a 22000 Hz.\n"
-"Cada frecuencia puede ser modulada entre -60/+24 dB."
+"Añade un ecualizador de 21 bandas al bus de audio. Permite controlar "
+"frecuencias de 22 Hz a 22000 Hz.\n"
+"Cada banda puede modularse entre -60 y +24 dB."
 
 #: doc/classes/AudioEffectEQ21.xml
 msgid ""
@@ -12452,9 +12450,9 @@ msgid ""
 "frequencies from 32 Hz to 10000 Hz.\n"
 "Each frequency can be modulated between -60/+24 dB."
 msgstr ""
-"Añade un efecto de audio ecualizador de 6 bandas a un bus de Audio. Te da "
-"control sobre las frecuencias de 32 Hz a 10.000 Hz.\n"
-"Cada frecuencia puede ser modulada entre -60/+24 dB."
+"Añade un ecualizador de 6 bandas al bus de audio. Permite controlar "
+"frecuencias de 32 Hz a 10000 Hz.\n"
+"Cada banda puede modularse entre -60 y +24 dB."
 
 #: doc/classes/AudioEffectEQ6.xml
 msgid ""
@@ -12500,7 +12498,7 @@ msgstr "Cantidad de aumento en los sobretonos cerca de la frecuencia de corte."
 
 #: doc/classes/AudioEffectHighPassFilter.xml
 msgid "Adds a high-pass filter to the Audio Bus."
-msgstr "Añade un filtro de paso alto al Audio Bus."
+msgstr "Añade un filtro paso alto al bus de audio."
 
 #: doc/classes/AudioEffectHighPassFilter.xml
 msgid ""
@@ -12563,7 +12561,7 @@ msgstr ""
 
 #: doc/classes/AudioEffectLowPassFilter.xml
 msgid "Adds a low-pass filter to the Audio bus."
-msgstr "Añade un filtro de paso bajo al bus de Audio."
+msgstr "Añade un filtro paso bajo al bus de audio."
 
 #: doc/classes/AudioEffectLowPassFilter.xml
 msgid ""
@@ -12581,7 +12579,7 @@ msgstr ""
 
 #: doc/classes/AudioEffectNotchFilter.xml
 msgid "Adds a notch filter to the Audio bus."
-msgstr "Añade un filtro eliminador de banda al bus de Audio."
+msgstr "Añade un filtro de muesca (notch) al bus de audio."
 
 #: doc/classes/AudioEffectNotchFilter.xml
 msgid ""
@@ -12918,11 +12916,11 @@ msgstr ""
 
 #: doc/classes/AudioEffectSpectrumAnalyzerInstance.xml
 msgid "Use the average value as magnitude."
-msgstr "Utilice el valor promedio como magnitud."
+msgstr "Usa el valor medio como magnitud."
 
 #: doc/classes/AudioEffectSpectrumAnalyzerInstance.xml
 msgid "Use the maximum value as magnitude."
-msgstr "Utilice el valor máximo como magnitud."
+msgstr "Usa el valor máximo como magnitud."
 
 #: doc/classes/AudioServer.xml
 msgid "Server interface for low-level audio access."
@@ -13392,15 +13390,15 @@ msgstr "Controlador de flujo de audio OGG Vorbis."
 
 #: doc/classes/AudioStreamPlayback.xml
 msgid "Meta class for playing back audio."
-msgstr "Meta clase para reproducir el audio."
+msgstr "Metaclase para la reproducción de audio."
 
 #: doc/classes/AudioStreamPlayback.xml
 msgid ""
 "Can play, loop, pause a scroll through audio. See [AudioStream] and "
 "[AudioStreamOGGVorbis] for usage."
 msgstr ""
-"Puede reproducir, hacer un bucle, pausar un desplazamiento a través del "
-"audio. Ver [AudioStream] y [AudioStreamOGGVorbis] para su uso."
+"Permite reproducir, repetir en bucle y pausar el audio. Véase [AudioStream] "
+"y [AudioStreamOGGVorbis] para su uso."
 
 #: doc/classes/AudioStreamPlayer.xml
 msgid "Plays back audio non-positionally."
@@ -15130,15 +15128,14 @@ msgid "A node that will attach to a bone."
 msgstr "Un nodo que se unirá a un hueso."
 
 #: doc/classes/BoneAttachment.xml
-#, fuzzy
 msgid ""
 "This node must be the child of a [Skeleton] node. You can then select a bone "
 "for this node to attach to. The BoneAttachment node will copy the transform "
 "of the selected bone."
 msgstr ""
-"Este nodo debe ser hijo de un nodo [Skeleton]. Entonces puedes seleccionar "
-"un hueso para este nodo para que se una a él. El nodo BoneAttachment3D "
-"copiará la transformación del hueso seleccionado."
+"Este nodo debe ser hijo de un nodo [Skeleton]. A continuacion, puede "
+"seleccionar un hueso para adjuntarlo a este nodo. El nodo [BoneAttachment] "
+"copiara la transformacion del hueso seleccionado."
 
 #: doc/classes/BoneAttachment.xml
 msgid "The name of the attached bone."
@@ -15304,7 +15301,6 @@ msgstr ""
 "niños."
 
 #: doc/classes/BoxContainer.xml doc/classes/FlowContainer.xml
-#, fuzzy
 msgid ""
 "The alignment of the container's children (must be one of [constant "
 "ALIGN_BEGIN], [constant ALIGN_CENTER] or [constant ALIGN_END])."
@@ -15339,7 +15335,7 @@ msgstr "Forma de caja 3D que puede ser un hijo de un [PhysicsBody] o [Area]."
 #: doc/classes/RigidBody.xml doc/classes/SphereShape.xml
 #: doc/classes/StaticBody.xml
 msgid "3D Physics Tests Demo"
-msgstr ""
+msgstr "Demostración de pruebas de física 3D"
 
 #: doc/classes/BoxShape.xml doc/classes/CollisionShape.xml
 #: modules/gridmap/doc_classes/GridMap.xml doc/classes/KinematicBody.xml
@@ -15592,9 +15588,8 @@ msgid "Emitted when one of the buttons of the group is pressed."
 msgstr "Se emite cuando se presiona un botón de este controlador."
 
 #: doc/classes/CallbackTweener.xml
-#, fuzzy
 msgid "Calls the specified method after optional delay."
-msgstr "Bloquea el eje lineal o rotacional especificado."
+msgstr "Invoca el método especificado tras un retardo opcional."
 
 #: doc/classes/CallbackTweener.xml
 msgid ""
@@ -15604,6 +15599,12 @@ msgid ""
 "to create [CallbackTweener]. Any [CallbackTweener] created manually will not "
 "function correctly."
 msgstr ""
+"[CallbackTweener] se utiliza para llamar a un método en una secuencia de "
+"tweening. Consulte [method SceneTreeTween.tween_callback] para más "
+"información sobre su uso.\n"
+"[b]Nota:[/b] [method SceneTreeTween.tween_callback] es la única forma "
+"correcta de crear [CallbackTweener]. Cualquier [CallbackTweener] creado "
+"manualmente no funcionará correctamente."
 
 #: doc/classes/CallbackTweener.xml
 msgid ""
@@ -15614,6 +15615,13 @@ msgid ""
 "after 2 seconds\n"
 "[/codeblock]"
 msgstr ""
+"Retrasa la llamada al callback durante un tiempo determinado en segundos. "
+"Ejemplo:\n"
+"[codeblock]\n"
+"var tween = get_tree().create_tween()\n"
+"tween.tween_callback(queue_free).set_delay(2) # esto llamará a queue_free() "
+"tras 2 segundos\n"
+"[/codeblock]"
 
 #: doc/classes/Camera.xml
 msgid "Camera node, displays from a point of view."
@@ -16071,7 +16079,7 @@ msgstr ""
 #: doc/classes/Camera2D.xml doc/classes/Environment.xml
 #: doc/classes/WorldEnvironment.xml
 msgid "2D HDR Demo"
-msgstr ""
+msgstr "Demostración HDR 2D"
 
 #: doc/classes/Camera2D.xml
 msgid "Aligns the camera to the tracked node."
@@ -20225,6 +20233,8 @@ msgid ""
 "Displays a rectangle filled with a solid [member color]. If you need to "
 "display the border alone, consider using [ReferenceRect] instead."
 msgstr ""
+"Muestra un rectángulo relleno con un [member color] uniforme. Si necesita "
+"mostrar únicamente el borde, considere usar [ReferenceRect] en su lugar."
 
 #: doc/classes/ColorRect.xml
 msgid ""
@@ -20273,7 +20283,6 @@ msgid "Concave polygon 2D shape resource for physics."
 msgstr "Forma 2D polígonal cóncavo es un recurso para la física."
 
 #: doc/classes/ConcavePolygonShape2D.xml
-#, fuzzy
 msgid ""
 "Concave polygon 2D shape resource for physics. It is made out of segments "
 "and is optimal for complex polygonal concave collisions. However, it is not "
@@ -20290,16 +20299,21 @@ msgid ""
 "the segments in the [ConcavePolygonShape2D] (and not with any \"inside\" of "
 "the shape, for example)."
 msgstr ""
-"Forma 2D polígonal cóncavo es un recurso para la física. Está hecho de "
-"segmentos y es óptimo para colisiones poligonales cóncavas complejas. Sin "
-"embargo, no se aconseja su uso para nodos [RigidBody2D]. Un "
-"CollisionPolygon2D en modo de descomposición convexa (sólidos) o varios "
-"objetos convexos se aconsejan para ello. De lo contrario, una forma cóncava "
-"de polígono 2D es mejor para colisiones estáticas.\n"
-"La principal diferencia entre un [ConvexPolygonShape2D] y un "
-"[ConcavePolygonShape2D] es que un polígono cóncavo asume que es cóncavo y "
-"utiliza un método más complejo de detección de colisiones, y uno convexo se "
-"fuerza a sí mismo a ser convexo para acelerar la detección de colisiones."
+"Forma poligonal 2D cóncava para la física. Está hecha de segmentos y es "
+"óptima para colisiones poligonales cóncavas complejas. Sin embargo, no se "
+"recomienda su uso para nodos [RigidBody2D]. En su lugar, se aconseja "
+"[CollisionPolygon2D] en modo de descomposición convexa (sólidos) o varios "
+"objetos convexos. De lo contrario, una forma poligonal cóncava 2D es mejor "
+"para colisiones estáticas.\n"
+"La diferencia principal entre un [ConvexPolygonShape2D] y un "
+"[ConcavePolygonShape2D] es que el polígono cóncavo asume que lo es y utiliza "
+"un método de detección de colisiones más complejo, mientras que el convexo "
+"se fuerza a sí mismo a ser convexo para acelerar la detección de "
+"colisiones.\n"
+"[b]Advertencia:[/b] Usar esta forma para un [Area2D] (mediante un nodo "
+"[CollisionShape2D]) puede dar resultados inesperados: el área solo detectará "
+"colisiones con los segmentos en el [ConcavePolygonShape2D] (y no, por "
+"ejemplo, con ningún \"interior\" de la forma)."
 
 #: doc/classes/ConcavePolygonShape2D.xml
 msgid ""
@@ -20683,6 +20697,10 @@ msgid ""
 "may cause a crash. If you wish to hide it or any of its children, use their "
 "[member CanvasItem.visible] property."
 msgstr ""
+"Devuelve el botón de cancelar.\n"
+"[b]Advertencia:[/b] Este es un nodo interno necesario. Eliminarlo y "
+"liberarlo puede provocar un fallo. Si desea ocultarlo a él o a cualquiera de "
+"sus hijos, use la propiedad [member CanvasItem.visible]."
 
 #: doc/classes/Container.xml
 msgid "Base node for containers."
@@ -22820,7 +22838,6 @@ msgid "Convex polygon shape for 3D physics."
 msgstr "Forma de polígono convexo para la física 3D."
 
 #: doc/classes/ConvexPolygonShape.xml
-#, fuzzy
 msgid ""
 "Convex polygon shape resource, which can be added to a [PhysicsBody] or area."
 msgstr ""
@@ -24053,6 +24070,12 @@ msgid ""
 "node also has a significant CPU cost, so it should be avoided during "
 "gameplay."
 msgstr ""
+"Este nodo permite crear una caja para ser usada con el sistema CSG.\n"
+"[b]Nota:[/b] los nodos CSG están pensados para el prototipado de niveles. "
+"Crear nodos CSG tiene un coste de CPU significativo frente a un "
+"[MeshInstance] con un [PrimitiveMesh]. Mover un nodo CSG dentro de otro nodo "
+"CSG también tiene un coste de CPU elevado, por lo que debe evitarse durante "
+"el transcurso del juego."
 
 #: modules/csg/doc_classes/CSGBox.xml modules/csg/doc_classes/CSGCombiner.xml
 #: modules/csg/doc_classes/CSGCylinder.xml modules/csg/doc_classes/CSGMesh.xml
@@ -24061,7 +24084,7 @@ msgstr ""
 #: modules/csg/doc_classes/CSGShape.xml modules/csg/doc_classes/CSGSphere.xml
 #: modules/csg/doc_classes/CSGTorus.xml
 msgid "Prototyping levels with CSG"
-msgstr ""
+msgstr "Prototipado de niveles con CSG"
 
 #: modules/csg/doc_classes/CSGBox.xml
 msgid "Depth of the box measured from the center of the box."
@@ -24126,6 +24149,13 @@ msgid ""
 "node also has a significant CPU cost, so it should be avoided during "
 "gameplay."
 msgstr ""
+"Este nodo permite crear un cilindro (o cono) para ser usado con el sistema "
+"CSG.\n"
+"[b]Nota:[/b] los nodos CSG están pensados para el prototipado de niveles. "
+"Crear nodos CSG tiene un coste de CPU significativo frente a un "
+"[MeshInstance] con un [PrimitiveMesh]. Mover un nodo CSG dentro de otro nodo "
+"CSG también tiene un coste de CPU elevado, por lo que debe evitarse durante "
+"el transcurso del juego."
 
 #: modules/csg/doc_classes/CSGCylinder.xml
 msgid ""
@@ -24181,6 +24211,16 @@ msgid ""
 "node also has a significant CPU cost, so it should be avoided during "
 "gameplay."
 msgstr ""
+"Este nodo CSG permite utilizar cualquier recurso de malla como una forma "
+"CSG, siempre que esté cerrada, no se autointerseque, no contenga caras "
+"internas y no tenga aristas que conecten con más de dos caras. Consulta "
+"también [CSGPolygon] para dibujar polígonos 2D extruidos para ser usados "
+"como nodos CSG.\n"
+"[b]Nota:[/b] los nodos CSG están pensados para el prototipado de niveles. "
+"Crear nodos CSG tiene un coste de CPU significativo frente a un "
+"[MeshInstance] con un [PrimitiveMesh]. Mover un nodo CSG dentro de otro nodo "
+"CSG también tiene un coste de CPU elevado, por lo que debe evitarse durante "
+"el transcurso del juego."
 
 #: modules/csg/doc_classes/CSGMesh.xml
 msgid "The [Material] used in drawing the CSG shape."
@@ -24210,6 +24250,14 @@ msgid ""
 "node also has a significant CPU cost, so it should be avoided during "
 "gameplay."
 msgstr ""
+"Una matriz de puntos 2D se extruye para crear de forma rápida y sencilla una "
+"variedad de mallas 3D. Consulta también [CSGMesh] para usar mallas 3D como "
+"nodos CSG.\n"
+"[b]Nota:[/b] los nodos CSG están pensados para el prototipado de niveles. "
+"Crear nodos CSG tiene un coste de CPU significativo frente a un "
+"[MeshInstance] con un [PrimitiveMesh]. Mover un nodo CSG dentro de otro nodo "
+"CSG también tiene un coste de CPU elevado, por lo que debe evitarse durante "
+"el transcurso del juego."
 
 #: modules/csg/doc_classes/CSGPolygon.xml
 #, fuzzy
@@ -24387,6 +24435,13 @@ msgid ""
 "node also has a significant CPU cost, so it should be avoided during "
 "gameplay."
 msgstr ""
+"Clase padre de las primitivas CSG; reúne la lógica común. No debe usarse "
+"directamente: emplee una de las clases derivadas.\n"
+"[b]Nota:[/b] los nodos CSG están pensados para el prototipado de niveles. "
+"Crear nodos CSG tiene un coste de CPU significativo frente a un "
+"[MeshInstance] con un [PrimitiveMesh]. Mover un nodo CSG dentro de otro nodo "
+"CSG también tiene un coste de CPU elevado, por lo que debe evitarse durante "
+"el transcurso del juego."
 
 #: modules/csg/doc_classes/CSGPrimitive.xml
 msgid "Invert the faces of the mesh."
@@ -24406,6 +24461,13 @@ msgid ""
 "node also has a significant CPU cost, so it should be avoided during "
 "gameplay."
 msgstr ""
+"Esta es la clase base de CSG que proporciona soporte para operaciones CSG a "
+"los diversos nodos CSG en Godot.\n"
+"[b]Nota:[/b] los nodos CSG están pensados para el prototipado de niveles. "
+"Crear nodos CSG tiene un coste de CPU significativo frente a un "
+"[MeshInstance] con un [PrimitiveMesh]. Mover un nodo CSG dentro de otro nodo "
+"CSG también tiene un coste de CPU elevado, por lo que debe evitarse durante "
+"el transcurso del juego."
 
 #: modules/csg/doc_classes/CSGShape.xml doc/classes/RayCast2D.xml
 #: doc/classes/SoftBody.xml
@@ -24547,6 +24609,12 @@ msgid ""
 "node also has a significant CPU cost, so it should be avoided during "
 "gameplay."
 msgstr ""
+"Esta nodo permite crear una esfera para ser usada en el sistema CSG.\n"
+"[b]Nota:[/b] los nodos CSG están pensados para el prototipado de niveles. "
+"Crear nodos CSG tiene un coste de CPU significativo frente a un "
+"[MeshInstance] con un [PrimitiveMesh]. Mover un nodo CSG dentro de otro nodo "
+"CSG también tiene un coste de CPU elevado, por lo que debe evitarse durante "
+"el transcurso del juego."
 
 #: modules/csg/doc_classes/CSGSphere.xml
 msgid "The material used to render the sphere."
@@ -24587,6 +24655,12 @@ msgid ""
 "node also has a significant CPU cost, so it should be avoided during "
 "gameplay."
 msgstr ""
+"Este nodo permite crear un toroide para ser usado con el sistema CSG.\n"
+"[b]Nota:[/b] los nodos CSG están pensados para el prototipado de niveles. "
+"Crear nodos CSG tiene un coste de CPU significativo frente a un "
+"[MeshInstance] con un [PrimitiveMesh]. Mover un nodo CSG dentro de otro nodo "
+"CSG también tiene un coste de CPU elevado, por lo que debe evitarse durante "
+"el transcurso del juego."
 
 #: modules/csg/doc_classes/CSGTorus.xml doc/classes/TorusMesh.xml
 msgid "The inner radius of the torus."
@@ -29509,6 +29583,8 @@ msgid ""
 "Godot editor's control for selecting the [code]script[/code] property of a "
 "[Node]."
 msgstr ""
+"El control del editor de Godot para seleccionar la propiedad [code]script[/"
+"code] de un [Node]."
 
 #: doc/classes/EditorScriptPicker.xml
 msgid ""
@@ -29521,10 +29597,20 @@ msgid ""
 "[b]Note:[/b] You must set the [member script_owner] for the custom context "
 "menu items to work."
 msgstr ""
+"Similar a [EditorResourcePicker], este nodo [Control] se usa en el panel "
+"acoplable del Inspector del editor, pero solo para editar la propiedad "
+"[code]script[/code] de un [Node]. Las opciones predeterminadas para crear "
+"nuevos recursos de todos los subtipos posibles se sustituyen por botones "
+"dedicados que abren el diálogo «Attach Node Script». Puede usarse con "
+"[EditorInspectorPlugin] para recrear el mismo comportamiento.\n"
+"[b]Nota:[/b] Debe establecer el [member script_owner] para que funcionen los "
+"elementos del menú contextual del contexto personalizado."
 
 #: doc/classes/EditorScriptPicker.xml
 msgid "The owner [Node] of the script property that holds the edited resource."
 msgstr ""
+"El nodo [Node] propietario de la propiedad [code]script[/code] que contiene "
+"el recurso editado."
 
 #: doc/classes/EditorSelection.xml
 msgid "Manages the SceneTree selection in the editor."
@@ -31757,9 +31843,8 @@ msgstr ""
 "Llamado por los artilugios activos de este plugin."
 
 #: doc/classes/EditorSpinSlider.xml
-#, fuzzy
 msgid "Godot editor's control for editing numeric values."
-msgstr "El editor de script de Godot."
+msgstr "Control del editor de Godot para editar valores numéricos."
 
 #: doc/classes/EditorSpinSlider.xml
 msgid ""
@@ -31767,11 +31852,13 @@ msgid ""
 "of numeric values. Can be used with [EditorInspectorPlugin] to recreate the "
 "same behavior."
 msgstr ""
+"Este nodo [Control] se usa en el panel acoplado del Inspector del editor "
+"para permitir editar valores numéricos. Puede utilizarse con "
+"[EditorInspectorPlugin] para recrear el mismo comportamiento."
 
 #: doc/classes/EditorSpinSlider.xml
-#, fuzzy
 msgid "If [code]true[/code], the slider is hidden."
-msgstr "Si [code]true[/code], la flecha de plegado está oculta."
+msgstr "Si es [code]true[/code], el control deslizante se oculta."
 
 #: doc/classes/EditorVCSInterface.xml
 #, fuzzy
@@ -32438,11 +32525,8 @@ msgstr ""
 "- Ajustes"
 
 #: doc/classes/Environment.xml doc/classes/WorldEnvironment.xml
-#, fuzzy
 msgid "Environment and post-processing"
-msgstr ""
-"https://docs.godotengine.org/es/latest/tutorials/3d/"
-"environment_and_post_processing.html"
+msgstr "Entorno y posprocesamiento"
 
 #: doc/classes/Environment.xml
 msgid "Light transport in game engines"
@@ -32451,7 +32535,7 @@ msgstr ""
 #: doc/classes/Environment.xml doc/classes/Material.xml doc/classes/Mesh.xml
 #: doc/classes/MeshInstance.xml doc/classes/WorldEnvironment.xml
 msgid "3D Material Testers Demo"
-msgstr ""
+msgstr "Demostración de pruebas de materiales 3D"
 
 #: doc/classes/Environment.xml
 msgid ""
@@ -34325,9 +34409,8 @@ msgstr ""
 "devolverá 1000.0."
 
 #: doc/classes/FlowContainer.xml
-#, fuzzy
 msgid "Base class for flow containers."
-msgstr "Clase de base para contenedores de caja."
+msgstr "Clase base para contenedores de flujo."
 
 #: doc/classes/FlowContainer.xml
 msgid ""
@@ -34336,11 +34419,15 @@ msgid ""
 "A line is filled with [Control] nodes until no more fit on the same line, "
 "similar to text in an autowrapped label."
 msgstr ""
+"Organiza los nodos [Control] hijos de forma vertical u horizontal en un "
+"flujo de izquierda a derecha o de arriba a abajo.\n"
+"Una línea se rellena con nodos [Control] hasta que no quepa ninguno más en "
+"la misma línea, de forma similar al texto en una etiqueta con ajuste "
+"automático."
 
 #: doc/classes/FlowContainer.xml
-#, fuzzy
 msgid "Returns the current line count."
-msgstr "Devuelve la posición de scrolling actual."
+msgstr "Devuelve el número de líneas actual."
 
 #: doc/classes/Font.xml
 msgid "Internationalized font and text drawing support."
@@ -38890,9 +38977,9 @@ msgid ""
 "when it isn't under the cursor. If 0 ([code]false[/code]), it's always "
 "visible."
 msgstr ""
-"Valor booleano. Si 1 ([code]true[/code]), el grabador se esconderá "
-"automáticamente cuando no esté bajo el cursor. Si 0 ([code]false[/code]), "
-"siempre está visible."
+"Valor booleano. Si es 1 ([code]true[/code]), el control de agarre se oculta "
+"automáticamente cuando el puntero no está sobre él. Si es 0 ([code]false[/"
+"code]), permanece siempre visible."
 
 #: doc/classes/HSplitContainer.xml doc/classes/VSplitContainer.xml
 msgid "The space between sides of the container."
@@ -38900,7 +38987,7 @@ msgstr "El espacio entre los lados del contenedor."
 
 #: doc/classes/HSplitContainer.xml doc/classes/VSplitContainer.xml
 msgid "The icon used for the grabber drawn in the middle area."
-msgstr "El icono usado para el agarrador dibujado en la area media."
+msgstr "El icono del control de agarre dibujado en la zona central."
 
 #: doc/classes/HTTPClient.xml
 #, fuzzy
@@ -42587,7 +42674,7 @@ msgstr ""
 
 #: doc/classes/InputEventGesture.xml
 msgid "Base class for touch control gestures."
-msgstr "Clase base para gestos de control de tacto."
+msgstr "Clase base para gestos táctiles."
 
 #: doc/classes/InputEventGesture.xml
 msgid ""
@@ -42595,9 +42682,8 @@ msgid ""
 "Control._gui_input], the position is relative to the current [Control] that "
 "received this gesture."
 msgstr ""
-"La posición de gesto local relativa al [Viewport]. Si se utiliza en [method "
-"Control._gui_input], la posición es relativa al [Control] actual que recibió "
-"este gesto."
+"Posición local del gesto respecto al [Viewport]. En [method Control."
+"_gui_input], es relativa al [Control] que recibió el gesto."
 
 #: doc/classes/InputEventJoypadButton.xml
 msgid "Input event for gamepad buttons."
@@ -44369,13 +44455,12 @@ msgstr ""
 "[b]Nota:[/b] Solo disponible en la plataforma HTML5."
 
 #: doc/classes/JNISingleton.xml
-#, fuzzy
 msgid ""
 "Singleton that connects the engine with Android plugins to interface with "
 "native Android code."
 msgstr ""
-"Singleton que conecta el motor con el contexto JavaScript del navegador en "
-"la exportación HTML5."
+"Singleton que conecta el motor con complementos de Android para interfaz con "
+"código nativo de Android."
 
 #: doc/classes/JNISingleton.xml
 msgid ""
@@ -44386,10 +44471,16 @@ msgid ""
 "Java_Native_Interface]Java Native Interface - Wikipedia[/url] for more "
 "information."
 msgstr ""
+"El [JNISingleton] solo se implementa en la exportación para Android. Se "
+"utiliza para llamar a métodos y conectar señales desde un complemento de "
+"Android escrito en Java o Kotlin. Tanto los métodos como las señales pueden "
+"llamarse y conectarse al [JNISingleton] como si fuera un [Node]. Consulte "
+"[url=https://en.wikipedia.org/wiki/Java_Native_Interface]Java Native "
+"Interface - Wikipedia[/url] para más información."
 
 #: doc/classes/JNISingleton.xml
 msgid "Creating Android plugins"
-msgstr ""
+msgstr "Creación de complementos de Android"
 
 #: doc/classes/Joint.xml
 msgid "Base class for all 3D joints."
@@ -50422,7 +50513,6 @@ msgid "The [Mesh] that will be drawn by the [MeshInstance2D]."
 msgstr "La [Mesh] que será dibujada por la [MeshInstance2D]."
 
 #: doc/classes/MeshInstance2D.xml doc/classes/MultiMeshInstance2D.xml
-#, fuzzy
 msgid ""
 "The normal map that will be used if using the default [CanvasItemMaterial].\n"
 "[b]Note:[/b] Godot expects the normal map to use X+, Y+, and Z+ coordinates. "
@@ -50432,19 +50522,18 @@ msgid ""
 msgstr ""
 "El mapa normal que se utilizará si se utiliza el [CanvasItemMaterial] "
 "predeterminado.\n"
-"[b]Nota:[/b] Godot espera que el mapa normal use las coordenadas X+, Y-, y "
+"[b]Nota:[/b] Godot espera que el mapa normal use las coordenadas X+, Y+, y "
 "Z+. Ver [url=http://wiki.polycount.com/wiki/"
 "Normal_Map_Technical_Details#Common_Swizzle_Coordinates]esta página[/url] "
 "para una comparación de las coordenadas del mapa normal esperadas por los "
 "motores populares."
 
 #: doc/classes/MeshInstance2D.xml doc/classes/MultiMeshInstance2D.xml
-#, fuzzy
 msgid ""
 "The [Texture] that will be used if using the default [CanvasItemMaterial]. "
 "Can be accessed as [code]TEXTURE[/code] in CanvasItem shader."
 msgstr ""
-"La [Textura2D] que se utilizará si se usa el [CanvasItemMaterial] por "
+"La [Texture] que se utilizará si se usa el [CanvasItemMaterial] por "
 "defecto. Se puede acceder como [code]TEXTURE[/code] en el sombreador "
 "CanvasItem."
 
@@ -50971,7 +51060,6 @@ msgid "Node that instances a [MultiMesh]."
 msgstr "Nodo que instancia un [MultiMesh]."
 
 #: doc/classes/MultiMeshInstance.xml
-#, fuzzy
 msgid ""
 "[MultiMeshInstance] is a specialized node to instance [GeometryInstance]s "
 "based on a [MultiMesh] resource.\n"
@@ -50985,7 +51073,6 @@ msgstr ""
 "hebras de hierba)."
 
 #: doc/classes/MultiMeshInstance.xml
-#, fuzzy
 msgid ""
 "The [MultiMesh] resource that will be used and shared among all instances of "
 "the [MultiMeshInstance]."
@@ -50998,7 +51085,6 @@ msgid "Node that instances a [MultiMesh] in 2D."
 msgstr "Nodo que instancia un [MultiMesh] en 2D."
 
 #: doc/classes/MultiMeshInstance2D.xml
-#, fuzzy
 msgid ""
 "[MultiMeshInstance2D] is a specialized node to instance a [MultiMesh] "
 "resource in 2D.\n"
@@ -60148,12 +60234,10 @@ msgid "The style of [PanelContainer]'s background."
 msgstr "El estilo del fondo de [PanelContainer]."
 
 #: doc/classes/PanoramaSky.xml
-#, fuzzy
 msgid "A type of [Sky] used to draw a background texture."
-msgstr "Un [Material] usado con [Sky] para dibujar una textura de fondo."
+msgstr "Un tipo de [Sky] usado para dibujar una textura de fondo."
 
 #: doc/classes/PanoramaSky.xml
-#, fuzzy
 msgid ""
 "A resource referenced in an [Environment] that is used to draw a background. "
 "The Panorama sky functions similar to skyboxes in other engines, except it "
@@ -60165,21 +60249,21 @@ msgid ""
 "cubemap_to_panorama.html]this tool[/url] to convert a cube map to an "
 "equirectangular sky map."
 msgstr ""
-"Un recurso referenciado en un [Sky] que se utiliza para dibujar un fondo. El "
-"material del cielo panorama funciona de manera similar a los skyboxes de "
-"otros motores, excepto que utiliza un mapa del cielo equidireccional en "
-"lugar de un mapa cúbico.\n"
-"El uso de un panorama HDR es muy recomendable para obtener reflexiones "
-"precisas y de alta calidad. Godot soporta los formatos de imagen Radiance "
-"HDR ([code].hdr[/code]) y OpenEXR ([code].exr[/code]) para este propósito.\n"
+"Un recurso referenciado en un [Environment] que se utiliza para dibujar un "
+"fondo. El cielo Panorama funciona de manera similar a los skyboxes en otros "
+"motores, excepto que utiliza un mapa celeste equidireccional en lugar de un "
+"mapa cúbico.\n"
+"Se recomienda encarecidamente el uso de un panorama HDR para obtener "
+"reflexiones precisas y de alta calidad. Godot admite los formatos de imagen "
+"Radiance HDR ([code].hdr[/code]) y OpenEXR ([code].exr[/code]) para este "
+"propósito.\n"
 "Puedes usar [url=https://danilw.github.io/GLSL-howto/cubemap_to_panorama_js/"
 "cubemap_to_panorama.html]esta herramienta[/url] para convertir un mapa "
-"cúbico en un mapa celeste equirectangular."
+"cúbico en un mapa celeste equidireccional."
 
 #: doc/classes/PanoramaSky.xml
-#, fuzzy
 msgid "[Texture] to be applied to the PanoramaSky."
-msgstr "[Texture2D] para ser aplicado al [PanoramaSkyMaterial]."
+msgstr "[Texture] que se aplicará a [PanoramaSky]."
 
 #: doc/classes/ParallaxBackground.xml
 msgid "A node used to create a parallax scrolling background."
@@ -63042,7 +63126,6 @@ msgstr ""
 "física. Todos los tipos de *Body2D heredan de ella."
 
 #: doc/classes/PhysicsBody2D.xml
-#, fuzzy
 msgid ""
 "Both collision_layer and collision_mask. Returns collision_layer when "
 "accessed. Updates collision_layer and collision_mask when modified."
@@ -63052,9 +63135,8 @@ msgstr ""
 "collision_layer] y [member collision_mask] cuando son modificados."
 
 #: doc/classes/PhysicsDirectBodyState.xml
-#, fuzzy
 msgid "Direct access object to a physics body in the [PhysicsServer]."
-msgstr "Acceso directo al objeto a un cuerpo físico en el [PhysicsServer2D]."
+msgstr "Acceso directo al objeto a un cuerpo físico en el [PhysicsServer]."
 
 #: doc/classes/PhysicsDirectBodyState.xml
 msgid ""
@@ -64135,17 +64217,15 @@ msgstr ""
 "este Joint3D produce."
 
 #: doc/classes/PinJoint2D.xml
-#, fuzzy
 msgid "Pin Joint for 2D shapes."
-msgstr "Articulación de clavijas para formas 2D."
+msgstr "Articulación de clavija (Pin Joint) para formas 2D."
 
 #: doc/classes/PinJoint2D.xml
-#, fuzzy
 msgid ""
 "Pin Joint for 2D rigid bodies. It pins two bodies (rigid or static) together."
 msgstr ""
-"Articulación de clavijas para cuerpos rígidos 2D. Pega dos cuerpos (rígidos "
-"o estáticos) entre sí."
+"Articulación de clavijas para cuerpos rígidos 2D. Une dos cuerpos (rígidos o "
+"estáticos) entre sí."
 
 #: doc/classes/PinJoint2D.xml
 msgid ""
@@ -64372,23 +64452,21 @@ msgid "Infinite plane shape for 3D collisions."
 msgstr "Forma plana infinita para colisiones 3D."
 
 #: doc/classes/PlaneShape.xml
-#, fuzzy
 msgid ""
 "An infinite plane shape for 3D collisions. Note that the [Plane]'s normal "
 "matters; anything \"below\" the plane will collide with it. If the "
 "[PlaneShape] is used in a [PhysicsBody], it will cause colliding objects "
 "placed \"below\" it to teleport \"above\" the plane."
 msgstr ""
-"Una forma plana infinita para las colisiones 3D. Tenga en cuenta que el "
-"[Plane] es normal; cualquier cosa \"debajo\" del plano colisionará con él. "
-"Si el [WorldMarginShape] se usa en un [PhysicsBody], causará que los objetos "
-"que colisionen situados \"debajo\" de él se teletransporten \"por encima\" "
-"del plano."
+"Una forma plana infinita para las colisiones 3D. Tenga en cuenta que la "
+"normal del [Plane] es importante: todo lo que esté «debajo» del plano "
+"colisionará con él. Si la [PlaneShape] se usa en un [PhysicsBody], hará que "
+"los objetos que colisionen colocados «debajo» de ella se teletransporten "
+"«por encima» del plano."
 
 #: doc/classes/PlaneShape.xml
-#, fuzzy
 msgid "The [Plane] used by the [PlaneShape] for collision."
-msgstr "El [Plane] utilizado por el [WorldMarginShape] para la colisión."
+msgstr "El [Plane] que usa la [PlaneShape] para la colisión."
 
 #: doc/classes/PointMesh.xml
 msgid "Mesh with a single Point primitive."
@@ -65354,21 +65432,19 @@ msgid "Notification sent right after the popup is hidden."
 msgstr "Notificación recibida cuando el nodo es instanciado."
 
 #: doc/classes/PopupDialog.xml
-#, fuzzy
 msgid "Base class for popup dialogs."
-msgstr "Clase base para los separadores."
+msgstr "Clase base para diálogos emergentes."
 
 #: doc/classes/PopupDialog.xml
 msgid ""
 "PopupDialog is a base class for popup dialogs, along with [WindowDialog]."
 msgstr ""
+"PopupDialog es una clase base para diálogos emergentes, junto con "
+"[WindowDialog]."
 
 #: doc/classes/PopupDialog.xml
-#, fuzzy
 msgid "Sets a custom [StyleBox] for the panel of the [PopupDialog]."
-msgstr ""
-"Establece una costumbre [Texture2D] para las flechas ascendentes y "
-"descendentes del [SpinBox]."
+msgstr "Establece un [StyleBox] personalizado para el panel del [PopupDialog]."
 
 #: doc/classes/PopupMenu.xml
 msgid "PopupMenu displays a list of options."
@@ -66122,7 +66198,6 @@ msgid "Class for displaying popups with a panel background."
 msgstr "Clase para mostrar popups con un fondo de panel."
 
 #: doc/classes/PopupPanel.xml
-#, fuzzy
 msgid ""
 "Class for displaying popups with a panel background. In some cases it might "
 "be simpler to use than [Popup], since it provides a configurable background. "
@@ -66132,7 +66207,10 @@ msgid ""
 msgstr ""
 "Clase para mostrar popups con un fondo de panel. En algunos casos puede ser "
 "más simple de usar que el [Popup], ya que proporciona un fondo configurable. "
-"Si está haciendo ventanas, mejor revise [Window]."
+"Si está creando ventanas, mejor revise [WindowDialog].\n"
+"Si se añade cualquier nodo [Control] como hijo de este [PopupPanel], se "
+"ajustará para encajar en el tamaño del panel (similar a cómo funciona "
+"[PanelContainer])."
 
 #: doc/classes/PopupPanel.xml
 msgid "The background panel style of this [PopupPanel]."
@@ -66219,7 +66297,7 @@ msgstr ""
 
 #: doc/classes/Position2D.xml
 msgid "Generic 2D position hint for editing."
-msgstr "Sugerencia de la posición 2D genérica para editar."
+msgstr "Indicador de posición 2D genérico para la edición."
 
 #: doc/classes/Position2D.xml
 msgid ""
@@ -66227,10 +66305,10 @@ msgid ""
 "it displays as a cross in the 2D editor at all times. You can set cross' "
 "visual size by using the gizmo in the 2D editor while the node is selected."
 msgstr ""
-"Sugerencia de posición 2D genérica para editar. Es como un plano [Node2D], "
-"pero se muestra como una cruz en el editor 2D en todo momento. Puedes "
-"establecer el tamaño visual de la cruz usando el gizmo en el editor 2D "
-"mientras el nodo está seleccionado."
+"Indicador de posición 2D genérico para la edición. Equivale a un [Node2D] "
+"ordinario, pero en el editor 2D se muestra siempre como una cruz. Puede "
+"ajustar el tamaño visual de la cruz con el gizmo mientras el nodo está "
+"seleccionado."
 
 #: doc/classes/Position3D.xml
 msgid "Generic 3D position hint for editing."
@@ -71236,7 +71314,7 @@ msgstr ""
 #: doc/classes/QuadMesh.xml doc/classes/Viewport.xml
 #: doc/classes/ViewportTexture.xml
 msgid "2D in 3D Demo"
-msgstr ""
+msgstr "2D en la demostración 3D"
 
 #: doc/classes/QuadMesh.xml
 #, fuzzy
@@ -72036,7 +72114,7 @@ msgstr "La longitud del rayo."
 #: doc/classes/RayShape.xml doc/classes/RayShape2D.xml
 msgid "If [code]true[/code], allow the shape to return the correct normal."
 msgstr ""
-"Si [code]true[/code], permite que la forma devuelva la normalidad correcta."
+"Si es [code]true[/code], permite que la forma devuelva la normal correcta."
 
 #: doc/classes/RayShape2D.xml
 msgid "Ray shape for 2D collisions."
@@ -72048,9 +72126,9 @@ msgid ""
 "it tries to separate itself from whatever is touching its far endpoint. It's "
 "often useful for characters."
 msgstr ""
-"Forma de rayo para colisiones en 2D. Un rayo no es realmente un cuerpo de "
-"colisión, sino que intenta separarse de lo que está tocando su punto final "
-"lejano. A menudo es útil para los personajes."
+"Forma de rayo para colisiones 2D. Un rayo no es propiamente un cuerpo de "
+"colisión; en su lugar, intenta separarse de cualquier cosa que toque su "
+"extremo final. Suele ser útil para personajes."
 
 #: doc/classes/Rect2.xml
 #, fuzzy
@@ -75156,7 +75234,7 @@ msgstr ""
 
 #: doc/classes/RoomGroup.xml
 msgid "Groups [Room]s together to allow common functionality."
-msgstr ""
+msgstr "Agrupa [Room]s para permitir una funcionalidad común."
 
 #: doc/classes/RoomGroup.xml
 msgid ""
@@ -75173,6 +75251,19 @@ msgid ""
 "[code]notification[/code]s as they enter and exit the [b]gameplay area[/b] "
 "(see [RoomManager] for details)."
 msgstr ""
+"Aunque el comportamiento de cada [Room] puede especificarse individualmente, "
+"a veces es más rápido y conveniente programar una funcionalidad para un "
+"grupo de habitaciones.\n"
+"Los [RoomGroup] deben colocarse como hijos de la [b]lista de habitaciones[/b] "
+"(el [Node] padre de tus [Room]s), y las [Room] deben colocarse a su vez "
+"como hijas de un [RoomGroup] para asignarlas a este.\n"
+"Un [RoomGroup] puede utilizarse, por ejemplo, para designar habitaciones "
+"que están en el [b]exterior[/b], y activar o desactivar una luz direccional, "
+"el cielo o un efecto de lluvia cuando el jugador entra o sale del área.\n"
+"Los [RoomGroup] reciben [b]llamadas de retorno (callbacks) de jugabilidad[/b] "
+"cuando el [code]gameplay_monitor[/code] está activado, en forma de "
+"[code]signal[/code]s o [code]notification[/code]s al entrar y salir del "
+"[b]área de jugabilidad[/b] (consulta [RoomManager] para más detalles)."
 
 #: doc/classes/RoomGroup.xml
 msgid ""
@@ -75185,6 +75276,15 @@ msgid ""
 "when the camera is within the house, the house is used as the source room, "
 "but outside the house, the terrain room would be used instead."
 msgstr ""
+"Esta prioridad se aplicará a los [Room] del grupo. La prioridad de [Room] "
+"permite el uso de [b]habitaciones internas[/b], habitaciones [i]dentro[/i] "
+"de otra habitación u otras habitaciones.\n"
+"Cuando la [Camera] está dentro de más de una habitación (regular e interna), "
+"la habitación con mayor prioridad tendrá preferencia. Por ejemplo, si hay "
+"una casa dentro de una «habitación» de terreno, debe dar a la casa mayor "
+"prioridad para que, cuando la cámara esté dentro de la casa, esta se use "
+"como habitación de origen; y, cuando esté fuera, se use la habitación del "
+"terreno."
 
 #: doc/classes/RoomManager.xml
 msgid "The RoomManager node is used to control the portal culling system."
@@ -77181,9 +77281,9 @@ msgid ""
 "visual decoration. Horizontal ([HSeparator]) and Vertical ([VSeparator]) "
 "versions are available."
 msgstr ""
-"El separador es un [Control] que se utiliza para separar otros controles. Es "
-"puramente una decoración visual. Hay versiones horizontales ([HSeparator]) y "
-"verticales ([VSeparator])."
+"Separator es un [Control] utilizado para separar otros controles. Es "
+"puramente una decoración visual. Estan disponibles las versiones horizontal "
+"([HSeparator]) y vertical ([VSeparator])."
 
 #: doc/classes/Shader.xml
 msgid "A custom shader program."
@@ -78953,7 +79053,6 @@ msgid "Sphere shape for 3D collisions."
 msgstr "Forma de la esfera para las colisiones en 3D."
 
 #: doc/classes/SphereShape.xml
-#, fuzzy
 msgid ""
 "Sphere shape for 3D collisions, which can be set into a [PhysicsBody] or "
 "[Area]. This shape is useful for modeling sphere-like 3D objects."
@@ -81433,11 +81532,11 @@ msgstr ""
 
 #: doc/classes/StyleBoxEmpty.xml
 msgid "Empty stylebox (does not display anything)."
-msgstr "Caja de estilo vacía (no muestra nada)."
+msgstr "[StyleBox] vacío (no dibuja nada)."
 
 #: doc/classes/StyleBoxEmpty.xml
 msgid "Empty stylebox (really does not display anything)."
-msgstr "Caja de estilo vacía (realmente no muestra nada)."
+msgstr "[StyleBox] vacío (no dibuja absolutamente nada)."
 
 #: doc/classes/StyleBoxFlat.xml
 msgid ""
@@ -83785,9 +83884,8 @@ msgid "Texture is a video surface."
 msgstr "Obtiene un nombre para una superficie dada."
 
 #: doc/classes/Texture3D.xml
-#, fuzzy
 msgid "Texture with 3 dimensions."
-msgstr "Devuelve las dimensiones del mapa de bits."
+msgstr "Textura de tres dimensiones."
 
 #: doc/classes/Texture3D.xml
 msgid ""
@@ -83797,6 +83895,11 @@ msgid ""
 "backend. In GLES2, their data can be accessed via scripting, but there is no "
 "way to render them in a hardware-accelerated manner."
 msgstr ""
+"Texture3D es una [Texture] tridimensional con ancho, alto y profundidad. "
+"Consulte también [TextureArray].\n"
+"[b]Nota:[/b] Los [Texture3D] solo pueden muestrearse en shaders del backend "
+"GLES3. En GLES2, sus datos pueden accederse mediante scripting, pero no "
+"existe forma de renderizarlos con aceleración por hardware."
 
 #: doc/classes/Texture3D.xml
 msgid ""
@@ -83805,11 +83908,14 @@ msgid ""
 "code] options. See [enum TextureLayered.Flags] enumerator for [code]flags[/"
 "code] options."
 msgstr ""
+"Crea la Texture3D con los valores especificados de [code]width[/code], "
+"[code]height[/code] y [code]depth[/code]. Consulte [enum Image.Format] para "
+"las opciones de [code]format[/code]. Consulte el enumerador [enum "
+"TextureLayered.Flags] para las opciones de [code]flags[/code]."
 
 #: doc/classes/TextureArray.xml
-#, fuzzy
 msgid "Array of textures stored in a single primitive."
-msgstr "Número de vértices dibujados en un solo fotograma."
+msgstr "Matriz de texturas almacenadas en una sola primitiva."
 
 #: doc/classes/TextureArray.xml
 msgid ""
@@ -83849,6 +83955,43 @@ msgid ""
 "backend. In GLES2, their data can be accessed via scripting, but there is no "
 "way to render them in a hardware-accelerated manner."
 msgstr ""
+"Los [TextureArray]s almacenan una matriz de [Image] en una única primitiva "
+"[Texture] s. Cada capa del array de texturas tiene su propia cadena de "
+"mipmap. Esto lo convierte en una alternativa adecuada a los atlas de "
+"texturas. Consulte también [Texture3D].\n"
+"[TextureArray]s deben mostrarse usando shaders. Tras importar el archivo "
+"como [TextureArray] y configurar los Slices (rebanadas) horizontales y "
+"verticales correspondientes, visualícelo definiéndolo como uniforme de un "
+"shader, por ejemplo (2D):\n"
+"[codeblock]\n"
+"shader_type canvas_item;\n"
+"\n"
+"uniform sampler2DArray tex;\n"
+"uniform int index;\n"
+"\n"
+"void fragment() {\n"
+"    COLOR = texture(tex, vec3(UV.x, UV.y, float(index)));\n"
+"}\n"
+"[/codeblock]\n"
+"Establezca el uniforme entero \"index\" para mostrar una parte concreta de "
+"la textura, tal como se define mediante los Slices horizontales y verticales "
+"en el importador.\n"
+"[b]Nota:[/b] Al muestrear una textura de albedo desde un array de texturas "
+"en 3D, se debe usar la sugerencia de conversión sRGB -> lineal "
+"([code]hint_albedo[/code]) para evitar que los colores se vean deslavados:\n"
+"[codeblock]\n"
+"shader_type spatial;\n"
+"\n"
+"uniform sampler2DArray tex : hint_albedo;\n"
+"uniform int index;\n"
+"\n"
+"void fragment() {\n"
+"    ALBEDO = texture(tex, vec3(UV.x, UV.y, float(index)));\n"
+"}\n"
+"[/codeblock]\n"
+"[b]Nota:[/b] Los [TextureArray] solo se pueden muestrear en shaders en el "
+"backend GLES3. En GLES2, sus datos se pueden acceder mediante scripting, "
+"pero no hay forma de renderizarlos de manera acelerada por hardware."
 
 #: doc/classes/TextureArray.xml
 msgid ""
@@ -83857,6 +84000,10 @@ msgid ""
 "code] options. See [enum TextureLayered.Flags] enumerator for [code]flags[/"
 "code] options."
 msgstr ""
+"Crea el [TextureArray] con los valores especificados de [code]width[/code], "
+"[code]height[/code] y [code]depth[/code]. Consulte [enum Image.Format] para "
+"las opciones de [code]format[/code]. Consulte el enumerador [enum "
+"TextureLayered.Flags] para las opciones de [code]flags[/code]."
 
 #: doc/classes/TextureButton.xml
 msgid ""
@@ -88253,11 +88400,11 @@ msgstr "Alinea el texto a la derecha. Ver [code]set_text_align()[/code]."
 
 #: doc/classes/TriangleMesh.xml
 msgid "Internal mesh type."
-msgstr "Tipo de malla interna."
+msgstr "Tipo de malla interno."
 
 #: doc/classes/TriangleMesh.xml
 msgid "Mesh type used internally for collision calculations."
-msgstr "Tipo de malla utilizada internamente para los cálculos de colisión."
+msgstr "Malla usada internamente para el cálculo de colisiones."
 
 #: doc/classes/Tween.xml
 msgid "Smoothly animates a node's properties over time."
@@ -88678,7 +88825,7 @@ msgstr ""
 
 #: doc/classes/Tweener.xml
 msgid "Abstract class for all Tweeners used by [SceneTreeTween]."
-msgstr ""
+msgstr "Clase abstracta para todos los Tweeners usados por [SceneTreeTween]."
 
 #: doc/classes/Tweener.xml
 msgid ""
@@ -88687,11 +88834,14 @@ msgid ""
 "can't be created manually, you need to use a dedicated method from "
 "[SceneTreeTween]."
 msgstr ""
+"Los Tweeners son objetos que realizan una tarea de animación específica, por "
+"ejemplo interpolar una propiedad o llamar a un método en un momento "
+"determinado. No se puede crear un [Tweener] manualmente; debe usar un método "
+"dedicado de [SceneTreeTween]."
 
 #: doc/classes/Tweener.xml
-#, fuzzy
 msgid "Emitted when the [Tweener] has just finished its job."
-msgstr "Emitido cuando el nodo entra en el árbol."
+msgstr "Se emite cuando el [Tweener] acaba de finalizar su tarea."
 
 #: doc/classes/UDPServer.xml
 msgid "Helper class to implement a UDP server."
@@ -89715,7 +89865,7 @@ msgstr ""
 "var foo = 2 # foo es dinámicamente un entero\n"
 "foo = \"¡Ahora el foo es una string!\"\n"
 "foo = Reference.new() # foo es un objeto\n"
-"var bar int = 2 # la bar es un entero escrito estáticamente.\n"
+"var bar: int = 2 # bar es un entero con tipo estático.\n"
 "# bar = \"Uh oh! No puedo hacer que las variables estáticas se conviertan en "
 "un tipo diferente!\"\n"
 "[/codeblock]\n"
@@ -89738,10 +89888,10 @@ msgstr ""
 "Mono del mismo concepto.\n"
 "- El lenguaje estáticamente escrito NativeScript C++ no define una clase "
 "Variant-like incorporada. Los enlaces GDNative de Godot proporcionan su "
-"propio godot::Clase variante para los usuarios; Cualquier punto en el que el "
-"código C++ comience a interactuar con el tiempo de ejecución de Godot es un "
-"lugar en el que podrías tener que comenzar a envolver datos dentro de los "
-"objetos Variant.\n"
+"propio tipo [code]godot::Variant[/code] para el usuario; cualquier punto en "
+"el que el código C++ comience a interactuar con el tiempo de ejecución de "
+"Godot es un lugar en el que podrías tener que comenzar a envolver datos "
+"dentro de los objetos Variant.\n"
 "La función global [method @GDScript.typeof] devuelve el valor enumerado del "
 "tipo de Variante almacenado en la variable actual (véase [enum Variant."
 "Type]).\n"
@@ -89752,8 +89902,8 @@ msgstr ""
 "        print(\"foo es nulo\")\n"
 "    TYPE_INTEGER:\n"
 "        print(\"foo es un entero\")\n"
-"    TIPO_OBJECT:\n"
-"        # NotA que los objetos son su propia categoría especial.\n"
+"    TYPE_OBJECT:\n"
+"        # Nota: los objetos son su propia categoría especial.\n"
 "        # Para obtener el nombre del tipo de Objeto subyacente, necesitas el "
 "método `get_class()`.\n"
 "        print(\"foo es a(n) %s\" % foo.get_class()) # Inyectar el nombre de "
@@ -89790,7 +89940,7 @@ msgstr ""
 "configuraciones editables.\n"
 "- Puede funcionar como una propiedad exportada, de modo que el editor puede "
 "editarla universalmente.\n"
-"- Puede ser usado para diccionarios, arrrays, analizadores, etc.\n"
+"- Puede ser usado para diccionarios, arrays, analizadores, etc.\n"
 "[b]Contenedores (Array y Diccionario):[/b] Ambos se implementan utilizando "
 "variants. Un [Dictionary] puede hacer coincidir cualquier tipo de datos "
 "utilizado como clave con cualquier otro tipo de datos. Un [Array] sólo "
@@ -90905,7 +91055,7 @@ msgstr "Se emite cuando termina la reproducción."
 
 #: doc/classes/VideoStream.xml
 msgid "Base resource for video streams."
-msgstr "Recurso base para los streams de video."
+msgstr "Recurso base para flujos de vídeo."
 
 #: doc/classes/VideoStream.xml
 msgid ""
@@ -90913,9 +91063,8 @@ msgid ""
 "[VideoStream] can all be used as resource types to play back videos in "
 "[VideoPlayer]."
 msgstr ""
-"Tipo de recurso base para todos los streams de vídeo. Las clases que se "
-"derivan de [VideoStream] pueden utilizarse como tipos de recursos para "
-"reproducir vídeos en [VideoPlayer]."
+"Tipo de recurso base de los flujos de vídeo. Las clases derivadas de "
+"[VideoStream] sirven como recursos para reproducir vídeo en [VideoPlayer]."
 
 #: modules/gdnative/doc_classes/VideoStreamGDNative.xml
 #, fuzzy
@@ -91048,7 +91197,7 @@ msgstr ""
 
 #: doc/classes/Viewport.xml doc/classes/ViewportTexture.xml
 msgid "3D in 2D Demo"
-msgstr ""
+msgstr "3D en la demostración 2D"
 
 #: doc/classes/Viewport.xml
 msgid "Screen Capture Demo"
@@ -91060,7 +91209,7 @@ msgstr ""
 
 #: doc/classes/Viewport.xml doc/classes/ViewportTexture.xml
 msgid "3D Viewport Scaling Demo"
-msgstr ""
+msgstr "Demostración de escalado del viewport 3D"
 
 #: doc/classes/Viewport.xml
 #, fuzzy
@@ -91769,15 +91918,14 @@ msgid "Texture which displays the content of a [Viewport]."
 msgstr "Textura que muestra el contenido de un [Viewport]."
 
 #: doc/classes/ViewportTexture.xml
-#, fuzzy
 msgid ""
 "Displays the content of a [Viewport] node as a dynamic [Texture]. This can "
 "be used to mix controls, 2D, and 3D elements in the same scene.\n"
 "To create a ViewportTexture in code, use the [method Viewport.get_texture] "
 "method on the target viewport."
 msgstr ""
-"Muestra el contenido de un nodo [Viewport] como un [Texture2D] dinámico. "
-"Esto puede ser usado para mezclar controles, elementos 2D y 3D en la misma "
+"Muestra el contenido de un nodo [Viewport] como un [Texture] dinámico. Esto "
+"puede ser usado para mezclar controles, elementos 2D y 3D en la misma "
 "escena.\n"
 "Para crear un ViewportTexture en código, usa el método [method Viewport."
 "get_texture] en el viewport de destino."
@@ -92867,7 +93015,7 @@ msgstr "El título del nodo de comentarios."
 #: modules/visual_script/doc_classes/VisualScriptComposeArray.xml
 msgid "A Visual Script Node used to create array from a list of items."
 msgstr ""
-"Un Nodo de Script Visual usado para crear una array a partir de una lista de "
+"Nodo de VisualScript que construye un array a partir de una lista de "
 "elementos."
 
 #: modules/visual_script/doc_classes/VisualScriptComposeArray.xml
@@ -92875,13 +93023,12 @@ msgid ""
 "A Visual Script Node used to compose array from the list of elements "
 "provided with custom in-graph UI hard coded in the VisualScript Editor."
 msgstr ""
-"Un Nodo de Escritura Visual usado para componer un array a partir de la "
-"lista de elementos provistos de una interfaz gráfica personalizada "
-"codificada en el Editor VisualScript."
+"Nodo de VisualScript que compone un array a partir de los elementos "
+"indicados mediante la interfaz integrada en el grafo del editor VisualScript."
 
 #: modules/visual_script/doc_classes/VisualScriptCondition.xml
 msgid "A Visual Script node which branches the flow."
-msgstr "Un nodo Visual Script que ramifica el flujo."
+msgstr "Nodo de VisualScript que bifurca el flujo de ejecución."
 
 #: modules/visual_script/doc_classes/VisualScriptCondition.xml
 msgid ""
@@ -92897,14 +93044,13 @@ msgid ""
 "- Sequence: [code]false[/code]\n"
 "- Sequence: [code]done[/code]"
 msgstr ""
-"Un nodo Visual Script que comprueba un puerto de entrada [bool]. Si "
-"[code]true[/code], saldrá por el puerto de secuencia \"true\". Si "
-"[code]false[/code], saldrá por el puerto de secuencia \"falso\". Después de "
-"salir de cualquiera de los dos, saldrá a través del puerto \"done\". Los "
-"puertos de secuencia pueden dejarse desconectados.\n"
+"Evalúa un puerto de entrada [bool]. Si es [code]true[/code], continúa por el "
+"puerto de secuencia «true»; si es [code]false[/code], por «false». Tras "
+"cualquiera de las dos ramas, sale por «done». Los puertos de secuencia "
+"pueden quedar sin conectar.\n"
 "[b]Puertos de entrada:[/b]\n"
 "- Secuencia: [code]if (cond) is[/code]\n"
-"- Data (boolean): [code]cond[/code]\n"
+"- Datos (booleano): [code]cond[/code]\n"
 "[b]Puertos de salida:[/b]\n"
 "- Secuencia: [code]true[/code]\n"
 "- Secuencia: [code]false[/code]\n"
@@ -92938,15 +93084,15 @@ msgstr "El valor de la constante."
 
 #: modules/visual_script/doc_classes/VisualScriptConstructor.xml
 msgid "A Visual Script node which calls a base type constructor."
-msgstr "Un nodo Visual Script que llama a un constructor de tipo base."
+msgstr "Nodo de VisualScript que invoca el constructor de un tipo base."
 
 #: modules/visual_script/doc_classes/VisualScriptConstructor.xml
 msgid ""
 "A Visual Script node which calls a base type constructor. It can be used for "
 "type conversion as well."
 msgstr ""
-"Un nodo Visual Script que llama a un constructor de tipo base. También puede "
-"ser usado para la conversión de tipos."
+"Invoca el constructor de un tipo base; también sirve para conversión de "
+"tipos."
 
 #: modules/visual_script/doc_classes/VisualScriptCustomNode.xml
 msgid "A scripted Visual Script node."
@@ -93155,12 +93301,12 @@ msgstr ""
 msgid ""
 "A Visual Script node which deconstructs a base type instance into its parts."
 msgstr ""
-"Un nodo Visual Script que deconstruye una instancia de tipo base en sus "
-"partes."
+"Nodo de VisualScript que descompone una instancia de tipo base en sus "
+"componentes."
 
 #: modules/visual_script/doc_classes/VisualScriptDeconstruct.xml
 msgid "The type to deconstruct."
-msgstr "El tipo para deconstruir."
+msgstr "Tipo a descomponer."
 
 #: modules/visual_script/doc_classes/VisualScriptEditor.xml
 msgid ""
@@ -93208,8 +93354,7 @@ msgstr "La señal a emitir."
 
 #: modules/visual_script/doc_classes/VisualScriptEngineSingleton.xml
 msgid "A Visual Script node returning a singleton from [@GlobalScope]."
-msgstr ""
-"Un nodo de Visual Script que devuelve un solo singleton de [@GlobalScope]."
+msgstr "Nodo de VisualScript que devuelve un singleton de [@GlobalScope]."
 
 #: modules/visual_script/doc_classes/VisualScriptEngineSingleton.xml
 msgid "The singleton's name."
@@ -93488,7 +93633,7 @@ msgstr "Si [code]true[/code], el TreeItem se colapsa."
 
 #: modules/visual_script/doc_classes/VisualScriptIterator.xml
 msgid "Steps through items in a given input."
-msgstr "Pasos a través de los elementos de una entrada dada."
+msgstr "Recorre los elementos de una entrada."
 
 #: modules/visual_script/doc_classes/VisualScriptIterator.xml
 msgid ""
@@ -93503,17 +93648,16 @@ msgid ""
 "- Sequence: [code]exit[/code]\n"
 "- Data (variant): [code]elem[/code]"
 msgstr ""
-"Este nodo pasa por cada elemento de una entrada determinada. La entrada "
-"puede ser de cualquier tipo de datos de secuencia, como un [Array] o una "
-"[String]. Cuando cada elemento ha sido procesado, la ejecución pasa por el "
-"puerto de secuencia [code]exit[/code].\n"
+"Itera cada elemento de la entrada, que puede ser cualquier tipo secuencial "
+"(p. ej. [Array] o [String]). Al terminar, la ejecución sale por el puerto de "
+"secuencia [code]exit[/code].\n"
 "[b]Puertos de entrada:[/b]\n"
 "- Secuencia: [code]for (elem) in (input)[/code]\n"
-"- Datos (variante): [code]input[/code]\n"
+"- Datos (variant): [code]input[/code]\n"
 "[b]Puertos de salida:[/b]\n"
 "- Secuencia: [code]each[/code]\n"
 "- Secuencia: [code]exit[/code]\n"
-"- Datos (variante): [code]elem[/code]"
+"- Datos (variant): [code]elem[/code]"
 
 #: modules/visual_script/doc_classes/VisualScriptLists.xml
 msgid "A Visual Script virtual class for in-graph editable nodes."
@@ -93613,14 +93757,14 @@ msgid ""
 "- Sequence\n"
 "- Data (variant): [code]get[/code]"
 msgstr ""
-"Cambia el valor de una variable local a la entrada dada. El nuevo valor "
-"también se proporciona en un puerto de salida de datos.\n"
+"Asigna a la variable local el valor de entrada; el valor actualizado también "
+"está disponible en un puerto de datos de salida.\n"
 "[b]Puertos de entrada:[/b]\n"
 "- Secuencia\n"
-"- Datos (variante): [code]set[/code]\n"
+"- Datos (variant): [code]set[/code]\n"
 "[b]Puertos de salida:[/b]\n"
 "- Secuencia\n"
-"- Datos (variante): [code]get[/code]"
+"- Datos (variant): [code]get[/code]"
 
 #: modules/visual_script/doc_classes/VisualScriptMathConstant.xml
 msgid "Commonly used mathematical constants."
@@ -94087,7 +94231,7 @@ msgstr "El tipo de variables de entrada."
 
 #: modules/visual_script/doc_classes/VisualScriptSelf.xml
 msgid "Outputs a reference to the current instance."
-msgstr "Da una referencia a la instancia actual."
+msgstr "Devuelve una referencia a la instancia actual."
 
 #: modules/visual_script/doc_classes/VisualScriptSelf.xml
 msgid ""
@@ -94097,7 +94241,7 @@ msgid ""
 "[b]Output Ports:[/b]\n"
 "- Data (object): [code]instance[/code]"
 msgstr ""
-"Proporciona una referencia al nodo que ejecuta el script visual.\n"
+"Referencia al nodo que ejecuta el VisualScript.\n"
 "[b]Puertos de entrada:[/b]\n"
 "ninguno\n"
 "[b]Puertos de salida:[/b]\n"
@@ -94133,10 +94277,8 @@ msgid "The number of steps in the sequence."
 msgstr "El número de pasos en la secuencia."
 
 #: modules/visual_script/doc_classes/VisualScriptSubCall.xml
-#, fuzzy
 msgid "Calls a method called [code]_subcall[/code] in this object."
-msgstr ""
-"Crea una nueva señal llamada [code]signal_name[/code] en el objeto dado."
+msgstr "Invoca el método [code]_subcall[/code] de este objeto."
 
 #: modules/visual_script/doc_classes/VisualScriptSubCall.xml
 msgid ""
@@ -94144,14 +94286,16 @@ msgid ""
 "current script. It will fail if the method doesn't exist or the provided "
 "arguments are wrong."
 msgstr ""
+"[VisualScriptSubCall] llama al método [code]_subcall[/code] del script "
+"actual. Fallará si el método no existe o los argumentos no son válidos."
 
 #: modules/visual_script/doc_classes/VisualScriptSubCall.xml
 msgid "Called by this node."
-msgstr ""
+msgstr "Invocado por este nodo."
 
 #: modules/visual_script/doc_classes/VisualScriptSwitch.xml
 msgid "Branches program flow based on a given input's value."
-msgstr "Flujo de programa de ramas basado en el valor de una entrada dada."
+msgstr "Bifurca el flujo según el valor de una entrada."
 
 #: modules/visual_script/doc_classes/VisualScriptSwitch.xml
 msgid ""
@@ -94168,14 +94312,13 @@ msgid ""
 "- Sequence (optional)\n"
 "- Sequence: [code]done[/code]"
 msgstr ""
-"Ramifica el flujo basado en el valor de una entrada. Utilice [b]Case Count[/"
-"b] en el Inspector para establecer el número de ramas y el tipo opcional de "
-"cada comparación.\n"
+"Bifurca el flujo según el valor de entrada. En el inspector, [b]Case Count[/"
+"b] define el número de ramas y el tipo opcional de cada comparación.\n"
 "[b]Puertos de entrada:[/b]\n"
 "- Secuencia: [code]'input' is[/code]\n"
-"- Datos (variante): [code]=[/code]\n"
-"- Datos (variante): [code]=[/code] (opcional)\n"
-"- Datos (variante): [code]input[/code]\n"
+"- Datos (variant): [code]=[/code]\n"
+"- Datos (variant): [code]=[/code] (opcional)\n"
+"- Datos (variant): [code]input[/code]\n"
 "[b]Puertos de salida:[/b]\n"
 "- Secuencia\n"
 "- Secuencia (opcional)\n"
@@ -94241,10 +94384,10 @@ msgid ""
 "[b]Output Ports:[/b]\n"
 "- Sequence"
 msgstr ""
-"Cambia el valor de una variable a la entrada dada.\n"
+"Asigna a la variable el valor recibido por la entrada.\n"
 "[b]Puertos de entrada:[/b]\n"
 "- Secuencia\n"
-"- Datos (variante): [code]set[/code]\n"
+"- Datos (variant): [code]set[/code]\n"
 "[b]Puertos de salida:[/b]\n"
 "- Secuencia"
 
@@ -94263,11 +94406,11 @@ msgid ""
 "- Sequence: [code]repeat[/code]\n"
 "- Sequence: [code]exit[/code]"
 msgstr ""
-"Bucles mientras una condición es [code]true[/code]. La ejecución continúa "
-"fuera del puerto de secuencia [code]exit[/code] cuando el bucle termina.\n"
+"Ejecuta un bucle mientras la condición sea [code]true[/code]. Al terminar, "
+"la ejecución sale por el puerto de secuencia [code]exit[/code].\n"
 "[b]Puertos de entrada:[/b]\n"
 "- Secuencia: [code]while(cond)[/code]\n"
-"- Data (bool): [code]cond[/code]\n"
+"- Datos (bool): [code]cond[/code]\n"
 "[b]Puertos de salida:[/b]\n"
 "- Secuencia: [code]repeat[/code]\n"
 "- Secuencia: [code]exit[/code]"
@@ -99580,7 +99723,6 @@ msgstr ""
 "sombreado Godot."
 
 #: doc/classes/VisualShaderNodeExpression.xml
-#, fuzzy
 msgid ""
 "Custom Godot Shading Language expression, with a custom amount of input and "
 "output ports.\n"
@@ -100930,14 +101072,14 @@ msgstr ""
 
 #: doc/classes/VSplitContainer.xml
 msgid "Vertical split container."
-msgstr "Contenedor vertical dividido."
+msgstr "Contenedor con división vertical."
 
 #: doc/classes/VSplitContainer.xml
 msgid ""
 "Vertical split container. See [SplitContainer]. This goes from top to bottom."
 msgstr ""
-"Contenedor vertical dividido. Véase [SplitContainer]. Esto va de arriba a "
-"abajo."
+"Contenedor con división vertical. Véase [SplitContainer]; organiza de arriba "
+"hacia abajo."
 
 #: doc/classes/WeakRef.xml
 msgid ""
@@ -100970,13 +101112,12 @@ msgstr ""
 "dependencia cíclica, y permite que las referencias sean liberadas."
 
 #: doc/classes/WeakRef.xml
-#, fuzzy
 msgid ""
 "Returns the [Object] this weakref is referring to. Returns [code]null[/code] "
 "if that object no longer exists."
 msgstr ""
-"Devuelve el valor inicial de la propiedad especificada. Devuelve [code]null[/"
-"code] si la propiedad no existe."
+"Devuelve el [Object] al que se refiere este weakref. Devuelve [code]null[/"
+"code] si ese objeto ya no existe."
 
 #: modules/webrtc/doc_classes/WebRTCDataChannel.xml
 msgid "Closes this data channel, notifying the other peer."
@@ -102592,7 +102733,6 @@ msgstr ""
 "procesamiento, iluminación y ajustes de fondo)."
 
 #: doc/classes/WorldEnvironment.xml
-#, fuzzy
 msgid ""
 "The [WorldEnvironment] node is used to configure the default [Environment] "
 "for the scene.\n"

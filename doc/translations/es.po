@@ -2,7 +2,7 @@
 # Copyright (c) 2007-2022 Juan Linietsky, Ariel Manzur.
 # Copyright (c) 2014-2022 Godot Engine contributors (cf. AUTHORS.md).
 # This file is distributed under the same license as the Godot source code.
-#
+# 
 # 44pes Games <44pes.games@gmail.com>, 2020.
 # Megamega53 <Christopher.Morales21@myhunter.cuny.edu>, 2020, 2021.
 # Javier Ocampos <xavier.ocampos@gmail.com>, 2020, 2021, 2022.
@@ -46,7 +46,7 @@ msgstr ""
 "Project-Id-Version: Godot Engine class reference\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2026-03-25 00:20-0300\n"
+"PO-Revision-Date: 2026-03-26 13:20-0300\n"
 "Last-Translator: Juan Matías Olmos <elterraplanista@yahoo.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-class-reference/es/>\n"
@@ -5524,8 +5524,8 @@ msgstr ""
 #: doc/classes/AudioStreamPlayer.xml doc/classes/Button.xml
 #: doc/classes/CanvasLayer.xml doc/classes/CollisionShape2D.xml
 #: doc/classes/ColorRect.xml doc/classes/Input.xml doc/classes/InputEvent.xml
-#: doc/classes/InputEventAction.xml doc/classes/Label.xml doc/classes/Timer.xml
-#: doc/classes/VisibilityNotifier2D.xml
+#: doc/classes/InputEventAction.xml doc/classes/Label.xml
+#: doc/classes/Timer.xml doc/classes/VisibilityNotifier2D.xml
 msgid "2D Dodge The Creeps Demo"
 msgstr "Demo 2D «Dodge The Creeps»"
 
@@ -6699,10 +6699,11 @@ msgstr "AnimationTree"
 #: doc/classes/Camera.xml doc/classes/CollisionShape.xml
 #: doc/classes/CylinderShape.xml doc/classes/Environment.xml
 #: doc/classes/GIProbe.xml doc/classes/GIProbeData.xml
-#: doc/classes/KinematicBody.xml doc/classes/Light.xml doc/classes/Material.xml
-#: doc/classes/Mesh.xml doc/classes/MeshInstance.xml doc/classes/Particles.xml
-#: doc/classes/Quat.xml doc/classes/Skeleton.xml doc/classes/SpotLight.xml
-#: doc/classes/StaticBody.xml doc/classes/WorldEnvironment.xml
+#: doc/classes/KinematicBody.xml doc/classes/Light.xml
+#: doc/classes/Material.xml doc/classes/Mesh.xml doc/classes/MeshInstance.xml
+#: doc/classes/Particles.xml doc/classes/Quat.xml doc/classes/Skeleton.xml
+#: doc/classes/SpotLight.xml doc/classes/StaticBody.xml
+#: doc/classes/WorldEnvironment.xml
 msgid "Third Person Shooter Demo"
 msgstr "Demo de shooter en tercera persona"
 
@@ -11092,9 +11093,8 @@ msgstr ""
 #: doc/classes/PanelContainer.xml doc/classes/ScrollContainer.xml
 #: doc/classes/SplitContainer.xml doc/classes/TabContainer.xml
 #: doc/classes/VBoxContainer.xml doc/classes/VSplitContainer.xml
-#, fuzzy
 msgid "GUI containers"
-msgstr "Contenedor con pestaña."
+msgstr "Contenedores de interfaz"
 
 #: doc/classes/AspectRatioContainer.xml
 #, fuzzy
@@ -11928,7 +11928,8 @@ msgid ""
 msgstr ""
 
 #: doc/classes/AudioEffectCapture.xml doc/classes/AudioEffectDistortion.xml
-#: doc/classes/AudioEffectFilter.xml doc/classes/AudioEffectHighShelfFilter.xml
+#: doc/classes/AudioEffectFilter.xml
+#: doc/classes/AudioEffectHighShelfFilter.xml
 #: doc/classes/AudioEffectLowShelfFilter.xml doc/classes/AudioServer.xml
 msgid "Audio buses"
 msgstr "Buses de audio"
@@ -12492,9 +12493,10 @@ msgid "Gain amount of the frequencies after the filter."
 msgstr "Ganar cantidad de frecuencias después del filtro."
 
 #: doc/classes/AudioEffectFilter.xml
-#, fuzzy
 msgid "Amount of boost in the frequency range near the cutoff frequency."
-msgstr "Cantidad de aumento en los sobretonos cerca de la frecuencia de corte."
+msgstr ""
+"Cantidad de refuerzo en el rango de frecuencias cercano a la frecuencia de "
+"corte."
 
 #: doc/classes/AudioEffectHighPassFilter.xml
 msgid "Adds a high-pass filter to the Audio Bus."
@@ -12891,7 +12893,7 @@ msgstr ""
 #: doc/classes/AudioStream.xml doc/classes/AudioStreamPlayer.xml
 #: doc/classes/CanvasItem.xml
 msgid "Audio Spectrum Demo"
-msgstr ""
+msgstr "Demostración de espectro de audio"
 
 #: doc/classes/AudioEffectSpectrumAnalyzer.xml
 #: doc/classes/AudioStreamGenerator.xml
@@ -13233,14 +13235,13 @@ msgstr ""
 
 #: doc/classes/AudioStream.xml doc/classes/AudioStreamPlayer.xml
 msgid "Audio streams"
-msgstr ""
+msgstr "Flujos de audio"
 
 #: doc/classes/AudioStream.xml doc/classes/AudioStreamGenerator.xml
 #: doc/classes/AudioStreamGeneratorPlayback.xml
 #: doc/classes/AudioStreamPlayback.xml doc/classes/AudioStreamPlayer.xml
-#, fuzzy
 msgid "Audio Generator Demo"
-msgstr "Efecto de audio para audio."
+msgstr "Demostración de generador de audio"
 
 #: doc/classes/AudioStream.xml
 msgid "Returns the length of the audio stream in seconds."
@@ -14562,7 +14563,7 @@ msgstr ""
 #: doc/classes/TextureRect.xml doc/classes/Thread.xml
 #: doc/classes/VBoxContainer.xml
 msgid "3D Voxel Demo"
-msgstr ""
+msgstr "Demostración de vóxeles 3D"
 
 #: doc/classes/Basis.xml doc/classes/Line2D.xml doc/classes/Transform.xml
 #: doc/classes/Transform2D.xml
@@ -15146,7 +15147,6 @@ msgid "Boolean built-in type."
 msgstr "Tipo booleano incorporado."
 
 #: doc/classes/bool.xml
-#, fuzzy
 msgid ""
 "Boolean is a built-in type. There are two boolean values: [code]true[/code] "
 "and [code]false[/code]. You can think of it as a switch with on or off (1 or "
@@ -15195,52 +15195,50 @@ msgid ""
 "    can_shoot = true\n"
 "[/codeblock]"
 msgstr ""
-"El booleano es un tipo incorporado. Hay dos valores booleanos: [code]true[/"
-"code] y [code]false[/code]. Puedes pensar en ello como un interruptor con un "
-"ajuste de encendido o apagado (1 o 0). Los valores booleanos se usan en la "
-"programación de la lógica de las declaraciones de condición, como las "
-"declaraciones [code]if[/code].\n"
-"Los booleanos se pueden utilizar directamente en las sentencias [code]if[/"
-"code]. El código que se muestra a continuación lo demuestra en la línea "
-"[code]if puede_disparar:[/code]. No es necesario usar [code]== true[/code], "
-"sólo necesitas [code]if puede_disparar:[/code]. De manera similar, usa "
-"[code]if not puede_dispara:[/code] en lugar de [code]== false[/code].\n"
+"El tipo [code]bool[/code] (booleano) es un tipo de dato integrado. Existen dos valores booleanos: [code]true[/code] "
+"y [code]false[/code]. Puede interpretarse como un interruptor con estados de encendido o "
+"apagado (1 o 0). Los booleanos se utilizan en programación para la lógica de "
+"sentencias condicionales, como las instrucciones [code]if[/code].\n"
+"Los valores booleanos pueden emplearse directamente en sentencias [code]if[/code]. El "
+"siguiente código lo demuestra en la línea [code]if can_shoot:[/code]. No es "
+"necesario utilizar [code]== true[/code], solo basta con [code]if can_shoot:[/code]. De "
+"manera similar, utilice [code]if not can_shoot:[/code] en lugar de [code]== "
+"false[/code].\n"
 "[codeblock]\n"
-"var puede_disparar = true\n"
-"\n"
-"func dispara():\n"
-"    si puede disparar:\n"
-"        pass # Realizar acciones de disparo aquí.\n"
-"[/codeblock]\n"
-"El siguiente código sólo creará una bala si se cumplen ambas condiciones: se "
-"pulsa la acción \"disparar\" y si [code]puede_disparar[/code] es [code]true[/"
-"code].\n"
-"[b]Nota:[/b] [code]Input.is_action_pressed(\"disparar\")[/code] es también "
-"un booleano que es [code]true[/code] cuando se pulsa \"disparar\" y "
-"[code]false[/code] cuando no se pulsa \"disparar\".\n"
-"[codeblock]\n"
-"var puede_disparar = true\n"
+"var can_shoot = true\n"
 "\n"
 "func shoot():\n"
-"    if puede disparar and Input.is_action_pressed(\"dispara\"):\n"
-"        crear_bala()\n"
+"    if can_shoot:\n"
+"        pass # Realizar acciones de disparo aquí.\n"
 "[/codeblock]\n"
-"El siguiente código pondrá [code]puede_disparar[/code] en [code]false[/code] "
-"e iniciará un temporizador. Esto evitará que el jugador dispare hasta que el "
-"temporizador se agote. El siguiente [code]puede_disparar[/code] se ajustará "
-"a [code]true[/code] de nuevo permitiendo al jugador disparar una vez más.\n"
+"El siguiente código solo creará una bala si se cumplen ambas condiciones: se "
+"presiona la acción \"shoot\" y [code]can_shoot[/code] es [code]true[/code].\n"
+"[b]Nota:[/b] [code]Input.is_action_pressed(\"shoot\")[/code] también es un "
+"booleano que devuelve [code]true[/code] cuando se presiona \"shoot\" y [code]false[/"
+"code] cuando no.\n"
 "[codeblock]\n"
-"var puede_disparar = true\n"
-"onready var enfriado =  $CoolDownTimer\n"
+"var can_shoot = true\n"
 "\n"
-"func disparar():\n"
-"    if puede_disparar y Input.is_action_pressed(\"dispara\"):\n"
-"        crear_bala()\n"
-"        puede_disparar = false\n"
-"        enfriado.start()\n"
+"func shoot():\n"
+"    if can_shoot and Input.is_action_pressed(\"shoot\"):\n"
+"        create_bullet()\n"
+"[/codeblock]\n"
+"El siguiente código establecerá [code]can_shoot[/code] en [code]false[/code] "
+"e iniciará un temporizador. Esto evitará que el jugador dispare hasta que el "
+"temporizador finalice. Luego, [code]can_shoot[/code] se establecerá de nuevo "
+"en [code]true[/code], permitiendo que el jugador dispare una vez más.\n"
+"[codeblock]\n"
+"var can_shoot = true\n"
+"onready var cool_down = $CoolDownTimer\n"
+"\n"
+"func shoot():\n"
+"    if can_shoot and Input.is_action_pressed(\"shoot\"):\n"
+"        create_bullet()\n"
+"        can_shoot = false\n"
+"        cool_down.start()\n"
 "\n"
 "func _on_CoolDownTimer_timeout():\n"
-"    puede_disparar = true\n"
+"    can_shoot = true\n"
 "[/codeblock]"
 
 #: doc/classes/bool.xml
@@ -15325,7 +15323,6 @@ msgid "Box shape resource."
 msgstr "Recurso en forma de caja."
 
 #: doc/classes/BoxShape.xml
-#, fuzzy
 msgid "3D box shape that can be a child of a [PhysicsBody] or [Area]."
 msgstr "Forma de caja 3D que puede ser un hijo de un [PhysicsBody] o [Area]."
 
@@ -15342,7 +15339,7 @@ msgstr "Demostración de pruebas de física 3D"
 #: doc/classes/Mesh.xml doc/classes/MeshInstance.xml
 #: doc/classes/MeshLibrary.xml
 msgid "3D Kinematic Character Demo"
-msgstr ""
+msgstr "Demostración de personaje cinemático 3D"
 
 #: doc/classes/BoxShape.xml
 msgid ""
@@ -15404,7 +15401,7 @@ msgstr ""
 #: doc/classes/PoolStringArray.xml doc/classes/ProjectSettings.xml
 #: doc/classes/ResourceLoader.xml doc/classes/RichTextLabel.xml
 msgid "OS Test Demo"
-msgstr ""
+msgstr "Demostracion de prueba del SO"
 
 #: doc/classes/Button.xml
 msgid ""
@@ -15583,9 +15580,8 @@ msgid "Returns the current pressed button."
 msgstr "Devuelve el botón pulsado."
 
 #: doc/classes/ButtonGroup.xml
-#, fuzzy
 msgid "Emitted when one of the buttons of the group is pressed."
-msgstr "Se emite cuando se presiona un botón de este controlador."
+msgstr "Emitida cuando se presiona uno de los botones del grupo."
 
 #: doc/classes/CallbackTweener.xml
 msgid "Calls the specified method after optional delay."
@@ -17539,6 +17535,10 @@ msgid ""
 "[b]Note:[/b] The capsule's total height is equal to [member mid_height] + 2 "
 "* [member radius]."
 msgstr ""
+"Altura de la parte cilíndrica central de la cápsula (sin los extremos "
+"hemisféricos).\n"
+"[b]Nota:[/b] La altura total de la cápsula es igual a [member mid_height] + "
+"2 * [member radius]."
 
 #: doc/classes/CapsuleMesh.xml
 msgid "Number of radial segments on the capsule mesh."
@@ -20395,7 +20395,8 @@ msgstr ""
 "La torsión se bloquea si está por debajo de 0,05."
 
 #: doc/classes/ConeTwistJoint.xml doc/classes/Generic6DOFJoint.xml
-#: doc/classes/HingeJoint.xml doc/classes/Light.xml doc/classes/SliderJoint.xml
+#: doc/classes/HingeJoint.xml doc/classes/Light.xml
+#: doc/classes/SliderJoint.xml
 msgid "Represents the size of the [enum Param] enum."
 msgstr "Representa el tamaño del enum [enum Param]."
 
@@ -37290,7 +37291,6 @@ msgid "Gradient-filled texture."
 msgstr "Textura llena de gradientes."
 
 #: doc/classes/GradientTexture.xml
-#, fuzzy
 msgid ""
 "GradientTexture uses a [Gradient] to fill the texture data. The gradient "
 "will be filled from left to right using colors obtained from the gradient. "
@@ -37303,7 +37303,8 @@ msgstr ""
 "El gradiente se rellenará de izquierda a derecha usando los colores "
 "obtenidos del gradiente. Esto significa que la textura no representa "
 "necesariamente una copia exacta del gradiente, sino una interpolación de "
-"muestras obtenidas del gradiente a pasos fijos (ver [member width])."
+"muestras obtenidas del gradiente a pasos fijos (ver [member width]). "
+"Consulte también [GradientTexture2D] y [CurveTexture]."
 
 #: doc/classes/GradientTexture.xml
 msgid "The [Gradient] that will be used to fill the texture."
@@ -37317,6 +37318,12 @@ msgid ""
 "code], the generated texture will use low dynamic range; overbright colors "
 "will be clamped ([constant Image.FORMAT_RGBA8] format)."
 msgstr ""
+"Si es [code]true[/code], la textura generada admitirá alto rango dinámico "
+"(formato [constant Image.FORMAT_RGBAF]). Esto permite que los efectos de "
+"resplandor funcionen si [member Environment.glow_enabled] es [code]true[/"
+"code]. Si es [code]false[/code], la textura generada usará bajo rango dinámico; "
+"los colores demasiado brillantes se limitarán (formato [constant Image."
+"FORMAT_RGBA8])."
 
 #: doc/classes/GradientTexture.xml
 msgid "The number of color samples that will be obtained from the [Gradient]."
@@ -38176,15 +38183,14 @@ msgid "The background used when the [GraphNode] is selected."
 msgstr "El fondo utilizado cuando se selecciona el [GraphNode]."
 
 #: doc/classes/GridContainer.xml
-#, fuzzy
 msgid ""
 "Grid container used to arrange Control-derived children in a grid like "
 "layout."
 msgstr ""
-"Contenedor de rejilla utilizado para organizar los elementos en una rejilla."
+"Contenedor de cuadrícula usado para organizar hijos derivados de [Control] "
+"en una disposición tipo grilla."
 
 #: doc/classes/GridContainer.xml
-#, fuzzy
 msgid ""
 "GridContainer will arrange its Control-derived children in a grid like "
 "structure, the grid columns are specified using the [member columns] "
@@ -38197,23 +38203,25 @@ msgid ""
 "[b]Note:[/b] GridContainer only works with child nodes inheriting from "
 "Control. It won't rearrange child nodes inheriting from Node2D."
 msgstr ""
-"El contenedor de la cuadrícula dispondrá sus hijos en una estructura similar "
-"a una cuadrícula, las columnas de la cuadrícula se especifican utilizando la "
-"propiedad [member columns] y el número de filas será igual al número de "
-"hijos del contenedor dividido por el número de columnas. Por ejemplo, si el "
-"contenedor tiene 5 hijos y 2 columnas, habrá 3 filas en el contenedor.\n"
-"Obsérvese que la disposición en cuadrícula preservará las columnas y filas "
-"para cada tamaño del contenedor, y que las columnas vacías se expandirán "
-"automáticamente."
+"[GridContainer] organiza sus nodos hijos derivados de [Control] en una "
+"estructura de cuadrícula. Las columnas se especifican mediante la "
+"propiedad [member columns], y el número de filas será igual al número de "
+"hijos en el contenedor dividido por el número de columnas. Por ejemplo, si el "
+"contenedor tiene 5 hijos y 2 columnas, habrá 3 filas.\n"
+"Tenga en cuenta que la disposición de la cuadrícula conservará las columnas y "
+"filas para cualquier tamaño del contenedor, y que las columnas vacías se "
+"expandirán automáticamente.\n"
+"[b]Nota:[/b] [GridContainer] solo funciona con nodos hijos que hereden de "
+"[Control]. No reordenará nodos hijos que hereden de [Node2D]."
 
 #: doc/classes/GridContainer.xml
-#, fuzzy
 msgid ""
 "The number of columns in the [GridContainer]. If modified, [GridContainer] "
 "reorders its Control-derived children to accommodate the new layout."
 msgstr ""
-"El número de columnas en el [GridContainer]. Si se modifica, el "
-"[GridContainer] reordena sus hijos para acomodar el nuevo diseño."
+"El número de columnas en el [GridContainer]. Si se modifica, el [GridContainer] "
+"reordena sus nodos hijos derivados de [Control] para adaptarse a la nueva "
+"disposición."
 
 #: doc/classes/GridContainer.xml doc/classes/HFlowContainer.xml
 #: doc/classes/VFlowContainer.xml
@@ -38606,17 +38614,15 @@ msgid "The horizontal space between the [HBoxContainer]'s elements."
 msgstr "El espacio horizontal entre los elementos del [HBoxContainer]."
 
 #: doc/classes/HeightMapShape.xml
-#, fuzzy
 msgid "Height map shape for 3D physics."
-msgstr "Forma de mapa de altura para la física en 3D (Sólo la bala)."
+msgstr "Forma de mapa de alturas para fisica 3D."
 
 #: doc/classes/HeightMapShape.xml
-#, fuzzy
 msgid ""
 "Height map shape resource, which can be added to a [PhysicsBody] or [Area]."
 msgstr ""
-"Recurso de forma de mapa de altura, que puede ser añadido a un [PhysicsBody] "
-"o [Area]."
+"Recurso de forma de mapa de alturas que puede añadirse a un [PhysicsBody] o "
+"[Area]."
 
 #: doc/classes/HeightMapShape.xml
 msgid ""
@@ -38627,22 +38633,20 @@ msgstr ""
 "map_width] * [member map_depth] ."
 
 #: doc/classes/HeightMapShape.xml
-#, fuzzy
 msgid ""
 "Number of vertices in the depth of the height map. Changing this will resize "
 "the [member map_data]."
 msgstr ""
-"Los datos del mapa de la altura. Si se cambia esto, se redimensionará el "
-"[member map_data]."
+"Número de vértices en la profundidad del mapa de alturas. Cambiar esto "
+"redimensionará [member map_data]."
 
 #: doc/classes/HeightMapShape.xml
-#, fuzzy
 msgid ""
 "Number of vertices in the width of the height map. Changing this will resize "
 "the [member map_data]."
 msgstr ""
-"Ancho de los datos del mapa de altura. Si se cambia esto, se redimensionará "
-"el [member map_data]."
+"Número de vértices en el ancho del mapa de alturas. Cambiar esto "
+"redimensionará [member map_data]."
 
 #: doc/classes/HFlowContainer.xml
 msgid "Horizontal flow container."
@@ -38744,7 +38748,7 @@ msgstr ""
 
 #: doc/classes/HMACContext.xml
 msgid "Used to create an HMAC for a message using a key."
-msgstr ""
+msgstr "Se utiliza para crear un HMAC de un mensaje usando una clave."
 
 #: doc/classes/HMACContext.xml
 msgid ""
@@ -38795,18 +38799,68 @@ msgid ""
 "[/codeblock]\n"
 "[b]Note:[/b] Not available in HTML5 exports."
 msgstr ""
+"La clase HMACContext es útil para casos de uso avanzados de HMAC, como "
+"procesar el mensaje en streaming, ya que permite construir el mensaje a lo "
+"largo del tiempo en lugar de proporcionarlo completo de una vez.\n"
+"[codeblock]\n"
+"extends Node\n"
+"var ctx = HMACContext.new()\n"
+"\n"
+"func _ready():\n"
+"    var key = \"supersecret\".to_utf8()\n"
+"    var err = ctx.start(HashingContext.HASH_SHA256, key)\n"
+"    assert(err == OK)\n"
+"    var msg1 = \"this is \".to_utf8()\n"
+"    var msg2 = \"super duper secret\".to_utf8()\n"
+"    err = ctx.update(msg1)\n"
+"    assert(err == OK)\n"
+"    err = ctx.update(msg2)\n"
+"    assert(err == OK)\n"
+"    var hmac = ctx.finish()\n"
+"    print(hmac.hex_encode())\n"
+"[/codeblock]\n"
+"Y en C# podemos usar lo siguiente.\n"
+"[codeblock]\n"
+"using Godot;\n"
+"using System;\n"
+"using System.Diagnostics;\n"
+"\n"
+"public class CryptoNode : Node\n"
+"{\n"
+"    private HMACContext ctx = new HMACContext();\n"
+"    public override void _Ready()\n"
+"    {\n"
+"        PoolByteArray key = String(\"supersecret\").to_utf8();\n"
+"        Error err = ctx.Start(HashingContext.HASH_SHA256, key);\n"
+"        GD.Assert(err == OK);\n"
+"        PoolByteArray msg1 = String(\"this is \").to_utf8();\n"
+"        PoolByteArray msg2 = String(\"super duper secret\").to_utf8();\n"
+"        err = ctx.Update(msg1);\n"
+"        GD.Assert(err == OK);\n"
+"        err = ctx.Update(msg2);\n"
+"        GD.Assert(err == OK);\n"
+"        PoolByteArray hmac = ctx.Finish();\n"
+"        GD.Print(hmac.HexEncode());\n"
+"    }\n"
+"}\n"
+"[/codeblock]\n"
+"[b]Nota:[/b] No está disponible en exportaciones HTML5."
 
 #: doc/classes/HMACContext.xml
 msgid ""
 "Returns the resulting HMAC. If the HMAC failed, an empty [PoolByteArray] is "
 "returned."
 msgstr ""
+"Devuelve el HMAC resultante. Si el cálculo del HMAC falló, se devuelve un "
+"[PoolByteArray] vacío."
 
 #: doc/classes/HMACContext.xml
 msgid ""
 "Initializes the HMACContext. This method cannot be called again on the same "
 "HMACContext until [method finish] has been called."
 msgstr ""
+"Inicializa el HMACContext. Este método no puede volver a llamarse en el "
+"mismo HMACContext hasta que se haya llamado a [method finish]."
 
 #: doc/classes/HMACContext.xml
 msgid ""
@@ -38814,6 +38868,9 @@ msgid ""
 "[method finish] is called to append [code]data[/code] to the message, but "
 "cannot be called until [method start] has been called."
 msgstr ""
+"Actualiza el mensaje al que se le calculará el HMAC. Se puede llamar varias "
+"veces antes de [method finish] para añadir [code]data[/code] al mensaje, "
+"pero no puede llamarse hasta que se haya llamado a [method start]."
 
 #: doc/classes/HScrollBar.xml
 msgid "Horizontal scroll bar."
@@ -42698,11 +42755,10 @@ msgstr ""
 "joysticks analógicos de gamepad, ver [InputEventJoypadMotion]."
 
 #: doc/classes/InputEventJoypadButton.xml
-#, fuzzy
 msgid "Button identifier. One of the [enum JoystickList] button constants."
 msgstr ""
-"Identificador de botones. Una de las constantes del botón [enum "
-"JoyButtonList]."
+"Identificador del botón. Una de las constantes de botón del [enum "
+"JoystickList]."
 
 #: doc/classes/InputEventJoypadButton.xml
 msgid ""
@@ -42719,6 +42775,10 @@ msgid ""
 "[b]Note:[/b] This property is never set by the engine and is always [code]0[/"
 "code]."
 msgstr ""
+"Representa la presión que el usuario ejerce con el dedo sobre el botón, si "
+"el controlador lo admite. Va de [code]0[/code] a [code]1[/code].\n"
+"[b]Nota:[/b] Esta propiedad nunca la establece el motor y siempre es "
+"[code]0[/code]."
 
 #: doc/classes/InputEventJoypadMotion.xml
 msgid ""
@@ -42979,6 +43039,12 @@ msgid ""
 "in the [CanvasLayer] that the [Control] is in using the coordinate system of "
 "the [CanvasLayer]."
 msgstr ""
+"Cuando se recibe en [method Node._input] o [method Node._unhandled_input], "
+"devuelve la posición del ratón en el [Viewport] raíz usando el sistema de "
+"coordenadas del [Viewport] raíz.\n"
+"Cuando se recibe en [method Control._gui_input], devuelve la posición del "
+"ratón en el [CanvasLayer] en el que está el [Control], usando el sistema de "
+"coordenadas de dicho [CanvasLayer]."
 
 #: doc/classes/InputEventMouse.xml
 msgid ""
@@ -42988,6 +43054,11 @@ msgid ""
 "When received in [method Control._gui_input], returns the mouse's position "
 "in the [Control] using the local coordinate system of the [Control]."
 msgstr ""
+"Cuando se recibe en [method Node._input] o [method Node._unhandled_input], "
+"devuelve la posición del ratón en el [Viewport] en el que está este [Node], "
+"usando el sistema de coordenadas de ese [Viewport].\n"
+"Cuando se recibe en [method Control._gui_input], devuelve la posición del "
+"ratón en el [Control] usando el sistema de coordenadas local del [Control]."
 
 #: doc/classes/InputEventMouseButton.xml
 msgid "Input event type for mouse button events."
@@ -43465,7 +43536,6 @@ msgstr ""
 "igual a 1 y [code]int(false)[/code] será igual a 0."
 
 #: doc/classes/int.xml
-#, fuzzy
 msgid ""
 "Cast a float value to an integer value, this method simply removes the "
 "number fractions (i.e. rounds [code]from[/code] towards zero), so for "
@@ -43473,10 +43543,11 @@ msgid ""
 "will be equals to 0 and [code]int(-2.7)[/code] will be equals to -2. This "
 "operation is also called truncation."
 msgstr ""
-"Transforma un valor real a un valor entero, este método simplemente elimina "
-"las fracciones numéricas, así por ejemplo [code]int(2.7)[/code] será igual a "
-"2, [code]int(.1)[/code] será igual a 0 y [code]int(-2.7)[/code] será igual a "
-"-2."
+"Convierte un valor [float] en un valor entero. Este método simplemente "
+"elimina la parte fraccionaria (es decir, redondea [code]from[/code] hacia el "
+"cero). Por ejemplo, [code]int(2.7)[/code] será 2, [code]int(0.1)[/code] será "
+"0 y [code]int(-2.7)[/code] será -2. Esta operación también se conoce como "
+"truncamiento."
 
 #: doc/classes/int.xml
 msgid ""
@@ -44499,7 +44570,7 @@ msgstr ""
 #: doc/classes/Joint.xml doc/classes/RigidBody.xml doc/classes/VehicleBody.xml
 #: doc/classes/VehicleWheel.xml
 msgid "3D Truck Town Demo"
-msgstr ""
+msgstr "Demostración 3D de Truck Town"
 
 #: doc/classes/Joint.xml
 msgid ""
@@ -45476,10 +45547,12 @@ msgid ""
 "The collision angle according to [code]up_direction[/code], which is "
 "[code]Vector2.UP[/code] by default. This value is always positive."
 msgstr ""
+"El ángulo de colisión según [code]up_direction[/code], que por defecto es "
+"[code]Vector2.UP[/code]. Este valor siempre es positivo."
 
 #: doc/classes/KinematicCollision2D.xml
 msgid "The colliding body's [RID] used by the [Physics2DServer]."
-msgstr ""
+msgstr "El [RID] del cuerpo que colisiona, usado por el [Physics2DServer]."
 
 #: doc/classes/KinematicCollision2D.xml
 msgid "The colliding shape's index. See [CollisionObject2D]."
@@ -50533,9 +50606,9 @@ msgid ""
 "The [Texture] that will be used if using the default [CanvasItemMaterial]. "
 "Can be accessed as [code]TEXTURE[/code] in CanvasItem shader."
 msgstr ""
-"La [Texture] que se utilizará si se usa el [CanvasItemMaterial] por "
-"defecto. Se puede acceder como [code]TEXTURE[/code] en el sombreador "
-"CanvasItem."
+"La [Texture] que se utilizará si se emplea el [CanvasItemMaterial] "
+"predeterminado. Se puede acceder a ella como [code]TEXTURE[/code] en el "
+"shader de CanvasItem."
 
 #: doc/classes/MeshInstance2D.xml doc/classes/MultiMeshInstance2D.xml
 msgid "Emitted when the [member texture] is changed."
@@ -50708,6 +50781,8 @@ msgstr ""
 msgid ""
 "Interpolates an abstract value and supplies it to a method called over time."
 msgstr ""
+"Interpola un valor abstracto y se lo suministra a un método al que se llama "
+"a lo largo del tiempo."
 
 #: doc/classes/MethodTweener.xml
 msgid ""
@@ -50719,18 +50794,30 @@ msgid ""
 "create [MethodTweener]. Any [MethodTweener] created manually will not "
 "function correctly."
 msgstr ""
+"[MethodTweener] es similar a una combinación de [CallbackTweener] y "
+"[PropertyTweener]. Llama a un método proporcionando un valor interpolado "
+"como parámetro. Consulte [method SceneTreeTween.tween_method] para más "
+"información de uso.\n"
+"[b]Nota:[/b] [method SceneTreeTween.tween_method] es la única forma correcta "
+"de crear un [MethodTweener]. Cualquier [MethodTweener] creado manualmente no "
+"funcionará correctamente."
 
 #: doc/classes/MethodTweener.xml
 msgid ""
 "Sets the time in seconds after which the [MethodTweener] will start "
 "interpolating. By default there's no delay."
 msgstr ""
+"Establece el tiempo en segundos tras el cual el [MethodTweener] comenzará a "
+"interpolar. Por defecto no hay retraso."
 
 #: doc/classes/MethodTweener.xml doc/classes/PropertyTweener.xml
 msgid ""
 "Sets the type of used easing from [enum Tween.EaseType]. If not set, the "
 "default easing is used from the [SceneTreeTween] that contains this Tweener."
 msgstr ""
+"Establece el tipo de «easing» (suavizado) usado a partir de [enum Tween.EaseType]. Si no "
+"se establece, se usa el easing por defecto del [SceneTreeTween] que contiene "
+"este Tweener."
 
 #: doc/classes/MethodTweener.xml doc/classes/PropertyTweener.xml
 msgid ""
@@ -50738,6 +50825,9 @@ msgid ""
 "set, the default transition is used from the [SceneTreeTween] that contains "
 "this Tweener."
 msgstr ""
+"Establece el tipo de transición usada a partir de [enum Tween."
+"TransitionType]. Si no se establece, se usa la transición por defecto del "
+"[SceneTreeTween] que contiene este Tweener."
 
 #: modules/mobile_vr/doc_classes/MobileVRInterface.xml
 msgid "Generic mobile VR implementation."
@@ -51437,6 +51527,21 @@ msgid ""
 "- By the time a [Thread]'s reference count reaches zero and therefore it is "
 "destroyed, it must not have any mutex locked."
 msgstr ""
+"Un mutex de sincronización (exclusión mutua). Se utiliza para sincronizar "
+"varios [Thread] y equivale a un [Semaphore] binario. Garantiza que solo un "
+"hilo pueda adquirir el bloqueo a la vez. Un mutex puede usarse para proteger "
+"una sección crítica; sin embargo, tenga cuidado de evitar interbloqueos "
+"(deadlocks).\n"
+"Es de tipo recursivo, por lo que un mismo hilo puede bloquearlo varias "
+"veces, siempre que también lo desbloquee el mismo número de veces.\n"
+"[b]Advertencia:[/b]\n"
+"Para garantizar que el sistema operativo pueda realizar una limpieza "
+"adecuada (sin fallos ni interbloqueos), deben cumplirse estas condiciones:\n"
+"- Cuando el recuento de referencias de un [Mutex] llegue a cero y, por "
+"tanto, sea destruido, ningún hilo (incluido aquel en el que se produzca la "
+"destrucción) debe tenerlo bloqueado.\n"
+"- Cuando el recuento de referencias de un [Thread] llegue a cero y, por "
+"tanto, sea destruido, no debe tener ningún mutex bloqueado."
 
 #: doc/classes/Mutex.xml
 msgid ""
@@ -51444,17 +51549,22 @@ msgid ""
 "[b]Note:[/b] This function returns without blocking if the thread already "
 "has ownership of the mutex."
 msgstr ""
+"Bloquea este [Mutex] y se bloquea hasta que el propietario actual lo "
+"desbloquee.\n"
+"[b]Nota:[/b] Esta función retorna sin bloquearse si el hilo ya es "
+"propietario del mutex."
 
 #: doc/classes/Mutex.xml
-#, fuzzy
 msgid ""
 "Tries locking this [Mutex], but does not block. Returns [constant OK] on "
 "success, [constant ERR_BUSY] otherwise.\n"
 "[b]Note:[/b] This function returns [constant OK] if the thread already has "
 "ownership of the mutex."
 msgstr ""
-"Trata de bloquear este [Mutex], pero no bloquea. Devuelve [constant OK] en "
-"el éxito, [constant ERR_BUSY] en caso contrario."
+"Intenta bloquear este [Mutex], pero no se bloquea. Devuelve [constant OK] si "
+"tiene éxito, o [constant ERR_BUSY] en caso contrario.\n"
+"[b]Nota:[/b] Esta función devuelve [constant OK] si el hilo ya es "
+"propietario del mutex."
 
 #: doc/classes/Mutex.xml
 msgid ""
@@ -51466,6 +51576,13 @@ msgid ""
 "given thread, thus ending up trying to unlock a non-locked mutex, is wrong "
 "and may causes crashes or deadlocks."
 msgstr ""
+"Desbloquea este [Mutex], dejándolo disponible para otros hilos.\n"
+"[b]Nota:[/b] Si un hilo llamó a [method lock] o [method try_lock] varias "
+"veces mientras ya era propietario del mutex, también debe llamar a [method "
+"unlock] el mismo número de veces para desbloquearlo correctamente.\n"
+"[b]Advertencia:[/b] Llamar a [method unlock] más veces que a [method lock] "
+"en un hilo determinado, intentando así desbloquear un mutex que no está "
+"bloqueado, es incorrecto y puede provocar fallos o interbloqueos."
 
 #: modules/gdnative/doc_classes/NativeScript.xml
 msgid ""
@@ -51500,7 +51617,6 @@ msgstr ""
 "[code]godot_nativescript_set_signal_documentation[/code]."
 
 #: modules/gdnative/doc_classes/NativeScript.xml
-#, fuzzy
 msgid ""
 "Constructs a new object of the base type with a script of this type already "
 "attached.\n"
@@ -51510,8 +51626,8 @@ msgid ""
 msgstr ""
 "Construye un nuevo objeto del tipo base con un script de este tipo ya "
 "adjunto.\n"
-"[i]Nota [/i]: Cualquier argumento que se pase a esta función será ignorado y "
-"no se pasará a la función constructora nativa. Esto cambiará con una futura "
+"[b]Nota:[/b] Cualquier argumento pasado a esta función se ignorará y no se "
+"pasará a la función constructora nativa. Esto cambiará en una futura "
 "extensión de la API."
 
 #: doc/classes/Navigation.xml
@@ -52847,19 +52963,20 @@ msgid ""
 "Enables radius estimation algorithm which uses parent's collision shapes to "
 "determine the obstacle radius."
 msgstr ""
+"Habilita el algoritmo de estimación de radio que utiliza las formas de "
+"colisión del nodo padre para determinar el radio del obstáculo."
 
 #: doc/classes/NavigationObstacle.xml doc/classes/NavigationObstacle2D.xml
-#, fuzzy
 msgid ""
 "The radius of the agent. Used only if [member estimate_radius] is set to "
 "[code]false[/code]."
 msgstr ""
-"Fondo utilizado cuando [LineEdit] está en modo de sólo lectura ([member "
-"editable] está configurado como [code]false[/code])."
+"El radio del agente. Se utiliza únicamente si [member estimate_radius] está "
+"configurado como [code]false[/code]."
 
 #: doc/classes/NavigationObstacle2D.xml
 msgid "2D obstacle used in navigation for collision avoidance."
-msgstr ""
+msgstr "Obstáculo 2D usado en la navegación para evitar colisiones."
 
 #: doc/classes/NavigationObstacle2D.xml
 msgid ""
@@ -52875,23 +52992,39 @@ msgid ""
 "intended as a last resort option for constantly moving objects that cannot "
 "be (re)baked to a navigation mesh efficiently."
 msgstr ""
+"Obstáculo 2D usado en la navegación para evitar colisiones. El obstáculo "
+"necesita datos de navegación para funcionar correctamente. Esto puede "
+"lograrse haciendo que el obstáculo sea hijo de un nodo [Navigation2D] o "
+"usando [method set_navigation]. [NavigationObstacle2D] es seguro con la "
+"física.\n"
+"Los obstáculos [b]no[/b] modifican la ruta resultante del pathfinding; solo "
+"afectan al movimiento del agente de navegación dentro de un radio. Por lo "
+"tanto, usar obstáculos para las paredes estáticas de su nivel no funcionará "
+"porque esas paredes no existen en el pathfinding. El agente de navegación "
+"será empujado en una dirección semi-aleatoria para alejarse mientras se "
+"mueve dentro de ese radio. Los obstáculos están pensados como una opción de "
+"último recurso para objetos en movimiento constante que no pueden "
+"(re)hornearse a una malla de navegación de forma eficiente."
 
 #: doc/classes/NavigationObstacle2D.xml
 msgid ""
 "Returns the [Navigation2D] node that the obstacle is using for its "
 "navigation system."
 msgstr ""
+"Devuelve el nodo [Navigation2D] que el obstáculo está usando para su sistema "
+"de navegación."
 
 #: doc/classes/NavigationObstacle2D.xml
-#, fuzzy
 msgid "Returns the [RID] of this obstacle on the [Navigation2DServer]."
-msgstr "Devuelve el [RID] de la forma enésima de un área."
+msgstr "Devuelve el [RID] de este obstáculo en el [Navigation2DServer]."
 
 #: doc/classes/NavigationObstacle2D.xml
 msgid ""
 "Sets the [Navigation2D] node used by the obstacle. Useful when you don't "
 "want to make the obstacle a child of a [Navigation2D] node."
 msgstr ""
+"Establece el nodo [Navigation2D] usado por el obstáculo. Es útil cuando no "
+"quiere que el obstáculo sea hijo de un nodo [Navigation2D]."
 
 #: doc/classes/NavigationPolygon.xml
 msgid ""
@@ -55925,7 +56058,7 @@ msgstr ""
 #: doc/classes/PanelContainer.xml doc/classes/TileMap.xml
 #: doc/classes/TileSet.xml
 msgid "2D Role Playing Game Demo"
-msgstr ""
+msgstr "Demostración de juego de rol 2D"
 
 #: doc/classes/NodePath.xml
 #, fuzzy
@@ -56267,7 +56400,7 @@ msgstr ""
 
 #: doc/classes/Object.xml doc/classes/Reference.xml doc/classes/Resource.xml
 msgid "When and how to avoid using nodes for everything"
-msgstr ""
+msgstr "Cuándo y cómo evitar usar nodos para todo"
 
 #: doc/classes/Object.xml
 msgid "Advanced exports using _get_property_list()"
@@ -57100,7 +57233,7 @@ msgstr ""
 
 #: doc/classes/OccluderShapeSphere.xml
 msgid "Spherical occlusion primitive for use with the [Occluder] node."
-msgstr ""
+msgstr "Primitiva de oclusión esférica para usar con el nodo [Occluder]."
 
 #: doc/classes/OccluderShapeSphere.xml
 msgid ""
@@ -57111,14 +57244,25 @@ msgid ""
 "sphere positions can be set by dragging the handle in the Editor viewport. "
 "The radius can be set with the smaller handle."
 msgstr ""
+"Los [OccluderShape] son recursos usados por nodos [Occluder], lo que permite "
+"un culling de oclusión geométrico.\n"
+"Esta forma puede incluir varias esferas. Estas pueden crearse y eliminarse "
+"tanto en el Inspector del editor como llamando a [code]set_spheres[/code]. "
+"Las posiciones de las esferas pueden establecerse arrastrando el controlador "
+"en el viewport del editor. El radio puede ajustarse con el controlador más "
+"pequeño."
 
 #: doc/classes/OccluderShapeSphere.xml
 msgid "Sets an individual sphere's position. Primarily for use by the editor."
 msgstr ""
+"Establece la posición de una esfera individual. Principalmente para uso del "
+"editor."
 
 #: doc/classes/OccluderShapeSphere.xml
 msgid "Sets an individual sphere's radius. Primarily for use by the editor."
 msgstr ""
+"Establece el radio de una esfera individual. Principalmente para uso del "
+"editor."
 
 #: doc/classes/OccluderShapeSphere.xml
 msgid ""
@@ -57126,6 +57270,9 @@ msgid ""
 "each sphere is stored in the [code]normal[/code], and the radius is stored "
 "in the [code]d[/code] value of the plane."
 msgstr ""
+"Los datos de las esferas pueden accederse como un array de [Plane]. La "
+"posición de cada esfera se almacena en [code]normal[/code], y el radio se "
+"almacena en el valor [code]d[/code] del plano."
 
 #: doc/classes/OmniLight.xml
 msgid "Omnidirectional light, such as a light bulb or a candle."
@@ -60206,11 +60353,11 @@ msgstr ""
 
 #: doc/classes/Panel.xml
 msgid "2D Finite State Machine Demo"
-msgstr ""
+msgstr "Demostración 2D de máquina de estados finitos"
 
 #: doc/classes/Panel.xml doc/classes/Skeleton.xml doc/classes/SkeletonIK.xml
 msgid "3D Inverse Kinematics Demo"
-msgstr ""
+msgstr "Demostración 3D de cinemática inversa"
 
 #: doc/classes/Panel.xml
 msgid "The style of this [Panel]."
@@ -60361,6 +60508,12 @@ msgid ""
 "size, it will not repeat infinitely, as the parallax layer only draws 2 "
 "instances of the texture at any one time."
 msgstr ""
+"El reflejo (mirroring) de la [Texture] de ParallaxLayer. Es útil para crear "
+"un fondo con desplazamiento infinito. Si un eje se establece en [code]0[/"
+"code], la [Texture] no se reflejará.\n"
+"Si la longitud del eje del viewport es mayor que el doble del tamaño del eje "
+"reflejado, no se repetirá infinitamente, ya que la capa de paralaje solo "
+"dibuja 2 instancias de la textura en cada momento."
 
 #: doc/classes/ParallaxLayer.xml
 msgid ""
@@ -63048,6 +63201,10 @@ msgid ""
 "and-masks]Collision layers and masks[/url] in the documentation for more "
 "information."
 msgstr ""
+"Las capas de física que la consulta tendrá en cuenta (como máscara de bits). "
+"Consulte [url=$DOCS_URL/tutorials/physics/physics_introduction."
+"html#collision-layers-and-masks]Capas y máscaras de colisión[/url] en la "
+"documentación para más información."
 
 #: doc/classes/Physics2DShapeQueryParameters.xml
 #: doc/classes/PhysicsShapeQueryParameters.xml
@@ -63067,7 +63224,7 @@ msgstr "El movimiento de la forma que se ha encolado."
 #: doc/classes/Physics2DShapeQueryParameters.xml
 #: doc/classes/PhysicsShapeQueryParameters.xml
 msgid "The queried shape's [RID]. See also [method set_shape]."
-msgstr ""
+msgstr "El [RID] de la forma consultada. Consulte tambien [method set_shape]."
 
 #: doc/classes/Physics2DShapeQueryParameters.xml
 #: doc/classes/PhysicsShapeQueryParameters.xml
@@ -63087,6 +63244,12 @@ msgid ""
 "function as expected. Please make sure to keep its scale uniform (i.e. the "
 "same on all axes), and change the size(s) of its collision shape(s) instead."
 msgstr ""
+"PhysicsBody es una clase base abstracta para implementar un cuerpo físico. "
+"Todos los tipos *Body heredan de ella.\n"
+"[b]Advertencia:[/b] Con una escala no uniforme, este nodo probablemente no "
+"funcionará como se espera. Asegúrese de mantener su escala uniforme (es "
+"decir, igual en todos los ejes) y, en su lugar, cambie el o los tamaños de "
+"sus formas de colisión."
 
 #: doc/classes/PhysicsBody.xml doc/classes/PhysicsBody2D.xml
 #: doc/classes/SoftBody.xml
@@ -64153,43 +64316,37 @@ msgid "Parameters to be sent to a 3D shape physics query."
 msgstr "Parámetros que se enviarán a una consulta de física de formas 3D."
 
 #: doc/classes/PhysicsShapeQueryParameters.xml
-#, fuzzy
 msgid ""
 "This class contains the shape and other parameters for 3D intersection/"
 "collision queries."
 msgstr ""
 "Esta clase contiene la forma y otros parámetros para consultas de "
-"intersección/colisión en 3D. Ver también [PhysicsShapeQueryResult]."
+"intersección/colisión en 3D."
 
 #: doc/classes/PhysicsShapeQueryParameters.xml
-#, fuzzy
 msgid "Sets the [Shape] that will be used for collision/intersection queries."
-msgstr "El [Gradient] que se usará para rellenar la textura."
-
-#: doc/classes/PhysicsShapeQueryParameters.xml
-#, fuzzy
-msgid "If [code]true[/code], the query will take [Area]s into account."
-msgstr "Si [code]true[/code], la consulta tendrá en cuenta las [Area2D]s."
-
-#: doc/classes/PhysicsShapeQueryParameters.xml
-#, fuzzy
-msgid "If [code]true[/code], the query will take [PhysicsBody]s into account."
 msgstr ""
-"Si [code]true[/code], la consulta tendrá en cuenta las [PhysicsBody2D]s."
+"Establece la forma [Shape] que se usará para consultas de colisión/intersección."
+
+#: doc/classes/PhysicsShapeQueryParameters.xml
+msgid "If [code]true[/code], the query will take [Area]s into account."
+msgstr "Si es [code]true[/code], la consulta tendrá en cuenta las [Area]."
+
+#: doc/classes/PhysicsShapeQueryParameters.xml
+msgid "If [code]true[/code], the query will take [PhysicsBody]s into account."
+msgstr "Si es [code]true[/code], la consulta tendrá en cuenta los [PhysicsBody]."
 
 #: doc/classes/PinJoint.xml
-#, fuzzy
 msgid "Pin joint for 3D PhysicsBodies."
-msgstr "Articulación de clavija para formas 3D."
+msgstr "Unión de tipo pin (Pin joint) para objetos [PhysicsBody] en 3D."
 
 #: doc/classes/PinJoint.xml
-#, fuzzy
 msgid ""
 "Pin joint for 3D rigid bodies. It pins 2 bodies (rigid or static) together. "
 "See also [Generic6DOFJoint]."
 msgstr ""
-"Articulación de clavijas para cuerpos rígidos en 3D. Se unen dos cuerpos "
-"(rígidos o estáticos)."
+"Unión de tipo pin para cuerpos rígidos (rigid bodies) en 3D. Mantiene unidos dos cuerpos "
+"(rígidos o estáticos) en un punto fijo. Véase también [Generic6DOFJoint]."
 
 #: doc/classes/PinJoint.xml
 msgid ""
@@ -64208,13 +64365,12 @@ msgstr ""
 "velocidad entre sí. Cuanto más alto, más fuerte."
 
 #: doc/classes/PinJoint.xml
-#, fuzzy
 msgid ""
 "If above 0, this value is the maximum value for an impulse that this Joint "
 "produces."
 msgstr ""
-"Si está por encima de 0, este valor es el valor máximo para un impulso que "
-"este Joint3D produce."
+"Si es mayor que 0, este valor es el valor máximo del impulso que produce "
+"esta articulación."
 
 #: doc/classes/PinJoint2D.xml
 msgid "Pin Joint for 2D shapes."
@@ -66243,6 +66399,9 @@ msgid ""
 "[b]Note:[/b] This function will not resize the point array. Set [member "
 "points] to set the number of points."
 msgstr ""
+"Establece puntos individuales. Principalmente para uso del editor.\n"
+"[b]Nota:[/b] Esta función no redimensionará el array de puntos. Establezca "
+"[member points] para fijar el número de puntos."
 
 #: doc/classes/Portal.xml
 msgid ""
@@ -66370,6 +66529,10 @@ msgid ""
 "This gives the same result as using [constant Material3D.CULL_BACK] in "
 "[member Material3D.params_cull_mode]."
 msgstr ""
+"Si se establece, se invierte el orden de los vértices en cada triángulo, lo "
+"que hace que se dibuje la parte trasera de la malla.\n"
+"Esto produce el mismo resultado que usar [constant Material3D.CULL_BACK] en "
+"[member Material3D.params_cull_mode]."
 
 #: doc/classes/PrimitiveMesh.xml
 msgid "The current [Material] of the primitive mesh."
@@ -71317,9 +71480,8 @@ msgid "2D in 3D Demo"
 msgstr "2D en la demostración 3D"
 
 #: doc/classes/QuadMesh.xml
-#, fuzzy
 msgid "Offset of the generated Quad. Useful for particles."
-msgstr "Altura de la textura generada."
+msgstr "Desplazamiento del Quad generado. Útil para partículas."
 
 #: doc/classes/QuadMesh.xml
 msgid "Size on the X and Y axes."
@@ -72295,7 +72457,6 @@ msgid "Base class for reference-counted objects."
 msgstr "Clase base para los objetos contados como referencia."
 
 #: doc/classes/Reference.xml
-#, fuzzy
 msgid ""
 "Base class for any object that keeps a reference count. [Resource] and many "
 "other helper objects inherit this class.\n"
@@ -72311,16 +72472,20 @@ msgid ""
 "free references that are no longer in use. This means that unused references "
 "will linger on for a while before being removed."
 msgstr ""
-"Clase base para cualquier objeto que mantenga una cuenta de referencia. "
-"[Resource] y muchos otros objetos de ayuda heredan esta clase.\n"
-"A diferencia de los [Object], las Referencias mantienen un contador de "
-"referencia interno, de manera que se liberan automáticamente cuando ya no se "
-"usan, y sólo entonces. Por lo tanto, las referencias no necesitan ser "
-"liberadas manualmente con el [method Object.free].\n"
-"En la gran mayoría de los casos de uso, lo único que hay que hacer es "
-"instanciar y utilizar los tipos derivados de [Reference]. Los métodos "
-"proporcionados en esta clase son sólo para usuarios avanzados, y pueden "
-"causar problemas si se usan mal."
+"Clase base para cualquier objeto que mantiene un conteo de referencias. "
+"[Resource] y muchos otros objetos auxiliares heredan de esta clase.\n"
+"A diferencia de otros tipos [Object], las referencias mantienen un contador "
+"interno, de modo que se liberan automáticamente cuando dejan de usarse, y "
+"solo entonces. Por lo tanto, las referencias no necesitan liberarse "
+"manualmente con [method Object.free].\n"
+"En la gran mayoría de casos de uso, solo necesitas instanciar y utilizar "
+"tipos derivados de [Reference]. Los métodos proporcionados por esta clase "
+"son solo para usuarios avanzados y pueden causar problemas si se usan "
+"incorrectamente.\n"
+"[b]Nota:[/b] En C#, las referencias no se liberan al instante cuando dejan "
+"de usarse. En su lugar, la recolección de basura se ejecuta periódicamente y "
+"liberará las referencias que ya no se usen. Esto significa que las "
+"referencias sin uso permanecerán durante un tiempo antes de eliminarse."
 
 #: doc/classes/Reference.xml
 msgid ""
@@ -72361,7 +72526,6 @@ msgid "Reference frame for GUI."
 msgstr "Marco de referencia para la interfaz gráfica de usuario."
 
 #: doc/classes/ReferenceRect.xml
-#, fuzzy
 msgid ""
 "A rectangle box that displays only a [member border_color] border color "
 "around its rectangle. [ReferenceRect] has no fill [Color]. If you need to "
@@ -72370,7 +72534,8 @@ msgid ""
 msgstr ""
 "Una caja de rectángulo que muestra sólo un color de borde [member "
 "border_color] alrededor de su rectángulo. [ReferenceRect] no tiene un "
-"[Color] de relleno."
+"[Color] de relleno. Si necesita mostrar un rectángulo relleno con un color "
+"sólido, considere usar [ColorRect] en su lugar."
 
 #: doc/classes/ReferenceRect.xml
 msgid "Sets the border [Color] of the [ReferenceRect]."
@@ -72381,6 +72546,8 @@ msgid ""
 "Sets the border width of the [ReferenceRect]. The border grows both inwards "
 "and outwards with respect to the rectangle box."
 msgstr ""
+"Establece el ancho del borde de [ReferenceRect]. El borde crece tanto hacia "
+"adentro como hacia afuera con respecto al rectángulo."
 
 #: doc/classes/ReferenceRect.xml
 msgid ""
@@ -73311,9 +73478,9 @@ msgstr ""
 "caso de fracaso."
 
 #: doc/classes/ResourceImporter.xml
-#, fuzzy
 msgid "Base class for the implementation of core resource importers."
-msgstr "Clase base para todos los recursos de formas 3D."
+msgstr ""
+"Clase base para la implementación de los importadores de recursos del núcleo."
 
 #: doc/classes/ResourceImporter.xml
 msgid ""
@@ -73321,15 +73488,17 @@ msgid ""
 "implement your own resource importers using editor plugins, see "
 "[EditorImportPlugin]."
 msgstr ""
+"Esta es la clase base para los importadores de recursos implementados en el "
+"núcleo. Para implementar sus propios importadores de recursos mediante "
+"plugins del editor, consulte [EditorImportPlugin]."
 
 #: doc/classes/ResourceImporter.xml
 msgid "Import plugins"
-msgstr ""
+msgstr "Plugins de importación"
 
 #: doc/classes/ResourceImporter.xml
-#, fuzzy
 msgid "The default import order."
-msgstr "El color de texto por defecto."
+msgstr "El orden de importación por defecto."
 
 #: doc/classes/ResourceImporter.xml
 msgid ""
@@ -73338,6 +73507,11 @@ msgid ""
 "have an import order lower than [code]100[/code] to avoid issues when "
 "importing scenes that rely on custom resources."
 msgstr ""
+"El orden de importación para escenas, que garantiza que las escenas se "
+"importen [i]después[/i] de todos los demás recursos del núcleo, como las "
+"texturas. En general, los importadores personalizados deberían tener un "
+"orden de importación inferior a [code]100[/code] para evitar problemas al "
+"importar escenas que dependan de recursos personalizados."
 
 #: doc/classes/ResourceInteractiveLoader.xml
 #, fuzzy
@@ -74481,7 +74655,6 @@ msgstr "Bloquea el movimiento del cuerpo en el eje Z."
 
 #: doc/classes/RigidBody.xml doc/classes/RigidBody2D.xml
 #: doc/classes/StaticBody.xml doc/classes/StaticBody2D.xml
-#, fuzzy
 msgid ""
 "The body's bounciness. Values range from [code]0[/code] (no bounce) to "
 "[code]1[/code] (full bounciness).\n"
@@ -74489,7 +74662,9 @@ msgid ""
 "physics_material_override]."
 msgstr ""
 "El rebote del cuerpo. Los valores van desde [code]0[/code] (sin rebote) "
-"hasta [code]1[/code] (rebote completo)."
+"hasta [code]1[/code] (rebote completo).\n"
+"Obsoleto; use [member PhysicsMaterial.bounce] en su lugar mediante [member "
+"physics_material_override]."
 
 #: doc/classes/RigidBody.xml
 msgid ""
@@ -75183,6 +75358,7 @@ msgstr ""
 #: doc/classes/Room.xml
 msgid "Room node, used to group objects together locally for [Portal] culling."
 msgstr ""
+"Nodo Room, utilizado para agrupar objetos localmente para el descarte por [Portal] (portal culling)."
 
 #: doc/classes/Room.xml
 msgid ""
@@ -75206,6 +75382,27 @@ msgid ""
 "placed over non-occluded openings between rooms. These will often be placed "
 "over doors and windows."
 msgstr ""
+"El sistema de culling por [Portal] requiere que los niveles se construyan "
+"usando objetos agrupados por ubicación en áreas llamadas [Room]. En muchos "
+"casos, esto se corresponderá con habitaciones reales de edificios, pero no "
+"necesariamente (por ejemplo, una zona de cañón puede tratarse como una "
+"sala).\n"
+"Cualquier [VisualInstance] que sea hijo o nieto de un [Room] se asignará a "
+"esa sala si el [code]portal_mode[/code] de dicho [VisualInstance] está "
+"establecido en [code]STATIC[/code] (no se mueve) o [code]DYNAMIC[/code] "
+"(solo se mueve dentro de la sala).\n"
+"Internamente, el límite de la sala debe formar un [b]casco convexo[/b], y "
+"por defecto esto se determina automáticamente a partir de la geometría de "
+"los objetos que coloque dentro de la sala.\n"
+"Alternativamente, puede especificar con precisión un [b]límite manual[/b]. "
+"Si coloca un [MeshInstance] con un nombre que comience con [code]Bound_[/"
+"code], se desactivará la generación del límite a partir de la geometría y, "
+"en su lugar, se usarán los vértices de ese MeshInstance para calcular "
+"directamente un casco convexo durante la etapa de conversión (consulte "
+"[RoomManager]).\n"
+"Para poder ver desde una sala hacia una sala adyacente, deben colocarse "
+"[Portal] sobre aberturas no ocluidas entre salas. A menudo se colocarán "
+"sobre puertas y ventanas."
 
 #: doc/classes/Room.xml
 msgid ""
@@ -75218,6 +75415,14 @@ msgid ""
 "room hull, and save the resulting points, allowing you to edit them to "
 "further refine the bound."
 msgstr ""
+"Si se establecen [code]points[/code], el casco convexo delimitador del "
+"[Room] se construirá a partir de esos puntos. Si no se establecen puntos, el "
+"límite de la sala se derivará de un límite manual ([MeshInstance] con "
+"prefijo de nombre [code]Bound_[/code]) o de la geometría dentro de la sala.\n"
+"Tenga en cuenta que puede usar el botón del editor [code]Generate Points[/"
+"code] para comenzar. Esto usará la geometría o el límite manual para generar "
+"el casco de la sala y guardar los puntos resultantes, permitiéndole "
+"editarlos para refinar aún más el límite."
 
 #: doc/classes/Room.xml
 msgid ""
@@ -75225,12 +75430,18 @@ msgid ""
 "(bounds) are simplified, by removing similar planes. A value of 0 gives no "
 "simplification, 1 gives maximum simplification."
 msgstr ""
+"El valor [code]simplify[/code] determina en qué medida se simplifican los "
+"cascos (límites) de las salas eliminando planos similares. Un valor de 0 no "
+"aplica simplificación; 1 aplica la simplificación máxima."
 
 #: doc/classes/Room.xml
 msgid ""
 "The room hull simplification can either use the default value set in the "
 "[RoomManager], or override this and use the per room setting."
 msgstr ""
+"La simplificación del casco de la sala puede usar el valor por defecto "
+"establecido en el [RoomManager], o sobrescribirlo y usar la configuración "
+"por sala."
 
 #: doc/classes/RoomGroup.xml
 msgid "Groups [Room]s together to allow common functionality."
@@ -75254,14 +75465,14 @@ msgstr ""
 "Aunque el comportamiento de cada [Room] puede especificarse individualmente, "
 "a veces es más rápido y conveniente programar una funcionalidad para un "
 "grupo de habitaciones.\n"
-"Los [RoomGroup] deben colocarse como hijos de la [b]lista de habitaciones[/b] "
-"(el [Node] padre de tus [Room]s), y las [Room] deben colocarse a su vez "
+"Los [RoomGroup] deben colocarse como hijos de la [b]lista de habitaciones[/"
+"b] (el [Node] padre de tus [Room]s), y las [Room] deben colocarse a su vez "
 "como hijas de un [RoomGroup] para asignarlas a este.\n"
-"Un [RoomGroup] puede utilizarse, por ejemplo, para designar habitaciones "
-"que están en el [b]exterior[/b], y activar o desactivar una luz direccional, "
-"el cielo o un efecto de lluvia cuando el jugador entra o sale del área.\n"
-"Los [RoomGroup] reciben [b]llamadas de retorno (callbacks) de jugabilidad[/b] "
-"cuando el [code]gameplay_monitor[/code] está activado, en forma de "
+"Un [RoomGroup] puede utilizarse, por ejemplo, para designar habitaciones que "
+"están en el [b]exterior[/b], y activar o desactivar una luz direccional, el "
+"cielo o un efecto de lluvia cuando el jugador entra o sale del área.\n"
+"Los [RoomGroup] reciben [b]llamadas de retorno (callbacks) de jugabilidad[/"
+"b] cuando el [code]gameplay_monitor[/code] está activado, en forma de "
 "[code]signal[/code]s o [code]notification[/code]s al entrar y salir del "
 "[b]área de jugabilidad[/b] (consulta [RoomManager] para más detalles)."
 
@@ -77249,6 +77460,16 @@ msgid ""
 "- By the time a [Thread]'s reference count reaches zero and therefore it is "
 "destroyed, it must not be waiting on any semaphore."
 msgstr ""
+"Un semáforo de sincronización que puede usarse para sincronizar varios "
+"[Thread]. Se inicializa a cero al crearse. Tenga cuidado de evitar "
+"interbloqueos (deadlocks). Para una versión binaria, consulte [Mutex].\n"
+"[b]Advertencia:[/b]\n"
+"Para garantizar que el sistema operativo pueda realizar una limpieza "
+"adecuada (sin fallos ni interbloqueos), deben cumplirse estas condiciones:\n"
+"- Cuando el recuento de referencias de un [Semaphore] llegue a cero y, por "
+"tanto, sea destruido, no debe haber hilos esperando en él.\n"
+"- Cuando el recuento de referencias de un [Thread] llegue a cero y, por "
+"tanto, sea destruido, no debe estar esperando en ningún semáforo."
 
 #: doc/classes/Semaphore.xml
 msgid ""
@@ -77256,6 +77477,10 @@ msgid ""
 "[b]Note:[/b] This method internals' can't possibly fail, but an error code "
 "is returned for backwards compatibility, which will always be [constant OK]."
 msgstr ""
+"Disminuye el [Semaphore], permitiendo que entre un hilo más.\n"
+"[b]Nota:[/b] Internamente este método no puede fallar, pero se devuelve un "
+"código de error por compatibilidad hacia atrás, que siempre será [constant "
+"OK]."
 
 #: doc/classes/Semaphore.xml
 msgid ""
@@ -77263,6 +77488,9 @@ msgid ""
 "immediately and returns [constant ERR_BUSY]. If non-zero, it returns "
 "[constant OK] to report success."
 msgstr ""
+"Como [method wait], pero no bloquea: si el valor es cero, falla "
+"inmediatamente y devuelve [constant ERR_BUSY]. Si no es cero, devuelve "
+"[constant OK] para indicar éxito."
 
 #: doc/classes/Semaphore.xml
 msgid ""
@@ -77270,6 +77498,11 @@ msgid ""
 "[b]Note:[/b] This method internals' can't possibly fail, but an error code "
 "is returned for backwards compatibility, which will always be [constant OK]."
 msgstr ""
+"Espera al [Semaphore]; si su valor es cero, se bloquea hasta que sea "
+"distinto de cero.\n"
+"[b]Nota:[/b] Internamente este método no puede fallar, pero se devuelve un "
+"código de error por compatibilidad hacia atrás, que siempre será [constant "
+"OK]."
 
 #: doc/classes/Separator.xml
 msgid "Base class for separators."
@@ -79759,6 +79992,8 @@ msgid ""
 "Physics body for 3D physics which is static or moves only by script. Useful "
 "for floor and walls."
 msgstr ""
+"Cuerpo físico para física 3D que es estático o se mueve solo mediante "
+"scripts. Útil para suelos y paredes."
 
 #: doc/classes/StaticBody.xml
 msgid ""
@@ -79781,6 +80016,26 @@ msgid ""
 "function as expected. Please make sure to keep its scale uniform (i.e. the "
 "same on all axes), and change the size(s) of its collision shape(s) instead."
 msgstr ""
+"Cuerpo estático para física 3D.\n"
+"Un cuerpo estático es un cuerpo simple que no se mueve bajo la simulación de "
+"física; es decir, no puede ser movido por fuerzas externas ni contactos, "
+"pero su transformación aún puede actualizarse manualmente por el usuario. Es "
+"ideal para implementar objetos del entorno, como paredes o plataformas. A "
+"diferencia de [RigidBody], no consume recursos de CPU mientras no se mueva.\n"
+"Dispone de funcionalidades adicionales para moverse y afectar a otros "
+"cuerpos:\n"
+"[i]Cambio de transformación estática:[/i] Los cuerpos estáticos pueden "
+"moverse mediante animación o script. En este caso, simplemente se "
+"teletransportan y no afectan a otros cuerpos en su recorrido.\n"
+"[i]Velocidad constante:[/i] Cuando se establece [member "
+"constant_linear_velocity] o [member constant_angular_velocity], los cuerpos "
+"estáticos no se mueven por sí mismos, pero afectan a los cuerpos que los "
+"tocan como si se estuvieran moviendo. Esto es útil para simular cintas "
+"transportadoras o ruedas transportadoras.\n"
+"[b]Advertencia:[/b] Con una escala no uniforme, este nodo probablemente no "
+"funcionará como se espera. Asegúrese de mantener su escala uniforme (es "
+"decir, igual en todos los ejes) y, en su lugar, cambie el/los tamaño(s) de "
+"sus formas de colisión."
 
 #: doc/classes/StaticBody.xml
 msgid ""
@@ -79805,12 +80060,17 @@ msgid ""
 "Deprecated, use [member PhysicsMaterial.friction] instead via [member "
 "physics_material_override]."
 msgstr ""
+"La fricción del cuerpo, de 0 (sin fricción) a 1 (fricción máxima).\n"
+"Obsoleto; use [member PhysicsMaterial.friction] en su lugar mediante [member "
+"physics_material_override]."
 
 #: doc/classes/StaticBody2D.xml
 msgid ""
 "Physics body for 2D physics which is static or moves only by script. Useful "
 "for floor and walls."
 msgstr ""
+"Cuerpo físico para física 2D que es estático o se mueve solo mediante "
+"scripts. Útil para suelos y paredes."
 
 #: doc/classes/StaticBody2D.xml
 msgid ""
@@ -79830,6 +80090,23 @@ msgid ""
 "affect touching bodies as if they were moving. This is useful for simulating "
 "conveyor belts or conveyor wheels."
 msgstr ""
+"Cuerpo estático para física 2D.\n"
+"Un cuerpo estático es un cuerpo simple que no se mueve bajo la simulación de "
+"física; es decir, no puede ser movido por fuerzas externas ni contactos, "
+"pero su transformación aún puede actualizarse manualmente por el usuario. Es "
+"ideal para implementar objetos del entorno, como paredes o plataformas. A "
+"diferencia de [RigidBody2D], no consume recursos de CPU mientras no se "
+"mueva.\n"
+"Dispone de funcionalidades adicionales para moverse y afectar a otros "
+"cuerpos:\n"
+"[b]Cambio de transformación estática:[/b] Los cuerpos estáticos pueden "
+"moverse mediante animación o script. En este caso, simplemente se "
+"teletransportan y no afectan a otros cuerpos en su recorrido.\n"
+"[b]Velocidad constante:[/b] Cuando se establece [member "
+"constant_linear_velocity] o [member constant_angular_velocity], los cuerpos "
+"estáticos no se mueven por sí mismos, pero afectan a los cuerpos en contacto "
+"como si se estuvieran moviendo. Esto es útil para simular cintas "
+"transportadoras o ruedas transportadoras."
 
 #: doc/classes/StaticBody2D.xml
 msgid ""
@@ -79848,7 +80125,6 @@ msgstr ""
 "afecta a los cuerpos en colisión, como si se moviera."
 
 #: doc/classes/StaticBody2D.xml
-#, fuzzy
 msgid ""
 "The body's friction. Values range from [code]0[/code] (no friction) to "
 "[code]1[/code] (full friction).\n"
@@ -79856,7 +80132,9 @@ msgid ""
 "physics_material_override]."
 msgstr ""
 "La fricción del cuerpo. Los valores van desde [code]0[/code] (sin fricción) "
-"hasta [code]1[/code] (fricción máxima)."
+"hasta [code]1[/code] (fricción máxima).\n"
+"Obsoleto; use [member PhysicsMaterial.friction] en su lugar mediante [member "
+"physics_material_override]."
 
 #: doc/classes/StreamPeer.xml
 msgid "Abstraction and base class for stream-based protocols."
@@ -90643,9 +90921,28 @@ msgid ""
 "function as expected. Please make sure to keep its scale uniform (i.e. the "
 "same on all axes), and change the size(s) of its collision shape(s) instead."
 msgstr ""
+"Este nodo implementa toda la lógica de física necesaria para simular un "
+"coche. Se basa en el sistema de vehículo por raycast que se encuentra "
+"habitualmente en motores de física. Deberá añadir un [CollisionShape] para "
+"el cuerpo principal del vehículo y nodos [VehicleWheel] para las ruedas. "
+"También debería añadir un [MeshInstance] a este nodo para el modelo 3D del "
+"coche, pero dicho modelo no debería incluir mallas para las ruedas. Debería "
+"controlar el vehículo usando las propiedades [member brake], [member "
+"engine_force] y [member steering], y no cambiar directamente la posición u "
+"orientación de este nodo.\n"
+"[b]Nota:[/b] El punto de origen de su VehicleBody determinará el centro de "
+"gravedad del vehículo, por lo que es mejor mantenerlo bajo y mover el "
+"[CollisionShape] y el [MeshInstance] hacia arriba.\n"
+"[b]Nota:[/b] Esta clase tiene problemas conocidos y no está diseñada para "
+"proporcionar una física de vehículos 3D realista. Si desea una física de "
+"vehículos avanzada, probablemente tendrá que escribir su propia integración "
+"de física usando otra clase [PhysicsBody].\n"
+"[b]Advertencia:[/b] Con una escala no uniforme, este nodo probablemente no "
+"funcionará como se espera. Asegúrese de mantener su escala uniforme (es "
+"decir, igual en todos los ejes) y, en su lugar, cambie el/los tamaño(s) de "
+"sus formas de colisión."
 
 #: doc/classes/VehicleBody.xml
-#, fuzzy
 msgid ""
 "Slows down the vehicle by applying a braking force. The vehicle is only "
 "slowed down if the wheels are in contact with a surface. The force you need "
@@ -90660,7 +90957,6 @@ msgstr ""
 "intente un valor en el rango de 25 - 30 para frenar con fuerza."
 
 #: doc/classes/VehicleBody.xml
-#, fuzzy
 msgid ""
 "Accelerates the vehicle by applying an engine force. The vehicle is only "
 "sped up if the wheels that have [member VehicleWheel.use_as_traction] set to "
@@ -90673,7 +90969,7 @@ msgid ""
 "A negative value will result in the vehicle reversing."
 msgstr ""
 "Acelera el vehículo aplicando la fuerza de un motor. El vehículo sólo se "
-"acelera si las ruedas que tienen [member VehicleWheel3D.use_as_traction] "
+"acelera si las ruedas que tienen [member VehicleWheel.use_as_traction] "
 "ajustadas a [code]true[/code] y están en contacto con una superficie. El "
 "[member RigidBody.mass] del vehículo tiene un efecto en la aceleración del "
 "vehículo. Para un vehículo con una masa establecida en 1000, pruebe un valor "
@@ -90683,7 +90979,6 @@ msgstr ""
 "Un valor negativo hará que el vehículo retroceda."
 
 #: doc/classes/VehicleBody.xml
-#, fuzzy
 msgid ""
 "The steering angle for the vehicle. Setting this to a non-zero value will "
 "result in the vehicle turning when it's moving. Wheels that have [member "
@@ -90692,7 +90987,7 @@ msgid ""
 msgstr ""
 "El ángulo de la dirección del vehículo. Si lo fijamos en un valor distinto "
 "de cero, el vehículo girará cuando esté en movimiento. Las ruedas que tienen "
-"[member VehicleWheel3D.use_as_steering] ajustado a [code]true[/code] se "
+"[member VehicleWheel.use_as_steering] ajustado a [code]true[/code] se "
 "rotarán automáticamente."
 
 #: doc/classes/VehicleWheel.xml
@@ -93529,31 +93824,34 @@ msgstr ""
 "usando un protocolo poco fiable."
 
 #: modules/visual_script/doc_classes/VisualScriptFunctionState.xml
-#, fuzzy
 msgid "A Visual Script node representing a function state."
-msgstr ""
-"Un nodo de Visual Script que representa una constante de los tipos de base."
+msgstr "Un nodo de VisualScript que representa el estado de una función."
 
 #: modules/visual_script/doc_classes/VisualScriptFunctionState.xml
 msgid ""
 "[VisualScriptFunctionState] is returned from [VisualScriptYield] and can be "
 "used to resume a paused function call."
 msgstr ""
+"[VisualScriptFunctionState] lo devuelve [VisualScriptYield] y puede usarse "
+"para reanudar una llamada a función pausada."
 
 #: modules/visual_script/doc_classes/VisualScriptFunctionState.xml
 msgid ""
 "Connects this [VisualScriptFunctionState] to a signal in the given object to "
 "automatically resume when it's emitted."
 msgstr ""
+"Conecta este [VisualScriptFunctionState] a una señal del objeto indicado "
+"para reanudar automáticamente cuando se emita."
 
 #: modules/visual_script/doc_classes/VisualScriptFunctionState.xml
-#, fuzzy
 msgid "Returns whether the function state is valid."
-msgstr "Devuelve si el espacio está activo."
+msgstr "Devuelve si el estado de la función es válido."
 
 #: modules/visual_script/doc_classes/VisualScriptFunctionState.xml
 msgid "Resumes the function to run from the point it was yielded."
 msgstr ""
+"Reanuda la función para que continúe ejecutándose desde el punto en el que "
+"se hizo yield."
 
 #: modules/visual_script/doc_classes/VisualScriptGlobalConstant.xml
 msgid "A Visual Script node returning a constant from [@GlobalScope]."

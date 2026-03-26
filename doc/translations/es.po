@@ -2,7 +2,7 @@
 # Copyright (c) 2007-2022 Juan Linietsky, Ariel Manzur.
 # Copyright (c) 2014-2022 Godot Engine contributors (cf. AUTHORS.md).
 # This file is distributed under the same license as the Godot source code.
-# 
+#
 # 44pes Games <44pes.games@gmail.com>, 2020.
 # Megamega53 <Christopher.Morales21@myhunter.cuny.edu>, 2020, 2021.
 # Javier Ocampos <xavier.ocampos@gmail.com>, 2020, 2021, 2022.
@@ -46,7 +46,7 @@ msgstr ""
 "Project-Id-Version: Godot Engine class reference\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2026-03-26 13:20-0300\n"
+"PO-Revision-Date: 2026-03-26 18:48-0300\n"
 "Last-Translator: Juan Matías Olmos <elterraplanista@yahoo.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-class-reference/es/>\n"
@@ -5524,8 +5524,8 @@ msgstr ""
 #: doc/classes/AudioStreamPlayer.xml doc/classes/Button.xml
 #: doc/classes/CanvasLayer.xml doc/classes/CollisionShape2D.xml
 #: doc/classes/ColorRect.xml doc/classes/Input.xml doc/classes/InputEvent.xml
-#: doc/classes/InputEventAction.xml doc/classes/Label.xml
-#: doc/classes/Timer.xml doc/classes/VisibilityNotifier2D.xml
+#: doc/classes/InputEventAction.xml doc/classes/Label.xml doc/classes/Timer.xml
+#: doc/classes/VisibilityNotifier2D.xml
 msgid "2D Dodge The Creeps Demo"
 msgstr "Demo 2D «Dodge The Creeps»"
 
@@ -6699,11 +6699,10 @@ msgstr "AnimationTree"
 #: doc/classes/Camera.xml doc/classes/CollisionShape.xml
 #: doc/classes/CylinderShape.xml doc/classes/Environment.xml
 #: doc/classes/GIProbe.xml doc/classes/GIProbeData.xml
-#: doc/classes/KinematicBody.xml doc/classes/Light.xml
-#: doc/classes/Material.xml doc/classes/Mesh.xml doc/classes/MeshInstance.xml
-#: doc/classes/Particles.xml doc/classes/Quat.xml doc/classes/Skeleton.xml
-#: doc/classes/SpotLight.xml doc/classes/StaticBody.xml
-#: doc/classes/WorldEnvironment.xml
+#: doc/classes/KinematicBody.xml doc/classes/Light.xml doc/classes/Material.xml
+#: doc/classes/Mesh.xml doc/classes/MeshInstance.xml doc/classes/Particles.xml
+#: doc/classes/Quat.xml doc/classes/Skeleton.xml doc/classes/SpotLight.xml
+#: doc/classes/StaticBody.xml doc/classes/WorldEnvironment.xml
 msgid "Third Person Shooter Demo"
 msgstr "Demo de shooter en tercera persona"
 
@@ -11943,8 +11942,7 @@ msgid ""
 msgstr ""
 
 #: doc/classes/AudioEffectCapture.xml doc/classes/AudioEffectDistortion.xml
-#: doc/classes/AudioEffectFilter.xml
-#: doc/classes/AudioEffectHighShelfFilter.xml
+#: doc/classes/AudioEffectFilter.xml doc/classes/AudioEffectHighShelfFilter.xml
 #: doc/classes/AudioEffectLowShelfFilter.xml doc/classes/AudioServer.xml
 msgid "Audio buses"
 msgstr "Buses de audio"
@@ -13328,38 +13326,39 @@ msgstr ""
 
 #: doc/classes/AudioStreamGeneratorPlayback.xml
 msgid "Plays back audio generated using [AudioStreamGenerator]."
-msgstr ""
+msgstr "Reproduce el audio generado usando [AudioStreamGenerator]."
 
 #: doc/classes/AudioStreamGeneratorPlayback.xml
 msgid ""
 "This class is meant to be used with [AudioStreamGenerator] to play back the "
 "generated audio in real-time."
 msgstr ""
+"Esta clase está pensada para usarse con [AudioStreamGenerator] y reproducir "
+"el audio generado en tiempo real."
 
 #: doc/classes/AudioStreamGeneratorPlayback.xml
-#, fuzzy
 msgid ""
 "Returns [code]true[/code] if a buffer of the size [code]amount[/code] can be "
 "pushed to the audio sample data buffer without overflowing it, [code]false[/"
 "code] otherwise."
 msgstr ""
-"Devuelve [code]true[/code] si el [code]layer[/code] dado en el [member "
-"cull_mask] está activado, [code]false[/code] en caso contrario."
+"Devuelve [code]true[/code] si un búfer del tamaño [code]amount[/code] puede "
+"insertarse en el búfer de datos de muestra de audio sin desbordarlo, o "
+"[code]false[/code] en caso contrario."
 
 #: doc/classes/AudioStreamGeneratorPlayback.xml
-#, fuzzy
 msgid "Clears the audio sample data buffer."
-msgstr "Contiene los datos de audio en bytes."
+msgstr "Limpia el búfer de datos de muestra de audio."
 
 #: doc/classes/AudioStreamGeneratorPlayback.xml
-#, fuzzy
 msgid ""
 "Returns the number of frames that can be pushed to the audio sample data "
 "buffer without overflowing it. If the result is [code]0[/code], the buffer "
 "is full."
 msgstr ""
-"Devuelve [code]true[/code] si el [code]layer[/code] dado en el [member "
-"cull_mask] está activado, [code]false[/code] en caso contrario."
+"Devuelve el número de marcos (frames) que pueden enviarse al búfer de datos "
+"de muestras de audio sin desbordarlo. Si el resultado es [code]0[/code], el "
+"búfer está lleno."
 
 #: doc/classes/AudioStreamGeneratorPlayback.xml
 msgid ""
@@ -13367,6 +13366,9 @@ msgid ""
 "efficient than [method push_frame] in C# and compiled languages via "
 "GDNative, but [method push_buffer] may be [i]less[/i] efficient in GDScript."
 msgstr ""
+"Envía varios marcos de datos de audio al búfer. Esto suele ser más eficiente "
+"que [method push_frame] en C# y lenguajes compilados a través de GDNative, "
+"pero [method push_buffer] puede ser [i]menos[/i] eficiente en GDScript."
 
 #: doc/classes/AudioStreamGeneratorPlayback.xml
 msgid ""
@@ -13374,6 +13376,10 @@ msgid ""
 "efficient than [method push_buffer] in C# and compiled languages via "
 "GDNative, but [method push_frame] may be [i]more[/i] efficient in GDScript."
 msgstr ""
+"Inserta un único marco de datos de audio en el búfer. Esto suele ser menos "
+"eficiente que [method push_buffer] en C# y en lenguajes compilados mediante "
+"GDNative, pero [method push_frame] puede ser [i]más[/i] eficiente en "
+"GDScript."
 
 #: doc/classes/AudioStreamMicrophone.xml
 msgid "Plays real-time audio input data."
@@ -15058,7 +15064,7 @@ msgstr ""
 
 #: doc/classes/BlobShadow.xml
 msgid "Casts spherical or capsular geometrical shadows."
-msgstr ""
+msgstr "Proyecta sombras geométricas esféricas o capsulares."
 
 #: doc/classes/BlobShadow.xml
 msgid ""
@@ -15071,32 +15077,48 @@ msgid ""
 "be used in conjunction with a [BlobFocus], to determine where shadows should "
 "be prioritized."
 msgstr ""
+"[BlobShadow] ofrece una alternativa a los mapas de sombras tradicionales "
+"mediante la proyección de sombras geométricas suaves y sencillas.\n"
+"Siempre que el número de sombras en tiempo de ejecución se mantenga bajo, "
+"esto puede proporcionar un mejor rendimiento que los mapas de sombras "
+"(shadow maps).\n"
+"Es una excelente opción cuando se combina con mapas de iluminación "
+"(lightmaps).\n"
+"[BlobShadow] requiere una [Light] configurada para proyectar sombras de tipo "
+"blob, y normalmente debe usarse en conjunto con un [BlobFocus] para "
+"determinar dónde deben priorizarse las sombras."
 
 #: doc/classes/BlobShadow.xml
 msgid ""
 "Only radius index 0 is used with spheres.\n"
 "Radius index 0 and 1 are used with capsules."
 msgstr ""
+"Solo se usa el índice de radio 0 con esferas. Los índices de radio 0 y 1 se "
+"usan con cápsulas."
 
 #: doc/classes/BlobShadow.xml
 msgid ""
 "Offset is used to determine the shape of capsules, allowing elongation in "
 "any direction."
 msgstr ""
+"El desplazamiento (offset) se usa para determinar la forma de las cápsulas, "
+"permitiendo que se alarguen en cualquier dirección."
 
 #: doc/classes/BlobShadow.xml
 msgid ""
 "Radius of offset side of a capsule.\n"
 "[b]Note:[/b] Unused for spheres."
 msgstr ""
+"Radio del lado desplazado de una cápsula.\n"
+"[b]Nota:[/b] No se usa en esferas."
 
 #: doc/classes/BlobShadow.xml
 msgid "Radius of the sphere (or origin side of a capsule)."
-msgstr ""
+msgstr "Radio de la esfera (o del lado de origen de una cápsula)."
 
 #: doc/classes/BlobShadow.xml
 msgid "Allows choosing caster type, sphere or capsule."
-msgstr ""
+msgstr "Permite elegir el tipo de proyector: esfera o cápsula."
 
 #: doc/classes/Bone2D.xml
 msgid "Joint used with [Skeleton2D] to control and animate other nodes."
@@ -20448,8 +20470,7 @@ msgstr ""
 "La torsión se bloquea si está por debajo de 0,05."
 
 #: doc/classes/ConeTwistJoint.xml doc/classes/Generic6DOFJoint.xml
-#: doc/classes/HingeJoint.xml doc/classes/Light.xml
-#: doc/classes/SliderJoint.xml
+#: doc/classes/HingeJoint.xml doc/classes/Light.xml doc/classes/SliderJoint.xml
 msgid "Represents the size of the [enum Param] enum."
 msgstr "Representa el tamaño del enum [enum Param]."
 
@@ -24889,7 +24910,7 @@ msgstr ""
 
 #: doc/classes/CubeMesh.xml
 msgid "Generate an axis-aligned cuboid [PrimitiveMesh]."
-msgstr "Genera un cuboide [PrimitiveMesh] alineado a los ejes.\n"
+msgstr "Genera un cuboide [PrimitiveMesh] alineado a los ejes."
 
 #: doc/classes/CubeMesh.xml
 msgid ""
@@ -25684,21 +25705,22 @@ msgid "Class representing a cylindrical [PrimitiveMesh]."
 msgstr "Clase que representa un cilindro [PrimitiveMesh]."
 
 #: doc/classes/CylinderMesh.xml
-#, fuzzy
 msgid ""
 "Class representing a cylindrical [PrimitiveMesh]. This class can be used to "
 "create cones by setting either the [member top_radius] or [member "
 "bottom_radius] properties to [code]0.0[/code]."
 msgstr ""
-"Clase que representa un cilindro [PrimitiveMesh]. Esta clase puede ser usada "
-"para crear conos estableciendo las propiedades [member top_radius] o [member "
-"bottom_radius] a 0.0."
+"Clase que representa un [PrimitiveMesh] cilíndrico. Esta clase se puede usar "
+"para crear conos estableciendo la propiedad [member top_radius] o [member "
+"bottom_radius] en [code]0.0[/code]."
 
 #: doc/classes/CylinderMesh.xml
 msgid ""
 "Bottom radius of the cylinder. If set to [code]0.0[/code], the bottom faces "
 "will not be generated, resulting in a conic shape."
 msgstr ""
+"Radio inferior del cilindro. Si se establece en [code]0.0[/code], no se "
+"generarán las caras inferiores, lo que dará lugar a una forma cónica."
 
 #: doc/classes/CylinderMesh.xml
 msgid "Full height of the cylinder."
@@ -25709,6 +25731,8 @@ msgid ""
 "Number of radial segments on the cylinder. Higher values result in a more "
 "detailed cylinder/cone at the cost of performance."
 msgstr ""
+"Cantidad de segmentos radiales del cilindro. Los valores más altos producen "
+"un cilindro/cono más detallado a costa del rendimiento."
 
 #: doc/classes/CylinderMesh.xml
 msgid ""
@@ -25720,12 +25744,22 @@ msgid ""
 "altering the vertex data using a shader or procedural mesh tool, [member "
 "rings] should be kept to its default value."
 msgstr ""
+"Cantidad de anillos de borde a lo largo de la altura del cilindro. Cambiar "
+"[member rings] no tiene impacto visual alguno a menos que se use un shader o "
+"una herramienta de malla procedural para modificar los datos de vértices. "
+"Los valores más altos generan más subdivisiones, que pueden usarse para "
+"crear efectos de aspecto más suave con shaders o herramientas de malla "
+"procedural (a costa del rendimiento). Cuando no se modifica el dato de "
+"vértices usando un shader o una herramienta de malla procedural, [member "
+"rings] debe mantenerse con su valor predeterminado."
 
 #: doc/classes/CylinderMesh.xml
 msgid ""
 "Top radius of the cylinder. If set to [code]0.0[/code], the top faces will "
 "not be generated, resulting in a conic shape."
 msgstr ""
+"Radio superior del cilindro. Si se establece en [code]0.0[/code], no se "
+"generarán las caras superiores, lo que dará lugar a una forma cónica."
 
 #: doc/classes/CylinderShape.xml
 msgid "Cylinder shape for collisions."
@@ -36461,6 +36495,12 @@ msgid ""
 "loading and saving is [i]not[/i] available in exported projects. References "
 "to [GLTFCamera] within a script will cause an error in an exported project."
 msgstr ""
+"Representa una cámara tal como está definida por la especificación base de "
+"GLTF.\n"
+"[b]Nota:[/b] Esta clase solo se incluye en las compilaciones del editor. La "
+"carga y el guardado de glTF en tiempo de ejecución [i]no[/i] está disponible "
+"en proyectos exportados. Las referencias a [GLTFCamera] dentro de un script "
+"provocarán un error en el proyecto exportado."
 
 #: modules/gltf/doc_classes/GLTFCamera.xml
 msgid "GLTF camera detailed specification"
@@ -36592,6 +36632,10 @@ msgid ""
 "loading and saving is [i]not[/i] available in exported projects. References "
 "to [GLTFDocument] within a script will cause an error in an exported project."
 msgstr ""
+"[b]Nota:[/b] Esta clase solo se incluye en las compilaciones del editor. La "
+"carga y el guardado de glTF en tiempo de ejecución [i]no[/i] está disponible "
+"en proyectos exportados. Las referencias a [GLTFDocument] dentro de un "
+"script provocarán un error en el proyecto exportado."
 
 #: modules/gltf/doc_classes/GLTFDocument.xml
 msgid ""
@@ -36733,6 +36777,12 @@ msgid ""
 "loading and saving is [i]not[/i] available in exported projects. References "
 "to [GLTFLight] within a script will cause an error in an exported project."
 msgstr ""
+"Representa una luz tal como está definida por la extensión de GLTF "
+"[code]KHR_lights_punctual[/code].\n"
+"[b]Nota:[/b] Esta clase solo se incluye en las compilaciones del editor. La "
+"carga y el guardado de glTF en tiempo de ejecución [i]no[/i] está disponible "
+"en proyectos exportados. Las referencias a [GLTFLight] dentro de un script "
+"provocarán un error en el proyecto exportado."
 
 #: modules/gltf/doc_classes/GLTFLight.xml
 msgid "KHR_lights_punctual GLTF extension spec"
@@ -36808,7 +36858,7 @@ msgstr ""
 
 #: modules/gltf/doc_classes/GLTFNode.xml
 msgid "GLTF node class."
-msgstr ""
+msgstr "Clase de nodo GLTF."
 
 #: modules/gltf/doc_classes/GLTFNode.xml
 msgid ""
@@ -36819,10 +36869,17 @@ msgid ""
 "loading and saving is [i]not[/i] available in exported projects. References "
 "to [GLTFNode] within a script will cause an error in an exported project."
 msgstr ""
+"Representa un nodo GLTF. Los nodos GLTF pueden tener nombres, "
+"transformaciones, hijos (otros nodos GLTF) y propiedades más especializadas "
+"(representadas por sus propias clases).\n"
+"[b]Nota:[/b] Esta clase solo se incluye en las compilaciones del editor. La "
+"carga y el guardado de glTF en tiempo de ejecución [i]no[/i] está disponible "
+"en proyectos exportados. Las referencias a [GLTFNode] dentro de un script "
+"provocarán un error en el proyecto exportado."
 
 #: modules/gltf/doc_classes/GLTFNode.xml
 msgid "GLTF scene and node spec"
-msgstr ""
+msgstr "Especificación de escena y nodo de GLTF."
 
 #: modules/gltf/doc_classes/GLTFNode.xml
 msgid ""
@@ -36986,30 +37043,35 @@ msgid ""
 "to [GLTFSpecGloss] within a script will cause an error in an exported "
 "project."
 msgstr ""
+"[b]Nota:[/b] Esta clase solo se incluye en las compilaciones del editor. La "
+"carga y el guardado de glTF en tiempo de ejecución [i]no[/i] está disponible "
+"en proyectos exportados. Las referencias a [GLTFSpecGloss] dentro de un "
+"script provocarán un error en el proyecto exportado."
 
 #: modules/gltf/doc_classes/GLTFSpecGloss.xml
 msgid "KHR_materials_pbrSpecularGlossiness GLTF extension spec"
 msgstr ""
+"Especificación de la extensión GLTF KHR_materials_pbrSpecularGlossiness"
 
 #: modules/gltf/doc_classes/GLTFSpecGloss.xml
 msgid "The reflected diffuse factor of the material."
-msgstr ""
+msgstr "El factor de reflexión difusa del material."
 
 #: modules/gltf/doc_classes/GLTFSpecGloss.xml
 msgid "The diffuse texture."
-msgstr ""
+msgstr "La textura difusa."
 
 #: modules/gltf/doc_classes/GLTFSpecGloss.xml
 msgid "The glossiness or smoothness of the material."
-msgstr ""
+msgstr "El nivel de brillo (glossiness) o la suavidad del material."
 
 #: modules/gltf/doc_classes/GLTFSpecGloss.xml
 msgid "The specular-glossiness texture."
-msgstr ""
+msgstr "La textura de especularidad y brillo (specular-glossiness)."
 
 #: modules/gltf/doc_classes/GLTFSpecGloss.xml
 msgid "The specular RGB color of the material. The alpha channel is unused."
-msgstr ""
+msgstr "El color RGB especular del material. El canal alfa no se usa."
 
 #: modules/gltf/doc_classes/GLTFState.xml
 msgid "Represents all data of a GLTF file."
@@ -37021,6 +37083,10 @@ msgid ""
 "loading and saving is [i]not[/i] available in exported projects. References "
 "to [GLTFState] within a script will cause an error in an exported project."
 msgstr ""
+"[b]Nota:[/b] Esta clase solo se incluye en las compilaciones del editor. La "
+"carga y el guardado de glTF en tiempo de ejecución [i]no[/i] está disponible "
+"en proyectos exportados. Las referencias a [GLTFState] dentro de un script "
+"provocarán un error en el proyecto exportado."
 
 #: modules/gltf/doc_classes/GLTFState.xml
 msgid ""
@@ -43159,6 +43225,12 @@ msgid ""
 "[member ProjectSettings.input_devices/pointing/android/"
 "rotary_input_scroll_axis] setting."
 msgstr ""
+"Contiene información de los clics del ratón. Consulta [method Node._input]. "
+"[b]Nota:[/b] En dispositivos Wear OS, la entrada rotatoria se mapea a "
+"[constant BUTTON_WHEEL_UP] y [constant BUTTON_WHEEL_DOWN]. Esto puede "
+"cambiarse a [constant BUTTON_WHEEL_LEFT] y [constant BUTTON_WHEEL_RIGHT] con "
+"el ajuste [member ProjectSettings.input_devices/pointing/android/"
+"rotary_input_scroll_axis]."
 
 #: doc/classes/InputEventMouseButton.xml
 msgid ""
@@ -43171,10 +43243,12 @@ msgstr ""
 #: doc/classes/InputEventMouseButton.xml
 msgid "If [code]true[/code], the mouse button event has been canceled."
 msgstr ""
+"Si es [code]true[/code], el evento del botón del ratón se ha cancelado."
 
 #: doc/classes/InputEventMouseButton.xml
 msgid "If [code]true[/code], the mouse button's state is a double-click."
-msgstr "Si [code]true[/code], el estado del botón del ratón es un doble clic."
+msgstr ""
+"Si es [code]true[/code], el estado del botón del ratón es un doble clic."
 
 #: doc/classes/InputEventMouseButton.xml
 msgid ""
@@ -43335,11 +43409,11 @@ msgstr ""
 
 #: doc/classes/InputEventScreenTouch.xml
 msgid "If [code]true[/code], the touch event has been canceled."
-msgstr ""
+msgstr "Si es [code]true[/code], el evento táctil se ha cancelado."
 
 #: doc/classes/InputEventScreenTouch.xml
 msgid "If [code]true[/code], the touch's state is a double tap."
-msgstr ""
+msgstr "Si es [code]true[/code], el estado del toque es un doble toque."
 
 #: doc/classes/InputEventScreenTouch.xml
 msgid ""
@@ -43368,26 +43442,28 @@ msgid ""
 "Contains keys events information with modifiers support like [kbd]Shift[/"
 "kbd] or [kbd]Alt[/kbd]. See [method Node._input]."
 msgstr ""
+"Contiene información de eventos de teclas con soporte de modificadores, como "
+"[kbd]Shift[/kbd] o [kbd]Alt[/kbd]. Consulta [method Node._input]."
 
 #: doc/classes/InputEventWithModifiers.xml
 msgid "State of the [kbd]Alt[/kbd] modifier."
-msgstr ""
+msgstr "Estado del modificador [kbd]Alt[/kbd]."
 
 #: doc/classes/InputEventWithModifiers.xml
 msgid "State of the [kbd]Command[/kbd] modifier."
-msgstr ""
+msgstr "Estado del modificador [kbd]Command[/kbd]."
 
 #: doc/classes/InputEventWithModifiers.xml
 msgid "State of the [kbd]Ctrl[/kbd] modifier."
-msgstr ""
+msgstr "Estado del modificador [kbd]Ctrl[/kbd]."
 
 #: doc/classes/InputEventWithModifiers.xml
 msgid "State of the [kbd]Meta[/kbd] modifier."
-msgstr ""
+msgstr "Estado del modificador [kbd]Meta[/kbd]."
 
 #: doc/classes/InputEventWithModifiers.xml
 msgid "State of the [kbd]Shift[/kbd] modifier."
-msgstr ""
+msgstr "Estado del modificador [kbd]Shift[/kbd]."
 
 #: doc/classes/InputMap.xml
 msgid "Singleton that manages [InputEventAction]."
@@ -43668,7 +43744,7 @@ msgstr ""
 
 #: doc/classes/InterpolatedCamera.xml
 msgid "[i]Deprecated.[/i] Camera which moves toward another node."
-msgstr ""
+msgstr "[i]Obsoleta.[/i] Cámara que se desplaza hacia otro nodo."
 
 #: doc/classes/InterpolatedCamera.xml
 msgid ""
@@ -43678,36 +43754,42 @@ msgid ""
 "If it is not [member enabled] or does not have a valid target set, "
 "InterpolatedCamera acts like a normal Camera."
 msgstr ""
+"[i]Obsoleta (se eliminará en Godot 4.0).[/i] InterpolatedCamera es una "
+"[Camera] que se mueve suavemente para ajustarse a la posición y rotación de "
+"un nodo objetivo. Si no está [member enabled] o no tiene un objetivo válido "
+"configurado, InterpolatedCamera actúa como una Camera normal."
 
 #: doc/classes/InterpolatedCamera.xml
-#, fuzzy
 msgid "Sets the node to move toward and orient with."
-msgstr "Establece el nombre del hilo actual."
+msgstr ""
+"Establece el nodo al que debe desplazarse y con el que debe orientarse."
 
 #: doc/classes/InterpolatedCamera.xml
-#, fuzzy
 msgid ""
 "If [code]true[/code], and a target is set, the camera will move "
 "automatically."
 msgstr ""
-"Si [code]true[/code], la ventana se desplaza hacia abajo para mostrar "
-"automáticamente el nuevo contenido."
+"Si es [code]true[/code] y se ha establecido un objetivo, la cámara se moverá "
+"automáticamente."
 
 #: doc/classes/InterpolatedCamera.xml
-#, fuzzy
 msgid ""
 "The camera's process callback. See [enum InterpolatedCameraProcessMode]."
-msgstr "La llamada al proceso de la cámara. Ver [enum Camera2DProcessMode]."
+msgstr ""
+"Callback de proceso de la cámara. Consulta [enum "
+"InterpolatedCameraProcessMode]."
 
 #: doc/classes/InterpolatedCamera.xml
 msgid ""
 "How quickly the camera moves toward its target. Higher values will result in "
 "tighter camera motion."
 msgstr ""
+"Qué tan rápido se mueve la cámara hacia su objetivo. Los valores más altos "
+"dan como resultado un movimiento de cámara más ajustado."
 
 #: doc/classes/InterpolatedCamera.xml
 msgid "The target's [NodePath]."
-msgstr ""
+msgstr "La [NodePath] del objetivo."
 
 #: doc/classes/IntervalTweener.xml
 msgid "Creates an idle interval in a [SceneTreeTween] animation."
@@ -51755,13 +51837,12 @@ msgid "3D Navmesh Demo"
 msgstr ""
 
 #: doc/classes/Navigation.xml doc/classes/Navigation2D.xml
-#, fuzzy
 msgid ""
 "Returns the navigation point closest to the point given. Points are in local "
 "coordinate space."
 msgstr ""
-"Devuelve el polígono de navegación del subsuelo de un atlas/autotile dadas "
-"sus coordenadas."
+"Devuelve el punto de navegación más cercano al punto dado. Los puntos están "
+"en el espacio de coordenadas local."
 
 #: doc/classes/Navigation.xml
 msgid ""
@@ -51822,6 +51903,8 @@ msgstr ""
 msgid ""
 "This value is used to detect the near edges to connect compatible regions."
 msgstr ""
+"Este valor se usa para detectar los bordes cercanos y conectar regiones "
+"compatibles."
 
 #: doc/classes/Navigation.xml
 msgid ""
@@ -51848,7 +51931,6 @@ msgid "2D navigation and pathfinding node."
 msgstr "Navegación 2D y nodo de búsqueda de caminos."
 
 #: doc/classes/Navigation2D.xml
-#, fuzzy
 msgid ""
 "[i]Deprecated.[/i] [Navigation2D] node and [method get_simple_path] are "
 "deprecated and will be removed in a future version. Use [method "
@@ -51857,14 +51939,18 @@ msgid ""
 "as a collection of [NavigationPolygon] resources. By default, these are "
 "automatically collected from child [NavigationPolygonInstance] nodes."
 msgstr ""
-"Navigation2D proporciona navegación y busqueda de caminos dentro de un área "
-"2D, especificada como una colección de recursos de [NavigationPolygon]. "
-"Estos se recogen automáticamente de los nodos hijos de [NavigationRegion2D]."
+"[i]Obsoleto.[/i] El nodo [Navigation2D] y el método [method get_simple_path] "
+"están obsoletos y se eliminarán en una versión futura. Use [method "
+"Navigation2DServer.map_get_path] en su lugar.\n"
+"Navigation2D proporciona navegación y búsqueda de rutas (pathfinding) dentro "
+"de un área 2D, definida como una colección de recursos [NavigationPolygon]. "
+"Por defecto, estos se recopilan automáticamente de los nodos hijos "
+"[NavigationPolygonInstance]."
 
 #: doc/classes/Navigation2D.xml doc/classes/Navigation2DServer.xml
 #: doc/classes/NavigationPolygon.xml
 msgid "2D Navigation Demo"
-msgstr ""
+msgstr "Demostración de navegación 2D"
 
 #: doc/classes/Navigation2D.xml
 msgid ""
@@ -51872,9 +51958,11 @@ msgid ""
 "point closest to the point given. This is usually a "
 "[NavigationPolygonInstance]."
 msgstr ""
+"Devuelve el propietario del [NavigationPolygon] que contiene el punto de "
+"navegación más cercano al punto dado. Por lo general, es un "
+"[NavigationPolygonInstance]."
 
 #: doc/classes/Navigation2D.xml
-#, fuzzy
 msgid ""
 "[i]Deprecated.[/i] [Navigation2D] node and [method get_simple_path] are "
 "deprecated and will be removed in a future version. Use [method "
@@ -51883,21 +51971,26 @@ msgid ""
 "space. If [code]optimize[/code] is [code]true[/code] (the default), the path "
 "is smoothed by merging path segments where possible."
 msgstr ""
-"Devuelve el camino entre dos puntos dados. Los puntos están en el espacio de "
-"coordenadas locales. Si [code]optimize[/code] es [code]true[/code] (el valor "
-"por defecto), el camino se suaviza fusionando los segmentos de camino cuando "
-"es posible."
+"[i]Obsoleto.[/i] El nodo [Navigation2D] y el método [method get_simple_path] "
+"están obsoletos y se eliminarán en una versión futura. Use [method "
+"Navigation2DServer.map_get_path] en su lugar.\n"
+"Devuelve la ruta entre dos puntos dados. Los puntos están en el espacio de "
+"coordenadas local. Si [code]optimize[/code] es [code]true[/code] (el valor "
+"predeterminado), la ruta se suaviza fusionando segmentos de ruta donde sea "
+"posible."
 
 #: doc/classes/Navigation2D.xml
-#, fuzzy
 msgid "The XY plane cell size to use for fields."
-msgstr "El modo de llamada a utilizar para las Call Method Tracks."
+msgstr "El tamaño de celda en el plano XY que se usará para los campos."
 
 #: doc/classes/Navigation2D.xml
 msgid ""
 "A bitfield determining all navigation map layers the navigation can use on a "
 "[method Navigation2D.get_simple_path] path query."
 msgstr ""
+"Un campo de bits que determina todas las capas del mapa de navegación que la "
+"navegación puede utilizar en una consulta de ruta mediante [method "
+"Navigation2D.get_simple_path]."
 
 #: doc/classes/Navigation2DServer.xml
 #, fuzzy
@@ -53026,7 +53119,7 @@ msgstr "Notifica cuando una animación comienza a reproducirse."
 
 #: doc/classes/NavigationObstacle.xml
 msgid "3D obstacle used in navigation for collision avoidance."
-msgstr ""
+msgstr "Obstáculo 3D usado en la navegación para evitar colisiones."
 
 #: doc/classes/NavigationObstacle.xml
 msgid ""
@@ -53042,24 +53135,39 @@ msgid ""
 "intended as a last resort option for constantly moving objects that cannot "
 "be (re)baked to a navigation mesh efficiently."
 msgstr ""
+"Obstáculo 3D usado en la navegación para evitar colisiones. El obstáculo "
+"necesita datos de navegación para funcionar correctamente. Esto se puede "
+"hacer teniendo el obstáculo como hijo de un nodo [Navigation] o usando "
+"[method set_navigation]. [NavigationObstacle] es seguro para física.\n"
+"Los obstáculos [b]no[/b] cambian la ruta resultante del cálculo de caminos; "
+"solo afectan al movimiento del agente de navegación dentro de un radio. Por "
+"lo tanto, usar obstáculos para las paredes estáticas de tu nivel no "
+"funcionará, porque esas paredes no existen en el cálculo de caminos. El "
+"agente de navegación será empujado en una dirección semi-aleatoria al "
+"alejarse mientras se mueve dentro de ese radio. Los obstáculos están "
+"pensados como una opción de último recurso para objetos que se mueven "
+"constantemente y que no pueden (re)hornearse en una malla de navegación de "
+"forma eficiente."
 
 #: doc/classes/NavigationObstacle.xml
-#, fuzzy
 msgid ""
 "Returns the [Navigation] node that the obstacle is using for its navigation "
 "system."
-msgstr "Devuelve el nodo animacion con el nombre dado."
+msgstr ""
+"Devuelve el nodo [Navigation] que el obstáculo está usando para su sistema "
+"de navegación."
 
 #: doc/classes/NavigationObstacle.xml
-#, fuzzy
 msgid "Returns the [RID] of this obstacle on the [NavigationServer]."
-msgstr "Devuelve el [RID] de la forma enésima de un área."
+msgstr "Devuelve el [RID] de este obstáculo en el [NavigationServer]."
 
 #: doc/classes/NavigationObstacle.xml
 msgid ""
 "Sets the [Navigation] node used by the obstacle. Useful when you don't want "
 "to make the obstacle a child of a [Navigation] node."
 msgstr ""
+"Establece el nodo [Navigation] que usa el obstáculo. Es útil cuando no "
+"quieres que el obstáculo sea un hijo de un nodo [Navigation]."
 
 #: doc/classes/NavigationObstacle.xml doc/classes/NavigationObstacle2D.xml
 msgid ""
@@ -53470,6 +53578,8 @@ msgid ""
 "A [NetworkedMultiplayerPeer] implementation that can be controlled from a "
 "script."
 msgstr ""
+"Una implementación de [NetworkedMultiplayerPeer] que se puede controlar "
+"desde un script."
 
 #: doc/classes/NetworkedMultiplayerCustom.xml
 msgid ""
@@ -53478,6 +53588,10 @@ msgid ""
 "Its purpose is to allow adding a new backend for the high-Level multiplayer "
 "API without needing to use GDNative."
 msgstr ""
+"Una implementación de [NetworkedMultiplayerPeer] que se puede usar como "
+"[member MultiplayerAPI.network_peer] y controlar desde un script.\n"
+"Su propósito es permitir añadir un nuevo backend para la API multijugador de "
+"alto nivel sin necesidad de usar GDNative."
 
 #: doc/classes/NetworkedMultiplayerCustom.xml
 msgid ""
@@ -53486,6 +53600,10 @@ msgid ""
 "(originating from the [signal packet_generated] signal on the sending peer), "
 "passing it to this method will deliver it locally."
 msgstr ""
+"Entrega un paquete a la [MultiplayerAPI] local.\n"
+"Cuando tu script recibe un paquete de otros peers a través de la red "
+"(originado por la señal [signal packet_generated] en el peer que envía), "
+"pasárselo a este método lo entregará de forma local."
 
 #: doc/classes/NetworkedMultiplayerCustom.xml
 msgid ""
@@ -53495,6 +53613,11 @@ msgid ""
 "NetworkedMultiplayerPeer.CONNECTION_CONNECTING]. See [method "
 "set_connection_status]."
 msgstr ""
+"Inicializa el peer con el [code]self_peer_id[/code] proporcionado (debe "
+"estar entre 1 y 2147483647).\n"
+"Solo se puede llamar si el estado de la conexión es [constant "
+"NetworkedMultiplayerPeer.CONNECTION_CONNECTING]. Consulta [method "
+"set_connection_status]."
 
 #: doc/classes/NetworkedMultiplayerCustom.xml
 msgid ""
@@ -53510,11 +53633,22 @@ msgid ""
 "CONNECTION_CONNECTED] from [constant NetworkedMultiplayerPeer."
 "CONNECTION_CONNECTING]."
 msgstr ""
+"Establece el estado de la conexión. Consulta [enum NetworkedMultiplayerPeer."
+"ConnectionStatus].\n"
+"Esto emitirá las señales [signal NetworkedMultiplayerPeer."
+"connection_succeeded], [signal NetworkedMultiplayerPeer.connection_failed] o "
+"[signal NetworkedMultiplayerPeer.server_disconnected] dependiendo del estado "
+"y de si el peer tiene el identificador de red único [code]1[/code].\n"
+"Solo se puede cambiar a [constant NetworkedMultiplayerPeer."
+"CONNECTION_CONNECTING] desde [constant NetworkedMultiplayerPeer."
+"CONNECTION_DISCONNECTED], y a [constant NetworkedMultiplayerPeer."
+"CONNECTION_CONNECTED] desde [constant NetworkedMultiplayerPeer."
+"CONNECTION_CONNECTING]."
 
 #: doc/classes/NetworkedMultiplayerCustom.xml
-#, fuzzy
 msgid "Set the max packet size that this peer can handle."
-msgstr "Establece la piel que se utilizará en esta instancia."
+msgstr ""
+"Establece el tamaño máximo de los paquetes que este peer puede gestionar."
 
 #: doc/classes/NetworkedMultiplayerCustom.xml
 msgid ""
@@ -53524,6 +53658,11 @@ msgid ""
 "the network (which should call [method deliver_packet] with the data when "
 "it's received)."
 msgstr ""
+"Se emite cuando la [MultiplayerAPI] local genera un paquete (por ejemplo, al "
+"llamar a [method Node.rpc]).\n"
+"Tu script debe tomar este paquete y enviarlo al peer solicitado a través de "
+"la red (que debería llamar a [method deliver_packet] con los datos cuando se "
+"reciban)."
 
 #: modules/enet/doc_classes/NetworkedMultiplayerENet.xml
 msgid ""
@@ -57312,6 +57451,7 @@ msgstr ""
 #: doc/classes/OccluderShapePolygon.xml
 msgid "Polygon occlusion primitive for use with the [Occluder] node."
 msgstr ""
+"Primitiva de oclusión en forma de polígono para usar con el nodo [Occluder]."
 
 #: doc/classes/OccluderShapePolygon.xml
 msgid ""
@@ -57328,6 +57468,19 @@ msgid ""
 "the system will operate at runtime, so in most cases you will want to use 4 "
 "points for each."
 msgstr ""
+"Los [OccluderShape]s son recursos usados por nodos [Occluder], que permiten "
+"la eliminación por oclusión geométrica.\n"
+"El polígono debe ser convexo. Los puntos del polígono pueden crearse y "
+"eliminarse en el inspector del editor o llamando a [code]set_polygon_points[/"
+"code]. Los puntos de los bordes se pueden ajustar arrastrando los "
+"controladores en el visor del editor.\n"
+"Además, cada oclusor de polígono puede, opcionalmente, admitir un único "
+"agujero. Si añades al menos tres puntos en el inspector del editor al "
+"agujero, puedes arrastrar los puntos del borde del agujero en el visor del "
+"editor.\n"
+"En general, cuanto menor sea el número de aristas en los polígonos y los "
+"agujeros, más rápido funcionará el sistema en tiempo de ejecución. En la "
+"mayoría de los casos querrás usar 4 puntos para cada uno."
 
 #: doc/classes/OccluderShapePolygon.xml
 msgid ""
@@ -57335,6 +57488,10 @@ msgid ""
 "[b]Note:[/b] This function will not resize the hole point array. Set [member "
 "hole_points] to set the number of points."
 msgstr ""
+"Establece la posición de un punto de agujero individual. Principalmente para "
+"uso del editor.\n"
+"[b]Nota:[/b] Esta función no cambiará el tamaño del array de puntos del "
+"agujero. Establece [member hole_points] para definir el número de puntos."
 
 #: doc/classes/OccluderShapePolygon.xml
 msgid ""
@@ -57342,22 +57499,26 @@ msgid ""
 "[b]Note:[/b] This function will not resize the polygon point array. Set "
 "[member polygon_points] to set the number of points."
 msgstr ""
+"Establece la posición de un punto individual del polígono. Principalmente "
+"para uso del editor.\n"
+"[b]Nota:[/b] Esta función no cambiará el tamaño del array de puntos del "
+"polígono. Establece [member polygon_points] para definir el número de puntos."
 
 #: doc/classes/OccluderShapePolygon.xml
-#, fuzzy
 msgid "Allows changing the hole geometry from code."
-msgstr "Dibuja una geometría simple desde código."
+msgstr "Permite cambiar la geometría del agujero desde código."
 
 #: doc/classes/OccluderShapePolygon.xml
-#, fuzzy
 msgid "Allows changing the polygon geometry from code."
-msgstr "Dibuja una geometría simple desde código."
+msgstr "Permite cambiar la geometría del polígono desde código."
 
 #: doc/classes/OccluderShapePolygon.xml
 msgid ""
 "Specifies whether the occluder should operate from both sides. If "
 "[code]false[/code], the occluder will operate one way only."
 msgstr ""
+"Especifica si el oclusor debe operar desde ambos lados. Si es [code]false[/"
+"code], el oclusor operará de un solo modo."
 
 #: doc/classes/OccluderShapeSphere.xml
 msgid "Spherical occlusion primitive for use with the [Occluder] node."
@@ -79655,10 +79816,10 @@ msgid ""
 "lights per mesh, you can increase [member ProjectSettings.rendering/limits/"
 "rendering/max_lights_per_object] at the cost of shader compilation times."
 msgstr ""
-"Un Spotlight es un tipo de nodo [Light] que emite luz en una dirección especí"
-"fica con forma de cono. La luz se atenúa con la distancia. Esta atenuación "
-"puede configurarse cambiando los parámetros de energía, radio y atenuación "
-"de [Light].\n"
+"Un Spotlight es un tipo de nodo [Light] que emite luz en una dirección "
+"específica con forma de cono. La luz se atenúa con la distancia. Esta "
+"atenuación puede configurarse cambiando los parámetros de energía, radio y "
+"atenuación de [Light].\n"
 "[b]Nota:[/b] Por defecto, solo 32 SpotLight pueden afectar a un único "
 "[i]recurso[/i] de malla al mismo tiempo. Considera dividir tu nivel en "
 "varias mallas para reducir la probabilidad de que más de 32 luces afecten al "
@@ -93796,7 +93957,7 @@ msgstr ""
 msgid ""
 "A Visual Script node which deconstructs a base type instance into its parts."
 msgstr ""
-"Nodo de VisualScript que descompone una instancia de tipo base en sus "
+"Nodo de Visual Script que descompone una instancia de tipo base en sus "
 "componentes."
 
 #: modules/visual_script/doc_classes/VisualScriptDeconstruct.xml
@@ -93849,7 +94010,7 @@ msgstr "La señal a emitir."
 
 #: modules/visual_script/doc_classes/VisualScriptEngineSingleton.xml
 msgid "A Visual Script node returning a singleton from [@GlobalScope]."
-msgstr "Nodo de VisualScript que devuelve un singleton de [@GlobalScope]."
+msgstr "Nodo de Visual Script que devuelve un singleton de [@GlobalScope]."
 
 #: modules/visual_script/doc_classes/VisualScriptEngineSingleton.xml
 msgid "The singleton's name."
@@ -93857,7 +94018,7 @@ msgstr "El nombre del singleton."
 
 #: modules/visual_script/doc_classes/VisualScriptExpression.xml
 msgid "A Visual Script node that can execute a custom expression."
-msgstr "Nodo de VisualScript que puede ejecutar una expresión personalizada."
+msgstr "Nodo de Visual Script que puede ejecutar una expresión personalizada."
 
 #: modules/visual_script/doc_classes/VisualScriptExpression.xml
 msgid ""
@@ -93865,13 +94026,13 @@ msgid ""
 "provided for the input and the expression result can be retrieved from the "
 "output."
 msgstr ""
-"Nodo de VisualScript que puede ejecutar una expresión personalizada. Puede "
+"Nodo de Visual Script que puede ejecutar una expresión personalizada. Puede "
 "asignarse valores a la entrada y obtener el resultado de la expresión por la "
 "salida."
 
 #: modules/visual_script/doc_classes/VisualScriptFunction.xml
 msgid "A Visual Script node representing a function."
-msgstr "Nodo de VisualScript que representa una función."
+msgstr "Nodo de Visual Script que representa una función."
 
 #: modules/visual_script/doc_classes/VisualScriptFunction.xml
 msgid ""
@@ -93906,13 +94067,12 @@ msgstr ""
 
 #: modules/visual_script/doc_classes/VisualScriptFunctionCall.xml
 #: modules/visual_script/doc_classes/VisualScriptYieldSignal.xml
-#, fuzzy
 msgid ""
 "The base type to be used when [member call_mode] is set to [constant "
 "CALL_MODE_INSTANCE]."
 msgstr ""
-"El fondo utilizado cuando [member overlay] se establece en [constant "
-"OVERLAY_POSITION]."
+"El tipo base que se usará cuando [member call_mode] esté establecido en "
+"[constant CALL_MODE_INSTANCE]."
 
 #: modules/visual_script/doc_classes/VisualScriptFunctionCall.xml
 #, fuzzy
@@ -93936,12 +94096,12 @@ msgstr "La función a ser ejecutada."
 
 #: modules/visual_script/doc_classes/VisualScriptFunctionCall.xml
 #: modules/visual_script/doc_classes/VisualScriptYieldSignal.xml
-#, fuzzy
 msgid ""
 "The node path to use when [member call_mode] is set to [constant "
 "CALL_MODE_NODE_PATH]."
 msgstr ""
-"Profundidad de extrusión cuando el [member mode] es [constant MODE_DEPTH]."
+"La ruta del nodo que se usará cuando [member call_mode] esté establecido en "
+"[constant CALL_MODE_NODE_PATH]."
 
 #: modules/visual_script/doc_classes/VisualScriptFunctionCall.xml
 msgid ""
@@ -94025,7 +94185,7 @@ msgstr ""
 
 #: modules/visual_script/doc_classes/VisualScriptFunctionState.xml
 msgid "A Visual Script node representing a function state."
-msgstr "Un nodo de VisualScript que representa el estado de una función."
+msgstr "Un nodo de Visual Script que representa el estado de una función."
 
 #: modules/visual_script/doc_classes/VisualScriptFunctionState.xml
 msgid ""
@@ -94055,7 +94215,7 @@ msgstr ""
 
 #: modules/visual_script/doc_classes/VisualScriptGlobalConstant.xml
 msgid "A Visual Script node returning a constant from [@GlobalScope]."
-msgstr "Nodo de VisualScript que devuelve una constante de [@GlobalScope]."
+msgstr "Nodo de Visual Script que devuelve una constante de [@GlobalScope]."
 
 #: modules/visual_script/doc_classes/VisualScriptGlobalConstant.xml
 msgid "The constant to be used."
@@ -94064,7 +94224,7 @@ msgstr "Constante a utilizar."
 #: modules/visual_script/doc_classes/VisualScriptIndexGet.xml
 msgid "A Visual Script node for getting a value from an array or a dictionary."
 msgstr ""
-"Nodo de VisualScript para obtener un valor de un array o un diccionario."
+"Nodo de Visual Script para obtener un valor de un array o un diccionario."
 
 #: modules/visual_script/doc_classes/VisualScriptIndexGet.xml
 msgid ""
@@ -94077,7 +94237,7 @@ msgstr ""
 #: modules/visual_script/doc_classes/VisualScriptIndexSet.xml
 msgid "A Visual Script node for setting a value in an array or a dictionary."
 msgstr ""
-"Nodo de VisualScript para asignar un valor en un array o un diccionario."
+"Nodo de Visual Script para asignar un valor en un array o un diccionario."
 
 #: modules/visual_script/doc_classes/VisualScriptIndexSet.xml
 msgid ""
@@ -94171,24 +94331,20 @@ msgstr ""
 "por defecto de los nodos que tienen que ser nodos editables en gráfico."
 
 #: modules/visual_script/doc_classes/VisualScriptLists.xml
-#, fuzzy
 msgid "Adds an input port to the Visual Script node."
-msgstr "Un nodo de Visual Script con script."
+msgstr "Añade un puerto de entrada al nodo de Visual Script."
 
 #: modules/visual_script/doc_classes/VisualScriptLists.xml
-#, fuzzy
 msgid "Adds an output port to the Visual Script node."
-msgstr "Añade un nodo a una función del VisualScript."
+msgstr "Añade un puerto de salida al nodo de Visual Script."
 
 #: modules/visual_script/doc_classes/VisualScriptLists.xml
-#, fuzzy
 msgid "Removes an input port from the Visual Script node."
-msgstr "Elimina todos los puntos de la línea."
+msgstr "Elimina un puerto de entrada del nodo de Visual Script."
 
 #: modules/visual_script/doc_classes/VisualScriptLists.xml
-#, fuzzy
 msgid "Removes an output port from the Visual Script node."
-msgstr "Elimina todos los puntos de la línea."
+msgstr "Elimina un puerto de salida del nodo de Visual Script."
 
 #: modules/visual_script/doc_classes/VisualScriptLists.xml
 #, fuzzy
@@ -94368,11 +94524,9 @@ msgid "Emitted when the available input/output ports are changed."
 msgstr "Emitido cuando se cambian los puertos de entrada/salida disponibles."
 
 #: modules/visual_script/doc_classes/VisualScriptOperator.xml
-#, fuzzy
 msgid "A Visual Script node that performs an operation on two values."
 msgstr ""
-"Un Nodo de Script Visual usado para crear una array a partir de una lista de "
-"elementos."
+"Un nodo de Visual Script usado para realizar una operación sobre dos valores."
 
 #: modules/visual_script/doc_classes/VisualScriptOperator.xml
 msgid ""
@@ -94739,7 +94893,7 @@ msgid ""
 "[b]Output Ports:[/b]\n"
 "- Data (object): [code]instance[/code]"
 msgstr ""
-"Referencia al nodo que ejecuta el VisualScript.\n"
+"Proporciona una referencia al nodo que ejecuta el script visual.\n"
 "[b]Puertos de entrada:[/b]\n"
 "ninguno\n"
 "[b]Puertos de salida:[/b]\n"
@@ -94914,79 +95068,81 @@ msgstr ""
 "- Secuencia: [code]exit[/code]"
 
 #: modules/visual_script/doc_classes/VisualScriptYield.xml
-#, fuzzy
 msgid "A Visual Script node used to pause a function execution."
-msgstr "Un nodo Visual Script usado para llamar a las funciones incorporadas."
+msgstr ""
+"Un nodo de Visual Script usado para pausar la ejecución de una función."
 
 #: modules/visual_script/doc_classes/VisualScriptYield.xml
 msgid ""
 "[VisualScriptYield] will pause the function call and return "
 "[VisualScriptFunctionState], which can be used to resume the function."
 msgstr ""
+"[VisualScriptYield] pausará la llamada a la función y devolverá "
+"[VisualScriptFunctionState], que se puede usar para reanudar la función."
 
 #: modules/visual_script/doc_classes/VisualScriptYield.xml
-#, fuzzy
 msgid ""
 "The mode to use for yielding. See [enum YieldMode] for available options."
-msgstr "La función a realizar. Ver [enum Function] para las opciones."
+msgstr ""
+"El modo que se usará para la pausa (yield). Consulta [enum YieldMode] para "
+"las opciones disponibles."
 
 #: modules/visual_script/doc_classes/VisualScriptYield.xml
-#, fuzzy
 msgid "The time to wait when [member mode] is set to [constant YIELD_WAIT]."
 msgstr ""
-"El fondo utilizado cuando [member overlay] se establece en [constant "
-"OVERLAY_BREAKPOINT]."
+"El tiempo de espera cuando [member mode] está establecido en [constant "
+"YIELD_WAIT]."
 
 #: modules/visual_script/doc_classes/VisualScriptYield.xml
 msgid "Yields during an idle frame."
 msgstr ""
+"Suspende la ejecución (yield) durante un fotograma de inactividad (idle "
+"frame)."
 
 #: modules/visual_script/doc_classes/VisualScriptYield.xml
-#, fuzzy
 msgid "Yields during a physics frame."
-msgstr "Número de llamadas de dibujo durante este fotograma."
+msgstr "Suspende la ejecución durante un fotograma de física (physics frame)."
 
 #: modules/visual_script/doc_classes/VisualScriptYield.xml
-#, fuzzy
 msgid "Yields a function and waits the given time."
-msgstr "Devuelve el nodo animacion con el nombre dado."
+msgstr "Suspende una función y espera el tiempo indicado."
 
 #: modules/visual_script/doc_classes/VisualScriptYieldSignal.xml
-#, fuzzy
 msgid "A Visual Script node yielding for a signal."
-msgstr "Un nodo Visual Script usado para anotar el script."
+msgstr "Un nodo de Visual Script que espera a que se emita una señal."
 
 #: modules/visual_script/doc_classes/VisualScriptYieldSignal.xml
 msgid ""
 "[VisualScriptYieldSignal] will pause the function execution until the "
 "provided signal is emitted."
 msgstr ""
+"[VisualScriptYieldSignal] suspenderá la ejecución de la función hasta que se "
+"emita la señal proporcionada."
 
 #: modules/visual_script/doc_classes/VisualScriptYieldSignal.xml
-#, fuzzy
 msgid ""
 "[code]call_mode[/code] determines the target object to wait for the signal "
 "emission. See [enum CallMode] for options."
 msgstr ""
-"Determina cuándo mostrar el subrayado. Ver [enum UnderlineMode] para las "
-"opciones."
+"[code]call_mode[/code] determina el objeto objetivo que se debe esperar para "
+"la emisión de la señal. Consulta [enum CallMode] para ver las opciones "
+"disponibles."
 
 #: modules/visual_script/doc_classes/VisualScriptYieldSignal.xml
-#, fuzzy
 msgid "The signal name to be waited for."
-msgstr "La señal a emitir."
+msgstr "El nombre de la señal que se va a esperar."
 
 #: modules/visual_script/doc_classes/VisualScriptYieldSignal.xml
 msgid "A signal from this [Object] will be used."
-msgstr ""
+msgstr "Se usará una señal de este [Object]."
 
 #: modules/visual_script/doc_classes/VisualScriptYieldSignal.xml
 msgid "A signal from the given [Node] in the scene tree will be used."
-msgstr ""
+msgstr "Se usará una señal del [Node] dado en el árbol de la escena."
 
 #: modules/visual_script/doc_classes/VisualScriptYieldSignal.xml
 msgid "A signal from an instanced node with the given type will be used."
-msgstr ""
+msgstr "Se usará una señal de un nodo instanciado con el tipo proporcionado."
 
 #: doc/classes/VisualServer.xml
 msgid "Server for anything visible."

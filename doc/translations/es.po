@@ -2,7 +2,7 @@
 # Copyright (c) 2007-2022 Juan Linietsky, Ariel Manzur.
 # Copyright (c) 2014-2022 Godot Engine contributors (cf. AUTHORS.md).
 # This file is distributed under the same license as the Godot source code.
-#
+# 
 # 44pes Games <44pes.games@gmail.com>, 2020.
 # Megamega53 <Christopher.Morales21@myhunter.cuny.edu>, 2020, 2021.
 # Javier Ocampos <xavier.ocampos@gmail.com>, 2020, 2021, 2022.
@@ -5014,7 +5014,6 @@ msgid "Axis-Aligned Bounding Box."
 msgstr "Caja bordeada alineada con el eje."
 
 #: doc/classes/AABB.xml
-#, fuzzy
 msgid ""
 "[AABB] consists of a position, a size, and several utility functions. It is "
 "typically used for fast overlap tests.\n"
@@ -5023,9 +5022,11 @@ msgid ""
 "[b]Note:[/b] Unlike [Rect2], [AABB] does not have a variant that uses "
 "integer coordinates."
 msgstr ""
-"[Rect2] consta de una posición, un tamaño y varias funciones de utilidad. Se "
-"utiliza típicamente para pruebas de superposición rápida.\n"
-"Utiliza coordenadas reales."
+"Un [AABB] consta de una posición, un tamaño y varias utilidades. Suele "
+"usarse para pruebas de solapamiento rápidas.\n"
+"Usa coordenadas en punto flotante. El equivalente 2D de [AABB] es [Rect2].\n"
+"[b]Nota:[/b] A diferencia de [Rect2], [AABB] no tiene variante con "
+"coordenadas enteras."
 
 #: doc/classes/AABB.xml doc/classes/Basis.xml doc/classes/Rect2.xml
 #: doc/classes/Transform.xml doc/classes/Transform2D.xml
@@ -5062,7 +5063,6 @@ msgstr ""
 "Devuelve [code]true[/code] si este [AABB] contiene completamente a otro."
 
 #: doc/classes/AABB.xml
-#, fuzzy
 msgid ""
 "Returns a copy of this [AABB] expanded to include a given point.\n"
 "[b]Example:[/b]\n"
@@ -5074,7 +5074,7 @@ msgid ""
 "var box2 = box.expand(Vector3(0, -1, 2))\n"
 "[/codeblock]"
 msgstr ""
-"Devuelve una copia de este [AABB] expandido para incluir un punto dado.\n"
+"Devuelve una copia de este [AABB] ampliada para incluir el punto dado.\n"
 "[b]Ejemplo:[/b]\n"
 "[codeblock]\n"
 "# posición (-3, 2, 0), tamaño (1, 1, 1)\n"
@@ -5089,7 +5089,6 @@ msgid "Returns the volume of the [AABB]."
 msgstr "Devuelve el volumen del [AABB]."
 
 #: doc/classes/AABB.xml
-#, fuzzy
 msgid ""
 "Returns the center of the [AABB], which is equal to [member position] + "
 "([member size] / 2)."
@@ -5217,15 +5216,14 @@ msgstr ""
 "Esquina de inicio. Normalmente tiene valores inferiores a [member end]."
 
 #: doc/classes/AABB.xml doc/classes/Rect2.xml
-#, fuzzy
 msgid ""
 "Size from [member position] to [member end]. Typically, all components are "
 "positive.\n"
 "If the size is negative, you can use [method abs] to fix it."
 msgstr ""
-"Tamaño desde [member position] hasta [member end]. Típicamente todos los "
-"componentes son positivos.\n"
-"Si el tamaño es negativo, puedes usar [method abs] para fijarlo."
+"Tamaño desde [member position] hasta [member end]. Lo habitual es que todos "
+"los componentes sean positivos.\n"
+"Si el tamaño es negativo, puede usar [method abs] para corregirlo."
 
 #: doc/classes/AcceptDialog.xml
 msgid "Base dialog for user notification."
@@ -5240,7 +5238,6 @@ msgstr ""
 "un evento. Sólo puede ser aceptado o cerrado, devolviendo el mismo resultado."
 
 #: doc/classes/AcceptDialog.xml
-#, fuzzy
 msgid ""
 "Adds a button with label [code]text[/code] and a custom [code]action[/code] "
 "to the dialog and returns the created button. [code]action[/code] will be "
@@ -5250,35 +5247,37 @@ msgid ""
 "You can use [method remove_button] method to remove a button created with "
 "this method from the dialog."
 msgstr ""
-"Añade un botón con la etiqueta [code]text[/code] y una [code]action[/code] "
-"personalizada al diálogo y devuelve el botón creado. [code]action[/code] se "
-"pasará a la señal [signal custom_action] cuando sea pulsado.\n"
-"Si [code]true[/code], [code]right[/code] colocará el botón a la derecha de "
-"cualquier botón hermano."
+"Añade un botón con etiqueta [code]text[/code] y una [code]action[/code] "
+"personalizada al diálogo y devuelve el botón creado. Al pulsarse, "
+"[code]action[/code] se pasará a la señal [signal custom_action].\n"
+"Si es [code]true[/code], [code]right[/code] coloca el botón a la derecha de "
+"los demás hermanos.\n"
+"Puede usar [method remove_button] para quitar un botón creado con este "
+"método."
 
 #: doc/classes/AcceptDialog.xml
-#, fuzzy
 msgid ""
 "Adds a button with label [code]name[/code] and a cancel action to the dialog "
 "and returns the created button.\n"
 "You can use [method remove_button] method to remove a button created with "
 "this method from the dialog."
 msgstr ""
-"Añade un botón con la etiqueta [code]name[/code] y una acción de cancelación "
-"al diálogo y devuelve el botón creado."
+"Añade un botón con etiqueta [code]name[/code] y acción de cancelar al "
+"diálogo y devuelve el botón creado.\n"
+"Puede usar [method remove_button] para quitar un botón creado con este "
+"método."
 
 #: doc/classes/AcceptDialog.xml
-#, fuzzy
 msgid ""
 "Returns the label used for built-in text.\n"
 "[b]Warning:[/b] This is a required internal node, removing and freeing it "
 "may cause a crash. If you wish to hide it or any of its children, use their "
 "[member CanvasItem.visible] property."
 msgstr ""
-"Devuelve la etiqueta utilizada por un texto integrado.\n"
-"[b]Aviso:[/b] Este es un Nodo Interno requerido, removerlo o liberarlo puede "
-"resultar en un colapso. Si deseas ocultarlo o cualquiera de sus Hijos, usa "
-"la propiedad [member CanvasItem.visible]."
+"Devuelve la etiqueta usada para el texto integrado.\n"
+"[b]Advertencia:[/b] Es un nodo interno necesario; eliminarlo y liberarlo "
+"puede provocar un cierre anómalo. Si desea ocultarlo o a alguno de sus "
+"hijos, use su propiedad [member CanvasItem.visible]."
 
 #: doc/classes/AcceptDialog.xml
 msgid ""
@@ -5308,6 +5307,11 @@ msgid ""
 "the [code]button[/code] will no longer emit this dialog's [signal "
 "custom_action] signal or cancel this dialog."
 msgstr ""
+"Elimina el [code]button[/code] del diálogo, NO lo libera. "
+"El [code]button[/code] debe ser un [Button] añadido con los métodos "
+"[method add_button] o [method add_cancel]. Tras su eliminación, al pulsar "
+"el [code]button[/code] ya no se emitirá la señal [signal custom_action] de "
+"este diálogo ni se cancelará el mismo."
 
 #: doc/classes/AcceptDialog.xml
 msgid "Sets autowrapping for the text in the dialog."
@@ -5435,17 +5439,16 @@ msgstr ""
 "start]."
 
 #: doc/classes/AESContext.xml
-#, fuzzy
 msgid ""
 "Get the current IV state for this context (IV gets updated when calling "
 "[method update]). You normally don't need this function.\n"
 "[b]Note:[/b] This function only makes sense when the context is started with "
 "[constant MODE_CBC_ENCRYPT] or [constant MODE_CBC_DECRYPT]."
 msgstr ""
-"Obtener el estado actual de la IV para este contexto (la IV se actualiza "
-"cuando se llama a [method update]). Normalmente no necesitas este función.\n"
-"Nota: Esta función sólo tiene sentido cuando el contexto se inicia con "
-"[constant MODE_CBC_ENCRYPT] o [constant MODE_CBC_DECRYPT]."
+"Obtiene el estado IV actual del contexto (el IV se actualiza al llamar a "
+"[method update]). Normalmente no necesitará esta función.\n"
+"[b]Nota:[/b] Solo tiene sentido cuando el contexto se inició con [constant "
+"MODE_CBC_ENCRYPT] o [constant MODE_CBC_DECRYPT]."
 
 #: doc/classes/AESContext.xml
 msgid ""
@@ -5496,10 +5499,11 @@ msgid "Maximum value for the mode enum."
 msgstr "Valor máximo para el modo enum."
 
 #: doc/classes/AnimatedSprite.xml
-#, fuzzy
 msgid ""
 "Sprite node that contains multiple textures as frames to play for animation."
-msgstr "Nodo Sprite que puede usar múltiples texturas para la animación."
+msgstr ""
+"Nodo Sprite que contiene varias texturas como fotogramas para reproducir una "
+"animación."
 
 #: doc/classes/AnimatedSprite.xml
 msgid ""
@@ -5514,17 +5518,27 @@ msgid ""
 "animations [code]run[/code] and [code]run_normal[/code] will make it so the "
 "[code]run[/code] animation uses the normal map."
 msgstr ""
+"[AnimatedSprite] es similar al nodo [Sprite], excepto que contiene "
+"múltiples texturas como fotogramas de animación. Las animaciones se crean "
+"usando un recurso [SpriteFrames], que permite importar archivos de imagen "
+"(o una carpeta que contenga «dichos archivos») para proporcionar los "
+"fotogramas de animación al sprite. El recurso [SpriteFrames] se puede "
+"configurar en el editor mediante el panel inferior de SpriteFrames.\n"
+"[b]Nota:[/b] Puedes asociar un conjunto de mapas de normales creando "
+"animaciones adicionales con el sufijo [code]_normal[/code]. Por ejemplo, "
+"tener 2 animaciones [code]run[/code] y [code]run_normal[/code] hará que la "
+"animación [code]run[/code] utilice el mapa de normales."
 
 #: doc/classes/AnimatedSprite.xml doc/classes/AnimationPlayer.xml
 msgid "2D Sprite animation"
-msgstr ""
+msgstr "Animación de sprite 2D"
 
 #: doc/classes/AnimatedSprite.xml doc/classes/Area2D.xml
 #: doc/classes/AudioStreamPlayer.xml doc/classes/Button.xml
 #: doc/classes/CanvasLayer.xml doc/classes/CollisionShape2D.xml
 #: doc/classes/ColorRect.xml doc/classes/Input.xml doc/classes/InputEvent.xml
-#: doc/classes/InputEventAction.xml doc/classes/Label.xml doc/classes/Timer.xml
-#: doc/classes/VisibilityNotifier2D.xml
+#: doc/classes/InputEventAction.xml doc/classes/Label.xml
+#: doc/classes/Timer.xml doc/classes/VisibilityNotifier2D.xml
 msgid "2D Dodge The Creeps Demo"
 msgstr "Demo 2D «Dodge The Creeps»"
 
@@ -5543,13 +5557,12 @@ msgid "Stops the current animation (does not reset the frame counter)."
 msgstr "Detiene la animación actual (no reinicia el contador de fotogramas)."
 
 #: doc/classes/AnimatedSprite.xml
-#, fuzzy
 msgid ""
 "The current animation from the [member frames] resource. If this value "
 "changes, the [code]frame[/code] counter is reset."
 msgstr ""
-"La animación actual del recurso [code]frames[/code]. Si este valor cambia, "
-"el contador [code]frame[/code] se reinicia."
+"La animación actual del recurso [member frames]. Si este valor cambia, el "
+"contador [code]frame[/code] se reinicia."
 
 #: doc/classes/AnimatedSprite.xml doc/classes/SpriteBase3D.xml
 msgid "If [code]true[/code], texture will be centered."
@@ -5577,6 +5590,8 @@ msgid ""
 "option to load, edit, clear, make unique and save the states of the "
 "[SpriteFrames] resource."
 msgstr ""
+"El recurso [SpriteFrames] que contiene la(s) animación(es). Permite cargar, "
+"editar, borrar, hacer único y guardar el estado del recurso [SpriteFrames]."
 
 #: doc/classes/AnimatedSprite.xml doc/classes/Sprite.xml
 #: doc/classes/SpriteBase3D.xml
@@ -5655,7 +5670,6 @@ msgid "Proxy texture for simple frame-based animations."
 msgstr "Textura de conexión para animaciones simples basadas en fotogramas."
 
 #: doc/classes/AnimatedTexture.xml
-#, fuzzy
 msgid ""
 "[AnimatedTexture] is a resource format for frame-based animations, where "
 "multiple textures can be chained automatically with a predefined delay for "
@@ -5671,29 +5685,29 @@ msgid ""
 "[b]Note:[/b] AnimatedTexture doesn't support using [AtlasTexture]s. Each "
 "frame needs to be a separate [Texture]."
 msgstr ""
-"[AnimatedTexture] es un formato de recursos para animaciones basadas en "
-"fotogramas, en el que se pueden encadenar múltiples texturas automáticamente "
-"con un retardo predefinido para cada fotograma. A diferencia de "
-"[AnimationPlayer] o [AnimatedSprite2D], no es un [Node], pero tiene la "
-"ventaja de ser utilizable en cualquier lugar donde se pueda usar un recurso "
-"[Textura2D], por ejemplo en un [TileSet].\n"
-"La reproducción de la animación está controlada por la propiedad [member "
-"fps], así como por el retardo opcional de cada fotograma (ver [method "
-"set_frame_delay]). La animación se repite, es decir, se reiniciará en el "
-"fotograma 0 automáticamente después de reproducir el último fotograma.\n"
-"[AnimatedTexture] actualmente requiere que todas las texturas de los cuadros "
-"tengan el mismo tamaño, de lo contrario las más grandes serán recortadas "
-"para que coincidan con la más pequeña. Además, no soporta [AtlasTexture]. "
-"Cada cuadro necesita ser una imagen separada."
+"[AnimatedTexture] es un formato de recurso para animaciones basadas en "
+"fotogramas, donde se pueden encadenar múltiples texturas automáticamente "
+"con un retraso predefinido para cada fotograma. A diferencia de "
+"[AnimationPlayer] o [AnimatedSprite], no es un [Node], pero tiene la "
+"ventaja de poder usarse en cualquier lugar donde se use un recurso "
+"[Texture], por ejemplo, en un [TileSet].\n"
+"La reproducción de la animación se controla mediante la propiedad "
+"[member fps], así como por el retraso opcional de cada fotograma (ver "
+"[method set_frame_delay]). La animación es en bucle, es decir, se "
+"reiniciará en el fotograma 0 automáticamente tras reproducir el último.\n"
+"[AnimatedTexture] requiere actualmente que todas las texturas de los "
+"fotogramas tengan el mismo tamaño; de lo contrario, las más grandes se "
+"recortarán para coincidir con la más pequeña.\n"
+"[b]Nota:[/b] AnimatedTexture no admite el uso de [AtlasTexture]. Cada "
+"fotograma debe ser una [Texture] independiente."
 
 #: doc/classes/AnimatedTexture.xml
 msgid "Returns the given frame's delay value."
 msgstr "Devuelve el valor de retardo del fotograma dado."
 
 #: doc/classes/AnimatedTexture.xml
-#, fuzzy
 msgid "Returns the given frame's [Texture]."
-msgstr "Devuelve la [Texture2D] de un fotograma."
+msgstr "Devuelve la [Texture] del fotograma indicado."
 
 #: doc/classes/AnimatedTexture.xml
 msgid ""
@@ -5726,7 +5740,6 @@ msgstr ""
 "[/codeblock]"
 
 #: doc/classes/AnimatedTexture.xml
-#, fuzzy
 msgid ""
 "Assigns a [Texture] to the given frame. Frame IDs start at 0, so the first "
 "frame has ID 0, and the last frame of the animation has ID [member frames] - "
@@ -5735,12 +5748,11 @@ msgid ""
 "in mind that only frames from 0 to [member frames] - 1 will be part of the "
 "animation."
 msgstr ""
-"Asigna una [Textura2D] al fotograma dado. Los ID de los fotogramas empiezan "
-"en 0, así que el primer fotograma tiene ID 0, y el último fotograma de la "
-"animación tiene ID [member frames] - 1.\n"
-"Puedes definir cualquier número de texturas hasta [constant MAX_FRAMES], "
-"pero ten en cuenta que sólo los fotogramas de 0 a [member frames] - 1 "
-"formarán parte de la animación."
+"Asigna una [Texture] al fotograma dado. Los IDs empiezan en 0, por lo tanto, el primer "
+"fotograma es 0 y el último de la animación tiene ID [member frames] - 1.\n"
+"Puede definir tantas texturas como haga falta hasta [constant MAX_FRAMES], "
+"pero solo los fotogramas de 0 a [member frames] - 1 forman parte de la "
+"animación."
 
 #: doc/classes/AnimatedTexture.xml
 msgid "Sets the currently visible frame of the texture."
@@ -5799,21 +5811,18 @@ msgstr ""
 "desde donde se detuvo al cambiar esta propiedad a [code]false[/code]."
 
 #: doc/classes/AnimatedTexture.xml
-#, fuzzy
 msgid ""
 "The maximum number of frames supported by [AnimatedTexture]. If you need "
 "more frames in your animation, use [AnimationPlayer] or [AnimatedSprite]."
 msgstr ""
-"El número máximo de fotogramas soportados por [AnimatedTexture]. Si "
-"necesitas más fotogramas en tu animación, usa [AnimationPlayer] o "
-"[AnimatedSprite2D]."
+"Número máximo de fotogramas admitidos por [AnimatedTexture]. Si necesita más "
+"fotogramas en la animación, use [AnimationPlayer] o [AnimatedSprite]."
 
 #: doc/classes/Animation.xml
 msgid "Contains data used to animate everything in the engine."
 msgstr "Contiene datos usados para animar todo en el motor."
 
 #: doc/classes/Animation.xml
-#, fuzzy
 msgid ""
 "An Animation resource contains data used to animate everything in the "
 "engine. Animations are divided into tracks, and each track must be linked to "
@@ -5834,24 +5843,24 @@ msgid ""
 "tracks have different types, each with its own set of dedicated methods. "
 "Check [enum TrackType] to see available types."
 msgstr ""
-"Un recurso de animación contiene datos que se usan para animar todo en el "
-"motor. Las animaciones se dividen en pistas, y cada pista debe estar "
-"vinculada a un nodo. El estado de ese nodo se puede cambiar a través del "
-"tiempo, añadiendo claves de tiempo (eventos) a la pista.\n"
-"# Esto crea una animación que hace que el nodo \"Enemigo\" se mueva a la "
-"derecha \n"
-"# 100 pixeles en 0.5 segundos.\n"
+"Un recurso Animation contiene datos utilizados para animar cualquier cosa "
+"en el motor. Las animaciones se dividen en pistas, y cada pista debe estar "
+"vinculada a un nodo. El estado de dicho nodo puede cambiarse a lo largo "
+"del tiempo añadiendo claves (eventos) temporizadas a la pista.\n"
 "[codeblock]\n"
-"var animacion = Animation.new()\n"
-"var indice_pistas = animacion.add_track(Animation.TYPE_VALUE)\n"
-"animacion.track_set_path(indice_pistas, \"Enemy:position.x\")\n"
-"animacion.track_insert_key(indice_pistas, 0.0, 0)\n"
-"animacion.track_insert_key(indice_pistas, 0.5, 100)\n"
+"# Esto crea una animación que hace que el nodo \"Enemy\" se mueva a la\n"
+"# derecha 100 píxeles en 0.5 segundos.\n"
+"var animation = Animation.new()\n"
+"var track_index = animation.add_track(Animation.TYPE_VALUE)\n"
+"animation.track_set_path(track_index, \"Enemy:position:x\")\n"
+"animation.track_insert_key(track_index, 0.0, 0)\n"
+"animation.track_insert_key(track_index, 0.5, 100)\n"
 "[/codeblock]\n"
-"Las animaciones son sólo contenedores de datos, y deben ser añadidas a nodos "
-"como un [AnimationPlayer] para ser reproducidas. Las pistas de animación "
-"tienen diferentes tipos, cada una con su propio conjunto de métodos "
-"dedicados. Consulta [enum TrackType] para ver los tipos disponibles."
+"Las animaciones son solo contenedores de datos y deben añadirse a nodos "
+"como [AnimationPlayer] o [AnimationTreePlayer] para ser reproducidas. Las "
+"pistas de animación tienen diferentes tipos, cada uno con su propio "
+"conjunto de métodos dedicados. Consulta [enum TrackType] para ver los "
+"tipos disponibles."
 
 #: doc/classes/Animation.xml
 msgid "Adds a track to the Animation."
@@ -5955,15 +5964,14 @@ msgstr ""
 "[code]track_idx[/code] debe ser el índice de una pista de audio."
 
 #: doc/classes/Animation.xml
-#, fuzzy
 msgid ""
 "Sets the stream of the key identified by [code]key_idx[/code] to value "
 "[code]stream[/code]. The [code]track_idx[/code] must be the index of an "
 "Audio Track."
 msgstr ""
-"Establece el stream de la clave identificada por [code]key_idx[/code] como "
-"valor [code]offset[/code]. El [code]track_idx[/code] debe ser el índice de "
-"una pista de audio."
+"Establece el flujo de audio de la clave identificada por [code]key_idx[/"
+"code] al valor [code]stream[/code]. [code]track_idx[/code] debe ser el "
+"índice de una pista de audio."
 
 #: doc/classes/Animation.xml
 msgid ""
@@ -6224,7 +6232,6 @@ msgid "Sets the value of an existing key."
 msgstr "Establece el valor de una clave existente."
 
 #: doc/classes/Animation.xml
-#, fuzzy
 msgid ""
 "Sets the path of a track. Paths must be valid scene-tree paths to a node and "
 "must be specified starting from the parent node of the node that will "
@@ -6233,11 +6240,10 @@ msgid ""
 "For example, [code]\"character/skeleton:ankle\"[/code] or [code]\"character/"
 "mesh:transform/local\"[/code]."
 msgstr ""
-"Establece el ruta de una pista. Las rutas deben ser rutas válidas de árbol "
-"de escena a un nodo, y deben especificarse empezando por el nodo padre del "
-"nodo que reproducirá la animación. Las pistas que controlan propiedades o "
-"huesos deben añadir su nombre después de la ruta, separadas por [code]\":\"[/"
-"code].\n"
+"Define la ruta de una pista. Las rutas deben ser rutas válidas en el árbol "
+"de escenas hasta un nodo y deben indicarse desde el nodo padre del que "
+"reproducirá la animación. Las pistas que controlan propiedades u huesos "
+"deben añadir el nombre tras la ruta, separado por [code]\":\"[/code].\n"
 "Por ejemplo, [code]\"character/skeleton:ankle\"[/code] o [code]\"character/"
 "mesh:transform/local\"[/code]."
 
@@ -6276,13 +6282,12 @@ msgid "Returns the update mode of a value track."
 msgstr "Devuelve el modo de actualización de una pista de valores."
 
 #: doc/classes/Animation.xml
-#, fuzzy
 msgid ""
 "Returns the interpolated value at the given time (in seconds). The "
 "[code]track_idx[/code] must be the index of a value track."
 msgstr ""
-"Devuelve el valor interpolado en el [code]time[/code] dado (en segundos). El "
-"[code]track_idx[/code] debe ser el índice de una pista de Bezier."
+"Devuelve el valor interpolado en el instante dado (en segundos). "
+"[code]track_idx[/code] debe ser el índice de una pista de valores."
 
 #: doc/classes/Animation.xml
 msgid "Sets the update mode (see [enum UpdateMode]) of a value track."
@@ -6302,15 +6307,14 @@ msgstr ""
 "interpolación y bucle."
 
 #: doc/classes/Animation.xml
-#, fuzzy
 msgid ""
 "A flag indicating that the animation must loop. This is used for correct "
 "interpolation of animation cycles, and for hinting the player that it must "
 "restart the animation."
 msgstr ""
-"Un flag que indica que la animación debe hacer un bucle. Esto se usa para la "
-"correcta interpolación de los ciclos de animación, y para indicar al jugador "
-"que debe reiniciar la animación."
+"Indica que la animación debe repetirse en bucle. Sirve para interpolar "
+"correctamente los ciclos y para indicar al reproductor que reinicie la "
+"animación."
 
 #: doc/classes/Animation.xml
 msgid "The animation step value."
@@ -6470,18 +6474,25 @@ msgid ""
 "When inheriting from [AnimationRootNode], implement this virtual method to "
 "override the text caption for this node."
 msgstr ""
+"Al heredar de [AnimationRootNode], implemente este método virtual para "
+"sustituir el pie de texto de este nodo."
 
 #: doc/classes/AnimationNode.xml
 msgid ""
 "When inheriting from [AnimationRootNode], implement this virtual method to "
 "return a child node by its [code]name[/code]."
 msgstr ""
+"Al heredar de [AnimationRootNode], implemente este método virtual para "
+"devolver un nodo hijo por su [code]name[/code]."
 
 #: doc/classes/AnimationNode.xml
 msgid ""
 "When inheriting from [AnimationRootNode], implement this virtual method to "
 "return all children nodes in order as a [code]name: node[/code] dictionary."
 msgstr ""
+"Al heredar de [AnimationRootNode], implemente este método virtual para "
+"devolver todos los nodos hijos en orden como diccionario [code]nombre: nodo[/"
+"code]."
 
 #: doc/classes/AnimationNode.xml
 msgid ""
@@ -6505,47 +6516,44 @@ msgstr ""
 "reutilizado en múltiples árboles."
 
 #: doc/classes/AnimationNode.xml
-#, fuzzy
 msgid ""
 "When inheriting from [AnimationRootNode], implement this virtual method to "
 "return the default value of parameter \"[code]name[/code]\". Parameters are "
 "custom local memory used for your nodes, given a resource can be reused in "
 "multiple trees."
 msgstr ""
-"Obtiene el valor por defecto de un parametro. Los parametros son "
-"personalizados en memoria local utilizados para tus nodos, dado que un "
-"recurso puede ser reutilizado en multiples arboles."
+"Al heredar de [AnimationRootNode], implemente este método virtual para "
+"devolver el valor por defecto del parámetro «[code]name[/code]». Los "
+"parámetros son memoria local propia de sus nodos, porque un recurso puede "
+"reutilizarse en varios árboles."
 
 #: doc/classes/AnimationNode.xml
-#, fuzzy
 msgid ""
 "When inheriting from [AnimationRootNode], implement this virtual method to "
 "return a list of the properties on this node. Parameters are custom local "
 "memory used for your nodes, given a resource can be reused in multiple "
 "trees. Format is similar to [method Object.get_property_list]."
 msgstr ""
-"Obtiene la información de la propiedad para el parámetro. Los parámetros son "
-"la memoria local personalizada que se utiliza para sus nodos, dado que un "
-"recurso puede ser reutilizado en múltiples árboles. El formato es similar al "
-"del [method Object.get_property_list]."
+"Al heredar de [AnimationRootNode], implemente este método virtual para "
+"devolver la lista de propiedades de este nodo. Los parámetros son memoria "
+"local propia de sus nodos, porque un recurso puede reutilizarse en varios "
+"árboles. El formato es similar a [method Object.get_property_list]."
 
 #: doc/classes/AnimationNode.xml
-#, fuzzy
 msgid ""
 "When inheriting from [AnimationRootNode], implement this virtual method to "
 "return whether the blend tree editor should display filter editing on this "
 "node."
 msgstr ""
-"Devuelve [code]true[/code] si quieres que el editor del árbol de mezcla "
-"muestre la edición del filtro en este nodo."
+"Al heredar de [AnimationRootNode], implemente este método virtual para "
+"indicar si el editor del árbol de mezcla debe mostrar la edición de filtros "
+"en este nodo."
 
 #: doc/classes/AnimationNode.xml
-#, fuzzy
 msgid "Returns whether the given path is filtered."
-msgstr "Devuelve [code]true[/code] si un camino dado es filtrado."
+msgstr "Devuelve si la ruta dada está filtrada."
 
 #: doc/classes/AnimationNode.xml
-#, fuzzy
 msgid ""
 "When inheriting from [AnimationRootNode], implement this virtual method to "
 "run some code when this node is processed. The [code]time[/code] parameter "
@@ -6557,16 +6565,16 @@ msgid ""
 "This function should return the time left for the current animation to "
 "finish (if unsure, pass the value from the main blend being called)."
 msgstr ""
-"Se llama a la devolución de llamada definida por el usuario cuando se "
-"procesa un nodo personalizado. El parámetro [code]time[/code] es un delta "
-"relativo, a menos que [code]seek[/code] sea [code]true[/code], en cuyo caso "
-"es absoluto.\n"
+"Al heredar de [AnimationRootNode], implementa este método virtual para "
+"ejecutar código cuando se procese este nodo. El parámetro [code]time[/code] "
+"es un delta relativo, a menos que [code]seek[/code] sea [code]true[/code], "
+"en cuyo caso es absoluto.\n"
 "Aquí, llama a las funciones [method blend_input], [method blend_node] o "
 "[method blend_animation]. También puedes usar [method get_parameter] y "
 "[method set_parameter] para modificar la memoria local.\n"
-"Esta función debería devolver el tiempo que queda para que termine la "
-"animación actual (si no estás seguro, pasa el valor de la mezcla principal "
-"que se está llamando).Devuelve el tipo de interpolacion dada una pista."
+"Esta función debe devolver el tiempo restante para que la animación "
+"actual finalice (si no estás seguro, pasa el valor del blend principal "
+"que se esté llamando)."
 
 #: doc/classes/AnimationNode.xml
 msgid "Removes an input, call this only when inactive."
@@ -6577,23 +6585,20 @@ msgid "Adds or removes a path for the filter."
 msgstr "Añade o elimina una ruta para el filtro."
 
 #: doc/classes/AnimationNode.xml
-#, fuzzy
 msgid ""
 "Sets a custom parameter. These are used as local memory, because resources "
 "can be reused across the tree or scenes."
 msgstr ""
-"Establece un parámetro personalizado. Estos se usan como almacenamiento "
-"local, porque los recursos pueden ser reutilizados a través del árbol o las "
-"escenas."
+"Define un parámetro personalizado. Sirven como memoria local porque los "
+"recursos pueden reutilizarse en el árbol o entre escenas."
 
 #: doc/classes/AnimationNode.xml
 msgid "If [code]true[/code], filtering is enabled."
 msgstr "Si [code]true[/code], el filtrado está activado."
 
 #: doc/classes/AnimationNode.xml
-#, fuzzy
 msgid "Emitted when the node was removed from the graph."
-msgstr "Llamado cuando el nodo es eliminado desde el gráfico."
+msgstr "Se emite cuando el nodo se eliminó del grafo."
 
 #: doc/classes/AnimationNode.xml
 msgid ""
@@ -6698,10 +6703,11 @@ msgstr "AnimationTree"
 #: doc/classes/Camera.xml doc/classes/CollisionShape.xml
 #: doc/classes/CylinderShape.xml doc/classes/Environment.xml
 #: doc/classes/GIProbe.xml doc/classes/GIProbeData.xml
-#: doc/classes/KinematicBody.xml doc/classes/Light.xml doc/classes/Material.xml
-#: doc/classes/Mesh.xml doc/classes/MeshInstance.xml doc/classes/Particles.xml
-#: doc/classes/Quat.xml doc/classes/Skeleton.xml doc/classes/SpotLight.xml
-#: doc/classes/StaticBody.xml doc/classes/WorldEnvironment.xml
+#: doc/classes/KinematicBody.xml doc/classes/Light.xml
+#: doc/classes/Material.xml doc/classes/Mesh.xml doc/classes/MeshInstance.xml
+#: doc/classes/Particles.xml doc/classes/Quat.xml doc/classes/Skeleton.xml
+#: doc/classes/SpotLight.xml doc/classes/StaticBody.xml
+#: doc/classes/WorldEnvironment.xml
 msgid "Third Person Shooter Demo"
 msgstr "Demo de shooter en tercera persona"
 
@@ -7057,7 +7063,6 @@ msgstr ""
 "mezcla."
 
 #: doc/classes/AnimationNodeBlendTree.xml
-#, fuzzy
 msgid ""
 "This node may contain a sub-tree of any other blend type nodes, such as "
 "[AnimationNodeTransition], [AnimationNodeBlend2], [AnimationNodeBlend3], "
@@ -7065,9 +7070,11 @@ msgid ""
 "An [AnimationNodeOutput] node named [code]output[/code] is created by "
 "default."
 msgstr ""
-"Este nodo puede contener un subárbol de cualquier otro tipo de nodos de "
-"mezcla, como mix, blend2, blend3, one shot, etc. Esta es una de los nodos "
-"raíces más utilizados."
+"Este nodo puede contener un subárbol de otros nodos de mezcla, como "
+"[AnimationNodeTransition], [AnimationNodeBlend2], [AnimationNodeBlend3], "
+"[AnimationNodeOneShot], etc. Es una de las raíces más habituales.\n"
+"Se crea por defecto un nodo [AnimationNodeOutput] llamado [code]output[/"
+"code]."
 
 #: doc/classes/AnimationNodeBlendTree.xml
 msgid ""
@@ -7295,7 +7302,7 @@ msgstr "Renombra en nodo dado."
 
 #: doc/classes/AnimationNodeStateMachine.xml
 msgid "Replaces the node and keeps its transitions unchanged."
-msgstr ""
+msgstr "Sustituye el nodo conservando sus transiciones sin cambios."
 
 #: doc/classes/AnimationNodeStateMachine.xml
 msgid "Sets the given node as the graph end point."
@@ -7377,7 +7384,6 @@ msgstr ""
 "Las transiciones desde el estado actual a otro, siguiendo la ruta mas corta."
 
 #: doc/classes/AnimationNodeStateMachineTransition.xml
-#, fuzzy
 msgid ""
 "Turn on auto advance when this condition is set. The provided name will "
 "become a boolean parameter on the [AnimationTree] that can be controlled "
@@ -7390,16 +7396,15 @@ msgid ""
 "(linear_velocity.x == 0)\n"
 "[/codeblock]"
 msgstr ""
-"Enciende el auto avance cuando la condicion esta configurada. El nombre dado "
-"sera convertido en un parametro booleano en el [AnimationTree] que puede ser "
-"controlado desde codigo (ver [url=https://docs.godotengine.org/es/latest/"
-"tutorials/animation/animation_tree.html#controlling-from-code][/url]). Por "
-"ejemplo, is [member AnimationTree.tree_root] es un "
-"[AnimationNodeStateMachine] y [member advance_condition] es colocado a "
-"[code]\"idle\"[/code].\n"
+"Activa el avance automático cuando se cumple esta condición. El nombre "
+"indicado será un parámetro booleano en [AnimationTree] controlable desde "
+"código (véase [url=$DOCS_URL/tutorials/animation/animation_tree."
+"html#controlling-from-code]Using AnimationTree[/url]). Por ejemplo, si "
+"[member AnimationTree.tree_root] es un [AnimationNodeStateMachine] y [member "
+"advance_condition] es [code]\"idle\"[/code]:\n"
 "[codeblock]\n"
 "$animation_tree[\"parameters/conditions/idle\"] = is_on_floor and "
-"(linear_velocity.x == 0).\n"
+"(linear_velocity.x == 0)\n"
 "[/codeblock]"
 
 #: doc/classes/AnimationNodeStateMachineTransition.xml
@@ -7579,9 +7584,8 @@ msgstr ""
 "ejecucion."
 
 #: doc/classes/AnimationPlayer.xml
-#, fuzzy
 msgid "Animation tutorial index"
-msgstr "Nodo desconocido."
+msgstr "Índice de tutoriales de animación"
 
 #: doc/classes/AnimationPlayer.xml
 msgid ""
@@ -7634,13 +7638,12 @@ msgstr ""
 "encuentra."
 
 #: doc/classes/AnimationPlayer.xml
-#, fuzzy
 msgid ""
 "Returns the [Animation] with the key [code]name[/code]. If the animation "
 "does not exist, [code]null[/code] is returned and an error is logged."
 msgstr ""
-"Devuelve la [Animation] con clave [code]name[/code] or [code]null[/code] si "
-"no se encuentra."
+"Devuelve la [Animation] con la clave [code]name[/code]. Si no existe, "
+"devuelve [code]null[/code] y se registra un error."
 
 #: doc/classes/AnimationPlayer.xml
 msgid "Returns the list of stored animation names."
@@ -7756,7 +7759,6 @@ msgstr ""
 "[code]newname[/code]."
 
 #: doc/classes/AnimationPlayer.xml
-#, fuzzy
 msgid ""
 "Seeks the animation to the [code]seconds[/code] point in time (in seconds). "
 "If [code]update[/code] is [code]true[/code], the animation updates too, "
@@ -7766,10 +7768,13 @@ msgid ""
 "animation_finished]. If you want to skip animation and emit the signal, use "
 "[method advance]."
 msgstr ""
-"Busca la animación hasta el punto en el tiempo de [code]seconds[/code]. Si "
-"[code]update[/code] es [code]true[/code], la animación se actualiza también, "
-"de lo contrario se actualiza en el momento del proceso. Los eventos entre el "
-"fotograma actual y [code]seconds[/code] se saltan."
+"Posiciona la animación en el instante [code]seconds[/code] (en segundos). Si "
+"[code]update[/code] es [code]true[/code], la animación se actualiza también; "
+"si no, se actualiza en el momento de procesamiento. Los eventos entre el "
+"fotograma actual y [code]seconds[/code] se omiten.\n"
+"[b]Nota:[/b] situarse al final de la animación no emite [signal "
+"animation_finished]. Para saltar la animación y emitir la señal, use [method "
+"advance]."
 
 #: doc/classes/AnimationPlayer.xml
 msgid ""
@@ -7825,6 +7830,13 @@ msgid ""
 "get the currently playing animation, and internally for animation playback "
 "tracks. For more information, see [Animation]."
 msgstr ""
+"Nombre de la animación en reproducción. Si no hay ninguna, la propiedad es "
+"una cadena vacía. Cambiar este valor no reinicia la animación. Véase [method "
+"play] para más detalles sobre la reproducción.\n"
+"[b]Nota:[/b] aunque aparece en el inspector, no está pensada para editarse "
+"ni se guarda en la escena. Sirve sobre todo para saber qué animación suena "
+"y, por dentro, para pistas de reproducción. Para más información, véase "
+"[Animation]."
 
 #: doc/classes/AnimationPlayer.xml
 msgid "The length (in seconds) of the currently being played animation."
@@ -7880,6 +7892,12 @@ msgid ""
 "defined by the reset animation, if any, with the editor keeping the values "
 "that the nodes had before saving."
 msgstr ""
+"Lo usa el editor. Si es [code]true[/code], la escena se guarda con los "
+"efectos de la animación de reinicio aplicados (como si se hubiera "
+"posicionado en el tiempo 0) y luego se revierten tras guardar.\n"
+"En otras palabras, el archivo guardado contendrá la «pose por defecto» "
+"definida por la animación de reinicio, si existe, mientras el editor "
+"conserva los valores que tenían los nodos antes de guardar."
 
 #: doc/classes/AnimationPlayer.xml
 msgid "The node from which node path references will travel."
@@ -7892,6 +7910,10 @@ msgid ""
 "[b]Note:[/b] The signal is not emitted when the animation is changed via "
 "[method play] or from [AnimationTree]."
 msgstr ""
+"Se emite cuando una animación en cola se reproduce tras terminar la "
+"anterior. Véase [method queue].\n"
+"[b]Nota:[/b] La señal no se emite cuando la animación cambia mediante "
+"[method play] o desde [AnimationTree]."
 
 #: doc/classes/AnimationPlayer.xml
 msgid "Notifies when an animation finished playing."
@@ -7953,7 +7975,6 @@ msgstr ""
 "[AnimationPlayer]."
 
 #: doc/classes/AnimationTree.xml
-#, fuzzy
 msgid ""
 "A node to be used for advanced animation transitions in an "
 "[AnimationPlayer].\n"
@@ -7964,16 +7985,16 @@ msgid ""
 "[AnimationPlayer] node should be used solely for adding, deleting, and "
 "editing animations."
 msgstr ""
-"Nota: Cuando se enlazan con un [AnimationPlayer], varias propiedades y "
-"métodos del correspondiente [AnimationPlayer] , estas no funcionarán como se "
-"esperaba. La reproducción y las transiciones deben ser manejadas usando "
-"solamente el [AnimationTree] y su(s) [AnimationNode](s) que lo constituyen. "
-"El nodo [AnimationPlayer] debe usarse únicamente para añadir, borrar y "
-"editar animaciones."
+"Nodo para transiciones de animación avanzadas con un [AnimationPlayer].\n"
+"[b]Nota:[/b] Al enlazarlo con un [AnimationPlayer], varias propiedades y "
+"métodos de ese [AnimationPlayer] no se comportarán como se espera. La "
+"reproducción y las transiciones deben gestionarse solo con [AnimationTree] y "
+"sus [AnimationNode]. El nodo [AnimationPlayer] debe usarse solo para añadir, "
+"borrar y editar animaciones."
 
 #: doc/classes/AnimationTree.xml
 msgid "Using AnimationTree"
-msgstr ""
+msgstr "Uso de AnimationTree"
 
 #: doc/classes/AnimationTree.xml
 msgid "Manually advance the animations by the specified time (in seconds)."
@@ -7981,17 +8002,17 @@ msgstr ""
 "Avanza manualmente las animaciones en el tiempo especificado (en segundos)."
 
 #: doc/classes/AnimationTree.xml
-#, fuzzy
 msgid ""
 "Retrieve the motion of the [member root_motion_track] as a [Transform] that "
 "can be used elsewhere. If [member root_motion_track] is not a path to a "
 "track of type [constant Animation.TYPE_TRANSFORM], returns an identity "
 "transformation. See also [member root_motion_track] and [RootMotionView]."
 msgstr ""
-"Recupera el movimiento del [member root_motion_track] como un [Transform] "
-"que puede ser usado en otro lugar. Si [member root_motion_track] no es un "
-"camino a una pista de tipo [constant Animation.TYPE_TRANSFORM], devuelve una "
-"transformación de identidad."
+"Obtiene el movimiento de [member root_motion_track] como [Transform] que "
+"puede usar en otro sitio. Si [member root_motion_track] no es una ruta a una "
+"pista de tipo [constant Animation.TYPE_TRANSFORM], devuelve la "
+"transformación identidad. Véase también [member root_motion_track] y "
+"[RootMotionView]."
 
 #: doc/classes/AnimationTree.xml
 msgid "If [code]true[/code], the [AnimationTree] will be processing."
@@ -8010,7 +8031,6 @@ msgstr ""
 "para los modos disponibles."
 
 #: doc/classes/AnimationTree.xml
-#, fuzzy
 msgid ""
 "The path to the Animation track used for root motion. Paths must be valid "
 "scene-tree paths to a node, and must be specified starting from the parent "
@@ -8023,13 +8043,17 @@ msgid ""
 "stay in place. See also [method get_root_motion_transform] and "
 "[RootMotionView]."
 msgstr ""
-"Establece el ruta de una pista. Las rutas deben ser rutas válidas de árbol "
-"de escena a un nodo, y deben especificarse empezando por el nodo padre del "
-"nodo que reproducirá la animación. Las pistas que controlan propiedades o "
-"huesos deben añadir su nombre después de la ruta, separadas por [code]\":\"[/"
-"code].\n"
-"Por ejemplo, [code]\"character/skeleton:ankle\"[/code] o [code]\"character/"
-"mesh:transform/local\"[/code]."
+"La ruta a la pista de animación utilizada para «root motion». Las rutas "
+"deben ser rutas válidas del árbol de escena a un nodo, y deben "
+"especificarse empezando desde el nodo padre del nodo que reproducirá la "
+"animación. Para especificar una pista que controla propiedades o "
+"huesos, añade su nombre tras la ruta, separado por [code]\":\"[/code]. "
+"Por ejemplo, [code]\"character/skeleton:ankle\"[/code] o "
+"[code]\"character/mesh:transform/local\"[/code].\n"
+"Si la pista es de tipo [constant Animation.TYPE_TRANSFORM], la "
+"transformación se cancelará visualmente y la animación parecerá "
+"quedarse en el sitio. Consulta también [method get_root_motion_transform] "
+"y [RootMotionView]."
 
 #: doc/classes/AnimationTree.xml
 msgid "The root animation node of this [AnimationTree]. See [AnimationNode]."
@@ -11938,7 +11962,8 @@ msgid ""
 msgstr ""
 
 #: doc/classes/AudioEffectCapture.xml doc/classes/AudioEffectDistortion.xml
-#: doc/classes/AudioEffectFilter.xml doc/classes/AudioEffectHighShelfFilter.xml
+#: doc/classes/AudioEffectFilter.xml
+#: doc/classes/AudioEffectHighShelfFilter.xml
 #: doc/classes/AudioEffectLowShelfFilter.xml doc/classes/AudioServer.xml
 msgid "Audio buses"
 msgstr "Buses de audio"
@@ -20467,7 +20492,8 @@ msgstr ""
 "La torsión se bloquea si está por debajo de 0,05."
 
 #: doc/classes/ConeTwistJoint.xml doc/classes/Generic6DOFJoint.xml
-#: doc/classes/HingeJoint.xml doc/classes/Light.xml doc/classes/SliderJoint.xml
+#: doc/classes/HingeJoint.xml doc/classes/Light.xml
+#: doc/classes/SliderJoint.xml
 msgid "Represents the size of the [enum Param] enum."
 msgstr "Representa el tamaño del enum [enum Param]."
 

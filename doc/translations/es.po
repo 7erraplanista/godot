@@ -46,7 +46,7 @@ msgstr ""
 "Project-Id-Version: Godot Engine class reference\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2026-03-26 22:37-0300\n"
+"PO-Revision-Date: 2026-03-26 23:37-0300\n"
 "Last-Translator: Juan Matías Olmos <elterraplanista@yahoo.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-class-reference/es/>\n"
@@ -93419,7 +93419,6 @@ msgid "A script implemented in the Visual Script programming environment."
 msgstr "Un script implementado en el entorno de programación de Visual Script."
 
 #: modules/visual_script/doc_classes/VisualScript.xml
-#, fuzzy
 msgid ""
 "A script implemented in the Visual Script programming environment. The "
 "script extends the functionality of all objects that instance it.\n"
@@ -93428,12 +93427,12 @@ msgid ""
 "You are most likely to use this class via the Visual Script editor or when "
 "writing plugins for it."
 msgstr ""
-"Un script implementado en el entorno de programación de Visual Script. El "
-"script extiende la funcionalidad de todos los objetos que lo instancian.\n"
-"El [method Object.set_script] extiende un objeto existente, si la clase de "
-"ese objeto coincide con una de las clases base del script.\n"
-"Lo más probable es que uses esta clase a través del editor de Visual Script "
-"o cuando escribas plugins para el."
+"Un script implementado en el entorno de programación Visual Script. El "
+"script amplía la funcionalidad de todos los objetos que lo instancian.\n"
+"[method Object.set_script] amplía un objeto existente si la clase del objeto "
+"coincide con una de las clases base del script.\n"
+"Lo más habitual es usar esta clase desde el editor de Visual Script o al "
+"escribir complementos para él."
 
 #: modules/visual_script/doc_classes/VisualScript.xml
 msgid "Add a custom signal with the specified name to the VisualScript."
@@ -93986,18 +93985,16 @@ msgstr ""
 "VAR_TO_STR]."
 
 #: modules/visual_script/doc_classes/VisualScriptBuiltinFunc.xml
-#, fuzzy
 msgid "Serialize a [Variant] to a [PoolByteArray]."
-msgstr "Serializa una [Variant] a un [PackedByteArray]."
+msgstr "Serializa un [Variant] a [PoolByteArray]."
 
 #: modules/visual_script/doc_classes/VisualScriptBuiltinFunc.xml
-#, fuzzy
 msgid ""
 "Deserialize a [Variant] from a [PoolByteArray] serialized using [constant "
 "VAR_TO_BYTES]."
 msgstr ""
-"Deserializa una [Variant] de un [PackedByteArray] serializado usando la "
-"[constant VAR_TO_BYTES]."
+"Deserializa un [Variant] desde un [PoolByteArray] serializado con [constant "
+"VAR_TO_BYTES]."
 
 #: modules/visual_script/doc_classes/VisualScriptBuiltinFunc.xml
 msgid ""
@@ -94193,18 +94190,17 @@ msgid "Return the count of input value ports."
 msgstr "Devuelve el recuento de los puertos de valor de entrada."
 
 #: modules/visual_script/doc_classes/VisualScriptCustomNode.xml
-#, fuzzy
 msgid ""
 "Return the specified input port's hint. See the [enum @GlobalScope."
 "PropertyHint] hints."
 msgstr ""
-"Devuelve el tipo de puerto de entrada especificado. Vea los valores de [enum "
-"Variant.Type]."
+"Devuelve la pista («hint») del puerto de entrada especificado. Consulta las "
+"pistas en [enum @GlobalScope.PropertyHint]."
 
 #: modules/visual_script/doc_classes/VisualScriptCustomNode.xml
-#, fuzzy
 msgid "Return the specified input port's hint string."
-msgstr "Devuelve el nombre del puerto de entrada especificado."
+"Devuelve la cadena de la pista («hint string») del puerto de entrada "
+"especificado."
 
 #: modules/visual_script/doc_classes/VisualScriptCustomNode.xml
 msgid "Return the specified input port's name."
@@ -94230,30 +94226,26 @@ msgid "Return the amount of output value ports."
 msgstr "Devuelve la cantidad de puertos de valor de salida."
 
 #: modules/visual_script/doc_classes/VisualScriptCustomNode.xml
-#, fuzzy
 msgid ""
 "Return the specified output port's hint. See the [enum @GlobalScope."
 "PropertyHint] hints."
 msgstr ""
-"Devuelve el tipo de puerto de entrada especificado. Vea los valores de [enum "
-"Variant.Type]."
+"Devuelve la pista del puerto de salida especificado. Consulta las "
+"pistas en [enum @GlobalScope.PropertyHint]."
 
 #: modules/visual_script/doc_classes/VisualScriptCustomNode.xml
-#, fuzzy
 msgid "Return the specified output port's hint string."
-msgstr "Devuelve el nombre del puerto de entrada especificado."
+msgstr "Devuelve la cadena de la pista del puerto de salida especificado."
 
 #: modules/visual_script/doc_classes/VisualScriptCustomNode.xml
-#, fuzzy
 msgid "Return the specified output port's name."
-msgstr "Devuelve el nombre del puerto de entrada especificado."
+msgstr "Devuelve el nombre del puerto de salida especificado."
 
 #: modules/visual_script/doc_classes/VisualScriptCustomNode.xml
-#, fuzzy
 msgid ""
 "Return the specified output port's type. See the [enum Variant.Type] values."
 msgstr ""
-"Devuelve el tipo de puerto de entrada especificado. Vea los valores de [enum "
+"Devuelve el tipo del puerto de salida especificado. Ver los valores de [enum "
 "Variant.Type]."
 
 #: modules/visual_script/doc_classes/VisualScriptCustomNode.xml
@@ -94281,7 +94273,6 @@ msgstr ""
 "Devuelve si el nodo personalizado tiene un puerto [b]secuencia[/b] entrada."
 
 #: modules/visual_script/doc_classes/VisualScriptCustomNode.xml
-#, fuzzy
 msgid ""
 "Execute the custom node's logic, returning the index of the output sequence "
 "port to use or a [String] when there is an error.\n"
@@ -94296,18 +94287,18 @@ msgid ""
 "When returning, you can mask the returned value with one of the "
 "[code]STEP_*[/code] constants."
 msgstr ""
-"Ejecuta la lógica del nodo personalizado, devolviendo el índice del puerto "
-"de la secuencia de salida a utilizar o una [String] cuando haya un error.\n"
+"Ejecuta la lógica del nodo personalizado y devuelve el índice del puerto de "
+"secuencia de salida que debe usarse, o un [String] si hay un error.\n"
 "El array [code]inputs[/code] contiene los valores de los puertos de "
 "entrada.\n"
-"[code]outputs[/code] es un array cuyos índices deben ajustarse a las salidas "
-"respectivas.\n"
-"El [code]start_mode[/code] es normalmente [constant "
-"START_MODE_BEGIN_SEQUENCE], a menos que se hayan utilizado las constantes "
-"[code]STEP_*[/code].\n"
-"[code]working_mem[/code] es una array que puede ser usado para persistir la "
-"información entre las ejecuciones del nodo personalizado.\n"
-"Al regresar, puedes enmascarar el valor devuelto con una de las constantes "
+"[code]outputs[/code] es un array cuyos índices deben establecerse en las "
+"salidas correspondientes.\n"
+"[code]start_mode[/code] suele ser [constant START_MODE_BEGIN_SEQUENCE], "
+"salvo que hayas usado las constantes [code]STEP_*[/code].\n"
+"[code]working_mem[/code] es un array que puede usarse para conservar "
+"información entre ejecuciones del nodo personalizado. Su tamaño debe "
+"predefinirse con [method _get_working_memory_size].\n"
+"Al devolver, puedes enmascarar el valor devuelto con una de las constantes "
 "[code]STEP_*[/code]."
 
 #: modules/visual_script/doc_classes/VisualScriptCustomNode.xml
@@ -94465,9 +94456,8 @@ msgstr ""
 "modo RPC)."
 
 #: modules/visual_script/doc_classes/VisualScriptFunctionCall.xml
-#, fuzzy
 msgid "A Visual Script node for calling a function."
-msgstr "Un nodo Visual Script usado para llamar a las funciones incorporadas."
+msgstr "Nodo de Visual Script para llamar una función."
 
 #: modules/visual_script/doc_classes/VisualScriptFunctionCall.xml
 msgid ""
@@ -94475,15 +94465,17 @@ msgid ""
 "function onto the Visual Script graph. It allows to tweak parameters of the "
 "call, e.g. what object the function is called on."
 msgstr ""
+"[VisualScriptFunctionCall] se crea al añadir o arrastrar y soltar una "
+"función en el grafo de Visual Script. Permite ajustar parámetros de la "
+"llamada, por ejemplo, sobre qué objeto se invoca la función."
 
 #: modules/visual_script/doc_classes/VisualScriptFunctionCall.xml
-#, fuzzy
 msgid ""
 "The script to be used when [member call_mode] is set to [constant "
 "CALL_MODE_INSTANCE]."
 msgstr ""
-"El fondo utilizado cuando [member overlay] se establece en [constant "
-"OVERLAY_POSITION]."
+"Script que se usará cuando [member call_mode] esté establecido en [constant "
+"CALL_MODE_INSTANCE]."
 
 #: modules/visual_script/doc_classes/VisualScriptFunctionCall.xml
 #: modules/visual_script/doc_classes/VisualScriptYieldSignal.xml
@@ -94495,24 +94487,24 @@ msgstr ""
 "[constant CALL_MODE_INSTANCE]."
 
 #: modules/visual_script/doc_classes/VisualScriptFunctionCall.xml
-#, fuzzy
 msgid ""
 "The type to be used when [member call_mode] is set to [constant "
 "CALL_MODE_BASIC_TYPE]."
 msgstr ""
-"El fondo utilizado cuando [member overlay] se establece en [constant "
-"OVERLAY_BREAKPOINT]."
+"Tipo que se usará cuando [member call_mode] esté establecido en [constant "
+"CALL_MODE_BASIC_TYPE]."
 
 #: modules/visual_script/doc_classes/VisualScriptFunctionCall.xml
 msgid ""
 "[code]call_mode[/code] determines the target object on which the method will "
 "be called. See [enum CallMode] for options."
 msgstr ""
+"[code]call_mode[/code] determina el objeto objetivo sobre el que se llamará "
+"al método. Ver [enum CallMode] para las opciones."
 
 #: modules/visual_script/doc_classes/VisualScriptFunctionCall.xml
-#, fuzzy
 msgid "The name of the function to be called."
-msgstr "La función a ser ejecutada."
+msgstr "Nombre de la función que se va a llamar."
 
 #: modules/visual_script/doc_classes/VisualScriptFunctionCall.xml
 #: modules/visual_script/doc_classes/VisualScriptYieldSignal.xml
@@ -94528,15 +94520,16 @@ msgid ""
 "The mode for RPC calls. See [method Node.rpc] for more details and [enum "
 "RPCCallMode] for available options."
 msgstr ""
+"Modo para llamadas RPC. Ver [method Node.rpc] para más detalles y [enum "
+"RPCCallMode] para las opciones disponibles."
 
 #: modules/visual_script/doc_classes/VisualScriptFunctionCall.xml
-#, fuzzy
 msgid ""
 "The singleton to call the method on. Used when [member call_mode] is set to "
 "[constant CALL_MODE_SINGLETON]."
 msgstr ""
-"El fondo utilizado cuando [member overlay] se establece en [constant "
-"OVERLAY_POSITION]."
+"Singleton sobre el que se llamará al método. Se usa cuando [member "
+"call_mode] está establecido en [constant CALL_MODE_SINGLETON]."
 
 #: modules/visual_script/doc_classes/VisualScriptFunctionCall.xml
 msgid ""
@@ -94544,64 +94537,67 @@ msgid ""
 "Can't be higher than the number of available default arguments in the "
 "method's declaration."
 msgstr ""
+"Número de argumentos predeterminados que se usarán al llamar a la función. "
+"No puede ser mayor que el número de argumentos predeterminados disponibles "
+"en la declaración del método."
 
 #: modules/visual_script/doc_classes/VisualScriptFunctionCall.xml
-#, fuzzy
 msgid ""
 "If [code]false[/code], call errors (e.g. wrong number of arguments) will be "
 "ignored."
-msgstr "Si [code]false[/code], el uso de atajos se desactivará."
+msgstr ""
+"Si es [code]false[/code], se ignorarán los errores de llamada (por ejemplo, "
+"número incorrecto de argumentos)."
 
 #: modules/visual_script/doc_classes/VisualScriptFunctionCall.xml
-#, fuzzy
 msgid "The method will be called on this [Object]."
-msgstr "Registrar un método que será llamado cuando se cometa la acción."
+msgstr "El método se llamará en este [Object] (el propio objeto)."
 
 #: modules/visual_script/doc_classes/VisualScriptFunctionCall.xml
-#, fuzzy
 msgid "The method will be called on the given [Node] in the scene tree."
-msgstr "La ruta del nodo en el árbol de la escena."
+msgstr ""
+"El método se llamará en el [Node] especificado dentro del árbol de escenas."
 
 #: modules/visual_script/doc_classes/VisualScriptFunctionCall.xml
 msgid ""
 "The method will be called on an instanced node with the given type and "
 "script."
 msgstr ""
+"El método se llamará en un nodo instanciado con el tipo y script indicados."
 
 #: modules/visual_script/doc_classes/VisualScriptFunctionCall.xml
 msgid "The method will be called on a GDScript basic type (e.g. [Vector2])."
 msgstr ""
+"El método se llamará sobre un tipo básico de GDScript (por ejemplo, "
+"[Vector2])."
 
 #: modules/visual_script/doc_classes/VisualScriptFunctionCall.xml
-#, fuzzy
 msgid "The method will be called on a singleton."
-msgstr "Registra un método que se llamará cuando se deshaga la acción."
+msgstr "El método se llamará en un singleton."
 
 #: modules/visual_script/doc_classes/VisualScriptFunctionCall.xml
 msgid "The method will be called locally."
-msgstr ""
+msgstr "El método se llamará localmente."
 
 #: modules/visual_script/doc_classes/VisualScriptFunctionCall.xml
 msgid "The method will be called remotely."
-msgstr ""
+msgstr "El método se llamará de forma remota."
 
 #: modules/visual_script/doc_classes/VisualScriptFunctionCall.xml
 msgid "The method will be called remotely using an unreliable protocol."
-msgstr ""
+msgstr "El método se llamará de forma remota usando un protocolo no fiable."
 
 #: modules/visual_script/doc_classes/VisualScriptFunctionCall.xml
-#, fuzzy
 msgid "The method will be called remotely for the given peer."
-msgstr "Devuelve el puerto remoto del par dado."
+msgstr "El método se llamará de forma remota para el par indicado."
 
 #: modules/visual_script/doc_classes/VisualScriptFunctionCall.xml
-#, fuzzy
 msgid ""
 "The method will be called remotely for the given peer, using an unreliable "
 "protocol."
 msgstr ""
-"Cambia remotamente el valor de la propiedad en otros pares (y localmente) "
-"usando un protocolo poco fiable."
+"El método se llamará de forma remota para el par indicado, usando un "
+"protocolo no fiable."
 
 #: modules/visual_script/doc_classes/VisualScriptFunctionState.xml
 msgid "A Visual Script node representing a function state."
@@ -94735,13 +94731,12 @@ msgid "A Visual Script virtual class for in-graph editable nodes."
 msgstr "Una clase virtual de Visual Script para nodos editables en gráficos."
 
 #: modules/visual_script/doc_classes/VisualScriptLists.xml
-#, fuzzy
 msgid ""
 "A Visual Script virtual class that defines the shape and the default "
 "behavior of the nodes that have to be in-graph editable nodes."
 msgstr ""
-"Una clase virtual de Visual Script que define la forma y el comportamiento "
-"por defecto de los nodos que tienen que ser nodos editables en gráfico."
+"Clase virtual de Visual Script que define la forma y el comportamiento "
+"predeterminado de los nodos que deben ser nodos editables dentro del grafo."
 
 #: modules/visual_script/doc_classes/VisualScriptLists.xml
 msgid "Adds an input port to the Visual Script node."
@@ -94760,24 +94755,20 @@ msgid "Removes an output port from the Visual Script node."
 msgstr "Elimina un puerto de salida del nodo de Visual Script."
 
 #: modules/visual_script/doc_classes/VisualScriptLists.xml
-#, fuzzy
 msgid "Sets the name of an input port."
-msgstr "Obtiene el nombre de una entrada por índice."
+msgstr "Establece el nombre de un puerto de entrada."
 
 #: modules/visual_script/doc_classes/VisualScriptLists.xml
-#, fuzzy
 msgid "Sets the type of an input port."
-msgstr "Obtiene el tipo de pista."
+msgstr "Establece el tipo de un puerto de entrada."
 
 #: modules/visual_script/doc_classes/VisualScriptLists.xml
-#, fuzzy
 msgid "Sets the name of an output port."
-msgstr "Obtiene el nombre de una entrada por índice."
+msgstr "Establece el nombre de un puerto de salida."
 
 #: modules/visual_script/doc_classes/VisualScriptLists.xml
-#, fuzzy
 msgid "Sets the type of an output port."
-msgstr "Obtiene el tipo de pista."
+msgstr "Establece el tipo de un puerto de salida."
 
 #: modules/visual_script/doc_classes/VisualScriptLocalVar.xml
 msgid "Gets a local variable's value."
@@ -94994,221 +94985,241 @@ msgid "The [Resource] to load."
 msgstr "El [Resource] a cargar."
 
 #: modules/visual_script/doc_classes/VisualScriptPropertyGet.xml
-#, fuzzy
 msgid "A Visual Script node returning a value of a property from an [Object]."
 msgstr ""
-"Un nodo de Visual Script que devuelve un solo singleton de [@GlobalScope]."
+"Nodo de Visual Script que devuelve el valor de una propiedad de un [Object]."
 
 #: modules/visual_script/doc_classes/VisualScriptPropertyGet.xml
 msgid ""
 "[VisualScriptPropertyGet] can return a value of any property from the "
 "current object or other objects."
 msgstr ""
+"[VisualScriptPropertyGet] puede devolver el valor de cualquier propiedad del "
+"objeto actual u otros objetos."
 
 #: modules/visual_script/doc_classes/VisualScriptPropertyGet.xml
 #: modules/visual_script/doc_classes/VisualScriptPropertySet.xml
-#, fuzzy
 msgid ""
 "The script to be used when [member set_mode] is set to [constant "
 "CALL_MODE_INSTANCE]."
 msgstr ""
-"El fondo utilizado cuando [member overlay] se establece en [constant "
-"OVERLAY_POSITION]."
+"Script que se usará cuando [member set_mode] esté establecido en [constant "
+"CALL_MODE_INSTANCE]."
 
 #: modules/visual_script/doc_classes/VisualScriptPropertyGet.xml
 #: modules/visual_script/doc_classes/VisualScriptPropertySet.xml
-#, fuzzy
 msgid ""
 "The base type to be used when [member set_mode] is set to [constant "
 "CALL_MODE_INSTANCE]."
 msgstr ""
-"El fondo utilizado cuando [member overlay] se establece en [constant "
-"OVERLAY_POSITION]."
+"Tipo base que se usará cuando [member set_mode] esté establecido en "
+"[constant CALL_MODE_INSTANCE]."
 
 #: modules/visual_script/doc_classes/VisualScriptPropertyGet.xml
 #: modules/visual_script/doc_classes/VisualScriptPropertySet.xml
-#, fuzzy
 msgid ""
 "The type to be used when [member set_mode] is set to [constant "
 "CALL_MODE_BASIC_TYPE]."
 msgstr ""
-"El fondo utilizado cuando [member overlay] se establece en [constant "
-"OVERLAY_BREAKPOINT]."
+"Tipo que se usará cuando [member set_mode] esté establecido en [constant "
+"CALL_MODE_BASIC_TYPE]."
 
 #: modules/visual_script/doc_classes/VisualScriptPropertyGet.xml
 msgid ""
 "The indexed name of the property to retrieve. See [method Object."
 "get_indexed] for details."
 msgstr ""
+"Nombre indexado de la propiedad a recuperar. Ver [method Object.get_indexed] "
+"para más detalles."
 
 #: modules/visual_script/doc_classes/VisualScriptPropertyGet.xml
 #: modules/visual_script/doc_classes/VisualScriptPropertySet.xml
-#, fuzzy
 msgid ""
 "The node path to use when [member set_mode] is set to [constant "
 "CALL_MODE_NODE_PATH]."
 msgstr ""
-"Profundidad de extrusión cuando el [member mode] es [constant MODE_DEPTH]."
+"Ruta de nodo que se usará cuando [member set_mode] esté establecido en "
+"[constant CALL_MODE_NODE_PATH]."
 
 #: modules/visual_script/doc_classes/VisualScriptPropertyGet.xml
-#, fuzzy
 msgid ""
 "The name of the property to retrieve. Changing this will clear [member "
 "index]."
 msgstr ""
-"Los datos del mapa de la altura. Si se cambia esto, se redimensionará el "
-"[member map_data]."
+"Nombre de la propiedad a recuperar. Cambiar esto limpiará [member index]."
 
 #: modules/visual_script/doc_classes/VisualScriptPropertyGet.xml
 msgid ""
 "[code]set_mode[/code] determines the target object from which the property "
 "will be retrieved. See [enum CallMode] for options."
 msgstr ""
+"[code]set_mode[/code] determina el objeto objetivo del que se recuperará la "
+"propiedad. Ver [enum CallMode] para las opciones."
 
 #: modules/visual_script/doc_classes/VisualScriptPropertyGet.xml
-#, fuzzy
 msgid "The property will be retrieved from this [Object]."
-msgstr "Emitido cuando una propiedad es quitada del inspector."
+msgstr "La propiedad se recuperará de este [Object]."
 
 #: modules/visual_script/doc_classes/VisualScriptPropertyGet.xml
-#, fuzzy
 msgid "The property will be retrieved from the given [Node] in the scene tree."
-msgstr ""
-"La propiedad se serializa y se guarda en el archivo de la escena (por "
-"defecto)."
+msgstr "La propiedad se recuperará del [Node] indicado en el árbol de escenas."
 
 #: modules/visual_script/doc_classes/VisualScriptPropertyGet.xml
 msgid ""
 "The property will be retrieved from an instanced node with the given type "
 "and script."
 msgstr ""
+"La propiedad se recuperará de un nodo instanciado con el tipo y script "
+"indicados."
 
 #: modules/visual_script/doc_classes/VisualScriptPropertyGet.xml
 msgid ""
 "The property will be retrieved from a GDScript basic type (e.g. [Vector2])."
 msgstr ""
+"La propiedad se recuperará de un tipo básico de GDScript (por ejemplo, "
+"[Vector2])."
 
 #: modules/visual_script/doc_classes/VisualScriptPropertySet.xml
-#, fuzzy
 msgid "A Visual Script node that sets a property of an [Object]."
-msgstr "Un nodo Visual Script usado para anotar el script."
+msgstr "Nodo de Visual Script que establece una propiedad de un [Object]."
 
 #: modules/visual_script/doc_classes/VisualScriptPropertySet.xml
 msgid ""
 "[VisualScriptPropertySet] can set the value of any property from the current "
 "object or other objects."
 msgstr ""
+"[VisualScriptPropertySet] puede establecer el valor de cualquier propiedad "
+"del objeto actual u otros objetos."
 
 #: modules/visual_script/doc_classes/VisualScriptPropertySet.xml
-#, fuzzy
 msgid ""
 "The additional operation to perform when assigning. See [enum AssignOp] for "
 "options."
-msgstr "La función a realizar. Ver [enum Function] para las opciones."
+msgstr ""
+"Operación adicional que se realizará al asignar. Ver [enum AssignOp] para "
+"las opciones."
 
 #: modules/visual_script/doc_classes/VisualScriptPropertySet.xml
 msgid ""
 "The indexed name of the property to set. See [method Object.set_indexed] for "
 "details."
 msgstr ""
+"Nombre indexado de la propiedad a establecer. Ver [method Object."
+"set_indexed] para más detalles."
 
 #: modules/visual_script/doc_classes/VisualScriptPropertySet.xml
-#, fuzzy
 msgid ""
 "The name of the property to set. Changing this will clear [member index]."
 msgstr ""
-"Los datos del mapa de la altura. Si se cambia esto, se redimensionará el "
-"[member map_data]."
+"Nombre de la propiedad a establecer. Cambiar esto limpiará [member index]."
 
 #: modules/visual_script/doc_classes/VisualScriptPropertySet.xml
 msgid ""
 "[code]set_mode[/code] determines the target object on which the property "
 "will be set. See [enum CallMode] for options."
 msgstr ""
+"[code]set_mode[/code] determina el objeto objetivo sobre el que se "
+"establecerá la propiedad. Ver [enum CallMode] para las opciones."
 
 #: modules/visual_script/doc_classes/VisualScriptPropertySet.xml
-#, fuzzy
 msgid "The property will be set on this [Object]."
-msgstr "La propiedad se comprueba en el inspector de edición."
+msgstr "La propiedad se establecerá en este [Object]."
 
 #: modules/visual_script/doc_classes/VisualScriptPropertySet.xml
-#, fuzzy
 msgid "The property will be set on the given [Node] in the scene tree."
 msgstr ""
-"La propiedad se serializa y se guarda en el archivo de la escena (por "
-"defecto)."
+"La propiedad se establecerá en el [Node] indicado dentro del árbol de "
+"escenas."
 
 #: modules/visual_script/doc_classes/VisualScriptPropertySet.xml
 msgid ""
 "The property will be set on an instanced node with the given type and script."
 msgstr ""
+"La propiedad se establecerá en un nodo instanciado con el tipo y script "
+"indicados."
 
 #: modules/visual_script/doc_classes/VisualScriptPropertySet.xml
 msgid "The property will be set on a GDScript basic type (e.g. [Vector2])."
 msgstr ""
+"La propiedad se establecerá sobre un tipo básico de GDScript (por ejemplo, "
+"[Vector2])."
 
 #: modules/visual_script/doc_classes/VisualScriptPropertySet.xml
 msgid "The property will be assigned regularly."
-msgstr ""
+msgstr "La propiedad se asignará de forma normal."
 
 #: modules/visual_script/doc_classes/VisualScriptPropertySet.xml
 msgid ""
 "The value will be added to the property. Equivalent of doing [code]+=[/code]."
-msgstr ""
+msgstr "El valor se sumará a la propiedad. Equivale a hacer [code]+=[/code]."
 
 #: modules/visual_script/doc_classes/VisualScriptPropertySet.xml
 msgid ""
 "The value will be subtracted from the property. Equivalent of doing [code]-"
 "=[/code]."
-msgstr ""
+msgstr "El valor se restará de la propiedad. Equivale a hacer [code]-=[/code]."
 
 #: modules/visual_script/doc_classes/VisualScriptPropertySet.xml
 msgid ""
 "The property will be multiplied by the value. Equivalent of doing [code]*=[/"
 "code]."
 msgstr ""
+"La propiedad se multiplicará por el valor. Equivale a hacer [code]*=[/code]."
 
 #: modules/visual_script/doc_classes/VisualScriptPropertySet.xml
 msgid ""
 "The property will be divided by the value. Equivalent of doing [code]/=[/"
 "code]."
 msgstr ""
+"La propiedad se dividirá por el valor. Equivale a hacer [code]/=[/code]."
 
 #: modules/visual_script/doc_classes/VisualScriptPropertySet.xml
 msgid ""
 "A modulo operation will be performed on the property and the value. "
 "Equivalent of doing [code]%=[/code]."
 msgstr ""
+"Se realizará una operación de módulo sobre la propiedad y el valor. Equivale "
+"a hacer [code]%=[/code]."
 
 #: modules/visual_script/doc_classes/VisualScriptPropertySet.xml
 msgid ""
 "The property will be binarly shifted to the left by the given value. "
 "Equivalent of doing [code]<<[/code]."
 msgstr ""
+"La propiedad se desplazará en binario a la izquierda por el valor indicado. "
+"Equivale a hacer [code]<<[/code]."
 
 #: modules/visual_script/doc_classes/VisualScriptPropertySet.xml
 msgid ""
 "The property will be binarly shifted to the right by the given value. "
 "Equivalent of doing [code]>>[/code]."
 msgstr ""
+"La propiedad se desplazará en binario a la derecha por el valor indicado. "
+"Equivale a hacer [code]>>[/code]."
 
 #: modules/visual_script/doc_classes/VisualScriptPropertySet.xml
 msgid ""
 "A binary [code]AND[/code] operation will be performed on the property. "
 "Equivalent of doing [code]&=[/code]."
 msgstr ""
+"Se realizará una operación binaria [code]AND[/code] sobre la propiedad. "
+"Equivale a hacer [code]&=[/code]."
 
 #: modules/visual_script/doc_classes/VisualScriptPropertySet.xml
 msgid ""
 "A binary [code]OR[/code] operation will be performed on the property. "
 "Equivalent of doing [code]|=[/code]."
 msgstr ""
+"Se realizará una operación binaria [code]OR[/code] sobre la propiedad. "
+"Equivale a hacer [code]|=[/code]."
 
 #: modules/visual_script/doc_classes/VisualScriptPropertySet.xml
 msgid ""
 "A binary [code]XOR[/code] operation will be performed on the property. "
 "Equivalent of doing [code]^=[/code]."
 msgstr ""
+"Se realizará una operación binaria [code]XOR[/code] sobre la propiedad. "
+"Equivale a hacer [code]^=[/code]."
 
 #: modules/visual_script/doc_classes/VisualScriptReturn.xml
 msgid "Exits a function and returns an optional value."
@@ -103392,15 +103403,15 @@ msgstr ""
 "Virtual) y AR (Realidad Aumentada) que se ejecutan en el navegador web.\n"
 "Como tal, esta interfaz solo está disponible cuando se ejecuta en una "
 "exportación HTML5.\n"
-"WebXR admite una amplia gama de dispositivos, desde los más potentes "
-"(como Valve Index, HTC Vive, Oculus Rift y Quest) hasta los más sencillos "
-"(como Google Cardboard, Oculus Go, GearVR o simples smartphones).\n"
-"Dado que WebXR se basa en Javascript, hace un uso extensivo de funciones "
-"de devolución de llamada («callbacks»), lo que significa que "
-"[WebXRInterface] se ve obligado a utilizar señales, donde otras interfaces "
-"de AR/VR utilizarían en su lugar funciones que devuelven un resultado "
-"inmediatamente. Esto hace que [WebXRInterface] sea bastante más complicada "
-"de inicializar que otras interfaces de AR/VR.\n"
+"WebXR admite una amplia gama de dispositivos, desde los más potentes (como "
+"Valve Index, HTC Vive, Oculus Rift y Quest) hasta los más sencillos (como "
+"Google Cardboard, Oculus Go, GearVR o simples smartphones).\n"
+"Dado que WebXR se basa en Javascript, hace un uso extensivo de funciones de "
+"devolución de llamada («callbacks»), lo que significa que [WebXRInterface] "
+"se ve obligado a utilizar señales, donde otras interfaces de AR/VR "
+"utilizarían en su lugar funciones que devuelven un resultado inmediatamente. "
+"Esto hace que [WebXRInterface] sea bastante más complicada de inicializar "
+"que otras interfaces de AR/VR.\n"
 "Aquí está el código mínimo necesario para iniciar una sesión de VR "
 "inmersiva:\n"
 "[codeblock]\n"
@@ -103447,8 +103458,8 @@ msgstr ""
 "        OS.alert(\"Tu navegador no soporta VR\")\n"
 "        return\n"
 "\n"
-"    # Queremos una sesión de VR inmersiva, a diferencia de AR "
-"('immersive-ar') o\n"
+"    # Queremos una sesión de VR inmersiva, a diferencia de AR ('immersive-"
+"ar') o\n"
 "    # un simple visor 3DoF ('viewer').\n"
 "    webxr_interface.session_mode = 'immersive-vr'\n"
 "    # 'bounded-floor' es a escala de habitación, 'local-floor' es una "
@@ -103460,8 +103471,8 @@ msgstr ""
 "luego\n"
 "    # recurrirá a 'local-floor' y finalmente a 'local', si nada más es\n"
 "    # compatible.\n"
-"    webxr_interface.requested_reference_space_types = 'bounded-floor, "
-"local-floor, local'\n"
+"    webxr_interface.requested_reference_space_types = 'bounded-floor, local-"
+"floor, local'\n"
 "    # Para usar 'local-floor' o 'bounded-floor' también debemos\n"
 "    # marcar las características como requeridas u opcionales.\n"
 "    webxr_interface.required_features = 'local-floor'\n"
@@ -103470,8 +103481,8 @@ msgstr ""
 "    # Esto devolverá false si no podemos ni siquiera solicitar la sesión,\n"
 "    # sin embargo, aún puede fallar asíncronamente más tarde en el proceso, "
 "por lo que\n"
-"    # solo sabremos si realmente ha tenido éxito o ha fallado cuando se llame "
-"a\n"
+"    # solo sabremos si realmente ha tenido éxito o ha fallado cuando se "
+"llame a\n"
 "    # nuestros métodos _webxr_session_started() o _webxr_session_failed().\n"
 "    if not webxr_interface.initialize():\n"
 "        OS.alert(\"Fallo al inicializar\")\n"
@@ -103485,10 +103496,10 @@ msgstr ""
 "de entre los\n"
 "    # tipos que solicitaste anteriormente. Esto es útil si quieres que el "
 "juego\n"
-"    # funcione de forma un poco diferente en 'bounded-floor' frente a "
-"'local-floor'.\n"
-"    print (\"Tipo de espacio de referencia: \" + "
-"webxr_interface.reference_space_type)\n"
+"    # funcione de forma un poco diferente en 'bounded-floor' frente a 'local-"
+"floor'.\n"
+"    print (\"Tipo de espacio de referencia: \" + webxr_interface."
+"reference_space_type)\n"
 "\n"
 "func _webxr_session_ended():\n"
 "    $Button.visible = true\n"
@@ -103501,30 +103512,30 @@ msgstr ""
 "    OS.alert(\"Fallo al inicializar: \" + message)\n"
 "[/codeblock]\n"
 "Hay varias formas de manejar la entrada del «controller» (mando):\n"
-"- Usando nodos [ARVRController] y sus señales "
-"[signal ARVRController.button_pressed] y [signal ARVRController.button_release]. "
-"Así es como se manejan típicamente los mandos en las apps de AR/VR en Godot, "
-"sin embargo, esto solo funcionará con mandos de VR avanzados como los "
-"Oculus Touch o los mandos de Index, por ejemplo. Los códigos de los botones "
-"están definidos por la [url=https://immersive-web.github.io/webxr-gamepads-module/"
-"#xr-standard-gamepad-mapping]Sección 3.3 del Módulo de Gamepads de WebXR[/url].\n"
+"- Usando nodos [ARVRController] y sus señales [signal ARVRController."
+"button_pressed] y [signal ARVRController.button_release]. Así es como se "
+"manejan típicamente los mandos en las apps de AR/VR en Godot, sin embargo, "
+"esto solo funcionará con mandos de VR avanzados como los Oculus Touch o los "
+"mandos de Index, por ejemplo. Los códigos de los botones están definidos por "
+"la [url=https://immersive-web.github.io/webxr-gamepads-module/#xr-standard-"
+"gamepad-mapping]Sección 3.3 del Módulo de Gamepads de WebXR[/url].\n"
 "- Usando [method Node._unhandled_input] e [InputEventJoypadButton] o "
 "[InputEventJoypadMotion]. Esto funciona igual que los joypads normales, "
 "excepto que el [member InputEvent.device] comienza en 100, por lo que el "
 "mando izquierdo es el 100 y el derecho el 101, y los códigos de botón "
-"también están definidos por la [url=https://immersive-web.github.io/"
-"webxr-gamepads-module/#xr-standard-gamepad-mapping]Sección 3.3 del Módulo de "
+"también están definidos por la [url=https://immersive-web.github.io/webxr-"
+"gamepads-module/#xr-standard-gamepad-mapping]Sección 3.3 del Módulo de "
 "Gamepads de WebXR[/url].\n"
-"- Usando las señales [signal select], [signal squeeze] y señales relacionadas. "
-"Este método funcionará tanto para mandos de VR avanzados como para "
-"«controllers» no tradicionales, como un toque en la pantalla, un comando "
-"de voz o la pulsación de un botón en el propio dispositivo. El "
+"- Usando las señales [signal select], [signal squeeze] y señales "
+"relacionadas. Este método funcionará tanto para mandos de VR avanzados como "
+"para «controllers» no tradicionales, como un toque en la pantalla, un "
+"comando de voz o la pulsación de un botón en el propio dispositivo. El "
 "[code]controller_id[/code] pasado a estas señales es el mismo id que el "
 "utilizado en [member ARVRController.controller_id].\n"
 "Puedes usar uno o todos estos métodos para permitir que tu juego o app "
 "soporte un conjunto más amplio o más estrecho de dispositivos y métodos de "
-"entrada, o para permitir interacciones más avanzadas con dispositivos "
-"más potentes."
+"entrada, o para permitir interacciones más avanzadas con dispositivos más "
+"potentes."
 
 #: modules/webxr/doc_classes/WebXRInterface.xml
 msgid "How to make a VR game for WebXR with Godot"

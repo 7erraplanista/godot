@@ -46,7 +46,7 @@ msgstr ""
 "Project-Id-Version: Godot Engine class reference\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2026-03-26 23:37-0300\n"
+"PO-Revision-Date: 2026-03-27 00:09-0300\n"
 "Last-Translator: Juan Matías Olmos <elterraplanista@yahoo.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-class-reference/es/>\n"
@@ -36515,7 +36515,7 @@ msgstr ""
 
 #: modules/gltf/doc_classes/GLTFCamera.xml
 msgid "Represents a GLTF camera."
-msgstr ""
+msgstr "Representa una cámara GLTF."
 
 #: modules/gltf/doc_classes/GLTFCamera.xml
 msgid ""
@@ -36533,19 +36533,19 @@ msgstr ""
 
 #: modules/gltf/doc_classes/GLTFCamera.xml
 msgid "GLTF camera detailed specification"
-msgstr ""
+msgstr "Especificación detallada de cámara GLTF"
 
 #: modules/gltf/doc_classes/GLTFCamera.xml
 msgid "GLTF camera spec and example file"
-msgstr ""
+msgstr "Especificación de cámara GLTF y archivo de ejemplo"
 
 #: modules/gltf/doc_classes/GLTFCamera.xml
 msgid "Serializes this GLTFCamera instance into a [Dictionary]."
-msgstr ""
+msgstr "Serializa esta instancia de GLTFCamera en un [Dictionary]."
 
 #: modules/gltf/doc_classes/GLTFCamera.xml
 msgid "Converts this GLTFCamera instance into a Godot [Camera] node."
-msgstr ""
+msgstr "Convierte esta instancia de GLTFCamera en un nodo [Camera] de Godot."
 
 #: modules/gltf/doc_classes/GLTFCamera.xml
 msgid ""
@@ -36554,6 +36554,10 @@ msgid ""
 "This value is only used for perspective cameras, when [member perspective] "
 "is true."
 msgstr ""
+"El FOV de la cámara. Esta clase y GLTF definen el FOV en radianes, mientras "
+"que Godot usa grados. Esto se mapea a la propiedad [code]yfov[/code] de "
+"GLTF. Este valor solo se usa en cámaras en perspectiva, cuando [member "
+"perspective] es true."
 
 #: modules/gltf/doc_classes/GLTFCamera.xml
 msgid ""
@@ -36562,6 +36566,10 @@ msgid ""
 "property. See [member Camera.projection] and the GLTF spec for more "
 "information."
 msgstr ""
+"Indica si la cámara está en modo perspectiva. Si es false, la cámara está en "
+"modo ortográfico/ortogonal. Esto se mapea a la propiedad [code]type[/"
+"code] de la cámara en GLTF. Consulta [member Camera.projection] y la "
+"especificación de GLTF para más información."
 
 #: modules/gltf/doc_classes/GLTFCamera.xml
 msgid ""
@@ -36570,22 +36578,33 @@ msgid ""
 "maps to GLTF's [code]ymag[/code] property. This value is only used for "
 "orthographic/orthogonal cameras, when [member perspective] is false."
 msgstr ""
+"El tamaño de la cámara. Esta clase y GLTF definen la magnitud del tamaño "
+"como radio en metros, mientras que Godot lo define como diámetro en metros. "
+"Esto se mapea a la propiedad [code]ymag[/code] de GLTF. Este valor solo "
+"se usa en cámaras ortográficas/ortogonales, cuando [member perspective] es "
+"false."
 
 #: modules/gltf/doc_classes/GLTFCamera.xml
 msgid ""
 "The distance to the far culling boundary for this camera relative to its "
 "local Z axis, in meters. This maps to GLTF's [code]zfar[/code] property."
 msgstr ""
+"La distancia al límite de recorte («culling») lejano de esta cámara respecto "
+"a su eje Z local, en metros. Esto se mapea a la propiedad [code]zfar[/code] "
+"de GLTF."
 
 #: modules/gltf/doc_classes/GLTFCamera.xml
 msgid ""
 "The distance to the near culling boundary for this camera relative to its "
 "local Z axis, in meters. This maps to GLTF's [code]znear[/code] property."
 msgstr ""
+"La distancia al límite de recorte («culling») cercano de esta cámara respecto "
+"a su eje Z local, en metros. Esto se mapea a la propiedad [code]znear[/code] "
+"de GLTF."
 
 #: modules/gltf/doc_classes/GLTFCollider.xml
 msgid "Represents a GLTF collider."
-msgstr ""
+msgstr "Representa un colisionador GLTF."
 
 #: modules/gltf/doc_classes/GLTFCollider.xml
 msgid ""
@@ -36594,24 +36613,32 @@ msgid ""
 "nodes, and it's abstracted in a way that allows adding support for different "
 "GLTF physics extensions in the future."
 msgstr ""
+"Representa un colisionador según la extensión GLTF [code]OMI_collider[/"
+"code]. Esta clase es un intermediario entre los datos GLTF y los nodos de "
+"Godot, y está abstraída para permitir añadir soporte para distintas "
+"extensiones de física de GLTF en el futuro."
 
 #: modules/gltf/doc_classes/GLTFCollider.xml
 msgid "OMI_collider GLTF extension"
-msgstr ""
+msgstr "Extensión GLTF OMI_collider"
 
 #: modules/gltf/doc_classes/GLTFCollider.xml
 msgid "Serializes this GLTFCollider instance into a [Dictionary]."
-msgstr ""
+msgstr "Serializa esta instancia de GLTFCollider en un [Dictionary]."
 
 #: modules/gltf/doc_classes/GLTFCollider.xml
 msgid "Converts this GLTFCollider instance into a Godot [CollisionShape] node."
 msgstr ""
+"Convierte esta instancia de GLTFCollider en un nodo [CollisionShape] de "
+"Godot."
 
 #: modules/gltf/doc_classes/GLTFCollider.xml
 msgid ""
 "The [ArrayMesh] resource of the collider. This is only used when the "
 "collider type is \"hull\" (convex hull) or \"trimesh\" (concave trimesh)."
 msgstr ""
+"El recurso [ArrayMesh] del colisionador. Solo se utiliza cuando el tipo "
+"de colisionador es «hull» (malla convexa) o «trimesh» (malla cóncava)."
 
 #: modules/gltf/doc_classes/GLTFCollider.xml
 msgid ""
@@ -36619,6 +36646,10 @@ msgid ""
 "type is \"capsule\" or \"cylinder\". This value should not be negative, and "
 "for \"capsule\" it should be at least twice the radius."
 msgstr ""
+"La altura del colisionador, en metros. Esto solo se utiliza cuando el tipo "
+"de colisionador es «capsule» (cápsula) o «cylinder» (cilindro). Este valor "
+"no debe ser negativo y, para «capsule», debe ser al menos el doble del "
+"radio."
 
 #: modules/gltf/doc_classes/GLTFCollider.xml
 msgid ""
@@ -36628,12 +36659,19 @@ msgid ""
 "intended to be used alongside when deciding where to add the generated node "
 "as a child."
 msgstr ""
+"Si es [code]true[/code], indica que este colisionador es un trigger. En "
+"Godot, esto significa que el colisionador debe ser hijo de un nodo Area3D.\n"
+"Esta es la única variable que no se usa en [method to_node]; está pensada "
+"para usarse al decidir dónde añadir el nodo generado como hijo."
 
 #: modules/gltf/doc_classes/GLTFCollider.xml
 msgid ""
 "The index of the collider's mesh in the GLTF file. This is only used when "
 "the collider type is \"hull\" (convex hull) or \"trimesh\" (concave trimesh)."
 msgstr ""
+"El índice de la malla del colisionador en el archivo GLTF. Esto solo se "
+"utiliza cuando el tipo de colisionador es «hull» (malla convexa) o "
+"«trimesh» (malla cóncava)."
 
 #: modules/gltf/doc_classes/GLTFCollider.xml
 msgid ""
@@ -36641,12 +36679,18 @@ msgid ""
 "type is \"capsule\", \"cylinder\", or \"sphere\". This value should not be "
 "negative."
 msgstr ""
+"El radio del colisionador, en metros. Esto solo se utiliza cuando el tipo "
+"de colisionador es «capsule» (cápsula), «cylinder» (cilindro) o "
+"«sphere» (esfera). Este valor no debe ser negativo."
 
 #: modules/gltf/doc_classes/GLTFCollider.xml
 msgid ""
 "The type of shape this collider represents. Valid values are \"box\", "
 "\"capsule\", \"cylinder\", \"sphere\", \"hull\", and \"trimesh\"."
 msgstr ""
+"El tipo de forma que representa este colisionador. Los valores válidos son "
+"«box» (caja), «capsule» (cápsula), «cylinder» (cilindro), "
+"«sphere» (esfera), «hull» (malla convexa) y «trimesh» (malla cóncava)."
 
 #: modules/gltf/doc_classes/GLTFCollider.xml
 msgid ""
@@ -36654,6 +36698,9 @@ msgid ""
 "type is \"box\", and it represents the \"diameter\" of the box. This value "
 "should not be negative."
 msgstr ""
+"El tamaño del colisionador, en metros. Esto solo se utiliza cuando el tipo "
+"de colisionador es «box» (caja), y representa el «diámetro» (dimensiones "
+"totales) de la caja. Este valor no debe ser negativo."
 
 #: modules/gltf/doc_classes/GLTFDocument.xml
 msgid ""
@@ -36687,7 +36734,7 @@ msgstr ""
 
 #: modules/gltf/doc_classes/GLTFDocumentExtension.xml
 msgid "[GLTFDocument] extension class."
-msgstr ""
+msgstr "Clase de extensión de [GLTFDocument]."
 
 #: modules/gltf/doc_classes/GLTFDocumentExtension.xml
 msgid ""
@@ -36698,6 +36745,12 @@ msgid ""
 "use the [code]set_additional_data[/code] and [code]get_additional_data[/"
 "code] methods in [GLTFState] or [GLTFNode]."
 msgstr ""
+"Amplía la funcionalidad de [GLTFDocument] permitiendo ejecutar código "
+"arbitrario en varias etapas de importación o exportación de GLTF.\n"
+"[b]Nota:[/b] Al igual que GLTFDocument, todas las clases "
+"GLTFDocumentExtension deben ser sin estado para funcionar correctamente. Si "
+"necesitas almacenar datos, usa [code]set_additional_data[/code] y "
+"[code]get_additional_data[/code] en [GLTFState] o [GLTFNode]."
 
 #: modules/gltf/doc_classes/GLTFDocumentExtension.xml
 msgid ""
@@ -36707,6 +36760,11 @@ msgid ""
 "used to process the Godot scene node data into a format that can be used by "
 "[method _export_node]."
 msgstr ""
+"Parte del proceso de exportación. Este método se ejecuta después de [method "
+"_export_preflight] y antes de [method _export_node].\n"
+"Se ejecuta al convertir los datos de un nodo de escena de Godot. Puede "
+"usarse para procesar esos datos a un formato utilizable por [method "
+"_export_node]."
 
 #: modules/gltf/doc_classes/GLTFDocumentExtension.xml
 msgid ""
@@ -36714,6 +36772,9 @@ msgid ""
 "_convert_scene_node] and before [method _export_post].\n"
 "This method can be used to modify the final JSON of each node."
 msgstr ""
+"Parte del proceso de exportación. Este método se ejecuta después de [method "
+"_convert_scene_node] y antes de [method _export_post].\n"
+"Puede usarse para modificar el JSON final de cada nodo."
 
 #: modules/gltf/doc_classes/GLTFDocumentExtension.xml
 msgid ""
@@ -36721,6 +36782,9 @@ msgid ""
 "of the export process.\n"
 "This method can be used to modify the final JSON of the generated GLTF file."
 msgstr ""
+"Parte del proceso de exportación. Este método se ejecuta al final, después "
+"del resto del proceso.\n"
+"Puede usarse para modificar el JSON final del archivo GLTF generado."
 
 #: modules/gltf/doc_classes/GLTFDocumentExtension.xml
 msgid ""
@@ -36731,6 +36795,11 @@ msgid ""
 "the export will use this [GLTFDocumentExtension] instance. If not "
 "overridden, [constant OK] is returned."
 msgstr ""
+"Parte del proceso de exportación. Este método se ejecuta primero, antes del "
+"resto del proceso.\n"
+"El valor de retorno determina si esta instancia de [GLTFDocumentExtension] "
+"debe usarse para exportar un archivo GLTF dado. Si devuelve [constant OK], "
+"se usará. Si no se sobrescribe, devuelve [constant OK]."
 
 #: modules/gltf/doc_classes/GLTFDocumentExtension.xml
 msgid ""
@@ -36740,6 +36809,11 @@ msgid ""
 "will be added to the scene tree. Multiple nodes can be generated in this "
 "step if they are added as a child of the returned node."
 msgstr ""
+"Parte del proceso de importación. Este método se ejecuta después de [method "
+"_parse_node_extensions] y antes de [method _import_post_parse].\n"
+"Se ejecuta al generar un nodo de escena de Godot desde un GLTFNode. El nodo "
+"devuelto se añadirá al árbol de escenas. En este paso pueden generarse "
+"múltiples nodos si se añaden como hijos del nodo devuelto."
 
 #: modules/gltf/doc_classes/GLTFDocumentExtension.xml
 msgid ""
@@ -36749,6 +36823,11 @@ msgid ""
 "GLTFDocumentExtension class. This is used to validate if a GLTF file with "
 "required extensions can be loaded."
 msgstr ""
+"Parte del proceso de importación. Este método se ejecuta después de [method "
+"_import_preflight] y antes de [method _parse_node_extensions].\n"
+"Devuelve un array con las extensiones GLTF soportadas por esta clase "
+"GLTFDocumentExtension. Se usa para validar si puede cargarse un archivo GLTF "
+"con extensiones requeridas."
 
 #: modules/gltf/doc_classes/GLTFDocumentExtension.xml
 msgid ""
@@ -36757,6 +36836,10 @@ msgid ""
 "This method can be used to make modifications to each of the generated Godot "
 "scene nodes."
 msgstr ""
+"Parte del proceso de importación. Este método se ejecuta después de [method "
+"_import_post_parse] y antes de [method _import_post].\n"
+"Puede usarse para modificar cada uno de los nodos de escena de Godot "
+"generados."
 
 #: modules/gltf/doc_classes/GLTFDocumentExtension.xml
 msgid ""
@@ -36765,6 +36848,10 @@ msgid ""
 "This method can be used to modify the final Godot scene generated by the "
 "import process."
 msgstr ""
+"Parte del proceso de importación. Este método se ejecuta al final, después "
+"del resto del proceso.\n"
+"Puede usarse para modificar la escena final de Godot generada por la "
+"importación."
 
 #: modules/gltf/doc_classes/GLTFDocumentExtension.xml
 msgid ""
@@ -36773,6 +36860,11 @@ msgid ""
 "This method can be used to modify any of the data imported so far, including "
 "any scene nodes, before running the final per-node import step."
 msgstr ""
+"Parte del proceso de importación. Este método se ejecuta después de [method "
+"_generate_scene_node] y antes de [method _import_node].\n"
+"Puede usarse para modificar cualquiera de los datos importados hasta ese "
+"punto, incluidos nodos de escena, antes del paso final de importación por "
+"nodo."
 
 #: modules/gltf/doc_classes/GLTFDocumentExtension.xml
 msgid ""
@@ -36783,6 +36875,11 @@ msgid ""
 "the import will use this [GLTFDocumentExtension] instance. If not "
 "overridden, [constant OK] is returned."
 msgstr ""
+"Parte del proceso de importación. Este método se ejecuta primero, antes del "
+"resto del proceso.\n"
+"El valor de retorno determina si esta instancia de [GLTFDocumentExtension] "
+"debe usarse para importar un archivo GLTF dado. Si devuelve [constant OK], "
+"se usará. Si no se sobrescribe, devuelve [constant OK]."
 
 #: modules/gltf/doc_classes/GLTFDocumentExtension.xml
 msgid ""
@@ -36793,10 +36890,16 @@ msgid ""
 "_generate_scene_node]. The return value should be a member of the [enum "
 "Error] enum."
 msgstr ""
+"Parte del proceso de importación. Este método se ejecuta después de [method "
+"_get_supported_extensions] y antes de [method _generate_scene_node].\n"
+"Se ejecuta al analizar las extensiones de nodo de un GLTFNode. Puede usarse "
+"para procesar los datos JSON de extensión a un formato utilizable por "
+"[method _generate_scene_node]. El valor de retorno debe ser un miembro del "
+"enum [enum Error]."
 
 #: modules/gltf/doc_classes/GLTFLight.xml
 msgid "Represents a GLTF light."
-msgstr ""
+msgstr "Representa una luz de GLTF."
 
 #: modules/gltf/doc_classes/GLTFLight.xml
 msgid ""
@@ -36815,21 +36918,23 @@ msgstr ""
 
 #: modules/gltf/doc_classes/GLTFLight.xml
 msgid "KHR_lights_punctual GLTF extension spec"
-msgstr ""
+msgstr "Especificación de la extensión GLTF KHR_lights_punctual"
 
 #: modules/gltf/doc_classes/GLTFLight.xml
 msgid "Serializes this GLTFLight instance into a [Dictionary]."
-msgstr ""
+msgstr "Serializa esta instancia de GLTFLight en un [Dictionary]."
 
 #: modules/gltf/doc_classes/GLTFLight.xml
 msgid "Converts this GLTFLight instance into a Godot [Light] node."
-msgstr ""
+msgstr "Convierte esta instancia de GLTFLight en un nodo [Light] de Godot."
 
 #: modules/gltf/doc_classes/GLTFLight.xml
 msgid ""
 "The [Color] of the light. Defaults to white. A black color causes the light "
 "to have no effect."
 msgstr ""
+"El [Color] de la luz. El valor predeterminado es blanco. Un color negro hace "
+"que la luz no tenga efecto."
 
 #: modules/gltf/doc_classes/GLTFLight.xml
 msgid ""
@@ -36840,6 +36945,12 @@ msgid ""
 "brightness. When creating a Godot [SpotLight], the ratio between the inner "
 "and outer cone angles is used to calculate the attenuation of the light."
 msgstr ""
+"El ángulo interno del cono en un foco. Debe ser menor o igual que el ángulo "
+"externo del cono.\n"
+"Dentro de este ángulo, la luz tiene brillo completo. Entre el ángulo interno "
+"y el externo, hay una transición de brillo completo a cero. Al crear un "
+"[SpotLight] de Godot, la relación entre ambos ángulos se usa para calcular "
+"la atenuación de la luz."
 
 #: modules/gltf/doc_classes/GLTFLight.xml
 msgid ""
@@ -36848,6 +36959,10 @@ msgid ""
 "directional lights. When creating a Godot light, this value is converted to "
 "a unitless multiplier."
 msgstr ""
+"La intensidad de la luz. Se expresa en candelas (lúmenes por estereorradián) "
+"para luces puntuales y focos, y en lux (lúmenes por m²) para luces "
+"direccionales. Al crear una luz en Godot, este valor se convierte a un "
+"multiplicador sin unidades."
 
 #: modules/gltf/doc_classes/GLTFLight.xml
 msgid ""
@@ -36859,6 +36974,12 @@ msgid ""
 "directions. When creating a Godot [SpotLight], the outer cone angle is used "
 "as the angle of the spotlight."
 msgstr ""
+"El ángulo externo del cono en un foco. Debe ser mayor o igual que el ángulo "
+"interno.\n"
+"En este ángulo, la luz cae a brillo cero. Entre el ángulo interno y el "
+"externo, hay transición de brillo completo a cero. Si este ángulo es media "
+"vuelta, el foco emite en todas las direcciones. Al crear un [SpotLight] de "
+"Godot, el ángulo externo se usa como ángulo del foco."
 
 #: modules/gltf/doc_classes/GLTFLight.xml
 msgid ""
@@ -36866,6 +36987,9 @@ msgid ""
 "with no range defined behave like physical lights (which have infinite "
 "range). When creating a Godot light, the range is clamped to 4096."
 msgstr ""
+"El alcance de la luz, más allá del cual no tiene efecto. Las luces GLTF sin "
+"alcance definido se comportan como luces físicas (alcance infinito). Al "
+"crear una luz en Godot, el alcance se limita a 4096."
 
 #: modules/gltf/doc_classes/GLTFLight.xml
 msgid ""
@@ -36873,6 +36997,9 @@ msgid ""
 "and \"directional\", which correspond to Godot's [OmniLight], [SpotLight], "
 "and [DirectionalLight] respectively."
 msgstr ""
+"El tipo de luz. Los valores aceptados por Godot son «point» (punto), "
+"«spot» (foco) y «directional» (direccional), que corresponden a "
+"[OmniLight], [SpotLight] y [DirectionalLight] de Godot respectivamente."
 
 #: modules/gltf/doc_classes/GLTFMesh.xml
 msgid ""
@@ -36919,6 +37046,13 @@ msgid ""
 "match the extension name in the GLTF file), and the return value can be "
 "anything you set. If nothing was set, the return value is null."
 msgstr ""
+"Obtiene datos arbitrarios adicionales en esta instancia [GLTFNode]. Puede "
+"usarse para mantener estado por nodo en clases [GLTFDocumentExtension], lo "
+"cual es importante porque son sin estado.\n"
+"El argumento debe ser el nombre de la [GLTFDocumentExtension] (no tiene que "
+"coincidir con el nombre de la extensión en el archivo GLTF), y el valor de "
+"retorno puede ser cualquiera que hayas establecido. Si no se estableció "
+"nada, devuelve null."
 
 #: modules/gltf/doc_classes/GLTFNode.xml
 msgid ""
@@ -36929,6 +37063,12 @@ msgid ""
 "to match the extension name in the GLTF file), and the second argument can "
 "be anything you want."
 msgstr ""
+"Establece datos arbitrarios adicionales en esta instancia [GLTFNode]. Puede "
+"usarse para mantener estado por nodo en clases [GLTFDocumentExtension], lo "
+"cual es importante porque son sin estado.\n"
+"El primer argumento debe ser el nombre de la [GLTFDocumentExtension] (no "
+"tiene que coincidir con el nombre de la extensión en el archivo GLTF), y el "
+"segundo puede ser cualquier valor."
 
 #: modules/gltf/doc_classes/GLTFNode.xml
 msgid ""
@@ -36936,12 +37076,16 @@ msgid ""
 "[GLTFState] that describes the camera's properties. If -1, this node is not "
 "a camera."
 msgstr ""
+"Si este nodo GLTF es una cámara, índice de [GLTFCamera] en [GLTFState] que "
+"describe las propiedades de la cámara. Si es -1, este nodo no es una cámara."
 
 #: modules/gltf/doc_classes/GLTFNode.xml
 msgid ""
 "The indices of the children nodes in the [GLTFState]. If this GLTF node has "
 "no children, this will be an empty array."
 msgstr ""
+"Índices de los nodos hijos en [GLTFState]. Si este nodo GLTF no tiene hijos, "
+"será un array vacío."
 
 #: modules/gltf/doc_classes/GLTFNode.xml
 msgid ""
@@ -36949,10 +37093,12 @@ msgid ""
 "height of 0, its children will have a height of 1, and so on. If -1, the "
 "height has not been calculated."
 msgstr ""
+"Profundidad de este nodo en la jerarquía. Un nodo raíz tiene altura 0, sus "
+"hijos altura 1, etc. Si es -1, la altura no se ha calculado."
 
 #: modules/gltf/doc_classes/GLTFNode.xml
 msgid "This property is unused and does nothing."
-msgstr ""
+msgstr "Esta propiedad no se usa y no hace nada."
 
 #: modules/gltf/doc_classes/GLTFNode.xml
 msgid ""
@@ -36960,26 +37106,30 @@ msgid ""
 "[GLTFState] that describes the light's properties. If -1, this node is not a "
 "light."
 msgstr ""
+"Si este nodo GLTF es una luz, índice de [GLTFLight] en [GLTFState] que "
+"describe sus propiedades. Si es -1, no es una luz."
 
 #: modules/gltf/doc_classes/GLTFNode.xml
 msgid ""
 "If this GLTF node is a mesh, the index of the [GLTFMesh] in the [GLTFState] "
 "that describes the mesh's properties. If -1, this node is not a mesh."
 msgstr ""
+"Si este nodo GLTF es una malla, índice de [GLTFMesh] en [GLTFState] que "
+"describe sus propiedades. Si es -1, no es una malla."
 
 #: modules/gltf/doc_classes/GLTFNode.xml
 msgid ""
 "The index of the parent node in the [GLTFState]. If -1, this node is a root "
 "node."
-msgstr ""
+msgstr "Índice del nodo padre en [GLTFState]. Si es -1, este nodo es raíz."
 
 #: modules/gltf/doc_classes/GLTFNode.xml
 msgid "The rotation of the GLTF node relative to its parent."
-msgstr ""
+msgstr "Rotación del nodo GLTF relativa a su padre."
 
 #: modules/gltf/doc_classes/GLTFNode.xml
 msgid "The scale of the GLTF node relative to its parent."
-msgstr ""
+msgstr "Escala del nodo GLTF relativa a su padre."
 
 #: modules/gltf/doc_classes/GLTFNode.xml
 msgid ""
@@ -36987,16 +37137,20 @@ msgid ""
 "[GLTFState] that describes the skeleton's properties. If -1, this node does "
 "not have a skeleton."
 msgstr ""
+"Si este nodo GLTF tiene un esqueleto, índice de [GLTFSkeleton] en "
+"[GLTFState] que describe sus propiedades. Si es -1, no tiene esqueleto."
 
 #: modules/gltf/doc_classes/GLTFNode.xml
 msgid ""
 "If this GLTF node has a skin, the index of the [GLTFSkin] in the [GLTFState] "
 "that describes the skin's properties. If -1, this node does not have a skin."
 msgstr ""
+"Si este nodo GLTF tiene una skin, índice de [GLTFSkin] en [GLTFState] que "
+"describe sus propiedades. Si es -1, no tiene skin."
 
 #: modules/gltf/doc_classes/GLTFNode.xml
 msgid "The position of the GLTF node relative to its parent."
-msgstr ""
+msgstr "Posición del nodo GLTF relativa a su padre."
 
 #: modules/gltf/doc_classes/GLTFNode.xml
 msgid ""
@@ -37004,6 +37158,8 @@ msgid ""
 "usually unused since the position, rotation, and scale properties are "
 "preferred."
 msgstr ""
+"Transformación del nodo GLTF relativa a su padre. Esta propiedad normalmente "
+"no se usa, ya que se prefieren posición, rotación y escala."
 
 #: modules/gltf/doc_classes/GLTFPhysicsBody.xml
 msgid "Represents a GLTF physics body."
@@ -37118,7 +37274,7 @@ msgstr "El color RGB especular del material. El canal alfa no se usa."
 
 #: modules/gltf/doc_classes/GLTFState.xml
 msgid "Represents all data of a GLTF file."
-msgstr ""
+msgstr "Representa todos los datos de un archivo GLTF."
 
 #: modules/gltf/doc_classes/GLTFState.xml
 msgid ""
@@ -37139,6 +37295,11 @@ msgid ""
 "GLTFDocumentExtension._export_post], as that stage is too late to add "
 "extensions. The final list is sorted alphabetically."
 msgstr ""
+"Añade una extensión a la lista de extensiones usadas por este archivo GLTF "
+"durante la serialización. Si [code]required[/code] es true, la extensión "
+"también se añadirá a la lista de extensiones requeridas. No lo ejecutes en "
+"[method GLTFDocumentExtension._export_post], ya que esa etapa es demasiado "
+"tarde para añadir extensiones. La lista final se ordena alfabéticamente."
 
 #: modules/gltf/doc_classes/GLTFState.xml
 msgid ""
@@ -37149,6 +37310,13 @@ msgid ""
 "match the extension name in the GLTF file), and the return value can be "
 "anything you set. If nothing was set, the return value is null."
 msgstr ""
+"Obtiene datos arbitrarios adicionales en esta instancia [GLTFState]. Puede "
+"usarse para mantener estado por archivo en clases [GLTFDocumentExtension], "
+"lo cual es importante porque son sin estado.\n"
+"El argumento debe ser el nombre de la [GLTFDocumentExtension] (no tiene que "
+"coincidir con el nombre de la extensión en el archivo GLTF), y el valor de "
+"retorno puede ser cualquiera que hayas establecido. Si no se estableció "
+"nada, devuelve null."
 
 #: modules/gltf/doc_classes/GLTFState.xml
 msgid ""
@@ -37156,24 +37324,33 @@ msgid ""
 "these will be generated as animations in an [AnimationPlayer] node. When "
 "exporting, these will be generated from Godot [AnimationPlayer] nodes."
 msgstr ""
+"Devuelve un array de todos los [GLTFAnimation] del archivo GLTF. Al "
+"importar, se generarán como animaciones en un nodo [AnimationPlayer]. Al "
+"exportar, se generarán desde nodos [AnimationPlayer] de Godot."
 
 #: modules/gltf/doc_classes/GLTFState.xml
 msgid ""
 "Returns an array of all [GLTFCamera]s in the GLTF file. These are the "
 "cameras that the [member GLTFNode.camera] index refers to."
 msgstr ""
+"Devuelve un array de todas las [GLTFCamera] del archivo GLTF. Son las "
+"cámaras a las que hace referencia el índice [member GLTFNode.camera]."
 
 #: modules/gltf/doc_classes/GLTFState.xml
 msgid ""
 "Returns an array of all [GLTFLight]s in the GLTF file. These are the lights "
 "that the [member GLTFNode.light] index refers to."
 msgstr ""
+"Devuelve un array de todas las [GLTFLight] del archivo GLTF. Son las luces a "
+"las que hace referencia el índice [member GLTFNode.light]."
 
 #: modules/gltf/doc_classes/GLTFState.xml
 msgid ""
 "Returns an array of all [GLTFMesh]es in the GLTF file. These are the meshes "
 "that the [member GLTFNode.mesh] index refers to."
 msgstr ""
+"Devuelve un array de todas las [GLTFMesh] del archivo GLTF. Son las mallas a "
+"las que hace referencia el índice [member GLTFNode.mesh]."
 
 #: modules/gltf/doc_classes/GLTFState.xml
 msgid ""
@@ -37182,36 +37359,50 @@ msgid ""
 "includes nodes that may not be generated in the Godot scene, or nodes that "
 "may generate multiple Godot scene nodes."
 msgstr ""
+"Devuelve un array de todos los [GLTFNode] del archivo GLTF. Son los nodos a "
+"los que hacen referencia [member GLTFNode.children] y [member root_nodes]. "
+"Esto incluye nodos que quizá no se generen en la escena de Godot, o nodos "
+"que generen múltiples nodos de escena en Godot."
 
 #: modules/gltf/doc_classes/GLTFState.xml
 msgid ""
 "Returns an array of all [GLTFSkeleton]s in the GLTF file. These are the "
 "skeletons that the [member GLTFNode.skeleton] index refers to."
 msgstr ""
+"Devuelve un array de todos los [GLTFSkeleton] del archivo GLTF. Son los "
+"esqueletos a los que hace referencia el índice [member GLTFNode.skeleton]."
 
 #: modules/gltf/doc_classes/GLTFState.xml
 msgid ""
 "Returns an array of all [GLTFSkin]s in the GLTF file. These are the skins "
 "that the [member GLTFNode.skin] index refers to."
 msgstr ""
+"Devuelve un array de todos los [GLTFSkin] del archivo GLTF. Son las skins a "
+"las que hace referencia el índice [member GLTFNode.skin]."
 
 #: modules/gltf/doc_classes/GLTFState.xml
 msgid ""
 "Retrieves the array of texture samplers that are used by the textures "
 "contained in the GLTF."
 msgstr ""
+"Recupera el array de samplers de textura usados por las texturas contenidas "
+"en el GLTF."
 
 #: modules/gltf/doc_classes/GLTFState.xml
 msgid ""
 "Returns an array of unique animation names. This is only used during the "
 "import process."
 msgstr ""
+"Devuelve un array de nombres de animación únicos. Solo se usa durante el "
+"proceso de importación."
 
 #: modules/gltf/doc_classes/GLTFState.xml
 msgid ""
 "Returns an array of unique node names. This is used in both the import "
 "process and export process."
 msgstr ""
+"Devuelve un array de nombres de nodo únicos. Se usa tanto en el proceso de "
+"importación como en el de exportación."
 
 #: modules/gltf/doc_classes/GLTFState.xml
 msgid ""
@@ -37222,12 +37413,20 @@ msgid ""
 "to match the extension name in the GLTF file), and the second argument can "
 "be anything you want."
 msgstr ""
+"Establece datos arbitrarios adicionales en esta instancia [GLTFState]. Puede "
+"usarse para mantener estado por archivo en clases [GLTFDocumentExtension], "
+"lo cual es importante porque son sin estado.\n"
+"El primer argumento debe ser el nombre de la [GLTFDocumentExtension] (no "
+"tiene que coincidir con el nombre de la extensión en el archivo GLTF), y el "
+"segundo puede ser cualquier valor."
 
 #: modules/gltf/doc_classes/GLTFState.xml
 msgid ""
 "Sets the array of texture samplers that are used by the textures contained "
 "in the GLTF."
 msgstr ""
+"Establece el array de samplers de textura usados por las texturas contenidas "
+"en el GLTF."
 
 #: modules/gltf/doc_classes/GLTFState.xml
 msgid ""
@@ -37237,6 +37436,10 @@ msgid ""
 "siblings of each other and as children of the root node of the generated "
 "Godot scene."
 msgstr ""
+"Nodos raíz del archivo GLTF. Normalmente un archivo GLTF tendrá solo una "
+"escena y, por tanto, un único nodo raíz. Sin embargo, puede tener múltiples "
+"escenas y por lo tanto múltiples nodos raíz, que se generarán como hermanos "
+"entre sí e hijos del nodo raíz de la escena de Godot generada."
 
 #: modules/gltf/doc_classes/GLTFState.xml
 msgid ""
@@ -37244,6 +37447,9 @@ msgid ""
 "file name. When exporting, if specified, the scene name will be saved to the "
 "GLTF file."
 msgstr ""
+"Nombre de la escena. Al importar, si no se especifica, será el nombre del "
+"archivo. Al exportar, si se especifica, el nombre de la escena se guardará "
+"en el archivo GLTF."
 
 #: modules/gltf/doc_classes/GLTFTexture.xml
 msgid ""
@@ -94230,8 +94436,8 @@ msgid ""
 "Return the specified output port's hint. See the [enum @GlobalScope."
 "PropertyHint] hints."
 msgstr ""
-"Devuelve la pista del puerto de salida especificado. Consulta las "
-"pistas en [enum @GlobalScope.PropertyHint]."
+"Devuelve la pista del puerto de salida especificado. Consulta las pistas en "
+"[enum @GlobalScope.PropertyHint]."
 
 #: modules/visual_script/doc_classes/VisualScriptCustomNode.xml
 msgid "Return the specified output port's hint string."

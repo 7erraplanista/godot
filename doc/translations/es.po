@@ -46,7 +46,7 @@ msgstr ""
 "Project-Id-Version: Godot Engine class reference\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2026-03-27 01:43-0300\n"
+"PO-Revision-Date: 2026-03-27 08:53-0300\n"
 "Last-Translator: Juan Matías Olmos <elterraplanista@yahoo.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-class-reference/es/>\n"
@@ -5031,18 +5031,17 @@ msgstr ""
 #: doc/classes/Transform.xml doc/classes/Transform2D.xml
 #: doc/classes/Vector2.xml doc/classes/Vector3.xml
 msgid "Math tutorial index"
-msgstr ""
+msgstr "Índice de tutoriales de matemáticas"
 
 #: doc/classes/AABB.xml doc/classes/Rect2.xml doc/classes/Vector2.xml
 #: doc/classes/Vector3.xml
-#, fuzzy
 msgid "Vector math"
-msgstr "Vector utilizado para las matemáticas 2D usando coordenadas enteras."
+msgstr "Matemáticas vectoriales"
 
 #: doc/classes/AABB.xml doc/classes/Rect2.xml doc/classes/Vector2.xml
 #: doc/classes/Vector3.xml
 msgid "Advanced vector math"
-msgstr ""
+msgstr "Matemáticas vectoriales avanzadas"
 
 #: doc/classes/AABB.xml
 msgid "Constructs an [AABB] from a position and size."
@@ -14588,7 +14587,7 @@ msgstr "Utiliza esto cuando uses las transformadas 3D."
 #: doc/classes/Basis.xml doc/classes/Line2D.xml doc/classes/Transform.xml
 #: doc/classes/Transform2D.xml doc/classes/Vector2.xml doc/classes/Vector3.xml
 msgid "Matrix Transform Demo"
-msgstr ""
+msgstr "Demostración de transformación de matrices"
 
 #: doc/classes/Basis.xml doc/classes/CylinderShape.xml
 #: doc/classes/Dictionary.xml doc/classes/DynamicFont.xml
@@ -16716,7 +16715,7 @@ msgstr ""
 #: doc/classes/CanvasItem.xml doc/classes/CanvasLayer.xml
 #: doc/classes/InputEvent.xml doc/classes/Viewport.xml
 msgid "Viewport and canvas transforms"
-msgstr ""
+msgstr "Transformaciones del viewport y del lienzo"
 
 #: doc/classes/CanvasItem.xml doc/classes/Control.xml doc/classes/Node2D.xml
 msgid "Custom drawing in 2D"
@@ -56587,7 +56586,7 @@ msgstr ""
 
 #: doc/classes/Node2D.xml doc/classes/Vector2.xml
 msgid "All 2D Demos"
-msgstr ""
+msgstr "Todas las demos 2D"
 
 #: doc/classes/Node2D.xml
 msgid "Multiplies the current scale by the [code]ratio[/code] vector."
@@ -79804,7 +79803,7 @@ msgstr ""
 
 #: doc/classes/Spatial.xml doc/classes/Vector3.xml
 msgid "All 3D Demos"
-msgstr ""
+msgstr "Todas las demos 3D"
 
 #: doc/classes/Spatial.xml
 msgid ""
@@ -89836,6 +89835,40 @@ msgid ""
 "[b]Note:[/b] For an alternative method of tweening, that doesn't require "
 "using nodes, see [SceneTreeTween]."
 msgstr ""
+"Los tweens sirven para animar propiedades numéricas interpolándolas en un "
+"rango. El nombre [i]tween[/i] proviene de [i]in-betweening[/i], una técnica "
+"de animación en la que se definen [i]fotogramas clave[/i] y el ordenador "
+"interpola los fotogramas intermedios.\n"
+"[Tween] encaja mejor que [AnimationPlayer] cuando no se conocen los valores "
+"finales de antemano. Por ejemplo, interpolar un zoom de cámara elegido "
+"dinámicamente se hace mejor con un nodo [Tween]; con un [AnimationPlayer] "
+"resultaría difícil.\n"
+"He aquí un ejemplo breve que mueve un nodo 2D suavemente entre dos "
+"posiciones:\n"
+"[codeblock]\n"
+"var tween = get_node(\"Tween\")\n"
+"tween.interpolate_property($Node2D, \"position\",\n"
+"        Vector2(0, 0), Vector2(100, 100), 1,\n"
+"        Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)\n"
+"tween.start()\n"
+"[/codeblock]\n"
+"Muchos métodos requieren un nombre de propiedad, como [code]\"position\"[/"
+"code] arriba. Puede ver el nombre correcto pasando el puntero sobre la "
+"propiedad en el Inspector. También puede indicar componentes con "
+"[code]\"propiedad:componente\"[/code] (p. ej. [code]position:x[/code]) para "
+"afectar solo a ese componente.\n"
+"Muchos métodos aceptan [code]trans_type[/code] y [code]ease_type[/code]. El "
+"primero es una constante [enum TransitionType] y describe cómo evoluciona el "
+"tiempo de la animación (véase [url=https://easings.net/]easings.net[/url]). "
+"El segundo es [enum EaseType] e indica dónde se aplica [code]trans_type[/"
+"code] en la interpolación (inicio, final o ambos). Si no sabe qué elegir, "
+"pruebe distintas [enum TransitionType] con [constant EASE_IN_OUT] y quédese "
+"con la que mejor se vea.\n"
+"[url=https://raw.githubusercontent.com/godotengine/godot-docs/3.6/img/"
+"tween_cheatsheet.png]Resumen de transiciones y easing del Tween[/url]\n"
+"[b]Nota:[/b] Los métodos de Tween devuelven [code]false[/code] si la "
+"operación no puede completarse.\n"
+"[b]Nota:[/b] Para interpolar sin usar nodos, véase [SceneTreeTween]."
 
 #: doc/classes/Tween.xml
 msgid ""
@@ -89974,15 +90007,15 @@ msgid "Stops animation and removes all tweens."
 msgstr "Detiene la animación y elimina a todos los tweens."
 
 #: doc/classes/Tween.xml
-#, fuzzy
 msgid ""
 "Resets a tween to its initial value (the one given, not the one before the "
 "tween), given its object and property/method pair. By default, all tweens "
 "are reset, unless [code]key[/code] is specified."
 msgstr ""
-"Restablece un tween a su valor inicial (el dado, no el anterior al tween), "
-"dada su objeto y su par propiedad/método. Por defecto, se eliminan todos los "
-"tweens, a menos que se especifique [code]key[/code]."
+"Restablece un tween a su valor inicial (el indicado en la interpolación, no "
+"el que había antes del tween), dado su objeto y el par propiedad/método. Por "
+"defecto se restablecen todos los tweens, salvo que se especifique [code]key[/"
+"code]."
 
 #: doc/classes/Tween.xml
 msgid ""
@@ -91452,12 +91485,10 @@ msgid "The vertical space between the [VBoxContainer]'s elements."
 msgstr "El espacio vertical entre los elementos del [VBoxContainer]."
 
 #: doc/classes/Vector2.xml
-#, fuzzy
 msgid "Vector used for 2D math."
-msgstr "Vector utilizado para las matemáticas 2D usando coordenadas enteras."
+msgstr "Vector usado para matemáticas 2D."
 
 #: doc/classes/Vector2.xml
-#, fuzzy
 msgid ""
 "2-element structure that can be used to represent positions in 2D space or "
 "any other pair of numeric values.\n"
@@ -91465,24 +91496,21 @@ msgid ""
 "code] if it's equal to [code]Vector2(0, 0)[/code]. Otherwise, a Vector2 will "
 "always evaluate to [code]true[/code]."
 msgstr ""
-"Estructura de 2 elementos que puede ser usada para representar posiciones en "
-"el espacio 2D o cualquier otro par de valores numéricos.\n"
-"Utiliza coordenadas reales. Ver [Vector2i] para su contraparte entera.\n"
-"[b]Nota:[/b] En un contexto booleano, un Vector2 evaluará a [code]false[/"
-"code] si es igual a [code]Vector2(0, 0)[/code]. De lo contrario, un Vector2 "
-"siempre evaluará a [code]true[/code]."
+"Estructura de dos elementos que puede representar posiciones en el espacio "
+"2D u otro par de valores numéricos.\n"
+"[b]Nota:[/b] En contexto booleano, un Vector2 se evalúa como [code]false[/"
+"code] si es igual a [code]Vector2(0, 0)[/code]. En caso contrario, siempre "
+"será [code]true[/code]."
 
 #: doc/classes/Vector2.xml doc/classes/Vector3.xml
 msgid "3Blue1Brown Essence of Linear Algebra"
-msgstr ""
+msgstr "3Blue1Brown - Esencia del álgebra lineal"
 
 #: doc/classes/Vector2.xml
-#, fuzzy
 msgid ""
 "Constructs a new Vector2 from the given [code]x[/code] and [code]y[/code]."
 msgstr ""
-"Construye un nuevo [Vector2] a partir del [code]x[/code] y [code]y[/code] "
-"dados."
+"Construye un Vector2 nuevo a partir de [code]x[/code] y [code]y[/code] dados."
 
 #: doc/classes/Vector2.xml doc/classes/Vector3.xml
 msgid ""
@@ -91504,6 +91532,16 @@ msgid ""
 "Equivalent to the result of [method @GDScript.atan2] when called with the "
 "vector's [member y] and [member x] as parameters: [code]atan2(y, x)[/code]."
 msgstr ""
+"Devuelve el ángulo de este vector respecto al eje X positivo, o al vector "
+"[code](1, 0)[/code], en radianes.\n"
+"Por ejemplo, [code]Vector2.RIGHT.angle()[/code] devuelve cero, [code]Vector2."
+"DOWN.angle()[/code] devuelve [code]PI / 2[/code] (un cuarto de vuelta, 90°) "
+"y [code]Vector2(1, -1).angle()[/code] devuelve [code]-PI / 4[/code] (octavo "
+"de vuelta negativo, -45°).\n"
+"[url=https://raw.githubusercontent.com/godotengine/godot-docs/master/img/"
+"vector2_angle.png]Ilustración del ángulo devuelto.[/url]\n"
+"Equivale a [method @GDScript.atan2] con los parámetros [member y] y [member "
+"x] del vector: [code]atan2(y, x)[/code]."
 
 #: doc/classes/Vector2.xml
 msgid ""
@@ -91511,6 +91549,9 @@ msgid ""
 "[url=https://raw.githubusercontent.com/godotengine/godot-docs/master/img/"
 "vector2_angle_to.png]Illustration of the returned angle.[/url]"
 msgstr ""
+"Devuelve el ángulo respecto al vector dado, en radianes.\n"
+"[url=https://raw.githubusercontent.com/godotengine/godot-docs/master/img/"
+"vector2_angle_to.png]Ilustración del ángulo devuelto.[/url]"
 
 #: doc/classes/Vector2.xml
 msgid ""
@@ -91519,6 +91560,10 @@ msgid ""
 "[url=https://raw.githubusercontent.com/godotengine/godot-docs/3.6/img/"
 "vector2_angle_to_point.png]Illustration of the returned angle.[/url]"
 msgstr ""
+"Devuelve el ángulo entre la recta que une los dos puntos y el eje X, en "
+"radianes.\n"
+"[url=https://raw.githubusercontent.com/godotengine/godot-docs/3.6/img/"
+"vector2_angle_to_point.png]Ilustración del ángulo devuelto.[/url]"
 
 #: doc/classes/Vector2.xml
 msgid ""
@@ -91543,14 +91588,13 @@ msgstr ""
 "(hacia el infinito positivo)."
 
 #: doc/classes/Vector2.xml
-#, fuzzy
 msgid ""
 "Deprecated, please use [method limit_length] instead.\n"
 "Returns the vector with a maximum length by limiting its length to "
 "[code]length[/code]."
 msgstr ""
-"Devuelve el vector con una longitud máxima limitando su longitud a "
-"[code]length[/code]."
+"Obsoleto; use [method limit_length] en su lugar.\n"
+"Devuelve el vector limitando su longitud a [code]length[/code] como máximo."
 
 #: doc/classes/Vector2.xml
 msgid ""
@@ -91565,27 +91609,36 @@ msgid ""
 "embeds the 2D vectors in the XY plane of 3D space and uses their cross "
 "product's Z component as the analog."
 msgstr ""
+"Devuelve el análogo 2D del producto vectorial entre este vector y "
+"[code]with[/code].\n"
+"Es el área con signo del paralelogramo formado por ambos vectores. Si el "
+"segundo vector está en sentido horario respecto al primero, el resultado es "
+"positivo; si es antihorario, negativo. Si son paralelos, devuelve cero, útil "
+"para comprobar paralelismo.\n"
+"[b]Nota:[/b] Matemáticamente el producto vectorial no está definido en 2D. "
+"Este método incrusta los vectores 2D en el plano XY del espacio 3D y usa la "
+"componente Z del producto vectorial como análogo."
 
 #: doc/classes/Vector2.xml
-#, fuzzy
 msgid ""
 "Cubically interpolates between this vector and [code]b[/code] using "
 "[code]pre_a[/code] and [code]post_b[/code] as handles, and returns the "
 "result at position [code]weight[/code]. [code]weight[/code] is on the range "
 "of 0.0 to 1.0, representing the amount of interpolation."
 msgstr ""
-"Cúbicamente interpola entre este vector y [code]b[/code] usando [code]pre_a[/"
-"code] y [code]post_b[/code] como manejadores, y devuelve el resultado en la "
-"posición [code]t[/code]. [code]t[/code] está en el rango de 0.0 a 1.0, "
-"representando la cantidad de interpolación."
+"Interpola cúbicamente entre este vector y [code]b[/code] utilizando "
+"[code]pre_a[/code] y [code]post_b[/code] como puntos de control (handles), y "
+"devuelve el resultado en la posición [code]weight[/code]. [code]weight[/"
+"code] está en el rango de 0.0 a 1.0, representando la cantidad de "
+"interpolación."
 
 #: doc/classes/Vector2.xml doc/classes/Vector3.xml
-#, fuzzy
 msgid ""
 "Returns the normalized vector pointing from this vector to [code]b[/code]. "
 "This is equivalent to using [code](b - a).normalized()[/code]."
 msgstr ""
-"Devuelve el vector normalizado que apunta desde este vector a [code]b[/code]."
+"Devuelve el vector normalizado que apunta desde este vector hasta [code]b[/"
+"code]. Equivale a [code](b - a).normalized()[/code]."
 
 #: doc/classes/Vector2.xml doc/classes/Vector3.xml
 msgid ""
@@ -91647,13 +91700,12 @@ msgstr ""
 "cada componente."
 
 #: doc/classes/Vector2.xml doc/classes/Vector3.xml
-#, fuzzy
 msgid ""
 "Returns [code]true[/code] if the vector is normalized, [code]false[/code] "
 "otherwise."
 msgstr ""
-"Devuelve [code]true[/code] si el vector está normalizado, y false en caso "
-"contrario."
+"Devuelve [code]true[/code] si el vector está normalizado; en caso contrario "
+"[code]false[/code]."
 
 #: doc/classes/Vector2.xml doc/classes/Vector3.xml
 msgid ""
@@ -91662,6 +91714,9 @@ msgid ""
 "This method is faster than using [method is_equal_approx] with one value as "
 "a zero vector."
 msgstr ""
+"Devuelve [code]true[/code] si los componentes son aproximadamente cero, "
+"usando [method @GDScript.is_zero_approx] en cada uno.\n"
+"Es más rápido que [method is_equal_approx] frente a un vector cero."
 
 #: doc/classes/Vector2.xml doc/classes/Vector3.xml
 msgid "Returns the length (magnitude) of this vector."
@@ -91687,24 +91742,22 @@ msgstr ""
 "[code]length[/code]."
 
 #: doc/classes/Vector2.xml
-#, fuzzy
 msgid ""
 "Returns the result of the linear interpolation between this vector and "
 "[code]to[/code] by amount [code]weight[/code]. [code]weight[/code] is on the "
 "range of 0.0 to 1.0, representing the amount of interpolation."
 msgstr ""
-"Devuelve el resultado de la interpolación lineal entre este vector y "
-"[code]b[/code] por la cantidad [code]t[/code]. [code]t[/code] se encuentra "
-"en el rango de 0.0 a 1.0, representando la cantidad de la interpolación."
+"Devuelve la interpolación lineal entre este vector y [code]to[/code] con "
+"peso [code]weight[/code]. [code]weight[/code] está entre 0.0 y 1.0 e indica "
+"cuánto se interpola."
 
 #: doc/classes/Vector2.xml doc/classes/Vector3.xml
-#, fuzzy
 msgid ""
 "Returns a new vector moved toward [code]to[/code] by the fixed [code]delta[/"
 "code] amount. Will not go past the final value."
 msgstr ""
-"Mueve el vector hacia [code]a[/code] por la cantidad fija de [code]delta[/"
-"code]."
+"Devuelve un nuevo vector acercado hacia [code]to[/code] una cantidad fija "
+"[code]delta[/code]. No supera el valor final."
 
 #: doc/classes/Vector2.xml doc/classes/Vector3.xml
 msgid ""
@@ -91731,49 +91784,43 @@ msgstr ""
 "componentes de este vector y los componentes del [code]modv[/code]."
 
 #: doc/classes/Vector2.xml doc/classes/Vector3.xml
-#, fuzzy
 msgid "Returns this vector projected onto the vector [code]b[/code]."
-msgstr "Devuelve el vector proyectado sobre el vector [code]b[/code]."
+msgstr "Devuelve la proyección de este vector sobre [code]b[/code]."
 
 #: doc/classes/Vector2.xml
-#, fuzzy
 msgid ""
 "Returns the vector reflected (i.e. mirrored, or symmetric) over a line "
 "defined by the given direction vector [code]n[/code]."
 msgstr ""
-"Devuelve el vector reflejado desde un plano definido por la normal dada."
+"Devuelve el vector reflejado (simétrico) respecto a una recta de dirección "
+"[code]n[/code]."
 
 #: doc/classes/Vector2.xml
-#, fuzzy
 msgid ""
 "Returns the vector rotated by [code]angle[/code] (in radians). See also "
 "[method @GDScript.deg2rad]."
 msgstr ""
-"Devuelve el vector rotado por [code]phi[/code] radianes. Ver también [method "
-"@GDScript.deg2rad]."
+"Devuelve el vector rotado [code]angle[/code] en radianes. Véase también "
+"[method @GDScript.deg2rad]."
 
 #: doc/classes/Vector2.xml doc/classes/Vector3.xml
-#, fuzzy
 msgid ""
 "Returns a new vector with all components rounded to the nearest integer, "
 "with halfway cases rounded away from zero."
 msgstr ""
-"Devuelve el vector con todos los componentes redondeados al entero más "
-"cercano, con los casos intermedios redondeados desde cero."
+"Devuelve un nuevo vector con cada componente redondeado al entero más "
+"cercano; los casos a la mitad se alejan del cero."
 
 #: doc/classes/Vector2.xml doc/classes/Vector3.xml
-#, fuzzy
 msgid ""
 "Returns a new vector with each component set to one or negative one, "
 "depending on the signs of the components. If a component is zero, it returns "
 "positive one."
 msgstr ""
-"Devuelve el vector con cada componente puesto a uno o negativo, dependiendo "
-"de los signos de los componentes, o cero si el componente es cero, llamando "
-"al [method @GDScript.sign] en cada componente."
+"Devuelve un nuevo vector con cada componente en 1 o -1 según el signo de los "
+"componentes. Si un componente es cero, será 1."
 
 #: doc/classes/Vector2.xml doc/classes/Vector3.xml
-#, fuzzy
 msgid ""
 "Returns the result of spherical linear interpolation between this vector and "
 "[code]to[/code], by amount [code]weight[/code]. [code]weight[/code] is on "
@@ -91781,10 +91828,10 @@ msgid ""
 "[b]Note:[/b] Both vectors must be normalized."
 msgstr ""
 "Devuelve el resultado de la interpolación lineal esférica entre este vector "
-"y [code]b[/code], por la cantidad [code]t[/code]. [code]t[/code] se "
-"encuentra en el rango de 0,0 a 1,0, representando la cantidad de "
+"y [code]to[/code], mediante la cantidad [code]weight[/code]. [code]weight[/"
+"code] está en el rango de 0.0 a 1.0, representando la cantidad de "
 "interpolación.\n"
-"[b]Nota:[/b] Ambos vectores deben ser normalizados."
+"[b]Nota:[/b] Ambos vectores deben estar normalizados."
 
 #: doc/classes/Vector2.xml doc/classes/Vector3.xml
 msgid "Returns this vector slid along a plane defined by the given normal."
@@ -91874,12 +91921,10 @@ msgstr ""
 "apunta a +Y."
 
 #: doc/classes/Vector3.xml
-#, fuzzy
 msgid "Vector used for 3D math."
-msgstr "Vector utilizado para las matemáticas 3D usando coordenadas enteras."
+msgstr "Vector usado para matemáticas 3D."
 
 #: doc/classes/Vector3.xml
-#, fuzzy
 msgid ""
 "3-element structure that can be used to represent positions in 3D space or "
 "any other triplet of numeric values.\n"
@@ -91887,22 +91932,20 @@ msgid ""
 "code] if it's equal to [code]Vector3(0, 0, 0)[/code]. Otherwise, a Vector3 "
 "will always evaluate to [code]true[/code]."
 msgstr ""
-"Estructura de 3 elementos que puede ser usada para representar posiciones en "
-"el espacio tridimensional o cualquier otro par de valores numéricos.\n"
-"Utiliza coordenadas reales. Ver [Vector3i] para su contraparte entera.\n"
-"[b]Nota:[/b] En un contexto booleano, un Vector3 evaluará a [code]false[/"
-"code] si es igual a [code]Vector3(0, 0, 0)[/code]. De lo contrario, un "
-"Vector3 siempre evaluará a [code]true[/code]."
+"Estructura de tres elementos que puede representar posiciones en el espacio "
+"3D u otra terna de valores numéricos.\n"
+"[b]Nota:[/b] En contexto booleano, un Vector3 se evalúa como [code]false[/"
+"code] si es igual a [code]Vector3(0, 0, 0)[/code]. En caso contrario, "
+"siempre será [code]true[/code]."
 
 #: doc/classes/Vector3.xml
-#, fuzzy
 msgid "Returns a Vector3 with the given components."
-msgstr "Devuelve un [Vector3] con los componentes dados."
+msgstr "Devuelve un Vector3 con los componentes indicados."
 
 #: doc/classes/Vector3.xml
-#, fuzzy
 msgid "Returns the unsigned minimum angle to the given vector, in radians."
-msgstr "Devuelve el ángulo mínimo del vector dado, en radianes."
+msgstr ""
+"Devuelve el ángulo mínimo no signado respecto al vector dado, en radianes."
 
 #: doc/classes/Vector3.xml
 msgid ""
@@ -91914,19 +91957,22 @@ msgid ""
 "this returns an empty vector, making it useful for testing if two vectors "
 "are parallel."
 msgstr ""
+"Devuelve el producto vectorial de este vector y [code]b[/code].\n"
+"Obtiene un vector perpendicular a ambos, normal al plano que definen. Como "
+"hay dos direcciones opuestas, el resultado sigue la regla de la mano "
+"derecha. Si son paralelos, devuelve el vector cero, útil para comprobar "
+"paralelismo."
 
 #: doc/classes/Vector3.xml
-#, fuzzy
 msgid ""
 "Performs a cubic interpolation between this vector and [code]b[/code] using "
 "[code]pre_a[/code] and [code]post_b[/code] as handles, and returns the "
 "result at position [code]weight[/code]. [code]weight[/code] is on the range "
 "of 0.0 to 1.0, representing the amount of interpolation."
 msgstr ""
-"Cúbicamente interpola entre este vector y [code]b[/code] usando [code]pre_a[/"
-"code] y [code]post_b[/code] como manejadores, y devuelve el resultado en la "
-"posición [code]t[/code]. [code]t[/code] está en el rango de 0.0 a 1.0, "
-"representando la cantidad de interpolación."
+"Interpola en cúbica entre este vector y [code]b[/code] usando [code]pre_a[/"
+"code] y [code]post_b[/code] como puntos de control, con posición "
+"[code]weight[/code] entre 0.0 y 1.0."
 
 #: doc/classes/Vector3.xml
 msgid "Returns the distance between this vector and [code]b[/code]."
@@ -91967,15 +92013,14 @@ msgstr ""
 "x, 1.0 / v.y, 1.0 / v.z )[/code]."
 
 #: doc/classes/Vector3.xml
-#, fuzzy
 msgid ""
 "Returns the result of the linear interpolation between this vector and "
 "[code]to[/code] by amount [code]t[/code]. [code]weight[/code] is on the "
 "range of 0.0 to 1.0, representing the amount of interpolation."
 msgstr ""
-"Devuelve el resultado de la interpolación lineal entre este vector y "
-"[code]b[/code] por la cantidad [code]t[/code]. [code]t[/code] se encuentra "
-"en el rango de 0.0 a 1.0, representando la cantidad de la interpolación."
+"Devuelve la interpolación lineal entre este vector y [code]to[/code] con "
+"cantidad [code]t[/code]. [code]weight[/code] está entre 0.0 y 1.0 e indica "
+"cuánto se interpola."
 
 #: doc/classes/Vector3.xml
 msgid ""
@@ -92008,13 +92053,12 @@ msgstr ""
 "dada."
 
 #: doc/classes/Vector3.xml
-#, fuzzy
 msgid ""
 "Rotates this vector around a given axis by [code]angle[/code] (in radians). "
 "The axis must be a normalized vector."
 msgstr ""
-"Gira este vector alrededor de un eje dado por [code]phi[/code] radianes. El "
-"eje debe ser un vector normalizado."
+"Rota este vector alrededor del eje dado [code]angle[/code] en radianes. El "
+"eje debe estar normalizado."
 
 #: doc/classes/Vector3.xml
 msgid ""
@@ -92023,6 +92067,9 @@ msgid ""
 "clockwise direction when viewed from the side specified by the [code]axis[/"
 "code]."
 msgstr ""
+"Devuelve el ángulo con signo respecto al vector dado, en radianes. El signo "
+"es positivo en sentido antihorario y negativo en horario visto desde el lado "
+"indicado por [code]axis[/code]."
 
 #: doc/classes/Vector3.xml
 msgid ""
@@ -92206,7 +92253,6 @@ msgid "Physics object that simulates the behavior of a wheel."
 msgstr "Objeto físico que simula el comportamiento de una rueda."
 
 #: doc/classes/VehicleWheel.xml
-#, fuzzy
 msgid ""
 "This node needs to be used as a child node of [VehicleBody] and simulates "
 "the behavior of one of its wheels. This node also acts as a collider to "
@@ -92216,13 +92262,11 @@ msgid ""
 "probably have to write your own physics integration using another "
 "[PhysicsBody] class."
 msgstr ""
-"Este nodo necesita ser usado como un nodo hijo de [VehicleBody] y simula el "
-"comportamiento de una de sus ruedas. Este nodo también actúa como un "
-"colisionador para detectar si la rueda está tocando una superficie.\n"
-"[b]Nota:[/b] Esta clase tiene problemas conocidos y no está diseñada para "
-"proporcionar una física vehicular 3D realista. Si quieres una física "
-"vehicular avanzada, probablemente tendrás que escribir tu propia integración "
-"de la física utilizando otra clase [PhysicsBody]."
+"Este nodo debe ser hijo de [VehicleBody] y simula una de sus ruedas. También "
+"hace de colisionador para saber si la rueda toca una superficie.\n"
+"[b]Nota:[/b] Esta clase tiene limitaciones conocidas y no pretende ofrecer "
+"física de vehículos 3D realista. Para física avanzada probablemente "
+"necesitará su propia integración con otra clase [PhysicsBody]."
 
 #: doc/classes/VehicleWheel.xml
 msgid ""
@@ -92232,6 +92276,11 @@ msgid ""
 "Returns [code]null[/code] if the wheel is not in contact with a surface, or "
 "the contact body is not a [PhysicsBody]."
 msgstr ""
+"Devuelve el nodo del cuerpo en contacto, como [Spatial], si existe en el "
+"árbol. Por ahora [GridMap] no está soportado; el nodo será siempre de tipo "
+"[PhysicsBody].\n"
+"Devuelve [code]null[/code] si la rueda no toca superficie o el cuerpo no es "
+"[PhysicsBody]."
 
 #: doc/classes/VehicleWheel.xml
 msgid "Returns the rotational speed of the wheel in revolutions per minute."
@@ -92255,7 +92304,6 @@ msgstr ""
 "Devuelve [code]true[/code] si esta rueda está en contacto con una superficie."
 
 #: doc/classes/VehicleWheel.xml
-#, fuzzy
 msgid ""
 "Slows down the wheel by applying a braking force. The wheel is only slowed "
 "down if it is in contact with a surface. The force you need to apply to "
@@ -92263,11 +92311,10 @@ msgid ""
 "the vehicle. For a vehicle with a mass set to 1000, try a value in the 25 - "
 "30 range for hard braking."
 msgstr ""
-"Ralentiza la rueda aplicando una fuerza de frenado. La rueda sólo se "
-"ralentiza si está en contacto con una superficie. La fuerza que debe aplicar "
-"para desacelerar adecuadamente su vehículo depende del [member RigidBody."
-"mass] del vehículo. Para un vehículo con una masa fijada en 1000, intente un "
-"valor en el rango de 25 - 30 para un frenado fuerte."
+"Frena la rueda aplicando fuerza de frenado. Solo surte efecto en contacto "
+"con una superficie. La fuerza adecuada depende de [member RigidBody.mass]. "
+"Para un vehículo de masa 1000, pruebe un valor entre 25 y 30 para un frenado "
+"fuerte."
 
 #: doc/classes/VehicleWheel.xml
 msgid ""
@@ -92295,7 +92342,6 @@ msgstr ""
 "[member damping_compression] de 0,3, pruebe un valor de relajación de 0,5."
 
 #: doc/classes/VehicleWheel.xml
-#, fuzzy
 msgid ""
 "Accelerates the wheel by applying an engine force. The wheel is only sped up "
 "if it is in contact with a surface. The [member RigidBody.mass] of the "
@@ -92305,14 +92351,14 @@ msgid ""
 "you will need to add logic for this if you wish to simulate gears.\n"
 "A negative value will result in the wheel reversing."
 msgstr ""
-"Acelera la rueda aplicando la fuerza de un motor. La rueda sólo se acelera "
-"si está en contacto con una superficie. El [member RigidBody.mass] del "
-"vehículo tiene un efecto en la aceleración del vehículo. Para un vehículo "
-"con una masa fijada en 1000, pruebe un valor en el rango de 25 - 50 para la "
-"aceleración.\n"
-"[b]Nota:[/b] La simulación no tiene en cuenta el efecto de los engranajes, "
-"deberá añadir la lógica para ello si desea simular los engranajes.\n"
-"Un valor negativo hará que la rueda se invierta."
+"Acelera la rueda aplicando una fuerza de motor. La rueda solo aumenta su "
+"velocidad si está en contacto con una superficie. La masa ([member RigidBody."
+"mass]) del vehículo influye en la aceleración. Para un vehículo con una masa "
+"de 1000, prueba con un valor en el rango de 25 a 50 para la aceleración.\n"
+"[b]Nota:[/b] La simulación no tiene en cuenta el efecto de las marchas "
+"(engranajes); deberás añadir lógica para esto si deseas simular un sistema "
+"de cambios.\n"
+"Un valor negativo hará que la rueda gire en reversa."
 
 #: doc/classes/VehicleWheel.xml
 msgid ""
@@ -92323,17 +92369,16 @@ msgstr ""
 "cero, el vehículo girará cuando esté en movimiento."
 
 #: doc/classes/VehicleWheel.xml
-#, fuzzy
 msgid ""
 "The maximum force the spring can resist. This value should be higher than a "
 "quarter of the [member RigidBody.mass] of the [VehicleBody] or the spring "
 "will not carry the weight of the vehicle. Good results are often obtained by "
 "a value that is about 3× to 4× this number."
 msgstr ""
-"La máxima fuerza que el resorte puede resistir. Este valor debe ser mayor "
-"que un cuarto del [member RigidBody.mass] del [VehicleBody] o el resorte no "
-"soportará el peso del vehículo. A menudo se obtienen buenos resultados con "
-"un valor que es aproximadamente 3× a 4× este número."
+"La fuerza máxima que el resorte puede resistir. Este valor debe ser superior "
+"a una cuarta parte de la masa ([member RigidBody.mass]) del [VehicleBody] o "
+"el resorte no soportará el peso del vehículo. A menudo se obtienen buenos "
+"resultados con un valor que sea aproximadamente de 3 a 4 veces ese número."
 
 #: doc/classes/VehicleWheel.xml
 msgid ""
@@ -92356,28 +92401,25 @@ msgstr ""
 "con un valor entre 0,1 y 0,3 dependiendo del tipo de coche."
 
 #: doc/classes/VehicleWheel.xml
-#, fuzzy
 msgid ""
 "If [code]true[/code], this wheel will be turned when the car steers. This "
 "value is used in conjunction with [member VehicleBody.steering] and ignored "
 "if you are using the per-wheel [member steering] value instead."
 msgstr ""
-"Si [code]true[/code], esta rueda se girará cuando el coche gire. Este valor "
-"se utiliza junto con [member VehicleBody.steering] y se ignora si en su "
-"lugar se utiliza el valor por rueda [member steering]."
+"Si es [code]true[/code], esta rueda gira al girar el volante. Se usa junto "
+"con [member VehicleBody.steering]; se ignora si usa el [member steering] por "
+"rueda."
 
 #: doc/classes/VehicleWheel.xml
-#, fuzzy
 msgid ""
 "If [code]true[/code], this wheel transfers engine force to the ground to "
 "propel the vehicle forward. This value is used in conjunction with [member "
 "VehicleBody.engine_force] and ignored if you are using the per-wheel [member "
 "engine_force] value instead."
 msgstr ""
-"Si [code]true[/code], esta rueda transfiere la fuerza del motor al suelo "
-"para impulsar el vehículo hacia adelante. Este valor se usa en conjunto con "
-"[member VehicleBody.engine_force] y se ignora si se usa el valor por rueda "
-"[member engine_force] en su lugar."
+"Si es [code]true[/code], esta rueda transmite la fuerza del motor al suelo. "
+"Se usa con [member VehicleBody.engine_force]; se ignora si usa [member "
+"engine_force] por rueda."
 
 #: doc/classes/VehicleWheel.xml
 msgid ""
@@ -92438,7 +92480,6 @@ msgid "Control for playing video streams."
 msgstr "Control para la reproducción de streams de vídeo."
 
 #: doc/classes/VideoPlayer.xml
-#, fuzzy
 msgid ""
 "Control node for playing video streams using [VideoStream] resources.\n"
 "Supported video formats are [url=https://www.webmproject.org/]WebM[/url] "
@@ -92450,12 +92491,14 @@ msgid ""
 "[b]Warning:[/b] On HTML5, video playback [i]will[/i] perform poorly due to "
 "missing architecture-specific assembly optimizations, especially for VP8/VP9."
 msgstr ""
-"Nodo de control para reproducir streams de vídeo utilizando los recursos de "
-"[VideoStream].\n"
-"Los formatos de vídeo admitidos son [url=https://www.webmproject.org/]WebM[/"
-"url] ([VideoStreamWebm]), [url=https://www.theora.org/]Ogg Theora[/url] "
-"([VideoStreamTheora]), y cualquier formato expuesto mediante un complemento "
-"GDNative usando [VideoStreamGDNative]."
+"Nodo de control para reproducir vídeo con recursos [VideoStream].\n"
+"Formatos soportados: [url=https://www.webmproject.org/]WebM[/url] ([code]."
+"webm[/code], [VideoStreamWebm]), [url=https://www.theora.org/]Ogg Theora[/"
+"url] ([code].ogv[/code], [VideoStreamTheora]) y los expuestos por plugins "
+"GDNative con [VideoStreamGDNative].\n"
+"[b]Nota:[/b] Por un fallo, VideoPlayer aún no admite remap de localización.\n"
+"[b]Advertencia:[/b] En HTML5 la reproducción [i]irá[/i] peor al faltar "
+"optimizaciones específicas de arquitectura, sobre todo VP8/VP9."
 
 #: doc/classes/VideoPlayer.xml
 msgid ""
@@ -92466,9 +92509,8 @@ msgstr ""
 "hay stream de video asignado."
 
 #: doc/classes/VideoPlayer.xml
-#, fuzzy
 msgid "Returns the current frame as a [Texture]."
-msgstr "Devuelve el fotograma actual como una [Texture2D]."
+msgstr "Devuelve el fotograma actual como [Texture]."
 
 #: doc/classes/VideoPlayer.xml
 msgid ""
@@ -92529,7 +92571,7 @@ msgstr ""
 
 #: doc/classes/VideoPlayer.xml
 msgid "If [code]true[/code], the video restarts when it reaches its end."
-msgstr ""
+msgstr "Si es [code]true[/code], el vídeo vuelve al inicio al terminar."
 
 #: doc/classes/VideoPlayer.xml
 msgid "If [code]true[/code], the video is paused."
@@ -92546,6 +92588,9 @@ msgid ""
 "[b]Note:[/b] Changing this value won't have any effect as seeking is not "
 "implemented yet, except in video formats implemented by a GDNative add-on."
 msgstr ""
+"Posición actual de la secuencia, en segundos.\n"
+"[b]Nota:[/b] cambiar este valor no tiene efecto porque el seeking no está "
+"implementado, salvo en formatos que lo aporten un complemento GDNative."
 
 #: doc/classes/VideoPlayer.xml
 msgid "Audio volume as a linear value."
@@ -92696,10 +92741,26 @@ msgid ""
 "to be upside down. Enabling [member render_target_v_flip] will display the "
 "Viewport with the correct orientation."
 msgstr ""
+"Un [Viewport] crea otra vista de pantalla o una subvista dentro de otro "
+"viewport. Los nodos 2D hijos se dibujan en él y las cámaras 3D hijas también "
+"renderizan ahí.\n"
+"Opcionalmente puede tener su propio mundo 2D o 3D, de modo que no comparta "
+"lo dibujado con otros viewports.\n"
+"Si es hijo de un [ViewportContainer], adopta el tamaño del contenedor; si "
+"no, hay que fijar el tamaño a mano.\n"
+"Los viewports pueden actuar como oyentes de audio y generar audio posicional "
+"según una cámara 2D o 3D hija.\n"
+"También pueden asignarse a pantallas distintas en dispositivos "
+"multipantalla.\n"
+"Por último pueden ser objetivos de render: entonces no se ven hasta que se "
+"use su textura al dibujar.\n"
+"[b]Nota:[/b] por defecto un Viewport nuevo en Godot 3.x parece invertido "
+"verticalmente. Active [member render_target_v_flip] para orientarlo "
+"correctamente."
 
 #: doc/classes/Viewport.xml
 msgid "Viewports tutorial index"
-msgstr ""
+msgstr "Índice de tutoriales de viewports"
 
 #: doc/classes/Viewport.xml doc/classes/ViewportTexture.xml
 msgid "3D in 2D Demo"
@@ -92707,31 +92768,31 @@ msgstr "3D en la demostración 2D"
 
 #: doc/classes/Viewport.xml
 msgid "Screen Capture Demo"
-msgstr ""
+msgstr "Demostración de captura de pantalla"
 
 #: doc/classes/Viewport.xml
 msgid "Dynamic Split Screen Demo"
-msgstr ""
+msgstr "Demostración de pantalla dividida dinámica"
 
 #: doc/classes/Viewport.xml doc/classes/ViewportTexture.xml
 msgid "3D Viewport Scaling Demo"
 msgstr "Demostración de escalado del viewport 3D"
 
 #: doc/classes/Viewport.xml
-#, fuzzy
 msgid ""
 "Returns the first valid [World] for this viewport, searching the [member "
 "world] property of itself and any Viewport ancestor."
 msgstr ""
-"Devuelve el mundo 3D del viewport, o si no, el mundo del viewport del padre."
+"Devuelve el primer [World] válido de este viewport, buscando [member world] "
+"en sí mismo y en ancestros Viewport."
 
 #: doc/classes/Viewport.xml
-#, fuzzy
 msgid ""
 "Returns the first valid [World2D] for this viewport, searching the [member "
 "world_2d] property of itself and any Viewport ancestor."
 msgstr ""
-"Devuelve el mundo 3D del viewport, o si no, el mundo del viewport del padre."
+"Devuelve el primer [World2D] válido buscando [member world_2d] en sí mismo y "
+"en ancestros Viewport."
 
 #: doc/classes/Viewport.xml
 msgid "Returns the active 3D camera."
@@ -92742,16 +92803,15 @@ msgid "Returns the total transform of the viewport."
 msgstr "Devuelve la transformada total de la vista."
 
 #: doc/classes/Viewport.xml
-#, fuzzy
 msgid "Returns the topmost modal in the stack."
-msgstr "Devuelve la posición en el [AudioStream]."
+msgstr "Devuelve el modal situado en la cima de la pila."
 
 #: doc/classes/Viewport.xml
-#, fuzzy
 msgid ""
 "Returns the mouse's position in this [Viewport] using the coordinate system "
 "of this [Viewport]."
-msgstr "Devuelve la posición del ratón en relación con la viewport."
+msgstr ""
+"Devuelve la posición del ratón en este [Viewport] en sus propias coordenadas."
 
 #: doc/classes/Viewport.xml
 msgid "Returns information about the viewport from the rendering pipeline."
@@ -92763,12 +92823,11 @@ msgstr ""
 "Devuelve el [enum ShadowAtlasQuadrantSubdiv] del cuadrante especificado."
 
 #: doc/classes/Viewport.xml
-#, fuzzy
 msgid "Returns the size override set with [method set_size_override]."
-msgstr "Devuelve el texto de error si el [method parse] ha fallado."
+msgstr ""
+"Devuelve el reemplazo de tamaño definido con [method set_size_override]."
 
 #: doc/classes/Viewport.xml
-#, fuzzy
 msgid ""
 "Returns the viewport's texture.\n"
 "[b]Note:[/b] Due to the way OpenGL works, the resulting [ViewportTexture] is "
@@ -92780,10 +92839,9 @@ msgid ""
 "[/codeblock]"
 msgstr ""
 "Devuelve la textura del viewport.\n"
-"[b]Nota:[/b] Debido a la forma en que funciona OpenGL, el [ViewportTexture] "
-"resultante se voltea verticalmente. Puedes usar [method Image.flip_y] sobre "
-"el resultado de [method Texture2D.get_data] para voltearlo de nuevo, por "
-"ejemplo:\n"
+"[b]Nota:[/b] por cómo trabaja OpenGL, la [ViewportTexture] resultante va "
+"invertida en vertical. Puede usar [method Image.flip_y] sobre [method "
+"Texture.get_data], por ejemplo:\n"
 "[codeblock]\n"
 "var img = get_viewport().get_texture().get_data()\n"
 "img.flip_y()\n"
@@ -92810,6 +92868,8 @@ msgid ""
 "Returns the [Control] having the focus within this viewport. If no [Control] "
 "has the focus, returns [code]null[/code]."
 msgstr ""
+"Devuelve el [Control] con foco dentro de este viewport, o [code]null[/code] "
+"si ninguno tiene foco."
 
 #: doc/classes/Viewport.xml
 msgid ""
@@ -92819,16 +92879,19 @@ msgid ""
 "claims hover. This is very useful when used together with [method Node."
 "is_a_parent_of] to find if the mouse is within a control tree."
 msgstr ""
+"Devuelve el [Control] sobre el que está el ratón en este viewport, o "
+"[code]null[/code] si no hay cursor sobre ninguno.\n"
+"Suele ser el [Control] hoja o el nivel más profundo que reclama «hover». "
+"Junto con [method Node.is_a_parent_of] sirve para saber si el ratón está en "
+"un árbol de controles."
 
 #: doc/classes/Viewport.xml
-#, fuzzy
 msgid "Returns [code]true[/code] if there are visible modals on-screen."
-msgstr "Devuelve [code]true[/code] si el archivo de la escena tiene nodos."
+msgstr "Devuelve [code]true[/code] si hay modales visibles en pantalla."
 
 #: doc/classes/Viewport.xml
-#, fuzzy
 msgid "Returns [code]true[/code] if the drag operation is successful."
-msgstr "Devuelve [code]true[/code] si la selección está activa."
+msgstr "Devuelve [code]true[/code] si la operación de arrastre tiene éxito."
 
 #: doc/classes/Viewport.xml
 msgid ""
@@ -92837,21 +92900,25 @@ msgid ""
 "Alternative to [constant Node.NOTIFICATION_DRAG_BEGIN] and [constant Node."
 "NOTIFICATION_DRAG_END] when you prefer polling the value."
 msgstr ""
+"Devuelve [code]true[/code] si el viewport está en medio de un arrastre.\n"
+"Alternativa a [constant Node.NOTIFICATION_DRAG_BEGIN] y [constant Node."
+"NOTIFICATION_DRAG_END] si prefiere consultar el estado."
 
 #: doc/classes/Viewport.xml
 msgid ""
 "Removes the focus from the currently focused [Control] within this viewport. "
 "If no [Control] has the focus, does nothing."
 msgstr ""
+"Quita el foco del [Control] que lo tiene en este viewport. Si nadie tiene "
+"foco, no hace nada."
 
 #: doc/classes/Viewport.xml
-#, fuzzy
 msgid ""
 "Returns [code]true[/code] if the size override is enabled. See [method "
 "set_size_override]."
 msgstr ""
-"Devuelve [code]true[/code] si el nodo está configurado como de nivel "
-"superior. Ver [method set_as_toplevel]."
+"Devuelve [code]true[/code] si el reemplazo de tamaño está activo. Véase "
+"[method set_size_override]."
 
 #: doc/classes/Viewport.xml
 msgid ""
@@ -92860,6 +92927,9 @@ msgid ""
 "[Viewport] but makes you responsible for updating the position of this "
 "[Viewport] manually."
 msgstr ""
+"Adjunta este [Viewport] al [Viewport] raíz con el rectángulo indicado. Evita "
+"necesitar otro nodo para mostrarlo, pero debe actualizar usted la posición "
+"de este [Viewport]."
 
 #: doc/classes/Viewport.xml
 msgid "Stops the input from propagating further down the [SceneTree]."
@@ -92886,6 +92956,9 @@ msgid ""
 "size. If the size parameter is [code](-1, -1)[/code], it won't update the "
 "size."
 msgstr ""
+"Define el reemplazo de tamaño. Si [code]enable[/code] es [code]true[/code] "
+"se usa el override; si no, el tamaño por defecto. Si el tamaño es [code](-1, "
+"-1)[/code], no actualiza las dimensiones."
 
 #: doc/classes/Viewport.xml
 msgid "Forces update of the 2D and 3D worlds."
@@ -92896,11 +92969,12 @@ msgid ""
 "Moves the mouse pointer to the specified position in this [Viewport] using "
 "the coordinate system of this [Viewport]."
 msgstr ""
+"Mueve el puntero del ratón a la posición indicada en el sistema de "
+"coordenadas de este [Viewport]."
 
 #: doc/classes/Viewport.xml
-#, fuzzy
 msgid "If [code]true[/code], the viewport will be used in AR/VR process."
-msgstr "Si [code]true[/code], el sub-viewport se usará en el proceso AR/VR."
+msgstr "Si es [code]true[/code], el viewport se usa en el proceso AR/VR."
 
 #: doc/classes/Viewport.xml
 msgid "If [code]true[/code], the viewport will process 2D audio streams."
@@ -92935,6 +93009,15 @@ msgid ""
 "[b]Note:[/b] Only available on the GLES3 backend. [member hdr] must also be "
 "[code]true[/code] for debanding to be effective."
 msgstr ""
+"Si es [code]true[/code], aplica un filtrado rápido que reduce mucho el "
+"banding en 3D. El 2D [i]no[/i] se ve afectado salvo que [member Environment."
+"background_mode] sea [constant Environment.BG_CANVAS]; entonces [member "
+"usage] debe ser [constant USAGE_3D]. Véase también [member ProjectSettings."
+"rendering/quality/filters/use_debanding].\n"
+"En algunos casos puede aparecer un leve patrón de tramado; active el "
+"debanding solo cuando haga falta, porque hace crecer capturas sin pérdida.\n"
+"[b]Nota:[/b] solo en backend GLES3. [member hdr] debe ser [code]true[/code] "
+"para que surta efecto."
 
 #: doc/classes/Viewport.xml
 msgid "The overlay mode for test rendered geometry in debug purposes."
@@ -92943,16 +93026,14 @@ msgstr ""
 "depuración."
 
 #: doc/classes/Viewport.xml
-#, fuzzy
 msgid ""
 "If [code]true[/code], the viewport will disable 3D rendering. To actually "
 "disable allocation of 3D buffers, set [member usage] instead."
 msgstr ""
-"Si [code]true[/code], la etiqueta subraya las metaetiquetas como [code][url]"
-"{text}[/url][/code]."
+"Si es [code]true[/code], el viewport desactiva el render 3D. Para no asignar "
+"buffers 3D, ajuste [member usage]."
 
 #: doc/classes/Viewport.xml
-#, fuzzy
 msgid ""
 "Enables fast approximate antialiasing. FXAA is a popular screen-space "
 "antialiasing method, which is fast but will make the image look blurry, "
@@ -92961,10 +93042,12 @@ msgid ""
 "recovered by enabling contrast-adaptive sharpening (see [member "
 "sharpen_intensity])."
 msgstr ""
-"Usar un antialiasing aproximado rápido. FXAA es un método popular de "
-"antialiasing en el espacio de la pantalla, que es rápido pero que hará que "
-"la imagen se vea borrosa, especialmente en resoluciones más bajas. Puede "
-"funcionar relativamente bien en resoluciones grandes como 1440p y 4K."
+"Activa el suavizado de bordes aproximado rápido (FXAA). El FXAA es un método "
+"popular de antialiasing en el espacio de pantalla, que es rápido pero hará "
+"que la imagen se vea borrosa, especialmente en resoluciones bajas. Aún puede "
+"funcionar relativamente bien en resoluciones grandes como 1440p y 4K. Parte "
+"de la nitidez perdida se puede recuperar activando el enfoque adaptativo al "
+"contraste (consulta [member sharpen_intensity])."
 
 #: doc/classes/Viewport.xml
 msgid ""
@@ -92975,9 +93058,8 @@ msgstr ""
 "es relativa a esto."
 
 #: doc/classes/Viewport.xml
-#, fuzzy
 msgid "If [code]true[/code], the viewport will not receive input events."
-msgstr "Si [code]true[/code], el viewport no recibirá el evento de entrada."
+msgstr "Si es [code]true[/code], el viewport no recibe eventos de entrada."
 
 #: doc/classes/Viewport.xml
 msgid ""
@@ -92998,6 +93080,16 @@ msgid ""
 "[constant USAGE_3D_NO_EFFECTS], since HDR is not supported for 2D.\n"
 "[b]Note:[/b] Only available on the GLES3 backend."
 msgstr ""
+"Si es [code]true[/code], el renderizado del viewport se beneficiará del "
+"algoritmo de Alto Rango Dinámico (HDR). El Alto Rango Dinámico permite que "
+"el viewport reciba valores que están fuera del rango 0-1. En Godot, el HDR "
+"utiliza precisión de medio punto flotante (16 bits) por defecto. Para "
+"utilizar precisión de punto flotante completa (32 bits), activa [member "
+"use_32_bpc_depth].\n"
+"[b]Nota:[/b] Requiere que [member usage] esté establecido en [constant "
+"USAGE_3D] o [constant USAGE_3D_NO_EFFECTS], ya que el HDR no es compatible "
+"con 2D.\n"
+"[b]Note:[/b] Solo disponible en el backend GLES3."
 
 #: doc/classes/Viewport.xml
 msgid ""
@@ -93011,6 +93103,16 @@ msgid ""
 "the sRGB output to linear, this should only be used for VR plugins that "
 "require input in linear color space!"
 msgstr ""
+"Si es [code]true[/code], al resultado tras el renderizado 3D no se le "
+"aplicará una conversión de color de lineal a sRGB. Esto es importante cuando "
+"el viewport se utiliza como un objetivo de renderizado (render target) donde "
+"el resultado se usa como textura en un objeto 3D renderizado en otro "
+"viewport. También es importante si el viewport se utiliza para crear datos "
+"que no están basados en el color (ruido, mapas de altura, mapas de "
+"selección, etc.). No actives esto cuando el viewport se use como textura en "
+"un objeto 2D o si el viewport es tu salida final. Para el controlador GLES2, "
+"esto convertirá la salida sRGB a lineal; ¡esto solo debe usarse para "
+"complementos de VR que requieran entrada en espacio de color lineal!"
 
 #: doc/classes/Viewport.xml
 msgid ""
@@ -93023,13 +93125,12 @@ msgstr ""
 "el mejor a menos que se trate de sistemas de muy alta gama."
 
 #: doc/classes/Viewport.xml
-#, fuzzy
 msgid ""
 "If [code]true[/code], the viewport will use a unique copy of the [World] "
 "defined in [member world]."
 msgstr ""
-"Si [code]true[/code], el viewport utilizará el [World] definido en [member "
-"world_3d]."
+"Si es [code]true[/code], el viewport usa una copia propia del [World] "
+"definido en [member world]."
 
 #: doc/classes/Viewport.xml
 msgid ""
@@ -93047,22 +93148,24 @@ msgid ""
 "Viewport or from [code]SCREEN_TEXTURE[/code] becomes unavailable. For more "
 "information see [method VisualServer.viewport_set_render_direct_to_screen]."
 msgstr ""
+"Si es [code]true[/code], renderiza el Viewport directamente a la pantalla en "
+"lugar de hacerlo en el viewport raíz. Solo disponible en GLES2. Esta es una "
+"optimización de bajo nivel y no debería usarse en la mayoría de los casos. "
+"Si se utiliza, la lectura desde el Viewport o desde [code]SCREEN_TEXTURE[/"
+"code] dejará de estar disponible. Para más información, consulta [method "
+"VisualServer.viewport_set_render_direct_to_screen]."
 
 #: doc/classes/Viewport.xml
-#, fuzzy
 msgid ""
 "The clear mode when viewport used as a render target.\n"
 "[b]Note:[/b] This property is intended for 2D usage."
 msgstr ""
-"El modo claro cuando el sub-viewport se utiliza como objetivo de "
-"renderización."
+"Modo de limpieza cuando el viewport es objetivo de render.\n"
+"[b]Nota:[/b] pensado sobre todo para uso 2D."
 
 #: doc/classes/Viewport.xml
-#, fuzzy
 msgid "The update mode when viewport used as a render target."
-msgstr ""
-"El modo de actualización cuando el sub-viewport se utiliza como objetivo de "
-"renderización."
+msgstr "Modo de actualización cuando el viewport es objetivo de render."
 
 #: doc/classes/Viewport.xml
 msgid ""
@@ -93070,6 +93173,9 @@ msgid ""
 "Since Viewports in Godot 3.x render upside-down, it's recommended to set "
 "this to [code]true[/code] in most situations."
 msgstr ""
+"Si es [code]true[/code], el resultado se invierte en vertical. En Godot 3.x "
+"el viewport suele renderizar del revés; conviene [code]true[/code] en la "
+"mayoría de casos."
 
 #: doc/classes/Viewport.xml
 msgid "The subdivision amount of the first quadrant on the shadow atlas."
@@ -93092,7 +93198,6 @@ msgstr ""
 "La cantidad de subdivisión del cuarto cuadrante en el atlas de las sombras."
 
 #: doc/classes/Viewport.xml
-#, fuzzy
 msgid ""
 "The shadow atlas' resolution (used for omni and spot lights). The value will "
 "be rounded up to the nearest power of 2.\n"
@@ -93101,11 +93206,11 @@ msgid ""
 "to a value of [code]0[/code], this value must be set above [code]0[/code] "
 "manually (typically at least [code]256[/code])."
 msgstr ""
-"La resolución del atlas de las sombras (usado para luces omni y spot). El "
-"valor se redondeará a la potencia más cercana de 2.\n"
-"[b]Nota:[/b] Si se establece en 0, las sombras no serán visibles. Dado que "
-"los viewports creados por el usuario tienen por defecto el valor 0, este "
-"valor debe establecerse sobre 0 manualmente."
+"Resolución del atlas de sombras (luces omni y spot). Se redondea a la "
+"potencia de 2 superior.\n"
+"[b]Nota:[/b] con [code]0[/code] no se verán sombras de punto [i]ni[/i] "
+"direccionales. Los viewports de usuario arrancan en [code]0[/code]; hay que "
+"subirlo manualmente (típicamente al menos [code]256[/code])."
 
 #: doc/classes/Viewport.xml
 msgid ""
@@ -93115,19 +93220,22 @@ msgid ""
 "Values around [code]0.5[/code] generally give the best results. See also "
 "[member fxaa]."
 msgstr ""
+"Si es mayor que [code]0.0[/code], aplica afilado adaptativo al contraste en "
+"el viewport 3D. Coste bajo; compensa parte del desenfoque de FXAA. Valores "
+"~[code]0.5[/code] suelen ir bien. Véase [member fxaa]."
 
 #: doc/classes/Viewport.xml
 msgid ""
 "The width and height of viewport. Must be set to a value greater than or "
 "equal to 2 pixels on both dimensions. Otherwise, nothing will be displayed."
 msgstr ""
+"Anchura y altura del viewport. Debe ser al menos 2 píxeles en cada "
+"dimensión; si no, no se muestra nada."
 
 #: doc/classes/Viewport.xml
-#, fuzzy
 msgid "If [code]true[/code], the size override affects stretch as well."
 msgstr ""
-"Si [code]true[/code], la sobreescritura de tamaño 2D afecta también al "
-"estiramiento."
+"Si es [code]true[/code], el override de tamaño también afecta al estirado."
 
 #: doc/classes/Viewport.xml
 msgid ""
@@ -93144,6 +93252,11 @@ msgid ""
 "USAGE_2D_NO_SAMPLING], [member hdr] will have no effect when enabled since "
 "HDR is not supported for 2D."
 msgstr ""
+"Modo de render del viewport: qué buffers se reservan (solo 2D o 2D+3D). El "
+"modo solo 2D reduce VRAM y puede ganar un poco de rendimiento en equipos "
+"modestos.\n"
+"[b]Nota:[/b] con [constant USAGE_2D] o [constant USAGE_2D_NO_SAMPLING], "
+"[member hdr] no surte efecto porque el HDR 2D no está soportado."
 
 #: doc/classes/Viewport.xml
 msgid ""
@@ -93156,12 +93269,20 @@ msgid ""
 "enable [member debanding] instead.\n"
 "[b]Note:[/b] Only available on the GLES3 backend."
 msgstr ""
+"Si es [code]true[/code], asigna el framebuffer del viewport con precisión de "
+"punto flotante completa (32 bits) en lugar de precisión de medio punto "
+"flotante (16 bits). Solo es efectivo cuando [member hdr] también está "
+"activado.\n"
+"[b]Nota:[/b] Activar esta configuración no mejora la calidad del "
+"renderizado. El uso de precisión de punto flotante completa es más lento y, "
+"por lo general, solo es necesario para sombreadores avanzados que requieren "
+"un alto nivel de precisión. Para reducir el banding (bandas de color), "
+"activa [member debanding] en su lugar.\n"
+"[b]Nota:[/b] Solo disponible en el backend GLES3."
 
 #: doc/classes/Viewport.xml
-#, fuzzy
 msgid "The custom [World] which can be used as 3D environment source."
-msgstr ""
-"El [World] personalizado se puede sert utilizado como fuente de ambiente 3D."
+msgstr "El [World] personalizado que puede servir de entorno 3D."
 
 #: doc/classes/Viewport.xml
 msgid "The custom [World2D] which can be used as 2D environment source."
@@ -93173,13 +93294,12 @@ msgid "Emitted when a Control node grabs keyboard focus."
 msgstr "Se emite cuando un nodo de control toma el foco del teclado."
 
 #: doc/classes/Viewport.xml
-#, fuzzy
 msgid ""
 "Emitted when the size of the viewport is changed, whether by [method "
 "set_size_override], resize of window, or some other means."
 msgstr ""
-"Se emitido cuando se cambia el tamaño del viewport, ya sea cambiando el "
-"tamaño de la ventana o por algún otro medio."
+"Se emite cuando cambia el tamaño del viewport (por [method "
+"set_size_override], cambio de ventana u otro motivo)."
 
 #: doc/classes/Viewport.xml
 msgid "Do not update the render target."
@@ -93277,9 +93397,8 @@ msgid "Amount of draw calls in frame."
 msgstr "Cantidad de llamadas de dibujo en el fotograma."
 
 #: doc/classes/Viewport.xml
-#, fuzzy
 msgid "Amount of items or joined items in frame."
-msgstr "Cantidad de objetos en el fotograma."
+msgstr "Cantidad de elementos o elementos unidos en el fotograma."
 
 #: doc/classes/Viewport.xml
 msgid "Represents the size of the [enum RenderInfo] enum."
@@ -93298,17 +93417,18 @@ msgid ""
 "Objected are displayed semi-transparent with additive blending so you can "
 "see where they intersect."
 msgstr ""
+"Los objetos se muestran semitransparentes con mezcla aditiva para ver dónde "
+"se cruzan."
 
 #: doc/classes/Viewport.xml
 msgid "Objects are displayed in wireframe style."
 msgstr "Los objetos se muestran en el estilo wireframe."
 
 #: doc/classes/Viewport.xml
-#, fuzzy
 msgid "Multisample anti-aliasing mode disabled. This is the default value."
 msgstr ""
-"Modo antialiasing de multisample desactivado. Este es el valor "
-"predeterminado, y también el ajuste más rápido."
+"Modo de suavizado de bordes por multimuestreo (MSAA) desactivado. Este es el "
+"valor por defecto."
 
 #: doc/classes/Viewport.xml
 msgid "Use 2x Multisample Antialiasing."
@@ -93340,6 +93460,10 @@ msgid ""
 "than the 3D usage modes. Note that 3D rendering effects such as glow and HDR "
 "are not available when using this mode."
 msgstr ""
+"Asigna todos los búferes necesarios para dibujar escenas 2D. Esto consume "
+"menos VRAM que los modos de uso 3D. Ten en cuenta que los efectos de "
+"renderizado 3D como el resplandor (glow) y el HDR no están disponibles al "
+"usar este modo."
 
 #: doc/classes/Viewport.xml
 msgid ""
@@ -93348,12 +93472,19 @@ msgid ""
 "Usage] types, this requires the least VRAM. Note that 3D rendering effects "
 "such as glow and HDR are not available when using this mode."
 msgstr ""
+"Asigna los búferes necesarios para escenas 2D sin asignar un búfer para la "
+"copia de pantalla. En consecuencia, no se puede leer de la pantalla. De los "
+"tipos de [enum Usage], este es el que requiere menos VRAM. Ten en cuenta que "
+"los efectos de renderizado 3D como el resplandor (glow) y el HDR no están "
+"disponibles al usar este modo."
 
 #: doc/classes/Viewport.xml
 msgid ""
 "Allocates full buffers for drawing 3D scenes and all 3D effects including "
 "buffers needed for 2D scenes and effects."
 msgstr ""
+"Asigna búferes completos para dibujar escenas 3D y todos los efectos 3D, "
+"incluyendo los búferes necesarios para escenas y efectos 2D."
 
 #: doc/classes/Viewport.xml
 msgid ""
@@ -93361,6 +93492,9 @@ msgid ""
 "buffers needed for reading from the screen and post-processing effects. "
 "Saves some VRAM."
 msgstr ""
+"Asigna los búferes necesarios para dibujar escenas 3D, pero no asigna los "
+"búferes necesarios para leer de la pantalla ni para efectos de post-"
+"procesamiento. Ahorra algo de VRAM."
 
 #: doc/classes/Viewport.xml
 msgid "Always clear the render target before drawing."
@@ -93546,15 +93680,12 @@ msgid "If [code]true[/code], [RigidBody2D] nodes will be paused."
 msgstr "Si [code]true[/code], los nodos de [RigidBody2D] estarán en pausa."
 
 #: doc/classes/VisibilityEnabler2D.xml
-#, fuzzy
 msgid "If [code]true[/code], [AnimatedSprite] nodes will be paused."
-msgstr ""
-"Si [code]true[/code], los nodos de [AnimatedSprite2D] estarán en pausa."
+msgstr "Si es [code]true[/code], los nodos [AnimatedSprite] quedan en pausa."
 
 #: doc/classes/VisibilityEnabler2D.xml
-#, fuzzy
 msgid "If [code]true[/code], [Particles2D] nodes will be paused."
-msgstr "Si [code]true[/code], los nodos [GPUParticles2D] estarán en pausa."
+msgstr "Si es [code]true[/code], los nodos [Particles2D] quedan en pausa."
 
 #: doc/classes/VisibilityEnabler2D.xml
 msgid ""
@@ -93574,26 +93705,21 @@ msgid "This enabler will freeze [RigidBody2D] nodes."
 msgstr "Este habilitador congelará los nodos [RigidBody2D]."
 
 #: doc/classes/VisibilityEnabler2D.xml
-#, fuzzy
 msgid "This enabler will stop [Particles2D] nodes."
-msgstr "Este habilitador detendrá los nodos [GPUParticles2D]."
+msgstr "Este activador detiene los nodos [Particles2D]."
 
 #: doc/classes/VisibilityEnabler2D.xml
-#, fuzzy
 msgid "This enabler will stop the parent's [method Node._process] function."
-msgstr "Este habilitador detendrá la función _process del padre."
+msgstr "Este activador detiene [method Node._process] del padre."
 
 #: doc/classes/VisibilityEnabler2D.xml
-#, fuzzy
 msgid ""
 "This enabler will stop the parent's [method Node._physics_process] function."
-msgstr "Este habilitador detendrá la función del _physics_process del padre."
+msgstr "Este activador detiene [method Node._physics_process] del padre."
 
 #: doc/classes/VisibilityEnabler2D.xml
-#, fuzzy
 msgid "This enabler will stop [AnimatedSprite] nodes animations."
-msgstr ""
-"Este activador detendrá las animaciones de los nodos [AnimatedSprite2D]."
+msgstr "Este activador detiene las animaciones de [AnimatedSprite]."
 
 #: doc/classes/VisibilityNotifier.xml doc/classes/VisibilityNotifier2D.xml
 msgid "Detects approximately when the node is visible on screen."
@@ -93833,6 +93959,10 @@ msgid ""
 "value will make the [VisualInstance] reliably draw on top of other "
 "[VisualInstance]s that are otherwise positioned at the same spot."
 msgstr ""
+"El desplazamiento de ordenación (sorting offset) utilizado por esta "
+"[VisualInstance]. Ajustarlo a un valor más alto hará que la [VisualInstance] "
+"se dibuje de forma fiable por encima de otras [VisualInstance] que, de otro "
+"modo, estarían situadas en el mismo lugar."
 
 #: doc/classes/VisualInstance.xml
 msgid ""
@@ -93842,6 +93972,12 @@ msgid ""
 "The position based sorting instead allows to better control the drawing "
 "order when working with [Particles] and [CPUParticles]."
 msgstr ""
+"Si es [code]true[/code], el objeto se ordena basándose en el centro del "
+"[AABB]. De lo contrario, se ordena basándose en su posición global.\n"
+"La ordenación basada en el centro del [AABB] es generalmente más precisa "
+"para modelos 3D. La ordenación basada en la posición, en cambio, permite "
+"controlar mejor el orden de dibujado cuando se trabaja con [Particles] y "
+"[CPUParticles]."
 
 #: modules/visual_script/doc_classes/VisualScript.xml
 msgid "A script implemented in the Visual Script programming environment."

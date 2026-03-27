@@ -2,7 +2,7 @@
 # Copyright (c) 2007-2022 Juan Linietsky, Ariel Manzur.
 # Copyright (c) 2014-2022 Godot Engine contributors (cf. AUTHORS.md).
 # This file is distributed under the same license as the Godot source code.
-# 
+#
 # 44pes Games <44pes.games@gmail.com>, 2020.
 # Megamega53 <Christopher.Morales21@myhunter.cuny.edu>, 2020, 2021.
 # Javier Ocampos <xavier.ocampos@gmail.com>, 2020, 2021, 2022.
@@ -46,7 +46,7 @@ msgstr ""
 "Project-Id-Version: Godot Engine class reference\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2026-03-27 00:09-0300\n"
+"PO-Revision-Date: 2026-03-27 01:00-0300\n"
 "Last-Translator: Juan Matías Olmos <elterraplanista@yahoo.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-class-reference/es/>\n"
@@ -5524,8 +5524,8 @@ msgstr ""
 #: doc/classes/AudioStreamPlayer.xml doc/classes/Button.xml
 #: doc/classes/CanvasLayer.xml doc/classes/CollisionShape2D.xml
 #: doc/classes/ColorRect.xml doc/classes/Input.xml doc/classes/InputEvent.xml
-#: doc/classes/InputEventAction.xml doc/classes/Label.xml
-#: doc/classes/Timer.xml doc/classes/VisibilityNotifier2D.xml
+#: doc/classes/InputEventAction.xml doc/classes/Label.xml doc/classes/Timer.xml
+#: doc/classes/VisibilityNotifier2D.xml
 msgid "2D Dodge The Creeps Demo"
 msgstr "Demo 2D «Dodge The Creeps»"
 
@@ -6699,11 +6699,10 @@ msgstr "AnimationTree"
 #: doc/classes/Camera.xml doc/classes/CollisionShape.xml
 #: doc/classes/CylinderShape.xml doc/classes/Environment.xml
 #: doc/classes/GIProbe.xml doc/classes/GIProbeData.xml
-#: doc/classes/KinematicBody.xml doc/classes/Light.xml
-#: doc/classes/Material.xml doc/classes/Mesh.xml doc/classes/MeshInstance.xml
-#: doc/classes/Particles.xml doc/classes/Quat.xml doc/classes/Skeleton.xml
-#: doc/classes/SpotLight.xml doc/classes/StaticBody.xml
-#: doc/classes/WorldEnvironment.xml
+#: doc/classes/KinematicBody.xml doc/classes/Light.xml doc/classes/Material.xml
+#: doc/classes/Mesh.xml doc/classes/MeshInstance.xml doc/classes/Particles.xml
+#: doc/classes/Quat.xml doc/classes/Skeleton.xml doc/classes/SpotLight.xml
+#: doc/classes/StaticBody.xml doc/classes/WorldEnvironment.xml
 msgid "Third Person Shooter Demo"
 msgstr "Demo de shooter en tercera persona"
 
@@ -11940,8 +11939,7 @@ msgid ""
 msgstr ""
 
 #: doc/classes/AudioEffectCapture.xml doc/classes/AudioEffectDistortion.xml
-#: doc/classes/AudioEffectFilter.xml
-#: doc/classes/AudioEffectHighShelfFilter.xml
+#: doc/classes/AudioEffectFilter.xml doc/classes/AudioEffectHighShelfFilter.xml
 #: doc/classes/AudioEffectLowShelfFilter.xml doc/classes/AudioServer.xml
 msgid "Audio buses"
 msgstr "Buses de audio"
@@ -20470,8 +20468,7 @@ msgstr ""
 "La torsión se bloquea si está por debajo de 0,05."
 
 #: doc/classes/ConeTwistJoint.xml doc/classes/Generic6DOFJoint.xml
-#: doc/classes/HingeJoint.xml doc/classes/Light.xml
-#: doc/classes/SliderJoint.xml
+#: doc/classes/HingeJoint.xml doc/classes/Light.xml doc/classes/SliderJoint.xml
 msgid "Represents the size of the [enum Param] enum."
 msgstr "Representa el tamaño del enum [enum Param]."
 
@@ -24334,11 +24331,11 @@ msgstr ""
 "el transcurso del juego."
 
 #: modules/csg/doc_classes/CSGPolygon.xml
-#, fuzzy
 msgid ""
 "When [member mode] is [constant MODE_DEPTH], the depth of the extrusion."
 msgstr ""
-"Profundidad de extrusión cuando el [member mode] es [constant MODE_DEPTH]."
+"Cuando [member mode] es [constant MODE_DEPTH], la profundidad de la "
+"extrusión."
 
 #: modules/csg/doc_classes/CSGPolygon.xml
 msgid ""
@@ -24347,10 +24344,15 @@ msgid ""
 "V around the outline of the [member polygon]), the bottom-left quarter to "
 "the front end face, and the bottom-right quarter to the back end face."
 msgstr ""
+"Material que se utilizará para la malla resultante. El mapa UV asigna la "
+"mitad superior del material a la forma extruida (U a lo largo de la longitud "
+"de las extrusiones y V alrededor del contorno del [member polygon]), el "
+"cuarto inferior izquierdo a la cara frontal y el cuarto inferior derecho a "
+"la cara posterior."
 
 #: modules/csg/doc_classes/CSGPolygon.xml
 msgid "The [member mode] used to extrude the [member polygon]."
-msgstr ""
+msgstr "El [member mode] usado para extruir el [member polygon]."
 
 #: modules/csg/doc_classes/CSGPolygon.xml
 msgid ""
@@ -24359,6 +24361,10 @@ msgid ""
 "shape. If [code]false[/code] the top half of the material is repeated every "
 "step of the extrusion."
 msgstr ""
+"Cuando [member mode] es [constant MODE_PATH], de forma predeterminada, la "
+"mitad superior del [member material] se estira a lo largo de toda la "
+"longitud de la forma extruida. Si es [code]false[/code], la mitad superior "
+"del material se repite en cada paso de la extrusión."
 
 #: modules/csg/doc_classes/CSGPolygon.xml
 msgid ""
@@ -24423,9 +24429,8 @@ msgid ""
 msgstr ""
 
 #: modules/csg/doc_classes/CSGPolygon.xml
-#, fuzzy
 msgid "If [code]true[/code], applies smooth shading to the extrusions."
-msgstr "Si [code]true[/code], oculta la línea del índice especificado."
+msgstr "Si es [code]true[/code], aplica sombreado suave a las extrusiones."
 
 #: modules/csg/doc_classes/CSGPolygon.xml
 msgid ""
@@ -24442,21 +24447,21 @@ msgstr "Número de extrusiónes cuando el [member mode] es [constant MODE_SPIN].
 #: modules/csg/doc_classes/CSGPolygon.xml
 msgid "The [member polygon] shape is extruded along the negative Z axis."
 msgstr ""
+"La forma del [member polygon] se extruye a lo largo del eje Z negativo."
 
 #: modules/csg/doc_classes/CSGPolygon.xml
-#, fuzzy
 msgid ""
 "The [member polygon] shape is extruded by rotating it around the Y axis."
-msgstr "Shape3D se extruye girándolo alrededor de un eje."
+msgstr ""
+"La forma del [member polygon] se extruye rotándola alrededor del eje Y."
 
 #: modules/csg/doc_classes/CSGPolygon.xml
-#, fuzzy
 msgid ""
 "The [member polygon] shape is extruded along the [Path] specified in [member "
 "path_node]."
 msgstr ""
-"Shape3D es extruido a lo largo de un camino establecido por una [Shape] "
-"establecido en [member path_node]."
+"La forma del [member polygon] se extruye a lo largo del [Path] especificado "
+"en [member path_node]."
 
 #: modules/csg/doc_classes/CSGPolygon.xml
 msgid ""
@@ -36567,8 +36572,8 @@ msgid ""
 "information."
 msgstr ""
 "Indica si la cámara está en modo perspectiva. Si es false, la cámara está en "
-"modo ortográfico/ortogonal. Esto se mapea a la propiedad [code]type[/"
-"code] de la cámara en GLTF. Consulta [member Camera.projection] y la "
+"modo ortográfico/ortogonal. Esto se mapea a la propiedad [code]type[/code] "
+"de la cámara en GLTF. Consulta [member Camera.projection] y la "
 "especificación de GLTF para más información."
 
 #: modules/gltf/doc_classes/GLTFCamera.xml
@@ -36580,8 +36585,8 @@ msgid ""
 msgstr ""
 "El tamaño de la cámara. Esta clase y GLTF definen la magnitud del tamaño "
 "como radio en metros, mientras que Godot lo define como diámetro en metros. "
-"Esto se mapea a la propiedad [code]ymag[/code] de GLTF. Este valor solo "
-"se usa en cámaras ortográficas/ortogonales, cuando [member perspective] es "
+"Esto se mapea a la propiedad [code]ymag[/code] de GLTF. Este valor solo se "
+"usa en cámaras ortográficas/ortogonales, cuando [member perspective] es "
 "false."
 
 #: modules/gltf/doc_classes/GLTFCamera.xml
@@ -36598,9 +36603,9 @@ msgid ""
 "The distance to the near culling boundary for this camera relative to its "
 "local Z axis, in meters. This maps to GLTF's [code]znear[/code] property."
 msgstr ""
-"La distancia al límite de recorte («culling») cercano de esta cámara respecto "
-"a su eje Z local, en metros. Esto se mapea a la propiedad [code]znear[/code] "
-"de GLTF."
+"La distancia al límite de recorte («culling») cercano de esta cámara "
+"respecto a su eje Z local, en metros. Esto se mapea a la propiedad "
+"[code]znear[/code] de GLTF."
 
 #: modules/gltf/doc_classes/GLTFCollider.xml
 msgid "Represents a GLTF collider."
@@ -36637,8 +36642,8 @@ msgid ""
 "The [ArrayMesh] resource of the collider. This is only used when the "
 "collider type is \"hull\" (convex hull) or \"trimesh\" (concave trimesh)."
 msgstr ""
-"El recurso [ArrayMesh] del colisionador. Solo se utiliza cuando el tipo "
-"de colisionador es «hull» (malla convexa) o «trimesh» (malla cóncava)."
+"El recurso [ArrayMesh] del colisionador. Solo se utiliza cuando el tipo de "
+"colisionador es «hull» (malla convexa) o «trimesh» (malla cóncava)."
 
 #: modules/gltf/doc_classes/GLTFCollider.xml
 msgid ""
@@ -36648,8 +36653,7 @@ msgid ""
 msgstr ""
 "La altura del colisionador, en metros. Esto solo se utiliza cuando el tipo "
 "de colisionador es «capsule» (cápsula) o «cylinder» (cilindro). Este valor "
-"no debe ser negativo y, para «capsule», debe ser al menos el doble del "
-"radio."
+"no debe ser negativo y, para «capsule», debe ser al menos el doble del radio."
 
 #: modules/gltf/doc_classes/GLTFCollider.xml
 msgid ""
@@ -36670,8 +36674,8 @@ msgid ""
 "the collider type is \"hull\" (convex hull) or \"trimesh\" (concave trimesh)."
 msgstr ""
 "El índice de la malla del colisionador en el archivo GLTF. Esto solo se "
-"utiliza cuando el tipo de colisionador es «hull» (malla convexa) o "
-"«trimesh» (malla cóncava)."
+"utiliza cuando el tipo de colisionador es «hull» (malla convexa) o «trimesh» "
+"(malla cóncava)."
 
 #: modules/gltf/doc_classes/GLTFCollider.xml
 msgid ""
@@ -36679,9 +36683,9 @@ msgid ""
 "type is \"capsule\", \"cylinder\", or \"sphere\". This value should not be "
 "negative."
 msgstr ""
-"El radio del colisionador, en metros. Esto solo se utiliza cuando el tipo "
-"de colisionador es «capsule» (cápsula), «cylinder» (cilindro) o "
-"«sphere» (esfera). Este valor no debe ser negativo."
+"El radio del colisionador, en metros. Esto solo se utiliza cuando el tipo de "
+"colisionador es «capsule» (cápsula), «cylinder» (cilindro) o «sphere» "
+"(esfera). Este valor no debe ser negativo."
 
 #: modules/gltf/doc_classes/GLTFCollider.xml
 msgid ""
@@ -36689,8 +36693,8 @@ msgid ""
 "\"capsule\", \"cylinder\", \"sphere\", \"hull\", and \"trimesh\"."
 msgstr ""
 "El tipo de forma que representa este colisionador. Los valores válidos son "
-"«box» (caja), «capsule» (cápsula), «cylinder» (cilindro), "
-"«sphere» (esfera), «hull» (malla convexa) y «trimesh» (malla cóncava)."
+"«box» (caja), «capsule» (cápsula), «cylinder» (cilindro), «sphere» (esfera), "
+"«hull» (malla convexa) y «trimesh» (malla cóncava)."
 
 #: modules/gltf/doc_classes/GLTFCollider.xml
 msgid ""
@@ -36997,9 +37001,9 @@ msgid ""
 "and \"directional\", which correspond to Godot's [OmniLight], [SpotLight], "
 "and [DirectionalLight] respectively."
 msgstr ""
-"El tipo de luz. Los valores aceptados por Godot son «point» (punto), "
-"«spot» (foco) y «directional» (direccional), que corresponden a "
-"[OmniLight], [SpotLight] y [DirectionalLight] de Godot respectivamente."
+"El tipo de luz. Los valores aceptados por Godot son «point» (punto), «spot» "
+"(foco) y «directional» (direccional), que corresponden a [OmniLight], "
+"[SpotLight] y [DirectionalLight] de Godot respectivamente."
 
 #: modules/gltf/doc_classes/GLTFMesh.xml
 msgid ""
@@ -38673,7 +38677,7 @@ msgstr ""
 
 #: modules/gridmap/doc_classes/GridMap.xml
 msgid "Using gridmaps"
-msgstr ""
+msgstr "Uso de GridMap."
 
 #: modules/gridmap/doc_classes/GridMap.xml
 msgid "Clear all cells."
@@ -38782,13 +38786,12 @@ msgstr ""
 "GridMap."
 
 #: modules/gridmap/doc_classes/GridMap.xml
-#, fuzzy
 msgid ""
 "If [code]true[/code], this GridMap uses cell navmesh resources to create "
 "navigation regions."
 msgstr ""
-"Si [code]true[/code], actualiza las animaciones en respuesta a las "
-"notificaciones relacionadas con el proceso."
+"Si es [code]true[/code], este GridMap utiliza los recursos «navmesh» de las "
+"celdas para crear regiones de navegación."
 
 #: modules/gridmap/doc_classes/GridMap.xml
 msgid "If [code]true[/code], grid items are centered on the X axis."
@@ -38864,11 +38867,15 @@ msgid ""
 "Overrides the default friction and bounce physics properties for the whole "
 "[GridMap]."
 msgstr ""
+"Sobrescribe las propiedades físicas de fricción y rebote predeterminadas "
+"para todo el [GridMap]."
 
 #: modules/gridmap/doc_classes/GridMap.xml
 msgid ""
 "Controls whether this GridMap will be baked in a [BakedLightmap] or not."
 msgstr ""
+"Controla si este GridMap se incluirá en el horneado de un [BakedLightmap] o "
+"no."
 
 #: modules/gridmap/doc_classes/GridMap.xml
 msgid "Emitted when [member cell_size] changes."
@@ -54283,13 +54290,12 @@ msgid ""
 msgstr ""
 
 #: modules/enet/doc_classes/NetworkedMultiplayerENet.xml
-#, fuzzy
 msgid ""
 "Enable or disable certificate verification when [member use_dtls] is "
 "[code]true[/code]."
 msgstr ""
-"Habilitar o deshabilitar la verificación del certificado cuando [member "
-"use_dtls] [code]true[/code]."
+"Activa o desactiva la verificación de certificados cuando [member use_dtls] "
+"es [code]true[/code]."
 
 #: modules/enet/doc_classes/NetworkedMultiplayerENet.xml
 msgid ""
@@ -73638,7 +73644,6 @@ msgid "Class for searching text for patterns using regular expressions."
 msgstr "Clase para buscar patrones en el texto usando expresiones regulares."
 
 #: modules/regex/doc_classes/RegEx.xml
-#, fuzzy
 msgid ""
 "A regular expression (or regex) is a compact language that can be used to "
 "recognise strings that follow a specific pattern, such as URLs, email "
@@ -73706,73 +73711,73 @@ msgid ""
 "regular expressions online."
 msgstr ""
 "Una expresión regular (o regex) es un lenguaje compacto que puede utilizarse "
-"para reconocer cadenas que siguen un patrón específico, como URL, "
+"para reconocer cadenas que siguen un patrón específico, como URLs, "
 "direcciones de correo electrónico, frases completas, etc. Por ejemplo, una "
-"regex de [code]ab[0-9][/code] encontraría cualquier string que sea [code]ab[/"
-"code] seguida de cualquier número desde [code]0[/code] hasta [code]9[/code]. "
-"Para una mirada más profunda, puedes encontrar fácilmente varios tutoriales "
-"y explicaciones detalladas en Internet.\n"
-"Para empezar, el objeto RegEx necesita ser compilado con el patrón de "
-"búsqueda usando [method compile] antes de que pueda ser usado.\n"
+"regex de [code]ab[0-9][/code] encontraría cualquier cadena que sea [code]ab[/"
+"code] seguida de cualquier número del [code]0[/code] al [code]9[/code]. Para "
+"un análisis más profundo, puedes encontrar fácilmente varios tutoriales y "
+"explicaciones detalladas en Internet.\n"
+"Para empezar, el objeto RegEx debe ser compilado con el patrón de búsqueda "
+"utilizando [method compile] antes de poder ser utilizado.\n"
 "[codeblock]\n"
 "var regex = RegEx.new()\n"
 "regex.compile(\"\\\\w-(\\\\d+)\")\n"
 "[/codeblock]\n"
-"El patrón de búsqueda debe escaparse primero para el GDScript antes de que "
-"se escape para la expresión. Por ejemplo, [code]compile(\"\\\\d+\")[/code] "
-"sería leído por RegEx como [code]\\d+[/code]. De manera similar, "
-"[code]compile(\"\\\"(?:\\\\\\N-[^^])*[^]\"[/code] sería leído como "
-"[code]\"(?:\\N-[^]])*\"[/code].\n"
+"El patrón de búsqueda debe ser escapado primero para GDScript antes de ser "
+"escapado para la expresión. Por ejemplo, [code]compile(\"\\\\d+\")[/code] "
+"sería leído por RegEx como [code]\\d+[/code]. Del mismo modo, "
+"[code]compile(\"\\\"(?:\\\\\\\\.|[^\\\"])*\\\"\")[/code] sería leído como "
+"[code]\"(?:\\\\.|[^\"])*\"[/code].\n"
 "Usando [method search], puedes encontrar el patrón dentro del texto dado. Si "
-"se encuentra un patrón, se devuelve [RegExMatch] y se pueden recuperar los "
-"detalles de los resultados usando métodos como [method RegExMatch."
+"se encuentra un patrón, se devuelve un [RegExMatch] y puedes obtener "
+"detalles de los resultados utilizando métodos como [method RegExMatch."
 "get_string] y [method RegExMatch.get_start].\n"
 "[codeblock]\n"
 "var regex = RegEx.new()\n"
 "regex.compile(\"\\\\w-(\\\\d+)\")\n"
 "var result = regex.search(\"abc n-0123\")\n"
 "if result:\n"
-"    print(result.get_string()) # Se imprimiría el n-0123\n"
+"    print(result.get_string()) # Imprimiría n-0123\n"
 "[/codeblock]\n"
-"Los resultados de la captura de grupos [code]()[/code] pueden ser "
-"recuperados pasando el número de grupo a los diversos métodos en "
-"[RegExMatch]. El grupo 0 es el predeterminado y siempre se referirá al "
-"patrón completo. En el ejemplo anterior, llamando a [code]result."
-"get_string(1)[/code] obtendríamos [code]0123[/code].\n"
-"Esta versión de RegEx también soporta grupos de captura con nombre, y los "
-"nombres pueden ser usados para recuperar los resultados. Si dos o más grupos "
-"tienen el mismo nombre, el nombre sólo se referiría al primero con una "
-"coincidencia.\n"
+"Los resultados de los grupos de captura [code]()[/code] pueden obtenerse "
+"pasando el número de grupo a los diversos métodos en [RegExMatch]. El grupo "
+"0 es el predeterminado y siempre se referirá al patrón completo. En el "
+"ejemplo anterior, llamar a [code]result.get_string(1)[/code] te daría "
+"[code]0123[/code].\n"
+"Esta versión de RegEx también admite grupos de captura con nombre, y los "
+"nombres pueden usarse para recuperar los resultados. Si dos o más grupos "
+"tienen el mismo nombre, el nombre solo se referirá al primero que coincida.\n"
 "[codeblock]\n"
 "var regex = RegEx.new()\n"
-"regex.compile(\"d(?<dígito>[0-9]+)|x(?<dígito>[0-9a-f]+)\")\n"
-"var result = regex.search(\"el número es x2f\")\n"
-"si el resultado:\n"
+"regex.compile(\"d(?<digit>[0-9]+)|x(?<digit>[0-9a-f]+)\")\n"
+"var result = regex.search(\"the number is x2f\")\n"
+"if result:\n"
 "    print(result.get_string(\"digit\")) # Imprimiría 2f\n"
 "[/codeblock]\n"
-"Si necesita procesar varios resultados, [method search_all] genera una lista "
-"de todos los resultados no superpuestos. Esto puede combinarse con un bucle "
-"[code]for[/code] para mayor comodidad.\n"
+"Si necesitas procesar múltiples resultados, [method search_all] genera una "
+"lista de todos los resultados que no se solapen. Esto puede combinarse con "
+"un bucle [code]for[/code] por conveniencia.\n"
 "[codeblock]\n"
-"para el resultado en regex.search_all(\"d01, d03, d0c, x3f y x42\"):\n"
+"for result in regex.search_all(\"d01, d03, d0c, x3f and x42\"):\n"
 "    print(result.get_string(\"digit\"))\n"
-"# Imprimiría 01 03 0 3f 42\n"
+"# Imprimiría 01 03 0c 3f 42\n"
 "[/codeblock]\n"
-"[b]Ejemplo de división de una cadena utilizando un RegEx:[/b]\n"
+"[b]Ejemplo de división de una cadena usando RegEx:[/b]\n"
 "[codeblock]\n"
 "var regex = RegEx.new()\n"
-"regex.compile(\"\\\\N-S+\") # Clase de personaje de espacio blanco negado.\n"
+"regex.compile(\"\\\\S+\") # Clase de caracteres de espacio en blanco "
+"negada.\n"
 "var results = []\n"
-"for match in regex.search_all(\"Uno Dos  \\n\\tTres\"):\n"
-"    results.push_back(match.get_string())\n"
-"# El `results` ahora contiene \"Uno\", \"Dos\", \"Tres\".\n"
+"for result in regex.search_all(\"Uno  Dos \\n\\tTres\"):\n"
+"    results.push_back(result.get_string())\n"
+"# El array `results` ahora contiene \"Uno\", \"Dos\", \"Tres\".\n"
 "[/codeblock]\n"
 "[b]Nota:[/b] La implementación de regex de Godot se basa en la biblioteca "
-"[url=https://www.pcre.org/]PCRE2[/url]. Puedes ver la referencia completa "
-"del patrón [url=https://www.pcre.org/current/doc/html/pcre2pattern."
-"html]aquí[/url].\n"
+"[url=https://www.pcre.org/]PCRE2[/url]. Puedes ver la referencia completa de "
+"patrones [url=https://www.pcre.org/current/doc/html/pcre2pattern.html]aquí[/"
+"url].\n"
 "[b]Consejo:[/b] Puedes usar [url=https://regexr.com/]Regexr[/url] para "
-"probar las expresiones regulares en línea."
+"probar expresiones regulares en línea."
 
 #: modules/regex/doc_classes/RegEx.xml
 msgid ""
@@ -90512,6 +90517,8 @@ msgid ""
 "Universal Plug and Play (UPnP) functions for network device discovery, "
 "querying and port forwarding."
 msgstr ""
+"Funciones de Universal Plug and Play (UPnP) para el descubrimiento de "
+"dispositivos de red, consulta y redireccionamiento de puertos."
 
 #: modules/upnp/doc_classes/UPNP.xml
 msgid ""
@@ -90923,10 +90930,9 @@ msgstr "Error desconocido."
 
 #: modules/upnp/doc_classes/UPNPDevice.xml
 msgid "Universal Plug and Play (UPnP) device."
-msgstr ""
+msgstr "Dispositivo Universal Plug and Play (UPnP)."
 
 #: modules/upnp/doc_classes/UPNPDevice.xml
-#, fuzzy
 msgid ""
 "Universal Plug and Play (UPnP) device. See [UPNP] for UPnP discovery and "
 "utility functions. Provides low-level access to UPNP control commands. "
@@ -90934,12 +90940,12 @@ msgid ""
 "information of the device (like local and external IP address and status). "
 "Note that methods on this class are synchronous and block the calling thread."
 msgstr ""
-"Dispositivo UPNP. Véase [UPNP] para las funciones de descubrimiento y "
-"utilidad del UPNP. Proporciona un acceso de bajo nivel a los comandos de "
-"control del UPNP. Permite gestionar las asignaciones de puertos (reenvío de "
-"puertos) y consultar la información de red del dispositivo (como la "
-"dirección IP local y externa y el estado). Tenga en cuenta que los métodos "
-"de esta clase están sincronizados y bloquean el hilo de llamada."
+"Dispositivo Universal Plug and Play (UPnP). Consulta [UPNP] para funciones "
+"de utilidad y descubrimiento de UPnP. Proporciona acceso de bajo nivel a los "
+"comandos de control de UPNP. Permite gestionar mapeos de puertos («port "
+"forwarding») y consultar información de red del dispositivo (como la "
+"dirección IP local y externa y el estado). Ten en cuenta que los métodos de "
+"esta clase son síncronos y bloquean el hilo de ejecución."
 
 #: modules/upnp/doc_classes/UPNPDevice.xml
 msgid ""
@@ -94405,6 +94411,7 @@ msgstr ""
 
 #: modules/visual_script/doc_classes/VisualScriptCustomNode.xml
 msgid "Return the specified input port's hint string."
+msgstr ""
 "Devuelve la cadena de la pista («hint string») del puerto de entrada "
 "especificado."
 
@@ -100171,16 +100178,15 @@ msgstr ""
 "la vista previa."
 
 #: doc/classes/VisualShaderNode.xml
-#, fuzzy
 msgid ""
 "Emitted when the node requests an editor refresh. Currently called only in "
 "setter of [member VisualShaderNodeTexture.source], "
 "[VisualShaderNodeTexture], and [VisualShaderNodeCubeMap] (and their "
 "derivatives)."
 msgstr ""
-"Emitido cuando el nodo solicita un refresco del editor. Actualmente se llama "
-"sólo en el setter de [member VisualShaderNodeTexture.source], "
-"[VisualShaderNodeTexture], y [VisualShaderNodeCubemap] (y sus derivados)."
+"Se emite cuando el nodo solicita una actualización del editor. Actualmente "
+"solo se llama en el «setter» de [member VisualShaderNodeTexture.source], "
+"[VisualShaderNodeTexture] y [VisualShaderNodeCubeMap] (y sus derivados)."
 
 #: doc/classes/VisualShaderNode.xml
 msgid ""
@@ -100606,14 +100612,13 @@ msgstr ""
 "CTYPE_TRANSFORM]."
 
 #: doc/classes/VisualShaderNodeCompare.xml
-#, fuzzy
 msgid ""
 "Comparison for less than or equal ([code]a < b[/code]). Cannot be used if "
 "[member type] set to [constant CTYPE_BOOLEAN] or [constant CTYPE_TRANSFORM]."
 msgstr ""
-"Comparación para menos o igual ([code]a <= b[/code]). No se puede utilizar "
-"si el [member type] se establece en [constant CTYPE_BOOLEAN] o [constant "
-"CTYPE_TRANSFORM]."
+"Comparación para menor o igual que ([code]a <= b[/code]). No se puede "
+"utilizar si [member type] está establecido en [constant CTYPE_BOOLEAN] o "
+"[constant CTYPE_TRANSFORM]."
 
 #: doc/classes/VisualShaderNodeCompare.xml
 msgid ""
@@ -100632,11 +100637,10 @@ msgstr ""
 "satisface la condición de comparación."
 
 #: doc/classes/VisualShaderNodeCubeMap.xml
-#, fuzzy
 msgid "A [CubeMap] sampling node to be used within the visual shader graph."
 msgstr ""
-"Un nodo de muestreo [Cubemap] para ser usado dentro del gráfico de shader "
-"visual."
+"Un nodo de muestreo de [CubeMap] para ser utilizado dentro del grafo de "
+"sombreadores visuales."
 
 #: doc/classes/VisualShaderNodeCubeMap.xml
 msgid ""
@@ -100647,13 +100651,12 @@ msgstr ""
 "Devuelve un vector de color y un canal alfa como escalar."
 
 #: doc/classes/VisualShaderNodeCubeMap.xml
-#, fuzzy
 msgid ""
 "The [CubeMap] texture to sample when using [constant SOURCE_TEXTURE] as "
 "[member source]."
 msgstr ""
-"La textura de [Cubemap] a la muestra cuando se utiliza [constant "
-"SOURCE_TEXTURE] como [member source]."
+"La textura [CubeMap] a muestrear cuando [member source] es [constant "
+"SOURCE_TEXTURE]."
 
 #: doc/classes/VisualShaderNodeCubeMap.xml
 msgid ""
@@ -101158,14 +101161,13 @@ msgstr ""
 "get_free_input_port_id]."
 
 #: doc/classes/VisualShaderNodeGroupBase.xml
-#, fuzzy
 msgid ""
 "Returns a [String] description of the input ports as a colon-separated list "
 "using the format [code]id,type,name;[/code] (see [method add_input_port])."
 msgstr ""
-"Devuelve una descripción [String] de los puertos de entrada como una lista "
-"separada por dos puntos utilizando el formato [code]id,type,name;[/code] "
-"(véase [method add_input_port])."
+"Devuelve una descripción en [String] de los puertos de entrada como una "
+"lista separada por comas utilizando el formato [code]id,tipo,nombre;[/code] "
+"(consulta [method add_input_port])."
 
 #: doc/classes/VisualShaderNodeGroupBase.xml
 msgid ""
@@ -101176,14 +101178,13 @@ msgstr ""
 "get_free_output_port_id]."
 
 #: doc/classes/VisualShaderNodeGroupBase.xml
-#, fuzzy
 msgid ""
 "Returns a [String] description of the output ports as a colon-separated list "
 "using the format [code]id,type,name;[/code] (see [method add_output_port])."
 msgstr ""
-"Devuelve una descripción [String] de los puertos de salida como una lista "
-"separada por dos puntos utilizando el formato [code]id,type,name;[/code] "
-"(véase [method add_output_port])."
+"Devuelve una descripción en [String] de los puertos de salida como una lista "
+"separada por comas utilizando el formato [code]id,tipo,nombre;[/code] "
+"(consulta [method add_output_port])."
 
 #: doc/classes/VisualShaderNodeGroupBase.xml
 msgid "Returns [code]true[/code] if the specified input port exists."
@@ -101552,13 +101553,12 @@ msgid "Use the current viewport's texture as the source."
 msgstr "Utiliza la textura del actual viewport como fuente."
 
 #: doc/classes/VisualShaderNodeTexture.xml
-#, fuzzy
 msgid ""
 "Use the texture from this shader's texture built-in (e.g. a texture of a "
 "[Sprite])."
 msgstr ""
-"Usa la textura de este shader integrado (por ejemplo, una textura de un "
-"[Sprite2D])."
+"Utiliza la textura de la propiedad de textura integrada de este sombreador "
+"(p. ej. la textura de un [Sprite])."
 
 #: doc/classes/VisualShaderNodeTexture.xml
 msgid "Use the texture from this shader's normal map built-in."
@@ -104095,9 +104095,8 @@ msgid "Target ray from touch screen, mouse or other tactile input device."
 msgstr "Rayo desde pantalla táctil, ratón u otro dispositivo táctil."
 
 #: doc/classes/WindowDialog.xml
-#, fuzzy
 msgid "Base class for window dialogs."
-msgstr "Clase base para las transmisiones de audio."
+msgstr "Clase base para diálogos de ventana."
 
 #: doc/classes/WindowDialog.xml
 msgid ""
@@ -104115,24 +104114,20 @@ msgid ""
 msgstr ""
 
 #: doc/classes/WindowDialog.xml
-#, fuzzy
 msgid "If [code]true[/code], the user can resize the window."
-msgstr "Si [code]true[/code], la cámara gira con el objetivo."
+msgstr "Si es [code]true[/code], el usuario puede redimensionar la ventana."
 
 #: doc/classes/WindowDialog.xml
-#, fuzzy
 msgid "The text displayed in the window's title bar."
-msgstr "El texto que se muestra en la barra de título del GraphNode."
+msgstr "El texto mostrado en la barra de título."
 
 #: doc/classes/WindowDialog.xml
-#, fuzzy
 msgid "The color of the title text."
 msgstr "El color del texto del título."
 
 #: doc/classes/WindowDialog.xml
-#, fuzzy
 msgid "The horizontal offset of the close button."
-msgstr "El desplazamiento vertical del botón de cierre."
+msgstr "El desplazamiento horizontal del botón de cierre."
 
 #: doc/classes/WindowDialog.xml
 #, fuzzy
@@ -104144,19 +104139,16 @@ msgstr ""
 "el [member resizable]."
 
 #: doc/classes/WindowDialog.xml
-#, fuzzy
 msgid "The vertical offset of the title text."
-msgstr "Desplazamiento vertical del texto del título."
+msgstr "El desplazamiento vertical del texto del título."
 
 #: doc/classes/WindowDialog.xml
-#, fuzzy
 msgid "The font used to draw the title."
-msgstr "La fuente usada para dibujar los nombres de las pestañas."
+msgstr "La fuente usada para dibujar el título."
 
 #: doc/classes/WindowDialog.xml
-#, fuzzy
 msgid "The icon for the close button."
-msgstr "El icono del botón de reinicio del zoom."
+msgstr "El icono para el botón de cerrar."
 
 #: doc/classes/WindowDialog.xml
 #, fuzzy

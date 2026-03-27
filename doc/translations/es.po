@@ -2386,21 +2386,19 @@ msgid "Global scope constants and variables."
 msgstr "Constantes y variables de alcance global."
 
 #: doc/classes/@GlobalScope.xml
-#, fuzzy
 msgid ""
 "Global scope constants and variables. This is all that resides in the "
 "globals, constants regarding error codes, scancodes, property hints, etc.\n"
 "Singletons are also documented here, since they can be accessed from "
 "anywhere."
 msgstr ""
-"Constantes y variables de alcance global. Esto es todo lo que reside en las "
-"globales, las constantes de los códigos de error, los códigos de teclas, las "
-"sugerencias de propiedades, etc.\n"
+"Constantes y variables de alcance global. Aquí está todo lo relativo al "
+"ámbito global: constantes sobre códigos de error, códigos de escaneo, pistas "
+"de propiedades, etc.\n"
 "Los singletons también están documentados aquí, ya que se puede acceder a "
 "ellos desde cualquier lugar."
 
 #: doc/classes/@GlobalScope.xml
-#, fuzzy
 msgid "The [ARVRServer] singleton."
 msgstr "El singleton [ARVRServer]."
 
@@ -2461,19 +2459,16 @@ msgid "The [Marshalls] singleton."
 msgstr "El singleton [Marshalls]."
 
 #: doc/classes/@GlobalScope.xml
-#, fuzzy
 msgid "The [Navigation2DServer] singleton."
-msgstr "El singleton [TranslationServer]."
+msgstr "El singleton [Navigation2DServer]."
 
 #: doc/classes/@GlobalScope.xml
-#, fuzzy
 msgid "The [NavigationMeshGenerator] singleton."
 msgstr "El singleton [NavigationMeshGenerator]."
 
 #: doc/classes/@GlobalScope.xml
-#, fuzzy
 msgid "The [NavigationServer] singleton."
-msgstr "El singleton [TranslationServer]."
+msgstr "El singleton [NavigationServer]."
 
 #: doc/classes/@GlobalScope.xml
 msgid "The [OS] singleton."
@@ -2484,14 +2479,12 @@ msgid "The [Performance] singleton."
 msgstr "El singleton [Performance]."
 
 #: doc/classes/@GlobalScope.xml
-#, fuzzy
 msgid "The [Physics2DServer] singleton."
-msgstr "El singleton [PhysicsServer2D]."
+msgstr "El singleton [Physics2DServer]."
 
 #: doc/classes/@GlobalScope.xml
-#, fuzzy
 msgid "The [PhysicsServer] singleton."
-msgstr "El singleton [PhysicsServer2D]."
+msgstr "El singleton [PhysicsServer]."
 
 #: doc/classes/@GlobalScope.xml
 msgid "The [ProjectSettings] singleton."
@@ -2506,9 +2499,8 @@ msgid "The [ResourceSaver] singleton."
 msgstr "El singleton [ResourceSaver]."
 
 #: doc/classes/@GlobalScope.xml
-#, fuzzy
 msgid "The [Time] singleton."
-msgstr "El singleton [Engine]."
+msgstr "El singleton [Time]."
 
 #: doc/classes/@GlobalScope.xml
 msgid "The [TranslationServer] singleton."
@@ -2519,9 +2511,8 @@ msgid "The [VisualScriptEditor] singleton."
 msgstr "El singleton [VisualScriptEditor]."
 
 #: doc/classes/@GlobalScope.xml
-#, fuzzy
 msgid "The [VisualServer] singleton."
-msgstr "El singleton [DisplayServer]."
+msgstr "El singleton [VisualServer]."
 
 #: doc/classes/@GlobalScope.xml
 msgid "Left margin, usually used for [Control] or [StyleBox]-derived classes."
@@ -2607,9 +2598,8 @@ msgid "Vertical bottom alignment, usually for text-derived classes."
 msgstr "Alineación vertical inferior, generalmente para clases de texto."
 
 #: doc/classes/@GlobalScope.xml
-#, fuzzy
 msgid "Scancodes with this bit applied are non-printable."
-msgstr "Los códigos de tecla con este bit a 1 no son imprimibles."
+msgstr "Los códigos de escaneo con este bit aplicado no son imprimibles."
 
 #: doc/classes/@GlobalScope.xml
 msgid "Escape key."
@@ -2621,7 +2611,7 @@ msgstr "Tecla Tabulador."
 
 #: doc/classes/@GlobalScope.xml
 msgid "Shift + Tab key."
-msgstr ""
+msgstr "Tecla Mayús + Tab."
 
 #: doc/classes/@GlobalScope.xml
 msgid "Backspace key."
@@ -2883,18 +2873,16 @@ msgstr ""
 "un dispositivo Android."
 
 #: doc/classes/@GlobalScope.xml
-#, fuzzy
 msgid "Media forward key."
-msgstr "Tecla grabar."
+msgstr "Tecla de avance multimedia."
 
 #: doc/classes/@GlobalScope.xml
 msgid "Media stop key."
 msgstr "Tecla reproduccion parar."
 
 #: doc/classes/@GlobalScope.xml
-#, fuzzy
 msgid "Media refresh key."
-msgstr "Tecla grabar."
+msgstr "Tecla de actualización multimedia."
 
 #: doc/classes/@GlobalScope.xml
 msgid "Volume down key."
@@ -3631,11 +3619,11 @@ msgstr "Tecla máscara intercambio grupo."
 
 #: doc/classes/@GlobalScope.xml
 msgid "Primary mouse button, usually the left button."
-msgstr ""
+msgstr "Botón principal del ratón, normalmente el izquierdo."
 
 #: doc/classes/@GlobalScope.xml
 msgid "Secondary mouse button, usually the right button."
-msgstr ""
+msgstr "Botón secundario del ratón, normalmente el derecho."
 
 #: doc/classes/@GlobalScope.xml
 msgid "Middle mouse button."
@@ -3669,11 +3657,11 @@ msgstr ""
 
 #: doc/classes/@GlobalScope.xml
 msgid "Primary mouse button mask, usually for the left button."
-msgstr ""
+msgstr "Máscara del botón principal del ratón, normalmente el izquierdo."
 
 #: doc/classes/@GlobalScope.xml
 msgid "Secondary mouse button mask, usually for the right button."
-msgstr ""
+msgstr "Máscara del botón secundario del ratón, normalmente el derecho."
 
 #: doc/classes/@GlobalScope.xml
 msgid "Middle mouse button mask."
@@ -3688,9 +3676,8 @@ msgid "Extra mouse button 2 mask."
 msgstr "Máscara de botón de ratón extra 2."
 
 #: doc/classes/@GlobalScope.xml
-#, fuzzy
 msgid "Invalid button or axis."
-msgstr "Duración inválida."
+msgstr "Botón o eje no válido."
 
 #: doc/classes/@GlobalScope.xml
 msgid "Gamepad button 0."
@@ -3757,39 +3744,32 @@ msgid "Gamepad button 15."
 msgstr "Boton 15 del mando de juegos."
 
 #: doc/classes/@GlobalScope.xml
-#, fuzzy
 msgid "Gamepad button 16."
-msgstr "Botón 1 del mando de videojuegos."
+msgstr "Botón 16 del mando."
 
 #: doc/classes/@GlobalScope.xml
-#, fuzzy
 msgid "Gamepad button 17."
-msgstr "Botón 1 del mando de videojuegos."
+msgstr "Botón 17 del mando."
 
 #: doc/classes/@GlobalScope.xml
-#, fuzzy
 msgid "Gamepad button 18."
-msgstr "Botón 1 del mando de videojuegos."
+msgstr "Botón 18 del mando."
 
 #: doc/classes/@GlobalScope.xml
-#, fuzzy
 msgid "Gamepad button 19."
-msgstr "Botón 1 del mando de videojuegos."
+msgstr "Botón 19 del mando."
 
 #: doc/classes/@GlobalScope.xml
-#, fuzzy
 msgid "Gamepad button 20."
-msgstr "Botón 2 del mando de videojuegos."
+msgstr "Botón 20 del mando."
 
 #: doc/classes/@GlobalScope.xml
-#, fuzzy
 msgid "Gamepad button 21."
-msgstr "Botón 2 del mando de videojuegos."
+msgstr "Botón 21 del mando."
 
 #: doc/classes/@GlobalScope.xml
-#, fuzzy
 msgid "Gamepad button 22."
-msgstr "Botón 2 del mando de videojuegos."
+msgstr "Botón 22 del mando."
 
 #: doc/classes/@GlobalScope.xml
 msgid ""
@@ -3799,6 +3779,11 @@ msgid ""
 "- Linux: Up to 80 buttons.\n"
 "- Windows and macOS: Up to 128 buttons."
 msgstr ""
+"Número máximo de botones de mando admitidos por el motor. El límite real "
+"puede ser menor en plataformas concretas:\n"
+"- Android: hasta 36 botones.\n"
+"- Linux: hasta 80 botones.\n"
+"- Windows y macOS: hasta 128 botones."
 
 #: doc/classes/@GlobalScope.xml
 msgid "DualShock circle button."
@@ -3817,29 +3802,24 @@ msgid "DualShock triangle button."
 msgstr "Botón triángulo DualShock."
 
 #: doc/classes/@GlobalScope.xml
-#, fuzzy
 msgid "Xbox controller B button."
-msgstr "Botón B del mando de Nintendo."
+msgstr "Botón B del mando Xbox."
 
 #: doc/classes/@GlobalScope.xml
-#, fuzzy
 msgid "Xbox controller A button."
-msgstr "Botón B del mando de Nintendo."
+msgstr "Botón A del mando Xbox."
 
 #: doc/classes/@GlobalScope.xml
-#, fuzzy
 msgid "Xbox controller X button."
-msgstr "Botón X del mando de Nintendo."
+msgstr "Botón X del mando Xbox."
 
 #: doc/classes/@GlobalScope.xml
-#, fuzzy
 msgid "Xbox controller Y button."
-msgstr "Botón Y del mando de Nintendo."
+msgstr "Botón Y del mando Xbox."
 
 #: doc/classes/@GlobalScope.xml
-#, fuzzy
 msgid "Nintendo controller A button."
-msgstr "Botón B del mando de Nintendo."
+msgstr "Botón A del mando Nintendo."
 
 #: doc/classes/@GlobalScope.xml
 msgid "Nintendo controller B button."
@@ -3916,44 +3896,36 @@ msgid "Gamepad DPad right."
 msgstr "Dpad derecha en el mando de videojuegos."
 
 #: doc/classes/@GlobalScope.xml
-#, fuzzy
 msgid "Gamepad SDL guide button."
-msgstr "Botón guía del mando de juego SDL."
+msgstr "Botón guía del mando (SDL)."
 
 #: doc/classes/@GlobalScope.xml
-#, fuzzy
 msgid "Gamepad SDL miscellaneous button."
-msgstr "Botón 0 del mando de videojuegos."
+msgstr "Botón misceláneo del mando (SDL)."
 
 #: doc/classes/@GlobalScope.xml
-#, fuzzy
 msgid "Gamepad SDL paddle 1 button."
-msgstr "Botón D-Pad izquierda del mando de juego SDL."
+msgstr "Botón de paleta 1 del mando (SDL)."
 
 #: doc/classes/@GlobalScope.xml
-#, fuzzy
 msgid "Gamepad SDL paddle 2 button."
-msgstr "Botón D-Pad izquierda del mando de juego SDL."
+msgstr "Botón de paleta 2 del mando (SDL)."
 
 #: doc/classes/@GlobalScope.xml
-#, fuzzy
 msgid "Gamepad SDL paddle 3 button."
-msgstr "Botón D-Pad izquierda del mando de juego SDL."
+msgstr "Botón de paleta 3 del mando (SDL)."
 
 #: doc/classes/@GlobalScope.xml
-#, fuzzy
 msgid "Gamepad SDL paddle 4 button."
-msgstr "Botón D-Pad izquierda del mando de juego SDL."
+msgstr "Botón de paleta 4 del mando (SDL)."
 
 #: doc/classes/@GlobalScope.xml
-#, fuzzy
 msgid "Gamepad SDL touchpad button."
-msgstr "Botón 0 del mando de videojuegos."
+msgstr "Botón del panel táctil del mando (SDL)."
 
 #: doc/classes/@GlobalScope.xml
-#, fuzzy
 msgid "Gamepad left Shoulder button."
-msgstr "Botón del hombro izquierdo del mando de juego SDL."
+msgstr "Botón de hombro izquierdo del mando."
 
 #: doc/classes/@GlobalScope.xml
 msgid "Gamepad left trigger."
@@ -3964,9 +3936,8 @@ msgid "Gamepad left stick click."
 msgstr "Click en el palo izquierdo del mando de videojuegos."
 
 #: doc/classes/@GlobalScope.xml
-#, fuzzy
 msgid "Gamepad right Shoulder button."
-msgstr "Botón del hombro derecho del mando de juego SDL."
+msgstr "Botón de hombro derecho del mando."
 
 #: doc/classes/@GlobalScope.xml
 msgid "Gamepad right trigger."
@@ -3981,18 +3952,16 @@ msgid "Gamepad left stick horizontal axis."
 msgstr "Palo izquierdo del eje horizontal del mando de videojuegos."
 
 #: doc/classes/@GlobalScope.xml
-#, fuzzy
 msgid "Gamepad left stick vertical axis."
-msgstr "Palo izquierdo del eje horizontal del mando de videojuegos."
+msgstr "Eje vertical de la palanca izquierda del mando."
 
 #: doc/classes/@GlobalScope.xml
 msgid "Gamepad right stick horizontal axis."
 msgstr "Palo derecho del eje horizontal del mando de videojuegos."
 
 #: doc/classes/@GlobalScope.xml
-#, fuzzy
 msgid "Gamepad right stick vertical axis."
-msgstr "Palo derecho del eje horizontal del mando de videojuegos."
+msgstr "Eje vertical de la palanca derecha del mando."
 
 #: doc/classes/@GlobalScope.xml
 msgid "Generic gamepad axis 4."
@@ -4003,14 +3972,12 @@ msgid "Generic gamepad axis 5."
 msgstr "Eje 5 del mando de videojuegos genérico."
 
 #: doc/classes/@GlobalScope.xml
-#, fuzzy
 msgid "Gamepad left trigger analog axis."
-msgstr "Gatillo izquierdo del mando de videojuegos."
+msgstr "Eje analógico del gatillo izquierdo del mando."
 
 #: doc/classes/@GlobalScope.xml
-#, fuzzy
 msgid "Gamepad right trigger analog axis."
-msgstr "Gatillo derecho del mando de videojuegos."
+msgstr "Eje analógico del gatillo derecho del mando."
 
 #: doc/classes/@GlobalScope.xml
 msgid "Generic gamepad axis 8."
@@ -4057,154 +4024,147 @@ msgstr ""
 "Touch y Windows MR)."
 
 #: doc/classes/@GlobalScope.xml
-#, fuzzy
 msgid ""
 "MIDI note OFF message. See the documentation of [InputEventMIDI] for "
 "information of how to use MIDI inputs."
 msgstr ""
-"Mensaje de APAGADO en una nota MIDI. Ver la documentación de "
-"[InputEventMIDI] para información sobre cómo utilizar inputs MIDI."
+"Mensaje de nota MIDI apagada (OFF). Consulte la documentación de "
+"[InputEventMIDI] para información sobre cómo usar entradas MIDI."
 
 #: doc/classes/@GlobalScope.xml
-#, fuzzy
 msgid ""
 "MIDI note ON message. See the documentation of [InputEventMIDI] for "
 "information of how to use MIDI inputs."
 msgstr ""
-"Mensaje de ENCENDIDO en una nota MIDI. Ver la documentación de "
-"[InputEventMIDI] para información sobre cómo utilizar inputs MIDI."
+"Mensaje de nota MIDI encendida (ON). Consulte la documentación de "
+"[InputEventMIDI] para información sobre cómo usar entradas MIDI."
 
 #: doc/classes/@GlobalScope.xml
 msgid ""
 "MIDI aftertouch message. This message is most often sent by pressing down on "
 "the key after it \"bottoms out\"."
 msgstr ""
+"Mensaje de aftertouch MIDI. Suele enviarse al mantener pulsada la tecla tras "
+"llegar al fondo del recorrido."
 
 #: doc/classes/@GlobalScope.xml
-#, fuzzy
 msgid ""
 "MIDI control change message. This message is sent when a controller value "
 "changes. Controllers include devices such as pedals and levers."
 msgstr ""
-"Mensaje de cambio de control MIDI. Este mensaje se envía cuando cambia un "
-"valor en el controlador. Los controladores son aparatos como pedales y "
-"palancas."
+"Mensaje de cambio de control MIDI. Se envía cuando cambia el valor de un "
+"controlador. Los controladores incluyen dispositivos como pedales y palancas."
 
 #: doc/classes/@GlobalScope.xml
-#, fuzzy
 msgid ""
 "MIDI program change message. This message sent when the program patch number "
 "changes."
 msgstr ""
-"Mensaje de cambio de programa MIDI. Este mensaje se envía cuando el número "
-"de versión del programa cambia."
+"Mensaje de cambio de programa MIDI. Se envía cuando cambia el número de "
+"programa o preset (patch)."
 
 #: doc/classes/@GlobalScope.xml
-#, fuzzy
 msgid ""
 "MIDI channel pressure message. This message is most often sent by pressing "
 "down on the key after it \"bottoms out\". This message is different from "
 "polyphonic after-touch as it indicates the highest pressure across all keys."
 msgstr ""
-"Mensaje de presión en canal MIDI. Este mensaje suele enviarse al presionar "
-"una tecla después de que esta alcanza su punto mínimo. Este mensaje es "
-"diferente al de after-touch polifónico, ya que indica la presión más alta de "
-"entre todas las teclas."
+"Mensaje de presión de canal MIDI. Suele enviarse al mantener pulsada la "
+"tecla tras llegar al fondo del recorrido. Se distingue del aftertouch "
+"polifónico porque indica la presión máxima entre todas las teclas."
 
 #: doc/classes/@GlobalScope.xml
-#, fuzzy
 msgid ""
 "MIDI pitch bend message. This message is sent to indicate a change in the "
 "pitch bender (wheel or lever, typically)."
 msgstr ""
-"Mensaje de alteración de tono MIDI. Este mensaje se envía para indicar un "
-"cambio en la herramienta de alteración de tono del instrumento (normalmente "
-"una rueda o palanca)."
+"Mensaje de inflexión de tono MIDI. Indica un cambio en la rueda o palanca de "
+"inflexión de tono."
 
 #: doc/classes/@GlobalScope.xml
-#, fuzzy
 msgid ""
 "MIDI system exclusive message. This has behavior exclusive to the device "
 "you're receiving input from. Getting this data is not implemented in Godot."
 msgstr ""
-"Mensaje exclusivo del sistema MIDI. Este tiene comportamiento exclusivo para "
-"el aparato desde el cual se está recibiendo input. La obtención de estos "
-"datos no está implementada en Godot."
+"Mensaje exclusivo del sistema (SysEx) MIDI. Su comportamiento depende del "
+"dispositivo del que se recibe la entrada. La obtención de estos datos no "
+"está implementada en Godot."
 
 #: doc/classes/@GlobalScope.xml
 msgid ""
 "MIDI quarter frame message. Contains timing information that is used to "
 "synchronize MIDI devices. Getting this data is not implemented in Godot."
 msgstr ""
+"Mensaje de cuarto de fotograma MIDI. Contiene información de temporización "
+"para sincronizar dispositivos MIDI. La obtención de estos datos no está "
+"implementada en Godot."
 
 #: doc/classes/@GlobalScope.xml
-#, fuzzy
 msgid ""
 "MIDI song position pointer message. Gives the number of 16th notes since the "
 "start of the song. Getting this data is not implemented in Godot."
 msgstr ""
-"Mensaje de puntero a posición en canción MIDI. Otorga el número de "
-"semicorcheas (o decimosextas) desde el inicio de la canción. La obtención de "
-"estos datos no está implementada en Godot."
+"Mensaje de puntero de posición de canción MIDI. Indica el número de "
+"semicorcheas desde el inicio de la canción. La obtención de estos datos no "
+"está implementada en Godot."
 
 #: doc/classes/@GlobalScope.xml
-#, fuzzy
 msgid ""
 "MIDI song select message. Specifies which sequence or song is to be played. "
 "Getting this data is not implemented in Godot."
 msgstr ""
-"Mensaje de selección de canción MIDI. Especifica qué secuencia o canción se "
-"reproducirá. La obtención de estos datos no está implementada en Godot."
+"Mensaje de selección de canción MIDI. Indica qué secuencia o canción debe "
+"reproducirse. La obtención de estos datos no está implementada en Godot."
 
 #: doc/classes/@GlobalScope.xml
 msgid ""
 "MIDI tune request message. Upon receiving a tune request, all analog "
 "synthesizers should tune their oscillators."
 msgstr ""
+"Mensaje de solicitud de afinación MIDI. Al recibirlo, los sintetizadores "
+"analógicos deben afinar sus osciladores."
 
 #: doc/classes/@GlobalScope.xml
-#, fuzzy
 msgid ""
 "MIDI timing clock message. Sent 24 times per quarter note when "
 "synchronization is required."
 msgstr ""
-"Mensaje de reloj sincronizador MIDI. Se envía 24 veces por nota negra (o "
-"cuarta) cuando se requiere sincronización."
+"Mensaje de reloj MIDI (timing clock). Se envía 24 veces por negra cuando se "
+"requiere sincronización."
 
 #: doc/classes/@GlobalScope.xml
-#, fuzzy
 msgid ""
 "MIDI start message. Start the current sequence playing. This message will be "
 "followed with Timing Clocks."
 msgstr ""
-"Mensaje de inicio MIDI. Inicia la secuencia actual. El envío de este mensaje "
-"es seguido de Timing Clocks."
+"Mensaje de inicio MIDI. Inicia la reproducción de la secuencia actual. Tras "
+"este mensaje seguirán los relojes de sincronización (Timing Clocks)."
 
 #: doc/classes/@GlobalScope.xml
-#, fuzzy
 msgid "MIDI continue message. Continue at the point the sequence was stopped."
 msgstr ""
-"Mensaje de continuación MIDI. Continúa desde el punto en el cual la pista "
-"fue previamente detenida."
+"Mensaje de continuación MIDI. Continúa desde el punto en que se detuvo la "
+"secuencia."
 
 #: doc/classes/@GlobalScope.xml
 msgid "MIDI stop message. Stop the current sequence."
 msgstr "Mensaje de detención MIDI. Detiene la secuencia actual."
 
 #: doc/classes/@GlobalScope.xml
-#, fuzzy
 msgid ""
 "MIDI active sensing message. This message is intended to be sent repeatedly "
 "to tell the receiver that a connection is alive."
 msgstr ""
-"Mensaje de percepción activa MIDI. La intención de este mensaje es que se "
-"envíe repetidamente para informar al recibidor que la conexión sigue en pie."
+"Mensaje de percepción activa MIDI. Está pensado para enviarse de forma "
+"repetida para indicar al receptor que la conexión sigue activa."
 
 #: doc/classes/@GlobalScope.xml
 msgid ""
 "MIDI system reset message. Reset all receivers in the system to power-up "
 "status. It should not be sent on power-up itself."
 msgstr ""
+"Mensaje de reinicio del sistema MIDI. Reinicia todos los receptores al "
+"estado de encendido. No debe enviarse durante el propio arranque."
 
 #: doc/classes/@GlobalScope.xml
 msgid ""
@@ -4456,7 +4416,6 @@ msgstr ""
 "or_lesser\"[/code]."
 
 #: doc/classes/@GlobalScope.xml
-#, fuzzy
 msgid ""
 "Hints that a float property should be within an exponential range specified "
 "via the hint string [code]\"min,max\"[/code] or [code]\"min,max,step\"[/"
@@ -4465,13 +4424,12 @@ msgid ""
 "above the max or below the min values. Example: [code]\"0.01,100,0.01,"
 "or_greater\"[/code]."
 msgstr ""
-"Sugiere que una propiedad entera o real debe estar dentro de un rango "
-"exponencial especificado mediante la string de sugerencias [code]\"min,"
-"max\"[/code] o [code]\"min,max,paso\"[/code]. La string de sugerencias puede "
-"incluir opcionalmente [code]\"or_greater\"[/code] y/o [code]\"or_lesser\"[/"
-"code] para permitir la entrada manual que va respectivamente por encima del "
-"máximo o por debajo de los valores mínimos. Ejemplo: [code]\"0.01,100,0.01,"
-"or_greater\"[/code]."
+"Indica que una propiedad de punto flotante debe estar dentro de un rango "
+"exponencial especificado mediante la cadena de sugerencia [code]«min,max»[/"
+"code] o [code]«min,max,step»[/code]. La cadena de sugerencia puede incluir "
+"opcionalmente [code]«or_greater»[/code] y/o [code]«or_lesser»[/code] para "
+"permitir la entrada manual por encima del máximo o por debajo del mínimo "
+"respectivamente. Ejemplo: [code]«0.01,100,0.01,or_greater»[/code]."
 
 #: doc/classes/@GlobalScope.xml
 msgid ""
@@ -4484,6 +4442,15 @@ msgid ""
 "appending [code]:integer[/code] to the name, e.g. [code]\"Zero,One,Three:3,"
 "Four,Six:6\"[/code]."
 msgstr ""
+"Indica que una propiedad entera, de tipo float o de cadena es un valor "
+"enumerado a elegir en una lista definida mediante una cadena de pista.\n"
+"La cadena de pista es una lista de nombres separados por comas como "
+"[code]\"Hello,Something,Else\"[/code]. Los espacios en blanco [b]no[/b] se "
+"eliminan de ninguno de los extremos de un nombre. En propiedades enteras y "
+"de tipo float, el primer nombre de la lista tiene valor 0, el siguiente 1, y "
+"así sucesivamente. También se pueden especificar valores explícitos "
+"añadiendo [code]:integer[/code] al nombre, p. ej. [code]\"Zero,One,Three:3,"
+"Four,Six:6\"[/code]."
 
 #: doc/classes/@GlobalScope.xml
 msgid ""
@@ -4493,6 +4460,12 @@ msgid ""
 "arbitrary values and can be empty. The list of values serves to suggest "
 "possible values."
 msgstr ""
+"Indica que una propiedad de cadena puede ser un valor enumerado a elegir en "
+"una lista definida mediante una cadena de pista como [code]\"Hello,Something,"
+"Else\"[/code].\n"
+"A diferencia de [constant PROPERTY_HINT_ENUM], una propiedad con esta pista "
+"sigue aceptando valores arbitrarios y puede estar vacía. La lista de valores "
+"sirve para sugerir valores posibles."
 
 #: doc/classes/@GlobalScope.xml
 msgid ""
@@ -4515,6 +4488,8 @@ msgid ""
 "Hints that a vector property should allow linking values (e.g. to edit both "
 "[code]x[/code] and [code]y[/code] together)."
 msgstr ""
+"Indica que una propiedad de tipo vector permite enlazar valores (por "
+"ejemplo, editar [code]x[/code] e [code]y[/code] a la vez)."
 
 #: doc/classes/@GlobalScope.xml
 msgid ""
@@ -4543,13 +4518,12 @@ msgstr ""
 "opcionalmente nombradas, capas de física 2D."
 
 #: doc/classes/@GlobalScope.xml
-#, fuzzy
 msgid ""
 "Hints that an integer property is a bitmask using the optionally named 2D "
 "navigation layers."
 msgstr ""
-"Sugiere que una propiedad entera es una máscara de bits usando las, "
-"opcionalmente nombradas, capas de representación 2D."
+"Indica que una propiedad entera es una máscara de bits que usa las capas de "
+"navegación 2D con nombre opcional."
 
 #: doc/classes/@GlobalScope.xml
 msgid ""
@@ -4568,13 +4542,12 @@ msgstr ""
 "opcionalmente nombrada, capas fisicas 3D."
 
 #: doc/classes/@GlobalScope.xml
-#, fuzzy
 msgid ""
 "Hints that an integer property is a bitmask using the optionally named 3D "
 "navigation layers."
 msgstr ""
-"Sugiere que una propiedad entera es una máscara de bits usando las, "
-"opcionalmente nombradas, capas de representación 2D."
+"Indica que una propiedad entera es una máscara de bits que usa las capas de "
+"navegación 3D con nombre opcional."
 
 #: doc/classes/@GlobalScope.xml
 msgid ""
@@ -4617,16 +4590,15 @@ msgstr ""
 "para elegir la ruta."
 
 #: doc/classes/@GlobalScope.xml
-#, fuzzy
 msgid ""
 "Hints that a property is an instance of a [Resource]-derived type, "
 "optionally specified via the hint string (e.g. [code]\"Texture\"[/code]). "
 "Editing it will show a popup menu of valid resource types to instantiate."
 msgstr ""
-"Sugiere que una propiedad es una instancia de un tipo derivado de "
-"[Resource], opcionalmente especificado a través de la string de sugerencias "
-"(por ejemplo, [code]\"Texture2D\"[/code]). Al editarla se mostrará un menú "
-"emergente de tipos de recursos válidos para instanciar."
+"Indica que la propiedad es una instancia de un tipo derivado de [Resource], "
+"especificado opcionalmente mediante la cadena de pista (p. ej. "
+"[code]\"Texture\"[/code]). Al editarla se mostrará un menú emergente con los "
+"tipos de recurso válidos para instanciar."
 
 #: doc/classes/@GlobalScope.xml
 msgid ""
@@ -4682,12 +4654,31 @@ msgid ""
 "[b]Note:[/b] The final colon is required to specify for properly detecting "
 "built-in types."
 msgstr ""
+"Indica que una propiedad representa un tipo concreto. Si la propiedad es "
+"[constant TYPE_STRING], permite establecer un tipo desde el cuadro de "
+"creación. Si necesita crear un [Array] que contenga elementos de un tipo "
+"específico, [code]hint_string[/code] debe codificar los tipos anidados "
+"usando [code]\":\"[/code] y [code]\"/\"[/code] para especificar tipos "
+"[Resource]. Por ejemplo:\n"
+"[codeblock]\n"
+"hint_string = \"%s:\" % [TYPE_INT] # Array of integers.\n"
+"hint_string = \"%s:%s:\" % [TYPE_ARRAY, TYPE_REAL] # Two-dimensional array "
+"of floats.\n"
+"hint_string = \"%s/%s:Resource\" % [TYPE_OBJECT, TYPE_OBJECT] # Array of "
+"resources.\n"
+"hint_string = \"%s:%s/%s:Resource\" % [TYPE_ARRAY, TYPE_OBJECT, TYPE_OBJECT] "
+"# Two-dimensional array of resources.\n"
+"[/codeblock]\n"
+"[b]Nota:[/b] El dos puntos final es necesario para detectar correctamente "
+"los tipos integrados."
 
 #: doc/classes/@GlobalScope.xml
 msgid ""
 "Hints that a string property is a locale code. Editing it will show a locale "
 "dialog for picking language and country."
 msgstr ""
+"Indica que una propiedad de cadena es un código de localización. Al editarla "
+"se mostrará un cuadro de diálogo para elegir idioma y país."
 
 #: doc/classes/@GlobalScope.xml
 msgid "The property is serialized and saved in the scene file (default)."
@@ -4716,9 +4707,9 @@ msgid "The property is a translatable string."
 msgstr "La propiedad es una string traducible."
 
 #: doc/classes/@GlobalScope.xml
-#, fuzzy
 msgid "Used to group properties together in the editor. See [EditorInspector]."
-msgstr "Se utiliza para agrupar las propiedades en el editor."
+msgstr ""
+"Se utiliza para agrupar propiedades en el editor. Ver [EditorInspector]."
 
 #: doc/classes/@GlobalScope.xml
 msgid "Used to categorize properties together in the editor."
@@ -4867,39 +4858,32 @@ msgid "Variable is of type [Array]."
 msgstr "La variable es de tipo [Array]."
 
 #: doc/classes/@GlobalScope.xml
-#, fuzzy
 msgid "Variable is of type [PoolByteArray]."
-msgstr "La variable es de tipo [PackedByteArray]."
+msgstr "La variable es de tipo [PoolByteArray]."
 
 #: doc/classes/@GlobalScope.xml
-#, fuzzy
 msgid "Variable is of type [PoolIntArray]."
-msgstr "La variable es de tipo [Array]."
+msgstr "La variable es de tipo [PoolIntArray]."
 
 #: doc/classes/@GlobalScope.xml
-#, fuzzy
 msgid "Variable is of type [PoolRealArray]."
-msgstr "La variable es de tipo [Array]."
+msgstr "La variable es de tipo [PoolRealArray]."
 
 #: doc/classes/@GlobalScope.xml
-#, fuzzy
 msgid "Variable is of type [PoolStringArray]."
-msgstr "La variable es de tipo [PackedStringArray]."
+msgstr "La variable es de tipo [PoolStringArray]."
 
 #: doc/classes/@GlobalScope.xml
-#, fuzzy
 msgid "Variable is of type [PoolVector2Array]."
-msgstr "La variable es de tipo [PackedVector2Array]."
+msgstr "La variable es de tipo [PoolVector2Array]."
 
 #: doc/classes/@GlobalScope.xml
-#, fuzzy
 msgid "Variable is of type [PoolVector3Array]."
-msgstr "La variable es de tipo [PackedVector3Array]."
+msgstr "La variable es de tipo [PoolVector3Array]."
 
 #: doc/classes/@GlobalScope.xml
-#, fuzzy
 msgid "Variable is of type [PoolColorArray]."
-msgstr "La variable es de tipo [PackedColorArray]."
+msgstr "La variable es de tipo [PoolColorArray]."
 
 #: doc/classes/@GlobalScope.xml
 msgid "Represents the size of the [enum Variant.Type] enum."
@@ -5307,11 +5291,11 @@ msgid ""
 "the [code]button[/code] will no longer emit this dialog's [signal "
 "custom_action] signal or cancel this dialog."
 msgstr ""
-"Elimina el [code]button[/code] del diálogo, NO lo libera. "
-"El [code]button[/code] debe ser un [Button] añadido con los métodos "
-"[method add_button] o [method add_cancel]. Tras su eliminación, al pulsar "
-"el [code]button[/code] ya no se emitirá la señal [signal custom_action] de "
-"este diálogo ni se cancelará el mismo."
+"Elimina el [code]button[/code] del diálogo, NO lo libera. El [code]button[/"
+"code] debe ser un [Button] añadido con los métodos [method add_button] o "
+"[method add_cancel]. Tras su eliminación, al pulsar el [code]button[/code] "
+"ya no se emitirá la señal [signal custom_action] de este diálogo ni se "
+"cancelará el mismo."
 
 #: doc/classes/AcceptDialog.xml
 msgid "Sets autowrapping for the text in the dialog."
@@ -5518,12 +5502,12 @@ msgid ""
 "animations [code]run[/code] and [code]run_normal[/code] will make it so the "
 "[code]run[/code] animation uses the normal map."
 msgstr ""
-"[AnimatedSprite] es similar al nodo [Sprite], excepto que contiene "
-"múltiples texturas como fotogramas de animación. Las animaciones se crean "
-"usando un recurso [SpriteFrames], que permite importar archivos de imagen "
-"(o una carpeta que contenga «dichos archivos») para proporcionar los "
-"fotogramas de animación al sprite. El recurso [SpriteFrames] se puede "
-"configurar en el editor mediante el panel inferior de SpriteFrames.\n"
+"[AnimatedSprite] es similar al nodo [Sprite], excepto que contiene múltiples "
+"texturas como fotogramas de animación. Las animaciones se crean usando un "
+"recurso [SpriteFrames], que permite importar archivos de imagen (o una "
+"carpeta que contenga «dichos archivos») para proporcionar los fotogramas de "
+"animación al sprite. El recurso [SpriteFrames] se puede configurar en el "
+"editor mediante el panel inferior de SpriteFrames.\n"
 "[b]Nota:[/b] Puedes asociar un conjunto de mapas de normales creando "
 "animaciones adicionales con el sufijo [code]_normal[/code]. Por ejemplo, "
 "tener 2 animaciones [code]run[/code] y [code]run_normal[/code] hará que la "
@@ -5686,15 +5670,15 @@ msgid ""
 "frame needs to be a separate [Texture]."
 msgstr ""
 "[AnimatedTexture] es un formato de recurso para animaciones basadas en "
-"fotogramas, donde se pueden encadenar múltiples texturas automáticamente "
-"con un retraso predefinido para cada fotograma. A diferencia de "
-"[AnimationPlayer] o [AnimatedSprite], no es un [Node], pero tiene la "
-"ventaja de poder usarse en cualquier lugar donde se use un recurso "
-"[Texture], por ejemplo, en un [TileSet].\n"
-"La reproducción de la animación se controla mediante la propiedad "
-"[member fps], así como por el retraso opcional de cada fotograma (ver "
-"[method set_frame_delay]). La animación es en bucle, es decir, se "
-"reiniciará en el fotograma 0 automáticamente tras reproducir el último.\n"
+"fotogramas, donde se pueden encadenar múltiples texturas automáticamente con "
+"un retraso predefinido para cada fotograma. A diferencia de "
+"[AnimationPlayer] o [AnimatedSprite], no es un [Node], pero tiene la ventaja "
+"de poder usarse en cualquier lugar donde se use un recurso [Texture], por "
+"ejemplo, en un [TileSet].\n"
+"La reproducción de la animación se controla mediante la propiedad [member "
+"fps], así como por el retraso opcional de cada fotograma (ver [method "
+"set_frame_delay]). La animación es en bucle, es decir, se reiniciará en el "
+"fotograma 0 automáticamente tras reproducir el último.\n"
 "[AnimatedTexture] requiere actualmente que todas las texturas de los "
 "fotogramas tengan el mismo tamaño; de lo contrario, las más grandes se "
 "recortarán para coincidir con la más pequeña.\n"
@@ -5748,8 +5732,9 @@ msgid ""
 "in mind that only frames from 0 to [member frames] - 1 will be part of the "
 "animation."
 msgstr ""
-"Asigna una [Texture] al fotograma dado. Los IDs empiezan en 0, por lo tanto, el primer "
-"fotograma es 0 y el último de la animación tiene ID [member frames] - 1.\n"
+"Asigna una [Texture] al fotograma dado. Los IDs empiezan en 0, por lo tanto, "
+"el primer fotograma es 0 y el último de la animación tiene ID [member "
+"frames] - 1.\n"
 "Puede definir tantas texturas como haga falta hasta [constant MAX_FRAMES], "
 "pero solo los fotogramas de 0 a [member frames] - 1 forman parte de la "
 "animación."
@@ -5843,10 +5828,10 @@ msgid ""
 "tracks have different types, each with its own set of dedicated methods. "
 "Check [enum TrackType] to see available types."
 msgstr ""
-"Un recurso Animation contiene datos utilizados para animar cualquier cosa "
-"en el motor. Las animaciones se dividen en pistas, y cada pista debe estar "
-"vinculada a un nodo. El estado de dicho nodo puede cambiarse a lo largo "
-"del tiempo añadiendo claves (eventos) temporizadas a la pista.\n"
+"Un recurso Animation contiene datos utilizados para animar cualquier cosa en "
+"el motor. Las animaciones se dividen en pistas, y cada pista debe estar "
+"vinculada a un nodo. El estado de dicho nodo puede cambiarse a lo largo del "
+"tiempo añadiendo claves (eventos) temporizadas a la pista.\n"
 "[codeblock]\n"
 "# Esto crea una animación que hace que el nodo \"Enemy\" se mueva a la\n"
 "# derecha 100 píxeles en 0.5 segundos.\n"
@@ -5856,11 +5841,10 @@ msgstr ""
 "animation.track_insert_key(track_index, 0.0, 0)\n"
 "animation.track_insert_key(track_index, 0.5, 100)\n"
 "[/codeblock]\n"
-"Las animaciones son solo contenedores de datos y deben añadirse a nodos "
-"como [AnimationPlayer] o [AnimationTreePlayer] para ser reproducidas. Las "
-"pistas de animación tienen diferentes tipos, cada uno con su propio "
-"conjunto de métodos dedicados. Consulta [enum TrackType] para ver los "
-"tipos disponibles."
+"Las animaciones son solo contenedores de datos y deben añadirse a nodos como "
+"[AnimationPlayer] o [AnimationTreePlayer] para ser reproducidas. Las pistas "
+"de animación tienen diferentes tipos, cada uno con su propio conjunto de "
+"métodos dedicados. Consulta [enum TrackType] para ver los tipos disponibles."
 
 #: doc/classes/Animation.xml
 msgid "Adds a track to the Animation."
@@ -6572,9 +6556,9 @@ msgstr ""
 "Aquí, llama a las funciones [method blend_input], [method blend_node] o "
 "[method blend_animation]. También puedes usar [method get_parameter] y "
 "[method set_parameter] para modificar la memoria local.\n"
-"Esta función debe devolver el tiempo restante para que la animación "
-"actual finalice (si no estás seguro, pasa el valor del blend principal "
-"que se esté llamando)."
+"Esta función debe devolver el tiempo restante para que la animación actual "
+"finalice (si no estás seguro, pasa el valor del blend principal que se esté "
+"llamando)."
 
 #: doc/classes/AnimationNode.xml
 msgid "Removes an input, call this only when inactive."
@@ -8044,16 +8028,16 @@ msgid ""
 "[RootMotionView]."
 msgstr ""
 "La ruta a la pista de animación utilizada para «root motion». Las rutas "
-"deben ser rutas válidas del árbol de escena a un nodo, y deben "
-"especificarse empezando desde el nodo padre del nodo que reproducirá la "
-"animación. Para especificar una pista que controla propiedades o "
-"huesos, añade su nombre tras la ruta, separado por [code]\":\"[/code]. "
-"Por ejemplo, [code]\"character/skeleton:ankle\"[/code] o "
-"[code]\"character/mesh:transform/local\"[/code].\n"
+"deben ser rutas válidas del árbol de escena a un nodo, y deben especificarse "
+"empezando desde el nodo padre del nodo que reproducirá la animación. Para "
+"especificar una pista que controla propiedades o huesos, añade su nombre "
+"tras la ruta, separado por [code]\":\"[/code]. Por ejemplo, "
+"[code]\"character/skeleton:ankle\"[/code] o [code]\"character/mesh:transform/"
+"local\"[/code].\n"
 "Si la pista es de tipo [constant Animation.TYPE_TRANSFORM], la "
-"transformación se cancelará visualmente y la animación parecerá "
-"quedarse en el sitio. Consulta también [method get_root_motion_transform] "
-"y [RootMotionView]."
+"transformación se cancelará visualmente y la animación parecerá quedarse en "
+"el sitio. Consulta también [method get_root_motion_transform] y "
+"[RootMotionView]."
 
 #: doc/classes/AnimationTree.xml
 msgid "The root animation node of this [AnimationTree]. See [AnimationNode]."
@@ -8085,6 +8069,8 @@ msgid ""
 "[i]Deprecated.[/i] Animation player that uses a node graph for blending "
 "animations. Superseded by [AnimationTree]."
 msgstr ""
+"[i]Obsoleto.[/i] Reproductor de animación que usa un grafo de nodos para "
+"mezclar animaciones. Sustituido por [AnimationTree]."
 
 #: doc/classes/AnimationTreePlayer.xml
 msgid ""
@@ -8096,54 +8082,59 @@ msgid ""
 "depending on the graph.\n"
 "See [AnimationTree] for a more full-featured replacement of this node."
 msgstr ""
+"[i]Obsoleto.[/i] Herramienta de grafo de nodos para mezclar varias "
+"animaciones vinculadas a un [AnimationPlayer]. Es especialmente útil para "
+"animar personajes u otros rigs basados en esqueleto. Puede combinar varias "
+"animaciones para formar la pose deseada.\n"
+"Toma [Animation]s de un nodo [AnimationPlayer] y las mezcla según el grafo.\n"
+"Véase [AnimationTree] como sustituto más completo de este nodo."
 
 #: doc/classes/AnimationTreePlayer.xml
-#, fuzzy
 msgid "Adds a [code]type[/code] node to the graph with name [code]id[/code]."
 msgstr ""
-"Establece un [code]title[/code] para la pestaña en el índice [code]tab_idx[/"
-"code]."
+"Añade un nodo de [code]type[/code] al grafo con el nombre [code]id[/code]."
 
 #: doc/classes/AnimationTreePlayer.xml
-#, fuzzy
 msgid ""
 "Shifts position in the animation timeline. [code]delta[/code] is the time in "
 "seconds to shift. Events between the current frame and [code]delta[/code] "
 "are handled."
 msgstr ""
-"Cambia la positicon en la linea de tiempo de las animaciones e "
-"inmediatamente actualiza la animacion. [code]delta[/code] es el tiempo en "
-"segundos a cambiar. Eventos entre el frame actual y [code]delta[/code] son "
-"manejados."
+"Desplaza la posición en la línea de tiempo de la animación. [code]delta[/"
+"code] es el tiempo en segundos a desplazar. Se procesan los eventos entre el "
+"fotograma actual y [code]delta[/code]."
 
 #: doc/classes/AnimationTreePlayer.xml
-#, fuzzy
 msgid ""
 "Returns the [AnimationPlayer]'s [Animation] bound to the "
 "[AnimationTreePlayer]'s animation node with name [code]id[/code]."
 msgstr ""
-"Devuelve [code]true[/code] si el [AnimationPlayer] almacena una [Animation] "
-"con la clave [code]name[/code]."
+"Devuelve la [Animation] del [AnimationPlayer] enlazada al nodo de animación "
+"del [AnimationTreePlayer] con nombre [code]id[/code]."
 
 #: doc/classes/AnimationTreePlayer.xml
-#, fuzzy
 msgid ""
 "Returns the name of the [member master_player]'s [Animation] bound to this "
 "animation node."
-msgstr "Devuelve el nombre de la forma de mezcla de este indice."
+msgstr ""
+"Devuelve el nombre de la [Animation] del [member master_player] enlazada a "
+"este nodo de animación."
 
 #: doc/classes/AnimationTreePlayer.xml
-#, fuzzy
 msgid ""
 "Returns the absolute playback timestamp of the animation node with name "
 "[code]id[/code]."
-msgstr "Devuelve el nombre del nodo en [code]idx[/code]."
+msgstr ""
+"Devuelve la marca de tiempo absoluta de reproducción del nodo de animación "
+"con nombre [code]id[/code]."
 
 #: doc/classes/AnimationTreePlayer.xml
 msgid ""
 "Binds a new [Animation] from the [member master_player] to the "
 "[AnimationTreePlayer]'s animation node with name [code]id[/code]."
 msgstr ""
+"Vincula una nueva [Animation] del [member master_player] al nodo de "
+"animación del [AnimationTreePlayer] con nombre [code]id[/code]."
 
 #: doc/classes/AnimationTreePlayer.xml
 msgid ""
@@ -8151,26 +8142,29 @@ msgid ""
 "[code]id[/code] turns off the track modifying the property at [code]path[/"
 "code]. The modified node's children continue to animate."
 msgstr ""
+"Si [code]enable[/code] es [code]true[/code], el nodo de animación con ID "
+"[code]id[/code] desactiva la pista que modifica la propiedad en [code]path[/"
+"code]. Los hijos del nodo modificado siguen animándose."
 
 #: doc/classes/AnimationTreePlayer.xml
 msgid ""
 "Binds the [Animation] named [code]source[/code] from [member master_player] "
 "to the animation node [code]id[/code]. Recalculates caches."
 msgstr ""
+"Vincula la [Animation] llamada [code]source[/code] de [member master_player] "
+"al nodo de animación [code]id[/code]. Recalcula las cachés."
 
 #: doc/classes/AnimationTreePlayer.xml
-#, fuzzy
 msgid ""
 "Returns whether node [code]id[/code] and [code]dst_id[/code] are connected "
 "at the specified slot."
 msgstr ""
-"Devuelve [code]true[/code] si [code]a[/code] y [code]b[/code] son "
-"aproximadamente iguales entre sí."
+"Devuelve si el nodo [code]id[/code] y [code]dst_id[/code] están conectados "
+"en la ranura indicada."
 
 #: doc/classes/AnimationTreePlayer.xml
-#, fuzzy
 msgid "Returns the blend amount of a Blend2 node given its name."
-msgstr "Devuelve la cantidad de claves en una pista determinada."
+msgstr "Devuelve la cantidad de mezcla de un nodo Blend2 dado su nombre."
 
 #: doc/classes/AnimationTreePlayer.xml
 msgid ""
@@ -8180,6 +8174,10 @@ msgid ""
 "At 0, output is input A. Towards 1, the influence of A gets lessened, the "
 "influence of B gets raised. At 1, output is input B."
 msgstr ""
+"Establece la cantidad de mezcla de un nodo Blend2 dado su nombre y valor.\n"
+"Un nodo Blend2 mezcla dos animaciones (A y B) con una cantidad entre 0 y 1.\n"
+"En 0, la salida es la entrada A. Hacia 1, la influencia de A disminuye, la "
+"de B aumenta. En 1, la salida es la entrada B."
 
 #: doc/classes/AnimationTreePlayer.xml
 msgid ""
@@ -8187,11 +8185,13 @@ msgid ""
 "[code]id[/code] turns off the track modifying the property at [code]path[/"
 "code]. The modified node's children continue to animate."
 msgstr ""
+"Si [code]enable[/code] es [code]true[/code], el nodo Blend2 con nombre "
+"[code]id[/code] desactiva la pista que modifica la propiedad en [code]path[/"
+"code]. Los hijos del nodo modificado siguen animándose."
 
 #: doc/classes/AnimationTreePlayer.xml
-#, fuzzy
 msgid "Returns the blend amount of a Blend3 node given its name."
-msgstr "Devuelve la cantidad de claves en una pista determinada."
+msgstr "Devuelve la cantidad de mezcla de un nodo Blend3 dado su nombre."
 
 #: doc/classes/AnimationTreePlayer.xml
 msgid ""
@@ -8203,11 +8203,17 @@ msgid ""
 "input A. From 0 to 1, the influence of A gets lessened, the influence of B+ "
 "gets raised and the influence of B+ is 0. At 1, output is input B+."
 msgstr ""
+"Establece la cantidad de mezcla de un nodo Blend3 dado su nombre y valor.\n"
+"Un nodo Blend3 mezcla tres animaciones (A, B-, B+) con una cantidad entre -1 "
+"y 1.\n"
+"En -1, la salida es la entrada B-. De -1 a 0, la influencia de B- disminuye, "
+"la de A aumenta y la de B+ es 0. En 0, la salida es la entrada A. De 0 a 1, "
+"la influencia de A disminuye, la de B+ aumenta y la de B- es 0. En 1, la "
+"salida es la entrada B+."
 
 #: doc/classes/AnimationTreePlayer.xml
-#, fuzzy
 msgid "Returns the blend amount of a Blend4 node given its name."
-msgstr "Devuelve la cantidad de claves en una pista determinada."
+msgstr "Devuelve la cantidad de mezcla de un nodo Blend4 dado su nombre."
 
 #: doc/classes/AnimationTreePlayer.xml
 msgid ""
@@ -8215,132 +8221,138 @@ msgid ""
 "A Blend4 Node blends two pairs of animations.\n"
 "The two pairs are blended like Blend2 and then added together."
 msgstr ""
+"Establece la cantidad de mezcla de un nodo Blend4 dado su nombre y valor.\n"
+"Un nodo Blend4 mezcla dos pares de animaciones.\n"
+"Los dos pares se mezclan como en Blend2 y luego se suman."
 
 #: doc/classes/AnimationTreePlayer.xml
-#, fuzzy
 msgid ""
 "Connects node [code]id[/code] to [code]dst_id[/code] at the specified input "
 "slot."
-msgstr "Desconecta el nodo conectado a la entrada especificada."
+msgstr ""
+"Conecta el nodo [code]id[/code] a [code]dst_id[/code] en la entrada indicada."
 
 #: doc/classes/AnimationTreePlayer.xml
-#, fuzzy
 msgid ""
 "Disconnects nodes connected to [code]id[/code] at the specified input slot."
-msgstr "Desconecta el nodo conectado a la entrada especificada."
-
-#: doc/classes/AnimationTreePlayer.xml
-#, fuzzy
-msgid "Returns a [PoolStringArray] containing the name of all nodes."
 msgstr ""
-"Devuelve un [Array] que contiene los Ids de los dispositivos de todos los "
-"joypads conectados actualmente."
+"Desconecta los nodos conectados a [code]id[/code] en la entrada indicada."
 
 #: doc/classes/AnimationTreePlayer.xml
-#, fuzzy
+msgid "Returns a [PoolStringArray] containing the name of all nodes."
+msgstr "Devuelve un [PoolStringArray] con el nombre de todos los nodos."
+
+#: doc/classes/AnimationTreePlayer.xml
 msgid "Returns the mix amount of a Mix node given its name."
-msgstr "Devuelve la cantidad de claves en una pista determinada."
+msgstr "Devuelve la cantidad de mezcla de un nodo Mix dado su nombre."
 
 #: doc/classes/AnimationTreePlayer.xml
 msgid ""
 "Sets the mix amount of a Mix node given its name and value.\n"
 "A Mix node adds input b to input a by the amount given by ratio."
 msgstr ""
+"Establece la cantidad de mezcla de un nodo Mix dado su nombre y valor.\n"
+"Un nodo Mix suma la entrada b a la entrada a en la proporción indicada por "
+"ratio."
 
 #: doc/classes/AnimationTreePlayer.xml
 msgid "Check if a node exists (by name)."
-msgstr ""
+msgstr "Comprueba si existe un nodo (por nombre)."
 
 #: doc/classes/AnimationTreePlayer.xml
 msgid ""
 "Returns the input count for a given node. Different types of nodes have "
 "different amount of inputs."
 msgstr ""
+"Devuelve el número de entradas de un nodo. Los distintos tipos de nodos "
+"tienen distinto número de entradas."
 
 #: doc/classes/AnimationTreePlayer.xml
-#, fuzzy
 msgid "Returns the input source for a given node input."
-msgstr "Devuelve la entrada ajustada a un paso determinado."
+msgstr "Devuelve el origen de la entrada para una entrada de nodo dada."
 
 #: doc/classes/AnimationTreePlayer.xml
-#, fuzzy
 msgid "Returns position of a node in the graph given its name."
-msgstr "Devuelve el nodo animacion con el nombre dado."
+msgstr "Devuelve la posición de un nodo en el grafo dado su nombre."
 
 #: doc/classes/AnimationTreePlayer.xml
-#, fuzzy
 msgid "Gets the node type, will return from [enum NodeType] enum."
-msgstr ""
-"Obtiene el tipo de nodo actual. Compara con las constantes de [enum "
-"NodeType]."
+msgstr "Obtiene el tipo de nodo; devolverá un valor del enum [enum NodeType]."
 
 #: doc/classes/AnimationTreePlayer.xml
-#, fuzzy
 msgid "Renames a node in the graph."
-msgstr "Elimina el nodo dado desde un grafico."
+msgstr "Renombra un nodo en el grafo."
 
 #: doc/classes/AnimationTreePlayer.xml
-#, fuzzy
 msgid "Sets the position of a node in the graph given its name and position."
-msgstr "Coloca el nodo dada como es punto final del grafico."
+msgstr ""
+"Establece la posición de un nodo en el grafo dado su nombre y posición."
 
 #: doc/classes/AnimationTreePlayer.xml
-#, fuzzy
 msgid "Returns the autostart delay of a OneShot node given its name."
-msgstr "Devuelve el valor de una clave determinada en una pista determinada."
+msgstr ""
+"Devuelve el retardo de inicio automático de un nodo OneShot dado su nombre."
 
 #: doc/classes/AnimationTreePlayer.xml
-#, fuzzy
 msgid "Returns the autostart random delay of a OneShot node given its name."
-msgstr "Devuelve el nodo animacion con el nombre dado."
+msgstr ""
+"Devuelve el retardo aleatorio de inicio automático de un nodo OneShot dado "
+"su nombre."
 
 #: doc/classes/AnimationTreePlayer.xml
-#, fuzzy
 msgid "Returns the fade in time of a OneShot node given its name."
-msgstr "Devuelve el nodo animacion con el nombre dado."
+msgstr ""
+"Devuelve el tiempo de fundido de entrada de un nodo OneShot dado su nombre."
 
 #: doc/classes/AnimationTreePlayer.xml
-#, fuzzy
 msgid "Returns the fade out time of a OneShot node given its name."
-msgstr "Devuelve el primer tile que coincida con el nombre dado."
+msgstr ""
+"Devuelve el tiempo de fundido de salida de un nodo OneShot dado su nombre."
 
 #: doc/classes/AnimationTreePlayer.xml
-#, fuzzy
 msgid "Returns whether a OneShot node will auto restart given its name."
-msgstr "Devuelve el nodo animacion con el nombre dado."
+msgstr "Devuelve si un nodo OneShot reiniciará automáticamente dado su nombre."
 
 #: doc/classes/AnimationTreePlayer.xml
-#, fuzzy
 msgid "Returns whether a OneShot node is active given its name."
-msgstr "Devuelve el nodo animacion con el nombre dado."
+msgstr "Devuelve si un nodo OneShot está activo dado su nombre."
 
 #: doc/classes/AnimationTreePlayer.xml
 msgid ""
 "Sets the autorestart property of a OneShot node given its name and value."
 msgstr ""
+"Establece la propiedad de reinicio automático de un nodo OneShot dado su "
+"nombre y valor."
 
 #: doc/classes/AnimationTreePlayer.xml
 msgid ""
 "Sets the autorestart delay of a OneShot node given its name and value in "
 "seconds."
 msgstr ""
+"Establece el retardo de reinicio automático de un nodo OneShot dado su "
+"nombre y valor en segundos."
 
 #: doc/classes/AnimationTreePlayer.xml
 msgid ""
 "Sets the autorestart random delay of a OneShot node given its name and value "
 "in seconds."
 msgstr ""
+"Establece el retardo aleatorio de reinicio automático de un nodo OneShot "
+"dado su nombre y valor en segundos."
 
 #: doc/classes/AnimationTreePlayer.xml
-#, fuzzy
 msgid ""
 "Sets the fade in time of a OneShot node given its name and value in seconds."
-msgstr "Establece la interpolación al [code]time[/code] dado en segundos."
+msgstr ""
+"Establece el tiempo de fundido de entrada de un nodo OneShot dado su nombre "
+"y valor en segundos."
 
 #: doc/classes/AnimationTreePlayer.xml
 msgid ""
 "Sets the fade out time of a OneShot node given its name and value in seconds."
 msgstr ""
+"Establece el tiempo de fundido de salida de un nodo OneShot dado su nombre y "
+"valor en segundos."
 
 #: doc/classes/AnimationTreePlayer.xml
 msgid ""
@@ -8348,16 +8360,17 @@ msgid ""
 "[code]id[/code] turns off the track modifying the property at [code]path[/"
 "code]. The modified node's children continue to animate."
 msgstr ""
+"Si [code]enable[/code] es [code]true[/code], el nodo OneShot con ID "
+"[code]id[/code] desactiva la pista que modifica la propiedad en [code]path[/"
+"code]. Los hijos del nodo modificado siguen animándose."
 
 #: doc/classes/AnimationTreePlayer.xml
-#, fuzzy
 msgid "Starts a OneShot node given its name."
-msgstr "Empieza a ejecutar la animacion dada."
+msgstr "Inicia un nodo OneShot dado su nombre."
 
 #: doc/classes/AnimationTreePlayer.xml
-#, fuzzy
 msgid "Stops the OneShot node with name [code]id[/code]."
-msgstr "Devuelve el nombre del nodo en [code]idx[/code]."
+msgstr "Detiene el nodo OneShot con nombre [code]id[/code]."
 
 #: doc/classes/AnimationTreePlayer.xml
 msgid ""
@@ -8365,23 +8378,24 @@ msgid ""
 "animation nodes. Needed when external sources modify the animation nodes' "
 "state."
 msgstr ""
+"Recalcula manualmente la caché de información de pistas generada a partir de "
+"los nodos de animación. Es necesario cuando fuentes externas modifican el "
+"estado de los nodos de animación."
 
 #: doc/classes/AnimationTreePlayer.xml
-#, fuzzy
 msgid "Removes the animation node with name [code]id[/code]."
-msgstr "Elimina la animación con la clave [code]name[/code]."
+msgstr "Elimina el nodo de animación con nombre [code]id[/code]."
 
 #: doc/classes/AnimationTreePlayer.xml
 msgid "Resets this [AnimationTreePlayer]."
-msgstr ""
+msgstr "Reinicia este [AnimationTreePlayer]."
 
 #: doc/classes/AnimationTreePlayer.xml
-#, fuzzy
 msgid ""
 "Returns the time scale value of the TimeScale node with name [code]id[/code]."
 msgstr ""
-"Devuelve el valor por defecto de la propiedad material con el [code]name[/"
-"code] dado."
+"Devuelve el valor de escala temporal del nodo TimeScale con nombre [code]id[/"
+"code]."
 
 #: doc/classes/AnimationTreePlayer.xml
 msgid ""
@@ -8392,6 +8406,12 @@ msgid ""
 "If applied after a blend or mix, affects all input animations to that blend "
 "or mix."
 msgstr ""
+"Establece la escala temporal del nodo TimeScale con nombre [code]id[/code] "
+"en [code]scale[/code].\n"
+"El nodo TimeScale sirve para acelerar las [Animation] si la escala es mayor "
+"que 1 o ralentizarlas si es menor que 1.\n"
+"Si se aplica tras una mezcla (blend), afecta a todas las animaciones de "
+"entrada de esa mezcla."
 
 #: doc/classes/AnimationTreePlayer.xml
 msgid ""
@@ -8400,35 +8420,42 @@ msgid ""
 "This functions as a seek in the [Animation] or the blend or mix of "
 "[Animation]s input in it."
 msgstr ""
+"Establece el valor de posicionamiento temporal del nodo TimeSeek con nombre "
+"[code]id[/code] en [code]seconds[/code].\n"
+"Actúa como un posicionamiento en la [Animation] o en la mezcla de "
+"[Animation]s que entran en él."
 
 #: doc/classes/AnimationTreePlayer.xml
-#, fuzzy
 msgid ""
 "Deletes the input at [code]input_idx[/code] for the transition node with "
 "name [code]id[/code]."
 msgstr ""
-"Devuelve el nombre de la propiedad en [code]prop_idx[/code] para el nodo en "
-"[code]idx[/code]."
+"Elimina la entrada en [code]input_idx[/code] del nodo de transición con "
+"nombre [code]id[/code]."
 
 #: doc/classes/AnimationTreePlayer.xml
-#, fuzzy
 msgid ""
 "Returns the index of the currently evaluated input for the transition node "
 "with name [code]id[/code]."
-msgstr "Devuelve el índice del artículo con el [code]id[/code] dado."
+msgstr ""
+"Devuelve el índice de la entrada evaluada actualmente del nodo de transición "
+"con nombre [code]id[/code]."
 
 #: doc/classes/AnimationTreePlayer.xml
 msgid ""
 "Returns the number of inputs for the transition node with name [code]id[/"
 "code]. You can add inputs by right-clicking on the transition node."
 msgstr ""
+"Devuelve el número de entradas del nodo de transición con nombre [code]id[/"
+"code]. Puede añadir entradas con pulsación derecha en el nodo de transición."
 
 #: doc/classes/AnimationTreePlayer.xml
-#, fuzzy
 msgid ""
 "Returns the cross fade time for the transition node with name [code]id[/"
 "code]."
-msgstr "Devuelve el nombre del nodo en [code]idx[/code]."
+msgstr ""
+"Devuelve el tiempo de fundido cruzado del nodo de transición con nombre "
+"[code]id[/code]."
 
 #: doc/classes/AnimationTreePlayer.xml
 msgid ""
@@ -8436,43 +8463,47 @@ msgid ""
 "transition node with name [code]id[/code] is set to automatically advance to "
 "the next input upon completion."
 msgstr ""
+"Devuelve [code]true[/code] si la entrada en [code]input_idx[/code] del nodo "
+"de transición con nombre [code]id[/code] está configurada para avanzar "
+"automáticamente a la siguiente entrada al completarse."
 
 #: doc/classes/AnimationTreePlayer.xml
-#, fuzzy
 msgid ""
 "The transition node with name [code]id[/code] sets its current input at "
 "[code]input_idx[/code]."
 msgstr ""
-"Cambia la posición del índice de la pista [code]idx[/code] a la definida en "
-"[code]to_idx[/code]."
+"El nodo de transición con nombre [code]id[/code] establece su entrada actual "
+"en [code]input_idx[/code]."
 
 #: doc/classes/AnimationTreePlayer.xml
 msgid ""
 "The transition node with name [code]id[/code] advances to its next input "
 "automatically when the input at [code]input_idx[/code] completes."
 msgstr ""
+"El nodo de transición con nombre [code]id[/code] avanza a su siguiente "
+"entrada automáticamente cuando la entrada en [code]input_idx[/code] termina."
 
 #: doc/classes/AnimationTreePlayer.xml
-#, fuzzy
 msgid ""
 "Resizes the number of inputs available for the transition node with name "
 "[code]id[/code]."
-msgstr "Devuelve el peso del punto asociado con el [code]id[/code] dado."
+msgstr ""
+"Redimensiona el número de entradas disponibles para el nodo de transición "
+"con nombre [code]id[/code]."
 
 #: doc/classes/AnimationTreePlayer.xml
-#, fuzzy
 msgid ""
 "The transition node with name [code]id[/code] sets its cross fade time to "
 "[code]time_sec[/code]."
 msgstr ""
-"Cambia la posición del índice de la pista [code]idx[/code] a la definida en "
-"[code]to_idx[/code]."
+"El nodo de transición con nombre [code]id[/code] establece su tiempo de "
+"fundido cruzado en [code]time_sec[/code]."
 
 #: doc/classes/AnimationTreePlayer.xml
-#, fuzzy
 msgid ""
 "If [code]true[/code], the [AnimationTreePlayer] is able to play animations."
-msgstr "Si [code]true[/code], el [AnimationTree] se procesará."
+msgstr ""
+"Si [code]true[/code], el [AnimationTreePlayer] puede reproducir animaciones."
 
 #: doc/classes/AnimationTreePlayer.xml
 msgid ""
@@ -8480,6 +8511,9 @@ msgid ""
 "It accesses the bones, so it should point to the same node the "
 "[AnimationPlayer] would point its Root Node at."
 msgstr ""
+"Nodo desde el que se accede de forma relativa a otros nodos.\n"
+"Accede a los huesos, por lo que debe apuntar al mismo nodo al que el "
+"[AnimationPlayer] dirigiría su nodo raíz."
 
 #: doc/classes/AnimationTreePlayer.xml
 msgid ""
@@ -8487,66 +8521,58 @@ msgid ""
 "binds animations to animation nodes.\n"
 "Once set, [Animation] nodes can be added to the [AnimationTreePlayer]."
 msgstr ""
+"Ruta al [AnimationPlayer] desde el que este [AnimationTreePlayer] vincula "
+"animaciones a los nodos de animación.\n"
+"Una vez establecida, se pueden añadir nodos de [Animation] al "
+"[AnimationTreePlayer]."
 
 #: doc/classes/AnimationTreePlayer.xml
-#, fuzzy
 msgid "The thread in which to update animations."
-msgstr "La notificación de proceso en la que se actualizan las animaciones."
+msgstr "El hilo en el que se actualizan las animaciones."
 
 #: doc/classes/AnimationTreePlayer.xml
-#, fuzzy
 msgid "Output node."
-msgstr "Nodo de texto."
+msgstr "Nodo de salida."
 
 #: doc/classes/AnimationTreePlayer.xml
-#, fuzzy
 msgid "Animation node."
-msgstr "Nodo desconocido."
+msgstr "Nodo de animación."
 
 #: doc/classes/AnimationTreePlayer.xml
-#, fuzzy
 msgid "OneShot node."
-msgstr "Nodo de texto."
+msgstr "Nodo OneShot."
 
 #: doc/classes/AnimationTreePlayer.xml
-#, fuzzy
 msgid "Mix node."
-msgstr "Nodo de texto."
+msgstr "Nodo Mix."
 
 #: doc/classes/AnimationTreePlayer.xml
-#, fuzzy
 msgid "Blend2 node."
-msgstr "Nodo de comentarios."
+msgstr "Nodo Blend2."
 
 #: doc/classes/AnimationTreePlayer.xml
-#, fuzzy
 msgid "Blend3 node."
-msgstr "Nodo de comentarios."
+msgstr "Nodo Blend3."
 
 #: doc/classes/AnimationTreePlayer.xml
-#, fuzzy
 msgid "Blend4 node."
-msgstr "Nodo de comentarios."
+msgstr "Nodo Blend4."
 
 #: doc/classes/AnimationTreePlayer.xml
-#, fuzzy
 msgid "TimeScale node."
-msgstr "Nodo de texto."
+msgstr "Nodo TimeScale."
 
 #: doc/classes/AnimationTreePlayer.xml
-#, fuzzy
 msgid "TimeSeek node."
-msgstr "Nodo de texto."
+msgstr "Nodo TimeSeek."
 
 #: doc/classes/AnimationTreePlayer.xml
-#, fuzzy
 msgid "Transition node."
-msgstr "El tipo de transicion."
+msgstr "Nodo de transición."
 
 #: doc/classes/Area.xml
-#, fuzzy
 msgid "3D area for detection and physics and audio influence."
-msgstr "Área 2D para la detección y la influencia de la física 2D."
+msgstr "Área 3D para detección, física e influencia de audio."
 
 #: doc/classes/Area.xml
 msgid ""
@@ -8563,6 +8589,16 @@ msgid ""
 "function as expected. Please make sure to keep its scale uniform (i.e. the "
 "same on all axes), and change the size(s) of its collision shape(s) instead."
 msgstr ""
+"Área 3D que detecta nodos [CollisionObject] solapados, que entran o salen. "
+"También puede modificar o sustituir parámetros físicos locales (gravedad, "
+"amortiguación) y enviar el audio a un bus personalizado.\n"
+"Para dar forma al área, añada un nodo [CollisionShape] o [CollisionPolygon] "
+"como hijo [i]directo[/i] (o varios hijos directos de ese tipo).\n"
+"[b]Advertencia:[/b] véase [ConcavePolygonShape] (también «trimesh») por "
+"posibles comportamientos inesperados al usar esa forma en un área.\n"
+"[b]Advertencia:[/b] con escala no uniforme este nodo probablemente no se "
+"comportará como se espera. Mantenga la escala uniforme (igual en todos los "
+"ejes) y ajuste el tamaño de la(s) forma(s) de colisión."
 
 #: doc/classes/Area.xml doc/classes/QuadMesh.xml doc/classes/Viewport.xml
 #: doc/classes/ViewportTexture.xml
@@ -8570,7 +8606,6 @@ msgid "GUI in 3D Demo"
 msgstr "GUI en la demostración 3D"
 
 #: doc/classes/Area.xml
-#, fuzzy
 msgid ""
 "Returns a list of intersecting [Area]s. The overlapping area's [member "
 "CollisionObject.collision_layer] must be part of this area's [member "
@@ -8579,14 +8614,14 @@ msgid ""
 "list is modified once during the physics step, not immediately after objects "
 "are moved. Consider using signals instead."
 msgstr ""
-"Devuelve una lista de [PhysicsBody2D] que se intersectan. Por razones de "
-"rendimiento (las colisiones se procesan todas al mismo tiempo) esta lista se "
-"modifica una vez durante el paso de la física, no inmediatamente después de "
-"que los objetos se muevan. Considere la posibilidad de utilizar señales en "
-"su lugar."
+"Devuelve una lista de [Area] que intersectan. La [member CollisionObject."
+"collision_layer] del área solapada debe formar parte de la [member "
+"CollisionObject.collision_mask] de este área para detectarse.\n"
+"Por rendimiento (las colisiones se procesan a la vez) esta lista se "
+"actualiza una vez por paso de física, no justo al mover objetos. Considere "
+"usar señales."
 
 #: doc/classes/Area.xml
-#, fuzzy
 msgid ""
 "Returns a list of intersecting [PhysicsBody]s. The overlapping body's "
 "[member CollisionObject.collision_layer] must be part of this area's [member "
@@ -8595,28 +8630,26 @@ msgid ""
 "list is modified once during the physics step, not immediately after objects "
 "are moved. Consider using signals instead."
 msgstr ""
-"Devuelve una lista de [PhysicsBody2D] que se intersectan. Por razones de "
-"rendimiento (las colisiones se procesan todas al mismo tiempo) esta lista se "
-"modifica una vez durante el paso de la física, no inmediatamente después de "
-"que los objetos se muevan. Considere la posibilidad de utilizar señales en "
-"su lugar."
+"Devuelve una lista de [PhysicsBody] que intersectan. La [member "
+"CollisionObject.collision_layer] del cuerpo solapado debe formar parte de la "
+"[member CollisionObject.collision_mask] de este área para detectarse.\n"
+"Por rendimiento (las colisiones se procesan a la vez) esta lista se "
+"actualiza una vez por paso de física, no justo al mover objetos. Considere "
+"usar señales."
 
 #: doc/classes/Area.xml
-#, fuzzy
 msgid ""
 "If [code]true[/code], the given area overlaps the Area.\n"
 "[b]Note:[/b] The result of this test is not immediate after moving objects. "
 "For performance, list of overlaps is updated once per frame and before the "
 "physics step. Consider using signals instead."
 msgstr ""
-"Si [code]true[/code], el área dada se superpone al Area2D.\n"
-"[b]Nota:[/b] El resultado de esta prueba no es inmediato después de mover "
-"los objetos. Para el rendimiento, la lista de superposiciones se actualiza "
-"una vez por cuadro y antes del paso de física. Considere la posibilidad de "
-"utilizar señales en su lugar."
+"Si es [code]true[/code], el área dado se solapa con el Area.\n"
+"[b]Nota:[/b] el resultado no es inmediato tras mover objetos. Por "
+"rendimiento, la lista de solapamientos se actualiza una vez por fotograma y "
+"antes del paso de física. Considere usar señales."
 
 #: doc/classes/Area.xml
-#, fuzzy
 msgid ""
 "If [code]true[/code], the given physics body overlaps the Area.\n"
 "[b]Note:[/b] The result of this test is not immediate after moving objects. "
@@ -8626,27 +8659,25 @@ msgid ""
 "instance (while GridMaps are not physics body themselves, they register "
 "their tiles with collision shapes as a virtual physics body)."
 msgstr ""
-"Si [code]true[/code], el cuerpo físico dado se superpone al Area.\n"
-"[b]Nota:[/b] El resultado de esta prueba no es inmediato después de mover "
-"los objetos. Para el rendimiento, la lista de superposiciones se actualiza "
-"una vez por fotograma y antes del paso de la física. Considere la "
-"posibilidad de usar señales en su lugar.\n"
-"El argumento [code]body[/code] puede ser una instancia de [PhysicsBody] o de "
-"[GridMap] (aunque los GridMaps no son un cuerpo de física en sí mismos, "
-"registran sus piezas con formas de colisión como un cuerpo de física "
-"virtual)."
+"Si es [code]true[/code], el cuerpo físico dado se solapa con el Area.\n"
+"[b]Nota:[/b] el resultado no es inmediato tras mover objetos. Por "
+"rendimiento, la lista de solapamientos se actualiza una vez por fotograma y "
+"antes del paso de física. Considere usar señales.\n"
+"El argumento [code]body[/code] puede ser un [PhysicsBody] o una instancia de "
+"[GridMap] (los GridMap no son cuerpos físicos, pero registran sus tiles con "
+"formas de colisión como un cuerpo virtual)."
 
 #: doc/classes/Area.xml
-#, fuzzy
 msgid ""
 "The rate at which objects stop spinning in this area. Represents the angular "
 "velocity lost per second.\n"
 "See [member ProjectSettings.physics/3d/default_angular_damp] for more "
 "details about damping."
 msgstr ""
-"La velocidad a la que los objetos dejan de girar en esta área. Representa la "
-"velocidad angular perdida por segundo. Los valores van desde [code]0[/code] "
-"(sin amortiguación) hasta [code]1[/code] (amortiguación completa)."
+"Velocidad a la que los objetos dejan de girar en este área. Es la velocidad "
+"angular perdida por segundo.\n"
+"Véase [member ProjectSettings.physics/3d/default_angular_damp] para más "
+"detalles sobre amortiguación."
 
 #: doc/classes/Area.xml doc/classes/Area2D.xml
 msgid "The name of the area's audio bus."
@@ -8660,15 +8691,14 @@ msgstr ""
 "por defecto."
 
 #: doc/classes/Area.xml
-#, fuzzy
 msgid ""
 "The area's gravity intensity (in meters per second squared). This value "
 "multiplies the gravity vector. This is useful to alter the force of gravity "
 "without altering its direction."
 msgstr ""
-"La intensidad de la gravedad del área (va de -1024 a 1024). Este valor "
-"multiplica el vector de gravedad. Esto es útil para alterar la fuerza de "
-"gravedad sin alterar su dirección."
+"Intensidad de gravedad del área (metros por segundo al cuadrado). Este valor "
+"multiplica el vector de gravedad. Sirve para cambiar la fuerza sin cambiar "
+"la dirección."
 
 #: doc/classes/Area.xml doc/classes/Area2D.xml
 msgid ""
@@ -8696,16 +8726,16 @@ msgstr ""
 "(véase [member gravity_point]), éste será el punto de atracción."
 
 #: doc/classes/Area.xml
-#, fuzzy
 msgid ""
 "The rate at which objects stop moving in this area. Represents the linear "
 "velocity lost per second.\n"
 "See [member ProjectSettings.physics/3d/default_linear_damp] for more details "
 "about damping."
 msgstr ""
-"La tasa a la que los objetos dejan de moverse en esta área. Representa la "
-"velocidad lineal perdida por segundo. Los valores van desde [code]0[/code] "
-"(sin amortiguación) hasta [code]1[/code] (amortiguación completa)."
+"Velocidad a la que los objetos dejan de moverse en este área. Es la "
+"velocidad lineal perdida por segundo.\n"
+"Véase [member ProjectSettings.physics/3d/default_linear_damp] para más "
+"detalles sobre amortiguación."
 
 #: doc/classes/Area.xml doc/classes/Area2D.xml
 msgid "If [code]true[/code], other monitoring areas can detect this area."
@@ -8761,26 +8791,24 @@ msgstr ""
 "de esta área. Ver [enum SpaceOverride] para los posibles valores."
 
 #: doc/classes/Area.xml
-#, fuzzy
 msgid ""
 "Emitted when another Area enters this Area. Requires [member monitoring] to "
 "be set to [code]true[/code].\n"
 "[code]area[/code] the other Area."
 msgstr ""
-"Emitido cuando el puntero del ratón sale de todas las formas de este objeto. "
-"Requiere que [member input_pickable] sea [code]true[/code] y que al menos un "
-"bit [code]collision_layer[/code] esté activado."
+"Se emite cuando otro Area entra en este Area. Requiere [member monitoring] "
+"en [code]true[/code].\n"
+"[code]area[/code]: el otro Area."
 
 #: doc/classes/Area.xml
-#, fuzzy
 msgid ""
 "Emitted when another Area exits this Area. Requires [member monitoring] to "
 "be set to [code]true[/code].\n"
 "[code]area[/code] the other Area."
 msgstr ""
-"Emitido cuando el puntero del ratón sale de todas las formas de este objeto. "
-"Requiere que [member input_pickable] sea [code]true[/code] y que al menos un "
-"bit [code]collision_layer[/code] esté activado."
+"Se emite cuando otro Area sale de este Area. Requiere [member monitoring] en "
+"[code]true[/code].\n"
+"[code]area[/code]: el otro Area."
 
 #: doc/classes/Area.xml
 msgid ""
@@ -8801,6 +8829,22 @@ msgid ""
 "var local_shape_node = shape_owner_get_owner(local_shape_owner)\n"
 "[/codeblock]"
 msgstr ""
+"Se emite cuando una [Shape] de otro Area entra en una [Shape] de este Area. "
+"Requiere [member monitoring] en [code]true[/code].\n"
+"[code]area_rid[/code]: [RID] del [CollisionObject] del otro Area usado por "
+"[PhysicsServer].\n"
+"[code]area[/code]: el otro Area.\n"
+"[code]area_shape_index[/code]: índice de la [Shape] del otro Area.\n"
+"[code]local_shape_index[/code]: índice de la [Shape] de este Area.\n"
+"[b]Ejemplo para obtener el nodo[/b] [CollisionShape] [b]a partir del índice "
+"de forma:[/b]\n"
+"[codeblock]\n"
+"var other_shape_owner = area.shape_find_owner(area_shape_index)\n"
+"var other_shape_node = area.shape_owner_get_owner(other_shape_owner)\n"
+"\n"
+"var local_shape_owner = shape_find_owner(local_shape_index)\n"
+"var local_shape_node = shape_owner_get_owner(local_shape_owner)\n"
+"[/codeblock]"
 
 #: doc/classes/Area.xml
 msgid ""
@@ -8813,6 +8857,14 @@ msgid ""
 "[code]local_shape_index[/code] the index of the [Shape] from this Area.\n"
 "See also [signal area_shape_entered]."
 msgstr ""
+"Se emite cuando una [Shape] de otro Area sale de una [Shape] de este Area. "
+"Requiere [member monitoring] en [code]true[/code].\n"
+"[code]area_rid[/code]: [RID] del [CollisionObject] del otro Area usado por "
+"[PhysicsServer].\n"
+"[code]area[/code]: el otro Area.\n"
+"[code]area_shape_index[/code]: índice de la [Shape] del otro Area.\n"
+"[code]local_shape_index[/code]: índice de la [Shape] de este Area.\n"
+"Véase también [signal area_shape_entered]."
 
 #: doc/classes/Area.xml
 msgid ""
@@ -8822,6 +8874,11 @@ msgid ""
 "[code]body[/code] the [Node], if it exists in the tree, of the other "
 "[PhysicsBody] or [GridMap]."
 msgstr ""
+"Se emite cuando un [PhysicsBody] o [GridMap] entra en este Area. Requiere "
+"[member monitoring] en [code]true[/code]. Se detectan [GridMap] si el "
+"[MeshLibrary] tiene [Shape] de colisión.\n"
+"[code]body[/code]: el [Node], si existe en el árbol, del otro [PhysicsBody] "
+"o [GridMap]."
 
 #: doc/classes/Area.xml
 msgid ""
@@ -8831,6 +8888,11 @@ msgid ""
 "[code]body[/code] the [Node], if it exists in the tree, of the other "
 "[PhysicsBody] or [GridMap]."
 msgstr ""
+"Se emite cuando un [PhysicsBody] o [GridMap] sale de este Area. Requiere "
+"[member monitoring] en [code]true[/code]. Se detectan [GridMap] si el "
+"[MeshLibrary] tiene [Shape] de colisión.\n"
+"[code]body[/code]: el [Node], si existe en el árbol, del otro [PhysicsBody] "
+"o [GridMap]."
 
 #: doc/classes/Area.xml
 msgid ""
@@ -8854,6 +8916,25 @@ msgid ""
 "var local_shape_node = shape_owner_get_owner(local_shape_owner)\n"
 "[/codeblock]"
 msgstr ""
+"Se emite cuando una [Shape] de un [PhysicsBody] o [GridMap] entra en una "
+"[Shape] de este Area. Requiere [member monitoring] en [code]true[/code]. Se "
+"detectan [GridMap] si el [MeshLibrary] tiene [Shape] de colisión.\n"
+"[code]body_rid[/code]: [RID] del [CollisionObject] del [PhysicsBody] o del "
+"[MeshLibrary] usado por [PhysicsServer].\n"
+"[code]body[/code]: el [Node], si existe en el árbol, del [PhysicsBody] o "
+"[GridMap].\n"
+"[code]body_shape_index[/code]: índice de la [Shape] del [PhysicsBody] o "
+"[GridMap].\n"
+"[code]local_shape_index[/code]: índice de la [Shape] de este Area.\n"
+"[b]Ejemplo para obtener el nodo[/b] [CollisionShape] [b]a partir del índice "
+"de forma:[/b]\n"
+"[codeblock]\n"
+"var body_shape_owner = body.shape_find_owner(body_shape_index)\n"
+"var body_shape_node = body.shape_owner_get_owner(body_shape_owner)\n"
+"\n"
+"var local_shape_owner = shape_find_owner(local_shape_index)\n"
+"var local_shape_node = shape_owner_get_owner(local_shape_owner)\n"
+"[/codeblock]"
 
 #: doc/classes/Area.xml
 msgid ""
@@ -8869,6 +8950,17 @@ msgid ""
 "[code]local_shape_index[/code] the index of the [Shape] from this Area.\n"
 "See also [signal body_shape_entered]."
 msgstr ""
+"Se emite cuando una [Shape] de un [PhysicsBody] o [GridMap] sale de una "
+"[Shape] de este Area. Requiere [member monitoring] en [code]true[/code]. Se "
+"detectan [GridMap] si el [MeshLibrary] tiene [Shape] de colisión.\n"
+"[code]body_rid[/code]: [RID] del [CollisionObject] del [PhysicsBody] o del "
+"[MeshLibrary] usado por [PhysicsServer].\n"
+"[code]body[/code]: el [Node], si existe en el árbol, del [PhysicsBody] o "
+"[GridMap].\n"
+"[code]body_shape_index[/code]: índice de la [Shape] del [PhysicsBody] o "
+"[GridMap].\n"
+"[code]local_shape_index[/code]: índice de la [Shape] de este Area.\n"
+"Véase también [signal body_shape_entered]."
 
 #: doc/classes/Area.xml doc/classes/Area2D.xml
 msgid "This area does not affect gravity/damping."
@@ -8908,9 +9000,8 @@ msgstr ""
 "(en orden de [member priority]), pero sigue calculando el resto de las áreas."
 
 #: doc/classes/Area2D.xml
-#, fuzzy
 msgid "2D area for detection and physics and audio influence."
-msgstr "Área 2D para la detección y la influencia de la física 2D."
+msgstr "Área 2D para detección, física e influencia de audio."
 
 #: doc/classes/Area2D.xml
 msgid ""
@@ -8923,10 +9014,17 @@ msgid ""
 "[b]Warning:[/b] See [ConcavePolygonShape2D] for a warning about possibly "
 "unexpected behavior when using that shape for an area."
 msgstr ""
+"Área 2D que detecta nodos [CollisionObject2D] solapados, que entran o salen. "
+"También puede modificar o sustituir parámetros físicos locales (gravedad, "
+"amortiguación) y enviar el audio a un bus personalizado.\n"
+"Para dar forma al área, añada un [CollisionShape2D] o [CollisionPolygon2D] "
+"como hijo [i]directo[/i] (o varios hijos directos de ese tipo).\n"
+"[b]Advertencia:[/b] véase [ConcavePolygonShape2D] por posibles "
+"comportamientos inesperados al usar esa forma en un área."
 
 #: doc/classes/Area2D.xml
 msgid "Using Area2D"
-msgstr ""
+msgstr "Uso de Area2D"
 
 #: doc/classes/Area2D.xml doc/classes/CollisionShape2D.xml
 #: doc/classes/RectangleShape2D.xml
@@ -8937,10 +9035,9 @@ msgstr "Demostración de Pong en 2D"
 #: doc/classes/KinematicBody2D.xml doc/classes/TileMap.xml
 #: doc/classes/TileSet.xml
 msgid "2D Platformer Demo"
-msgstr ""
+msgstr "Demostración de plataformas 2D"
 
 #: doc/classes/Area2D.xml
-#, fuzzy
 msgid ""
 "Returns a list of intersecting [Area2D]s. The overlapping area's [member "
 "CollisionObject2D.collision_layer] must be part of this area's [member "
@@ -8949,14 +9046,14 @@ msgid ""
 "list is modified once during the physics step, not immediately after objects "
 "are moved. Consider using signals instead."
 msgstr ""
-"Devuelve una lista de los [Area2D] que se intersectan. Por razones de "
-"rendimiento (las colisiones se procesan todas al mismo tiempo) esta lista se "
-"modifica una vez durante el paso de la física, no inmediatamente después de "
-"que los objetos se muevan. Considere la posibilidad de usar señales en su "
-"lugar."
+"Devuelve una lista de [Area2D] que intersectan. La [member CollisionObject2D."
+"collision_layer] del área solapada debe formar parte de la [member "
+"CollisionObject2D.collision_mask] de este área para detectarse.\n"
+"Por rendimiento (las colisiones se procesan a la vez) esta lista se "
+"actualiza una vez por paso de física, no justo al mover objetos. Considere "
+"usar señales."
 
 #: doc/classes/Area2D.xml
-#, fuzzy
 msgid ""
 "Returns a list of intersecting [PhysicsBody2D]s. The overlapping body's "
 "[member CollisionObject2D.collision_layer] must be part of this area's "
@@ -8965,28 +9062,26 @@ msgid ""
 "list is modified once during the physics step, not immediately after objects "
 "are moved. Consider using signals instead."
 msgstr ""
-"Devuelve una lista de [PhysicsBody2D] que se intersectan. Por razones de "
-"rendimiento (las colisiones se procesan todas al mismo tiempo) esta lista se "
-"modifica una vez durante el paso de la física, no inmediatamente después de "
-"que los objetos se muevan. Considere la posibilidad de utilizar señales en "
-"su lugar."
+"Devuelve una lista de [PhysicsBody2D] que intersectan. La [member "
+"CollisionObject2D.collision_layer] del cuerpo solapado debe formar parte de "
+"la [member CollisionObject2D.collision_mask] de este área para detectarse.\n"
+"Por rendimiento (las colisiones se procesan a la vez) esta lista se "
+"actualiza una vez por paso de física, no justo al mover objetos. Considere "
+"usar señales."
 
 #: doc/classes/Area2D.xml
-#, fuzzy
 msgid ""
 "If [code]true[/code], the given area overlaps the Area2D.\n"
 "[b]Note:[/b] The result of this test is not immediate after moving objects. "
 "For performance, the list of overlaps is updated once per frame and before "
 "the physics step. Consider using signals instead."
 msgstr ""
-"Si [code]true[/code], el área dada se superpone al Area2D.\n"
-"[b]Nota:[/b] El resultado de esta prueba no es inmediato después de mover "
-"los objetos. Para el rendimiento, la lista de superposiciones se actualiza "
-"una vez por cuadro y antes del paso de física. Considere la posibilidad de "
-"utilizar señales en su lugar."
+"Si es [code]true[/code], el área dado se solapa con el Area2D.\n"
+"[b]Nota:[/b] el resultado no es inmediato tras mover objetos. Por "
+"rendimiento, la lista de solapamientos se actualiza una vez por fotograma y "
+"antes del paso de física. Considere usar señales."
 
 #: doc/classes/Area2D.xml
-#, fuzzy
 msgid ""
 "If [code]true[/code], the given physics body overlaps the Area2D.\n"
 "[b]Note:[/b] The result of this test is not immediate after moving objects. "
@@ -8996,71 +9091,67 @@ msgid ""
 "[TileMap] instance (while TileMaps are not physics bodies themselves, they "
 "register their tiles with collision shapes as a virtual physics body)."
 msgstr ""
-"Si [code]true[/code], el cuerpo físico dado se superpone al Area2D.\n"
-"[b]Nota:[/b] El resultado de esta prueba no es inmediato después de mover "
-"los objetos. Para el rendimiento, la lista de superposiciones se actualiza "
-"una vez por fotograma y antes del paso de la física. Considere la "
-"posibilidad de utilizar señales en su lugar.\n"
-"El argumento [code]body[/code] puede ser una instancia de [PhysicsBody2D] o "
-"de [TileMap] (aunque los TileMaps no son un cuerpo físico en sí mismos, "
-"registran sus piezas con formas de colisión como un cuerpo físico virtual)."
+"Si es [code]true[/code], el cuerpo físico dado se solapa con el Area2D.\n"
+"[b]Nota:[/b] el resultado no es inmediato tras mover objetos. Por "
+"rendimiento, la lista de solapamientos se actualiza una vez por fotograma y "
+"antes del paso de física. Considere usar señales.\n"
+"El argumento [code]body[/code] puede ser un [PhysicsBody2D] o una instancia "
+"de [TileMap] (los TileMap no son cuerpos físicos, pero registran sus tiles "
+"con formas de colisión como un cuerpo virtual)."
 
 #: doc/classes/Area2D.xml
-#, fuzzy
 msgid ""
 "The rate at which objects stop spinning in this area. Represents the angular "
 "velocity lost per second.\n"
 "See [member ProjectSettings.physics/2d/default_angular_damp] for more "
 "details about damping."
 msgstr ""
-"La velocidad a la que los objetos dejan de girar en esta área. Representa la "
-"velocidad angular perdida por segundo. Los valores van desde [code]0[/code] "
-"(sin amortiguación) hasta [code]1[/code] (amortiguación completa)."
+"Velocidad a la que los objetos dejan de girar en este área. Es la velocidad "
+"angular perdida por segundo.\n"
+"Véase [member ProjectSettings.physics/2d/default_angular_damp] para más "
+"detalles sobre amortiguación."
 
 #: doc/classes/Area2D.xml
-#, fuzzy
 msgid ""
 "The area's gravity intensity (in pixels per second squared). This value "
 "multiplies the gravity vector. This is useful to alter the force of gravity "
 "without altering its direction."
 msgstr ""
-"La intensidad de la gravedad del área (va de -1024 a 1024). Este valor "
-"multiplica el vector de gravedad. Esto es útil para alterar la fuerza de "
-"gravedad sin alterar su dirección."
+"Intensidad de gravedad del área (píxeles por segundo al cuadrado). Este "
+"valor multiplica el vector de gravedad. Sirve para cambiar la fuerza sin "
+"cambiar la dirección."
 
 #: doc/classes/Area2D.xml
-#, fuzzy
 msgid ""
 "The rate at which objects stop moving in this area. Represents the linear "
 "velocity lost per second.\n"
 "See [member ProjectSettings.physics/2d/default_linear_damp] for more details "
 "about damping."
 msgstr ""
-"La tasa a la que los objetos dejan de moverse en esta área. Representa la "
-"velocidad lineal perdida por segundo. Los valores van desde [code]0[/code] "
-"(sin amortiguación) hasta [code]1[/code] (amortiguación completa)."
+"Velocidad a la que los objetos dejan de moverse en este área. Es la "
+"velocidad lineal perdida por segundo.\n"
+"Véase [member ProjectSettings.physics/2d/default_linear_damp] para más "
+"detalles sobre amortiguación."
 
 #: doc/classes/Area2D.xml
-#, fuzzy
 msgid ""
 "Emitted when another Area2D enters this Area2D. Requires [member monitoring] "
 "to be set to [code]true[/code].\n"
 "[code]area[/code] the other Area2D."
 msgstr ""
-"Emitido cuando el puntero del ratón sale de todas las formas de este objeto. "
-"Requiere que [member input_pickable] sea [code]true[/code] y que al menos un "
-"bit [code]collision_layer[/code] esté activado."
+"Se emite cuando otro Area2D entra en este Area2D. Requiere [member "
+"monitoring] en [code]true[/code].\n"
+"[code]area[/code]: el otro Area2D."
 
 #: doc/classes/Area2D.xml
-#, fuzzy
 msgid ""
 "Emitted when another Area2D exits this Area2D. Requires [member monitoring] "
 "to be set to [code]true[/code].\n"
 "[code]area[/code] the other Area2D."
 msgstr ""
-"Emitido cuando el puntero del ratón sale de todas las formas de este objeto. "
-"Requiere que [member input_pickable] sea [code]true[/code] y que al menos un "
-"bit [code]collision_layer[/code] esté activado."
+"Se emite cuando otro Area2D sale de este Area2D. Requiere [member "
+"monitoring] en [code]true[/code].\n"
+"[code]area[/code]: el otro Area2D."
 
 #: doc/classes/Area2D.xml
 msgid ""
@@ -9082,6 +9173,22 @@ msgid ""
 "var local_shape_node = shape_owner_get_owner(local_shape_owner)\n"
 "[/codeblock]"
 msgstr ""
+"Se emite cuando una [Shape2D] de otro Area2D entra en una [Shape2D] de este "
+"Area2D. Requiere [member monitoring] en [code]true[/code].\n"
+"[code]area_rid[/code]: [RID] del [CollisionObject2D] del otro Area2D usado "
+"por [Physics2DServer].\n"
+"[code]area[/code]: el otro Area2D.\n"
+"[code]area_shape_index[/code]: índice de la [Shape2D] del otro Area2D.\n"
+"[code]local_shape_index[/code]: índice de la [Shape2D] de este Area2D.\n"
+"[b]Ejemplo para obtener el nodo[/b] [CollisionShape2D] [b]a partir del "
+"índice de forma:[/b]\n"
+"[codeblock]\n"
+"var other_shape_owner = area.shape_find_owner(area_shape_index)\n"
+"var other_shape_node = area.shape_owner_get_owner(other_shape_owner)\n"
+"\n"
+"var local_shape_owner = shape_find_owner(local_shape_index)\n"
+"var local_shape_node = shape_owner_get_owner(local_shape_owner)\n"
+"[/codeblock]"
 
 #: doc/classes/Area2D.xml
 msgid ""
@@ -9095,6 +9202,14 @@ msgid ""
 "[code]local_shape_index[/code] the index of the [Shape2D] from this Area2D.\n"
 "See also [signal area_shape_entered]."
 msgstr ""
+"Se emite cuando una [Shape2D] de otro Area2D sale de una [Shape2D] de este "
+"Area2D. Requiere [member monitoring] en [code]true[/code].\n"
+"[code]area_rid[/code]: [RID] del [CollisionObject2D] del otro Area2D usado "
+"por [Physics2DServer].\n"
+"[code]area[/code]: el otro Area2D.\n"
+"[code]area_shape_index[/code]: índice de la [Shape2D] del otro Area2D.\n"
+"[code]local_shape_index[/code]: índice de la [Shape2D] de este Area2D.\n"
+"Véase también [signal area_shape_entered]."
 
 #: doc/classes/Area2D.xml
 msgid ""
@@ -9104,6 +9219,11 @@ msgid ""
 "[code]body[/code] the [Node], if it exists in the tree, of the other "
 "[PhysicsBody2D] or [TileMap]."
 msgstr ""
+"Se emite cuando un [PhysicsBody2D] o [TileMap] entra en este Area2D. "
+"Requiere [member monitoring] en [code]true[/code]. Se detectan [TileMap] si "
+"el [TileSet] tiene [Shape2D] de colisión.\n"
+"[code]body[/code]: el [Node], si existe en el árbol, del otro "
+"[PhysicsBody2D] o [TileMap]."
 
 #: doc/classes/Area2D.xml
 msgid ""
@@ -9113,6 +9233,11 @@ msgid ""
 "[code]body[/code] the [Node], if it exists in the tree, of the other "
 "[PhysicsBody2D] or [TileMap]."
 msgstr ""
+"Se emite cuando un [PhysicsBody2D] o [TileMap] sale de este Area2D. Requiere "
+"[member monitoring] en [code]true[/code]. Se detectan [TileMap] si el "
+"[TileSet] tiene [Shape2D] de colisión.\n"
+"[code]body[/code]: el [Node], si existe en el árbol, del otro "
+"[PhysicsBody2D] o [TileMap]."
 
 #: doc/classes/Area2D.xml
 msgid ""
@@ -9137,6 +9262,25 @@ msgid ""
 "var local_shape_node = shape_owner_get_owner(local_shape_owner)\n"
 "[/codeblock]"
 msgstr ""
+"Se emite cuando una [Shape2D] de un [PhysicsBody2D] o [TileMap] entra en una "
+"[Shape2D] de este Area2D. Requiere [member monitoring] en [code]true[/code]. "
+"Se detectan [TileMap] si el [TileSet] tiene [Shape2D] de colisión.\n"
+"[code]body_rid[/code]: [RID] del [CollisionObject2D] del [PhysicsBody2D] o "
+"del [TileSet] usado por [Physics2DServer].\n"
+"[code]body[/code]: el [Node], si existe en el árbol, del [PhysicsBody2D] o "
+"[TileMap].\n"
+"[code]body_shape_index[/code]: índice de la [Shape2D] del [PhysicsBody2D] o "
+"[TileMap].\n"
+"[code]local_shape_index[/code]: índice de la [Shape2D] de este Area2D.\n"
+"[b]Ejemplo para obtener el nodo[/b] [CollisionShape2D] [b]a partir del "
+"índice de forma:[/b]\n"
+"[codeblock]\n"
+"var body_shape_owner = body.shape_find_owner(body_shape_index)\n"
+"var body_shape_node = body.shape_owner_get_owner(body_shape_owner)\n"
+"\n"
+"var local_shape_owner = shape_find_owner(local_shape_index)\n"
+"var local_shape_node = shape_owner_get_owner(local_shape_owner)\n"
+"[/codeblock]"
 
 #: doc/classes/Area2D.xml
 msgid ""
@@ -9153,14 +9297,23 @@ msgid ""
 "[code]local_shape_index[/code] the index of the [Shape2D] from this Area2D.\n"
 "See also [signal body_shape_entered]."
 msgstr ""
+"Se emite cuando una [Shape2D] de un [PhysicsBody2D] o [TileMap] sale de una "
+"[Shape2D] de este Area2D. Requiere [member monitoring] en [code]true[/code]. "
+"Se detectan [TileMap] si el [TileSet] tiene [Shape2D] de colisión.\n"
+"[code]body_rid[/code]: [RID] del [CollisionObject2D] del [PhysicsBody2D] o "
+"del [TileSet] usado por [Physics2DServer].\n"
+"[code]body[/code]: el [Node], si existe en el árbol, del [PhysicsBody2D] o "
+"[TileMap].\n"
+"[code]body_shape_index[/code]: índice de la [Shape2D] del [PhysicsBody2D] o "
+"[TileMap].\n"
+"[code]local_shape_index[/code]: índice de la [Shape2D] de este Area2D.\n"
+"Véase también [signal body_shape_entered]."
 
 #: doc/classes/Array.xml
-#, fuzzy
 msgid "A generic array datatype."
 msgstr "Tipo de datos array genérico."
 
 #: doc/classes/Array.xml
-#, fuzzy
 msgid ""
 "A generic array that can contain several elements of any type, accessible by "
 "a numerical index starting at 0. Negative indices can be used to count from "
@@ -9192,63 +9345,60 @@ msgid ""
 "pushing/removing elements. Using [code]const[/code] will only prevent "
 "assigning the constant with another value after it was initialized."
 msgstr ""
-"Array generico que contiene varios elementos de cualquier tipo, accesibles "
-"por un indice empezando por 0. Indices negativos puedes ser usados contando "
-"hacia atras, como en Python (-1 es el ultimo elemento, -2 el penultimo, "
-"etc.).\n"
+"Array genérico que puede contener varios elementos de cualquier tipo, "
+"accesibles por índice numérico empezando en 0. Los índices negativos cuentan "
+"desde el final, como en Python (-1 es el último, -2 el penúltimo, etc.).\n"
 "[b]Ejemplo:[/b]\n"
 "[codeblock]\n"
-"var array = [\"Uno\", 2, 3, \"Cuatro\"]\n"
-"print(array[0]) # Uno.\n"
+"var array = [\"One\", 2, 3, \"Four\"]\n"
+"print(array[0]) # One.\n"
 "print(array[2]) # 3.\n"
-"print(array[-1]) # Cuatro.\n"
-"array[2] = \"Tres\"\n"
-"print(array[-2]) # Tres.\n"
+"print(array[-1]) # Four.\n"
+"array[2] = \"Three\"\n"
+"print(array[-2]) # Three.\n"
 "[/codeblock]\n"
-"Arrays pueden ser concatenados usando el operador [code]+[/code].\n"
+"Los arrays se pueden concatenar con el operador [code]+[/code]:\n"
 "[codeblock]\n"
-"var array1 = [\"uno\", 2]\n"
-"var array2 = [3, \"Cuatro\"]\n"
-"print(array1 + array2) # [\"Uno\", 2, 3, \"Cuatro\"]\n"
+"var array1 = [\"One\", 2]\n"
+"var array2 = [3, \"Four\"]\n"
+"print(array1 + array2) # [\"One\", 2, 3, \"Four\"]\n"
 "[/codeblock]\n"
-"[b]Nota:[/b]Los arrays siempre son pasados por referencia. Para obtener una "
-"copia de el array que pueda ser modificada independientemente de la matriz "
-"original, utilice [method duplicate]."
+"[b]Nota:[/b] concatenar con [code]+=[/code] crea un array nuevo, con coste. "
+"Para añadir otro array al existente, [method append_array] es más "
+"eficiente.\n"
+"[b]Nota:[/b] los arrays siempre se pasan por referencia. Para obtener una "
+"copia independiente del original, use [method duplicate].\n"
+"[b]Nota:[/b] al declarar un array con [code]const[/code], el contenido puede "
+"seguir mutándose por índices o con push/remove. [code]const[/code] solo "
+"impide reasignar la constante tras inicializarla."
 
 #: doc/classes/Array.xml
-#, fuzzy
 msgid "Constructs an array from a [PoolColorArray]."
-msgstr "Construye un array a partir de un [PackedColorArray]."
+msgstr "Construye un array a partir de un [PoolColorArray]."
 
 #: doc/classes/Array.xml
-#, fuzzy
 msgid "Constructs an array from a [PoolVector3Array]."
-msgstr "Construye un array a partir de un [PackedVector3Array]."
+msgstr "Construye un array a partir de un [PoolVector3Array]."
 
 #: doc/classes/Array.xml
-#, fuzzy
 msgid "Constructs an array from a [PoolVector2Array]."
-msgstr "Construye un array a partir de un [PackedVector2Array]."
+msgstr "Construye un array a partir de un [PoolVector2Array]."
 
 #: doc/classes/Array.xml
-#, fuzzy
 msgid "Constructs an array from a [PoolStringArray]."
-msgstr "Construye un array a partir de un [PackedStringArray]."
+msgstr "Construye un array a partir de un [PoolStringArray]."
 
 #: doc/classes/Array.xml
-#, fuzzy
 msgid "Constructs an array from a [PoolRealArray]."
-msgstr "Construye un array a partir de un [PackedColorArray]."
+msgstr "Construye un array a partir de un [PoolRealArray]."
 
 #: doc/classes/Array.xml
-#, fuzzy
 msgid "Constructs an array from a [PoolIntArray]."
-msgstr "Construye un array a partir de un [PackedInt64Array]."
+msgstr "Construye un array a partir de un [PoolIntArray]."
 
 #: doc/classes/Array.xml
-#, fuzzy
 msgid "Constructs an array from a [PoolByteArray]."
-msgstr "Construye un array a partir de un [PackedByteArray]."
+msgstr "Construye un array a partir de un [PoolByteArray]."
 
 #: doc/classes/Array.xml doc/classes/PoolByteArray.xml
 #: doc/classes/PoolColorArray.xml doc/classes/PoolIntArray.xml
@@ -9269,6 +9419,13 @@ msgid ""
 "print(array1) # Prints [1, 2, 3, 4, 5, 6].\n"
 "[/codeblock]"
 msgstr ""
+"Añade otro array al final de este.\n"
+"[codeblock]\n"
+"var array1 = [1, 2, 3]\n"
+"var array2 = [4, 5, 6]\n"
+"array1.append_array(array2)\n"
+"print(array1) # Prints [1, 2, 3, 4, 5, 6].\n"
+"[/codeblock]"
 
 #: doc/classes/Array.xml
 msgid ""
@@ -9278,6 +9435,11 @@ msgid ""
 "[/code]. If the array is empty, accessing by index will pause project "
 "execution when running from the editor."
 msgstr ""
+"Devuelve el último elemento del array. Imprime un error y devuelve "
+"[code]null[/code] si el array está vacío.\n"
+"[b]Nota:[/b] no es lo mismo que escribir [code]array[-1][/code]. Si el array "
+"está vacío, el acceso por índice pausa la ejecución del proyecto al ejecutar "
+"desde el editor."
 
 #: doc/classes/Array.xml
 msgid ""
@@ -9298,7 +9460,6 @@ msgstr ""
 "comportamientos inesperados."
 
 #: doc/classes/Array.xml
-#, fuzzy
 msgid ""
 "Finds the index of an existing value (or the insertion index that maintains "
 "sorting order, if the value is not yet present in the array) using binary "
@@ -9336,16 +9497,40 @@ msgid ""
 "[b]Note:[/b] Calling [method bsearch_custom] on an unsorted array results in "
 "unexpected behavior."
 msgstr ""
-"Encuentra el indice de un valor existente (o el indice de insercion que "
-"mantiene el ordenamiento, si el valor no esta todavia presente en el array) "
-"usando busqueda binario. Opcionalmente, un especificador [code]before[/code] "
-"puede ser pasado. Si [code]false[/code], el indice devuelto vendra despues "
-"de todas las entradas existentes del valor en el array. El metodo "
-"personalizado recibe dos argumentos (un elemento del array y el valor "
-"buscado) y debe devolver [code]true[/code] si el primer argumento es menor "
-"que el segundo, y devuelve [code]false[/code] en otro caso.\n"
-"[b]Nota:[/b] Llama al [method bsearch] en un array sin ordenar causara "
-"comportamientos inesperados."
+"Busca el índice de un valor existente (o el índice de inserción que mantiene "
+"el orden, si el valor aún no está) mediante búsqueda binaria y un método de "
+"comparación personalizado declarado en [code]obj[/code]. Opcionalmente puede "
+"pasar [code]before[/code]. Si es [code]false[/code], el índice devuelto "
+"queda tras todas las entradas existentes del valor. El método recibe dos "
+"argumentos (un elemento del array y el valor buscado) y debe devolver "
+"[code]true[/code] si el primero es menor que el segundo, y [code]false[/"
+"code] en caso contrario.\n"
+"[codeblock]\n"
+"func cardinal_to_algebraic(a):\n"
+"    match a:\n"
+"        \"one\":\n"
+"            return 1\n"
+"        \"two\":\n"
+"            return 2\n"
+"        \"three\":\n"
+"            return 3\n"
+"        \"four\":\n"
+"            return 4\n"
+"        _:\n"
+"            return 0\n"
+"\n"
+"func compare(a, b):\n"
+"    return cardinal_to_algebraic(a) < cardinal_to_algebraic(b)\n"
+"\n"
+"func _ready():\n"
+"    var a = [\"one\", \"two\", \"three\", \"four\"]\n"
+"    # `compare` is defined in this object, so we use `self` as the `obj` "
+"parameter.\n"
+"    print(a.bsearch_custom(\"three\", self, \"compare\", true)) # Expected "
+"value is 2.\n"
+"[/codeblock]\n"
+"[b]Nota:[/b] llamar a [method bsearch_custom] en un array no ordenado "
+"produce un comportamiento impredecible."
 
 #: doc/classes/Array.xml doc/classes/PoolByteArray.xml
 #: doc/classes/PoolColorArray.xml doc/classes/PoolIntArray.xml
@@ -9392,7 +9577,6 @@ msgid "Returns [code]true[/code] if the array is empty."
 msgstr "Devuelve [code]true[/code] si el array es vacio."
 
 #: doc/classes/Array.xml
-#, fuzzy
 msgid ""
 "Removes the first occurrence of a value from the array. If the value does "
 "not exist in the array, nothing happens. To remove an element by index, use "
@@ -9402,12 +9586,12 @@ msgid ""
 "element is close to the beginning of the array (index 0). This is because "
 "all elements placed after the removed element have to be reindexed."
 msgstr ""
-"Inserta un nuevo elemento en la posisción dada en el array. La posición debe "
-"ser valida, o al final de el array([code]pos == size()[/code].\n"
-"[b]Note:[/b] este metodo actua en el lugar y no devuelve ningún valor.\n"
-"[b]Note:[/b] en arrays largos, este metodo va a ser mas lento si el elemento "
-"incertado esta cerca al inicio del array (índice 0). Esto es por que todos "
-"los elementos despues del elemento incertado tienen que ser reindisados."
+"Elimina la primera aparición de un valor del array. Si el valor no existe, "
+"no hace nada. Para quitar por índice, use [method remove].\n"
+"[b]Nota:[/b] actúa in situ y no devuelve valor.\n"
+"[b]Nota:[/b] en arrays grandes será más lento si el elemento eliminado está "
+"cerca del principio (índice 0), porque hay que reindexar los elementos "
+"posteriores."
 
 #: doc/classes/Array.xml
 msgid ""
@@ -9423,6 +9607,16 @@ msgid ""
 "[Array], [Dictionary], etc.) then the array is filled with the references to "
 "the same object, i.e. no duplicates are created."
 msgstr ""
+"Asigna el valor dado a todos los elementos. Suele usarse con [method resize] "
+"para crear un array de tamaño fijo con valores iniciales:\n"
+"[codeblock]\n"
+"var array = []\n"
+"array.resize(10)\n"
+"array.fill(0) # Initialize the 10 elements to 0.\n"
+"[/codeblock]\n"
+"[b]Nota:[/b] si [code]value[/code] es de tipo referencia ([Object] derivado, "
+"[Array], [Dictionary], etc.), el array se rellena con referencias al mismo "
+"objeto, es decir, no se duplican instancias."
 
 #: doc/classes/Array.xml doc/classes/PoolByteArray.xml
 #: doc/classes/PoolColorArray.xml doc/classes/PoolIntArray.xml
@@ -9453,15 +9647,21 @@ msgid ""
 "[/code]. If the array is empty, accessing by index will pause project "
 "execution when running from the editor."
 msgstr ""
+"Devuelve el primer elemento del array. Imprime un error y devuelve "
+"[code]null[/code] si el array está vacío.\n"
+"[b]Nota:[/b] no es lo mismo que escribir [code]array[0][/code]. Si el array "
+"está vacío, el acceso por índice pausa la ejecución del proyecto al ejecutar "
+"desde el editor."
 
 #: doc/classes/Array.xml
 msgid ""
 "Returns the element at the given [code]index[/code] in the array. This is "
 "the same as using the [code][][/code] operator ([code]array[index][/code])."
 msgstr ""
+"Devuelve el elemento en el [code]index[/code] dado. Equivale al operador "
+"[code][][/code] ([code]array[index][/code])."
 
 #: doc/classes/Array.xml
-#, fuzzy
 msgid ""
 "Returns [code]true[/code] if the array contains the given value.\n"
 "[codeblock]\n"
@@ -9480,15 +9680,14 @@ msgid ""
 msgstr ""
 "Devuelve [code]true[/code] si el array contiene el valor dado.\n"
 "[codeblock]\n"
-"print([\"inside\", 7].has(\"inside\")) # True\n"
-"print([\"inside\", 7].has(\"outside\")) # False\n"
-"print([\"inside\", 7].has(7)) # True\n"
-"print([\"inside\", 7].has(\"7\")) # False\n"
+"[\"inside\", 7].has(\"inside\") # True\n"
+"[\"inside\", 7].has(\"outside\") # False\n"
+"[\"inside\", 7].has(7) # True\n"
+"[\"inside\", 7].has(\"7\") # False\n"
 "[/codeblock]\n"
-"[b]Nota:[/b] Esto equivale a utilizar el operador [code]in[/code] de la "
-"siguiente manera:\n"
+"[b]Nota:[/b] equivale al operador [code]in[/code]:\n"
 "[codeblock]\n"
-"# Evaluará a \"true\".\n"
+"# Will evaluate to `true`.\n"
 "if 2 in [2, 4, 6, 8]:\n"
 "    pass\n"
 "[/codeblock]"
@@ -9502,6 +9701,11 @@ msgid ""
 "does [i]not[/i] imply the arrays are equal, because different arrays can "
 "have identical hash values due to hash collisions."
 msgstr ""
+"Devuelve un entero de 32 bits con hash que representa el array y su "
+"contenido.\n"
+"[b]Nota:[/b] arrays con el mismo contenido producen siempre el mismo hash. "
+"Lo contrario no es cierto: el mismo hash no implica igualdad, porque "
+"distintos arrays pueden colisionar en el hash."
 
 #: doc/classes/Array.xml
 msgid ""
@@ -9554,6 +9758,11 @@ msgid ""
 "print(array.pick_random())  # Prints either of the four numbers.\n"
 "[/codeblock]"
 msgstr ""
+"Devuelve un valor al azar del array objetivo.\n"
+"[codeblock]\n"
+"var array: Array[int] = [1, 2, 3, 4]\n"
+"print(array.pick_random())  # Prints either of the four numbers.\n"
+"[/codeblock]"
 
 #: doc/classes/Array.xml
 msgid ""
@@ -9567,16 +9776,22 @@ msgid ""
 "removed element. The larger the array and the lower the index of the removed "
 "element, the slower [method pop_at] will be."
 msgstr ""
+"Extrae y devuelve el elemento en el índice [code]position[/code]. Si es "
+"negativo, [code]position[/code] es relativo al final. Deja el array intacto "
+"y devuelve [code]null[/code] si está vacío o el índice está fuera de rango. "
+"Se imprime error al salirse de rango, pero no si solo está vacío.\n"
+"[b]Nota:[/b] en arrays grandes puede ser más lento que [method pop_back] "
+"porque reindexa los elementos tras el eliminado. Cuanto mayor el array y "
+"menor el índice, más lento será [method pop_at]."
 
 #: doc/classes/Array.xml
-#, fuzzy
 msgid ""
 "Removes and returns the last element of the array. Returns [code]null[/code] "
 "if the array is empty, without printing an error message. See also [method "
 "pop_front]."
 msgstr ""
-"Elimina y devuelve el ultimo elemento del array. Devuelve [code]null[/code] "
-"si el array esta vacio."
+"Extrae y devuelve el último elemento. Devuelve [code]null[/code] si el array "
+"está vacío, sin imprimir error. Véase también [method pop_front]."
 
 #: doc/classes/Array.xml
 msgid ""
@@ -9587,13 +9802,17 @@ msgid ""
 "pop_back] as it will reindex all the array's elements every time it's "
 "called. The larger the array, the slower [method pop_front] will be."
 msgstr ""
+"Extrae y devuelve el primer elemento. Devuelve [code]null[/code] si el array "
+"está vacío, sin imprimir error. Véase también [method pop_back].\n"
+"[b]Nota:[/b] en arrays grandes es mucho más lento que [method pop_back] "
+"porque reindexa todos los elementos en cada llamada. Cuanto mayor el array, "
+"más lento será [method pop_front]."
 
 #: doc/classes/Array.xml
-#, fuzzy
 msgid ""
 "Appends an element at the end of the array. See also [method push_front]."
 msgstr ""
-"Concatena un elemento al final del array (alias de [method push_back])."
+"Añade un elemento al final del array. Véase también [method push_front]."
 
 #: doc/classes/Array.xml
 msgid ""
@@ -9602,6 +9821,10 @@ msgid ""
 "push_back] as it will reindex all the array's elements every time it's "
 "called. The larger the array, the slower [method push_front] will be."
 msgstr ""
+"Añade un elemento al principio del array. Véase también [method push_back].\n"
+"[b]Nota:[/b] en arrays grandes es mucho más lento que [method push_back] "
+"porque reindexa todos los elementos en cada llamada. Cuanto mayor el array, "
+"más lento será [method push_front]."
 
 #: doc/classes/Array.xml
 msgid ""
@@ -9613,6 +9836,11 @@ msgid ""
 "element is close to the beginning of the array (index 0). This is because "
 "all elements placed after the removed element have to be reindexed."
 msgstr ""
+"Elimina un elemento por índice. Si el índice no existe, no hace nada. Para "
+"quitar por valor, use [method erase].\n"
+"[b]Nota:[/b] actúa in situ y no devuelve valor.\n"
+"[b]Nota:[/b] en arrays grandes será más lento si el elemento está cerca del "
+"principio (índice 0), porque hay que reindexar los posteriores."
 
 #: doc/classes/Array.xml
 msgid ""
@@ -9646,6 +9874,9 @@ msgid ""
 "changes the value at an index already in the array. This is the same as "
 "using the [code][][/code] operator ([code]array[index] = value[/code])."
 msgstr ""
+"Asigna [code]value[/code] al elemento en [code]index[/code]. No cambia el "
+"tamaño del array, solo el valor en un índice ya existente. Equivale al "
+"operador [code][][/code] ([code]array[index] = value[/code])."
 
 #: doc/classes/Array.xml
 msgid ""
@@ -9680,7 +9911,6 @@ msgstr ""
 "cambio entre indices mientras se trocean."
 
 #: doc/classes/Array.xml
-#, fuzzy
 msgid ""
 "Sorts the array.\n"
 "[b]Note:[/b] The sorting algorithm used is not [url=https://en.wikipedia.org/"
@@ -9696,18 +9926,18 @@ msgid ""
 "[/codeblock]"
 msgstr ""
 "Ordena el array.\n"
-"[b]Nota:[/b] Las strings son ordenadas en orden alfabetico ( opuesto al "
-"orden natural). Esto puede llevar a comportamientos inesperados cuando se "
-"ordene un array de strings con una sequencia de numeros, considera lo "
-"siguiente:\n"
+"[b]Nota:[/b] el algoritmo no es [url=https://en.wikipedia.org/wiki/"
+"Sorting_algorithm#Stability]estable[/url]: valores considerados iguales "
+"pueden cambiar de orden con [method sort].\n"
+"[b]Nota:[/b] las cadenas se ordenan alfabéticamente (no en orden «natural»), "
+"lo que puede sorprender con números al final:\n"
 "[codeblock]\n"
 "var strings = [\"string1\", \"string2\", \"string10\", \"string11\"]\n"
 "strings.sort()\n"
-"print(strings) # Imprime [string1, string10, string11, string2]\n"
+"print(strings) # Prints [string1, string10, string11, string2]\n"
 "[/codeblock]"
 
 #: doc/classes/Array.xml
-#, fuzzy
 msgid ""
 "Sorts the array using a custom method. The arguments are an object that "
 "holds the method and the name of such method. The custom method receives two "
@@ -9735,23 +9965,28 @@ msgid ""
 "print(my_items) # Prints [[4, Tomato], [5, Potato], [9, Rice]].\n"
 "[/codeblock]"
 msgstr ""
-"Ordena el array usando un metodo personalizado. Los argumentos son un objeto "
-"que contiene el metodo y el nombre de tal metodo. El metodo personalizado "
-"recibe dos argumentos (un par de elementos de un array) y debe devolver or "
-"[code]true[/code] o [code]false[/code].\n"
-"[b]Nota:[/b] tu no puedes aleatorizar el valor de retorno como ya que el "
-"algoritmo heapsort espera un resultada determinista. Hacer esto resultara en "
-"comportamientos inesperados.\n"
+"Ordena el array con un método personalizado. Los argumentos son el objeto "
+"que posee el método y el nombre del método. El método recibe dos argumentos "
+"(un par de elementos del array) y debe devolver [code]true[/code] o "
+"[code]false[/code].\n"
+"Para dos elementos [code]a[/code] y [code]b[/code], si el método devuelve "
+"[code]true[/code], [code]b[/code] quedará detrás de [code]a[/code] en el "
+"array.\n"
+"[b]Nota:[/b] el algoritmo no es [url=https://en.wikipedia.org/wiki/"
+"Sorting_algorithm#Stability]estable[/url]: valores iguales pueden permutar "
+"el orden con [method sort_custom].\n"
+"[b]Nota:[/b] no randomice el valor de retorno: heapsort exige un resultado "
+"determinista; si no, el comportamiento será impredecible.\n"
 "[codeblock]\n"
-"class MiOrdenPersonal:\n"
-"    static func orden_ascendente(a, b):\n"
+"class MyCustomSorter:\n"
+"    static func sort_ascending(a, b):\n"
 "        if a[0] < b[0]:\n"
 "            return true\n"
 "        return false\n"
 "\n"
-"var mis_items = [[5, \"Patata\"], [9, \"Arroz\"], [4, \"Tomate\"]]\n"
-"mis_items.sort_custom(MiOrdenPersonal, \"orden_ascendente\")\n"
-"print(mis_items) # Imprime [[4, Tomate], [5, Patata], [9, Arroz]].\n"
+"var my_items = [[5, \"Potato\"], [9, \"Rice\"], [4, \"Tomato\"]]\n"
+"my_items.sort_custom(MyCustomSorter, \"sort_ascending\")\n"
+"print(my_items) # Prints [[4, Tomato], [5, Potato], [9, Rice]].\n"
 "[/codeblock]"
 
 #: doc/classes/ArrayMesh.xml
@@ -9762,7 +9997,6 @@ msgstr ""
 "arrays."
 
 #: doc/classes/ArrayMesh.xml
-#, fuzzy
 msgid ""
 "The [ArrayMesh] is used to construct a [Mesh] by specifying the attributes "
 "as arrays.\n"
@@ -9789,31 +10023,30 @@ msgid ""
 "OpenGL/Face-culling]winding order[/url] for front faces of triangle "
 "primitive modes."
 msgstr ""
-"El [ArrayMesh] es utilizado para construir una [Mesh] especificando los "
-"atributos como arrays.\n"
-"El ejemplo mas basicos es la creacion de un unico triangulo:\n"
+"[ArrayMesh] sirve para construir un [Mesh] especificando los atributos como "
+"arrays.\n"
+"El ejemplo más básico es un solo triángulo:\n"
 "[codeblock]\n"
-"var vertices = PackedVector3Array()\n"
+"var vertices = PoolVector3Array()\n"
 "vertices.push_back(Vector3(0, 1, 0))\n"
 "vertices.push_back(Vector3(1, 0, 0))\n"
 "vertices.push_back(Vector3(0, 0, 1))\n"
-"# Inicializa el ArrayMesh.\n"
+"# Initialize the ArrayMesh.\n"
 "var arr_mesh = ArrayMesh.new()\n"
 "var arrays = []\n"
 "arrays.resize(ArrayMesh.ARRAY_MAX)\n"
 "arrays[ArrayMesh.ARRAY_VERTEX] = vertices\n"
-"# Crea la Mesh(Malla)\n"
+"# Create the Mesh.\n"
 "arr_mesh.add_surface_from_arrays(Mesh.PRIMITIVE_TRIANGLES, arrays)\n"
 "var m = MeshInstance.new()\n"
 "m.mesh = arr_mesh\n"
 "[/codeblock]\n"
-"La [MeshInstance] esta preparada para ser añadida a la [SceneTree] para ser "
-"mostrado.\n"
-"Ver tambien [ImmediateGeometry], [MeshDataTool] y [SurfaceTool] para "
-"generacion de geometria procedimental.\n"
-"[b]Nota:[/b] Godot [url=https://learnopengl.com/Advanced-OpenGL/Face-"
-"culling]usa orden en el sentido del reloj[url] para las cara frontales de "
-"los modos primitivos de triangulo."
+"El [MeshInstance] ya puede añadirse al [SceneTree] para mostrarse.\n"
+"Véase también [ImmediateGeometry], [MeshDataTool] y [SurfaceTool] para "
+"geometría procedural.\n"
+"[b]Nota:[/b] Godot usa el orden de vértices en sentido horario ([url=https://"
+"learnopengl.com/Advanced-OpenGL/Face-culling]winding order[/url]) para las "
+"caras frontales en modos primitivos de triángulos."
 
 #: doc/classes/ArrayMesh.xml
 msgid ""
@@ -9825,7 +10058,6 @@ msgstr ""
 "añadida."
 
 #: doc/classes/ArrayMesh.xml
-#, fuzzy
 msgid ""
 "Creates a new surface.\n"
 "Surfaces are created to be rendered using a [code]primitive[/code], which "
@@ -9850,23 +10082,26 @@ msgid ""
 "vertex color compression flag by passing [code]Mesh.ARRAY_COMPRESS_DEFAULT ^ "
 "Mesh.ARRAY_COMPRESS_COLOR[/code] as the value of [code]compress_flags[/code]."
 msgstr ""
-"Crea una nueva superificie.\n"
-"Superficies son creadas para ser renderizadas usando un [code]primitive[/"
-"code], el cual puede ser de cualquier tipo definido en [enum Mesh."
-"PrimitiveType]. ( Nota: cuando se usen indices, es recomendado solo usar "
-"puntos, lineas o triangulos.) [method Mesh.get_surface_count] convertira el "
-"[code]surf_idx[/code] para esta nueva superificie.\n"
-"El argumento[code]arrays[/code] es un array de arrays. Ver [enum ArrayType] "
-"para los valores usados en este array. Por ejemplo, [code]arrays[0][/code] "
-"es el array de vertices. Este primer vertex sub-array es siempre requerido; "
-"los otros son opcionales. Añadir un array de indices pone esta funcion en "
-"\"modo indice\" donde los vertices y otros arrays convierten las fuentes de "
-"datos y el array de indices define el orden de vertices. Todos los sub-"
-"arrays deben tener la misma longitud que el array de vertices o ser vacios, "
-"excepto for [constant ARRAY_INDEX] si es utilizado.\n"
-"Añadir un array de indices pone esta funcion en \"modo indice\" donde los "
-"vertices y otros arrays convierten las fuentes de datos y el array de "
-"indices define el orden de vertices."
+"Crea una superficie nueva.\n"
+"Las superficies se renderizan con un [code]primitive[/code], que puede ser "
+"cualquier valor de [enum Mesh.PrimitiveType]. (Con índices, conviene usar "
+"solo puntos, líneas o triángulos.) [method Mesh.get_surface_count] será el "
+"[code]surf_idx[/code] de esta superficie.\n"
+"El argumento [code]arrays[/code] es un array de arrays. Véase [enum "
+"ArrayType] para los valores. Por ejemplo, [code]arrays[0][/code] es el array "
+"de vértices; ese subarray es obligatorio; el resto es opcional. Un array de "
+"índices activa el «modo índice»: los demás arrays son fuentes de datos y el "
+"de índices define el orden. Todos los subarrays deben tener la misma "
+"longitud que el de vértices o estar vacíos, salvo [constant ARRAY_INDEX] si "
+"se usa.\n"
+"[code]compress_flags[/code] es un campo de bits con valores [enum Mesh."
+"ArrayFormat]. Por defecto es [constant Mesh.ARRAY_COMPRESS_DEFAULT].\n"
+"[b]Nota:[/b] el valor por defecto de [code]compress_flags[/code] activa "
+"[constant Mesh.ARRAY_COMPRESS_COLOR], guardando colores de vértice como "
+"enteros sin signo de 8 bits. Eso limita colores HDR a [code]Color(1, 1, 1, 1)"
+"[/code] y reduce la precisión. Para HDR en vértices, quite la compresión de "
+"color pasando [code]Mesh.ARRAY_COMPRESS_DEFAULT ^ Mesh.ARRAY_COMPRESS_COLOR[/"
+"code] en [code]compress_flags[/code]."
 
 #: doc/classes/ArrayMesh.xml
 msgid "Removes all blend shapes from this [ArrayMesh]."
@@ -9941,13 +10176,12 @@ msgstr ""
 "add_surface_from_arrays])."
 
 #: doc/classes/ArrayMesh.xml
-#, fuzzy
 msgid ""
 "Removes a surface at position [code]surf_idx[/code], shifting greater "
 "surfaces one [code]surf_idx[/code] slot down."
 msgstr ""
-"Elimina el efecto en el índice [code]effect_idx[/code] del bus en el índice "
-"[code]bus_idx[/code]."
+"Elimina la superficie en [code]surf_idx[/code], desplazando las posteriores "
+"un índice hacia abajo."
 
 #: doc/classes/ArrayMesh.xml
 msgid "Sets a name for a given surface."
@@ -9978,69 +10212,58 @@ msgstr ""
 "cuando se use un shader a vertices desplazados."
 
 #: doc/classes/ArrayMesh.xml
-#, fuzzy
 msgid "Value used internally when no indices are present."
-msgstr "Valor por defecto usado para un index_array_len cuando no hay indices."
+msgstr "Valor usado internamente cuando no hay índices."
 
 #: doc/classes/ArrayMesh.xml
 msgid "Amount of weights/bone indices per vertex (always 4)."
 msgstr "Cantidad de pesos/hueso indices por vertice (siempre 4)."
 
 #: doc/classes/ArrayMesh.xml
-#, fuzzy
 msgid "[PoolVector3Array], [PoolVector2Array], or [Array] of vertex positions."
 msgstr ""
-"[PackedVector3Array], [PackedVector2Array], o [Array] de posiciones de "
-"vertices."
+"[PoolVector3Array], [PoolVector2Array] o [Array] de posiciones de vértices."
 
 #: doc/classes/ArrayMesh.xml
-#, fuzzy
 msgid "[PoolVector3Array] of vertex normals."
-msgstr "[PackedVector3Array] de normales de vertices."
+msgstr "[PoolVector3Array] de normales de vértice."
 
 #: doc/classes/ArrayMesh.xml
-#, fuzzy
 msgid ""
 "[PoolRealArray] of vertex tangents. Each element in groups of 4 floats, "
 "first 3 floats determine the tangent, and the last the binormal direction as "
 "-1 or 1."
 msgstr ""
-"[PackedFloat32Array] de tangentes de vertices. Cada elemento esta dentro de "
-"grupos de 4 reales, los tres primeros determinan la tangente, y el ultimo la "
-"direccion la direccion binormal como -1 o 1."
+"[PoolRealArray] de tangentes de vértice. Cada elemento en grupos de 4 "
+"flotantes: los 3 primeros definen la tangente y el último la dirección de la "
+"binormal como -1 o 1."
 
 #: doc/classes/ArrayMesh.xml
-#, fuzzy
 msgid "[PoolColorArray] of vertex colors."
-msgstr "[PackedColorArray] de colores de vertices."
+msgstr "[PoolColorArray] de colores de vértice."
 
 #: doc/classes/ArrayMesh.xml
-#, fuzzy
 msgid "[PoolVector2Array] for UV coordinates."
-msgstr "[PackedVector2Array] para coordenadas UV."
+msgstr "[PoolVector2Array] de coordenadas UV."
 
 #: doc/classes/ArrayMesh.xml
-#, fuzzy
 msgid "[PoolVector2Array] for second UV coordinates."
-msgstr "[PackedVector2Array] para segundas coordenadas UV."
+msgstr "[PoolVector2Array] de segundas coordenadas UV."
 
 #: doc/classes/ArrayMesh.xml
-#, fuzzy
 msgid ""
 "[PoolRealArray] or [PoolIntArray] of bone indices. Each element in groups of "
 "4 floats."
 msgstr ""
-"[PackedFloat32Array] o [PackedInt32Array] de indices de hueso. Cada element "
-"en grupos de 4 reales."
+"[PoolRealArray] o [PoolIntArray] de índices de hueso. Cada elemento en "
+"grupos de 4 flotantes."
 
 #: doc/classes/ArrayMesh.xml
-#, fuzzy
 msgid "[PoolRealArray] of bone weights. Each element in groups of 4 floats."
 msgstr ""
-"[PackedFloat32Array] pesos de hueso. Cada element en grupos de 4 reales."
+"[PoolRealArray] de pesos de hueso. Cada elemento en grupos de 4 flotantes."
 
 #: doc/classes/ArrayMesh.xml
-#, fuzzy
 msgid ""
 "[PoolIntArray] of integers used as indices referencing vertices, colors, "
 "normals, tangents, and textures. All of those arrays must have the same "
@@ -10053,17 +10276,15 @@ msgid ""
 "vertices of each triangle. For lines, the index array is in pairs indicating "
 "the start and end of each line."
 msgstr ""
-"[PackedInt32Array] de enteros utilizados como indices referenciando "
-"vertices, colores, normales, tangentes y texturas. Todos estos arrays deben "
-"tener el mismo numero de elemento que el array de vertices. Ningun indice "
-"puede ser mayor que el tamaño del array de vertices. Cuando el array de "
-"indices esta presente, coloca la funcion en \"modo indice\", donde el indice "
-"selecciona en i enesimo vertice, normal, tangente, color, UV, etc. Esto "
-"significa que si tu quieres tener diferentes normales o colores alrededor de "
-"un borde, tu tienes que duplicar los vertices.\n"
-"Para triangulos, el array de indices es interpretado como triple, "
-"referenciando a los vertices de cada triangulo. Para lineas, el array de "
-"indices esta emparejado indicando el inicio y final de cada linea."
+"[PoolIntArray] de enteros usados como índices que referencian vértices, "
+"colores, normales, tangentes y texturas. Esos arrays deben tener el mismo "
+"número de elementos que el de vértices. Ningún índice puede superar el "
+"tamaño del array de vértices. Con este array de índices se entra en «modo "
+"índice»: el índice selecciona el vértice, normal, tangente, color, UV, etc. "
+"[i]i[/i]-ésimos. Para normales o colores distintos a lo largo de una arista "
+"hay que duplicar vértices.\n"
+"En triángulos, el array de índices se interpreta por tríos (vértices de cada "
+"triángulo). En líneas, por pares (inicio y fin de cada línea)."
 
 #: doc/classes/ArrayMesh.xml doc/classes/Mesh.xml doc/classes/VisualServer.xml
 msgid "Represents the size of the [enum ArrayType] enum."
@@ -16744,7 +16965,7 @@ msgstr "Transformaciones del viewport y del lienzo"
 
 #: doc/classes/CanvasItem.xml doc/classes/Control.xml doc/classes/Node2D.xml
 msgid "Custom drawing in 2D"
-msgstr ""
+msgstr "Dibujo personalizado en 2D"
 
 #: doc/classes/CanvasItem.xml
 #, fuzzy
@@ -20885,19 +21106,53 @@ msgid ""
 "[method get_icon], [method get_stylebox], and the [code]add_*_override[/"
 "code] methods provided by this class."
 msgstr ""
+"Clase base para todos los nodos relacionados con la interfaz de usuario. "
+"[Control] dispone de un rectángulo delimitador que define su extensión, una "
+"posición de anclaje relativa a su control padre o al viewport actual, y "
+"márgenes que representan un desplazamiento respecto al ancla. Los márgenes "
+"se actualizan automáticamente cuando cambia el nodo, cualquiera de sus "
+"padres o el tamaño de la pantalla.\n"
+"Para más información sobre el sistema de interfaz de Godot, anclajes, "
+"márgenes y contenedores, consulte los tutoriales relacionados en el manual. "
+"Para construir interfaces flexibles, necesitará una mezcla de elementos de "
+"interfaz que hereden de [Control] y de nodos [Container].\n"
+"[b]Nodos de interfaz y entrada[/b]\n"
+"Godot envía los eventos de entrada primero al nodo raíz de la escena, "
+"llamando a [method Node._input]. [method Node._input] reenvía el evento por "
+"el árbol de nodos hacia los nodos bajo el cursor del ratón o con el foco. "
+"Para ello llama a [method MainLoop._input_event]. Llame a [method "
+"accept_event] para que ningún otro nodo reciba el evento. Una vez aceptada "
+"una entrada, queda gestionada y [method Node._unhandled_input] no la "
+"procesará.\n"
+"Solo un nodo [Control] puede tener el foco. Solo el nodo enfocado recibirá "
+"eventos. Para obtener el foco, llame a [method grab_focus]. Los nodos "
+"[Control] pierden el foco cuando otro nodo lo arrebata o si oculta el nodo "
+"enfocado.\n"
+"Establezca [member mouse_filter] en [constant MOUSE_FILTER_IGNORE] para "
+"indicar a un nodo [Control] que ignore eventos del ratón o táctiles. Lo "
+"necesitará si coloca un icono encima de un botón.\n"
+"Los recursos [Theme] cambian la apariencia del Control. Si cambia el [Theme] "
+"en un nodo [Control], afecta a todos sus hijos. Para sobrescribir algunos "
+"parámetros del tema, llame a uno de los métodos [code]add_*_override[/code], "
+"como [method add_font_override]. Puede sobrescribir el tema desde el "
+"inspector.\n"
+"[b]Nota:[/b] Los elementos de tema [i]no[/i] son propiedades de [Object]. "
+"Por tanto no puede acceder a sus valores con [method Object.get] y [method "
+"Object.set]. En su lugar use [method get_color], [method get_constant], "
+"[method get_font], [method get_icon], [method get_stylebox] y los métodos "
+"[code]add_*_override[/code] que proporciona esta clase."
 
 #: doc/classes/Control.xml
 msgid "GUI tutorial index"
-msgstr ""
+msgstr "Índice de tutoriales de la interfaz gráfica"
 
 #: doc/classes/Control.xml
-#, fuzzy
 msgid "Control node gallery"
-msgstr "Tecla Control."
+msgstr "Galería de nodos Control"
 
 #: doc/classes/Control.xml
 msgid "All GUI Demos"
-msgstr ""
+msgstr "Todas las demostraciones de la interfaz gráfica"
 
 #: doc/classes/Control.xml
 msgid ""
@@ -20915,7 +21170,6 @@ msgstr ""
 "Si no se anula, el valor por defecto es [code]false[/code]."
 
 #: doc/classes/Control.xml
-#, fuzzy
 msgid ""
 "Virtual method to be implemented by the user. Returns the minimum size for "
 "this control. Alternative to [member rect_min_size] for controlling minimum "
@@ -20927,14 +21181,17 @@ msgid ""
 "[Button], [PanelContainer] etc.). It can only be used with most basic GUI "
 "nodes, like [Control], [Container], [Panel] etc."
 msgstr ""
-"Método virtual a ser implementado por el usuario. Devuelve el tamaño mínimo "
-"para este control. Alternativa a [member rect_min_size] para controlar el "
-"tamaño mínimo mediante código. El tamaño mínimo real será el valor máximo de "
-"estos dos (en cada eje por separado).\n"
-"Si no se anula, el valor por defecto es [constant Vector2.ZERO]."
+"Método virtual que debe implementar el usuario. Devuelve el tamaño mínimo de "
+"este control. Alternativa a [member rect_min_size] para controlar el tamaño "
+"mínimo mediante código. El tamaño mínimo real será el máximo de ambos "
+"valores (en cada eje por separado).\n"
+"Si no se anula, el valor predeterminado es [constant Vector2.ZERO].\n"
+"[b]Nota:[/b] Este método no se llamará cuando el script esté asociado a un "
+"nodo [Control] que ya define su tamaño mínimo (p. ej. [Label], [Button], "
+"[PanelContainer], etc.). Solo puede usarse con los nodos de interfaz más "
+"básicos, como [Control], [Container], [Panel], etc."
 
 #: doc/classes/Control.xml
-#, fuzzy
 msgid ""
 "Virtual method to be implemented by the user. Use this method to process and "
 "accept inputs on UI elements. See [method accept_event].\n"
@@ -20956,29 +21213,28 @@ msgid ""
 "[member rect_clip_content] or [method _clips_input] enabled.\n"
 "[b]Note:[/b] Event position is relative to the control origin."
 msgstr ""
-"Método virtual a ser implementado por el usuario. Utilice este método para "
-"procesar y aceptar entradas en los elementos de la interfaz de usuario. "
-"Véase [method accept_event].\n"
+"Método virtual que debe implementar el usuario. Utilice este método para "
+"procesar y aceptar entradas en los elementos de la interfaz. Véase [method "
+"accept_event].\n"
 "Ejemplo: hacer clic en un control.\n"
 "[codeblock]\n"
 "func _gui_input(event):\n"
 "    if event is InputEventMouseButton:\n"
 "        if event.button_index == BUTTON_LEFT and event.pressed:\n"
-"            print(\"Me han hecho click D:\")\n"
+"            print(\"¡Me han hecho clic! :D\")\n"
 "[/codeblock]\n"
-"El evento no se desencadenará si:\n"
-"* haciendo clic fuera del control (ver [method point]);\n"
-"* el control tiene [member mouse_filter] establecido en [constant "
-"MOUSE_FILTER_IGNORE];\n"
-"* el control está obstruido por otro [Control] encima de él, que no tiene el "
-"[member mouse_filter] puesto a [constant MOUSE_FILTER_IGNORE];\n"
-"* El padre de control tiene el [member mouse_filter] ajustado a [constant "
+"El evento no se activará si:\n"
+"* se hace clic fuera del control (véase [method has_point]);\n"
+"* el control tiene [member mouse_filter] en [constant MOUSE_FILTER_IGNORE];\n"
+"* el control queda tapado por otro [Control] encima que no tiene [member "
+"mouse_filter] en [constant MOUSE_FILTER_IGNORE];\n"
+"* el padre del control tiene [member mouse_filter] en [constant "
 "MOUSE_FILTER_STOP] o ha aceptado el evento;\n"
-"* sucede fuera del rectángulo del padre y el padre tiene o bien [member "
-"rect_clip_content] o [method _clips_input] activado."
+"* ocurre fuera del rectángulo del padre y el padre tiene [member "
+"rect_clip_content] o [method _clips_input] activado.\n"
+"[b]Nota:[/b] La posición del evento es relativa al origen del control."
 
 #: doc/classes/Control.xml
-#, fuzzy
 msgid ""
 "Virtual method to be implemented by the user. Returns a [Control] node that "
 "should be used as a tooltip instead of the default one. The [code]for_text[/"
@@ -21011,31 +21267,36 @@ msgid ""
 "    return tooltip\n"
 "[/codeblock]"
 msgstr ""
-"Método virtual a ser implementado por el usuario. Devuelve un nodo [Control] "
-"que debe ser usado como un tooltip en lugar del predeterminado. Utilice el "
-"parámetro [code]for_text[/code] para determinar qué texto debe contener la "
-"sugerencia (probablemente el contenido de [member hint_tooltip]).\n"
+"Método virtual que debe implementar el usuario. Devuelve un nodo [Control] "
+"que debe usarse como información emergente (tooltip) en lugar del "
+"predeterminado. El parámetro [code]for_text[/code] incluye el contenido de "
+"la propiedad [member hint_tooltip].\n"
 "El nodo devuelto debe ser de tipo [Control] o derivado de Control. Puede "
-"tener nodos hijos de cualquier tipo. Se libera cuando la \"sugerencia\" "
-"desaparece, así que asegúrese de proporcionar siempre una nueva instancia, "
-"no por ejemplo un nodo de la escena. Cuando se devuelve [code]null[/code] o "
-"un nodo no Control, se utilizará en su lugar la sugerencia por defecto.\n"
-"[b]Nota:[/b] La sugerencia se ha reducido a un tamaño mínimo. Si quiere "
-"asegurarse de que sea completamente visible, puede establecer su [member "
-"rect_min_size] a algún valor distinto de cero.\n"
-"Ejemplo de uso con un nodo construido a medida:\n"
+"tener nodos hijos de cualquier tipo. Se libera cuando desaparece el tooltip; "
+"asegúrese de proporcionar siempre una instancia nueva (si desea usar un nodo "
+"ya existente en el árbol de la escena, puede duplicarlo y pasar la instancia "
+"duplicada). Si se devuelve [code]null[/code] o un nodo que no es Control, se "
+"usará el tooltip predeterminado.\n"
+"El nodo devuelto se añadirá como hijo de un [PopupPanel]; solo debe "
+"proporcionar el contenido de ese panel. Ese [PopupPanel] puede tematizarse "
+"con [method Theme.set_stylebox] para el tipo [code]\"TooltipPanel\"[/code] "
+"(véase [member hint_tooltip] para un ejemplo).\n"
+"[b]Nota:[/b] El tooltip se reduce al tamaño mínimo. Si quiere asegurarse de "
+"que sea totalmente visible, puede establecer [member rect_min_size] en un "
+"valor distinto de cero.\n"
+"Ejemplo con un nodo construido en código:\n"
 "[codeblock]\n"
 "func _make_custom_tooltip(for_text):\n"
-"    var etiqueta = Label.new()\n"
-"    etiqueta.text = para_texto\n"
-"    return etiqueta\n"
+"    var label = Label.new()\n"
+"    label.text = for_text\n"
+"    return label\n"
 "[/codeblock]\n"
-"Ejemplo de uso con una instancia de una escena personalizada<\n"
+"Ejemplo con una instancia de escena personalizada:\n"
 "[codeblock]\n"
 "func _make_custom_tooltip(for_text):\n"
-"    var sugerencia = preload(\"algunaEscenaSugerencia.tscn\").instance()\n"
-"    tooltip.get_node(\"etiqueta\").text = para_texto\n"
-"    return sugerencia\n"
+"    var tooltip = preload(\"res://SomeTooltipScene.tscn\").instance()\n"
+"    tooltip.get_node(\"Label\").text = for_text\n"
+"    return tooltip\n"
 "[/codeblock]"
 
 #: doc/classes/Control.xml
@@ -21064,17 +21325,32 @@ msgid ""
 "\"Label\"))\n"
 "[/codeblock]"
 msgstr ""
+"Crea una sobrescritura local para un [Color] del tema con el [code]name[/"
+"code] indicado. Las sobrescrituras locales tienen siempre prioridad al "
+"obtener elementos del tema para el control.\n"
+"Véase también [method get_color], [method remove_color_override].\n"
+"[b]Ejemplo de sobrescritura del color de una etiqueta y su restauración:[/"
+"b]\n"
+"[codeblock]\n"
+"# Dado el nodo hijo Label \"MyLabel\", sobrescribir el color de la fuente "
+"con un valor personalizado.\n"
+"$MyLabel.add_color_override(\"font_color\", Color(1, 0.5, 0))\n"
+"# Restablecer el color de fuente de la etiqueta hija.\n"
+"$MyLabel.add_color_override(\"font_color\", get_color(\"font_color\", "
+"\"Label\"))\n"
+"[/codeblock]"
 
 #: doc/classes/Control.xml
-#, fuzzy
 msgid ""
 "Creates a local override for a theme constant with the specified [code]name[/"
 "code]. Local overrides always take precedence when fetching theme items for "
 "the control.\n"
 "See also [method get_constant], [method remove_constant_override]."
 msgstr ""
-"Devuelve [code]true[/code] si existe el ajuste especificado por [code]name[/"
-"code], [code]false[/code] en caso contrario."
+"Crea una sobrescritura local para una constante del tema con el [code]name[/"
+"code] indicado. Las sobrescrituras locales tienen siempre prioridad al "
+"obtener elementos del tema para el control.\n"
+"Véase también [method get_constant], [method remove_constant_override]."
 
 #: doc/classes/Control.xml
 msgid ""
@@ -21086,6 +21362,13 @@ msgid ""
 "remove_font_override] instead.\n"
 "See also [method get_font]."
 msgstr ""
+"Crea una sobrescritura local para una [Font] del tema con el [code]name[/"
+"code] indicado. Las sobrescrituras locales tienen siempre prioridad al "
+"obtener elementos del tema para el control.\n"
+"[b]Nota:[/b] Puede eliminarse una sobrescritura asignando el valor "
+"[code]null[/code]. Este comportamiento está obsoleto y se eliminará en 4.0; "
+"use [method remove_font_override] en su lugar.\n"
+"Véase también [method get_font]."
 
 #: doc/classes/Control.xml
 msgid ""
@@ -21097,6 +21380,13 @@ msgid ""
 "remove_icon_override] instead.\n"
 "See also [method get_icon]."
 msgstr ""
+"Crea una sobrescritura local para un icono del tema con el [code]name[/code] "
+"indicado. Las sobrescrituras locales tienen siempre prioridad al obtener "
+"elementos del tema para el control.\n"
+"[b]Nota:[/b] Puede eliminarse una sobrescritura asignando el valor "
+"[code]null[/code]. Este comportamiento está obsoleto y se eliminará en 4.0; "
+"use [method remove_icon_override] en su lugar.\n"
+"Véase también [method get_icon]."
 
 #: doc/classes/Control.xml
 msgid ""
@@ -21107,6 +21397,12 @@ msgid ""
 "value. This behavior is deprecated and will be removed in 4.0, use [method "
 "remove_shader_override] instead."
 msgstr ""
+"Crea una sobrescritura local para un shader del tema con el [code]name[/"
+"code] indicado. Las sobrescrituras locales tienen siempre prioridad al "
+"obtener elementos del tema para el control.\n"
+"[b]Nota:[/b] Puede eliminarse una sobrescritura asignando el valor "
+"[code]null[/code]. Este comportamiento está obsoleto y se eliminará en 4.0; "
+"use [method remove_shader_override] en su lugar."
 
 #: doc/classes/Control.xml
 msgid ""
@@ -21131,6 +21427,27 @@ msgid ""
 "$MyButton.add_stylebox_override(\"normal\", null)\n"
 "[/codeblock]"
 msgstr ""
+"Crea una sobrescritura local para un [StyleBox] del tema con el [code]name[/"
+"code] indicado. Las sobrescrituras locales tienen siempre prioridad al "
+"obtener elementos del tema para el control.\n"
+"[b]Nota:[/b] Puede eliminarse una sobrescritura asignando el valor "
+"[code]null[/code]. Este comportamiento está obsoleto y se eliminará en 4.0; "
+"use [method remove_stylebox_override] en su lugar.\n"
+"Véase también [method get_stylebox].\n"
+"[b]Ejemplo de modificación de una propiedad en un StyleBox duplicándolo:[/"
+"b]\n"
+"[codeblock]\n"
+"# El fragmento siguiente asume que el nodo hijo MyButton tiene asignado un "
+"StyleBoxFlat.\n"
+"# Los recursos se comparten entre instancias, así que hay que duplicarlo\n"
+"# para no cambiar la apariencia del resto de botones.\n"
+"var new_stylebox_normal = $MyButton.get_stylebox(\"normal\").duplicate()\n"
+"new_stylebox_normal.border_width_top = 3\n"
+"new_stylebox_normal.border_color = Color(0, 1, 0.5)\n"
+"$MyButton.add_stylebox_override(\"normal\", new_stylebox_normal)\n"
+"# Quitar la sobrescritura del stylebox.\n"
+"$MyButton.add_stylebox_override(\"normal\", null)\n"
+"[/codeblock]"
 
 #: doc/classes/Control.xml
 msgid ""
@@ -21188,13 +21505,15 @@ msgstr ""
 msgid ""
 "Finds the next (below in the tree) [Control] that can receive the focus."
 msgstr ""
+"Busca el siguiente [Control] (más abajo en el árbol) que pueda recibir el "
+"foco."
 
 #: doc/classes/Control.xml
-#, fuzzy
 msgid ""
 "Finds the previous (above in the tree) [Control] that can receive the focus."
 msgstr ""
-"Devuelve el TreeItem anterior del árbol o un objeto nulo si no hay ninguno."
+"Busca el [Control] anterior (más arriba en el árbol) que pueda recibir el "
+"foco."
 
 #: doc/classes/Control.xml
 msgid ""
@@ -21253,6 +21572,27 @@ msgid ""
 "    modulate = get_color(\"font_color\", \"Button\")\n"
 "[/codeblock]"
 msgstr ""
+"Devuelve un [Color] del primer [Theme] coincidente en el árbol si ese "
+"[Theme] tiene un elemento de color con el [code]name[/code] y "
+"[code]theme_type[/code] indicados. Si se omite [code]theme_type[/code], se "
+"usa el nombre de clase del control actual como tipo, o [member "
+"theme_type_variation] si está definido. Si el tipo es un nombre de clase, "
+"también se comprueban las clases padre, en orden de herencia.\n"
+"Para el control actual se consideran primero las sobrescrituras locales "
+"(véase [method add_color_override]), luego su [member theme] asignado. "
+"Después del control actual, se considera cada control padre y su [member "
+"theme] asignado; se omiten los controles sin [member theme]. Si no se "
+"encuentra ningún [Theme] coincidente en el árbol, se usan un [Theme] "
+"personalizado del proyecto (véase [member ProjectSettings.gui/theme/custom]) "
+"y el [Theme] predeterminado.\n"
+"[codeblock]\n"
+"func _ready():\n"
+"    # Obtener el color de fuente definido para la clase del Control actual, "
+"si existe.\n"
+"    modulate = get_color(\"font_color\")\n"
+"    # Obtener el color de fuente definido para la clase Button.\n"
+"    modulate = get_color(\"font_color\", \"Button\")\n"
+"[/codeblock]"
 
 #: doc/classes/Control.xml
 msgid ""
@@ -21269,6 +21609,10 @@ msgid ""
 "[code]theme_type[/code].\n"
 "See [method get_color] for details."
 msgstr ""
+"Devuelve una constante del primer [Theme] coincidente en el árbol si ese "
+"[Theme] tiene un elemento constante con el [code]name[/code] y "
+"[code]theme_type[/code] indicados.\n"
+"Véase [method get_color] para más detalles."
 
 #: doc/classes/Control.xml
 msgid ""
@@ -21329,7 +21673,7 @@ msgstr ""
 
 #: doc/classes/Control.xml
 msgid "Returns the control that has focus or [code]null[/code] if none."
-msgstr ""
+msgstr "Devuelve el control que tiene el foco o [code]null[/code] si ninguno."
 
 #: doc/classes/Control.xml
 msgid ""
@@ -21338,6 +21682,10 @@ msgid ""
 "code].\n"
 "See [method get_color] for details."
 msgstr ""
+"Devuelve una [Font] del primer [Theme] coincidente en el árbol si ese "
+"[Theme] tiene un elemento de fuente con el [code]name[/code] y "
+"[code]theme_type[/code] indicados.\n"
+"Véase [method get_color] para más detalles."
 
 #: doc/classes/Control.xml
 msgid ""
@@ -21355,6 +21703,10 @@ msgid ""
 "code].\n"
 "See [method get_color] for details."
 msgstr ""
+"Devuelve un icono del primer [Theme] coincidente en el árbol si ese [Theme] "
+"tiene un elemento de icono con el [code]name[/code] y [code]theme_type[/"
+"code] indicados.\n"
+"Véase [method get_color] para más detalles."
 
 #: doc/classes/Control.xml
 msgid ""
@@ -21399,6 +21751,10 @@ msgid ""
 "[code]theme_type[/code].\n"
 "See [method get_color] for details."
 msgstr ""
+"Devuelve un [StyleBox] del primer [Theme] coincidente en el árbol si ese "
+"[Theme] tiene un elemento stylebox con el [code]name[/code] y "
+"[code]theme_type[/code] indicados.\n"
+"Véase [method get_color] para más detalles."
 
 #: doc/classes/Control.xml
 msgid ""
@@ -21406,6 +21762,9 @@ msgid ""
 "[Theme] has a valid [member Theme.default_font] value.\n"
 "See [method get_color] for details."
 msgstr ""
+"Devuelve la fuente predeterminada del primer [Theme] coincidente en el árbol "
+"si ese [Theme] tiene un valor válido en [member Theme.default_font].\n"
+"Véase [method get_color] para más detalles."
 
 #: doc/classes/Control.xml
 msgid ""
@@ -21440,48 +21799,55 @@ msgid ""
 "[b]Note[/b]: Using this method together with [method Object.call_deferred] "
 "makes it more reliable, especially when called inside [method Node._ready]."
 msgstr ""
+"Arrebata el foco a otro control y convierte este en el control enfocado "
+"(véase [member focus_mode]).\n"
+"[b]Nota[/b]: Usar este método junto con [method Object.call_deferred] es más "
+"fiable, especialmente si se llama dentro de [method Node._ready]."
 
 #: doc/classes/Control.xml
-#, fuzzy
 msgid ""
 "Returns [code]true[/code] if there is a matching [Theme] in the tree that "
 "has a color item with the specified [code]name[/code] and [code]theme_type[/"
 "code].\n"
 "See [method get_color] for details."
 msgstr ""
-"Devuelve [code]true[/code] si se pueden incluir objetos de la clase "
-"[code]class[/code] especificada, [code]false[/code] en otro caso."
+"Devuelve [code]true[/code] si hay un [Theme] coincidente en el árbol que "
+"tiene un elemento de color con el [code]name[/code] y [code]theme_type[/"
+"code] indicados.\n"
+"Véase [method get_color] para más detalles."
 
 #: doc/classes/Control.xml
-#, fuzzy
 msgid ""
 "Returns [code]true[/code] if there is a local override for a theme [Color] "
 "with the specified [code]name[/code] in this [Control] node.\n"
 "See [method add_color_override]."
 msgstr ""
-"Devuelve [code]true[/code] si [Color] con el [code]name[/code] dado tiene "
-"una sobreescritura válida en este nodo [Control]."
+"Devuelve [code]true[/code] si existe una sobrescritura local para un [Color] "
+"del tema con el [code]name[/code] indicado en este nodo [Control].\n"
+"Véase [method add_color_override]."
 
 #: doc/classes/Control.xml
-#, fuzzy
 msgid ""
 "Returns [code]true[/code] if there is a matching [Theme] in the tree that "
 "has a constant item with the specified [code]name[/code] and "
 "[code]theme_type[/code].\n"
 "See [method get_color] for details."
 msgstr ""
-"Devuelve [code]true[/code] si se pueden incluir objetos de la clase "
-"[code]class[/code] especificada, [code]false[/code] en otro caso."
+"Devuelve [code]true[/code] si hay un [Theme] coincidente en el árbol que "
+"tiene un elemento constante con el [code]name[/code] y [code]theme_type[/"
+"code] indicados.\n"
+"Véase [method get_color] para más detalles."
 
 #: doc/classes/Control.xml
-#, fuzzy
 msgid ""
 "Returns [code]true[/code] if there is a local override for a theme constant "
 "with the specified [code]name[/code] in this [Control] node.\n"
 "See [method add_constant_override]."
 msgstr ""
-"Devuelve [code]true[/code] si existe el ajuste especificado por [code]name[/"
-"code], [code]false[/code] en caso contrario."
+"Devuelve [code]true[/code] si existe una sobrescritura local para una "
+"constante del tema con el [code]name[/code] indicado en este nodo "
+"[Control].\n"
+"Véase [method add_constant_override]."
 
 #: doc/classes/Control.xml
 msgid ""
@@ -21492,46 +21858,48 @@ msgstr ""
 "[member focus_mode]."
 
 #: doc/classes/Control.xml
-#, fuzzy
 msgid ""
 "Returns [code]true[/code] if there is a matching [Theme] in the tree that "
 "has a font item with the specified [code]name[/code] and [code]theme_type[/"
 "code].\n"
 "See [method get_color] for details."
 msgstr ""
-"Devuelve [code]true[/code] si se pueden incluir objetos de la clase "
-"[code]class[/code] especificada, [code]false[/code] en otro caso."
+"Devuelve [code]true[/code] si hay un [Theme] coincidente en el árbol que "
+"tiene un elemento de fuente con el [code]name[/code] y [code]theme_type[/"
+"code] indicados.\n"
+"Véase [method get_color] para más detalles."
 
 #: doc/classes/Control.xml
-#, fuzzy
 msgid ""
 "Returns [code]true[/code] if there is a local override for a theme [Font] "
 "with the specified [code]name[/code] in this [Control] node.\n"
 "See [method add_font_override]."
 msgstr ""
-"Devuelve [code]true[/code] si existe el ajuste especificado por [code]name[/"
-"code], [code]false[/code] en caso contrario."
+"Devuelve [code]true[/code] si existe una sobrescritura local para una [Font] "
+"del tema con el [code]name[/code] indicado en este nodo [Control].\n"
+"Véase [method add_font_override]."
 
 #: doc/classes/Control.xml
-#, fuzzy
 msgid ""
 "Returns [code]true[/code] if there is a matching [Theme] in the tree that "
 "has an icon item with the specified [code]name[/code] and [code]theme_type[/"
 "code].\n"
 "See [method get_color] for details."
 msgstr ""
-"Devuelve [code]true[/code] si se pueden incluir objetos de la clase "
-"[code]class[/code] especificada, [code]false[/code] en otro caso."
+"Devuelve [code]true[/code] si hay un [Theme] coincidente en el árbol que "
+"tiene un elemento de icono con el [code]name[/code] y [code]theme_type[/"
+"code] indicados.\n"
+"Véase [method get_color] para más detalles."
 
 #: doc/classes/Control.xml
-#, fuzzy
 msgid ""
 "Returns [code]true[/code] if there is a local override for a theme icon with "
 "the specified [code]name[/code] in this [Control] node.\n"
 "See [method add_icon_override]."
 msgstr ""
-"Devuelve [code]true[/code] si existe el ajuste especificado por [code]name[/"
-"code], [code]false[/code] en caso contrario."
+"Devuelve [code]true[/code] si existe una sobrescritura local para un icono "
+"del tema con el [code]name[/code] indicado en este nodo [Control].\n"
+"Véase [method add_icon_override]."
 
 #: doc/classes/Control.xml
 msgid ""
@@ -21550,35 +21918,37 @@ msgstr ""
 "puedes usar [code]get_rect().has_point(point)[/code]."
 
 #: doc/classes/Control.xml
-#, fuzzy
 msgid ""
 "Returns [code]true[/code] if there is a local override for a theme shader "
 "with the specified [code]name[/code] in this [Control] node.\n"
 "See [method add_shader_override]."
 msgstr ""
-"Devuelve [code]true[/code] si existe el ajuste especificado por [code]name[/"
-"code], [code]false[/code] en caso contrario."
+"Devuelve [code]true[/code] si existe una sobrescritura local para un shader "
+"del tema con el [code]name[/code] indicado en este nodo [Control].\n"
+"Véase [method add_shader_override]."
 
 #: doc/classes/Control.xml
-#, fuzzy
 msgid ""
 "Returns [code]true[/code] if there is a matching [Theme] in the tree that "
 "has a stylebox item with the specified [code]name[/code] and "
 "[code]theme_type[/code].\n"
 "See [method get_color] for details."
 msgstr ""
-"Devuelve [code]true[/code] si se pueden incluir objetos de la clase "
-"[code]class[/code] especificada, [code]false[/code] en otro caso."
+"Devuelve [code]true[/code] si hay un [Theme] coincidente en el árbol que "
+"tiene un elemento stylebox con el [code]name[/code] y [code]theme_type[/"
+"code] indicados.\n"
+"Véase [method get_color] para más detalles."
 
 #: doc/classes/Control.xml
-#, fuzzy
 msgid ""
 "Returns [code]true[/code] if there is a local override for a theme "
 "[StyleBox] with the specified [code]name[/code] in this [Control] node.\n"
 "See [method add_stylebox_override]."
 msgstr ""
-"Devuelve [code]true[/code] si el [StyleBox] con el nombre [code]name[/code] "
-"dado tiene una sobreescritura válida en este nodo [Control]."
+"Devuelve [code]true[/code] si existe una sobrescritura local para un "
+"[StyleBox] del tema con el [code]name[/code] indicado en este nodo "
+"[Control].\n"
+"Véase [method add_stylebox_override]."
 
 #: doc/classes/Control.xml
 msgid ""
@@ -21586,6 +21956,9 @@ msgid ""
 "[method Viewport.gui_is_drag_successful].\n"
 "Best used with [constant Node.NOTIFICATION_DRAG_END]."
 msgstr ""
+"Devuelve [code]true[/code] si una operación de arrastre tiene éxito. "
+"Alternativa a [method Viewport.gui_is_drag_successful].\n"
+"Úselo preferentemente con [constant Node.NOTIFICATION_DRAG_END]."
 
 #: doc/classes/Control.xml
 msgid ""
@@ -21605,39 +21978,47 @@ msgid ""
 "Give up the focus. No other control will be able to receive keyboard or "
 "gamepad input."
 msgstr ""
+"Renuncia al foco. Ningún otro control podrá recibir entrada de teclado o "
+"mando."
 
 #: doc/classes/Control.xml
-#, fuzzy
 msgid ""
 "Removes a theme override for a [Color] with the given [code]name[/code]."
-msgstr "Elimina la animación con la clave [code]name[/code]."
+msgstr ""
+"Elimina una sobrescritura de tema para un [Color] con el [code]name[/code] "
+"dado."
 
 #: doc/classes/Control.xml
-#, fuzzy
 msgid ""
 "Removes a theme override for a constant with the given [code]name[/code]."
-msgstr "Elimina la animación con la clave [code]name[/code]."
+msgstr ""
+"Elimina una sobrescritura de tema para una constante con el [code]name[/"
+"code] dado."
 
 #: doc/classes/Control.xml
-#, fuzzy
 msgid "Removes a theme override for a [Font] with the given [code]name[/code]."
-msgstr "Elimina la animación con la clave [code]name[/code]."
+msgstr ""
+"Elimina una sobrescritura de tema para una [Font] con el [code]name[/code] "
+"dado."
 
 #: doc/classes/Control.xml
-#, fuzzy
 msgid "Removes a theme override for an icon with the given [code]name[/code]."
-msgstr "Elimina la animación con la clave [code]name[/code]."
+msgstr ""
+"Elimina una sobrescritura de tema para un icono con el [code]name[/code] "
+"dado."
 
 #: doc/classes/Control.xml
-#, fuzzy
 msgid "Removes a theme override for a shader with the given [code]name[/code]."
-msgstr "Devuelve el índice del artículo con el [code]id[/code] dado."
+msgstr ""
+"Elimina una sobrescritura de tema para un shader con el [code]name[/code] "
+"dado."
 
 #: doc/classes/Control.xml
-#, fuzzy
 msgid ""
 "Removes a theme override for a [StyleBox] with the given [code]name[/code]."
-msgstr "Devuelve el índice del artículo con el [code]id[/code] dado."
+msgstr ""
+"Elimina una sobrescritura de tema para un [StyleBox] con el [code]name[/"
+"code] dado."
 
 #: doc/classes/Control.xml
 msgid ""
@@ -21687,7 +22068,6 @@ msgstr ""
 "Ver [method set_anchors_preset] y [method set_margins_preset]."
 
 #: doc/classes/Control.xml
-#, fuzzy
 msgid ""
 "Sets the anchors to a [code]preset[/code] from [enum Control.LayoutPreset] "
 "enum. This is the code equivalent to using the Layout menu in the 2D "
@@ -21695,9 +22075,8 @@ msgid ""
 "If [code]keep_margins[/code] is [code]true[/code], control's position will "
 "also be updated."
 msgstr ""
-"Establece los anclajes a un [code]preestablecido[/code] del enum [enum "
-"Control.LayoutPreset]. Este es el código equivalente a usar el menú de "
-"diseño en el editor 2D.\n"
+"Establece los anclajes según un [code]preset[/code] del enum [enum Control."
+"LayoutPreset]. Equivale en código a usar el menú Diseño en el editor 2D.\n"
 "Si [code]keep_margins[/code] es [code]true[/code], la posición del control "
 "también se actualizará."
 
@@ -21766,7 +22145,6 @@ msgstr ""
 "[/codeblock]"
 
 #: doc/classes/Control.xml
-#, fuzzy
 msgid ""
 "Shows the given control at the mouse pointer. A good time to call this "
 "method is in [method get_drag_data]. The control must not be in the scene "
@@ -21785,14 +22163,16 @@ msgid ""
 "    return color\n"
 "[/codeblock]"
 msgstr ""
-"Muestra el control dado en el puntero del ratón. Un buen momento para llamar "
-"a este método es en [method get_drag_data]. El control no debe estar en el "
-"árbol de la escena.\n"
+"Muestra el control indicado en el puntero del ratón. Un buen momento para "
+"llamar a este método es en [method get_drag_data]. El control no debe estar "
+"en el árbol de la escena. No debe liberar el control ni conservar una "
+"referencia más allá de la duración del arrastre. Se eliminará "
+"automáticamente al terminar.\n"
 "[codeblock]\n"
 "export (Color, RGBA) var color = Color(1, 0, 0, 1)\n"
 "\n"
 "func get_drag_data(position):\n"
-"    # Usa un control que no esta en el arbol\n"
+"    # Usar un control que no esté en el árbol\n"
 "    var cpb = ColorPickerButton.new()\n"
 "    cpb.color = color\n"
 "    cpb.rect_size = Vector2(50, 50)\n"
@@ -21841,7 +22221,6 @@ msgstr ""
 "margin_right] y [member margin_top]."
 
 #: doc/classes/Control.xml
-#, fuzzy
 msgid ""
 "Sets the margins to a [code]preset[/code] from [enum Control.LayoutPreset] "
 "enum. This is the code equivalent to using the Layout menu in the 2D "
@@ -21853,14 +22232,13 @@ msgid ""
 "Use parameter [code]margin[/code] to determine the gap between the [Control] "
 "and the edges."
 msgstr ""
-"Establece los márgenes a un [code]preset[/code] del enum [enum Control."
-"LayoutPreset]. Esto es un código equivalente a usar el menú de diseño en el "
-"editor 2D.\n"
-"Utilice el parámetro [code]resize_mode[/code] con las constantes de [enum "
-"Control.LayoutPresetMode] para determinar mejor el tamaño resultante del "
-"[Control]. El tamaño constante será ignorado si se usa con preajustes que "
-"cambian de tamaño, por ejemplo, [code]PRESET_LEFT_WIDE[/code].\n"
-"Utilice el parámetro [code]margin[/code] para determinar el espacio entre el "
+"Establece los márgenes según un [code]preset[/code] del enum [enum Control."
+"LayoutPreset]. Equivale en código a usar el menú Diseño en el editor 2D.\n"
+"Use el parámetro [code]resize_mode[/code] con constantes de [enum Control."
+"LayoutPresetMode] para determinar mejor el tamaño resultante del [Control]. "
+"El tamaño constante se ignorará si se usa con preajustes que cambian el "
+"tamaño, p. ej. [code]PRESET_LEFT_WIDE[/code].\n"
+"Use el parámetro [code]margin[/code] para fijar el espacio entre el "
 "[Control] y los bordes."
 
 #: doc/classes/Control.xml
@@ -21897,6 +22275,13 @@ msgid ""
 "If [code]exclusive[/code] is [code]true[/code], other controls will not "
 "receive input and clicking outside this control will not close it."
 msgstr ""
+"Muestra un control como modal. El control debe ser una subventana. Los "
+"controles modales capturan las señales de entrada hasta que se cierran o se "
+"accede al área exterior. Cuando un control modal pierde el foco o se pulsa "
+"la tecla Escape, se ocultan automáticamente. Los controles modales se usan "
+"mucho para diálogos emergentes y menús.\n"
+"Si [code]exclusive[/code] es [code]true[/code], los demás controles no "
+"recibirán entrada y hacer clic fuera de este control no lo cerrará."
 
 #: doc/classes/Control.xml
 msgid ""
@@ -21943,16 +22328,15 @@ msgstr ""
 "constantes [enum Anchor] por conveniencia."
 
 #: doc/classes/Control.xml
-#, fuzzy
 msgid ""
 "Anchors the top edge of the node to the origin, the center or the end of its "
 "parent control. It changes how the top margin updates when the node moves or "
 "changes size. You can use one of the [enum Anchor] constants for convenience."
 msgstr ""
-"Ancla el borde superior del nodo al origen, el centro o el final de su "
-"control parental. Cambia la forma en que el margen superior se actualiza "
-"cuando el nodo se mueve o cambia de tamaño. Puedes usar una de las "
-"constantes [enum Anchor] por conveniencia."
+"Ancla el borde superior del nodo al origen, al centro o al final de su "
+"control padre. Cambia cómo se actualiza el margen superior cuando el nodo se "
+"mueve o cambia de tamaño. Puede usar una de las constantes [enum Anchor] por "
+"comodidad."
 
 #: doc/classes/Control.xml
 msgid ""
@@ -21960,6 +22344,8 @@ msgid ""
 "can be focused at the same time, and it will receive keyboard, gamepad, and "
 "mouse signals."
 msgstr ""
+"Modo de acceso al foco del control (ninguno, clic o todos). Solo un Control "
+"puede tener el foco a la vez, y recibirá señales de teclado, mando y ratón."
 
 #: doc/classes/Control.xml
 msgid ""
@@ -21969,6 +22355,11 @@ msgid ""
 "[Control]. If this property is not set, Godot will give focus to the closest "
 "[Control] to the bottom of this one."
 msgstr ""
+"Indica a Godot qué nodo debe recibir el foco si el usuario pulsa la flecha "
+"abajo del teclado o abajo en el mando por defecto. Puede cambiar la tecla "
+"editando la acción de entrada [code]ui_down[/code]. El nodo debe ser un "
+"[Control]. Si esta propiedad no está definida, Godot dará el foco al "
+"[Control] más cercano por debajo de este."
 
 #: doc/classes/Control.xml
 msgid ""
@@ -21978,6 +22369,11 @@ msgid ""
 "[Control]. If this property is not set, Godot will give focus to the closest "
 "[Control] to the left of this one."
 msgstr ""
+"Indica a Godot qué nodo debe recibir el foco si el usuario pulsa la flecha "
+"izquierda del teclado o izquierda en el mando por defecto. Puede cambiar la "
+"tecla editando la acción de entrada [code]ui_left[/code]. El nodo debe ser "
+"un [Control]. Si esta propiedad no está definida, Godot dará el foco al "
+"[Control] más cercano a la izquierda de este."
 
 #: doc/classes/Control.xml
 msgid ""
@@ -21987,6 +22383,11 @@ msgid ""
 "[Control]. If this property is not set, Godot will give focus to the closest "
 "[Control] to the bottom of this one."
 msgstr ""
+"Indica a Godot qué nodo debe recibir el foco si el usuario pulsa la flecha "
+"derecha del teclado o derecha en el mando por defecto. Puede cambiar la "
+"tecla editando la acción de entrada [code]ui_right[/code]. El nodo debe ser "
+"un [Control]. Si esta propiedad no está definida, Godot dará el foco al "
+"[Control] más cercano a la derecha de este."
 
 #: doc/classes/Control.xml
 msgid ""
@@ -21996,6 +22397,11 @@ msgid ""
 "[Control]. If this property is not set, Godot will give focus to the closest "
 "[Control] to the bottom of this one."
 msgstr ""
+"Indica a Godot qué nodo debe recibir el foco si el usuario pulsa la flecha "
+"arriba del teclado o arriba en el mando por defecto. Puede cambiar la tecla "
+"editando la acción de entrada [code]ui_top[/code]. El nodo debe ser un "
+"[Control]. Si esta propiedad no está definida, Godot dará el foco al "
+"[Control] más cercano por encima de este."
 
 #: doc/classes/Control.xml
 msgid ""
@@ -22005,6 +22411,11 @@ msgid ""
 "If this property is not set, Godot will select a \"best guess\" based on "
 "surrounding nodes in the scene tree."
 msgstr ""
+"Indica a Godot qué nodo debe recibir el foco si el usuario pulsa [kbd]Tab[/"
+"kbd] en el teclado por defecto. Puede cambiar la tecla editando la acción de "
+"entrada [code]ui_focus_next[/code].\n"
+"Si esta propiedad no está definida, Godot elegirá un candidato razonable "
+"según los nodos cercanos en el árbol de la escena."
 
 #: doc/classes/Control.xml
 msgid ""
@@ -22014,6 +22425,11 @@ msgid ""
 "If this property is not set, Godot will select a \"best guess\" based on "
 "surrounding nodes in the scene tree."
 msgstr ""
+"Indica a Godot qué nodo debe recibir el foco si el usuario pulsa [kbd]Mayús "
+"+ Tab[/kbd] en el teclado por defecto. Puede cambiar la tecla editando la "
+"acción de entrada [code]ui_focus_prev[/code].\n"
+"Si esta propiedad no está definida, Godot elegirá un candidato razonable "
+"según los nodos cercanos en el árbol de la escena."
 
 #: doc/classes/Control.xml
 msgid ""
@@ -22057,6 +22473,26 @@ msgid ""
 "theme.set_color(\"font_color\", \"TooltipLabel\", Color(0, 1, 1))\n"
 "[/codeblock]"
 msgstr ""
+"Cambia el texto del tooltip. El tooltip aparece cuando el cursor del ratón "
+"permanece inactivo sobre este control unos instantes, siempre que la "
+"propiedad [member mouse_filter] no sea [constant MOUSE_FILTER_IGNORE]. Puede "
+"cambiar el tiempo de aparición con la opción [code]gui/timers/"
+"tooltip_delay_sec[/code] en Ajustes del proyecto.\n"
+"El popup del tooltip usará la implementación predeterminada o una "
+"personalizada que puede proporcionar sobrescribiendo [method "
+"_make_custom_tooltip]. El tooltip predeterminado incluye un [PopupPanel] y "
+"un [Label] cuyas propiedades de tema pueden personalizarse con métodos de "
+"[Theme] usando [code]\"TooltipPanel\"[/code] y [code]\"TooltipLabel\"[/code] "
+"respectivamente. Por ejemplo:\n"
+"[codeblock]\n"
+"var style_box = StyleBoxFlat.new()\n"
+"style_box.set_bg_color(Color(1, 1, 0))\n"
+"style_box.set_border_width_all(2)\n"
+"# Aquí damos por hecho que la propiedad `theme` ya tiene asignado un Theme "
+"personalizado.\n"
+"theme.set_stylebox(\"panel\", \"TooltipPanel\", style_box)\n"
+"theme.set_color(\"font_color\", \"TooltipLabel\", Color(0, 1, 1))\n"
+"[/codeblock]"
 
 #: doc/classes/Control.xml
 msgid ""
@@ -22065,6 +22501,10 @@ msgid ""
 "handling. The viewport first hides the modal and after marks the input as "
 "handled."
 msgstr ""
+"Activa si la entrada debe propagarse al cerrar el control como modal.\n"
+"Si es [code]false[/code], detiene el manejo de eventos en el procesamiento "
+"de entrada del viewport. El viewport primero oculta el modal y después marca "
+"la entrada como gestionada."
 
 #: doc/classes/Control.xml
 msgid ""
@@ -22185,17 +22625,16 @@ msgstr ""
 "una textura o un nodo hijo."
 
 #: doc/classes/Control.xml
-#, fuzzy
 msgid ""
 "By default, the node's pivot is its top-left corner. When you change its "
 "[member rect_rotation] or [member rect_scale], it will rotate or scale "
 "around this pivot. Set this property to [member rect_size] / 2 to pivot "
 "around the Control's center."
 msgstr ""
-"Por defecto, el pivote del nodo es su esquina superior izquierda. Cuando "
-"cambias su [member rect_scale], se escalará alrededor de este pivote. "
-"Establezca esta propiedad en [member rect_size] / 2 para centrar el pivote "
-"en el rectángulo del nodo."
+"Por defecto, el pivote del nodo es su esquina superior izquierda. Al cambiar "
+"[member rect_rotation] o [member rect_scale], rotará o escalará respecto a "
+"este pivote. Establezca esta propiedad en [member rect_size] / 2 para "
+"pivotar alrededor del centro del Control."
 
 #: doc/classes/Control.xml
 msgid ""
@@ -22216,7 +22655,6 @@ msgstr ""
 "rect_pivot_offset] para cambiar la posición del pivote."
 
 #: doc/classes/Control.xml
-#, fuzzy
 msgid ""
 "The node's scale, relative to its [member rect_size]. Change this property "
 "to scale the node around its [member rect_pivot_offset]. The Control's "
@@ -22235,19 +22673,18 @@ msgid ""
 msgstr ""
 "La escala del nodo, relativa a su [member rect_size]. Cambie esta propiedad "
 "para escalar el nodo alrededor de su [member rect_pivot_offset]. La [member "
-"hint_tooltip] del Control también escalará de acuerdo con este valor.\n"
-"[b]Nota:[/b] Esta propiedad está pensada principalmente para ser usada con "
-"fines de animación. El texto dentro del Control se verá pixelado o borroso "
-"cuando el Control esté escalado. Para soportar múltiples resoluciones en su "
-"proyecto, utilice un modo apropiado de estiramiento de la vista como se "
-"describe en la documentación [url=https://docs.godotengine.org/es/latest/"
-"tutorials/viewports/multiple_resolutions.html]documentation[/url] en lugar "
-"de escalar los Controles individualmente.\n"
-"[b]Nota:[/b] Si el nodo de Control es hijo de un nodo [Container], la escala "
-"se reajustará a [code]Vector2(1, 1)[/code] cuando la escena se instale. Para "
-"establecer la escala del Control cuando está instanciado, espera un cuadro "
-"usando [code]yield(get_tree(), \"idle_frame\")[/code] y luego establece su "
-"propiedad [member rect_scale]."
+"hint_tooltip] del Control también escalará según este valor.\n"
+"[b]Nota:[/b] Esta propiedad está pensada principalmente para animación. El "
+"texto dentro del Control se verá pixelado o borroso al escalar. Para admitir "
+"varias resoluciones en el proyecto, use un modo de estiramiento del viewport "
+"adecuado como se describe en la [url=$DOCS_URL/tutorials/rendering/"
+"multiple_resolutions.html]documentación[/url] en lugar de escalar controles "
+"de uno en uno.\n"
+"[b]Nota:[/b] Si el nodo Control es hijo de un [Container], la escala se "
+"restablecerá a [code]Vector2(1, 1)[/code] al instanciar la escena. Para "
+"fijar la escala del Control al instanciar, espere un fotograma con "
+"[code]yield(get_tree(), \"idle_frame\")[/code] y luego establezca [member "
+"rect_scale]."
 
 #: doc/classes/Control.xml
 msgid ""
@@ -22317,14 +22754,30 @@ msgid ""
 "The earliest match against any type/class name is returned. The project-"
 "level Theme and the default Theme are checked last."
 msgstr ""
+"Nombre de una variación de tipo de tema que usa este [Control] para buscar "
+"sus propios elementos de tema. Si está vacío, se usa el nombre de clase del "
+"nodo (p. ej. [code]Button[/code] para el control [Button]), así como los "
+"nombres de todas las clases padre (en orden de herencia).\n"
+"Si se define, esta propiedad da la máxima prioridad al tipo con ese nombre. "
+"Ese tipo puede a su vez extender otro, formando una cadena de dependencias. "
+"Véase [method Theme.set_type_variation]. Si no se encuentra el elemento de "
+"tema con este tipo o sus tipos base, la búsqueda recae en los nombres de "
+"clase.\n"
+"[b]Nota:[/b] Para buscar los elementos propios de [Control], use los métodos "
+"[code]get_*[/code] sin indicar [code]theme_type[/code].\n"
+"[b]Nota:[/b] Los elementos de tema se buscan en orden en el árbol, de la "
+"rama a la raíz, comprobando en cada nodo [Control] su propiedad [member "
+"theme]. Se devuelve la primera coincidencia con cualquier nombre de tipo o "
+"de clase. El Theme a nivel de proyecto y el Theme predeterminado se "
+"comprueban al final."
 
 #: doc/classes/Control.xml
 msgid "Emitted when the node gains focus."
-msgstr ""
+msgstr "Se emite cuando el nodo obtiene el foco."
 
 #: doc/classes/Control.xml
 msgid "Emitted when the node loses focus."
-msgstr ""
+msgstr "Se emite cuando el nodo pierde el foco."
 
 #: doc/classes/Control.xml
 msgid "Emitted when the node receives an [InputEvent]."
@@ -22335,10 +22788,9 @@ msgid "Emitted when the node's minimum size changes."
 msgstr "Emitido cuando el tamaño mínimo del nodo cambia."
 
 #: doc/classes/Control.xml
-#, fuzzy
 msgid "Emitted when a modal [Control] is closed. See [method show_modal]."
 msgstr ""
-"Se emite cuando se presiona un botón personalizado. Ver [method add_button]."
+"Se emite cuando se cierra un [Control] modal. Véase [method show_modal]."
 
 #: doc/classes/Control.xml
 msgid ""
@@ -22349,6 +22801,12 @@ msgid ""
 "at least until the mouse is moved to reach the parent's [code]Rect[/code] "
 "area."
 msgstr ""
+"Se emite cuando el ratón entra en el área [code]Rect[/code] del control, si "
+"[member mouse_filter] permite que el evento le llegue.\n"
+"[b]Nota:[/b] [signal mouse_entered] no se emitirá si el ratón entra primero "
+"en un nodo [Control] hijo antes de entrar en el área [code]Rect[/code] del "
+"padre, al menos hasta que el ratón se mueva hasta el área [code]Rect[/code] "
+"del padre."
 
 #: doc/classes/Control.xml
 msgid ""
@@ -22366,6 +22824,19 @@ msgid ""
 "        # Not hovering over area.\n"
 "[/codeblock]"
 msgstr ""
+"Se emite cuando el ratón sale del área [code]Rect[/code] del control, si "
+"[member mouse_filter] permite que el evento le llegue.\n"
+"[b]Nota:[/b] [signal mouse_exited] se emitirá si el ratón entra en un nodo "
+"[Control] hijo, aunque el cursor siga dentro del área [code]Rect[/code] del "
+"padre.\n"
+"Si quiere comprobar si el ratón ha salido realmente del área, ignorando "
+"nodos superpuestos, puede usar código como este:\n"
+"[codeblock]\n"
+"func _on_mouse_exited():\n"
+"    if not Rect2(Vector2(), rect_size)."
+"has_point(get_local_mouse_position()):\n"
+"        # Ya no está sobre el área.\n"
+"[/codeblock]"
 
 #: doc/classes/Control.xml
 msgid "Emitted when the control changes size."
@@ -22396,6 +22867,9 @@ msgid ""
 "the keyboard, or using the D-pad buttons on a gamepad. Use with [member "
 "focus_mode]."
 msgstr ""
+"El nodo puede obtener el foco con clic del ratón, con las flechas y la tecla "
+"Tab del teclado, o con los botones de la cruceta del mando. Usar con [member "
+"focus_mode]."
 
 #: doc/classes/Control.xml
 msgid ""
@@ -22421,19 +22895,20 @@ msgid "Sent when the node loses focus."
 msgstr "Enviado cuando el nodo pierde el enfoque."
 
 #: doc/classes/Control.xml
-#, fuzzy
 msgid ""
 "Sent when the node's [member theme] changes, right before Godot redraws the "
 "control. Happens when you call one of the [code]add_*_override[/code] "
 "methods."
 msgstr ""
-"Enviado cuando el nodo [member theme] cambia, justo antes de que Godot "
-"redibuje el control. Ocurre cuando llamas a uno de los métodos "
-"[code]add_theme_*_override[/code]."
+"Se envía cuando cambia el [member theme] del nodo, justo antes de que Godot "
+"vuelva a dibujar el control. Ocurre al llamar a uno de los métodos "
+"[code]add_*_override[/code]."
 
 #: doc/classes/Control.xml
 msgid "Sent when an open modal dialog closes. See [method show_modal]."
 msgstr ""
+"Se envía cuando se cierra un cuadro de diálogo modal abierto. Véase [method "
+"show_modal]."
 
 #: doc/classes/Control.xml
 msgid ""
@@ -22483,22 +22958,20 @@ msgstr ""
 "encima del nodo."
 
 #: doc/classes/Control.xml
-#, fuzzy
 msgid ""
 "Show the system's wait mouse cursor when the user hovers the node. Often an "
 "hourglass."
 msgstr ""
-"Muestra el cursor del ratón ocupado del sistema cuando el usuario pasa por "
-"encima del nodo. A menudo un reloj de arena."
+"Muestra el cursor de espera del sistema cuando el usuario pasa el ratón por "
+"el nodo. Suele ser un reloj de arena."
 
 #: doc/classes/Control.xml
-#, fuzzy
 msgid ""
 "Show the system's busy mouse cursor when the user hovers the node. Often an "
 "arrow with a small hourglass."
 msgstr ""
-"Muestra el cursor del ratón ocupado del sistema cuando el usuario pasa por "
-"encima del nodo. A menudo un reloj de arena."
+"Muestra el cursor de ocupado del sistema cuando el usuario pasa el ratón por "
+"el nodo. Suele ser una flecha con un pequeño reloj de arena."
 
 #: doc/classes/Control.xml
 msgid ""

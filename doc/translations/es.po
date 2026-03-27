@@ -46,7 +46,7 @@ msgstr ""
 "Project-Id-Version: Godot Engine class reference\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2026-03-26 18:48-0300\n"
+"PO-Revision-Date: 2026-03-26 22:37-0300\n"
 "Last-Translator: Juan Matías Olmos <elterraplanista@yahoo.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-class-reference/es/>\n"
@@ -5625,7 +5625,7 @@ msgstr ""
 
 #: doc/classes/AnimatedSprite3D.xml
 msgid "2D Sprite animation (also applies to 3D)"
-msgstr ""
+msgstr "Animación de sprite 2D (también aplica en 3D)"
 
 #: doc/classes/AnimatedSprite3D.xml
 msgid "Returns [code]true[/code] if an animation is currently being played."
@@ -7348,9 +7348,9 @@ msgstr ""
 "Devuelve el estado de la animacion que se esta reproduciendo actualmente."
 
 #: doc/classes/AnimationNodeStateMachinePlayback.xml
-#, fuzzy
 msgid "Returns the playback position within the current animation state."
-msgstr "Devuelve la posición local del punto de contacto."
+msgstr ""
+"Devuelve la posición de reproducción dentro del estado de animación actual."
 
 #: doc/classes/AnimationNodeStateMachinePlayback.xml
 msgid ""
@@ -10087,7 +10087,6 @@ msgid "An anchor point in AR space."
 msgstr "Un punto de anclaje en el espacio AR."
 
 #: doc/classes/ARVRAnchor.xml
-#, fuzzy
 msgid ""
 "The [ARVRAnchor] point is a spatial node that maps a real world location "
 "identified by the AR platform to a position within the game world. For "
@@ -10103,20 +10102,19 @@ msgid ""
 "more about the real world out there especially if only part of the surface "
 "is in view."
 msgstr ""
-"El punto [ARVRAnchor] es un nodo espacial que mapea una ubicación en el "
-"mundo real identificada por la plataforma AR a una posición dentro del mundo "
-"del juego. Por ejemplo, mientras la detección de aviones en ARKit esté "
-"activada, ARKit identificará y actualizará la posición de los aviones "
-"(mesas, pisos, etc.) y creará anclajes para ellos.\n"
-"Este nodo se asigna a una de las anclas a través de su identificación única. "
-"Cuando reciba la señal de que un nuevo ancla está disponible, deberá añadir "
-"este nodo a su escena para ese ancla. Puedes predefinir los nodos y "
-"establecer el ID; los nodos simplemente permanecerán en 0,0,0 hasta que se "
-"reconozca un plano.\n"
+"El punto [ARVRAnchor] es un nodo espacial que mapea una ubicación del mundo "
+"real identificada por la plataforma AR a una posición dentro del mundo del "
+"juego. Por ejemplo, mientras la detección de planos en ARKit esté activada, "
+"ARKit identificará y actualizará la posición de los planos (mesas, suelos, "
+"etc.) y creará anclas para ellos.\n"
+"Este nodo se asocia a una de las anclas mediante su ID único. Cuando recibas "
+"la señal de que hay una ancla nueva disponible, debes añadir este nodo a la "
+"escena para esa ancla. Puedes predefinir nodos y establecer el ID; los nodos "
+"permanecerán en 0,0,0 hasta que se reconozca un plano.\n"
 "Ten en cuenta que, mientras la detección de planos esté activada, el tamaño, "
-"la colocación y la orientación de un ancla se actualizarán a medida que la "
-"lógica de detección aprenda más sobre el mundo real de ahí fuera, "
-"especialmente si sólo se ve una parte de la superficie."
+"la colocación y la orientación de una ancla se actualizarán a medida que la "
+"lógica de detección aprenda más sobre el mundo real, especialmente si solo "
+"se ve parte de la superficie."
 
 #: doc/classes/ARVRAnchor.xml
 msgid "Returns the name given to this anchor."
@@ -10131,7 +10129,6 @@ msgstr ""
 "code] si no se conoce actualmente ninguna ancla con esta identificación."
 
 #: doc/classes/ARVRAnchor.xml
-#, fuzzy
 msgid ""
 "If provided by the [ARVRInterface], this returns a mesh object for the "
 "anchor. For an anchor, this can be a shape related to the object being "
@@ -10139,11 +10136,11 @@ msgid ""
 "can be used to create shadows/reflections on surfaces or for generating "
 "collision shapes."
 msgstr ""
-"Si es proporcionado por la [ARVRInterface], esto devuelve un objeto de malla "
-"para el ancla. En el caso de un ancla, puede ser una forma relacionada con "
-"el objeto que se está rastreando o puede ser una malla que proporciona una "
-"topología relacionada con el ancla y puede utilizarse para crear sombras/"
-"reflexiones en las superficies o para generar formas de colisión."
+"Si lo proporciona la [ARVRInterface], devuelve un objeto de malla para la "
+"ancla. En el caso de una ancla, puede ser una forma relacionada con el "
+"objeto rastreado o una malla que aporte topología relacionada con la ancla y "
+"sirva para crear sombras/reflejos en superficies o para generar formas de "
+"colisión."
 
 #: doc/classes/ARVRAnchor.xml
 msgid ""
@@ -12773,12 +12770,10 @@ msgid "Represents the size of the [enum FFT_Size] enum."
 msgstr "Representa el tamaño del enum [enum FFT_Size]."
 
 #: doc/classes/AudioEffectRecord.xml
-#, fuzzy
 msgid "Audio effect used for recording the sound from an audio bus."
-msgstr "Efecto de audio usado para grabar el sonido de un micrófono."
+msgstr "Efecto de audio para grabar el sonido de un bus de audio."
 
 #: doc/classes/AudioEffectRecord.xml
-#, fuzzy
 msgid ""
 "Allows the user to record the sound from an audio bus. This can include all "
 "audio output by Godot when used on the \"Master\" audio bus.\n"
@@ -12787,14 +12782,17 @@ msgid ""
 "16-bit, or compressed). It checks whether or not the recording is active, "
 "and if it is, records the sound. It then returns the recorded sample."
 msgstr ""
-"Permite al usuario grabar el sonido desde un micrófono. Establece y obtiene "
-"el formato en el que se grabará el archivo de audio (8-bit, 16-bit o "
-"comprimido). Comprueba si la grabación está activa o no, y si lo está, graba "
-"el sonido. Luego devuelve la muestra grabada."
+"Permite al usuario grabar el sonido de un bus de audio. Esto puede incluir "
+"toda la salida de audio de Godot cuando se usa en el bus de audio «Master».\n"
+"Puede usarse (con un [AudioStreamMicrophone]) para grabar desde un "
+"micrófono.\n"
+"Establece y obtiene el formato en el que se grabará el archivo de audio (8 "
+"bits, 16 bits o comprimido). Comprueba si la grabación está activa y, si lo "
+"está, graba el sonido. Luego devuelve la muestra grabada."
 
 #: doc/classes/AudioEffectRecord.xml
 msgid "Recording with microphone"
-msgstr ""
+msgstr "Grabación con micrófono"
 
 #: doc/classes/AudioEffectRecord.xml
 msgid "Returns the recorded sample."
@@ -13998,7 +13996,6 @@ msgstr ""
 "[code]texture(SCREEN_TEXTURE, ...)[/code]."
 
 #: doc/classes/BackBufferCopy.xml
-#, fuzzy
 msgid ""
 "Node for back-buffering the currently-displayed screen. The region defined "
 "in the [BackBufferCopy] node is buffered with the content of the screen it "
@@ -14011,48 +14008,44 @@ msgid ""
 "derived nodes as [i]siblings[/i] to the [BackBufferCopy] node instead of "
 "adding them as children."
 msgstr ""
-"Nodo para hacer un back-buffer en la pantalla que se muestra actualmente. La "
-"región definida en el nodo BackBufferCopy se almacena en un búfer con el "
-"contenido de la pantalla que cubre, o la pantalla entera según el modo de "
-"copia establecido. Usa la función [code]texture(SCREEN_TEXTURE, ...)[/code] "
-"en tus shader scripts para acceder al buffer.\n"
-"[b]Nota:[/b] Como este nodo hereda de [Nodo2D] (y no de [Control]), los "
-"anclajes y márgenes no se aplicarán a los nodos derivados de [Control]. Esto "
-"puede ser problemático al redimensionar la ventana. Para evitar esto, "
-"agregue los nodos derivados de [Control] como [i]hermanos[/i] al nodo "
-"BackBufferCopy en lugar de agregarlos como niños."
+"Nodo para almacenar en búfer la pantalla mostrada actualmente. La región "
+"definida en el nodo [BackBufferCopy] se guarda en un búfer con el contenido "
+"de la pantalla que cubre, o de toda la pantalla según el modo de copia "
+"configurado. Usa la función [code]texture(SCREEN_TEXTURE, ...)[/code] en tus "
+"shaders para acceder al búfer.\n"
+"[b]Nota:[/b] Como este nodo hereda de [Node2D] (y no de [Control]), los "
+"anclajes y márgenes no se aplicarán a los nodos hijos derivados de "
+"[Control]. Esto puede dar problemas al redimensionar la ventana. Para "
+"evitarlo, añade nodos derivados de [Control] como [i]hermanos[/i] del nodo "
+"[BackBufferCopy] en lugar de como hijos."
 
 #: doc/classes/BackBufferCopy.xml
 msgid "Buffer mode. See [enum CopyMode] constants."
 msgstr "Modo de búfer. Ver las constantes de [enum CopyMode]."
 
 #: doc/classes/BackBufferCopy.xml
-#, fuzzy
 msgid ""
 "The area covered by the [BackBufferCopy]. Only used if [member copy_mode] is "
 "[constant COPY_MODE_RECT]."
 msgstr ""
-"El área cubierta por el BackBufferCopy. Sólo se usa si [member copy_mode] es "
-"[constant COPY_MODE_RECT]."
+"El área cubierta por el [BackBufferCopy]. Solo se usa si [member copy_mode] "
+"es [constant COPY_MODE_RECT]."
 
 #: doc/classes/BackBufferCopy.xml
-#, fuzzy
 msgid ""
 "Disables the buffering mode. This means the [BackBufferCopy] node will "
 "directly use the portion of screen it covers."
 msgstr ""
-"Deshabilita el modo de almacenamiento intermedio. Esto significa que el nodo "
-"BackBufferCopy utilizará directamente la parte de la pantalla que cubre."
+"Desactiva el modo de búfer. Esto significa que el nodo [BackBufferCopy] "
+"usará directamente la porción de pantalla que cubre."
 
 #: doc/classes/BackBufferCopy.xml
-#, fuzzy
 msgid "[BackBufferCopy] buffers a rectangular region."
-msgstr "BackBufferCopy almacena una región rectangular."
+msgstr "[BackBufferCopy] almacena en búfer una región rectangular."
 
 #: doc/classes/BackBufferCopy.xml
-#, fuzzy
 msgid "[BackBufferCopy] buffers the entire screen."
-msgstr "BackBufferCopy almacena toda la pantalla."
+msgstr "[BackBufferCopy] almacena en búfer toda la pantalla."
 
 #: doc/classes/BakedLightmap.xml
 msgid "Prerendered indirect light map for a scene."
@@ -15153,6 +15146,8 @@ msgid ""
 "Resets the bone to the rest pose. This is equivalent to setting [member "
 "Node2D.transform] to [member rest]."
 msgstr ""
+"Restablece el hueso a la pose de reposo. Equivale a establecer [member "
+"Node2D.transform] en [member rest]."
 
 #: doc/classes/Bone2D.xml
 msgid ""
@@ -15341,23 +15336,20 @@ msgid "Base class for box containers."
 msgstr "Clase de base para contenedores de caja."
 
 #: doc/classes/BoxContainer.xml
-#, fuzzy
 msgid ""
 "Arranges child controls vertically or horizontally, and rearranges the "
 "controls automatically when their minimum size changes."
 msgstr ""
-"Dispone los nodos infantiles [Control] vertical u horizontalmente, y los "
-"reordena automáticamente cuando cambia su tamaño mínimo."
+"Organiza los controles hijos [Control] en vertical u horizontal, y los "
+"reorganiza automáticamente cuando cambia su tamaño mínimo."
 
 #: doc/classes/BoxContainer.xml
-#, fuzzy
 msgid ""
 "Adds a control to the box as a spacer. If [code]true[/code], [code]begin[/"
 "code] will insert the spacer control in front of other children."
 msgstr ""
-"Añade un nodo [Control] a la caja como espaciador. Si [code]begin[/code] es "
-"[code]true[/code], insertará el nodo [Control] delante de todos los demás "
-"niños."
+"Añade un control a la caja como espaciador. Si es [code]true[/code], "
+"[code]begin[/code] insertará el espaciador delante del resto de hijos."
 
 #: doc/classes/BoxContainer.xml doc/classes/FlowContainer.xml
 msgid ""
@@ -18837,15 +18829,16 @@ msgid "If [code]true[/code], no collisions will be detected."
 msgstr "Si [code]true[/code], no se detectarán colisiones."
 
 #: doc/classes/CollisionPolygon2D.xml
-#, fuzzy
 msgid ""
 "If [code]true[/code], only edges that face up, relative to "
 "[CollisionPolygon2D]'s rotation, will collide with other objects.\n"
 "[b]Note:[/b] This property has no effect if this [CollisionPolygon2D] is a "
 "child of an [Area2D] node."
 msgstr ""
-"Si [code]true[/code], sólo los bordes que están boca arriba, en relación con "
-"la rotación de [CollisionPolygon2D], colisionarán con otros objetos."
+"Si es [code]true[/code], solo los bordes orientados hacia arriba, respecto a "
+"la rotación de [CollisionPolygon2D], colisionarán con otros objetos.\n"
+"[b]Nota:[/b] Esta propiedad no tiene efecto si este [CollisionPolygon2D] es "
+"hijo de un nodo [Area2D]."
 
 #: doc/classes/CollisionPolygon2D.xml
 msgid ""
@@ -18858,15 +18851,13 @@ msgstr ""
 "que entran en el polígono a alta velocidad."
 
 #: doc/classes/CollisionPolygon2D.xml
-#, fuzzy
 msgid ""
 "The polygon's list of vertices. The final point will be connected to the "
 "first. The returned value is a clone of the [PoolVector2Array], not a "
 "reference."
 msgstr ""
-"La lista de vértices del polígono. El punto final estará conectado al "
-"primero. El valor devuelto es un clon del [PackedVector2Array], no una "
-"referencia."
+"Lista de vértices del polígono. El último punto se conecta con el primero. "
+"El valor devuelto es una copia del [PoolVector2Array], no una referencia."
 
 #: doc/classes/CollisionPolygon2D.xml
 msgid "Collisions will include the polygon and its contained area."
@@ -18895,6 +18886,16 @@ msgid ""
 "the same on all axes), and change the size of its [member shape] resource "
 "instead."
 msgstr ""
+"Herramienta del editor para crear y editar formas de colisión en el espacio "
+"3D. Configura la propiedad [member shape] para definir la forma. "
+"[b]IMPORTANTE[/b]: es un asistente solo del editor para crear formas; usa "
+"[method CollisionObject.shape_owner_get_shape] para obtener la forma real.\n"
+"Puedes usar este nodo para representar todo tipo de formas de colisión: por "
+"ejemplo, añádelo a un [Area] para darle una forma de detección, o a un "
+"[PhysicsBody] para crear un objeto sólido.\n"
+"[b]Advertencia:[/b] Un nodo CollisionShape3D con escala no uniforme "
+"probablemente no funcionará como se espera. Mantén la escala uniforme (igual "
+"en todos los ejes) y cambia en su lugar el tamaño del recurso [member shape]."
 
 #: doc/classes/CollisionShape.xml doc/classes/CollisionShape2D.xml
 #: doc/classes/Physics2DDirectBodyState.xml
@@ -18905,12 +18906,11 @@ msgid "Physics introduction"
 msgstr "Introducción a la física"
 
 #: doc/classes/CollisionShape.xml
-#, fuzzy
 msgid ""
 "Sets the collision shape's shape to the addition of all its convexed "
 "[MeshInstance] siblings geometry."
 msgstr ""
-"Establece la forma de la colisión a la suma de toda la geometría convexa de "
+"Establece la forma de colisión como la suma de la geometría convexa de todos "
 "sus hermanos [MeshInstance]."
 
 #: doc/classes/CollisionShape.xml
@@ -20398,12 +20398,10 @@ msgstr ""
 "[ConcavePolygonShape2D]."
 
 #: doc/classes/ConeTwistJoint.xml
-#, fuzzy
 msgid "A twist joint between two 3D PhysicsBodies."
-msgstr "Una articulación de torsión entre dos cuerpos 3D."
+msgstr "Una articulación de torsión entre dos cuerpos de física 3D."
 
 #: doc/classes/ConeTwistJoint.xml
-#, fuzzy
 msgid ""
 "The joint can rotate the bodies across an axis defined by the local x-axes "
 "of the [Joint].\n"
@@ -20412,11 +20410,12 @@ msgid ""
 "axes of the Joint in the local space of the two Bodies. See also "
 "[Generic6DOFJoint]."
 msgstr ""
-"La articulación puede rotar los cuerpos a través de un eje definido por los "
-"ejes x locales de la [Joint].\n"
-"El eje de giro se inicia como el eje X de la [Joint].\n"
-"Una vez que los cuerpos giran, el eje de giro se calcula como el medio de "
-"los ejes x de la [Joint] en el espacio local de los dos cuerpos."
+"La articulación puede rotar los cuerpos alrededor de un eje definido por los "
+"ejes X locales de la [Joint].\n"
+"El eje de torsión se inicia como el eje X de la [Joint].\n"
+"Cuando los cuerpos oscilan, el eje de torsión se calcula como el punto medio "
+"de los ejes X de la [Joint] en el espacio local de ambos cuerpos. Ver "
+"también [Generic6DOFJoint]."
 
 #: doc/classes/ConeTwistJoint.xml doc/classes/PhysicsServer.xml
 msgid ""
@@ -20443,7 +20442,6 @@ msgstr ""
 "baja, se necesita más fuerza para empezar a torcer la articulación."
 
 #: doc/classes/ConeTwistJoint.xml doc/classes/PhysicsServer.xml
-#, fuzzy
 msgid ""
 "Swing is rotation from side to side, around the axis perpendicular to the "
 "twist axis.\n"
@@ -20452,12 +20450,12 @@ msgid ""
 "Could be defined as looseness in the [ConeTwistJoint].\n"
 "If below 0.05, this behavior is locked."
 msgstr ""
-"La oscilación es la rotación de lado a lado, alrededor del eje perpendicular "
-"al eje de giro.\n"
-"La amplitud de la oscilación define, cuánta rotación no se corregirá a lo "
-"largo del eje de oscilación.\n"
-"Podría definirse como la holgura en el [ConeTwistJoint].\n"
-"Si está por debajo de 0,05, este comportamiento se bloquea."
+"El balanceo es la rotación de lado a lado alrededor del eje perpendicular al "
+"eje de torsión.\n"
+"La amplitud de balanceo define cuánta rotación no se corregirá a lo largo "
+"del eje de balanceo.\n"
+"Puede entenderse como holgura en el [ConeTwistJoint].\n"
+"Si es inferior a 0,05, este comportamiento queda bloqueado."
 
 #: doc/classes/ConeTwistJoint.xml doc/classes/PhysicsServer.xml
 msgid ""
@@ -23054,6 +23052,10 @@ msgid ""
 "therefore removing all particles that were already emitted before changing "
 "[member amount]."
 msgstr ""
+"Número de partículas emitidas en un ciclo de emisión (corresponde a [member "
+"lifetime]).\n"
+"[b]Nota:[/b] Cambiar [member amount] reiniciará la emisión de partículas y "
+"eliminará todas las partículas ya emitidas antes del cambio."
 
 #: doc/classes/CPUParticles.xml doc/classes/CPUParticles2D.xml
 msgid "Initial rotation applied to each particle, in degrees."
@@ -23362,9 +23364,8 @@ msgstr "Ratio de aleatoriedad de la velocidad inicial."
 
 #: doc/classes/CPUParticles.xml doc/classes/CPUParticles2D.xml
 #: doc/classes/Particles.xml doc/classes/Particles2D.xml
-#, fuzzy
 msgid "The amount of time each particle will exist (in seconds)."
-msgstr "La cantidad de tiempo que cada partícula existirá."
+msgstr "Tiempo que existirá cada partícula (en segundos)."
 
 #: doc/classes/CPUParticles.xml doc/classes/CPUParticles2D.xml
 #: doc/classes/ParticlesMaterial.xml
@@ -24063,7 +24064,6 @@ msgid "A cryptographic key (RSA)."
 msgstr "Una clave criptográfica (RSA)."
 
 #: doc/classes/CryptoKey.xml
-#, fuzzy
 msgid ""
 "The CryptoKey class represents a cryptographic key. Keys can be loaded and "
 "saved like any other [Resource].\n"
@@ -24071,13 +24071,11 @@ msgid ""
 "Crypto.generate_self_signed_certificate] and as private key in [method "
 "StreamPeerSSL.accept_stream] along with the appropriate certificate."
 msgstr ""
-"La clase CryptoKey representa una clave criptográfica. Las claves pueden ser "
-"cargadas y guardadas como cualquier otro [Resource].\n"
-"Pueden utilizarse para generar un [X509Certificate] autofirmado a través del "
-"[method Crypto.generate_self_signed_certificate] y como clave privada en el "
-"[method StreamPeerSSL.accept_stream] junto con el certificado "
-"correspondiente.\n"
-"[b]Nota:[/b] No está disponible en los exportados en HTML5."
+"La clase CryptoKey representa una clave criptográfica. Las claves pueden "
+"cargarse y guardarse como cualquier otro [Resource].\n"
+"Pueden usarse para generar un [X509Certificate] autofirmado mediante [method "
+"Crypto.generate_self_signed_certificate] y como clave privada en [method "
+"StreamPeerSSL.accept_stream] junto con el certificado adecuado."
 
 #: doc/classes/CryptoKey.xml
 msgid ""
@@ -24088,17 +24086,16 @@ msgstr ""
 "no la privada."
 
 #: doc/classes/CryptoKey.xml
-#, fuzzy
 msgid ""
 "Loads a key from [code]path[/code]. If [code]public_only[/code] is "
 "[code]true[/code], only the public key will be loaded.\n"
 "[b]Note:[/b] [code]path[/code] should be a \"*.pub\" file if "
 "[code]public_only[/code] is [code]true[/code], a \"*.key\" file otherwise."
 msgstr ""
-"Carga una clave de [code]path[/code]. Si [code]public_only[/code] es "
-"[code]true[/code], sólo se cargará la clave pública.\n"
-"[b]Nota[/b]: [code]path[/code] debe ser un archivo \"*.pub\" si "
-"[code]public_only[/code] es [code]true[/code], un archivo \"*.key\" en caso "
+"Carga una clave desde [code]path[/code]. Si [code]public_only[/code] es "
+"[code]true[/code], solo se cargará la clave pública.\n"
+"[b]Nota:[/b] [code]path[/code] debe ser un archivo «*.pub» si "
+"[code]public_only[/code] es [code]true[/code], y un «*.key» en caso "
 "contrario."
 
 #: doc/classes/CryptoKey.xml
@@ -24110,17 +24107,16 @@ msgstr ""
 "es [code]true[/code], sólo se cargará la clave pública."
 
 #: doc/classes/CryptoKey.xml
-#, fuzzy
 msgid ""
 "Saves a key to the given [code]path[/code]. If [code]public_only[/code] is "
 "[code]true[/code], only the public key will be saved.\n"
 "[b]Note:[/b] [code]path[/code] should be a \"*.pub\" file if "
 "[code]public_only[/code] is [code]true[/code], a \"*.key\" file otherwise."
 msgstr ""
-"Guarda una clave para el camino [code]path[/code]. Si [code]public_only[/"
-"code] es [code]true[/code], sólo se guardará la clave pública.\n"
-"[b]Nota[/b]: [code]path[/code] debe ser un archivo \"*.pub\" si "
-"[code]public_only[/code] es [code]true[/code], un archivo \"*.key\" en caso "
+"Guarda una clave en la ruta [code]path[/code]. Si [code]public_only[/code] "
+"es [code]true[/code], solo se guardará la clave pública.\n"
+"[b]Nota:[/b] [code]path[/code] debe ser un archivo «*.pub» si "
+"[code]public_only[/code] es [code]true[/code], y un «*.key» en caso "
 "contrario."
 
 #: doc/classes/CryptoKey.xml
@@ -26945,6 +26941,9 @@ msgid ""
 "font oversampling, ignoring [member SceneTree.use_font_oversampling] value "
 "and viewport stretch mode."
 msgstr ""
+"Si se establece a un valor mayor que [code]0.0[/code], anulará el "
+"sobremuestreo de fuente por defecto, ignorando el valor de [member SceneTree."
+"use_font_oversampling] y el modo de estirado del viewport."
 
 #: doc/classes/DynamicFontData.xml
 msgid "Disables font hinting (smoother but less crisp)."
@@ -29347,6 +29346,14 @@ msgid ""
 "[code]receiver_func[/code] will still be called, but the preview will be "
 "null."
 msgstr ""
+"Encola el [code]resource[/code] que se está editando para generar una vista "
+"previa. Cuando la vista previa esté lista, se llamará a [code]receiver_func[/"
+"code] del [code]receiver[/code]. [code]receiver_func[/code] debe aceptar "
+"estos cuatro argumentos: [String] path, [Texture] preview, [Texture] "
+"thumbnail_preview, [Variant] userdata. [code]userdata[/code] puede ser "
+"cualquier cosa y se devolverá cuando se llame a [code]receiver_func[/code].\n"
+"[b]Nota:[/b] Si no fue posible crear la vista previa, [code]receiver_func[/"
+"code] se llamará igualmente, pero la vista previa será null."
 
 #: doc/classes/EditorResourcePreview.xml
 msgid ""
@@ -29360,6 +29367,14 @@ msgid ""
 "[code]receiver_func[/code] will still be called, but the preview will be "
 "null."
 msgstr ""
+"Encola para vista previa el recurso en la ruta [code]path[/code]. Cuando la "
+"vista previa esté lista, se llamará a [code]receiver_func[/code] del "
+"[code]receiver[/code]. [code]receiver_func[/code] debe aceptar estos cuatro "
+"argumentos: [String] path, [Texture] preview, [Texture] thumbnail_preview, "
+"[Variant] userdata. [code]userdata[/code] puede ser cualquier cosa y se "
+"devolverá cuando se llame a [code]receiver_func[/code].\n"
+"[b]Nota:[/b] Si no fue posible crear la vista previa, [code]receiver_func[/"
+"code] se llamará igualmente, pero la vista previa será null."
 
 #: doc/classes/EditorResourcePreview.xml
 msgid "Removes a custom preview generator."
@@ -29747,6 +29762,9 @@ msgid ""
 "inspector. If you want to edit a node, use [method EditorInterface."
 "edit_node]."
 msgstr ""
+"Añade un nodo a la selección.\n"
+"[b]Nota:[/b] El nodo recién seleccionado no se editará automáticamente en el "
+"inspector. Para editarlo, usa [method EditorInterface.edit_node]."
 
 #: doc/classes/EditorSelection.xml
 msgid "Clear the selection."
@@ -34474,16 +34492,28 @@ msgid ""
 "the [method @GDScript.is_equal_approx] and [method @GDScript.is_zero_approx] "
 "methods instead of [code]==[/code] to compare [float] values for equality."
 msgstr ""
+"El tipo integrado [float] es un número de punto flotante de doble precisión "
+"de 64 bits, equivalente a [code]double[/code] en C++. Tiene unos 14 dígitos "
+"decimales fiables de precisión. El tipo [float] puede almacenarse en "
+"[Variant], el tipo genérico que usa el motor. El valor máximo de [float] es "
+"aproximadamente [code]1.79769e308[/code] y el mínimo aproximadamente "
+"[code]-1.79769e308[/code].\n"
+"La mayoría de métodos y propiedades del motor usan en su lugar números de "
+"punto flotante de precisión simple de 32 bits, equivalentes a [code]float[/"
+"code] en C++, con unos 6 dígitos decimales fiables. En estructuras como "
+"[Vector2] y [Vector3], Godot usa números de punto flotante de 32 bits.\n"
+"Las operaciones con [float] no garantizan exactitud ni determinismo y suelen "
+"producir pequeños errores. Normalmente debes usar [method @GDScript."
+"is_equal_approx] y [method @GDScript.is_zero_approx] en lugar de [code]==[/"
+"code] para comparar valores [float]."
 
 #: doc/classes/float.xml
-#, fuzzy
 msgid "Wikipedia: Double-precision floating-point format"
-msgstr "Pone un real de double-precision en el stream."
+msgstr "Wikipedia: formato de punto flotante de doble precisión"
 
 #: doc/classes/float.xml
-#, fuzzy
 msgid "Wikipedia: Single-precision floating-point format"
-msgstr "Pone un real de single-precision en el stream."
+msgstr "Wikipedia: formato de punto flotante de precisión simple"
 
 #: doc/classes/float.xml
 msgid ""
@@ -34733,26 +34763,24 @@ msgstr ""
 "objeto dado."
 
 #: doc/classes/FuncRef.xml
-#, fuzzy
 msgid ""
 "Calls the referenced function previously set in [member function] or [method "
 "@GDScript.funcref]."
 msgstr ""
-"Llama a la función referenciada previamente establecida por [method "
-"set_function] o [method @GDScript.funcref]."
+"Llama a la función referenciada establecida previamente en [member function] "
+"o [method @GDScript.funcref]."
 
 #: doc/classes/FuncRef.xml
-#, fuzzy
 msgid ""
 "Calls the referenced function previously set in [member function] or [method "
 "@GDScript.funcref]. Contrarily to [method call_func], this method does not "
 "support a variable number of arguments but expects all parameters to be "
 "passed via a single [Array]."
 msgstr ""
-"Llama a la función referenciada previamente establecida por [method "
-"set_function] o [method @GDScript.funcref]. A diferencia de [method "
-"call_func], este método no soporta un número variable de argumentos, sino "
-"que espera que todos los parámetros se pasen a través de un único [Array]."
+"Llama a la función referenciada establecida previamente en [member function] "
+"o [method @GDScript.funcref]. A diferencia de [method call_func], este "
+"método no admite un número variable de argumentos: espera todos los "
+"parámetros en un único [Array]."
 
 #: doc/classes/FuncRef.xml
 msgid "Returns whether the object still exists and has the function assigned."
@@ -34769,9 +34797,8 @@ msgstr ""
 "o [Dictionary]."
 
 #: doc/classes/FuncRef.xml
-#, fuzzy
 msgid "The name of the referenced function."
-msgstr "Obtiene el nombre de la acción actual."
+msgstr "El nombre de la función referenciada."
 
 #: modules/gdnative/doc_classes/GDNativeLibrary.xml
 msgid ""
@@ -34781,17 +34808,16 @@ msgstr ""
 "en Godot."
 
 #: modules/gdnative/doc_classes/GDNativeLibrary.xml
-#, fuzzy
 msgid ""
 "A GDNative library can implement [NativeScript]s, global functions to call "
 "with the [GDNative] class, or low-level engine extensions through interfaces "
 "such as [ARVRInterfaceGDNative]. The library must be compiled for each "
 "platform and architecture that the project will run on."
 msgstr ""
-"Una biblioteca GDNative puede implementar [NativeScript], funciones globales "
-"para llamar con la clase [GDNative], o extensiones de motor de bajo nivel a "
-"través de interfaces como [ARVRInterfaceGDNative]. La biblioteca debe ser "
-"compilada para cada plataforma y arquitectura en la que se ejecute el "
+"Una biblioteca GDNative puede implementar [NativeScript]s, funciones "
+"globales invocables con la clase [GDNative], o extensiones de bajo nivel del "
+"motor mediante interfaces como [ARVRInterfaceGDNative]. La biblioteca debe "
+"compilarse para cada plataforma y arquitectura en las que se ejecute el "
 "proyecto."
 
 #: modules/gdnative/doc_classes/GDNativeLibrary.xml
@@ -36978,7 +37004,7 @@ msgstr ""
 
 #: modules/gltf/doc_classes/GLTFPhysicsBody.xml
 msgid "Represents a GLTF physics body."
-msgstr ""
+msgstr "Representa un cuerpo de física GLTF."
 
 #: modules/gltf/doc_classes/GLTFPhysicsBody.xml
 msgid ""
@@ -36987,43 +37013,57 @@ msgid ""
 "Godot's nodes, and it's abstracted in a way that allows adding support for "
 "different GLTF physics extensions in the future."
 msgstr ""
+"Representa un cuerpo de física según la extensión GLTF "
+"[code]OMI_physics_body[/code]. Esta clase es un intermediario entre los "
+"datos GLTF y los nodos de Godot, y está abstraída para permitir añadir "
+"soporte a otras extensiones de física GLTF en el futuro."
 
 #: modules/gltf/doc_classes/GLTFPhysicsBody.xml
 msgid "OMI_physics_body GLTF extension"
-msgstr ""
+msgstr "Extensión GLTF OMI_physics_body"
 
 #: modules/gltf/doc_classes/GLTFPhysicsBody.xml
 msgid "Serializes this GLTFPhysicsBody instance into a [Dictionary]."
-msgstr ""
+msgstr "Serializa esta instancia de GLTFPhysicsBody en un [Dictionary]."
 
 #: modules/gltf/doc_classes/GLTFPhysicsBody.xml
 msgid ""
 "Converts this GLTFPhysicsBody instance into a Godot [CollisionObject] node."
 msgstr ""
+"Convierte esta instancia de GLTFPhysicsBody en un nodo [CollisionObject] de "
+"Godot."
 
 #: modules/gltf/doc_classes/GLTFPhysicsBody.xml
 msgid ""
 "The angular velocity of the physics body, in radians per second. This is "
 "only used when the body type is \"rigid\" or \"vehicle\"."
 msgstr ""
+"Velocidad angular del cuerpo de física, en radianes por segundo. Solo se usa "
+"cuando el tipo de cuerpo es «rigid» o «vehicle»."
 
 #: modules/gltf/doc_classes/GLTFPhysicsBody.xml
 msgid ""
 "The type of the body. Valid values are \"static\", \"kinematic\", "
 "\"character\", \"rigid\", \"vehicle\", and \"trigger\"."
 msgstr ""
+"Tipo del cuerpo. Valores válidos: «static», «kinematic», «character», "
+"«rigid», «vehicle» y «trigger»."
 
 #: modules/gltf/doc_classes/GLTFPhysicsBody.xml
 msgid ""
 "The linear velocity of the physics body, in meters per second. This is only "
 "used when the body type is \"rigid\" or \"vehicle\"."
 msgstr ""
+"Velocidad lineal del cuerpo de física, en metros por segundo. Solo se usa "
+"cuando el tipo de cuerpo es «rigid» o «vehicle»."
 
 #: modules/gltf/doc_classes/GLTFPhysicsBody.xml
 msgid ""
 "The mass of the physics body, in kilograms. This is only used when the body "
 "type is \"rigid\" or \"vehicle\"."
 msgstr ""
+"Masa del cuerpo de física, en kilogramos. Solo se usa cuando el tipo de "
+"cuerpo es «rigid» o «vehicle»."
 
 #: modules/gltf/doc_classes/GLTFSkeleton.xml
 msgid ""
@@ -38669,7 +38709,6 @@ msgstr ""
 "Contexto para calcular los hashes criptográficos en múltiples iteraciones."
 
 #: doc/classes/HashingContext.xml
-#, fuzzy
 msgid ""
 "The HashingContext class provides an interface for computing cryptographic "
 "hashes over multiple iterations. This is useful for example when computing "
@@ -38698,34 +38737,32 @@ msgid ""
 "    printt(res.hex_encode(), Array(res))\n"
 "[/codeblock]"
 msgstr ""
-"La clase HashingContext proporciona una interfaz para computar hashes "
-"criptográficos en múltiples iteraciones. Esto es útil, por ejemplo, cuando "
-"se calculan hashes de archivos grandes (para no tener que cargarlos todos en "
-"la memoria), flujos de red y flujos de datos en general (para no tener que "
-"mantener búferes).\n"
-"El [enum HashType] enum muestra los algoritmos de hash soportados.\n"
+"La clase HashingContext ofrece una interfaz para calcular hashes "
+"criptográficos en varias iteraciones. Es útil, por ejemplo, al hashear "
+"archivos grandes (sin cargarlos enteros en memoria), flujos de red o flujos "
+"de datos en general (sin mantener búferes grandes).\n"
+"El enumerado [enum HashType] muestra los algoritmos admitidos.\n"
 "[codeblock]\n"
-"const TAMANO_PORCION  = 1024\n"
+"const CHUNK_SIZE = 1024\n"
 "\n"
-"func hash_archivo(ruta):\n"
-"    var contexto = HashingContext.new()\n"
-"    var archivo = File.new()\n"
-"    # Empieza un contexto SHA-256\n"
-"    contexto.start(HashingContext.HASH_SHA256)\n"
-"    # Comprueba que el archivo existe.\n"
-"    if not archivo.file_exists(ruta):\n"
+"func hash_file(path):\n"
+"    var ctx = HashingContext.new()\n"
+"    var file = File.new()\n"
+"    # Inicia un contexto SHA-256.\n"
+"    ctx.start(HashingContext.HASH_SHA256)\n"
+"    # Comprueba que el archivo exista.\n"
+"    if not file.file_exists(path):\n"
 "        return\n"
 "    # Abre el archivo a hashear.\n"
-"    archivo.open(ruta, File.READ)\n"
-"    # Actualiza el contexto despues de leer cada porción.\n"
-"    while not archivo.eof_reached():\n"
-"        contexto.update(file.get_buffer(TAMANO_PORCION))\n"
-"    # Obtiene el hash computado.\n"
-"    var resultado = contexto.finish()\n"
-"    # Imprime el resultado como una string hexadecimal y array.\n"
-"    printt(resultado.hex_encode(), Array(resultado))\n"
-"[/codeblock]\n"
-"[b]Nota:[/b] No disponible para exportar HTML5."
+"    file.open(path, File.READ)\n"
+"    # Actualiza el contexto tras leer cada trozo.\n"
+"    while not file.eof_reached():\n"
+"        ctx.update(file.get_buffer(CHUNK_SIZE))\n"
+"    # Obtiene el hash calculado.\n"
+"    var res = ctx.finish()\n"
+"    # Muestra el resultado como cadena hexadecimal y como array.\n"
+"    printt(res.hex_encode(), Array(res))\n"
+"[/codeblock]"
 
 #: doc/classes/HashingContext.xml
 msgid "Closes the current context, and return the computed hash."
@@ -39137,6 +39174,10 @@ msgid ""
 "[b]Note:[/b] The [signal Range.changed] and [signal Range.value_changed] "
 "signals are part of the [Range] class which this class inherits from."
 msgstr ""
+"Control deslizante horizontal. Ver [Slider]. Va de izquierda (mínimo) a "
+"derecha (máximo).\n"
+"[b]Nota:[/b] Las señales [signal Range.changed] y [signal Range."
+"value_changed] pertenecen a la clase [Range], de la que hereda esta clase."
 
 #: doc/classes/HSlider.xml doc/classes/VSlider.xml
 msgid "The texture for the grabber (the draggable element)."
@@ -42985,6 +43026,13 @@ msgid ""
 "get_physical_scancode_with_modifiers())[/code] where [code]event[/code] is "
 "the [InputEventKey]."
 msgstr ""
+"Devuelve el código de escaneo físico (physical scancode) combinado con "
+"teclas modificadoras como [kbd]Shift[/kbd] o [kbd]Alt[/kbd]. Consulta "
+"también [InputEventWithModifiers].\n"
+"Para obtener una representación legible por humanos de [InputEventKey] con "
+"modificadores, utiliza [code]OS.get_scancode_string(event."
+"get_physical_scancode_with_modifiers())[/code] donde [code]event[/code] es "
+"el [InputEventKey]."
 
 #: doc/classes/InputEventKey.xml
 msgid ""
@@ -42995,17 +43043,23 @@ msgid ""
 "get_scancode_with_modifiers())[/code] where [code]event[/code] is the "
 "[InputEventKey]."
 msgstr ""
+"Devuelve el código de escaneo (scancode) combinado con teclas modificadoras "
+"como [kbd]Shift[/kbd] o [kbd]Alt[/kbd]. Consulta también "
+"[InputEventWithModifiers].\n"
+"Para obtener una representación legible por humanos de [InputEventKey] con "
+"modificadores, utiliza [code]OS.get_scancode_string(event."
+"get_scancode_with_modifiers())[/code] donde [code]event[/code] es el "
+"[InputEventKey]."
 
 #: doc/classes/InputEventKey.xml
 msgid ""
 "If [code]true[/code], the key was already pressed before this event. It "
 "means the user is holding the key down."
 msgstr ""
-"Si [code]true[/code], la tecla ya estaba pulsada antes de este evento. "
+"Si es [code]true[/code], la tecla ya estaba pulsada antes de este evento. "
 "Significa que el usuario está manteniendo la tecla pulsada."
 
 #: doc/classes/InputEventKey.xml
-#, fuzzy
 msgid ""
 "Key physical scancode, which corresponds to one of the [enum KeyList] "
 "constants. Represent the physical location of a key on the 101/102-key US "
@@ -43014,23 +43068,22 @@ msgid ""
 "get_scancode_string(event.physical_scancode)[/code] where [code]event[/code] "
 "is the [InputEventKey]."
 msgstr ""
-"Código clave físico de teclado, que corresponde a una de las constantes de "
-"[enum KeyList]. Representa la ubicación física de una tecla en el teclado US "
-"QWERTY de 101/102 teclas.\n"
-"Para obtener una representación legible para los humanos de la "
-"[InputEventKey], utilice [code]OS.get_keycode_string(event.keycode)[/code] "
-"donde [code]event[/code] es la [InputEventKey]."
+"Código de escaneo físico (physical scancode) de la tecla, que corresponde a "
+"una de las constantes de [enum KeyList]. Representa la ubicación física de "
+"una tecla en un teclado estándar US QWERTY de 101/102 teclas.\n"
+"Para obtener una representación legible por humanos del [InputEventKey], "
+"utiliza [code]OS.get_scancode_string(event.physical_scancode)[/code] donde "
+"[code]event[/code] es el [InputEventKey]."
 
 #: doc/classes/InputEventKey.xml
 msgid ""
 "If [code]true[/code], the key's state is pressed. If [code]false[/code], the "
 "key's state is released."
 msgstr ""
-"Si [code]true[/code], se pulsa el estado de la tecla. Si [code]false[/code], "
-"el estado de la tecla se libera."
+"Si es [code]true[/code], se pulsa el estado de la tecla. Si es [code]false[/"
+"code], el estado de la tecla se libera."
 
 #: doc/classes/InputEventKey.xml
-#, fuzzy
 msgid ""
 "The key scancode, which corresponds to one of the [enum KeyList] constants. "
 "Represent key in the current keyboard layout.\n"
@@ -43038,23 +43091,22 @@ msgid ""
 "get_scancode_string(event.scancode)[/code] where [code]event[/code] is the "
 "[InputEventKey]."
 msgstr ""
-"El código de la clave de teclado, que corresponde a una de las constantes de "
-"[enum KeyList]. Representa la tecla en la disposición actual del teclado.\n"
-"Para obtener una representación legible para el ser humano de la "
-"[InputEventKey], utilice [code]OS.get_keycode_string(event.keycode)[/code] "
-"donde [code]event[/code] es la [InputEventKey]."
+"Código de tecla, que corresponde a una de las constantes de [enum KeyList]. "
+"Representa la tecla según la distribución actual del teclado.\n"
+"Para obtener una representación legible del [InputEventKey], usa [code]OS."
+"get_scancode_string(event.scancode)[/code], donde [code]event[/code] es el "
+"[InputEventKey]."
 
 #: doc/classes/InputEventKey.xml
-#, fuzzy
 msgid ""
 "The key Unicode identifier (when relevant). Unicode identifiers for the "
 "composite characters and complex scripts may not be available unless IME "
 "input mode is active. See [method OS.set_ime_active] for more information."
 msgstr ""
-"El identificador clave de Unicode (cuando sea relevante). Es posible que los "
-"identificadores Unicode para los caracteres compuestos y las escrituras "
-"complejas no estén disponibles a menos que el modo de entrada IME esté "
-"activo. Consulte [method Window.set_ime_active] para obtener más información."
+"Identificador Unicode de la tecla (cuando aplica). Los identificadores "
+"Unicode de caracteres compuestos y escrituras complejas pueden no estar "
+"disponibles salvo que el modo de entrada IME esté activo. Ver [method OS."
+"set_ime_active] para más información."
 
 #: doc/classes/InputEventMagnifyGesture.xml
 #: doc/classes/InputEventPanGesture.xml
@@ -43276,7 +43328,6 @@ msgid "Input event type for mouse motion events."
 msgstr "Tipo de evento de entrada para los eventos de movimiento del ratón."
 
 #: doc/classes/InputEventMouseMotion.xml
-#, fuzzy
 msgid ""
 "Contains mouse and pen motion information. Supports relative, absolute "
 "positions and speed. See [method Node._input].\n"
@@ -43292,31 +43343,31 @@ msgid ""
 "Bresenham%27s_line_algorithm]Bresenham's line algorithm[/url] as well to "
 "avoid visible gaps in lines if the user is moving the mouse quickly."
 msgstr ""
-"Contiene información sobre el movimiento del ratón y el bolígrafo. Soporta "
-"posiciones y velocidades relativas y absolutas. Ver [method Node._input].\n"
-"[b]Nota:[/b] Por defecto, este evento sólo se emite una vez por cuadro "
-"renderizado como máximo. Si necesitas un informe de entrada más preciso, "
-"llama a [method Input.set_use_accumulated_input] con [code]false[/code] para "
-"que los eventos se emitan lo más a menudo posible. Si utilizas "
-"InputEventMouseMotion para dibujar líneas, considera la posibilidad de "
-"implementar [url=https://en.wikipedia.org/wiki/"
-"Bresenham%27s_line_algorithm]el algoritmo de línea de Bresenham[/url] "
-"también para evitar los huecos visibles en las líneas si el usuario mueve el "
-"ratón rápidamente."
+"Contiene información del movimiento del ratón y del lápiz. Admite posiciones "
+"y velocidades relativas y absolutas. Ver [method Node._input].\n"
+"[b]Nota:[/b] El comportamiento de este evento depende de [member Input."
+"use_accumulated_input]. Si es [code]true[/code] (por defecto), los eventos "
+"de movimiento del ratón/lápiz recibidos del sistema se fusionan y se emite "
+"como mucho un evento acumulado por fotograma. Si es [code]false[/code], los "
+"eventos se emiten tal cual, pudiendo haber varios por fotograma, con mayor "
+"precisión a costa de CPU.\n"
+"[b]Nota:[/b] Si usas InputEventMouseMotion para dibujar líneas, considera "
+"también implementar el [url=https://en.wikipedia.org/wiki/"
+"Bresenham%27s_line_algorithm]algoritmo de línea de Bresenham[/url] para "
+"evitar huecos si el usuario mueve el ratón rápido."
 
 #: doc/classes/InputEventMouseMotion.xml
-#, fuzzy
 msgid "Mouse and input coordinates"
-msgstr "Medio desplazamiento en la coordenada X."
+msgstr "Coordenadas del ratón y de entrada"
 
 #: doc/classes/InputEventMouseMotion.xml
-#, fuzzy
 msgid ""
 "Returns [code]true[/code] when using the eraser end of a stylus pen.\n"
 "[b]Note:[/b] This property is implemented on Linux, macOS and Windows."
 msgstr ""
-"Devuelve el número de disposiciones del teclado.\n"
-"[b]Nota:[/b] Este método está implementado en Linux, macOS y Windows."
+"Devuelve [code]true[/code] cuando se usa el extremo borrador de un lápiz "
+"óptico.\n"
+"[b]Nota:[/b] Esta propiedad está implementada en Linux, macOS y Windows."
 
 #: doc/classes/InputEventMouseMotion.xml
 msgid ""
@@ -44982,6 +45033,8 @@ msgstr ""
 #: doc/classes/JSONRPC.xml
 msgid "A helper to handle dictionaries which look like JSONRPC documents."
 msgstr ""
+"Una utilidad para procesar diccionarios que tienen la estructura de "
+"documentos JSONRPC."
 
 #: doc/classes/JSONRPC.xml
 msgid ""
@@ -44992,6 +45045,12 @@ msgid ""
 "standard on top of [Dictionary]; you will have to convert between a "
 "[Dictionary] and [JSON] with other functions."
 msgstr ""
+"El [url=https://www.jsonrpc.org/]JSON-RPC[/url] es un estándar que envuelve "
+"una llamada a método en un objeto [JSON]. El objeto tiene una estructura "
+"concreta e identifica qué método se llama, los parámetros de esa función y "
+"lleva un ID para seguir las respuestas. Esta clase implementa ese estándar "
+"sobre [Dictionary]; tendrás que convertir entre [Dictionary] y [JSON] con "
+"otras funciones."
 
 #: doc/classes/JSONRPC.xml
 msgid ""
@@ -45001,6 +45060,11 @@ msgid ""
 "- [code]params[/code]: An array or dictionary of parameters being passed to "
 "the method."
 msgstr ""
+"Devuelve un diccionario con forma de notificación JSON-RPC. Las "
+"notificaciones son mensajes únicos que no esperan respuesta.\n"
+"- [code]method[/code]: Nombre del método que se llama.\n"
+"- [code]params[/code]: Un array o diccionario de parámetros pasados al "
+"método."
 
 #: doc/classes/JSONRPC.xml
 msgid ""
@@ -45013,6 +45077,14 @@ msgid ""
 "- [code]id[/code]: Uniquely identifies this request. The server is expected "
 "to send a response with the same ID."
 msgstr ""
+"Devuelve un diccionario con forma de petición JSON-RPC. Las peticiones se "
+"envían al servidor esperando una respuesta. El campo ID permite al servidor "
+"indicar a qué petición concreta responde.\n"
+"- [code]method[/code]: Nombre del método que se llama.\n"
+"- [code]params[/code]: Un array o diccionario de parámetros pasados al "
+"método.\n"
+"- [code]id[/code]: Identifica de forma única esta petición. Se espera que el "
+"servidor envíe una respuesta con el mismo ID."
 
 #: doc/classes/JSONRPC.xml
 msgid ""
@@ -45022,6 +45094,11 @@ msgid ""
 "- [code]result[/code]: The return value of the function which was called.\n"
 "- [code]id[/code]: The ID of the request this response is targeted to."
 msgstr ""
+"Cuando un servidor ha recibido y procesado una petición, debe enviar una "
+"respuesta. Si no querías respuesta, debías haber enviado una notificación en "
+"su lugar.\n"
+"- [code]result[/code]: Valor de retorno de la función llamada.\n"
+"- [code]id[/code]: ID de la petición a la que va dirigida esta respuesta."
 
 #: doc/classes/JSONRPC.xml
 msgid ""
@@ -45031,6 +45108,12 @@ msgid ""
 "- [code]message[/code]: A custom message about this error.\n"
 "- [code]id[/code]: The request this error is a response to."
 msgstr ""
+"Crea una respuesta que indica que una respuesta anterior falló de algún "
+"modo.\n"
+"- [code]code[/code]: Código de error según el tipo de fallo. Consulta las "
+"constantes [enum ErrorCode].\n"
+"- [code]message[/code]: Mensaje personalizado sobre el error.\n"
+"- [code]id[/code]: Petición a la que responde este error."
 
 #: doc/classes/JSONRPC.xml
 msgid ""
@@ -45043,12 +45126,22 @@ msgid ""
 "[code]action[/code]: The action to be run, as a Dictionary in the form of a "
 "JSON-RPC request or notification."
 msgstr ""
+"Dado un [Dictionary] con forma de petición JSON-RPC: desempaqueta la "
+"petición y la ejecuta. Los métodos se resuelven leyendo el campo «method» y "
+"buscando una función con el mismo nombre en el objeto JSONRPC. Si existe, se "
+"llama a ese método.\n"
+"Para añadir métodos admitidos, extiende la clase JSONRPC y llama a [method "
+"process_action] en tu subclase.\n"
+"[code]action[/code]: Acción a ejecutar, como [Dictionary] con forma de "
+"petición o notificación JSON-RPC."
 
 #: doc/classes/JSONRPC.xml
 msgid ""
 "A method call was requested but no function of that name existed in the "
 "JSONRPC subclass."
 msgstr ""
+"Se solicitó una llamada a método pero no existía ninguna función con ese "
+"nombre en la subclase JSONRPC."
 
 #: doc/classes/KinematicBody.xml
 msgid "Kinematic body 3D node."
@@ -48175,12 +48268,11 @@ msgstr ""
 "Proporciona funciones de utilidad de transformación y codificación de datos."
 
 #: doc/classes/Marshalls.xml
-#, fuzzy
 msgid ""
 "Returns a decoded [PoolByteArray] corresponding to the Base64-encoded string "
 "[code]base64_str[/code]."
 msgstr ""
-"Devuelve un [PackedByteArray] decodificado que corresponde a la string "
+"Devuelve un [PoolByteArray] decodificado a partir de la cadena "
 "[code]base64_str[/code] codificada en Base64."
 
 #: doc/classes/Marshalls.xml
@@ -48209,10 +48301,8 @@ msgstr ""
 "remota de código."
 
 #: doc/classes/Marshalls.xml
-#, fuzzy
 msgid "Returns a Base64-encoded string of a given [PoolByteArray]."
-msgstr ""
-"Devuelve una string codificada en Base64 de un determinado [PackedByteArray]."
+msgstr "Devuelve una cadena en Base64 a partir del [PoolByteArray] dado."
 
 #: doc/classes/Marshalls.xml
 msgid ""
@@ -51013,7 +51103,6 @@ msgid "Generic mobile VR implementation."
 msgstr "Implementación de la RealidadVirtual(VR) móvil genérica."
 
 #: modules/mobile_vr/doc_classes/MobileVRInterface.xml
-#, fuzzy
 msgid ""
 "This is a generic mobile VR implementation where you need to provide details "
 "about the phone and HMD used. It does not rely on any existing framework. "
@@ -51029,19 +51118,17 @@ msgid ""
 "    get_viewport().arvr = true\n"
 "[/codeblock]"
 msgstr ""
-"Se trata de una implementación genérica de RealidadVirtual(VR) móvil en la "
-"que es necesario proporcionar detalles sobre el teléfono y el HMD utilizado. "
-"No se basa en ningún framework existente. Esta es la interfaz más básica que "
-"tenemos. Para obtener el mejor efecto, se necesita un teléfono móvil con un "
-"giroscopio y un acelerómetro.\n"
-"Tenga en cuenta que aunque no hay un seguimiento posicional, la cámara "
-"asumirá que el auricular está a una altura de 1,85 metros. Puedes cambiar "
-"esto ajustando [member eye_height].\n"
-"Puede inicializar esta interfaz de la siguiente manera:\n"
+"Implementación genérica de VR móvil en la que debes indicar datos del "
+"teléfono y del HMD. No depende de ningún framework externo; es la interfaz "
+"más básica disponible. Para un buen resultado conviene un teléfono con "
+"giroscopio y acelerómetro.\n"
+"Aunque no haya seguimiento posicional, la cámara asumirá que el casco está a "
+"1,85 m de altura. Puedes cambiarlo con [member eye_height].\n"
+"Puedes inicializar la interfaz así:\n"
 "[codeblock]\n"
-"var interfaz = XRServer.find_interface(\"Native mobile\")\n"
-"if interfaz and interfaz.initialize():\n"
-"    get_viewport().xr = true\n"
+"var interface = ARVRServer.find_interface(\"Native mobile\")\n"
+"if interface and interface.initialize():\n"
+"    get_viewport().arvr = true\n"
 "[/codeblock]"
 
 #: modules/mobile_vr/doc_classes/MobileVRInterface.xml
@@ -51057,13 +51144,11 @@ msgid "The width of the display in centimeters."
 msgstr "El ancho de la pantalla en centímetros."
 
 #: modules/mobile_vr/doc_classes/MobileVRInterface.xml
-#, fuzzy
 msgid ""
 "The height at which the camera is placed in relation to the ground (i.e. "
 "[ARVROrigin] node)."
 msgstr ""
-"La altura a la que se coloca la cámara en relación con el suelo (es decir, "
-"el nodo [ARVROrigin])."
+"Altura a la que se coloca la cámara respecto al suelo (nodo [ARVROrigin])."
 
 #: modules/mobile_vr/doc_classes/MobileVRInterface.xml
 msgid ""
@@ -52370,6 +52455,8 @@ msgid ""
 "position. The user must set [member target_location] in order for this to be "
 "accurate."
 msgstr ""
+"Devuelve la distancia a la ubicación objetivo usando la posición global del "
+"agente. Debes establecer [member target_location] para que sea fiable."
 
 #: doc/classes/NavigationAgent.xml doc/classes/NavigationAgent2D.xml
 msgid ""
@@ -52377,6 +52464,9 @@ msgid ""
 "if the navigation path is altered in any way. Because of this, it would be "
 "best to check this each frame."
 msgstr ""
+"Devuelve la ubicación final alcanzable en coordenadas globales. Puede "
+"cambiar si la ruta de navegación se modifica de cualquier forma; conviene "
+"comprobarlo cada fotograma."
 
 #: doc/classes/NavigationAgent.xml doc/classes/NavigationAgent2D.xml
 msgid ""
@@ -52389,6 +52479,13 @@ msgid ""
 "for the agents movement as this function also updates the internal path "
 "logic."
 msgstr ""
+"Devuelve la ruta actual del agente de inicio a fin en coordenadas globales. "
+"La ruta solo se actualiza cuando cambia la ubicación objetivo o el agente "
+"necesita replanificar. El array de la ruta no está pensado para movimiento "
+"directo manual: el agente tiene su lógica interna y alterar el array la "
+"corrompería. Usa [method get_next_location] una vez por fotograma de física "
+"para obtener el siguiente punto; esa función también actualiza la lógica "
+"interna de la ruta."
 
 #: doc/classes/NavigationAgent.xml
 #, fuzzy
@@ -52414,6 +52511,12 @@ msgid ""
 "the navigation map for the NavigationAgent and also update the agent on the "
 "NavigationServer."
 msgstr ""
+"Devuelve el [RID] del mapa de navegación de este nodo NavigationAgent. "
+"Siempre devuelve el mapa configurado en el nodo NavigationAgent, no el del "
+"agente abstracto en NavigationServer. Si el mapa del agente se cambia "
+"directamente con la API de NavigationServer, el nodo NavigationAgent no lo "
+"sabrá. Usa [method set_navigation_map] para cambiar el mapa y actualizar "
+"también el agente en NavigationServer."
 
 #: doc/classes/NavigationAgent.xml doc/classes/NavigationAgent2D.xml
 msgid ""
@@ -52423,6 +52526,11 @@ msgid ""
 "use of this function once every physics frame is required to update the "
 "internal path logic of the NavigationAgent."
 msgstr ""
+"Devuelve la siguiente ubicación en coordenadas globales a la que se puede "
+"mover el agente, asegurando que no haya objetos estáticos bloqueando el "
+"camino. Si el agente no tiene ruta de navegación, devuelve la posición del "
+"padre del agente. Hay que llamar a esta función una vez por fotograma de "
+"física para actualizar la lógica interna de la ruta."
 
 #: doc/classes/NavigationAgent.xml
 #, fuzzy
@@ -52430,15 +52538,16 @@ msgid "Returns the [RID] of this agent on the [NavigationServer]."
 msgstr "Devuelve el [RID] de la forma enésima de un área."
 
 #: doc/classes/NavigationAgent.xml doc/classes/NavigationAgent2D.xml
-#, fuzzy
 msgid ""
 "Returns [code]true[/code] if the navigation path's final location has been "
 "reached."
-msgstr "Devuelve [code]true[/code] si un camino dado es filtrado."
+msgstr ""
+"Devuelve [code]true[/code] si se ha alcanzado la ubicación final de la ruta "
+"de navegación."
 
 #: doc/classes/NavigationAgent.xml doc/classes/NavigationAgent2D.xml
 msgid "Returns [code]true[/code] if [member target_location] is reachable."
-msgstr ""
+msgstr "Devuelve [code]true[/code] si [member target_location] es alcanzable."
 
 #: doc/classes/NavigationAgent.xml doc/classes/NavigationAgent2D.xml
 msgid ""
@@ -52446,6 +52555,9 @@ msgid ""
 "always be possible to reach the target location. It should always be "
 "possible to reach the final location though. See [method get_final_location]."
 msgstr ""
+"Devuelve [code]true[/code] si se ha llegado a [member target_location]. No "
+"siempre será posible alcanzar el objetivo intermedio; en cambio debería ser "
+"posible alcanzar la ubicación final. Ver [method get_final_location]."
 
 #: doc/classes/NavigationAgent.xml
 msgid ""
@@ -52458,6 +52570,8 @@ msgid ""
 "Sets the [RID] of the navigation map this NavigationAgent node should use "
 "and also updates the [code]agent[/code] on the NavigationServer."
 msgstr ""
+"Establece el [RID] del mapa de navegación que debe usar este nodo "
+"NavigationAgent y actualiza el [code]agent[/code] en NavigationServer."
 
 #: doc/classes/NavigationAgent.xml doc/classes/NavigationAgent2D.xml
 msgid ""
@@ -52465,6 +52579,9 @@ msgid ""
 "adjust the velocity to avoid collisions. Once the adjustment to the velocity "
 "is complete, it will emit the [signal velocity_computed] signal."
 msgstr ""
+"Envía la velocidad indicada al algoritmo de evitación de colisiones; "
+"ajustará la velocidad para evitar choques. Al terminar el ajuste, emitirá la "
+"señal [signal velocity_computed]."
 
 #: doc/classes/NavigationAgent.xml
 msgid ""
@@ -52493,14 +52610,12 @@ msgid ""
 msgstr ""
 
 #: doc/classes/NavigationAgent.xml doc/classes/NavigationAgent2D.xml
-#, fuzzy
 msgid "The maximum number of neighbors for the agent to consider."
-msgstr "El valor máximo de luminosidad para la exposición automática."
+msgstr "Número máximo de vecinos que el agente considera."
 
 #: doc/classes/NavigationAgent.xml doc/classes/NavigationAgent2D.xml
-#, fuzzy
 msgid "The maximum speed that an agent can move."
-msgstr "El valor máximo que puede alcanzar la curva."
+msgstr "Velocidad máxima a la que puede moverse el agente."
 
 #: doc/classes/NavigationAgent.xml
 msgid ""
@@ -52510,9 +52625,8 @@ msgid ""
 msgstr ""
 
 #: doc/classes/NavigationAgent.xml doc/classes/NavigationAgent2D.xml
-#, fuzzy
 msgid "The distance to search for other agents."
-msgstr "La instancia no tiene un tipo."
+msgstr "Distancia de búsqueda de otros agentes."
 
 #: doc/classes/NavigationAgent.xml doc/classes/NavigationAgent2D.xml
 msgid ""
@@ -52524,6 +52638,12 @@ msgid ""
 "it will constantly overshoot or undershoot the distance to the next point on "
 "each physics frame update."
 msgstr ""
+"Umbral de distancia para considerar alcanzado un punto de la ruta. Permite "
+"no tener que coincidir exactamente con el punto, sino con la zona. Si es "
+"demasiado alto, NavigationAgent puede saltarse puntos y salirse del navmesh; "
+"si es demasiado bajo, puede quedar atrapado en bucles de replanificación al "
+"sobrepasar o quedarse corto respecto al siguiente punto en cada fotograma de "
+"física."
 
 #: doc/classes/NavigationAgent.xml doc/classes/NavigationAgent2D.xml
 msgid ""
@@ -52531,6 +52651,8 @@ msgid ""
 "final location. This can happen due to trying to avoid collisions. When the "
 "maximum distance is exceeded, it recalculates the ideal path."
 msgstr ""
+"Distancia máxima permitida respecto a la ruta ideal hacia la ubicación final "
+"(p. ej. al esquivar colisiones). Si se supera, se recalcula la ruta ideal."
 
 #: doc/classes/NavigationAgent.xml
 msgid ""
@@ -52551,12 +52673,17 @@ msgid ""
 "overshoot or undershoot the distance to the final target point on each "
 "physics frame update."
 msgstr ""
+"Umbral de distancia para considerar alcanzado el punto final del objetivo. "
+"Similar al umbral de puntos intermedios: si es demasiado bajo puede producir "
+"bucles de replanificación."
 
 #: doc/classes/NavigationAgent.xml doc/classes/NavigationAgent2D.xml
 msgid ""
 "The user-defined target location. Setting this property will clear the "
 "current navigation path."
 msgstr ""
+"Ubicación objetivo definida por el usuario. Al establecerla se borra la ruta "
+"de navegación actual."
 
 #: doc/classes/NavigationAgent.xml doc/classes/NavigationAgent2D.xml
 msgid ""
@@ -52566,31 +52693,41 @@ msgid ""
 "other agents, but the less freedom in choosing its velocities. Must be "
 "positive."
 msgstr ""
+"Tiempo mínimo para el que las velocidades del agente (calculadas con "
+"evitación de colisiones) son seguras respecto a otros agentes. Cuanto mayor "
+"es el valor, antes reacciona a los demás, pero con menos libertad al elegir "
+"velocidades. Debe ser positivo."
 
 #: doc/classes/NavigationAgent.xml doc/classes/NavigationAgent2D.xml
-#, fuzzy
 msgid "Notifies when the final location is reached."
-msgstr "Notifica cuando una animación ha terminado de reproducirse."
+msgstr "Se emite cuando se alcanza la ubicación final."
 
 #: doc/classes/NavigationAgent.xml doc/classes/NavigationAgent2D.xml
 msgid ""
 "Notifies when the navigation path changes. This can be triggered by the "
 "navigation system or by the user changing the path."
 msgstr ""
+"Se emite cuando cambia la ruta de navegación, por el sistema o porque el "
+"usuario modifica la ruta."
 
 #: doc/classes/NavigationAgent.xml doc/classes/NavigationAgent2D.xml
 msgid "Notifies when the player-defined [member target_location] is reached."
 msgstr ""
+"Se emite cuando se alcanza la [member target_location] definida por el "
+"jugador."
 
 #: doc/classes/NavigationAgent.xml doc/classes/NavigationAgent2D.xml
 msgid ""
 "Notifies when the collision avoidance velocity is calculated after a call to "
 "[method set_velocity]. Only emitted when [member avoidance_enabled] is true."
 msgstr ""
+"Se emite cuando, tras llamar a [method set_velocity], se ha calculado la "
+"velocidad de evitación de colisiones. Solo se emite si [member "
+"avoidance_enabled] es true."
 
 #: doc/classes/NavigationAgent2D.xml
 msgid "2D agent used in navigation for collision avoidance."
-msgstr ""
+msgstr "Agente 2D usado en navegación para evitación de colisiones."
 
 #: doc/classes/NavigationAgent2D.xml
 msgid ""
@@ -52611,31 +52748,45 @@ msgid ""
 "in a thread. In HTML5 exports without thread support, they will be done on "
 "the main thread, which can lead to performance issues."
 msgstr ""
+"Agente 2D que navega hacia una ubicación evitando obstáculos estáticos y "
+"dinámicos mediante evitación RVO (Reciprocal Velocity Obstacles). Necesita "
+"datos de navegación. Por defecto se registra en el mapa de navegación por "
+"defecto del [World2D]. Si el nodo es hijo de [Navigation2D], usará el mapa "
+"de ese nodo, o puedes usar [method set_navigation] para fijarlo. "
+"[NavigationAgent2D] es seguro respecto a la física.\n"
+"[b]Nota:[/b] Tras establecer [member target_location] debes llamar a [method "
+"get_next_location] una vez por fotograma de física para actualizar la lógica "
+"interna. El vector devuelto debe usarse como siguiente posición de "
+"movimiento del padre del agente.\n"
+"[b]Nota:[/b] Por defecto los cálculos costosos de evitación van en un hilo; "
+"en exportaciones HTML5 sin hilos se hacen en el hilo principal, lo que puede "
+"afectar al rendimiento."
 
 #: doc/classes/NavigationAgent2D.xml
-#, fuzzy
 msgid ""
 "Returns which index the agent is currently on in the navigation path's "
 "[PoolVector2Array]."
-msgstr "Devuelve el caché de puntos como un [PackedVector2Array]."
+msgstr ""
+"Devuelve el índice actual del agente en el [PoolVector2Array] de la ruta de "
+"navegación."
 
 #: doc/classes/NavigationAgent2D.xml
-#, fuzzy
 msgid ""
 "Returns the [Navigation2D] node that the agent is using for its navigation "
 "system."
-msgstr "Devuelve el nodo animacion con el nombre dado."
+msgstr "Devuelve el nodo [Navigation2D] que usa el agente para la navegación."
 
 #: doc/classes/NavigationAgent2D.xml
-#, fuzzy
 msgid "Returns the [RID] of this agent on the [Navigation2DServer]."
-msgstr "Devuelve el [RID] de la forma enésima de un área."
+msgstr "Devuelve el [RID] de este agente en [Navigation2DServer]."
 
 #: doc/classes/NavigationAgent2D.xml
 msgid ""
 "Sets the [Navigation2D] node used by the agent. Useful when you don't want "
 "to make the agent a child of a [Navigation2D] node."
 msgstr ""
+"Establece el nodo [Navigation2D] usado por el agente. Útil si no quieres que "
+"el agente sea hijo de un [Navigation2D]."
 
 #: doc/classes/NavigationAgent2D.xml
 msgid ""
@@ -52646,6 +52797,11 @@ msgid ""
 "with many registered agents has a significant performance cost and should "
 "only be enabled on agents that currently require it."
 msgstr ""
+"Si [code]true[/code], el agente se registra para la devolución de llamada "
+"RVO de evitación en [Navigation2DServer]. Al usar [method set_velocity] y "
+"completarse el procesamiento, se recibe un [code]safe_velocity[/code] "
+"Vector2 mediante la conexión a [signal velocity_computed]. Registrar muchos "
+"agentes tiene un coste notable; actívalo solo quien lo necesite."
 
 #: doc/classes/NavigationAgent2D.xml
 msgid ""
@@ -52653,6 +52809,10 @@ msgid ""
 "belongs to. On path requests the agent will ignore navmeshes without at "
 "least one matching layer."
 msgstr ""
+"Un campo de bits que determina todas las capas del mapa de navegación a las "
+"que pertenece el [NavigationAgent2D]. En las peticiones de ruta, el agente "
+"ignorará las mallas de navegación (navmeshes) que no tengan al menos una "
+"capa coincidente."
 
 #: doc/classes/NavigationAgent2D.xml
 msgid ""
@@ -52661,6 +52821,10 @@ msgid ""
 "[member neighbor_dist]).\n"
 "Does not affect normal pathfinding."
 msgstr ""
+"El radio del agente de evitación. Este es el «cuerpo» del agente de "
+"evitación y no el radio de inicio de la maniobra de evitación (que es "
+"controlado por [member neighbor_dist]).\n"
+"No afecta a la búsqueda de rutas (pathfinding) normal."
 
 #: doc/classes/NavigationMesh.xml
 msgid "A mesh to approximate the walkable areas and obstacles."
@@ -56511,7 +56675,6 @@ msgid "[OpenSimplexNoise] filled texture."
 msgstr "Textura rellenada [OpenSimplexNoise]."
 
 #: modules/opensimplex/doc_classes/NoiseTexture.xml
-#, fuzzy
 msgid ""
 "Uses an [OpenSimplexNoise] to fill the texture data. You can specify the "
 "texture size but keep in mind that larger textures will take longer to "
@@ -56528,19 +56691,20 @@ msgid ""
 "[/codeblock]"
 msgstr ""
 "Utiliza un [OpenSimplexNoise] para rellenar los datos de la textura. Puedes "
-"especificar el tamaño de la textura pero ten en cuenta que las texturas más "
-"grandes tardarán más tiempo en generarse y el ruido sin fisuras sólo "
-"funciona con texturas de tamaño cuadrado.\n"
-"NoiseTexture también puede generar texturas de mapa normal.\n"
-"La clase utiliza [Thread]s para generar los datos de la textura "
-"internamente, por lo que el [method Texture2D.get_data] puede devolver "
-"[code]null[/code] si el proceso de generación no se ha completado todavía. "
-"En ese caso, es necesario esperar a que se genere la textura antes de "
-"acceder a los datos:\n"
+"especificar el tamaño de la textura, pero ten en cuenta que las texturas "
+"grandes tardarán más en generarse y que el ruido sin costuras (seamless) "
+"solo funciona con texturas de tamaño cuadrado.\n"
+"NoiseTexture también puede generar texturas de mapas de normales "
+"(normalmaps).\n"
+"La clase utiliza hilos ([Thread]s) para generar los datos de la textura "
+"internamente, por lo que [method Texture.get_data] puede devolver "
+"[code]null[/code] si el proceso de generación aún no ha finalizado. En ese "
+"caso, debes esperar a que la textura se genere antes de acceder a los "
+"datos:\n"
 "[codeblock]\n"
-"var textura = preload(\"res://ruido.tres\")\n"
-"yield(textura, \"changed\")\n"
-"var imagen = textura.get_data()\n"
+"var texture = preload(\"res://noise.tres\")\n"
+"yield(texture, \"changed\")\n"
+"var image = texture.get_data()\n"
 "[/codeblock]"
 
 #: modules/opensimplex/doc_classes/NoiseTexture.xml
@@ -56574,6 +56738,9 @@ msgid ""
 "of the generated noise. This value is ignored if [member seamless] is "
 "enabled."
 msgstr ""
+"Un desplazamiento (offset) utilizado para especificar la coordenada del "
+"espacio de ruido de la esquina superior izquierda del ruido generado. Este "
+"valor se ignora si [member seamless] está activado."
 
 #: modules/opensimplex/doc_classes/NoiseTexture.xml
 msgid ""
@@ -56583,6 +56750,11 @@ msgid ""
 "noise. This is due to the way noise uses higher dimensions for generating "
 "seamless noise."
 msgstr ""
+"Indica si la textura se puede repetir en mosaico (tiled) sin costuras "
+"visibles. Las texturas sin costuras (seamless) tardan más en generarse.\n"
+"[b]Nota:[/b] El ruido sin costuras tiene un menor contraste en comparación "
+"con el ruido con costuras. Esto se debe a la forma en que el ruido utiliza "
+"dimensiones superiores para generar el efecto sin costuras."
 
 #: modules/opensimplex/doc_classes/NoiseTexture.xml
 msgid "Width of the generated texture."
@@ -60958,15 +61130,19 @@ msgid ""
 "[b]Note:[/b] Due to the particles being computed on the GPU there might be a "
 "delay before the signal gets emitted."
 msgstr ""
+"Se emite cuando todas las partículas activas han terminado de procesarse. Si "
+"[member one_shot] está desactivado, las partículas se procesan de forma "
+"continua, así que no se emite nunca.\n"
+"[b]Nota:[/b] Al calcularse las partículas en la GPU puede haber un retraso "
+"antes de que se emita la señal."
 
 #: doc/classes/Particles.xml
 msgid "Maximum number of draw passes supported."
 msgstr "Número máximo de pases de dibujado soportados."
 
 #: doc/classes/Particles2D.xml
-#, fuzzy
 msgid "GPU-based 2D particle emitter."
-msgstr "Emisor de partículas 2D basado en la CPU."
+msgstr "Emisor de partículas 2D basado en la GPU."
 
 #: doc/classes/Particles2D.xml
 msgid ""
@@ -60993,20 +61169,44 @@ msgid ""
 "[b]Note:[/b] Unlike [CPUParticles2D], [Particles2D] currently ignore the "
 "texture region defined in [AtlasTexture]s."
 msgstr ""
+"Nodo de partículas 2D utilizado para crear diversos sistemas y efectos. "
+"[Particles2D] cuenta con un emisor que genera una cantidad de partículas a "
+"una frecuencia determinada.\n"
+"Usa la propiedad [code]process_material[/code] para añadir un "
+"[ParticlesMaterial] y configurar su apariencia y comportamiento. También "
+"puedes añadir un [ShaderMaterial] que se aplicará a todas las partículas.\n"
+"[b]Nota:[/b] [Particles2D] solo funciona con el renderizador GLES3. Si usas "
+"GLES2, utiliza [CPUParticles2D] en su lugar. Puedes convertir [Particles2D] "
+"a [CPUParticles2D] seleccionando el nodo, haciendo clic en el menú "
+"[b]Particles[/b] en la parte superior del visor (viewport) 2D y eligiendo "
+"[b]Convert to CPUParticles2D[/b].\n"
+"[b]Note:[/b] En macOS, el renderizado de [Particles2D] es mucho más lento "
+"que el de [CPUParticles2D] debido a que el «transform feedback» se "
+"implementa en la CPU en lugar de la GPU. Considera usar [CPUParticles2D] "
+"para macOS.\n"
+"[b]Nota:[/b] Tras configurar un nodo de partículas, recuerda actualizar su "
+"[member visibility_rect] seleccionándolo, haciendo clic en el menú "
+"[b]Particles[/b] en la parte superior del visor 2D y eligiendo [b]Generate "
+"Visibility Rect[/b]. De lo contrario, las partículas podrían desaparecer "
+"según la posición de la cámara.\n"
+"[b]Nota:[/b] A diferencia de [CPUParticles2D], [Particles2D] ignora "
+"actualmente la región de textura definida en los [AtlasTexture]."
 
 #: doc/classes/Particles2D.xml
 msgid "Particle systems (2D)"
-msgstr ""
+msgstr "Sistemas de partículas (2D)"
 
 #: doc/classes/Particles2D.xml
 msgid "2D Particles Demo"
-msgstr ""
+msgstr "Demostración de partículas 2D"
 
 #: doc/classes/Particles2D.xml
 msgid ""
 "2D Dodge The Creeps Demo (uses GPUParticles2D for the trail behind the "
 "player)"
 msgstr ""
+"Demostración 2D Dodge The Creeps (usa GPUParticles2D para el rastro detrás "
+"del jugador)"
 
 #: doc/classes/Particles2D.xml
 msgid ""
@@ -61014,6 +61214,10 @@ msgid ""
 "[b]Note:[/b] When using threaded rendering this method synchronizes the "
 "rendering thread. Calling it often may have a negative impact on performance."
 msgstr ""
+"Devuelve un rectángulo que contiene las posiciones de todas las partículas "
+"existentes.\n"
+"[b]Nota:[/b] Con renderizado en hilos, este método sincroniza el hilo de "
+"renderizado. Llamarlo con frecuencia puede afectar al rendimiento."
 
 #: doc/classes/Particles2D.xml
 msgid "Restarts all the existing particles."
@@ -61027,6 +61231,11 @@ msgid ""
 "exits the screen. The [Rect2] can be grown via code or with the [b]Particles "
 "→ Generate Visibility Rect[/b] editor tool."
 msgstr ""
+"El [Rect2] que define la región del nodo que debe ser visible en pantalla "
+"para que el sistema de partículas esté activo.\n"
+"Aumenta el rectángulo si las partículas aparecen o desaparecen al entrar/"
+"salir de la pantalla. Puedes ampliarlo por código o con la herramienta del "
+"editor [b]Particles → Generate Visibility Rect[/b]."
 
 #: doc/classes/ParticlesMaterial.xml
 #, fuzzy
@@ -62047,7 +62256,7 @@ msgstr ""
 #: doc/classes/PhysicsDirectBodyState.xml
 #: doc/classes/PhysicsDirectSpaceState.xml doc/classes/RayCast.xml
 msgid "Ray-casting"
-msgstr ""
+msgstr "Lanzamiento de rayos (ray-casting)"
 
 #: doc/classes/Physics2DDirectBodyState.xml doc/classes/RigidBody2D.xml
 msgid "Adds a constant directional force without affecting rotation."
@@ -62239,19 +62448,16 @@ msgid "The body's transformation matrix."
 msgstr "La matriz de transformación del cuerpo."
 
 #: doc/classes/Physics2DDirectSpaceState.xml
-#, fuzzy
 msgid "Direct access object to a space in the [Physics2DServer]."
-msgstr "Acceso directo al objeto a un espacio en el [PhysicsServer2D]."
+msgstr "Objeto de acceso directo a un espacio en [Physics2DServer]."
 
 #: doc/classes/Physics2DDirectSpaceState.xml
-#, fuzzy
 msgid ""
 "Direct access object to a space in the [Physics2DServer]. It's used mainly "
 "to do queries against objects and areas residing in a given space."
 msgstr ""
-"Acceso directo al objeto a un espacio en el [PhysicsServer2D]. Se utiliza "
-"principalmente para hacer consultas contra objetos y áreas que residen en un "
-"espacio determinado."
+"Objeto de acceso directo a un espacio en [Physics2DServer]. Sirve "
+"principalmente para consultas sobre objetos y áreas de ese espacio."
 
 #: doc/classes/Physics2DDirectSpaceState.xml
 msgid ""
@@ -62267,9 +62473,18 @@ msgid ""
 "inside of, will be ignored. Use [method collide_shape] to determine the "
 "[Shape2D]s that the shape is already colliding with."
 msgstr ""
+"Comprueba hasta dónde puede moverse una [Shape2D] sin colisionar. Los "
+"parámetros de la consulta, incluida la forma y el movimiento, van en un "
+"[Physics2DShapeQueryParameters].\n"
+"Devuelve un array con las proporciones segura e insegura (entre 0 y 1) del "
+"movimiento. La proporción segura es la fracción máxima del movimiento sin "
+"colisión; la insegura es la fracción mínima que hay que recorrer para "
+"producir colisión. Si no hay colisión, el resultado es [code][1.0, 1.0][/"
+"code].\n"
+"[b]Nota:[/b] Se ignoran [Shape2D] con los que la forma ya está solapada (p. "
+"ej. en su interior). Usa [method collide_shape] para obtener esas formas."
 
 #: doc/classes/Physics2DDirectSpaceState.xml
-#, fuzzy
 msgid ""
 "Checks the intersections of a shape, given through a "
 "[Physics2DShapeQueryParameters] object, against the space. The resulting "
@@ -62277,14 +62492,12 @@ msgid ""
 "with [method intersect_shape], the number of returned results can be limited "
 "to save processing time."
 msgstr ""
-"Comprueba las intersecciones de una forma, dadas a través de un objeto "
-"[PhysicsShapeQueryParameters2D], contra el espacio. El array resultante "
-"contiene una lista de puntos donde la forma se intersecta con otra. Al igual "
-"que con [method intersect_shape], el número de resultados devueltos puede "
-"limitarse para ahorrar tiempo de procesamiento."
+"Comprueba las intersecciones de una forma definida por "
+"[Physics2DShapeQueryParameters] con el espacio. El array resultante lista "
+"puntos donde la forma corta a otra. Como en [method intersect_shape], se "
+"puede limitar el número de resultados."
 
 #: doc/classes/Physics2DDirectSpaceState.xml
-#, fuzzy
 msgid ""
 "Checks the intersections of a shape, given through a "
 "[Physics2DShapeQueryParameters] object, against the space. If it collides "
@@ -62304,28 +62517,23 @@ msgid ""
 "[code]rid[/code]: The intersecting object's [RID].\n"
 "[code]shape[/code]: The shape index of the colliding shape."
 msgstr ""
-"Comprueba las intersecciones de una forma, dadas a través de un objeto "
-"[PhysicsShapeQueryParameters2D], contra el espacio. Si colisiona con más de "
-"una forma, se selecciona la más cercana. Si la forma no intersectó nada, "
-"entonces se devuelve un diccionario vacío en su lugar.\n"
-"[b]Nota:[/b] Este método no tiene en cuenta la propiedad [code]motion[/code] "
-"del objeto. El objeto devuelto es un diccionario que contiene los siguientes "
-"campos:\n"
-"[code]collider_id[/code]: El ID del objeto que colisiona.\n"
-"[code]velocidad_lineal[/code]: La velocidad del objeto que colisiona "
-"[Vector2]. Si el objeto es un [Area2D], el resultado es [code](0, 0)[/"
-"code].\n"
-"[code]metadatos[/code]: Los metadatos de la forma que se intersecta. Estos "
-"metadatos son diferentes de [method Object.get_meta], y se establecen con "
-"[method PhysicsServer2D.shape_set_data].\n"
-"[code]normal[/code]: La normalidad de la superficie del objeto en el punto "
-"de intersección.\n"
-"[code]point[/code]: El punto de intersección.\n"
-"[code]rid[/code]: El objeto que intersecta [RID].\n"
-"[code]shape[/code]: El índice de la forma de la forma en colisión."
+"Comprueba intersecciones de una forma definida por "
+"[Physics2DShapeQueryParameters] con el espacio. Si hay varias colisiones, se "
+"elige la más cercana. Si no hay intersección, devuelve un diccionario "
+"vacío.\n"
+"[b]Nota:[/b] Este método no tiene en cuenta la propiedad [code]motion[/"
+"code]. El diccionario devuelto contiene:\n"
+"[code]collider_id[/code]: ID del objeto que colisiona.\n"
+"[code]linear_velocity[/code]: Velocidad [Vector2] del objeto. Si es un "
+"[Area2D], [code](0, 0)[/code].\n"
+"[code]metadata[/code]: Metadatos de la forma; distintos de [method Object."
+"get_meta], se definen con [method Physics2DServer.shape_set_data].\n"
+"[code]normal[/code]: Normal de la superficie en el punto de intersección.\n"
+"[code]point[/code]: Punto de intersección.\n"
+"[code]rid[/code]: [RID] del objeto intersectado.\n"
+"[code]shape[/code]: Índice de la forma que colisiona."
 
 #: doc/classes/Physics2DDirectSpaceState.xml
-#, fuzzy
 msgid ""
 "Checks whether a point is inside any solid shape. The shapes the point is "
 "inside of are returned in an array containing dictionaries with the "
@@ -62348,24 +62556,21 @@ msgid ""
 "[code]Segments[/code] build mode are not solid shapes. Therefore, they will "
 "not be detected."
 msgstr ""
-"Comprueba si un punto está dentro de alguna forma. Las formas en las que el "
-"punto está dentro se devuelven en un array que contiene diccionarios con los "
-"siguientes campos:\n"
-"[code]collider[/code]: El objeto que colisiona.\n"
-"[code]collider_id[/code]: El ID del objeto que colisiona.\n"
-"[code]metadata[/code]: Los metadatos de la forma que se intersecta. Estos "
-"metadatos son diferentes de [method Object.get_meta], y se establecen con "
-"[method PhysicsServer2D.shape_set_data].\n"
-"[code]rid[/code]: El objeto que se intersecta es [RID].\n"
-"[code]shape[/code]: El índice de la forma de la forma que colisiona.\n"
-"Además, el método puede tomar un array [code]exclude[/code] de objetos o "
-"[RID]s que deben ser excluidos de las colisiones, una máscara de bits "
-"[code]collision_mask[/code] que representa las capas de física para "
-"comprobar, o booleanos para determinar si el rayo debe colisionar con "
-"[PhysicsBody2D]s o [Area2D]s, respectivamente."
+"Comprueba si un punto está dentro de alguna forma sólida. Las formas que lo "
+"contienen se devuelven en un array de diccionarios con:\n"
+"[code]collider[/code]: Objeto que colisiona.\n"
+"[code]collider_id[/code]: ID del objeto.\n"
+"[code]metadata[/code]: Metadatos de la forma (ver [method Physics2DServer."
+"shape_set_data]).\n"
+"[code]rid[/code]: [RID] del objeto intersectado.\n"
+"[code]shape[/code]: Índice de la forma.\n"
+"El número de intersecciones puede limitarse con [code]max_results[/code].\n"
+"Además puede usarse [code]exclude[/code], [code]collision_mask[/code] o "
+"booleanos para colisión con [PhysicsBody2D] o [Area2D].\n"
+"[b]Nota:[/b] [ConcavePolygonShape2D] y [CollisionPolygon2D] en modo de "
+"construcción [code]Segments[/code] no son formas sólidas y no se detectan."
 
 #: doc/classes/Physics2DDirectSpaceState.xml
-#, fuzzy
 msgid ""
 "Checks whether a point is inside any solid shape, in a specific canvas layer "
 "given by [code]canvas_instance_id[/code]. The shapes the point is inside of "
@@ -62388,24 +62593,29 @@ msgid ""
 "[code]Segments[/code] build mode are not solid shapes. Therefore, they will "
 "not be detected."
 msgstr ""
-"Comprueba si un punto está dentro de alguna forma. Las formas en las que el "
-"punto está dentro se devuelven en un array que contiene diccionarios con los "
-"siguientes campos:\n"
-"[code]collider[/code]: El objeto que colisiona.\n"
-"[code]collider_id[/code]: El ID del objeto que colisiona.\n"
-"[code]metadata[/code]: Los metadatos de la forma que se intersecta. Estos "
+"Comprueba si un punto está dentro de alguna forma sólida, en una capa de "
+"canvas específica dada por [code]canvas_instance_id[/code]. Las formas en "
+"cuyo interior se encuentra el punto se devuelven en un array que contiene "
+"diccionarios con los siguientes campos:\n"
+"[code]collider[/code]: El objeto colisionador.\n"
+"[code]collider_id[/code]: El ID del objeto colisionador.\n"
+"[code]metadata[/code]: Los metadatos de la forma que intersecta. Estos "
 "metadatos son diferentes de [method Object.get_meta], y se establecen con "
-"[method PhysicsServer2D.shape_set_data].\n"
-"[code]rid[/code]: El objeto que se intersecta es [RID].\n"
-"[code]shape[/code]: El índice de la forma de la forma que colisiona.\n"
-"Además, el método puede tomar un array [code]exclude[/code] de objetos o "
-"[RID]s que deben ser excluidos de las colisiones, una máscara de bits "
-"[code]collision_mask[/code] que representa las capas de física para "
-"comprobar, o booleanos para determinar si el rayo debe colisionar con "
-"[PhysicsBody2D]s o [Area2D]s, respectivamente."
+"[method Physics2DServer.shape_set_data].\n"
+"[code]rid[/code]: El [RID] del objeto que intersecta.\n"
+"[code]shape[/code]: El índice de forma de la forma colisionadora.\n"
+"El número de intersecciones puede limitarse con el parámetro "
+"[code]max_results[/code] para reducir el tiempo de procesamiento.\n"
+"Adicionalmente, el método puede recibir un array [code]exclude[/code] de "
+"objetos o [RID]s que deben excluirse de las colisiones, una máscara de bits "
+"[code]collision_mask[/code] que representa las capas de física a comprobar, "
+"o booleanos para determinar si el rayo debe colisionar con [PhysicsBody2D]s "
+"o [Area2D]s, respectivamente.\n"
+"[b]Nota:[/b] Los [ConcavePolygonShape2D]s y [CollisionPolygon2D]s en modo de "
+"construcción [code]Segments[/code] no son formas sólidas. Por lo tanto, no "
+"serán detectados."
 
 #: doc/classes/Physics2DDirectSpaceState.xml
-#, fuzzy
 msgid ""
 "Intersects a ray in a given space. The returned object is a dictionary with "
 "the following fields:\n"
@@ -62426,28 +62636,27 @@ msgid ""
 "determine if the ray should collide with [PhysicsBody2D]s or [Area2D]s, "
 "respectively."
 msgstr ""
-"Intersecta un rayo en un espacio determinado. El objeto devuelto es un "
-"diccionario con los siguientes campos:\n"
-"[code]collider[/code]: El objeto que colisiona.\n"
-"[code]collider_id[/code]: El ID del objeto que colisiona.\n"
-"[code]metadata[/code]: Los metadatos de la forma que se intersecta. Estos "
+"Intersecta un rayo en un espacio dado. El objeto devuelto es un diccionario "
+"con los siguientes campos:\n"
+"[code]collider[/code]: El objeto colisionador.\n"
+"[code]collider_id[/code]: El ID del objeto colisionador.\n"
+"[code]metadata[/code]: Los metadatos de la forma que intersecta. Estos "
 "metadatos son diferentes de [method Object.get_meta], y se establecen con "
-"[method PhysicsServer2D.shape_set_data].\n"
-"[code]normal[/code]: La normalidad de la superficie del objeto en el punto "
-"de intersección.\n"
+"[method Physics2DServer.shape_set_data].\n"
+"[code]normal[/code]: La normal de la superficie del objeto en el punto de "
+"intersección.\n"
 "[code]position[/code]: El punto de intersección.\n"
-"[code]rid[/code]: El objeto que intersecta [RID].\n"
-"[code]shape[/code]: El índice de la forma de la forma en colisión.\n"
-"Si el rayo no intersectó nada, entonces se devuelve un diccionario vacío en "
-"su lugar.\n"
-"Además, el método puede tomar un array [code]exclude[/code] de objetos o "
-"[RID]s que deben ser excluidos de las colisiones, una máscara de bits "
-"[code]collision_mask[/code] que representa las capas de física para "
-"comprobar, o booleanos para determinar si el rayo debe colisionar con "
-"[PhysicsBody2D]s o [Area2D]s, respectivamente."
+"[code]rid[/code]: El [RID] del objeto que intersecta.\n"
+"[code]shape[/code]: El índice de forma de la forma colisionadora.\n"
+"Si el rayo no intersectó nada, se devuelve un diccionario vacío en su "
+"lugar.\n"
+"Adicionalmente, el método puede recibir un array [code]exclude[/code] de "
+"objetos o [RID]s que deben excluirse de las colisiones, una máscara de bits "
+"[code]collision_mask[/code] que representa las capas de física a comprobar, "
+"o booleanos para determinar si el rayo debe colisionar con [PhysicsBody2D]s "
+"o [Area2D]s, respectivamente."
 
 #: doc/classes/Physics2DDirectSpaceState.xml
-#, fuzzy
 msgid ""
 "Checks the intersections of a shape, given through a "
 "[Physics2DShapeQueryParameters] object, against the space. The intersected "
@@ -62463,20 +62672,19 @@ msgid ""
 "The number of intersections can be limited with the [code]max_results[/code] "
 "parameter, to reduce the processing time."
 msgstr ""
-"Comprueba las intersecciones de una forma, dadas a través de un objeto "
-"[Physics2DShapeQueryParameters], contra el espacio.\n"
-"[b]Nota:[/b] Este método no tiene en cuenta la propiedad [code]motion[/code] "
-"del objeto. Las formas intersectadas se devuelven en una matriz que contiene "
-"diccionarios con los siguientes campos:\n"
-"[code]collider[/code]: El objeto que colisiona.\n"
-"[code]collider_id[/code]: El ID del objeto que colisiona.\n"
-"[code]metadata[/code]: Los metadatos de la forma que se intersecta. Estos "
+"Comprueba las intersecciones de una forma, proporcionada a través de un "
+"objeto [Physics2DShapeQueryParameters], contra el espacio. Las formas "
+"intersectadas se devuelven en un array que contiene diccionarios con los "
+"siguientes campos:\n"
+"[code]collider[/code]: El objeto colisionador.\n"
+"[code]collider_id[/code]: El ID del objeto colisionador.\n"
+"[code]metadata[/code]: Los metadatos de la forma que intersecta. Estos "
 "metadatos son diferentes de [method Object.get_meta], y se establecen con "
 "[method Physics2DServer.shape_set_data].\n"
-"[code]rid[/code]: El objeto que se intersecta es [RID].\n"
-"[code]shape[/code]: El índice de la forma de la forma que colisiona.\n"
-"El número de intersecciones puede ser limitado con el parámetro "
-"[code]max_results[/code], para reducir el tiempo de procesamiento."
+"[code]rid[/code]: El [RID] del objeto que intersecta.\n"
+"[code]shape[/code]: El índice de forma de la forma colisionadora.\n"
+"El número de intersecciones puede limitarse con el parámetro "
+"[code]max_results[/code] para reducir el tiempo de procesamiento."
 
 #: doc/classes/Physics2DServer.xml
 msgid "Server interface for low-level 2D physics access."
@@ -63680,19 +63888,16 @@ msgid "The body's linear velocity in units per second."
 msgstr "La velocidad lineal del cuerpo."
 
 #: doc/classes/PhysicsDirectSpaceState.xml
-#, fuzzy
 msgid "Direct access object to a space in the [PhysicsServer]."
-msgstr "Acceso directo al objeto a un espacio en el [PhysicsServer2D]."
+msgstr "Objeto de acceso directo a un espacio en [PhysicsServer]."
 
 #: doc/classes/PhysicsDirectSpaceState.xml
-#, fuzzy
 msgid ""
 "Direct access object to a space in the [PhysicsServer]. It's used mainly to "
 "do queries against objects and areas residing in a given space."
 msgstr ""
-"Acceso directo al objeto a un espacio en el [PhysicsServer2D]. Se utiliza "
-"principalmente para hacer consultas contra objetos y áreas que residen en un "
-"espacio determinado."
+"Objeto de acceso directo a un espacio en [PhysicsServer]. Sirve "
+"principalmente para consultas sobre objetos y áreas de ese espacio."
 
 #: doc/classes/PhysicsDirectSpaceState.xml
 msgid ""
@@ -63708,9 +63913,19 @@ msgid ""
 "inside of, will be ignored. Use [method collide_shape] to determine the "
 "[Shape]s that the shape is already colliding with."
 msgstr ""
+"Comprueba qué tan lejos puede moverse una forma ([Shape]) sin colisionar. "
+"Todos los parámetros, incluyendo la forma, se suministran mediante un objeto "
+"[PhysicsShapeQueryParameters].\n"
+"Devuelve un array con las proporciones segura e insegura (entre 0 y 1) del "
+"movimiento. La proporción segura es la fracción máxima del movimiento que "
+"puede realizarse sin colisión; la insegura es la fracción mínima necesaria "
+"para que ocurra una colisión. Si no se detecta colisión, devuelve [code]"
+"[1.0, 1.0][/code].\n"
+"[b]Note:[/b] Se ignorarán las [Shape]s con las que la forma ya esté "
+"colisionando (p. ej. si está dentro). Usa [method collide_shape] para "
+"detectarlas."
 
 #: doc/classes/PhysicsDirectSpaceState.xml
-#, fuzzy
 msgid ""
 "Checks the intersections of a shape, given through a "
 "[PhysicsShapeQueryParameters] object, against the space. The resulting array "
@@ -63718,14 +63933,13 @@ msgid ""
 "[method intersect_shape], the number of returned results can be limited to "
 "save processing time."
 msgstr ""
-"Comprueba las intersecciones de una forma, dadas a través de un objeto "
-"[PhysicsShapeQueryParameters2D], contra el espacio. El array resultante "
-"contiene una lista de puntos donde la forma se intersecta con otra. Al igual "
-"que con [method intersect_shape], el número de resultados devueltos puede "
-"limitarse para ahorrar tiempo de procesamiento."
+"Comprueba las intersecciones de una forma, proporcionada a través de un "
+"objeto [PhysicsShapeQueryParameters], contra el espacio. El array resultante "
+"contiene una lista de puntos donde la forma intersecta a otra. Al igual que "
+"con [method intersect_shape], el número de resultados puede limitarse para "
+"ahorrar tiempo de procesamiento."
 
 #: doc/classes/PhysicsDirectSpaceState.xml
-#, fuzzy
 msgid ""
 "Checks the intersections of a shape, given through a "
 "[PhysicsShapeQueryParameters] object, against the space. If it collides with "
@@ -63741,24 +63955,21 @@ msgid ""
 "If the shape did not intersect anything, then an empty dictionary is "
 "returned instead."
 msgstr ""
-"Comprueba las intersecciones de una forma, dadas a través de un objeto "
-"[PhysicsShapeQueryParameters], contra el espacio. Si colisiona con más de "
+"Comprueba las intersecciones de una forma (dada por "
+"[PhysicsShapeQueryParameters]) contra el espacio. Si colisiona con más de "
 "una forma, se selecciona la más cercana. El objeto devuelto es un "
-"diccionario que contiene los siguientes campos:\n"
-"[code]collider_id[/code]: El ID del objeto que colisiona.\n"
-"[code]linear_velocity[/code]: La velocidad del objeto que colisiona "
-"[Vector3]. Si el objeto es un [Area], el resultado es [code](0, 0, 0)[/"
-"code].\n"
-"[code]normal[/code]: La normalidad de la superficie del objeto en el punto "
-"de intersección.\n"
+"diccionario con los siguientes campos:\n"
+"[code]collider_id[/code]: El ID del objeto colisionador.\n"
+"[code]linear_velocity[/code]: La velocidad [Vector3] del objeto. Si el "
+"objeto es un [Area], el resultado es [code](0, 0, 0)[/code].\n"
+"[code]normal[/code]: La normal de la superficie en el punto de "
+"intersección.\n"
 "[code]point[/code]: El punto de intersección.\n"
-"[code]rid[/code]: El objeto que intersecta [RID].\n"
-"[code]shape[/code]: El índice de la forma de la forma en colisión.\n"
-"Si la forma no intersectó nada, entonces se devuelve un diccionario vacío en "
-"su lugar."
+"[code]rid[/code]: El [RID] del objeto que intersecta.\n"
+"[code]shape[/code]: El índice de forma de la forma colisionadora.\n"
+"Si la forma no intersectó nada, se devuelve un diccionario vacío."
 
 #: doc/classes/PhysicsDirectSpaceState.xml
-#, fuzzy
 msgid ""
 "Checks whether a point is inside any solid shape. The shapes the point is "
 "inside of are returned in an array containing dictionaries with the "
@@ -63775,25 +63986,21 @@ msgid ""
 "determine if the ray should collide with [PhysicsBody]s or [Area]s, "
 "respectively."
 msgstr ""
-"Intersecta un rayo en un espacio determinado. El objeto devuelto es un "
-"diccionario con los siguientes campos:\n"
-"[code]collider[/code]: El objeto que colisiona.\n"
-"[code]collider_id[/code]: El ID del objeto que colisiona.\n"
-"[code]normal[/code]: La normalidad de la superficie del objeto en el punto "
-"de intersección.\n"
-"[code]position[/code]: El punto de intersección.\n"
-"[code]rid[/code]: El objeto que intersecta [RID].\n"
-"[code]shape[/code]: El índice de la forma de la forma en colisión.\n"
-"Si el rayo no intersectó nada, entonces se devuelve un diccionario vacío en "
-"su lugar.\n"
-"Además, el método puede tomar un array [code]exclude[/code] de objetos o "
-"[RID]s que deben ser excluidos de las colisiones, una máscara de bits "
-"[code]collision_mask[/code] que representa las capas de física para "
-"comprobar, o booleanos para determinar si el rayo debe colisionar con "
-"[PhysicsBody]s o [Area]s, respectivamente."
+"Comprueba si un punto está dentro de alguna forma sólida. Las formas en cuyo "
+"interior se encuentra el punto se devuelven en un array que contiene "
+"diccionarios con los siguientes campos:\n"
+"[code]collider[/code]: El objeto colisionador.\n"
+"[code]collider_id[/code]: El ID del objeto colisionador.\n"
+"[code]rid[/code]: El [RID] del objeto que intersecta.\n"
+"[code]shape[/code]: El índice de forma de la forma colisionadora.\n"
+"El número de intersecciones puede limitarse con el parámetro "
+"[code]max_results[/code] para reducir el tiempo de procesamiento.\n"
+"Adicionalmente, el método puede recibir un array [code]exclude[/code] de "
+"objetos o [RID]s a excluir, una máscara [code]collision_mask[/code] que "
+"representa las capas de física a comprobar, o booleanos para determinar si "
+"el punto debe colisionar con [PhysicsBody]s o [Area]s, respectivamente."
 
 #: doc/classes/PhysicsDirectSpaceState.xml
-#, fuzzy
 msgid ""
 "Intersects a ray in a given space. The returned object is a dictionary with "
 "the following fields:\n"
@@ -63811,25 +64018,23 @@ msgid ""
 "determine if the ray should collide with [PhysicsBody]s or [Area]s, "
 "respectively."
 msgstr ""
-"Intersecta un rayo en un espacio determinado. El objeto devuelto es un "
-"diccionario con los siguientes campos:\n"
-"[code]collider[/code]: El objeto que colisiona.\n"
-"[code]collider_id[/code]: El ID del objeto que colisiona.\n"
-"[code]normal[/code]: La normalidad de la superficie del objeto en el punto "
-"de intersección.\n"
+"Intersecta un rayo en un espacio dado. El objeto devuelto es un diccionario "
+"con los siguientes campos:\n"
+"[code]collider[/code]: El objeto colisionador.\n"
+"[code]collider_id[/code]: El ID del objeto colisionador.\n"
+"[code]normal[/code]: La normal de la superficie del objeto en el punto de "
+"intersección.\n"
 "[code]position[/code]: El punto de intersección.\n"
-"[code]rid[/code]: El objeto que intersecta [RID].\n"
-"[code]shape[/code]: El índice de la forma de la forma en colisión.\n"
-"Si el rayo no intersectó nada, entonces se devuelve un diccionario vacío en "
-"su lugar.\n"
-"Además, el método puede tomar un array [code]exclude[/code] de objetos o "
-"[RID]s que deben ser excluidos de las colisiones, una máscara de bits "
-"[code]collision_mask[/code] que representa las capas de física para "
-"comprobar, o booleanos para determinar si el rayo debe colisionar con "
-"[PhysicsBody]s o [Area]s, respectivamente."
+"[code]rid[/code]: El [RID] del objeto que intersecta.\n"
+"[code]shape[/code]: El índice de forma de la forma colisionadora.\n"
+"Si el rayo no intersectó nada, se devuelve un diccionario vacío en su "
+"lugar.\n"
+"Adicionalmente, el método puede recibir un array [code]exclude[/code] de "
+"objetos o [RID]s a excluir, una máscara [code]collision_mask[/code] que "
+"representa las capas de física a comprobar, o booleanos para determinar si "
+"el rayo debe colisionar con [PhysicsBody]s o [Area]s, respectivamente."
 
 #: doc/classes/PhysicsDirectSpaceState.xml
-#, fuzzy
 msgid ""
 "Checks the intersections of a shape, given through a "
 "[PhysicsShapeQueryParameters] object, against the space. The intersected "
@@ -63842,16 +64047,16 @@ msgid ""
 "The number of intersections can be limited with the [code]max_results[/code] "
 "parameter, to reduce the processing time."
 msgstr ""
-"Comprueba las intersecciones de una forma, dadas a través de un objeto "
-"[PhysicsShapeQueryParameters], contra el espacio. Las formas intersectadas "
-"son devueltas en una matriz que contiene diccionarios con los siguientes "
-"campos:\n"
-"[code]colisionador[/code]: El objeto que colisiona.\n"
-"[code]colisionador[/code]: El ID del objeto que colisiona.\n"
-"[code]rid[/code]: El [RID] del objeto que colisiona.\n"
-"[code]shape[/code]: El índice de la forma del objeto que colisiona.\n"
-"El número de intersecciones puede ser limitado con el parámetro "
-"[code]max_results[/code], para reducir el tiempo de procesamiento."
+"Comprueba las intersecciones de una forma, proporcionada a través de un "
+"objeto [PhysicsShapeQueryParameters], contra el espacio. Las formas "
+"intersectadas se devuelven en un array que contiene diccionarios con los "
+"siguientes campos:\n"
+"[code]collider[/code]: El objeto colisionador.\n"
+"[code]collider_id[/code]: El ID del objeto colisionador.\n"
+"[code]rid[/code]: El [RID] del objeto que intersecta.\n"
+"[code]shape[/code]: El índice de forma de la forma colisionadora.\n"
+"El número de intersecciones puede limitarse con el parámetro "
+"[code]max_results[/code] para reducir el tiempo de procesamiento."
 
 #: doc/classes/PhysicsMaterial.xml
 msgid "A material for physics properties."
@@ -63869,8 +64074,8 @@ msgid ""
 "If [code]true[/code], subtracts the bounciness from the colliding object's "
 "bounciness instead of adding it."
 msgstr ""
-"Si [code]true[/code], resta el rebote del rebote del objeto que colisiona en "
-"lugar de agregarlo."
+"Si es [code]true[/code], resta el rebote del rebote del objeto que colisiona "
+"en lugar de agregarlo."
 
 #: doc/classes/PhysicsMaterial.xml
 msgid ""
@@ -63896,11 +64101,11 @@ msgid ""
 "instead. If [code]true[/code] for both colliding objects, the physics engine "
 "will use the highest friction."
 msgstr ""
-"Si [code]true[/code], el motor de la física utilizará la fricción del objeto "
-"marcado como \"áspero\" cuando dos objetos colisionen. Si [code]false[/"
-"code], el motor de física usará la menor fricción de todos los objetos que "
-"colisionen en su lugar. Si [code]true[/code] para ambos objetos que "
-"colisionan, el motor de física utilizará la fricción más alta."
+"Si es [code]true[/code], el motor de la física utilizará la fricción del "
+"objeto marcado como \"áspero\" cuando dos objetos colisionen. Si es "
+"[code]false[/code], el motor de física usará la menor fricción de todos los "
+"objetos que colisionen en su lugar. Si es [code]true[/code] para ambos "
+"objetos que colisionan, el motor de física utilizará la fricción más alta."
 
 #: doc/classes/PhysicsServer.xml
 msgid "Server interface for low-level physics access."
@@ -65349,12 +65554,10 @@ msgstr ""
 "del array."
 
 #: doc/classes/PoolColorArray.xml
-#, fuzzy
 msgid "A pooled array of [Color]s."
-msgstr "Un paquete de [Array] de [Color]s."
+msgstr "Un arreglo de [Color]es con gestión de memoria (pooled array)."
 
 #: doc/classes/PoolColorArray.xml
-#, fuzzy
 msgid ""
 "An array specifically designed to hold [Color]. Optimized for memory usage, "
 "does not fragment the memory.\n"
@@ -65378,37 +65581,47 @@ msgid ""
 "inside an Array)\n"
 "[/codeblock]"
 msgstr ""
-"Un [Array] diseñado específicamente para mantener valores enteros de 32 "
-"bits. Empaqueta los datos de forma ajustada, por lo que ahorra memoria para "
-"los tamaños de arrays grandes.\n"
-"[b]Nota:[/b] Este tipo se pasa por valor y no por referencia.\n"
-"[b]Nota:[/b] Este tipo almacena enteros de 32 bits con signo, lo que "
-"significa que puede tomar valores en el intervalo [code][-2^31, 2^31 - 1][/"
-"code], es decir, [code][-2147483648, 2147483647][/code]. Exceder esos "
-"límites volvera los valores al minimo inicial. En comparación, [int] usa "
-"enteros de 64 bits con signo, que pueden contener valores mucho mayores. Si "
-"necesitas empaquetar los enteros de 64 bits de forma apretada, mira "
-"[PackedInt64Array]."
+"Un arreglo diseñado específicamente para contener [Color]. Optimizado para "
+"el uso de memoria, no fragmenta la misma.\n"
+"[b]Nota:[/b] Este tipo se pasa por valor y no por referencia. Esto significa "
+"que al [i]mutar[/i] una propiedad de clase de tipo [PoolColorArray] o al "
+"mutar un [PoolColorArray] dentro de un [Array] o [Dictionary], los cambios "
+"se perderán:\n"
+"[codeblock]\n"
+"var array = [PoolColorArray()]\n"
+"array[0].push_back(Color(0.1, 0.2, 0.3, 0.4))\n"
+"print(array)  # [[]] (PoolColorArray vacío dentro de un Array)\n"
+"[/codeblock]\n"
+"En su lugar, la propiedad [PoolColorArray] completa debe ser [i]reasignada[/"
+"i] con [code]=[/code] para que se cambie:\n"
+"[codeblock]\n"
+"var array = [PoolColorArray()]\n"
+"var pool_array = array[0]\n"
+"pool_array.push_back(Color(0.1, 0.2, 0.3, 0.4))\n"
+"array[0] = pool_array\n"
+"print(array)  # [[(0.1, 0.2, 0.3, 0.4)]] (PoolColorArray con 1 elemento "
+"dentro de un Array)\n"
+"[/codeblock]"
 
 #: doc/classes/PoolColorArray.xml
-#, fuzzy
 msgid ""
 "Constructs a new [PoolColorArray]. Optionally, you can pass in a generic "
 "[Array] that will be converted."
 msgstr ""
-"Construye un nuevo [PackedColorArray]. Opcionalmente, puedes pasar un "
-"[Array] genérico que será convertido."
+"Crea un [PoolColorArray] nuevo. Opcionalmente puedes pasar un [Array] "
+"genérico que será convertido."
 
 #: doc/classes/PoolColorArray.xml
-#, fuzzy
 msgid "Appends a [PoolColorArray] at the end of this array."
-msgstr "Añade un [PackedColorArray] al final de este array."
+msgstr "Añade un [PoolColorArray] al final de este array."
 
 #: doc/classes/PoolColorArray.xml
 msgid ""
 "Returns the Color at the given [code]index[/code] in the array. This is the "
 "same as using the [code][][/code] operator ([code]array[index][/code])."
 msgstr ""
+"Devuelve el [Color] en el [code]index[/code] indicado. Equivale al operador "
+"[code][][/code] ([code]array[index][/code])."
 
 #: doc/classes/PoolColorArray.xml doc/classes/PoolIntArray.xml
 msgid "Appends a value to the array."
@@ -65429,12 +65642,10 @@ msgid "Changes the [Color] at the given index."
 msgstr "Cambia el [Color] en el índice dado."
 
 #: doc/classes/PoolIntArray.xml
-#, fuzzy
 msgid "A pooled array of integers ([int])."
-msgstr "Un paquete [Array] de 32 bits de tipo entero."
+msgstr "Un arreglo de enteros ([int]) con gestión de memoria (pooled array)."
 
 #: doc/classes/PoolIntArray.xml
-#, fuzzy
 msgid ""
 "An array specifically designed to hold integer values ([int]). Optimized for "
 "memory usage, does not fragment the memory.\n"
@@ -65462,52 +65673,63 @@ msgid ""
 "around. In comparison, [int] uses signed 64-bit integers which can hold much "
 "larger values."
 msgstr ""
-"Un [Array] diseñado específicamente para mantener valores enteros de 32 "
-"bits. Empaqueta los datos de forma ajustada, por lo que ahorra memoria para "
-"los tamaños de arrays grandes.\n"
-"[b]Nota:[/b] Este tipo se pasa por valor y no por referencia.\n"
-"[b]Nota:[/b] Este tipo almacena enteros de 32 bits con signo, lo que "
-"significa que puede tomar valores en el intervalo [code][-2^31, 2^31 - 1][/"
-"code], es decir, [code][-2147483648, 2147483647][/code]. Exceder esos "
-"límites volvera los valores al minimo inicial. En comparación, [int] usa "
-"enteros de 64 bits con signo, que pueden contener valores mucho mayores. Si "
-"necesitas empaquetar los enteros de 64 bits de forma apretada, mira "
-"[PackedInt64Array]."
+"Un array diseñado para almacenar valores enteros ([int]). Está optimizado en "
+"memoria y no fragmenta la memoria.\n"
+"[b]Nota:[/b] Este tipo se pasa por valor, no por referencia. Si "
+"[i]modificas[/i] una propiedad de clase de tipo [PoolIntArray] o un "
+"[PoolIntArray] dentro de un [Array] o [Dictionary], los cambios se "
+"perderán:\n"
+"[codeblock]\n"
+"var array = [PoolIntArray()]\n"
+"array[0].push_back(1234)\n"
+"print(array)  # [[]] (empty PoolIntArray within an Array)\n"
+"[/codeblock]\n"
+"En su lugar hay que [i]reasignar[/i] toda la propiedad [PoolIntArray] con "
+"[code]=[/code]:\n"
+"[codeblock]\n"
+"var array = [PoolIntArray()]\n"
+"var pool_array = array[0]\n"
+"pool_array.push_back(1234)\n"
+"array[0] = pool_array\n"
+"print(array)  # [[1234]] (PoolIntArray with 1 element inside an Array)\n"
+"[/codeblock]\n"
+"[b]Nota:[/b] Este tipo usa enteros con signo de 32 bits, en el intervalo "
+"[code][-2^31, 2^31 - 1][/code], es decir [code][-2147483648, 2147483647][/"
+"code]. Si se superan esos límites, los valores se desbordan (wrap). En "
+"cambio, [int] usa enteros de 64 bits con signo y admite valores mucho "
+"mayores."
 
 #: doc/classes/PoolIntArray.xml
-#, fuzzy
 msgid ""
 "Constructs a new [PoolIntArray]. Optionally, you can pass in a generic "
 "[Array] that will be converted."
 msgstr ""
-"Construye un nuevo [PackedInt32Array]. Opcionalmente, puedes pasar un "
-"[Array] genérico que será convertido."
+"Construye un nuevo [PoolIntArray]. Opcionalmente puedes pasar un [Array] "
+"genérico que se convertirá."
 
 #: doc/classes/PoolIntArray.xml
-#, fuzzy
 msgid "Appends a [PoolIntArray] at the end of this array."
-msgstr "Añade un [PackedInt32Array] al final de este array."
+msgstr "Añade un [PoolIntArray] al final de este array."
 
 #: doc/classes/PoolIntArray.xml
 msgid ""
 "Returns the integer at the given [code]index[/code] in the array. This is "
 "the same as using the [code][][/code] operator ([code]array[index][/code])."
 msgstr ""
+"Devuelve el entero en el [code]index[/code] dado del array. Equivale al "
+"operador [code][][/code] ([code]array[index][/code])."
 
 #: doc/classes/PoolIntArray.xml
-#, fuzzy
 msgid ""
 "Inserts a new int at a given position in the array. The position must be "
 "valid, or at the end of the array ([code]idx == size()[/code])."
 msgstr ""
-"Inserta un nuevo número entero en una posición determinada de la array. La "
-"posición debe ser válida, o al final de la array ([code]idx == size()[/"
-"code])."
+"Inserta un entero nuevo en una posición del array. La posición debe ser "
+"válida o el final del array ([code]idx == size()[/code])."
 
 #: doc/classes/PoolIntArray.xml
-#, fuzzy
 msgid "Changes the int at the given index."
-msgstr "Cambia el entero en el índice dado."
+msgstr "Cambia el entero en el índice indicado."
 
 #: doc/classes/PoolRealArray.xml
 msgid "A pooled array of real numbers ([float])."
@@ -65597,12 +65819,11 @@ msgid "Changes the float at the given index."
 msgstr "Cambia el real en el índice dado."
 
 #: doc/classes/PoolStringArray.xml
-#, fuzzy
 msgid "A pooled array of [String]s."
-msgstr "Un paquete de [Array] de [String]s."
+msgstr ""
+"Un arreglo de cadenas ([String]) con gestión de memoria (pooled array)."
 
 #: doc/classes/PoolStringArray.xml
-#, fuzzy
 msgid ""
 "An array specifically designed to hold [String]s. Optimized for memory "
 "usage, does not fragment the memory.\n"
@@ -65625,44 +65846,55 @@ msgid ""
 "print(array)  # [[hello]] (PoolStringArray with 1 element inside an Array)\n"
 "[/codeblock]"
 msgstr ""
-"Un [Array] diseñado específicamente para mantener valores enteros de 32 "
-"bits. Empaqueta los datos de forma ajustada, por lo que ahorra memoria para "
-"los tamaños de arrays grandes.\n"
-"[b]Nota:[/b] Este tipo se pasa por valor y no por referencia.\n"
-"[b]Nota:[/b] Este tipo almacena enteros de 32 bits con signo, lo que "
-"significa que puede tomar valores en el intervalo [code][-2^31, 2^31 - 1][/"
-"code], es decir, [code][-2147483648, 2147483647][/code]. Exceder esos "
-"límites volvera los valores al minimo inicial. En comparación, [int] usa "
-"enteros de 64 bits con signo, que pueden contener valores mucho mayores. Si "
-"necesitas empaquetar los enteros de 64 bits de forma apretada, mira "
-"[PackedInt64Array]."
+"Un arreglo diseñado específicamente para contener cadenas ([String]). "
+"Optimizado para el uso de memoria, no fragmenta la misma.\n"
+"[b]Nota:[/b] Este tipo se pasa por valor y no por referencia. Esto significa "
+"que al [i]mutar[/i] una propiedad de clase de tipo [PoolStringArray] o al "
+"mutar un [PoolStringArray] dentro de un [Array] o [Dictionary], los cambios "
+"se perderán:\n"
+"[codeblock]\n"
+"var array = [PoolStringArray()]\n"
+"array[0].push_back(\"hola\")\n"
+"print(array)  # [[]] (PoolStringArray vacío dentro de un Array)\n"
+"[/codeblock]\n"
+"En su lugar, la propiedad [PoolStringArray] completa debe ser [i]reasignada[/"
+"i] con [code]=[/code] para que se cambie:\n"
+"[codeblock]\n"
+"var array = [PoolStringArray()]\n"
+"var pool_array = array[0]\n"
+"pool_array.push_back(\"hola\")\n"
+"array[0] = pool_array\n"
+"print(array)  # [[hola]] (PoolStringArray con 1 elemento dentro de un "
+"Array)\n"
+"[/codeblock]"
 
 #: doc/classes/PoolStringArray.xml
-#, fuzzy
 msgid ""
 "Constructs a new [PoolStringArray]. Optionally, you can pass in a generic "
 "[Array] that will be converted."
 msgstr ""
-"Construye un nuevo [PackedStringArray]. Opcionalmente, puedes pasar un "
-"[Array] genérico que será convertido."
+"Crea un [PoolStringArray] nuevo. Opcionalmente puedes pasar un [Array] "
+"genérico que será convertido."
 
 #: doc/classes/PoolStringArray.xml
-#, fuzzy
 msgid "Appends a [PoolStringArray] at the end of this array."
-msgstr "Añade un [PackedStringArray] al final de este array."
+msgstr "Añade un [PoolStringArray] al final de este array."
 
 #: doc/classes/PoolStringArray.xml
 msgid ""
 "Returns the String at the given [code]index[/code] in the array. This is the "
 "same as using the [code][][/code] operator ([code]array[index][/code])."
 msgstr ""
+"Devuelve el [String] en el [code]index[/code] indicado. Equivale a "
+"[code]array[index][/code]."
 
 #: doc/classes/PoolStringArray.xml
-#, fuzzy
 msgid ""
 "Returns a [String] with each element of the array joined with the given "
 "[code]delimiter[/code]."
-msgstr "Devuelve el peso del punto asociado con el [code]id[/code] dado."
+msgstr ""
+"Devuelve un [String] uniendo los elementos con el [code]delimiter[/code] "
+"dado."
 
 #: doc/classes/PoolStringArray.xml
 msgid "Appends a string element at end of the array."
@@ -65673,12 +65905,10 @@ msgid "Changes the [String] at the given index."
 msgstr "Cambia la [String] en el índice dado."
 
 #: doc/classes/PoolVector2Array.xml
-#, fuzzy
 msgid "A pooled array of [Vector2]s."
-msgstr "Un empaquetado de [Array] de [Vector2]s."
+msgstr "Un arreglo de [Vector2] con gestión de memoria (pooled array)."
 
 #: doc/classes/PoolVector2Array.xml
-#, fuzzy
 msgid ""
 "An array specifically designed to hold [Vector2]. Optimized for memory "
 "usage, does not fragment the memory.\n"
@@ -65702,42 +65932,52 @@ msgid ""
 "Array)\n"
 "[/codeblock]"
 msgstr ""
-"Un [Array] diseñado específicamente para mantener valores enteros de 32 "
-"bits. Empaqueta los datos de forma ajustada, por lo que ahorra memoria para "
-"los tamaños de arrays grandes.\n"
-"[b]Nota:[/b] Este tipo se pasa por valor y no por referencia.\n"
-"[b]Nota:[/b] Este tipo almacena enteros de 32 bits con signo, lo que "
-"significa que puede tomar valores en el intervalo [code][-2^31, 2^31 - 1][/"
-"code], es decir, [code][-2147483648, 2147483647][/code]. Exceder esos "
-"límites volvera los valores al minimo inicial. En comparación, [int] usa "
-"enteros de 64 bits con signo, que pueden contener valores mucho mayores. Si "
-"necesitas empaquetar los enteros de 64 bits de forma apretada, mira "
-"[PackedInt64Array]."
+"Un arreglo diseñado específicamente para contener [Vector2]. Optimizado para "
+"el uso de memoria, no fragmenta la misma.\n"
+"[b]Nota:[/b] Este tipo se pasa por valor y no por referencia. Esto significa "
+"que al [i]mutar[/i] una propiedad de clase de tipo [PoolVector2Array] o al "
+"mutar un [PoolVector2Array] dentro de un [Array] o [Dictionary], los cambios "
+"se perderán:\n"
+"[codeblock]\n"
+"var array = [PoolVector2Array()]\n"
+"array[0].push_back(Vector2(12, 34))\n"
+"print(array)  # [[]] (PoolVector2Array vacío dentro de un Array)\n"
+"[/codeblock]\n"
+"En su lugar, la propiedad [PoolColorArray] completa debe ser [i]reasignada[/"
+"i] con [code]=[/code] para que se cambie:\n"
+"[codeblock]\n"
+"var array = [PoolVector2Array()]\n"
+"var pool_array = array[0]\n"
+"pool_array.push_back(Vector2(12, 34))\n"
+"array[0] = pool_array\n"
+"print(array)  # [[(12, 34)]] (PoolVector2Array con 1 elemento dentro de un "
+"Array)\n"
+"[/codeblock]"
 
 #: doc/classes/PoolVector2Array.xml doc/classes/TileMap.xml
 #: doc/classes/TileSet.xml
 msgid "2D Navigation Astar Demo"
-msgstr ""
+msgstr "Demostración de navegación 2D con AStar"
 
 #: doc/classes/PoolVector2Array.xml
-#, fuzzy
 msgid ""
 "Constructs a new [PoolVector2Array]. Optionally, you can pass in a generic "
 "[Array] that will be converted."
 msgstr ""
-"Construye un nuevo [PackedVector2Array]. Opcionalmente, puedes pasar un "
-"[Array] genérico que será convertido."
+"Construye un nuevo [PoolVector2Array]. Opcionalmente puedes pasar un [Array] "
+"genérico que será convertido."
 
 #: doc/classes/PoolVector2Array.xml
-#, fuzzy
 msgid "Appends a [PoolVector2Array] at the end of this array."
-msgstr "Añade un [PackedVector2Array] al final de este array."
+msgstr "Añade un [PoolVector2Array] al final de este array."
 
 #: doc/classes/PoolVector2Array.xml
 msgid ""
 "Returns the Vector2 at the given [code]index[/code] in the array. This is "
 "the same as using the [code][][/code] operator ([code]array[index][/code])."
 msgstr ""
+"Devuelve el [Vector2] en el [code]index[/code] dado del array. Equivale al "
+"operador [code][][/code] ([code]array[index][/code])."
 
 #: doc/classes/PoolVector2Array.xml
 msgid "Inserts a [Vector2] at the end."
@@ -65748,12 +65988,10 @@ msgid "Changes the [Vector2] at the given index."
 msgstr "Cambia el [Vector2] en el índice dado."
 
 #: doc/classes/PoolVector3Array.xml
-#, fuzzy
 msgid "A pooled array of [Vector3]."
-msgstr "Un empaquetado [Array] de [Vector3]s."
+msgstr "Un arreglo de [Vector3] con gestión de memoria (pooled array)."
 
 #: doc/classes/PoolVector3Array.xml
-#, fuzzy
 msgid ""
 "An array specifically designed to hold [Vector3]. Optimized for memory "
 "usage, does not fragment the memory.\n"
@@ -65777,37 +66015,47 @@ msgid ""
 "Array)\n"
 "[/codeblock]"
 msgstr ""
-"Un [Array] diseñado específicamente para mantener valores enteros de 32 "
-"bits. Empaqueta los datos de forma ajustada, por lo que ahorra memoria para "
-"los tamaños de arrays grandes.\n"
-"[b]Nota:[/b] Este tipo se pasa por valor y no por referencia.\n"
-"[b]Nota:[/b] Este tipo almacena enteros de 32 bits con signo, lo que "
-"significa que puede tomar valores en el intervalo [code][-2^31, 2^31 - 1][/"
-"code], es decir, [code][-2147483648, 2147483647][/code]. Exceder esos "
-"límites volvera los valores al minimo inicial. En comparación, [int] usa "
-"enteros de 64 bits con signo, que pueden contener valores mucho mayores. Si "
-"necesitas empaquetar los enteros de 64 bits de forma apretada, mira "
-"[PackedInt64Array]."
+"Un arreglo diseñado específicamente para contener [Vector3]. Optimizado para "
+"el uso de memoria, no fragmenta la misma.\n"
+"[b]Nota:[/b] Este tipo se pasa por valor y no por referencia. Esto significa "
+"que al [i]mutar[/i] una propiedad de clase de tipo [PoolVector3Array] o al "
+"mutar un [PoolVector3Array] dentro de un [Array] o [Dictionary], los cambios "
+"se perderán:\n"
+"[codeblock]\n"
+"var array = [PoolVector3Array()]\n"
+"array[0].push_back(Vector2(12, 34, 56))\n"
+"print(array)  # [[]] (PoolVector3Array vacío dentro de un Array)\n"
+"[/codeblock]\n"
+"En su lugar, la propiedad [PoolVector3Array] completa debe ser "
+"[i]reasignada[/i] con [code]=[/code] para que se cambie:\n"
+"[codeblock]\n"
+"var array = [PoolVector3Array()]\n"
+"var pool_array = array[0]\n"
+"pool_array.push_back(Vector2(12, 34, 56))\n"
+"array[0] = pool_array\n"
+"print(array)  # [[(12, 34, 56)]] (PoolVector3Array con 1 elemento dentro de "
+"un Array)\n"
+"[/codeblock]"
 
 #: doc/classes/PoolVector3Array.xml
-#, fuzzy
 msgid ""
 "Constructs a new [PoolVector3Array]. Optionally, you can pass in a generic "
 "[Array] that will be converted."
 msgstr ""
-"Construye un nuevo [PackedVector3Array]. Opcionalmente, puedes pasar un "
-"[Array] genérico que será convertido."
+"Construye un nuevo [PoolVector3Array]. Opcionalmente puedes pasar un [Array] "
+"genérico que será convertido."
 
 #: doc/classes/PoolVector3Array.xml
-#, fuzzy
 msgid "Appends a [PoolVector3Array] at the end of this array."
-msgstr "Añade un [PackedVector3Array] al final de este array."
+msgstr "Añade un [PoolVector3Array] al final de este array."
 
 #: doc/classes/PoolVector3Array.xml
 msgid ""
 "Returns the Vector3 at the given [code]index[/code] in the array. This is "
 "the same as using the [code][][/code] operator ([code]array[index][/code])."
 msgstr ""
+"Devuelve el [Vector3] en el [code]index[/code] dado del array. Equivale al "
+"operador [code][][/code] ([code]array[index][/code])."
 
 #: doc/classes/PoolVector3Array.xml
 msgid "Inserts a [Vector3] at the end."
@@ -71679,9 +71927,8 @@ msgstr ""
 "interpolar. Por defecto no hay retraso."
 
 #: doc/classes/ProximityGroup.xml
-#, fuzzy
 msgid "General-purpose 3D proximity detection node."
-msgstr "Nodo de detección de proximidad de propósito general."
+msgstr "Nodo genérico de detección de proximidad en 3D."
 
 #: doc/classes/ProximityGroup.xml
 msgid ""
@@ -71746,6 +71993,69 @@ msgid ""
 "[method Vector3.distance_to] or [method Vector3.distance_squared_to] are "
 "fast enough too, especially if you call them less often using a [Timer] node."
 msgstr ""
+"Nodo de detección de proximidad de propósito general. [ProximityGroup] puede "
+"usarse para comprobaciones de distancia [i]aproximadas[/i], que son más "
+"rápidas que las comprobaciones exactas usando [method Vector3.distance_to] o "
+"[method Vector3.distance_squared_to].\n"
+"Los nodos [ProximityGroup] se agrupan automáticamente, siempre que compartan "
+"el mismo [member group_name] e intersecten entre sí. Al llamar a [method "
+"broadcast], puedes invocar un método específico con varios parámetros a "
+"todos los miembros que intersecten.\n"
+"[ProximityGroup] tiene forma cuboidal y consiste en un clúster de "
+"coordenadas [Vector3]. Las coordenadas se calculan automáticamente llamando "
+"a [member grid_radius]. Para permitir que [ProximityGroup] encuentre a sus "
+"pares (y realice el agrupamiento automático), es necesario definir su "
+"[member group_name] con un [String] no vacío. Tan pronto como la forma de "
+"este objeto intersecte con la de otro objeto [ProximityGroup], y ambos "
+"compartan el mismo [member group_name], pertenecerán al mismo grupo mientras "
+"sigan intersectando.\n"
+"Dado que [ProximityGroup] no depende del motor de física, no necesitas "
+"añadir ningún otro nodo como hijo (a diferencia de [PhysicsBody]).\n"
+"El [ProximityGroup] utiliza los grupos del [SceneTree] internamente llamando "
+"al método [method Node.add_to_group]. Los nombres de los grupos del "
+"[SceneTree] se construyen combinando el [member group_name] con sus "
+"coordenadas, las cuales se calculan usando el [member grid_radius] definido "
+"previamente.\n"
+"[b]Ejemplo:[/b] Un nodo [ProximityGroup] llamado [code]\"PlanetEarth\"[/"
+"code] en la posición [code]Vector3(6, 6, 6)[/code] con un [member "
+"group_name] establecido en [code]\"planets\"[/code] y un [member "
+"grid_radius] de [code]Vector3(1, 2, 3)[/code] creará los siguientes nombres "
+"de grupo en el [SceneTree]:\n"
+"[codeblock]\n"
+"- \"planets|5|4|3\"\n"
+"- \"planets|5|4|4\"\n"
+"- \"planets|5|4|5\"\n"
+"- \"planets|5|4|6\"\n"
+"- \"planets|5|4|7\"\n"
+"- \"planets|5|4|8\"\n"
+"- \"planets|5|4|9\"\n"
+"- ...\n"
+"[/codeblock]\n"
+"Si hay otro [ProximityGroup] llamado [code]\"PlanetMars\"[/code] con el "
+"nombre de grupo [code]\"planets\"[/code], y una de sus coordenadas es "
+"[code]Vector3(5, 4, 7)[/code], normalmente crearía el grupo de [SceneTree] "
+"llamado [code]\"planets|5|4|7\"[/code]. Sin embargo, como este nombre de "
+"grupo ya existe, este objeto [ProximityGroup] será [i]añadido[/i] al "
+"existente. [code]\"PlanetEarth\"[/code] ya está en este grupo. Mientras "
+"ambos nodos no cambien su transform y dejen de intersectar (o salgan del "
+"árbol de escena), estarán agrupados. Mientras exista esta intersección, "
+"cualquier llamada a [method broadcast] afectará a [i]ambos[/i] nodos "
+"[ProximityGroup].\n"
+"Hay 3 advertencias a tener en cuenta al usar [ProximityGroup]:\n"
+"- Cuanto mayor sea el radio de la rejilla, más coordenadas y más grupos de "
+"[SceneTree] se crearán. Esto puede tener un impacto en el rendimiento si se "
+"crean demasiados grupos.\n"
+"- Si el nodo [ProximityGroup] se transforma de alguna manera (o se elimina "
+"del árbol de escena), los agrupamientos tendrán que recalcularse. Esto "
+"también puede afectar al rendimiento.\n"
+"- Si tu [member grid_radius] es menor que [code]Vector3(1, 1, 1)[/code], se "
+"redondeará a [code]Vector3(1, 1, 1)[/code]. Por tanto, valores de radio de "
+"rejilla pequeños pueden llevar a agrupamientos no deseados.\n"
+"[b]Nota:[/b] [ProximityGroup] será eliminado en Godot 4.0 en favor de la "
+"funcionalidad [VisibilityNotifier], más efectiva y rápida. Para la mayoría "
+"de los casos de uso, [method Vector3.distance_to] o [method Vector3."
+"distance_squared_to] son suficientemente rápidos, especialmente si se llaman "
+"con menos frecuencia usando un nodo [Timer]."
 
 #: doc/classes/ProximityGroup.xml
 msgid ""
@@ -71753,11 +72063,16 @@ msgid ""
 "If the [member dispatch_mode] is set to [constant MODE_PROXY] (the default), "
 "all calls are delegated to their respective parent [Node]."
 msgstr ""
+"Llama al método y parámetros dados en todos los [ProximityGroup] que "
+"intersectan.\n"
+"Si [member dispatch_mode] es [constant MODE_PROXY] (por defecto), las "
+"llamadas se delegan al padre [Node] correspondiente."
 
 #: doc/classes/ProximityGroup.xml
 msgid ""
 "Specifies which node gets contacted on a call of method [method broadcast]."
 msgstr ""
+"Especifica qué nodo es contactado al llamar al método [method broadcast]."
 
 #: doc/classes/ProximityGroup.xml
 msgid ""
@@ -71767,6 +72082,10 @@ msgid ""
 "proximity checks at the cost of performance, since more groups will be "
 "created."
 msgstr ""
+"Tamaño del espacio en unidades 3D; determina cuántas coordenadas se usan "
+"para comprobar intersección entre [ProximityGroup]. Valores menores de "
+"[member grid_radius] dan comprobaciones más finas pero crean más grupas y "
+"cuestan más."
 
 #: doc/classes/ProximityGroup.xml
 msgid ""
@@ -71779,6 +72098,13 @@ msgid ""
 "significantly larger [member grid_radius] than their actual radius, position "
 "them close enough and they'll be automatically grouped."
 msgstr ""
+"Especifica el nombre de grupo común para que otros nodos [ProximityGroup] "
+"sepan si deben agruparse automáticamente con este nodo en caso de que "
+"intersecten entre sí.\n"
+"Por ejemplo, si tienes un nodo [ProximityGroup] llamado «Earth» y otro "
+"llamado «Mars», y ambos tienen «planet» como su [member group_name]. Dale a "
+"ambos planetas un [member grid_radius] significativamente mayor que su radio "
+"real, colócalos lo suficientemente cerca y se agruparán automáticamente."
 
 #: doc/classes/ProximityGroup.xml
 msgid ""
@@ -71790,16 +72116,26 @@ msgid ""
 "[b]Note:[/b] This signal is [i]not[/i] emitted by default, as the default "
 "[member dispatch_mode] is [constant MODE_PROXY]."
 msgstr ""
+"Se emite cuando el usuario llama al método [method broadcast] y ha "
+"establecido el [member dispatch_mode] en [constant MODE_SIGNAL].\n"
+"El método dado y sus parámetros se pasan a los receptores que se conectaron "
+"a esta señal de este objeto, así como a cualquier nodo [ProximityGroup] con "
+"el que este nodo esté agrupado.\n"
+"[b]Nota:[/b] Esta señal [i]no[/i] se emite por defecto, ya que el [member "
+"dispatch_mode] predeterminado es «MODE_PROXY»."
 
 #: doc/classes/ProximityGroup.xml
 msgid "This [ProximityGroup]'s parent will be target of [method broadcast]."
 msgstr ""
+"El padre de este [ProximityGroup] será el objetivo de [method broadcast]."
 
 #: doc/classes/ProximityGroup.xml
 msgid ""
 "This [ProximityGroup] will emit the [signal broadcast] [i]signal[/i] when "
 "calling the [method broadcast] [i]method[/i]."
 msgstr ""
+"Este [ProximityGroup] emitirá la señal [signal broadcast] al llamar al "
+"[method broadcast]."
 
 #: doc/classes/QuadMesh.xml
 msgid "Class representing a square mesh."
@@ -73402,45 +73738,40 @@ msgstr ""
 "resultado coincidente."
 
 #: doc/classes/RemoteTransform.xml
-#, fuzzy
 msgid ""
 "RemoteTransform pushes its own [Transform] to another [Spatial] derived Node "
 "in the scene."
 msgstr ""
-"RemoteTransform3D empuja su propia [Transform] a otro Nodo derivado de "
+"[RemoteTransform] aplica su propia [Transform] a otro nodo derivado de "
 "[Spatial] en la escena."
 
 #: doc/classes/RemoteTransform.xml
-#, fuzzy
 msgid ""
 "RemoteTransform pushes its own [Transform] to another [Spatial] derived Node "
 "(called the remote node) in the scene.\n"
 "It can be set to update another Node's position, rotation and/or scale. It "
 "can use either global or local coordinates."
 msgstr ""
-"RemoteTransform3D empuja su propia [Transform] a otro Nodo derivado de "
-"[Spatial] (llamado el nodo remoto) en la escena.\n"
-"Puede ser configurado para actualizar la posición, rotación y/o escala de "
-"otro Nodo. Puede usar tanto coordenadas globales como locales."
+"[RemoteTransform] aplica su [Transform] a otro nodo derivado de [Spatial] "
+"(nodo remoto) en la escena.\n"
+"Puede actualizar posición, rotación y/o escala del otro nodo usando "
+"coordenadas globales o locales."
 
 #: doc/classes/RemoteTransform.xml
-#, fuzzy
 msgid ""
 "[RemoteTransform] caches the remote node. It may not notice if the remote "
 "node disappears; [method force_update_cache] forces it to update the cache "
 "again."
 msgstr ""
-"[RemoteTransform2D] almacena el nodo remoto. Puede que no se dé cuenta si el "
-"nodo remoto desaparece; [method force_update_cache] le obliga a actualizar "
-"la caché de nuevo."
+"[RemoteTransform] guarda en caché el nodo remoto; puede no enterarse si "
+"desaparece; [method force_update_cache] fuerza a actualizar la caché."
 
 #: doc/classes/RemoteTransform.xml
-#, fuzzy
 msgid ""
 "The [NodePath] to the remote node, relative to the RemoteTransform's "
 "position in the scene."
 msgstr ""
-"El [NodePath] al nodo remoto, relativo a la posición del RemoteTransform2D "
+"El [NodePath] al nodo remoto, relativo a la posición del [RemoteTransform] "
 "en la escena."
 
 #: doc/classes/RemoteTransform.xml doc/classes/RemoteTransform2D.xml
@@ -73655,7 +73986,6 @@ msgid "Loads a specific resource type from a file."
 msgstr "Carga un tipo de recurso específico de un archivo."
 
 #: doc/classes/ResourceFormatLoader.xml
-#, fuzzy
 msgid ""
 "Godot loads resources in the editor or in exported games using "
 "ResourceFormatLoaders. They are queried automatically via the "
@@ -73675,23 +74005,23 @@ msgid ""
 "as [code].stex[/code] ([StreamTexture]) first, so they can be loaded with "
 "better efficiency on the graphics card."
 msgstr ""
-"Godot carga recursos en el editor o en los juegos exportados usando "
-"ResourceFormatLoaders. Se consultan automáticamente a través del singleton "
-"[ResourceLoader], o cuando se carga un recurso con dependencias internas. "
-"Cada tipo de archivo puede cargarse como un tipo de recurso diferente, por "
-"lo que se registran varios ResourceFormatLoaders en el motor.\n"
-"La ampliación de esta clase permite definir su propio cargador. Asegúrate de "
-"respetar los tipos y valores de retorno documentados. Debes darle un nombre "
-"de clase global con [code]class_name[/code] para que se registre. Al igual "
-"que los ResourceFormatLoaders incorporados, se llamará automáticamente "
-"cuando se carguen los recursos de su(s) tipo(s) manejado(s). También puedes "
+"Godot carga recursos en el editor o en juegos exportados utilizando "
+"ResourceFormatLoaders. Estos son consultados automáticamente a través del "
+"singleton [ResourceLoader], o cuando se carga un recurso con dependencias "
+"internas. Cada tipo de archivo puede cargarse como un tipo de recurso "
+"diferente, por lo que el motor registra múltiples ResourceFormatLoaders.\n"
+"Extender esta clase te permite definir tu propio cargador. Asegúrate de "
+"respetar los tipos de retorno y valores documentados. Deberías darle un "
+"nombre de clase global con [code]class_name[/code] para que sea registrado. "
+"Al igual que los ResourceFormatLoaders integrados, se llamará "
+"automáticamente al cargar recursos de los tipos que maneja. También puedes "
 "implementar un [ResourceFormatSaver].\n"
 "[b]Nota:[/b] También puedes extender [EditorImportPlugin] si el tipo de "
 "recurso que necesitas existe pero Godot no puede cargar su formato. Elegir "
-"una forma en lugar de otra depende de si el formato es adecuado o no para el "
-"juego exportado final. Por ejemplo, es mejor importar primero las texturas "
-"[code].png[/code] como [code].stex[/code] ([StreamTexture2D]), para que se "
-"puedan cargar con mayor eficacia en la tarjeta gráfica."
+"una forma u otra depende de si el formato es adecuado o no para el juego "
+"final exportado. Por ejemplo, es mejor importar texturas [code].png[/code] "
+"como [code].stex[/code] ([StreamTexture]) primero, para que puedan cargarse "
+"con mejor eficiencia en la tarjeta gráfica."
 
 #: doc/classes/ResourceFormatLoader.xml
 msgid ""
@@ -73748,6 +74078,12 @@ msgid ""
 "resources should not be cached. Returns a [Resource] object on success, or "
 "an [enum Error] constant in case of failure."
 msgstr ""
+"Carga un recurso cuando el motor encuentra que este cargador es compatible. "
+"Si el recurso cargado es el resultado de una importación, "
+"[code]original_path[/code] apuntará al archivo de origen. Si "
+"[code]no_subresource_cache[/code] es verdadero, los sub-recursos no deben "
+"almacenarse en la caché. Devuelve un objeto [Resource] en caso de éxito, o "
+"una constante de [enum Error] en caso de fallo."
 
 #: doc/classes/ResourceFormatLoader.xml
 msgid ""
@@ -73858,9 +74194,8 @@ msgstr ""
 "importar escenas que dependan de recursos personalizados."
 
 #: doc/classes/ResourceInteractiveLoader.xml
-#, fuzzy
 msgid "Interactive [Resource] loader."
-msgstr "El [Resource] a cargar."
+msgstr "Cargador interactivo de [Resource]."
 
 #: doc/classes/ResourceInteractiveLoader.xml
 msgid ""
@@ -73869,30 +74204,33 @@ msgid ""
 "granularity, which makes it mainly useful for displaying loading bars or "
 "percentages."
 msgstr ""
+"Cargador interactivo de [Resource]. Este objeto lo devuelve [ResourceLoader] "
+"al hacer una carga interactiva. Permite cargar recursos con gran "
+"granularidad, útil sobre todo para barras de carga o porcentajes."
 
 #: doc/classes/ResourceInteractiveLoader.xml
-#, fuzzy
 msgid ""
 "Returns the loaded resource if the load operation completed successfully, "
 "[code]null[/code] otherwise."
 msgstr ""
-"Devuelve [code]true[/code] si el dominio esta siendo finalizado, "
-"[code]false[/code] en caso contrario."
+"Devuelve el recurso cargado si la operación terminó correctamente, o "
+"[code]null[/code] en caso contrario."
 
 #: doc/classes/ResourceInteractiveLoader.xml
-#, fuzzy
 msgid ""
 "Returns the load stage. The total amount of stages can be queried with "
 "[method get_stage_count]."
 msgstr ""
-"Devuelve la instancia del nodo [Popup] si ya se ha establecido uno con "
-"[method set_popup]."
+"Devuelve la etapa actual de carga. El número total de etapas se consulta con "
+"[method get_stage_count]."
 
 #: doc/classes/ResourceInteractiveLoader.xml
 msgid ""
 "Returns the total amount of stages (calls to [method poll]) needed to "
 "completely load this resource."
 msgstr ""
+"Devuelve el número total de etapas (llamadas a [method poll]) necesarias "
+"para cargar por completo este recurso."
 
 #: doc/classes/ResourceInteractiveLoader.xml
 msgid ""
@@ -73905,6 +74243,14 @@ msgid ""
 "get_resource].\n"
 "Returns another [enum Error] code if the poll has failed."
 msgstr ""
+"Consulta el progreso de la carga, es decir, carga un bloque de datos hasta "
+"la siguiente etapa.\n"
+"Devuelve [constant OK] si la consulta tuvo éxito pero la carga aún no ha "
+"terminado (etapa intermedia). Habrá que llamar de nuevo a [method poll] "
+"hasta la última etapa.\n"
+"Devuelve [constant ERR_FILE_EOF] si la carga terminó correctamente. El "
+"recurso se obtiene con [method get_resource].\n"
+"Devuelve otro código [enum Error] si la consulta falló."
 
 #: doc/classes/ResourceInteractiveLoader.xml
 msgid ""
@@ -73916,10 +74262,18 @@ msgid ""
 "Returns another [enum Error] code if a poll has failed, aborting the "
 "operation."
 msgstr ""
+"Consulta la carga de forma sucesiva hasta que el recurso esté totalmente "
+"cargado o falle una llamada a [method poll].\n"
+"Devuelve [constant ERR_FILE_EOF] si la carga terminó correctamente; el "
+"recurso se obtiene con [method get_resource].\n"
+"Devuelve otro código [enum Error] si una consulta falla y se aborta la "
+"operación."
 
 #: doc/classes/ResourceInteractiveLoader.xml
 msgid "Configures whether nested resources, if included, should not be cached."
 msgstr ""
+"Configura si los recursos anidados, si los hay, no deben almacenarse en "
+"caché."
 
 #: doc/classes/ResourceLoader.xml
 msgid "Singleton used to load resource files."
@@ -76096,6 +76450,8 @@ msgstr ""
 #: doc/classes/RootMotionView.xml
 msgid "Editor-only helper for setting up root motion in [AnimationTree]."
 msgstr ""
+"Ayudante exclusivo del editor para configurar el «root motion» (movimiento "
+"de raíz) en un [AnimationTree]."
 
 #: doc/classes/RootMotionView.xml
 msgid ""
@@ -76112,40 +76468,55 @@ msgid ""
 "[code]extends RootMotionView[/code]. Additionally, it must not be a "
 "[code]tool[/code] script."
 msgstr ""
+"El «root motion» (movimiento de raíz) se refiere a una técnica de animación "
+"donde el esqueleto de una malla se utiliza para dar impulso a un personaje. "
+"Al trabajar con animaciones 3D, una técnica popular consiste en que los "
+"animadores usen el hueso raíz del esqueleto para dar movimiento al resto del "
+"mismo. Esto permite animar personajes de manera que los pasos coincidan "
+"realmente con el suelo debajo. También permite una interacción precisa con "
+"objetos durante las cinemáticas. Consulta también [AnimationTree].\n"
+"[b]Nota:[/b] [RootMotionView] solo es visible en el editor. Se ocultará "
+"automáticamente en el proyecto en ejecución y también se convertirá en un "
+"[Node] simple. Esto significa que un script adjunto a un nodo "
+"[RootMotionView] [i]debe[/i] tener [code]extends Node[/code] en lugar de "
+"[code]extends RootMotionView[/code]. Además, no debe ser un script de tipo "
+"«tool»."
 
 #: doc/classes/RootMotionView.xml
 msgid "Using AnimationTree - Root motion"
-msgstr ""
+msgstr "Uso de AnimationTree — Root motion"
 
 #: doc/classes/RootMotionView.xml
 msgid "Path to an [AnimationTree] node to use as a basis for root motion."
 msgstr ""
+"Ruta a un nodo [AnimationTree] que sirve de base para el «root motion» "
+"(movimiento de raíz)."
 
 #: doc/classes/RootMotionView.xml
-#, fuzzy
 msgid "The grid's cell size in 3D units."
-msgstr "El tamaño de la celda del TileMap."
+msgstr "Tamaño de celda de la grilla en unidades 3D."
 
 #: doc/classes/RootMotionView.xml
-#, fuzzy
 msgid "The grid's color."
-msgstr "El color de la línea."
+msgstr "Color de la grilla."
 
 #: doc/classes/RootMotionView.xml
 msgid ""
 "The grid's radius in 3D units. The grid's opacity will fade gradually as the "
 "distance from the origin increases until this [member radius] is reached."
 msgstr ""
+"Radio de la grilla en unidades 3D. La opacidad de la grilla se atenúa "
+"gradualmente con la distancia al origen hasta alcanzar este [member radius]."
 
 #: doc/classes/RootMotionView.xml
-#, fuzzy
 msgid ""
 "If [code]true[/code], the grid's points will all be on the same Y coordinate "
 "([i]local[/i] Y = 0). If [code]false[/code], the points' original Y "
 "coordinate is preserved."
 msgstr ""
-"Si [code]true[/code], las partículas usan el espacio de coordenadas del nodo "
-"padre. Si [code]false[/code], usan las coordenadas globales."
+"Si es [code]true[/code], todos los puntos de la grilla estarán en la misma "
+"coordenada Y ([i]local[/i] Y = 0). Si [code]false[/code], se conserva la "
+"coordenada Y original de los puntos."
 
 #: doc/classes/SceneState.xml
 msgid "A script interface to a scene file's data."
@@ -77962,7 +78333,6 @@ msgid "A material that uses a custom [Shader] program."
 msgstr "Un material que utiliza un programa personalizado [Shader]."
 
 #: doc/classes/ShaderMaterial.xml
-#, fuzzy
 msgid ""
 "A material that uses a custom [Shader] program to render either items to "
 "screen or process particles. You can create multiple materials for the same "
@@ -77972,10 +78342,12 @@ msgid ""
 "emit light when used in a [GIProbe]. Only emissive [SpatialMaterial]s can "
 "emit light in a [GIProbe]."
 msgstr ""
-"Un material que utiliza un programa personalizado [Shader] para renderizar "
-"los elementos a la pantalla o procesar las partículas. Puede crear múltiples "
-"materiales para el mismo shader pero configurar diferentes valores para los "
-"uniformes definidos en el shader."
+"Material que usa un programa [Shader] personalizado para dibujar en pantalla "
+"o procesar partículas. Puedes crear varios materiales para el mismo shader "
+"con distintos valores de los «uniforms».\n"
+"[b]Nota:[/b] Por una limitación del renderizador, los [ShaderMaterial] "
+"emisivos no emiten luz dentro de un [GIProbe]. Solo los [SpatialMaterial] "
+"emisivos pueden emitir luz en un [GIProbe]."
 
 #: doc/classes/ShaderMaterial.xml
 msgid ""
@@ -78001,15 +78373,15 @@ msgstr ""
 "code] dado."
 
 #: doc/classes/ShaderMaterial.xml
-#, fuzzy
 msgid ""
 "Changes the value set for this material of a uniform in the shader.\n"
 "[b]Note:[/b] [code]param[/code] must match the name of the uniform in the "
 "code exactly."
 msgstr ""
-"Cambia el valor establecido para este material de un uniforme en el shader. "
+"Cambia el valor establecido para un «uniform» en el shader de este "
+"material.\n"
 "[b]Nota:[/b] [code]param[/code] debe coincidir exactamente con el nombre del "
-"uniforme en el código."
+"«uniform» en el código."
 
 #: doc/classes/ShaderMaterial.xml
 msgid "The [Shader] program used to render this material."
@@ -78083,6 +78455,20 @@ msgid ""
 "([code]with_shape[/code]), and the transformation matrix of that shape "
 "([code]shape_xform[/code])."
 msgstr ""
+"Devuelve una lista de pares de puntos de contacto donde esta forma toca a "
+"otra.\n"
+"Si no hay colisiones, la lista devuelta está vacía. De lo contrario, la "
+"lista devuelta contiene puntos de contacto dispuestos en pares, con entradas "
+"que alternan entre puntos en el límite de esta forma y puntos en el límite "
+"de «with_shape».\n"
+"Un par de colisión A, B puede usarse para calcular la normal de colisión con "
+"[code](B - A).normalized()[/code], y la profundidad de colisión con [code](B "
+"- A).length()[/code]. Esta información se utiliza normalmente para separar "
+"formas, particularmente en resolutores de colisiones (solvers).\n"
+"Este método necesita la matriz de transformación para esta forma "
+"([code]local_xform[/code]), la forma con la que comprobar las colisiones "
+"([code]with_shape[/code]), y la matriz de transformación de esa forma "
+"([code]shape_xform[/code])."
 
 #: doc/classes/Shape2D.xml
 msgid ""
@@ -78105,7 +78491,6 @@ msgstr ""
 "([code]shape_motion[/code])."
 
 #: doc/classes/Shape2D.xml
-#, fuzzy
 msgid ""
 "Returns a list of contact point pairs where this shape would touch another, "
 "if a given movement was applied.\n"
@@ -78124,12 +78509,19 @@ msgid ""
 "([code]shape_xform[/code]), and the movement to test onto the other object "
 "([code]shape_motion[/code])."
 msgstr ""
-"Devuelve una lista de los puntos en los que esta forma tocaría a otra, si se "
-"aplicara un movimiento determinado. Si no hay colisiones la lista está "
-"vacía.\n"
-"Este método necesita la matriz de transformación de esta forma "
+"Devuelve una lista de pares de puntos de contacto donde esta forma tocaría a "
+"otra si se aplicara un movimiento dado.\n"
+"Si no hubiera colisiones, la lista devuelta está vacía. De lo contrario, la "
+"lista devuelta contiene puntos de contacto dispuestos en pares, con entradas "
+"que alternan entre puntos en el límite de esta forma y puntos en el límite "
+"de «with_shape».\n"
+"Un par de colisión A, B puede usarse para calcular la normal de colisión con "
+"[code](B - A).normalized()[/code], y la profundidad de colisión con [code](B "
+"- A).length()[/code]. Esta información se utiliza normalmente para separar "
+"formas, particularmente en resolutores de colisiones (solvers).\n"
+"Este método necesita la matriz de transformación para esta forma "
 "([code]local_xform[/code]), el movimiento a probar en esta forma "
-"([code]local_motion[/code]), la forma para comprobar las colisiones con "
+"([code]local_motion[/code]), la forma con la que comprobar las colisiones "
 "([code]with_shape[/code]), la matriz de transformación de esa forma "
 "([code]shape_xform[/code]), y el movimiento a probar en el otro objeto "
 "([code]shape_motion[/code])."
@@ -78150,6 +78542,11 @@ msgid ""
 "contact separation when this shape is involved.\n"
 "When set to [code]0.0[/code], the default value of [code]0.3[/code] is used."
 msgstr ""
+"Sesgo («bias») personalizado del resolutor de la forma. Define cuánto "
+"reaccionan los cuerpos para forzar la separación de contacto cuando esta "
+"forma está involucrada.\n"
+"Cuando se establece en [code]0.0[/code], se utiliza el valor por defecto de "
+"[code]0.3[/code]."
 
 #: doc/classes/ShapeCast.xml
 msgid ""
@@ -78827,19 +79224,24 @@ msgid ""
 "[b]Note:[/b] The [signal Range.changed] and [signal Range.value_changed] "
 "signals are part of the [Range] class which this class inherits from."
 msgstr ""
+"Clase base para los controles deslizantes (sliders) de la interfaz gráfica "
+"(GUI).\n"
+"[b]Nota:[/b] Las señales [signal Range.changed] y [signal Range."
+"value_changed] son parte de la clase [Range], de la cual hereda esta clase."
 
 #: doc/classes/Slider.xml
 msgid ""
 "If [code]true[/code], the slider can be interacted with. If [code]false[/"
 "code], the value can be changed only by code."
 msgstr ""
-"Si [code]true[/code], se puede interactuar con el deslizador. Si "
+"Si es [code]true[/code], se puede interactuar con el deslizador. Si es "
 "[code]false[/code], el valor puede ser cambiado sólo por el código."
 
 #: doc/classes/Slider.xml
 msgid "If [code]true[/code], the value can be changed using the mouse wheel."
 msgstr ""
-"Si [code]true[/code], el valor puede ser cambiado usando la rueda del ratón."
+"Si es [code]true[/code], el valor puede ser cambiado usando la rueda del "
+"ratón."
 
 #: doc/classes/Slider.xml
 msgid ""
@@ -78854,7 +79256,7 @@ msgid ""
 "If [code]true[/code], the slider will display ticks for minimum and maximum "
 "values."
 msgstr ""
-"Si [code]true[/code], el deslizador mostrará las marcas de los valores "
+"Si es [code]true[/code], el deslizador mostrará las marcas de los valores "
 "mínimo y máximo."
 
 #: doc/classes/Slider.xml
@@ -78862,22 +79264,23 @@ msgid ""
 "Emitted when dragging stops. If [code]value_changed[/code] is true, [member "
 "Range.value] is different from the value when you started the dragging."
 msgstr ""
+"Se emite al terminar de arrastrar. Si [code]value_changed[/code] es true, "
+"[member Range.value] difiere del valor al empezar el arrastre."
 
 #: doc/classes/Slider.xml
-#, fuzzy
 msgid "Emitted when dragging is started."
-msgstr "Emitido cuando se inicia el scrolling."
+msgstr "Se emite al empezar a arrastrar."
 
 #: doc/classes/SliderJoint.xml
-#, fuzzy
 msgid "Slider between two PhysicsBodies in 3D."
-msgstr "Un tipo de pistón que se desliza entre dos cuerpos en 3D."
+msgstr "Deslizador entre dos cuerpos de física en 3D."
 
 #: doc/classes/SliderJoint.xml
-#, fuzzy
 msgid ""
 "Slides across the X axis of the pivot object. See also [Generic6DOFJoint]."
-msgstr "Se desliza a través del eje X del objeto pivote."
+msgstr ""
+"Se desliza a lo largo del eje X del objeto pivote. Ver también "
+"[Generic6DOFJoint]."
 
 #: doc/classes/SliderJoint.xml
 msgid ""
@@ -80740,9 +81143,8 @@ msgstr ""
 "codificar y decodificar."
 
 #: doc/classes/StreamPeerBuffer.xml
-#, fuzzy
 msgid "Data buffer stream peer."
-msgstr "SSL stream peer."
+msgstr "Flujo de datos («stream peer») basado en un búfer de memoria."
 
 #: doc/classes/StreamPeerBuffer.xml
 msgid ""
@@ -80753,39 +81155,49 @@ msgid ""
 "bytes to the start of the buffer. Get and put operations are performed at "
 "the cursor position and will move the cursor accordingly."
 msgstr ""
+"Un «stream peer» de búfer de datos que utiliza un arreglo de bytes como "
+"flujo. Este objeto puede usarse para manejar datos binarios de sesiones de "
+"red. Para manejar datos binarios almacenados en archivos, puede usarse "
+"[File] directamente.\n"
+"Un objeto [StreamPeerBuffer] mantiene un cursor interno que es el "
+"desplazamiento («offset») en bytes desde el inicio del búfer. Las "
+"operaciones de obtención (get) y colocación (put) se realizan en la posición "
+"del cursor y lo moverán en consecuencia."
 
 #: doc/classes/StreamPeerBuffer.xml
 msgid "Clears the [member data_array] and resets the cursor."
-msgstr ""
+msgstr "Vacía [member data_array] y reinicia el cursor."
 
 #: doc/classes/StreamPeerBuffer.xml
 msgid ""
 "Returns a new [StreamPeerBuffer] with the same [member data_array] content."
 msgstr ""
+"Devuelve un [StreamPeerBuffer] nuevo con el mismo contenido de [member "
+"data_array]."
 
 #: doc/classes/StreamPeerBuffer.xml
-#, fuzzy
 msgid "Returns the current cursor position."
-msgstr "Devuelve la posición de scrolling actual."
+msgstr "Devuelve la posición actual del cursor."
 
 #: doc/classes/StreamPeerBuffer.xml
-#, fuzzy
 msgid "Returns the size of [member data_array]."
-msgstr "Devuelve el seno del parámetro."
+msgstr "Devuelve el tamaño de [member data_array]."
 
 #: doc/classes/StreamPeerBuffer.xml
 msgid "Resizes the [member data_array]. This [i]doesn't[/i] update the cursor."
-msgstr ""
+msgstr "Redimensiona el [member data_array]. [i]No[/i] se actualiza el cursor."
 
 #: doc/classes/StreamPeerBuffer.xml
 msgid ""
 "Moves the cursor to the specified position. [code]position[/code] must be a "
 "valid index of [member data_array]."
 msgstr ""
+"Mueve el cursor a la [code]position[/code] especificada; debe ser un índice "
+"válido de [member data_array]."
 
 #: doc/classes/StreamPeerBuffer.xml
 msgid "The underlying data buffer. Setting this value resets the cursor."
-msgstr ""
+msgstr "El búfer de datos subyacente. Al asignarlo se reinicia el cursor."
 
 #: doc/classes/StreamPeerSSL.xml
 msgid "SSL stream peer."
@@ -84343,9 +84755,8 @@ msgstr ""
 "activado."
 
 #: doc/classes/TextMesh.xml
-#, fuzzy
 msgid "Generate an [PrimitiveMesh] from the text."
-msgstr "Genera un [TriangleMesh] desde la malla."
+msgstr "Genera un [PrimitiveMesh] a partir del texto."
 
 #: doc/classes/TextMesh.xml
 msgid ""
@@ -84357,10 +84768,17 @@ msgid ""
 "height for the front face, 40% for the back face, 10% for the outer edges "
 "and 10% for the inner edges."
 msgstr ""
+"Genera un [PrimitiveMesh] a partir del texto.\n"
+"TextMesh solo puede generarse con fuentes dinámicas y contornos vectoriales "
+"de glifos. No se admiten fuentes de mapa de bits (incluidos datos bitmap en "
+"contenedores TrueType/OpenType, como emojis en color).\n"
+"La disposición UV son 4 franjas horizontales de arriba abajo: 40% de altura "
+"para la cara frontal, 40% para la trasera, 10% para bordes exteriores y 10% "
+"para interiores."
 
 #: doc/classes/TextMesh.xml
 msgid "Step (in pixels) used to approximate Bézier curves."
-msgstr ""
+msgstr "Paso (en píxeles) para aproximar curvas de Bézier."
 
 #: doc/classes/TextMesh.xml
 msgid ""
@@ -84368,31 +84786,28 @@ msgid ""
 "generated, and UV layout is changed to use full texture for the front face "
 "only."
 msgstr ""
+"Profundidad de la malla; si es [code]0.0[/code] solo se genera la cara "
+"frontal y el UV cambia para usar toda la textura solo en la cara frontal."
 
 #: doc/classes/TextMesh.xml
-#, fuzzy
 msgid "[Font] used for the [TextMesh]'s text."
-msgstr "[Font] que se usa para el texto de las [Label]."
+msgstr "[Font] usada para el texto del [TextMesh]."
 
 #: doc/classes/TextMesh.xml
-#, fuzzy
 msgid ""
 "Controls the text's horizontal alignment. Supports left, center and right. "
 "Set it to one of the [enum Align] constants."
 msgstr ""
-"Controla la alineación horizontal del texto. Apoya la izquierda, el centro, "
-"la derecha, y el relleno, o la justificación. Ponlo en una de las constantes "
-"[enum Align]."
+"Controla la alineación horizontal del texto: izquierda, centro y derecha. "
+"Usa una constante [enum Align]."
 
 #: doc/classes/TextMesh.xml
-#, fuzzy
 msgid "The size of one pixel's width on the text to scale it in 3D."
-msgstr "El tamaño del ancho de un píxel en el sprite para escalarlo en 3D."
+msgstr "El ancho de un píxel del texto para escalarlo en 3D."
 
 #: doc/classes/TextMesh.xml
-#, fuzzy
 msgid "The text to generate mesh from."
-msgstr "El tipo del que obtener la constante."
+msgstr "El texto del que generar la malla."
 
 #: doc/classes/Texture.xml
 msgid "Texture for 2D and 3D."
@@ -85125,7 +85540,6 @@ msgid "Control for drawing textures."
 msgstr "Control para dibujar texturas."
 
 #: doc/classes/TextureRect.xml
-#, fuzzy
 msgid ""
 "Used to draw icons and sprites in a user interface. The texture's placement "
 "can be controlled with the [member stretch_mode] property. It can scale, "
@@ -85136,9 +85550,13 @@ msgid ""
 "upside down."
 msgstr ""
 "Se utiliza para dibujar iconos y sprites en una interfaz de usuario. La "
-"colocación de la textura puede ser controlada con la propiedad [member "
-"stretch_mode]. Puede escalar, poner tiles o permanecer centrada dentro de su "
-"rectángulo delimitador."
+"ubicación de la textura puede controlarse con la propiedad [member "
+"stretch_mode]. Puede escalarse, repetirse («tile») o permanecer centrada "
+"dentro de su rectángulo delimitador.\n"
+"[b]Nota:[/b] Deberías activar [member flip_v] al usar un TextureRect para "
+"mostrar una [ViewportTexture]. Alternativamente, puedes activar [member "
+"Viewport.render_target_v_flip] en el Viewport. De lo contrario, la imagen "
+"aparecerá invertida verticalmente."
 
 #: doc/classes/TextureRect.xml
 msgid "If [code]true[/code], the texture scales to fit its bounding rectangle."
@@ -85155,9 +85573,8 @@ msgstr ""
 "delimitación del nodo. Ver [enum StretchMode]."
 
 #: doc/classes/TextureRect.xml
-#, fuzzy
 msgid "The node's [Texture] resource."
-msgstr "El recurso del nodo [Texture2D]."
+msgstr "El recurso [Texture] del nodo."
 
 #: doc/classes/TextureRect.xml
 msgid ""
@@ -87731,7 +88148,7 @@ msgstr ""
 
 #: doc/classes/Translation.xml
 msgid "Virtual method to override [method get_message]."
-msgstr ""
+msgstr "Método virtual para sobrescribir [method get_message]."
 
 #: doc/classes/Translation.xml
 msgid "Adds a message if nonexistent, followed by its translation."
@@ -92599,7 +93016,6 @@ msgid "Enables certain nodes only when approximately visible."
 msgstr "Habilita ciertos nodos sólo cuando son aproximadamente visibles."
 
 #: doc/classes/VisibilityEnabler.xml
-#, fuzzy
 msgid ""
 "The VisibilityEnabler will disable [RigidBody] and [AnimationPlayer] nodes "
 "when they are not visible. It will only affect other nodes within the same "
@@ -92615,18 +93031,18 @@ msgid ""
 "[b]Note:[/b] VisibilityEnabler will not affect nodes added after scene "
 "initialization."
 msgstr ""
-"El VisibilityEnabler deshabilitará los nodos [RigidBody] y [AnimationPlayer] "
-"cuando no sean visibles. Sólo afectará a otros nodos dentro de la misma "
-"escena que el propio VisibilityEnabler.\n"
-"Si sólo quieres recibir notificaciones, usa [VisibilityNotifier] en su "
-"lugar.\n"
-"[b]Nota:[/b] VisibilityEnabler utiliza una heurística aproximada por razones "
-"de rendimiento. No tiene en cuenta las paredes y otras oclusiones. La "
-"heurística es un detalle de implementación y puede cambiar en futuras "
-"versiones. Si necesita una comprobación precisa de la visibilidad, utilice "
-"otro método como añadir un nodo [Area] como hijo de un nodo [Camera] y/o "
-"[method Vector3.dot].\n"
-"[b]Nota:[/b] VisibilityEnabler no afectará a los nodos añadidos después de "
+"El VisibilityEnabler desactivará los nodos [RigidBody] y [AnimationPlayer] "
+"cuando no sean visibles. Solo afectará a otros nodos que estén dentro de la "
+"misma escena que el propio VisibilityEnabler.\n"
+"Si solo deseas recibir notificaciones de visibilidad, utiliza "
+"[VisibilityNotifier] en su lugar.\n"
+"[b]Note:[/b] VisibilityEnabler utiliza una heurística aproximada por razones "
+"de rendimiento. No tiene en cuenta paredes u otra oclusión (a menos que "
+"estés usando [Portal]s). La heurística es un detalle de implementación y "
+"puede cambiar en versiones futuras. Si necesitas una comprobación de "
+"visibilidad precisa, utiliza otro método, como añadir un nodo [Area] como "
+"hijo de un nodo [Camera] y/o el método [method Vector3.dot].\n"
+"[b]Note:[/b] VisibilityEnabler no afectará a los nodos añadidos después de "
 "la inicialización de la escena."
 
 #: doc/classes/VisibilityEnabler.xml doc/classes/VisibilityEnabler2D.xml
@@ -92645,22 +93061,21 @@ msgstr ""
 "[enum Enabler] dada."
 
 #: doc/classes/VisibilityEnabler.xml
-#, fuzzy
 msgid "If [code]true[/code], [RigidBody] nodes will be paused."
-msgstr "Si [code]true[/code], los nodos de [RigidBody2D] estarán en pausa."
+msgstr "Si es [code]true[/code], los [RigidBody] quedan en pausa."
 
 #: doc/classes/VisibilityEnabler.xml doc/classes/VisibilityEnabler2D.xml
 msgid "If [code]true[/code], [AnimationPlayer] nodes will be paused."
-msgstr "Si [code]true[/code], los nodos de [AnimationPlayer] estarán en pausa."
+msgstr ""
+"Si es [code]true[/code], los nodos de [AnimationPlayer] estarán en pausa."
 
 #: doc/classes/VisibilityEnabler.xml doc/classes/VisibilityEnabler2D.xml
 msgid "This enabler will pause [AnimationPlayer] nodes."
 msgstr "Este habilitador hará una pausa en los nodos [AnimationPlayer]."
 
 #: doc/classes/VisibilityEnabler.xml
-#, fuzzy
 msgid "This enabler will freeze [RigidBody] nodes."
-msgstr "Este habilitador congelará los nodos [RigidBody2D]."
+msgstr "Este habilitador pausa («congela») los nodos [RigidBody]."
 
 #: doc/classes/VisibilityEnabler.xml doc/classes/VisibilityEnabler2D.xml
 msgid "Represents the size of the [enum Enabler] enum."
@@ -92752,7 +93167,6 @@ msgid "Detects approximately when the node is visible on screen."
 msgstr "Detecta aproximadamente cuando el nodo es visible en la pantalla."
 
 #: doc/classes/VisibilityNotifier.xml
-#, fuzzy
 msgid ""
 "The VisibilityNotifier detects when it is visible on the screen. It also "
 "notifies when its bounding rectangle enters or exits the screen or a "
@@ -92766,17 +93180,17 @@ msgid ""
 "use another method such as adding an [Area] node as a child of a [Camera] "
 "node and/or [method Vector3.dot]."
 msgstr ""
-"El VisibilityNotifier detecta cuando es visible en la pantalla. También "
+"El VisibilityNotifier detecta cuándo es visible en la pantalla. También "
 "notifica cuando su rectángulo delimitador entra o sale de la pantalla o de "
 "la vista de una [Camera].\n"
-"Si desea que los nodos se deshabiliten automáticamente cuando salen de la "
-"pantalla, utilice [VisibilityEnabler] en su lugar.\n"
+"Si quieres que los nodos se desactiven automáticamente cuando salgan de la "
+"pantalla, utiliza [VisibilityEnabler] en su lugar.\n"
 "[b]Nota:[/b] VisibilityNotifier utiliza una heurística aproximada por "
-"razones de rendimiento. No tiene en cuenta las paredes y otras oclusiones. "
-"La heurística es un detalle de implementación y puede cambiar en futuras "
-"versiones. Si necesita una comprobación de visibilidad precisa, utilice otro "
-"método como añadir un nodo [Area] como hijo de un nodo [Camera] y/o [method "
-"Vector3.dot]."
+"razones de rendimiento. No tiene en cuenta las paredes ni otras oclusiones "
+"(a menos que estés usando [Portal]s). La heurística es un detalle de "
+"implementación y puede cambiar en futuras versiones. Si necesitas una "
+"comprobación de visibilidad precisa, utiliza otro método, como añadir un "
+"nodo [Area] como hijo de un nodo [Camera] y/o el método [method Vector3.dot]."
 
 #: doc/classes/VisibilityNotifier.xml
 msgid ""
@@ -92793,9 +93207,8 @@ msgstr ""
 "en el pase de dibujado."
 
 #: doc/classes/VisibilityNotifier.xml
-#, fuzzy
 msgid "The VisibilityNotifier's bounding box."
-msgstr "El cuadro delimitador del VisibilityNotifier."
+msgstr "La caja delimitadora del VisibilityNotifier."
 
 #: doc/classes/VisibilityNotifier.xml
 msgid ""
@@ -92806,27 +93219,30 @@ msgid ""
 "nodes that are far away.\n"
 "[b]Note:[/b] This feature will be disabled if set to 0.0."
 msgstr ""
+"Además de comprobar si un nodo está en pantalla o dentro de la vista de una "
+"[Camera], el VisibilityNotifier también puede comprobar opcionalmente si un "
+"nodo está dentro de una distancia máxima especificada al utilizar una "
+"[Camera] con proyección de perspectiva. Esto es útil para reducir las "
+"exigencias de rendimiento de los nodos que están lejos.\n"
+"[b]Nota:[/b] Esta característica se desactivará si se establece en 0.0."
 
 #: doc/classes/VisibilityNotifier.xml
-#, fuzzy
 msgid "Emitted when the VisibilityNotifier enters a [Camera]'s view."
 msgstr ""
-"Emitido cuando el VisibilityNotifier entra en la vista de una [Camera]."
+"Se emite cuando el VisibilityNotifier entra en la vista de una [Camera]."
 
 #: doc/classes/VisibilityNotifier.xml
-#, fuzzy
 msgid "Emitted when the VisibilityNotifier exits a [Camera]'s view."
-msgstr "Emitido cuando el VisibilityNotifier sale de la vista de una [Camera]."
+msgstr ""
+"Se emite cuando el VisibilityNotifier sale de la vista de una [Camera]."
 
 #: doc/classes/VisibilityNotifier.xml
-#, fuzzy
 msgid "Emitted when the VisibilityNotifier enters the screen."
-msgstr "Emitido cuando el VisibilityNotifier2D entra en la pantalla."
+msgstr "Se emite cuando el VisibilityNotifier entra en la pantalla."
 
 #: doc/classes/VisibilityNotifier.xml
-#, fuzzy
 msgid "Emitted when the VisibilityNotifier exits the screen."
-msgstr "Emitido cuando el VisibilityNotifier2D sale de la pantalla."
+msgstr "Se emite cuando el VisibilityNotifier sale de la pantalla."
 
 #: doc/classes/VisibilityNotifier2D.xml
 msgid ""
@@ -94248,46 +94664,39 @@ msgstr ""
 "proporcionado en un array o un diccionario."
 
 #: modules/visual_script/doc_classes/VisualScriptInputAction.xml
-#, fuzzy
 msgid "A Visual Script node returning a state of an action."
-msgstr ""
-"Un nodo de Visual Script que devuelve un solo singleton de [@GlobalScope]."
+msgstr "Nodo de Visual Script que devuelve el estado de una acción."
 
 #: modules/visual_script/doc_classes/VisualScriptInputAction.xml
 msgid ""
 "[VisualScriptInputAction] can be used to check if an action is pressed or "
 "released."
 msgstr ""
+"[VisualScriptInputAction] comprueba si una acción está pulsada o soltada."
 
 #: modules/visual_script/doc_classes/VisualScriptInputAction.xml
-#, fuzzy
 msgid "Name of the action."
-msgstr "Rehacer la última acción."
+msgstr "Nombre de la acción."
 
 #: modules/visual_script/doc_classes/VisualScriptInputAction.xml
-#, fuzzy
 msgid "State of the action to check. See [enum Mode] for options."
-msgstr "La función a computar. Ver [enum Function] para las opciones."
+msgstr "Estado de la acción a comprobar. Ver [enum Mode]."
 
 #: modules/visual_script/doc_classes/VisualScriptInputAction.xml
-#, fuzzy
 msgid "[code]True[/code] if action is pressed."
-msgstr "Devuelve [code]true[/code] si la imagen está comprimida."
+msgstr "[code]True[/code] si la acción está pulsada."
 
 #: modules/visual_script/doc_classes/VisualScriptInputAction.xml
-#, fuzzy
 msgid "[code]True[/code] if action is released (i.e. not pressed)."
-msgstr "Devuelve [code]true[/code] si este botón está actualmente pulsado."
+msgstr "[code]True[/code] si la acción está soltada (no pulsada)."
 
 #: modules/visual_script/doc_classes/VisualScriptInputAction.xml
-#, fuzzy
 msgid "[code]True[/code] on the frame the action was pressed."
-msgstr "Si [code]true[/code], la rotación del nodo remoto se actualiza."
+msgstr "[code]True[/code] en el fotograma en que se pulsó la acción."
 
 #: modules/visual_script/doc_classes/VisualScriptInputAction.xml
-#, fuzzy
 msgid "[code]True[/code] on the frame the action was released."
-msgstr "Si [code]true[/code], el TreeItem se colapsa."
+msgstr "[code]True[/code] en el fotograma en que se soltó la acción."
 
 #: modules/visual_script/doc_classes/VisualScriptIterator.xml
 msgid "Steps through items in a given input."
@@ -100811,28 +101220,36 @@ msgid ""
 "A hint applied to the uniform, which controls the values it can take when "
 "set through the inspector."
 msgstr ""
+"Una pista («hint») aplicada al «uniform», que controla los valores que puede "
+"tomar cuando se establece a través del inspector."
 
 #: doc/classes/VisualShaderNodeScalarUniform.xml
 msgid ""
 "Minimum value for range hints. Used if [member hint] is set to [constant "
 "HINT_RANGE] or [constant HINT_RANGE_STEP]."
 msgstr ""
+"Valor mínimo para las pistas de rango. Se utiliza si [member hint] está "
+"establecido en [constant HINT_RANGE] o [constant HINT_RANGE_STEP]."
 
 #: doc/classes/VisualShaderNodeScalarUniform.xml
 msgid ""
 "Maximum value for range hints. Used if [member hint] is set to [constant "
 "HINT_RANGE] or [constant HINT_RANGE_STEP]."
 msgstr ""
+"Valor máximo para las pistas de rango. Se utiliza si [member hint] está "
+"establecido en [constant HINT_RANGE] o [constant HINT_RANGE_STEP]."
 
 #: doc/classes/VisualShaderNodeScalarUniform.xml
 msgid ""
 "Step (increment) value for the range hint with step. Used if [member hint] "
 "is set to [constant HINT_RANGE_STEP]."
 msgstr ""
+"Valor de paso (incremento) para la pista de rango con paso. Se utiliza si "
+"[member hint] está establecido en [constant HINT_RANGE_STEP]."
 
 #: doc/classes/VisualShaderNodeScalarUniform.xml
 msgid "No hint used."
-msgstr ""
+msgstr "No se utiliza ninguna pista."
 
 #: doc/classes/VisualShaderNodeScalarUniform.xml
 msgid ""
@@ -100840,6 +101257,9 @@ msgid ""
 "[member min] and [member max]. Translated to [code]hint_range(min, max)[/"
 "code] in shader code."
 msgstr ""
+"Una pista de rango para un valor escalar, que limita los valores de entrada "
+"posibles entre [member min] y [member max]. Se traduce como "
+"[code]hint_range(min, max)[/code] en el código del shader."
 
 #: doc/classes/VisualShaderNodeScalarUniform.xml
 msgid ""
@@ -100847,11 +101267,14 @@ msgid ""
 "between [member min] and [member max], with a step (increment) of [member "
 "step]). Translated to [code]hint_range(min, max, step)[/code] in shader code."
 msgstr ""
+"Una pista de rango para un valor escalar con paso, que limita los valores de "
+"entrada posibles entre [member min] y [member max], con un paso (incremento) "
+"de [member step]. Se traduce como [code]hint_range(min, max, step)[/code] en "
+"el código del shader."
 
 #: doc/classes/VisualShaderNodeScalarUniform.xml
-#, fuzzy
 msgid "Represents the size of the [enum Hint] enum."
-msgstr "Representa el tamaño del enum [enum Monitor]."
+msgstr "Representa el tamaño del enumerado [enum Hint]."
 
 #: doc/classes/VisualShaderNodeSwitch.xml
 msgid "A boolean/vector function for use within the visual shader graph."
@@ -103278,55 +103701,48 @@ msgid "Class that has everything pertaining to a world."
 msgstr "Clase que tiene todo lo que pertenece a un mundo."
 
 #: doc/classes/World.xml
-#, fuzzy
 msgid ""
 "Class that has everything pertaining to a world. A physics space, a visual "
 "scenario, a navigation map and a sound space. Spatial nodes register their "
 "resources into the current world."
 msgstr ""
-"Clase que tiene todo lo que pertenece a un mundo. Un espacio físico, un "
-"escenario visual y un espacio sonoro. Los nodos de Spatial registran sus "
-"recursos en el mundo actual."
+"Clase que agrupa todo lo relativo a un mundo: espacio de física, escenario "
+"visual, mapa de navegación y espacio de sonido. Los nodos [Spatial] "
+"registran sus recursos en el mundo actual."
 
 #: doc/classes/World.xml
-#, fuzzy
 msgid ""
 "Direct access to the world's physics 3D space state. Used for querying "
 "current and potential collisions."
 msgstr ""
-"Acceso directo al estado espacial 3D de la física del mundo. Se utiliza para "
-"consultar las colisiones actuales y potenciales. Sólo debe ser accedido "
-"desde dentro de [code]_physics_process(delta)[/code]."
+"Acceso directo al estado del espacio de física 3D del mundo. Sirve para "
+"consultar colisiones actuales y potenciales."
 
 #: doc/classes/World.xml
-#, fuzzy
 msgid "The World's [Environment]."
-msgstr "El [Environment] del World."
+msgstr "El [Environment] del [World]."
 
 #: doc/classes/World.xml
-#, fuzzy
 msgid ""
 "The World's fallback environment will be used if [member environment] fails "
 "or is missing."
 msgstr ""
-"El fallback_environment del World3D se usará si el [Environment] de World3D "
-"falla o falta."
+"El entorno de respaldo ([member fallback_environment]) del [World] se usa si "
+"[member environment] falla o no está definido."
 
 #: doc/classes/World.xml
-#, fuzzy
 msgid ""
 "The [RID] of this world's navigation map. Used by the [NavigationServer]."
-msgstr "Devuelve el [RID] de la forma enésima de un área."
+msgstr ""
+"El [RID] del mapa de navegación de este mundo. Lo usa [NavigationServer]."
 
 #: doc/classes/World.xml
-#, fuzzy
 msgid "The World's visual scenario."
-msgstr "El escenario visual de World."
+msgstr "El escenario visual del [World]."
 
 #: doc/classes/World.xml
-#, fuzzy
 msgid "The World's physics space."
-msgstr "El espacio físico del World."
+msgstr "El espacio de física del [World]."
 
 #: doc/classes/World2D.xml
 msgid "Class that has everything pertaining to a 2D world."

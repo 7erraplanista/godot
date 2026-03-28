@@ -5688,7 +5688,7 @@ msgstr "Árbol de Escenas"
 
 #: editor/editor_settings.cpp
 msgid "Start Create Dialog Fully Expanded"
-msgstr "Comenzar Diálogo de Creación Expandido"
+msgstr "Iniciar Diálogo de Creación Expandido"
 
 #: editor/editor_settings.cpp
 msgid "Always Show Folders"
@@ -5700,11 +5700,11 @@ msgstr "Editor de Propiedades"
 
 #: editor/editor_settings.cpp
 msgid "Auto Refresh Interval"
-msgstr "Intervalo de Auto Refrescar"
+msgstr "Intervalo de Refresco"
 
 #: editor/editor_settings.cpp
 msgid "Subresource Hue Tint"
-msgstr "Subrecurso Tinte del Tono"
+msgstr "Tinte de Color para Subrecursos"
 
 #: editor/editor_settings.cpp
 msgid "Color Theme"
@@ -15596,7 +15596,7 @@ msgstr "Pegar Nodo(s)"
 
 #: editor/scene_tree_dock.cpp
 msgid "Detach Script"
-msgstr "Sustraer Script"
+msgstr "Quitar Script"
 
 #: editor/scene_tree_dock.cpp
 msgid "This operation can't be done on the tree root."
@@ -15804,7 +15804,7 @@ msgstr ""
 
 #: editor/scene_tree_dock.cpp
 msgid "Sub-Resources"
-msgstr "Sub-Recursos"
+msgstr "Subrecursos"
 
 #: editor/scene_tree_dock.cpp
 msgid "Revoke Unique Name"
@@ -15914,7 +15914,7 @@ msgstr "Añadir un nuevo script o ya existente al nodo seleccionado."
 
 #: editor/scene_tree_dock.cpp
 msgid "Detach the script from the selected node."
-msgstr "Sustraer script del nodo seleccionado."
+msgstr "Quitar script del nodo seleccionado."
 
 #: editor/scene_tree_dock.cpp
 msgid "Remote"

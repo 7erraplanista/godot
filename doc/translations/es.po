@@ -2,7 +2,7 @@
 # Copyright (c) 2007-2022 Juan Linietsky, Ariel Manzur.
 # Copyright (c) 2014-2022 Godot Engine contributors (cf. AUTHORS.md).
 # This file is distributed under the same license as the Godot source code.
-#
+# 
 # 44pes Games <44pes.games@gmail.com>, 2020.
 # Megamega53 <Christopher.Morales21@myhunter.cuny.edu>, 2020, 2021.
 # Javier Ocampos <xavier.ocampos@gmail.com>, 2020, 2021, 2022.
@@ -46,7 +46,7 @@ msgstr ""
 "Project-Id-Version: Godot Engine class reference\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2026-03-28 01:38-0300\n"
+"PO-Revision-Date: 2026-03-30 11:51-0300\n"
 "Last-Translator: Juan Matías Olmos <elterraplanista@yahoo.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-class-reference/es/>\n"
@@ -5517,8 +5517,8 @@ msgstr "Animación de sprite 2D"
 #: doc/classes/AudioStreamPlayer.xml doc/classes/Button.xml
 #: doc/classes/CanvasLayer.xml doc/classes/CollisionShape2D.xml
 #: doc/classes/ColorRect.xml doc/classes/Input.xml doc/classes/InputEvent.xml
-#: doc/classes/InputEventAction.xml doc/classes/Label.xml doc/classes/Timer.xml
-#: doc/classes/VisibilityNotifier2D.xml
+#: doc/classes/InputEventAction.xml doc/classes/Label.xml
+#: doc/classes/Timer.xml doc/classes/VisibilityNotifier2D.xml
 msgid "2D Dodge The Creeps Demo"
 msgstr "Demo 2D «Dodge The Creeps»"
 
@@ -6683,10 +6683,11 @@ msgstr "AnimationTree"
 #: doc/classes/Camera.xml doc/classes/CollisionShape.xml
 #: doc/classes/CylinderShape.xml doc/classes/Environment.xml
 #: doc/classes/GIProbe.xml doc/classes/GIProbeData.xml
-#: doc/classes/KinematicBody.xml doc/classes/Light.xml doc/classes/Material.xml
-#: doc/classes/Mesh.xml doc/classes/MeshInstance.xml doc/classes/Particles.xml
-#: doc/classes/Quat.xml doc/classes/Skeleton.xml doc/classes/SpotLight.xml
-#: doc/classes/StaticBody.xml doc/classes/WorldEnvironment.xml
+#: doc/classes/KinematicBody.xml doc/classes/Light.xml
+#: doc/classes/Material.xml doc/classes/Mesh.xml doc/classes/MeshInstance.xml
+#: doc/classes/Particles.xml doc/classes/Quat.xml doc/classes/Skeleton.xml
+#: doc/classes/SpotLight.xml doc/classes/StaticBody.xml
+#: doc/classes/WorldEnvironment.xml
 msgid "Third Person Shooter Demo"
 msgstr "Demo de shooter en tercera persona"
 
@@ -12179,7 +12180,8 @@ msgid ""
 msgstr ""
 
 #: doc/classes/AudioEffectCapture.xml doc/classes/AudioEffectDistortion.xml
-#: doc/classes/AudioEffectFilter.xml doc/classes/AudioEffectHighShelfFilter.xml
+#: doc/classes/AudioEffectFilter.xml
+#: doc/classes/AudioEffectHighShelfFilter.xml
 #: doc/classes/AudioEffectLowShelfFilter.xml doc/classes/AudioServer.xml
 msgid "Audio buses"
 msgstr "Buses de audio"
@@ -20710,7 +20712,8 @@ msgstr ""
 "La torsión se bloquea si está por debajo de 0,05."
 
 #: doc/classes/ConeTwistJoint.xml doc/classes/Generic6DOFJoint.xml
-#: doc/classes/HingeJoint.xml doc/classes/Light.xml doc/classes/SliderJoint.xml
+#: doc/classes/HingeJoint.xml doc/classes/Light.xml
+#: doc/classes/SliderJoint.xml
 msgid "Represents the size of the [enum Param] enum."
 msgstr "Representa el tamaño del enum [enum Param]."
 
@@ -70055,15 +70058,15 @@ msgid ""
 "Collision Shapes\" is enabled in the Debug menu."
 msgstr ""
 "Color de los puntos de contacto entre las formas de colisión, visible cuando "
-"\"Formas de colisión visibles\" está activado en el menú de Depuración."
+"«Formas de colisión visibles» está activado en el menú de Depuración."
 
 #: doc/classes/ProjectSettings.xml
 msgid ""
 "Sets whether 2D physics will display collision outlines in game when "
 "\"Visible Collision Shapes\" is enabled in the Debug menu."
 msgstr ""
-"Color de las formas de colisión, visible cuando \"Formas de colisión "
-"visibles\" está activado en el menú de Depuración."
+"Color de las formas de colisión, visible cuando «Formas de colisión "
+"visibles» está activado en el menú de Depuración."
 
 #: doc/classes/ProjectSettings.xml
 msgid ""
@@ -70071,16 +70074,15 @@ msgid ""
 "\"Visible Collision Shapes\" is enabled in the Debug menu."
 msgstr ""
 "Número máximo de puntos de contacto entre las formas de colisión a mostrar "
-"cuando \"Formas de colisión visibles\" está activado en el menú de "
-"Depuración."
+"cuando «Formas de colisión visibles» está activado en el menú de Depuración."
 
 #: doc/classes/ProjectSettings.xml
 msgid ""
 "Color of the collision shapes, visible when \"Visible Collision Shapes\" is "
 "enabled in the Debug menu."
 msgstr ""
-"Color de las formas de colisión, visible cuando \"Formas de colisión "
-"visibles\" está activado en el menú de Depuración."
+"Color de las formas de colisión, visible cuando «Formas de colisión "
+"visibles» está activado en el menú de Depuración."
 
 #: doc/classes/ProjectSettings.xml
 msgid ""
@@ -70088,15 +70090,15 @@ msgid ""
 "Navigation\" is enabled in the Debug menu."
 msgstr ""
 "Color de la geometría de navegación desactivada, visible cuando la "
-"\"Navegación visible\" está activada en el menú de depuración."
+"«Navegación visible» está activada en el menú de depuración."
 
 #: doc/classes/ProjectSettings.xml
 msgid ""
 "Color of the navigation geometry, visible when \"Visible Navigation\" is "
 "enabled in the Debug menu."
 msgstr ""
-"Color de la geometría de navegación, visible cuando la \"Navegación "
-"visible\" está activada en el menú de depuración."
+"Color de la geometría de navegación, visible cuando la «Navegación visible» "
+"está activada en el menú de depuración."
 
 #: doc/classes/ProjectSettings.xml
 msgid "Custom image for the mouse cursor (limited to 256×256)."
@@ -89460,7 +89462,7 @@ msgstr "Devuelve el [enum BitmaskMode] del autotile."
 
 #: doc/classes/TileSet.xml
 msgid "Returns the [enum FallbackMode] of the autotile."
-msgstr ""
+msgstr "Devuelve el [enum FallbackMode] del autotile."
 
 #: doc/classes/TileSet.xml
 msgid ""
@@ -89854,7 +89856,6 @@ msgid ""
 msgstr ""
 
 #: doc/classes/Time.xml
-#, fuzzy
 msgid ""
 "Returns the current date as a dictionary of keys: [code]year[/code], "
 "[code]month[/code], [code]day[/code], [code]weekday[/code], and [code]dst[/"
@@ -89862,20 +89863,20 @@ msgid ""
 "The returned values are in the system's local time when [code]utc[/code] is "
 "false, otherwise they are in UTC."
 msgstr ""
-"Devuelve la fecha actual como un diccionario de claves: [code]year[/code], "
-"[code]month[/code], [code]day[/code], [code]weekday[/code], [code]dst[/code] "
-"(horario de verano), [code]hora[/code], [code]minute[/code], [code]second[/"
-"code]."
+"Devuelve la fecha actual como un diccionario con las claves: [code]year[/"
+"code], [code]month[/code], [code]day[/code], [code]weekday[/code] y "
+"[code]dst[/code] (horario de verano).\n"
+"Los valores devueltos están en la hora local del sistema cuando [code]utc[/"
+"code] es false; de lo contrario, están en UTC."
 
 #: doc/classes/Time.xml
-#, fuzzy
 msgid ""
 "Converts the given Unix timestamp to a dictionary of keys: [code]year[/"
 "code], [code]month[/code], [code]day[/code], and [code]weekday[/code]."
 msgstr ""
-"Devuelve la fecha actual como un diccionario de claves: [code]year[/code], "
-"[code]month[/code], [code]day[/code], [code]weekday[/code], [code]dst[/code] "
-"(Horario de verano)."
+"Convierte la marca de tiempo Unix dada en un diccionario con las claves: "
+"[code]year[/code], [code]month[/code], [code]day[/code] y [code]weekday[/"
+"code]."
 
 #: doc/classes/Time.xml
 msgid ""
@@ -89883,11 +89884,16 @@ msgid ""
 "The returned values are in the system's local time when [code]utc[/code] is "
 "false, otherwise they are in UTC."
 msgstr ""
+"Devuelve la fecha actual como una cadena de texto ISO 8601 (YYYY-MM-DD).\n"
+"Los valores devueltos están en la hora local del sistema cuando [code]utc[/"
+"code] es false; de lo contrario, están en UTC."
 
 #: doc/classes/Time.xml
 msgid ""
 "Converts the given Unix timestamp to an ISO 8601 date string (YYYY-MM-DD)."
 msgstr ""
+"Convierte la marca de tiempo Unix en una cadena de texto ISO 8601 (YYYY-MM-"
+"DD)."
 
 #: doc/classes/Time.xml
 #, fuzzy
@@ -99803,7 +99809,6 @@ msgstr ""
 "instancia."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid ""
 "Creates a visual instance and adds it to the VisualServer. It can be "
 "accessed with the RID that is returned. This RID will be used in all "
@@ -99815,17 +99820,15 @@ msgid ""
 "instance to be visible in the scenario using [method instance_set_base]."
 msgstr ""
 "Crea una instancia visual y la añade al VisualServer. Se puede acceder a "
-"ella con el RID que se devuelve. Este RID se usará en todas las funciones de "
-"[code]instance_*[/code] VisualServer.\n"
-"Una vez que hayas terminado con el RID, querrás liberarlo usando el método "
+"ella con el RID que se devuelve. Este RID se usará en todas las funciones "
+"[code]instance_*[/code] de VisualServer.\n"
+"Cuando haya terminado con el RID, deberá liberarlo mediante el método "
 "estático [method free_rid] de VisualServer.\n"
-"Una instancia es una forma de colocar un objeto 3D en el escenario. Objetos "
-"como partículas, mallas y sondas de reflexión necesitan ser asociados a una "
-"instancia para ser visibles en el escenario usando [method "
-"instance_set_base]."
+"Una instancia sirve para colocar un objeto 3D en el escenario. Objetos como "
+"partículas, mallas y sondas de reflexión deben asociarse a una instancia "
+"para ser visibles en el escenario mediante [method instance_set_base]."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid ""
 "Creates a visual instance, adds it to the VisualServer, and sets both base "
 "and scenario. It can be accessed with the RID that is returned. This RID "
@@ -99833,20 +99836,18 @@ msgid ""
 "Once finished with your RID, you will want to free the RID using the "
 "VisualServer's [method free_rid] static method."
 msgstr ""
-"Crea una instancia visual, la agrega al VisualServer, y establece tanto la "
-"base como el escenario. Se puede acceder a ella con el RID que se devuelve. "
-"Este RID se usará en todas las funciones de VisualServer de "
-"[code]instance_*[/code].\n"
-"Una vez terminado el RID, querrás liberarlo usando el método estático de "
-"VisualServer [method free_rid]."
+"Crea una instancia visual, la añade al VisualServer y establece la base y el "
+"escenario. Se puede acceder a ella con el RID que se devuelve. Este RID se "
+"usará en todas las funciones [code]instance_*[/code] de VisualServer.\n"
+"Cuando haya terminado con el RID, deberá liberarlo mediante el método "
+"estático [method free_rid] de VisualServer."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid ""
 "Sets the shadow casting setting to one of [enum ShadowCastingSetting]. "
 "Equivalent to [member GeometryInstance.cast_shadow]."
 msgstr ""
-"Establece la configuración del lanzamiento de sombras en uno de [enum "
+"Establece la configuración de proyección de sombras según uno de [enum "
 "ShadowCastingSetting]. Equivalente a [member GeometryInstance.cast_shadow]."
 
 #: doc/classes/VisualServer.xml
@@ -99858,29 +99859,26 @@ msgstr ""
 "InstanceFlags] para más detalles."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid ""
 "Sets a material that will be rendered for all surfaces on top of active "
 "materials for the mesh associated with this instance. Equivalent to [member "
 "GeometryInstance.material_overlay]."
 msgstr ""
-"Establece un material que sobrescribirá el material para todas las "
-"superficies de la malla asociada a este caso. Equivalente a [member "
-"GeometryInstance.material_override]."
+"Establece un material que se renderizará en todas las superficies por encima "
+"de los materiales activos de la malla asociada a esta instancia. Equivalente "
+"a [member GeometryInstance.material_overlay]."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid ""
 "Sets a material that will override the material for all surfaces on the mesh "
 "associated with this instance. Equivalent to [member GeometryInstance."
 "material_override]."
 msgstr ""
-"Establece un material que sobrescribirá el material para todas las "
-"superficies de la malla asociada a este caso. Equivalente a [member "
-"GeometryInstance.material_override]."
+"Establece un material que sustituye al material de todas las superficies de "
+"la malla asociada a esta instancia. Equivalente a [member GeometryInstance."
+"material_override]."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid ""
 "Sets the base of the instance. A base can be any of the 3D objects that are "
 "created in the VisualServer that can be displayed. For example, any of the "
@@ -99889,11 +99887,11 @@ msgid ""
 "be set as the base of an instance in order to be displayed in the scenario."
 msgstr ""
 "Establece la base de la instancia. Una base puede ser cualquiera de los "
-"objetos 3D que se crean en el VisualServer que se pueden mostrar. Por "
-"ejemplo, cualquiera de los tipos de luz, malla, multimalla, geometría "
-"inmediata, sistema de partículas, sonda de reflexión, mapa de luz y la sonda "
-"GI son todos los tipos que se pueden establecer como la base de una "
-"instancia para ser mostrados en el escenario."
+"objetos 3D creados en el VisualServer que puedan mostrarse. Por ejemplo, "
+"cualquiera de los tipos de luz, malla, multimalla, geometría inmediata, "
+"sistema de partículas, sonda de reflexión, captura de mapa de iluminación y "
+"sonda GI son tipos que pueden establecerse como base de una instancia para "
+"mostrarse en el escenario."
 
 #: doc/classes/VisualServer.xml
 msgid "Sets the weight for a given blend shape associated with this instance."
@@ -99901,37 +99899,34 @@ msgstr ""
 "Establece el peso de una determinada forma de mezcla asociada a este caso."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid ""
 "Sets a custom AABB to use when culling objects from the view frustum. "
 "Equivalent to [method GeometryInstance.set_custom_aabb]."
 msgstr ""
-"Establece un AABB personalizado para usar cuando se seleccionan objetos del "
-"frustum de la vista. Equivalente a [method GeometryInstance.set_custom_aabb]."
+"Establece un AABB personalizado para usar al descartar objetos respecto al "
+"frustum de vista. Equivalente a [method GeometryInstance.set_custom_aabb]."
 
 #: doc/classes/VisualServer.xml
 msgid "Function not implemented in Godot 3.x."
 msgstr "Función no implementada en Godot 3.x."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid ""
 "Sets a margin to increase the size of the AABB when culling objects from the "
 "view frustum. This allows you to avoid culling objects that fall outside the "
 "view frustum. Equivalent to [member GeometryInstance.extra_cull_margin]."
 msgstr ""
-"Establece un margen para aumentar el tamaño del AABB cuando se seleccionan "
-"los objetos del frustum de la vista. Esto le permite evitar la selección de "
-"objetos que caen fuera de la capa de hielo. Equivalente a [member "
-"GeometryInstance.extra_cull_margin]."
+"Establece un margen para aumentar el tamaño del AABB al descartar objetos "
+"respecto al frustum de vista. Permite evitar descartar objetos que quedan "
+"fuera del frustum de vista. Equivalente a [member GeometryInstance."
+"extra_cull_margin]."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid ""
 "Sets the render layers that this instance will be drawn to. Equivalent to "
 "[member VisualInstance.layers]."
 msgstr ""
-"Establece las capas de representación a las que se dibujará esta instancia. "
+"Establece las capas de renderizado en las que se dibujará esta instancia. "
 "Equivalente a [member VisualInstance.layers]."
 
 #: doc/classes/VisualServer.xml
@@ -99943,30 +99938,27 @@ msgstr ""
 "el mundo tridimensional en el que se mostrarán los objetos."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid ""
 "Sets the material of a specific surface. Equivalent to [method MeshInstance."
 "set_surface_material]."
 msgstr ""
-"Establece el material de una superficie específica. Equivalente al [method "
+"Establece el material de una superficie concreta. Equivalente a [method "
 "MeshInstance.set_surface_material]."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid ""
 "Sets the world space transform of the instance. Equivalent to [member "
 "Spatial.transform]."
 msgstr ""
-"Establece la transformación espacial del mundo de la instancia. Equivalente "
+"Establece la transformación en espacio mundial de la instancia. Equivalente "
 "a [member Spatial.transform]."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid "Sets the lightmap to use with this instance."
-msgstr "Establece la piel que se utilizará en esta instancia."
+msgstr ""
+"Establece el mapa de iluminación (lightmap) que se usará con esta instancia."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid ""
 "Sets whether an instance is drawn or not. Equivalent to [member Spatial."
 "visible]."
@@ -99975,7 +99967,6 @@ msgstr ""
 "visible]."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid ""
 "Returns an array of object IDs intersecting with the provided AABB. Only "
 "visual 3D nodes are considered, such as [MeshInstance] or "
@@ -99986,17 +99977,16 @@ msgid ""
 "[b]Warning:[/b] This function is primarily intended for editor usage. For in-"
 "game use cases, prefer physics collision."
 msgstr ""
-"Devuelve un array de IDs de objetos que se cruzan con el AABB proporcionado. "
-"Sólo se consideran los nodos visuales 3D, como [MeshInstance] o "
-"[DirectionalLight]. Utiliza [method @GDScript.instance_from_id] para obtener "
-"los nodos reales. Se debe proporcionar un escenario RID, que está disponible "
-"en el [World] que se desea consultar. Esto obliga a actualizar todos los "
-"recursos que están en cola.\n"
-"[b]Advertencia:[/b] Esta función está pensada principalmente para el uso del "
-"editor. Para casos de uso en el juego, prefiera la colisión física."
+"Devuelve un array de identificadores de objeto que intersecan con el AABB "
+"indicado. Solo se consideran nodos visuales 3D, como [MeshInstance] o "
+"[DirectionalLight]. Use [method @GDScript.instance_from_id] para obtener los "
+"nodos reales. Debe proporcionarse un RID de escenario, disponible en el "
+"[World] que desee consultar. Esto fuerza una actualización de todos los "
+"recursos en cola.\n"
+"[b]Advertencia:[/b] Esta función está pensada sobre todo para el editor. En "
+"el juego, prefiera la colisión física."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid ""
 "Returns an array of object IDs intersecting with the provided convex shape. "
 "Only visual 3D nodes are considered, such as [MeshInstance] or "
@@ -100007,17 +99997,16 @@ msgid ""
 "[b]Warning:[/b] This function is primarily intended for editor usage. For in-"
 "game use cases, prefer physics collision."
 msgstr ""
-"Devuelve un array de IDs de objetos que se intersectan con la forma convexa "
-"proporcionada. Sólo se consideran los nodos visuales 3D, como [MeshInstance] "
-"o [DirectionalLight]. Utilice [method @GDScript.instance_from_id] para "
-"obtener los nodos reales. Se debe proporcionar un escenario RID, que está "
-"disponible en el [World] que se desea consultar. Esto obliga a actualizar "
-"todos los recursos que están en cola.\n"
-"[b]Advertencia:[/b] Esta función está pensada principalmente para el uso del "
-"editor. Para casos de uso en el juego, prefiera la colisión física."
+"Devuelve un array de identificadores de objeto que intersecan con la forma "
+"convexa indicada. Solo se consideran nodos visuales 3D, como [MeshInstance] "
+"o [DirectionalLight]. Use [method @GDScript.instance_from_id] para obtener "
+"los nodos reales. Debe proporcionarse un RID de escenario, disponible en el "
+"[World] que desee consultar. Esto fuerza una actualización de todos los "
+"recursos en cola.\n"
+"[b]Advertencia:[/b] Esta función está pensada sobre todo para el editor. En "
+"el juego, prefiera la colisión física."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid ""
 "Returns an array of object IDs intersecting with the provided 3D ray. Only "
 "visual 3D nodes are considered, such as [MeshInstance] or "
@@ -100028,71 +100017,65 @@ msgid ""
 "[b]Warning:[/b] This function is primarily intended for editor usage. For in-"
 "game use cases, prefer physics collision."
 msgstr ""
-"Devuelve una serie de identificaciones de objetos que se intersectan con el "
-"rayo 3D proporcionado. Sólo se consideran los nodos 3D visuales, como "
-"[MeshInstance] o [DirectionalLight]. Utilice [method @GDScript."
-"instance_from_id] para obtener los nodos reales. Se debe proporcionar un "
-"escenario RID, que está disponible en el [World] que se desea consultar. "
-"Esto obliga a actualizar todos los recursos que están en cola.\n"
-"[b]Advertencia:[/b] Esta función está pensada principalmente para el uso del "
-"editor. Para casos de uso en el juego, prefiera la colisión física."
+"Devuelve un array de identificadores de objeto que intersecan con el rayo 3D "
+"indicado. Solo se consideran nodos visuales 3D, como [MeshInstance] o "
+"[DirectionalLight]. Use [method @GDScript.instance_from_id] para obtener los "
+"nodos reales. Debe proporcionarse un RID de escenario, disponible en el "
+"[World] que desee consultar. Esto fuerza una actualización de todos los "
+"recursos en cola.\n"
+"[b]Advertencia:[/b] Esta función está pensada sobre todo para el editor. En "
+"el juego, prefiera la colisión física."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid ""
 "If [code]true[/code], this directional light will blend between shadow map "
 "splits resulting in a smoother transition between them. Equivalent to "
 "[member DirectionalLight.directional_shadow_blend_splits]."
 msgstr ""
-"Si es [code]true[/code], esta luz direccional se mezclará entre las "
-"divisiones del mapa de sombras resultando en una transición más suave entre "
-"ellas. Equivalente a [member DirectionalLight."
-"directional_shadow_blend_splits]."
+"Si es [code]true[/code], esta luz direccional interpolará entre las "
+"divisiones del mapa de sombras, con una transición más suave entre ellas. "
+"Equivalente a [member DirectionalLight.directional_shadow_blend_splits]."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid ""
 "Sets the shadow depth range mode for this directional light. Equivalent to "
 "[member DirectionalLight.directional_shadow_depth_range]. See [enum "
 "LightDirectionalShadowDepthRangeMode] for options."
 msgstr ""
-"Establece el modo de alcance de la profundidad de la sombra para esta luz "
+"Establece el modo de rango de profundidad de sombras para esta luz "
 "direccional. Equivalente a [member DirectionalLight."
 "directional_shadow_depth_range]. Vea [enum "
 "LightDirectionalShadowDepthRangeMode] para las opciones."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid ""
 "Sets the shadow mode for this directional light. Equivalent to [member "
 "DirectionalLight.directional_shadow_mode]. See [enum "
 "LightDirectionalShadowMode] for options."
 msgstr ""
-"Establece el modo de sombra para esta luz direccional. Equivalente a [member "
-"DirectionalLight.modo_sombra_direccional]. Ver [enum "
+"Establece el modo de sombras para esta luz direccional. Equivalente a "
+"[member DirectionalLight.directional_shadow_mode]. Vea [enum "
 "LightDirectionalShadowMode] para las opciones."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid ""
 "Sets whether to use vertical or horizontal detail for this omni light. This "
 "can be used to alleviate artifacts in the shadow map. Equivalent to [member "
 "OmniLight.omni_shadow_detail]."
 msgstr ""
-"Establece si se debe usar un paraboloide dual o un mapa de cubos para el "
-"mapa de sombras. El paraboloide dual es más rápido pero puede sufrir de "
-"artefactos. Equivalente a [member OmniLight.omni_shadow_mode]."
+"Establece si se usa más detalle vertical u horizontal para esta luz "
+"omnidireccional. Sirve para mitigar artefactos en el mapa de sombras. "
+"Equivalente a [member OmniLight.omni_shadow_detail]."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid ""
 "Sets whether to use a dual paraboloid or a cubemap for the shadow map. Dual "
 "paraboloid is faster but may suffer from artifacts. Equivalent to [member "
 "OmniLight.omni_shadow_mode]."
 msgstr ""
-"Establece si se debe usar un paraboloide dual o un mapa de cubos para el "
-"mapa de sombras. El paraboloide dual es más rápido pero puede sufrir de "
-"artefactos. Equivalente a [member OmniLight.omni_shadow_mode]."
+"Establece si se usa un paraboloide dual o un mapa cúbico para el mapa de "
+"sombras. El paraboloide dual es más rápido pero puede mostrar artefactos. "
+"Equivalente a [member OmniLight.omni_shadow_mode]."
 
 #: doc/classes/VisualServer.xml
 msgid ""
@@ -100100,39 +100083,38 @@ msgid ""
 "bake mode affects how the light will be baked in [BakedLightmap]s and "
 "[GIProbe]s."
 msgstr ""
+"Establece el modo de horneado de esta luz; vea [enum LightBakeMode] para las "
+"opciones. El modo de horneado determina cómo se horneará la luz en "
+"[BakedLightmap] y [GIProbe]."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid "Sets the color of the light. Equivalent to [member Light.light_color]."
 msgstr ""
 "Establece el color de la luz. Equivalente a [member Light.light_color]."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid ""
 "Sets the cull mask for this Light. Lights only affect objects in the "
 "selected layers. Equivalent to [member Light.light_cull_mask]."
 msgstr ""
-"Establece la máscara de selección para este Light. Las luces sólo afectan a "
-"los objetos de las capas seleccionadas. Equivalente a [member Light."
+"Establece la máscara de capas (cull mask) para esta luz. Las luces solo "
+"afectan a objetos en las capas seleccionadas. Equivalente a [member Light."
 "light_cull_mask]."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid ""
 "If [code]true[/code], light will subtract light instead of adding light. "
 "Equivalent to [member Light.light_negative]."
 msgstr ""
-"Si es [code]true[/code], la luz restará luz en lugar de añadirla. "
-"Equivalente a [member Light.light_negative]."
+"Si es [code]true[/code], la luz restará en lugar de sumar. Equivalente a "
+"[member Light.light_negative]."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid ""
 "Sets the specified light parameter. See [enum LightParam] for options. "
 "Equivalent to [method Light.set_param]."
 msgstr ""
-"Establece el parámetro de luz especificado. Ver [enum LightParam] para las "
+"Establece el parámetro de luz indicado. Vea [enum LightParam] para las "
 "opciones. Equivalente a [method Light.set_param]."
 
 #: doc/classes/VisualServer.xml
@@ -100140,7 +100122,6 @@ msgid "Not implemented in Godot 3.x."
 msgstr "No se implementó en Godot 3.x."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid ""
 "If [code]true[/code], reverses the backface culling of the mesh. This can be "
 "useful when you have a flat mesh that has a light behind it. If you need to "
@@ -100148,15 +100129,13 @@ msgid ""
 "shadows with [method instance_geometry_set_cast_shadows_setting]. Equivalent "
 "to [member Light.shadow_reverse_cull_face]."
 msgstr ""
-"Si es [code]true[/code], invierte la selección de la malla. Esto puede ser "
-"útil cuando se tiene una malla plana que tiene una luz detrás de ella. Si "
-"necesitas proyectar una sombra en ambos lados de la malla, establece la "
-"malla para usar sombras de doble cara con [method "
-"instance_geometry_set_cast_shadows_setting]. Equivalente a [member Light."
-"shadow_reverse_cull_face]."
+"Si es [code]true[/code], invierte el descarte de caras traseras de la malla. "
+"Útil cuando hay una malla plana con una luz detrás. Si necesita proyectar "
+"sombra en ambas caras, configure la malla para sombras a doble cara con "
+"[method instance_geometry_set_cast_shadows_setting]. Equivalente a [member "
+"Light.shadow_reverse_cull_face]."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid ""
 "If [code]true[/code], light will cast shadows. Equivalent to [member Light."
 "shadow_enabled]."
@@ -100165,7 +100144,6 @@ msgstr ""
 "Light.shadow_enabled]."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid ""
 "Sets the color of the shadow cast by the light. Equivalent to [member Light."
 "shadow_color]."
@@ -100182,6 +100160,11 @@ msgid ""
 "LIGHT_BAKE_DISABLED] or [constant LIGHT_BAKE_INDIRECT] depending on the "
 "given parameter."
 msgstr ""
+"Establece si las sondas GI capturan información de luz de esta luz. "
+"[i]Método obsoleto.[/i] Use [method light_set_bake_mode] en su lugar. Se "
+"mantiene solo por compatibilidad e invoca internamente [method "
+"light_set_bake_mode], con modo de horneado [constant LIGHT_BAKE_DISABLED] o "
+"[constant LIGHT_BAKE_INDIRECT] según el parámetro."
 
 #: doc/classes/VisualServer.xml
 msgid ""
@@ -100743,63 +100726,56 @@ msgstr ""
 "instances_cull_convex], o [method instances_cull_ray]."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid ""
 "Reset the particles on the next update. Equivalent to [method Particles."
 "restart]."
 msgstr ""
-"Reajustar las partículas en la próxima actualización. Equivalente a [method "
-"GPUParticles.restart]."
+"Reinicia las partículas en la próxima actualización. Equivalente a [method "
+"Particles.restart]."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid ""
 "Sets the number of particles to be drawn and allocates the memory for them. "
 "Equivalent to [member Particles.amount]."
 msgstr ""
-"Establece el número de partículas que se dibujarán y les asigna la memoria. "
-"Equivalente a [member GPUParticles.amount]."
+"Establece el número de partículas a dibujar y reserva memoria para ellas. "
+"Equivalente a [member Particles.amount]."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid ""
 "Sets a custom axis-aligned bounding box for the particle system. Equivalent "
 "to [member Particles.visibility_aabb]."
 msgstr ""
-"Establece un cuadro delimitador personalizado alineado con el eje para el "
-"sistema de partículas. Equivalente a [member GPUParticles.visibility_aabb]."
+"Establece un AABB personalizado para el sistema de partículas. Equivalente a "
+"[member Particles.visibility_aabb]."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid ""
 "Sets the draw order of the particles to one of the named enums from [enum "
 "ParticlesDrawOrder]. See [enum ParticlesDrawOrder] for options. Equivalent "
 "to [member Particles.draw_order]."
 msgstr ""
-"Establece el orden de arrastre de las partículas a uno de los enums "
-"nombrados de [enum ParticlesDrawOrder]. Ver [enum ParticlesDrawOrder] para "
-"las opciones. Equivalente a [member GPUParticles.draw_order]."
+"Establece el orden de dibujado de las partículas según uno de los enumerados "
+"de [enum ParticlesDrawOrder]. Vea [enum ParticlesDrawOrder] para las "
+"opciones. Equivalente a [member Particles.draw_order]."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid ""
 "Sets the mesh to be used for the specified draw pass. Equivalent to [member "
 "Particles.draw_pass_1], [member Particles.draw_pass_2], [member Particles."
 "draw_pass_3], and [member Particles.draw_pass_4]."
 msgstr ""
-"Establece la malla que se utilizará para el pase de sorteo especificado. "
-"Equivalente a [member GPUParticles.draw_pass_1], [member GPUParticles."
-"draw_pass_2], [member GPUParticles.draw_pass_3], y [member GPUParticles."
-"draw_pass_4]."
+"Establece la malla del pase de dibujado indicado. Equivalente a [member "
+"Particles.draw_pass_1], [member Particles.draw_pass_2], [member Particles."
+"draw_pass_3] y [member Particles.draw_pass_4]."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid ""
 "Sets the number of draw passes to use. Equivalent to [member Particles."
 "draw_passes]."
 msgstr ""
-"Establece el número de pases de dibujo a utilizar. Equivalente a [member de "
-"GPUParticles.draw_passes]."
+"Establece el número de pases de dibujado a usar. Equivalente a [member "
+"Particles.draw_passes]."
 
 #: doc/classes/VisualServer.xml
 msgid ""
@@ -100809,115 +100785,100 @@ msgstr ""
 "por primera vez."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid ""
 "If [code]true[/code], particles will emit over time. Setting to false does "
 "not reset the particles, but only stops their emission. Equivalent to "
 "[member Particles.emitting]."
 msgstr ""
-"Si es [code]true[/code], las partículas se emitirán con el tiempo. Ponerlo "
-"en falso no restablece las partículas, sino que sólo detiene su emisión. "
-"Equivalente a [member GPUParticles.emitting]."
+"Si es [code]true[/code], las partículas se emiten a lo largo del tiempo. Si "
+"es [code]false[/code], no se reinician, solo se detiene la emisión. "
+"Equivalente a [member Particles.emitting]."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid ""
 "Sets the explosiveness ratio. Equivalent to [member Particles.explosiveness]."
 msgstr ""
-"Establece la relación de explosividad. Equivalente a [member de GPUParticles."
+"Establece la relación de explosividad. Equivalente a [member Particles."
 "explosiveness]."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid ""
 "Sets the frame rate that the particle system rendering will be fixed to. "
 "Equivalent to [member Particles.fixed_fps]."
 msgstr ""
-"Establece la velocidad de fotogramas a la que se fijará la representación "
-"del sistema de partículas. Equivalente a [member GPUParticles.fixed_fps]."
+"Establece la velocidad de fotogramas a la que quedará fijado el renderizado "
+"del sistema de partículas. Equivalente a [member Particles.fixed_fps]."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid ""
 "If [code]true[/code], uses fractional delta which smooths the movement of "
 "the particles. Equivalent to [member Particles.fract_delta]."
 msgstr ""
-"Si es [code]true[/code], utiliza el delta fraccionario que suaviza el "
-"movimiento de las partículas. Equivalente a [member GPUParticles."
-"fract_delta]."
+"Si es [code]true[/code], usa delta fraccionario, suavizando el movimiento de "
+"las partículas. Equivalente a [member Particles.fract_delta]."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid ""
 "Sets the lifetime of each particle in the system. Equivalent to [member "
 "Particles.lifetime]."
 msgstr ""
-"Establece la vida útil de cada partícula del sistema. Equivalente a [member "
-"GPUParticles.lifetime]."
+"Establece la duración de cada partícula en el sistema. Equivalente a [member "
+"Particles.lifetime]."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid ""
 "If [code]true[/code], particles will emit once and then stop. Equivalent to "
 "[member Particles.one_shot]."
 msgstr ""
-"Si es [code]true[/code], las partículas emitirán una vez y luego se "
-"detendrán. Equivalente a [member GPUParticles.one_shot]."
+"Si es [code]true[/code], las partículas emiten una vez y se detienen. "
+"Equivalente a [member Particles.one_shot]."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid ""
 "Sets the preprocess time for the particles' animation. This lets you delay "
 "starting an animation until after the particles have begun emitting. "
 "Equivalent to [member Particles.preprocess]."
 msgstr ""
-"Establece el tiempo de preproceso para la animación de las partículas. Esto "
-"te permite retrasar el inicio de una animación hasta después de que las "
-"partículas hayan empezado a emitir. Equivalente a [member GPUParticles."
-"preprocess]."
+"Establece el tiempo de preprocesado de la animación de partículas. Permite "
+"retrasar el inicio de una animación hasta después de que hayan comenzado a "
+"emitirse. Equivalente a [member Particles.preprocess]."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid ""
 "Sets the material for processing the particles.\n"
 "[b]Note:[/b] This is not the material used to draw the materials. Equivalent "
 "to [member Particles.process_material]."
 msgstr ""
-"Establece el material para procesar las partículas. Nota: este no es el "
-"material utilizado para dibujar los materiales. Equivalente a [member "
-"GPUParticles.process_material]."
+"Establece el material de procesamiento de las partículas.\n"
+"[b]Nota:[/b] No es el material usado para dibujarlas. Equivalente a [member "
+"Particles.process_material]."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid ""
 "Sets the emission randomness ratio. This randomizes the emission of "
 "particles within their phase. Equivalent to [member Particles.randomness]."
 msgstr ""
-"Establece la relación de aleatoriedad de la emisión. Esto aleatoriza la "
-"emisión de partículas dentro de su fase. Equivalente a [member de "
-"GPUParticles.randomness]."
+"Establece la aleatoriedad de la emisión. Aleatoriza la emisión de partículas "
+"dentro de su fase. Equivalente a [member Particles.randomness]."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid ""
 "Sets the speed scale of the particle system. Equivalent to [member Particles."
 "speed_scale]."
 msgstr ""
 "Establece la escala de velocidad del sistema de partículas. Equivalente a "
-"[member GPUParticles.speed_scale]."
+"[member Particles.speed_scale]."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid ""
 "If [code]true[/code], particles use local coordinates. If [code]false[/code] "
 "they use global coordinates. Equivalent to [member Particles.local_coords]."
 msgstr ""
-"Si es [code]true[/code], las partículas usan coordenadas locales. Si "
-"[code]false[/code] usan coordenadas globales. Equivalente a [member "
-"GPUParticles.local_coords]."
+"Si es [code]true[/code], las partículas usan coordenadas locales; si es "
+"[code]false[/code], coordenadas globales. Equivalente a [member Particles."
+"local_coords]."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid ""
 "Creates a reflection probe and adds it to the VisualServer. It can be "
 "accessed with the RID that is returned. This RID will be used in all "
@@ -100927,22 +100888,21 @@ msgid ""
 "To place in a scene, attach this reflection probe to an instance using "
 "[method instance_set_base] using the returned RID."
 msgstr ""
-"Crea una sonda de reflexión y la añade al VisualServer. Se puede acceder a "
-"ella con el RID que se devuelve. Este RID se utilizará en todas las "
-"funciones del [code]reflection_probe_*[/code] VisualServer.\n"
-"Una vez que hayas terminado con el RID, querrás liberarlo usando el método "
-"estático [method free_rid] del VisualServer.\n"
-"Para colocarla en una escena, adjunta esta sonda de reflexión a una "
-"instancia usando [method instance_set_base] usando el RID devuelto."
+"Crea una sonda de reflexión y la añade al VisualServer. Se accede con el RID "
+"devuelto. Este RID se usará en todas las funciones [code]reflection_probe_*[/"
+"code] de VisualServer.\n"
+"Cuando haya terminado con el RID, libérelo con el método estático [method "
+"free_rid] de VisualServer.\n"
+"Para colocarla en una escena, asocie esta sonda a una instancia con [method "
+"instance_set_base] usando el RID devuelto."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid ""
 "If [code]true[/code], reflections will ignore sky contribution. Equivalent "
 "to [member ReflectionProbe.interior_enable]."
 msgstr ""
-"Si es [code]true[/code], los reflejos ignorarán la contribución del cielo. "
-"Equivalente a [member ReflectionProbe.interior]."
+"Si es [code]true[/code], los reflejos ignoran la contribución del cielo. "
+"Equivalente a [member ReflectionProbe.interior_enable]."
 
 #: doc/classes/VisualServer.xml
 msgid ""
@@ -100992,24 +100952,22 @@ msgstr ""
 "fuerza de la reflexión. Equivalente a [member ReflectionProbe.intensity]."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid ""
 "Sets the ambient light color for this reflection probe when set to interior "
 "mode. Equivalent to [member ReflectionProbe.interior_ambient_color]."
 msgstr ""
-"Establece el desplazamiento de origen que se utilizará cuando esta sonda de "
-"reflexión esté en modo de proyecto de caja. Equivalente a [member "
-"ReflectionProbe.origin_offset]."
+"Establece el color de la luz ambiente de esta sonda de reflexión en modo "
+"interior. Equivalente a [member ReflectionProbe.interior_ambient_color]."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid ""
 "Sets the energy multiplier for this reflection probes ambient light "
 "contribution when set to interior mode. Equivalent to [member "
 "ReflectionProbe.interior_ambient_energy]."
 msgstr ""
-"Establece la intensidad de la sonda de reflexión. La intensidad modula la "
-"fuerza de la reflexión. Equivalente a [member ReflectionProbe.intensity]."
+"Establece el multiplicador de energía de la contribución de luz ambiente de "
+"esta sonda en modo interior. Equivalente a [member ReflectionProbe."
+"interior_ambient_energy]."
 
 #: doc/classes/VisualServer.xml
 msgid ""
@@ -101018,6 +100976,9 @@ msgid ""
 "ambient light matches the color of the room. Equivalent to [member "
 "ReflectionProbe.interior_ambient_contrib]."
 msgstr ""
+"Establece cuánto influye el reflejo en la luz ambiente de esta sonda en modo "
+"interior. Útil para que la luz ambiente coincida con el color del entorno. "
+"Equivalente a [member ReflectionProbe.interior_ambient_contrib]."
 
 #: doc/classes/VisualServer.xml
 msgid ""
@@ -101059,7 +101020,6 @@ msgstr ""
 "[code]userdata[/code]."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid ""
 "Creates a scenario and adds it to the VisualServer. It can be accessed with "
 "the RID that is returned. This RID will be used in all [code]scenario_*[/"
@@ -101068,12 +101028,12 @@ msgid ""
 "VisualServer's [method free_rid] static method.\n"
 "The scenario is the 3D world that all the visual instances exist in."
 msgstr ""
-"Crea un escenario y lo añade al VisualServer. Se puede acceder a él con el "
-"RID que se devuelve. Este RID se utilizará en todas las funciones del "
-"[code]scenario_*[/code] VisualServer.\n"
-"Una vez terminado el RID, querrás liberarlo usando el método estático "
-"[method free_rid] de VisualServer.\n"
-"El escenario es el mundo 3D en el que existen todas las instancias visuales."
+"Crea un escenario y lo añade al VisualServer. Se accede con el RID devuelto. "
+"Este RID se usará en todas las funciones [code]scenario_*[/code] de "
+"VisualServer.\n"
+"Cuando haya terminado con el RID, libérelo con el método estático [method "
+"free_rid] de VisualServer.\n"
+"El escenario es el mundo 3D donde existen todas las instancias visuales."
 
 #: doc/classes/VisualServer.xml
 msgid ""
@@ -101103,6 +101063,8 @@ msgid ""
 "Sets the size of the reflection atlas shared by all reflection probes in "
 "this scenario."
 msgstr ""
+"Establece el tamaño del atlas de reflexión compartido por todas las sondas "
+"de reflexión en este escenario."
 
 #: doc/classes/VisualServer.xml
 msgid ""
@@ -101145,6 +101107,13 @@ msgid ""
 "Reflection probes use this internally to ensure they capture everything "
 "regardless the shaders are ready or not."
 msgstr ""
+"Si la compilación asíncrona de sombreadores está activada, controla si se "
+"respeta [constant Material3D.ASYNC_MODE_HIDDEN].\n"
+"Por ejemplo, puede activarlo temporalmente antes de una captura de pantalla, "
+"para que todo sea visible aunque los sombreadores en modo asíncrono "
+"[i]oculto[/i] no estén listos.\n"
+"Las sondas de reflexión lo usan internamente para capturar todo aunque los "
+"sombreadores no estén listos."
 
 #: doc/classes/VisualServer.xml
 msgid ""
@@ -101153,14 +101122,16 @@ msgid ""
 "The default value is [code]1.0[/code], which means [code]TIME[/code] will "
 "count the real time as it goes by, without narrowing or stretching it."
 msgstr ""
+"Establece la escala aplicada al paso del tiempo del built-in [code]TIME[/"
+"code] de los sombreadores.\n"
+"El valor por defecto es [code]1.0[/code]: [code]TIME[/code] avanza con el "
+"tiempo real, sin comprimirlo ni estirarlo."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid "Enables or disables occlusion culling."
-msgstr "Habilita o deshabilita una luz de canvas."
+msgstr "Activa o desactiva el descarte por oclusión (occlusion culling)."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid ""
 "Creates an empty shader and adds it to the VisualServer. It can be accessed "
 "with the RID that is returned. This RID will be used in all [code]shader_*[/"
@@ -101168,11 +101139,11 @@ msgid ""
 "Once finished with your RID, you will want to free the RID using the "
 "VisualServer's [method free_rid] static method."
 msgstr ""
-"Crea un shader vacío y lo añade al VisualServer. Se puede acceder a él con "
-"el RID que se devuelve. Este RID se usará en todas las funciones del "
-"[code]shader_*[/code] VisualServer.\n"
-"Una vez terminado el RID, querrás liberarlo usando el método estático "
-"[method free_rid] de VisualServer."
+"Crea un sombreador vacío y lo añade al VisualServer. Se accede con el RID "
+"devuelto. Este RID se usará en todas las funciones [code]shader_*[/code] de "
+"VisualServer.\n"
+"Cuando haya terminado con el RID, libérelo con el método estático [method "
+"free_rid] de VisualServer."
 
 #: doc/classes/VisualServer.xml
 msgid "Returns a shader's code."
@@ -101220,7 +101191,6 @@ msgid "Sets the [Transform2D] for a specific bone of this skeleton."
 msgstr "Establece la [Transform2D] para un hueso específico de este esqueleto."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid ""
 "Creates a skeleton and adds it to the VisualServer. It can be accessed with "
 "the RID that is returned. This RID will be used in all [code]skeleton_*[/"
@@ -101228,18 +101198,17 @@ msgid ""
 "Once finished with your RID, you will want to free the RID using the "
 "VisualServer's [method free_rid] static method."
 msgstr ""
-"Crea un esqueleto y lo añade al VisualServer. Se puede acceder a él con el "
-"RID que se devuelve. Este RID se usará en todas las funciones del "
-"[code]skeleton_*[/code] VisualServer.\n"
-"Una vez terminado el RID, querrás liberarlo usando el método estático "
-"[method free_rid] de VisualServer."
+"Crea un esqueleto y lo añade al VisualServer. Se accede con el RID devuelto. "
+"Este RID se usará en todas las funciones [code]skeleton_*[/code] de "
+"VisualServer.\n"
+"Cuando haya terminado con el RID, libérelo con el método estático [method "
+"free_rid] de VisualServer."
 
 #: doc/classes/VisualServer.xml
 msgid "Returns the number of bones allocated for this skeleton."
 msgstr "Devuelve el número de huesos asignados a este esqueleto."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid ""
 "Creates an empty sky and adds it to the VisualServer. It can be accessed "
 "with the RID that is returned. This RID will be used in all [code]sky_*[/"
@@ -101247,19 +101216,17 @@ msgid ""
 "Once finished with your RID, you will want to free the RID using the "
 "VisualServer's [method free_rid] static method."
 msgstr ""
-"Crea un cielo vacío y lo añade al VisualServer. Se puede acceder a él con el "
-"RID que se devuelve. Este RID se usará en todas las funciones del "
-"[code]sky_*[/code] VisualServer.\n"
-"Una vez terminado el RID, querrás liberarlo usando el método estático de "
-"VisualServer [method free_rid]."
+"Crea un cielo vacío y lo añade al VisualServer. Se accede con el RID "
+"devuelto. Este RID se usará en todas las funciones [code]sky_*[/code] de "
+"VisualServer.\n"
+"Cuando haya terminado con el RID, libérelo con el método estático [method "
+"free_rid] de VisualServer."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid "Sets a sky's texture."
-msgstr "Establece la textura del tile."
+msgstr "Establece la textura del cielo."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid ""
 "Creates a spot light and adds it to the VisualServer. It can be accessed "
 "with the RID that is returned. This RID can be used in most [code]light_*[/"
@@ -101269,26 +101236,23 @@ msgid ""
 "To place in a scene, attach this spot light to an instance using [method "
 "instance_set_base] using the returned RID."
 msgstr ""
-"Crea un foco de luz y lo añade al VisualServer. Se puede acceder a él con el "
-"RID que se devuelve. Este RID puede ser usado en la mayoría de las funciones "
-"del [code]light_*[/code] VisualServer.\n"
-"Una vez que hayas terminado con el RID, querrás liberarlo usando el método "
-"estático [method free_rid] de VisualServer.\n"
-"Para colocar en una escena, adjunta este foco a una instancia usando [method "
+"Crea un foco (spot) y lo añade al VisualServer. Se accede con el RID "
+"devuelto. Este RID sirve en la mayoría de las funciones [code]light_*[/code] "
+"de VisualServer.\n"
+"Cuando haya terminado con el RID, libérelo con el método estático [method "
+"free_rid] de VisualServer.\n"
+"Para colocarlo en una escena, asocie el foco a una instancia con [method "
 "instance_set_base] usando el RID devuelto."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid "Allocates the GPU memory for the texture."
-msgstr "Asigna los buffers de la GPU para este esqueleto."
+msgstr "Reserva memoria en la GPU para la textura."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid "Binds the texture to a texture slot."
-msgstr "Alinea el texto a la izquierda."
+msgstr "Enlaza la textura a una ranura de textura."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid ""
 "Creates an empty texture and adds it to the VisualServer. It can be accessed "
 "with the RID that is returned. This RID will be used in all [code]texture_*[/"
@@ -101296,65 +101260,59 @@ msgid ""
 "Once finished with your RID, you will want to free the RID using the "
 "VisualServer's [method free_rid] static method."
 msgstr ""
-"Crea un material vacío y lo añade al VisualServer. Se puede acceder a él con "
-"el RID que se devuelve. Este RID se utilizará en todas las funciones del "
-"[code]material_*[/code] VisualServer.\n"
-"Una vez terminado el RID, querrás liberarlo usando el método estático "
-"[method free_rid] de VisualServer."
+"Crea una textura vacía y la añade al VisualServer. Se accede con el RID "
+"devuelto. Este RID se usará en todas las funciones [code]texture_*[/code] de "
+"VisualServer.\n"
+"Cuando haya terminado con el RID, libérelo con el método estático [method "
+"free_rid] de VisualServer."
 
 #: doc/classes/VisualServer.xml
 msgid ""
 "Creates a texture, allocates the space for an image, and fills in the image."
-msgstr ""
+msgstr "Crea una textura, reserva espacio para una imagen y rellena la imagen."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid "Returns a list of all the textures and their information."
-msgstr "Devuelve la lista de valores del [Dictionary]."
+msgstr "Devuelve una lista de todas las texturas y su información."
 
 #: doc/classes/VisualServer.xml
 msgid ""
 "Returns a copy of a texture's image unless it's a CubeMap, in which case it "
 "returns the [RID] of the image at one of the cubes sides."
 msgstr ""
+"Devuelve una copia de la imagen de la textura salvo si es un CubeMap; en ese "
+"caso devuelve el [RID] de la imagen de una de las caras del cubo."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid "Returns the depth of the texture."
-msgstr "Devuelve la altura del contenido."
+msgstr "Devuelve la profundidad de la textura."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid "Returns the flags of a texture."
-msgstr "Devuelve la textura del tile."
+msgstr "Devuelve las flags de una textura."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid "Returns the format of the texture's image."
-msgstr "Devuelve el determinante de la matriz."
+msgstr "Devuelve el formato de la imagen de la textura."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid "Returns the texture's height."
 msgstr "Devuelve la altura de la textura."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid "Returns the texture's path."
-msgstr "Devuelve el ancho de la textura."
+msgstr "Devuelve la ruta de la textura."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid "Returns the opengl id of the texture's image."
-msgstr "Devuelve la longitud del cuaternario."
+msgstr "Devuelve el identificador OpenGL de la imagen de la textura."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid "Returns the type of the texture, can be any of the [enum TextureType]."
-msgstr "Devuelve el nombre de la proxima animacion en la cola."
+msgstr ""
+"Devuelve el tipo de la textura; puede ser cualquiera de [enum TextureType]."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid "Returns the texture's width."
 msgstr "Devuelve el ancho de la textura."
 
@@ -101363,6 +101321,8 @@ msgid ""
 "Sets the texture's image data. If it's a CubeMap, it sets the image data at "
 "a cube side."
 msgstr ""
+"Establece los datos de imagen de la textura. Si es un CubeMap, establece los "
+"datos en una cara del cubo."
 
 #: doc/classes/VisualServer.xml
 msgid ""
@@ -101370,17 +101330,18 @@ msgid ""
 "underlying graphics API directly and may corrupt your texture if used "
 "improperly."
 msgstr ""
+"Establece una parte de los datos de una textura. Advertencia: llama "
+"directamente a la API gráfica subyacente y puede corromper la textura si se "
+"usa mal."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid "Sets the texture's flags. See [enum TextureFlags] for options."
 msgstr ""
-"Repita las flags para la textura. Ver [enum TextureFilter] para las opciones."
+"Establece las flags de la textura. Vea [enum TextureFlags] para las opciones."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid "Sets the texture's path."
-msgstr "Devuelve el ancho de la textura."
+msgstr "Establece la ruta de la textura."
 
 #: doc/classes/VisualServer.xml
 msgid ""
@@ -101407,24 +101368,44 @@ msgid ""
 "    $TextureRect.texture = proxy_texture\n"
 "[/codeblock]"
 msgstr ""
+"Crea un vínculo de actualización entre dos texturas, similar a "
+"[ViewportTexture]. Cuando la textura base es la de un [Viewport], cada vez "
+"que el viewport renderiza un fotograma nuevo, la textura proxy recibe la "
+"actualización.\n"
+"Por ejemplo, este código enlaza una [ImageTexture] genérica a la salida de "
+"textura del [Viewport] con la API de VisualServer:\n"
+"[codeblock]\n"
+"func _ready():\n"
+"    var viewport_rid = get_viewport().get_viewport_rid()\n"
+"    var viewport_texture_rid = VisualServer."
+"viewport_get_texture(viewport_rid)\n"
+"\n"
+"    var proxy_texture = ImageTexture.new()\n"
+"    var viewport_texture_image_data = VisualServer."
+"texture_get_data(viewport_texture_rid)\n"
+"\n"
+"    proxy_texture.create_from_image(viewport_texture_image_data)\n"
+"    var proxy_texture_rid = proxy_texture.get_rid()\n"
+"    VisualServer.texture_set_proxy(proxy_texture_rid, viewport_texture_rid)\n"
+"\n"
+"    $TextureRect.texture = proxy_texture\n"
+"[/codeblock]"
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid ""
 "If [code]true[/code], sets internal processes to shrink all image data to "
 "half the size."
 msgstr ""
-"Si es [code]true[/code], los números de línea se muestran a la izquierda del "
-"texto."
+"Si es [code]true[/code], los procesos internos reducen a la mitad el tamaño "
+"de todos los datos de imagen."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid ""
 "If [code]true[/code], the image will be stored in the texture's images array "
 "if overwritten."
 msgstr ""
-"Si es [code]true[/code], todas las advertencias serán reportadas como si "
-"fueran errores."
+"Si es [code]true[/code], la imagen se guardará en el array de imágenes de la "
+"textura si se sobrescribe."
 
 #: doc/classes/VisualServer.xml
 msgid "Sets a viewport's camera."
@@ -101435,7 +101416,6 @@ msgid "Sets a viewport's canvas."
 msgstr "Establece el canvas de un viewport."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid ""
 "Copies viewport to a region of the screen specified by [code]rect[/code]. If "
 "[member Viewport.render_direct_to_screen] is [code]true[/code], then "
@@ -101456,28 +101436,23 @@ msgid ""
 "manually. For further optimization, see [method "
 "viewport_set_render_direct_to_screen]."
 msgstr ""
-"Copia el viewport a una región de la pantalla especificada por [code]rect[/"
-"code]. Si [method viewport_set_render_direct_to_screen] es [code]true[/"
-"code], entonces la ventana de visualización no utiliza un framebuffer y el "
-"contenido de la ventana de visualización se muestra directamente en la "
-"pantalla. Sin embargo, nótese que la vista raíz se dibuja en último lugar, "
-"por lo que se dibujará sobre la pantalla. Por consiguiente, debe establecer "
-"la ventana raíz en un área que no cubra el área a la que ha adjuntado esta "
-"ventana.\n"
-"Por ejemplo, puede configurar la ventana raíz para que no se muestre en "
-"absoluto con el siguiente código:\n"
+"Copia el viewport a una región de pantalla indicada por [code]rect[/code]. "
+"Si [member Viewport.render_direct_to_screen] es [code]true[/code], el "
+"viewport no usa framebuffer y su contenido se dibuja directamente en "
+"pantalla. El viewport raíz se dibuja al final, así que tapará la pantalla; "
+"debe limitar el viewport raíz a un área que no cubra la región donde adjuntó "
+"este viewport.\n"
+"Por ejemplo, puede desactivar el render del viewport raíz con:\n"
 "[codeblock]\n"
 "func _ready():\n"
 "    get_viewport().set_attach_to_screen_rect(Rect2())\n"
 "    $Viewport.set_attach_to_screen_rect(Rect2(0, 0, 600, 600))\n"
 "[/codeblock]\n"
-"El uso de esto puede resultar en una optimización significativa, "
-"especialmente en los dispositivos de gama baja. Sin embargo, esto conlleva "
-"el coste de tener que gestionar los visores manualmente. Para una mayor "
-"optimización ver, [method viewport_set_render_direct_to_screen]."
+"Puede suponer una optimización notable en dispositivos modestos, a costa de "
+"gestionar los viewports a mano. Vea [method "
+"viewport_set_render_direct_to_screen] para más optimización."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid ""
 "Creates an empty viewport and adds it to the VisualServer. It can be "
 "accessed with the RID that is returned. This RID will be used in all "
@@ -101485,16 +101460,15 @@ msgid ""
 "Once finished with your RID, you will want to free the RID using the "
 "VisualServer's [method free_rid] static method."
 msgstr ""
-"Crea un viewport vacío y lo añade al VisualServer. Se puede acceder a él con "
-"el RID que se devuelve. Este RID se utilizará en todas las funciones del "
-"[code]viewport_*[/code] VisualServer.\n"
-"Una vez terminado el RID, querrás liberarlo usando el método estático "
-"[method free_rid] de VisualServer."
+"Crea un viewport vacío y lo añade al VisualServer. Se accede con el RID "
+"devuelto. Este RID se usará en todas las funciones [code]viewport_*[/code] "
+"de VisualServer.\n"
+"Cuando haya terminado con el RID, libérelo con el método estático [method "
+"free_rid] de VisualServer."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid "Detaches the viewport from the screen."
-msgstr "Separa un punto de vista de un canvas y viceversa."
+msgstr "Separa el viewport de la pantalla."
 
 #: doc/classes/VisualServer.xml
 msgid ""
@@ -101549,11 +101523,8 @@ msgstr ""
 "ViewportDebugDraw] para las opciones."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid "If [code]true[/code], a viewport's 3D rendering is disabled."
-msgstr ""
-"Si es [code]true[/code], se desactiva la renderización del entorno de un "
-"viewport."
+msgstr "Si es [code]true[/code], se desactiva el renderizado 3D del viewport."
 
 #: doc/classes/VisualServer.xml
 msgid ""
@@ -101573,6 +101544,10 @@ msgid ""
 "viewport_set_use_32_bpc_depth].\n"
 "[b]Note:[/b] Only available on the GLES3 backend."
 msgstr ""
+"Si es [code]true[/code], el viewport renderiza en alto rango dinámico (HDR) "
+"en lugar de rango estándar (SDR). Vea también [method "
+"viewport_set_use_32_bpc_depth].\n"
+"[b]Nota:[/b] Solo en el backend GLES3."
 
 #: doc/classes/VisualServer.xml
 msgid "If [code]true[/code], the viewport's canvas is not rendered."
@@ -101652,6 +101627,11 @@ msgid ""
 "[code]0.5[/code] generally give the best results. See also [method "
 "viewport_set_use_fxaa]."
 msgstr ""
+"Establece la [code]intensity[/code] de nitidez del [code]viewport[/code]. Si "
+"es mayor que [code]0.0[/code], se aplica nitidez adaptativa al contraste en "
+"el viewport 3D. Tiene bajo coste y compensa parte de la suavidad de FXAA; "
+"valores cercanos a [code]0.5[/code] suelen funcionar bien. Vea también "
+"[method viewport_set_use_fxaa]."
 
 #: doc/classes/VisualServer.xml
 msgid "Sets the viewport's width and height."
@@ -101672,13 +101652,12 @@ msgstr ""
 "ViewportUpdateMode] para las opciones."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid ""
 "Sets the viewport's 2D/3D mode. See [enum ViewportUsage] constants for "
 "options."
 msgstr ""
-"Establece cuándo debe actualizarse el viewport. Ver las constantes [enum "
-"ViewportUpdateMode] para las opciones."
+"Establece el modo 2D/3D del viewport. Vea las constantes [enum "
+"ViewportUsage] para las opciones."
 
 #: doc/classes/VisualServer.xml
 msgid ""
@@ -101688,15 +101667,19 @@ msgid ""
 "on the same [Viewport] to set HDR to [code]true[/code].\n"
 "[b]Note:[/b] Only available on the GLES3 backend."
 msgstr ""
+"Si es [code]true[/code], el framebuffer del viewport usa precisión en coma "
+"flotante completa (32 bits) en lugar de media (16 bits). Solo tiene efecto "
+"si en el mismo [Viewport] se usa [method viewport_set_use_32_bpc_depth] con "
+"HDR en [code]true[/code].\n"
+"[b]Nota:[/b] Solo en el backend GLES3."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid ""
 "If [code]true[/code], the viewport uses augmented or virtual reality "
 "technologies. See [ARVRInterface]."
 msgstr ""
-"Si es [code]true[/code], el viewport utiliza tecnologías de realidad "
-"aumentada o virtual. Ver [ARVRInterface]."
+"Si es [code]true[/code], el viewport usa tecnologías de realidad aumentada o "
+"virtual. Vea [ARVRInterface]."
 
 #: doc/classes/VisualServer.xml
 msgid ""
@@ -101708,9 +101691,14 @@ msgid ""
 "[b]Note:[/b] Only available on the GLES3 backend. [member Viewport.hdr] must "
 "also be [code]true[/code] for debanding to be effective."
 msgstr ""
+"Si es [code]true[/code], aplica un filtro rápido de posprocesado para "
+"reducir bandas de color. A veces introduce un patrón de tramado ligero; "
+"actívelo solo si hace falta, porque el tramado aumenta el tamaño de capturas "
+"sin pérdida.\n"
+"[b]Nota:[/b] Solo GLES3. [member Viewport.hdr] debe ser [code]true[/code] "
+"para que surta efecto."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid ""
 "Enables fast approximate antialiasing for this viewport. FXAA is a popular "
 "screen-space antialiasing method, which is fast but will make the image look "
@@ -101719,15 +101707,16 @@ msgid ""
 "recovered by enabling contrast-adaptive sharpening (see [method "
 "viewport_set_sharpen_intensity])."
 msgstr ""
-"Usar un antialiasing aproximado rápido. FXAA es un método popular de "
-"antialiasing en el espacio de la pantalla, que es rápido pero que hará que "
-"la imagen se vea borrosa, especialmente en resoluciones más bajas. Puede "
-"funcionar relativamente bien en resoluciones grandes como 1440p y 4K."
+"Activa antialiasing rápido aproximado (FXAA) en este viewport. FXAA es "
+"rápido pero suaviza la imagen, sobre todo a baja resolución; a 1440p o 4K "
+"suele ir mejor. Parte de la nitidez puede recuperarse con nitidez adaptativa "
+"al contraste (vea [method viewport_set_sharpen_intensity])."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid "If [code]true[/code], the viewport's rendering is flipped vertically."
-msgstr "Si es [code]true[/code], la textura se voltea verticalmente."
+msgstr ""
+"Si es [code]true[/code], el renderizado del viewport se invierte "
+"verticalmente."
 
 #: doc/classes/VisualServer.xml
 msgid ""
@@ -101740,22 +101729,20 @@ msgstr ""
 "para dibujar un fotograma incluso con la renderización desactivada."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid ""
 "Emitted at the end of the frame, after the VisualServer has finished "
 "updating all the Viewports."
 msgstr ""
-"Emitido al final del fotograma, después de que el VisualServer haya "
-"terminado de actualizar todos los Viewports."
+"Se emite al final del fotograma, cuando VisualServer ha terminado de "
+"actualizar todos los Viewport."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid ""
 "Emitted at the beginning of the frame, before the VisualServer updates all "
 "the Viewports."
 msgstr ""
-"Emitido al principio del fotograma, antes de que el VisualServer actualice "
-"todos los Viewports."
+"Se emite al inicio del fotograma, antes de que VisualServer actualice los "
+"Viewport."
 
 #: doc/classes/VisualServer.xml
 msgid "Marks an error that shows that the index array is empty."
@@ -101793,68 +101780,64 @@ msgid "The maximum renderpriority of all materials."
 msgstr "La máxima prioridad de renderización de todos los materiales."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid "Marks the left side of a cubemap."
-msgstr "Establece el título de una columna."
+msgstr "Marca la cara izquierda de un mapa cúbico."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid "Marks the right side of a cubemap."
-msgstr "Establece el título de una columna."
+msgstr "Marca la cara derecha de un mapa cúbico."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid "Marks the bottom side of a cubemap."
-msgstr "Establece el título de una columna."
+msgstr "Marca la cara inferior de un mapa cúbico."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid "Marks the top side of a cubemap."
-msgstr "Establece el título de una columna."
+msgstr "Marca la cara superior de un mapa cúbico."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid "Marks the front side of a cubemap."
-msgstr "Establece el título de una columna."
+msgstr "Marca la cara frontal de un mapa cúbico."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid "Marks the back side of a cubemap."
-msgstr "Establece el título de una columna."
+msgstr "Marca la cara trasera de un mapa cúbico."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid "Normal texture with 2 dimensions, width and height."
-msgstr "Devuelve el tamaño de la imagen (anchura y altura)."
+msgstr "Textura normal con dos dimensiones: ancho y alto."
 
 #: doc/classes/VisualServer.xml
 msgid ""
 "Texture made up of six faces, can be looked up with a [code]vec3[/code] in "
 "shader."
 msgstr ""
+"Textura formada por seis caras; se muestrea con un [code]vec3[/code] en el "
+"sombreador."
 
 #: doc/classes/VisualServer.xml
 msgid "An array of 2-dimensional textures."
-msgstr ""
+msgstr "Un array de texturas bidimensionales."
 
 #: doc/classes/VisualServer.xml
 msgid "A 3-dimensional texture with width, height, and depth."
-msgstr ""
+msgstr "Textura tridimensional con ancho, alto y profundidad."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid "Repeats the texture (instead of clamp to edge)."
-msgstr "Devuelve el desplazamiento de la textura del tile."
+msgstr "Repite la textura (en lugar de repetir el borde con clamp)."
 
 #: doc/classes/VisualServer.xml
 msgid "Repeats the texture with alternate sections mirrored."
-msgstr ""
+msgstr "Repite la textura con secciones alternas espejadas."
 
 #: doc/classes/VisualServer.xml
 msgid ""
 "Default flags. [constant TEXTURE_FLAG_MIPMAPS], [constant "
 "TEXTURE_FLAG_REPEAT] and [constant TEXTURE_FLAG_FILTER] are enabled."
 msgstr ""
+"Flags por defecto: activados [constant TEXTURE_FLAG_MIPMAPS], [constant "
+"TEXTURE_FLAG_REPEAT] y [constant TEXTURE_FLAG_FILTER]."
 
 #: doc/classes/VisualServer.xml
 msgid "Shader is a 3D shader."
@@ -101980,13 +101963,12 @@ msgstr ""
 "Primitiva para dibujar consiste en una franja de líneas de principio a fin."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid ""
 "Primitive to draw consists of a line loop (a line strip with a line between "
 "the last and the first vertex)."
 msgstr ""
-"Primitiva para dibujar consiste en una tira de triángulo (los últimos 3 "
-"vértices siempre se combinan para formar un triángulo)."
+"Primitiva de dibujo: bucle de líneas (una tira de líneas cerrada entre el "
+"último y el primer vértice)."
 
 #: doc/classes/VisualServer.xml
 msgid "Primitive to draw consists of triangles."
@@ -102001,13 +101983,12 @@ msgstr ""
 "vértices siempre se combinan para formar un triángulo)."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid ""
 "Primitive to draw consists of a triangle strip (the last 2 vertices are "
 "always combined with the first to make a triangle)."
 msgstr ""
-"Primitiva para dibujar consiste en una tira de triángulo (los últimos 3 "
-"vértices siempre se combinan para formar un triángulo)."
+"Primitiva de dibujo: tira de triángulos (los dos últimos vértices se "
+"combinan con el primero para formar un triángulo)."
 
 #: doc/classes/VisualServer.xml
 msgid "Represents the size of the [enum PrimitiveType] enum."
@@ -102030,16 +102011,15 @@ msgid "The light's energy."
 msgstr "La energía de la luz."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid "Secondary multiplier used with indirect light (light bounces)."
-msgstr ""
-"Multiplicador secundario utilizado con luz indirecta (rebote de luz). "
-"Utilizado con [GIProbe]."
+msgstr "Multiplicador secundario usado con luz indirecta (rebotes de luz)."
 
 #: doc/classes/VisualServer.xml
 msgid ""
 "The light's size, currently only used for soft shadows in baked lightmaps."
 msgstr ""
+"Tamaño de la luz; por ahora solo afecta sombras suaves en mapas de luz "
+"horneados."
 
 #: doc/classes/VisualServer.xml
 msgid "The light's influence on specularity."
@@ -102062,9 +102042,8 @@ msgid "The spotlight's attenuation."
 msgstr "La atenuación del foco."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid "Scales the shadow color."
-msgstr "Establece la fuente [Color]."
+msgstr "Escala el color de la sombra."
 
 #: doc/classes/VisualServer.xml
 msgid "Max distance that shadows will be rendered."
@@ -102105,6 +102084,8 @@ msgid ""
 "Increases bias on further splits to fix self-shadowing that only occurs far "
 "away from the camera."
 msgstr ""
+"Aumenta el sesgo en divisiones lejanas para corregir auto-sombras que solo "
+"aparecen lejos de la cámara."
 
 #: doc/classes/VisualServer.xml
 msgid ""
@@ -102119,6 +102100,15 @@ msgid ""
 "[constant LIGHT_PARAM_SHADOW_FADE_START] to [code]1.0[/code] to prevent the "
 "shadow from fading in the distance (it will suddenly cut off instead)."
 msgstr ""
+"Proporción de [constant LIGHT_PARAM_SHADOW_MAX_DISTANCE] a partir de la cual "
+"la sombra comienza a desvanecerse. En [constant "
+"LIGHT_PARAM_SHADOW_MAX_DISTANCE] desaparece. El valor por defecto equilibra "
+"desvanecimiento suave y visibilidad lejana. Si la cámara se mueve rápido y "
+"[constant LIGHT_PARAM_SHADOW_MAX_DISTANCE] es bajo, baje [constant "
+"LIGHT_PARAM_SHADOW_FADE_START] por debajo de [code]0.8[/code] para suavizar "
+"transiciones. Si [constant LIGHT_PARAM_SHADOW_MAX_DISTANCE] cubre toda la "
+"escena, puede usar [code]1.0[/code] para que no se desvanezca (se cortará de "
+"golpe)."
 
 #: doc/classes/VisualServer.xml
 msgid "Represents the size of the [enum LightParam] enum."
@@ -102139,11 +102129,11 @@ msgstr ""
 
 #: doc/classes/VisualServer.xml
 msgid "Use more detail vertically when computing shadow map."
-msgstr ""
+msgstr "Usa más detalle en vertical al calcular el mapa de sombras."
 
 #: doc/classes/VisualServer.xml
 msgid "Use more detail horizontally when computing shadow map."
-msgstr ""
+msgstr "Usa más detalle en horizontal al calcular el mapa de sombras."
 
 #: doc/classes/VisualServer.xml
 msgid "Use orthogonal shadow projection for directional light."
@@ -102156,7 +102146,7 @@ msgstr ""
 
 #: doc/classes/VisualServer.xml
 msgid "Use 3 splits for shadow projection when using directional light."
-msgstr ""
+msgstr "Usa 3 divisiones para la proyección de sombras con luz direccional."
 
 #: doc/classes/VisualServer.xml
 msgid "Use 4 splits for shadow projection when using directional light."
@@ -102215,52 +102205,52 @@ msgid "Multisample antialiasing is disabled."
 msgstr "El antialiasing multimuestra está desactivado."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid "Multisample antialiasing is set to 2×."
-msgstr "El antialiasing multimuestra está desactivado."
+msgstr "Antialiasing multisample (MSAA) en 2×."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid "Multisample antialiasing is set to 4×."
-msgstr "El antialiasing multimuestra está desactivado."
+msgstr "Antialiasing multisample (MSAA) en 4×."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid "Multisample antialiasing is set to 8×."
-msgstr "El antialiasing multimuestra está desactivado."
+msgstr "Antialiasing multisample (MSAA) en 8×."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid "Multisample antialiasing is set to 16×."
-msgstr "El antialiasing multimuestra está desactivado."
+msgstr "Antialiasing multisample (MSAA) en 16×."
 
 #: doc/classes/VisualServer.xml
 msgid ""
 "Multisample antialiasing is set to 2× on external texture. Special mode for "
 "GLES2 Android VR (Oculus Quest and Go)."
 msgstr ""
+"MSAA 2× sobre textura externa. Modo especial para VR en Android GLES2 "
+"(Oculus Quest y Go)."
 
 #: doc/classes/VisualServer.xml
 msgid ""
 "Multisample antialiasing is set to 4× on external texture. Special mode for "
 "GLES2 Android VR (Oculus Quest and Go)."
 msgstr ""
+"MSAA 4× sobre textura externa. Modo especial para VR en Android GLES2 "
+"(Oculus Quest y Go)."
 
 #: doc/classes/VisualServer.xml
 msgid "The Viewport does not render 3D but samples."
-msgstr ""
+msgstr "El Viewport no renderiza 3D pero sí muestrea (submuestreo)."
 
 #: doc/classes/VisualServer.xml
 msgid "The Viewport does not render 3D and does not sample."
-msgstr ""
+msgstr "El Viewport no renderiza 3D ni muestrea."
 
 #: doc/classes/VisualServer.xml
 msgid "The Viewport renders 3D with effects."
-msgstr ""
+msgstr "El Viewport renderiza 3D con efectos."
 
 #: doc/classes/VisualServer.xml
 msgid "The Viewport renders 3D but without effects."
-msgstr ""
+msgstr "El Viewport renderiza 3D sin efectos."
 
 #: doc/classes/VisualServer.xml
 msgid "Number of objects drawn in a single frame."
@@ -102287,14 +102277,12 @@ msgid "Number of draw calls during this frame."
 msgstr "Número de llamadas de dibujo durante este fotograma."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid "Number of 2d items drawn this frame."
-msgstr "Número de llamadas de dibujo durante este fotograma."
+msgstr "Número de elementos 2D dibujados en este fotograma."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid "Number of 2d draw calls during this frame."
-msgstr "Número de llamadas de dibujo durante este fotograma."
+msgstr "Número de llamadas de dibujado 2D en este fotograma."
 
 #: doc/classes/VisualServer.xml
 msgid "Represents the size of the [enum ViewportRenderInfo] enum."
@@ -102306,13 +102294,12 @@ msgstr ""
 "El dibujado de depuración está desactivado. Configuración predeterminada."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid "Debug draw sets objects to unshaded."
-msgstr "El dibujado de depuración dibuja objetos en un marco de alambre."
+msgstr "El dibujado de depuración muestra objetos sin sombreado (unshaded)."
 
 #: doc/classes/VisualServer.xml
 msgid "Overwrites clear color to [code](0,0,0,0)[/code]."
-msgstr ""
+msgstr "Sobrescribe el color de limpieza con [code](0,0,0,0)[/code]."
 
 #: doc/classes/VisualServer.xml
 msgid "Debug draw draws objects in wireframe."
@@ -102378,9 +102365,8 @@ msgid "The instance is a GI probe."
 msgstr "El caso es una sonda GI."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid "The instance is a lightmap capture."
-msgstr "La instancia es un mapa de luz."
+msgstr "La instancia es una captura de mapa de iluminación (lightmap capture)."
 
 #: doc/classes/VisualServer.xml
 msgid "Represents the size of the [enum InstanceType] enum."
@@ -102468,23 +102454,20 @@ msgid "Do not apply a filter to canvas light shadows."
 msgstr "No aplique un filtro a las sombras de luz del canvas."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid "Use PCF3 filtering to filter canvas light shadows."
-msgstr "Utiliza el filtro PCF13 para filtrar las sombras de luz del canvas."
+msgstr "Usa filtrado PCF3 para las sombras de luces en el lienzo (canvas)."
 
 #: doc/classes/VisualServer.xml
 msgid "Use PCF5 filtering to filter canvas light shadows."
 msgstr "Utiliza el filtro PCF5 para filtrar las sombras de luz del canvas."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid "Use PCF7 filtering to filter canvas light shadows."
-msgstr "Utiliza el filtro PCF5 para filtrar las sombras de luz del canvas."
+msgstr "Usa filtrado PCF7 para las sombras de luces en el lienzo (canvas)."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid "Use PCF9 filtering to filter canvas light shadows."
-msgstr "Utiliza el filtro PCF5 para filtrar las sombras de luz del canvas."
+msgstr "Usa filtrado PCF9 para las sombras de luces en el lienzo (canvas)."
 
 #: doc/classes/VisualServer.xml
 msgid "Use PCF13 filtering to filter canvas light shadows."
@@ -102531,6 +102514,12 @@ msgid ""
 "compilations when this value is zero for at least two frames in a row.\n"
 "Unimplemented in the GLES2 rendering backend, always returns 0."
 msgstr ""
+"Cantidad máxima de sombreadores en compilación durante el fotograma.\n"
+"Sirve para saber cuándo ha terminado la compilación asíncrona de los "
+"sombreadores visibles.\n"
+"[b]Nota:[/b] Para estar seguro, asuma que no quedan compilaciones solo si "
+"este valor es cero al menos dos fotogramas seguidos.\n"
+"No implementado en GLES2; siempre devuelve 0."
 
 #: doc/classes/VisualServer.xml
 msgid "The amount of surface changes in the frame."
@@ -102541,14 +102530,12 @@ msgid "The amount of draw calls in frame."
 msgstr "La cantidad de llamadas de dibujo en el fotograma."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid "The amount of 2d items in the frame."
-msgstr "La cantidad de vértices en el fotograma."
+msgstr "Cantidad de elementos 2D en el fotograma."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid "The amount of 2d draw calls in frame."
-msgstr "La cantidad de llamadas de dibujo en el fotograma."
+msgstr "Cantidad de llamadas de dibujado 2D en el fotograma."
 
 #: doc/classes/VisualServer.xml
 msgid "Hardware supports shaders. This enum is currently unused in Godot 3.x."
@@ -102573,39 +102560,47 @@ msgstr "Use [Transform] para almacenar la transformada de MultiMesh."
 
 #: doc/classes/VisualServer.xml
 msgid "MultiMesh does not use per-instance color."
-msgstr ""
+msgstr "MultiMesh no usa color por instancia."
 
 #: doc/classes/VisualServer.xml
 msgid ""
 "MultiMesh color uses 8 bits per component. This packs the color into a "
 "single float."
 msgstr ""
+"El color de MultiMesh usa 8 bits por componente; el color se empaqueta en un "
+"único float."
 
 #: doc/classes/VisualServer.xml
 msgid "MultiMesh color uses a float per channel."
-msgstr ""
+msgstr "El color de MultiMesh usa un float por canal."
 
 #: doc/classes/VisualServer.xml
 msgid "MultiMesh does not use custom data."
-msgstr ""
+msgstr "MultiMesh no usa datos personalizados."
 
 #: doc/classes/VisualServer.xml
 msgid ""
 "MultiMesh custom data uses 8 bits per component. This packs the 4-component "
 "custom data into a single float."
 msgstr ""
+"Los datos personalizados de MultiMesh usan 8 bits por componente; los 4 "
+"componentes se empaquetan en un float."
 
 #: doc/classes/VisualServer.xml
 msgid "MultiMesh custom data uses a float per component."
-msgstr ""
+msgstr "Los datos personalizados de MultiMesh usan un float por componente."
 
 #: doc/classes/VisualServer.xml
 msgid "MultiMesh physics interpolation favours speed over quality."
 msgstr ""
+"La interpolación física de MultiMesh prioriza la velocidad frente a la "
+"calidad."
 
 #: doc/classes/VisualServer.xml
 msgid "MultiMesh physics interpolation favours quality over speed."
 msgstr ""
+"La interpolación física de MultiMesh prioriza la calidad frente a la "
+"velocidad."
 
 #: doc/classes/VisualServer.xml
 msgid "Reflection probe will update reflections once and then stop."
@@ -102650,6 +102645,7 @@ msgstr "Usar un recurso del cielo para el fondo."
 msgid ""
 "Use a custom color for background, but use a sky for shading and reflections."
 msgstr ""
+"Usa un color de fondo personalizado, pero un cielo para sombreado y reflejos."
 
 #: doc/classes/VisualServer.xml
 msgid ""
@@ -102671,49 +102667,51 @@ msgstr "Representa el tamaño del enum [enum EnvironmentBG]."
 
 #: doc/classes/VisualServer.xml
 msgid "Use lowest blur quality. Fastest, but may look bad."
-msgstr ""
+msgstr "Desenfoque de calidad mínima. Lo más rápido, pero puede verse mal."
 
 #: doc/classes/VisualServer.xml
 msgid "Use medium blur quality."
-msgstr ""
+msgstr "Desenfoque de calidad media."
 
 #: doc/classes/VisualServer.xml
 msgid "Used highest blur quality. Looks the best, but is the slowest."
-msgstr ""
+msgstr "Desenfoque de calidad máxima. Mejor aspecto, pero más lento."
 
 #: doc/classes/VisualServer.xml
 msgid "Add the effect of the glow on top of the scene."
-msgstr ""
+msgstr "Añade el efecto de resplandor (glow) encima de la escena."
 
 #: doc/classes/VisualServer.xml
 msgid ""
 "Blends the glow effect with the screen. Does not get as bright as additive."
 msgstr ""
+"Mezcla el resplandor con la pantalla; no se ve tan brillante como el modo "
+"aditivo."
 
 #: doc/classes/VisualServer.xml
 msgid "Produces a subtle color disturbance around objects."
-msgstr ""
+msgstr "Produce una ligera alteración del color alrededor de los objetos."
 
 #: doc/classes/VisualServer.xml
 msgid "Shows the glow effect by itself without the underlying scene."
-msgstr ""
+msgstr "Muestra solo el resplandor, sin la escena de debajo."
 
 #: doc/classes/VisualServer.xml
 msgid ""
 "Output color as they came in. This can cause bright lighting to look blown "
 "out, with noticeable clipping in the output colors."
 msgstr ""
+"Sale el color tal cual; la iluminación muy brillante puede verse quemada, "
+"con recorte visible en el color de salida."
 
 #: doc/classes/VisualServer.xml
-#, fuzzy
 msgid ""
 "Use the Reinhard tonemapper. Performs a variation on rendered pixels' colors "
 "by this formula: [code]color = color / (1 + color)[/code]. This avoids "
 "clipping bright highlights, but the resulting image can look a bit dull."
 msgstr ""
-"Operador de mapeado de tonos Reinhardt. Realiza una variación de los colores "
-"de los píxeles renderizados por esta fórmula: [code]color = color / (1 + "
-"color)[/code]."
+"Usa el tonemapper Reinhard: [code]color = color / (1 + color)[/code]. Evita "
+"recortar luces brillantes, pero la imagen puede parecer apagada."
 
 #: doc/classes/VisualServer.xml
 msgid ""
@@ -102721,6 +102719,8 @@ msgid ""
 "resulting image that usually looks more vivid than [constant "
 "ENV_TONE_MAPPER_REINHARD]."
 msgstr ""
+"Usa el tonemapper fílmico. Evita recortar luces brillantes y suele verse más "
+"vívido que [constant ENV_TONE_MAPPER_REINHARD]."
 
 #: doc/classes/VisualServer.xml
 msgid ""
@@ -102732,6 +102732,12 @@ msgid ""
 "[b]Note:[/b] This tonemapping operator will be removed in Godot 4.0 in favor "
 "of the more accurate [constant ENV_TONE_MAPPER_ACES_FITTED]."
 msgstr ""
+"Usa la versión heredada en Godot del tonemapper ACES. A diferencia de "
+"[constant ENV_TONE_MAPPER_ACES_FITTED], no modela luces intensas de forma "
+"físicamente precisa. Suele dar más contraste que [constant "
+"ENV_TONE_MAPPER_REINHARD] y [constant ENV_TONE_MAPPER_FILMIC].\n"
+"[b]Nota:[/b] Se eliminará en Godot 4.0 en favor de [constant "
+"ENV_TONE_MAPPER_ACES_FITTED]."
 
 #: doc/classes/VisualServer.xml
 msgid ""
@@ -102741,6 +102747,9 @@ msgid ""
 "has a more contrasted output compared to [constant ENV_TONE_MAPPER_REINHARD] "
 "and [constant ENV_TONE_MAPPER_FILMIC]."
 msgstr ""
+"Usa el tonemapper ACES. Es algo más costoso, pero desatura la luz al "
+"volverse más intensa de forma más realista. Suele dar más contraste que "
+"[constant ENV_TONE_MAPPER_REINHARD] y [constant ENV_TONE_MAPPER_FILMIC]."
 
 #: doc/classes/VisualServer.xml
 msgid "Lowest quality of screen space ambient occlusion."
@@ -102779,6 +102788,7 @@ msgstr ""
 msgid ""
 "Used to query for any changes that request a redraw, whatever the priority."
 msgstr ""
+"Consulta si hay cambios que soliciten redibujado, con cualquier prioridad."
 
 #: doc/classes/VisualServer.xml
 msgid ""
@@ -102786,10 +102796,14 @@ msgid ""
 "causing editor redraws. Examples might include dynamic shaders (typically "
 "using the [code]TIME[/code] built-in)."
 msgstr ""
+"Los cambios de baja prioridad pueden impedirse opcionalmente para no "
+"redibujar el editor; por ejemplo sombreadores dinámicos (suelen usar el "
+"built-in [code]TIME[/code])."
 
 #: doc/classes/VisualServer.xml
 msgid "Registered changes which can cause a redraw default to high priority."
 msgstr ""
+"Los cambios que pueden provocar redibujado tienen por defecto prioridad alta."
 
 #: doc/classes/VisualShader.xml
 msgid "A custom shader program with a visual editor."

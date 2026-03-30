@@ -48885,28 +48885,29 @@ msgstr "Representa el tamaño del enum [enum MenuItems]."
 
 #: doc/classes/LineEdit.xml doc/classes/OS.xml
 msgid "Default text virtual keyboard."
-msgstr ""
+msgstr "Teclado virtual de texto predeterminado."
 
 #: doc/classes/LineEdit.xml doc/classes/OS.xml
 msgid "Multiline virtual keyboard."
-msgstr ""
+msgstr "Teclado virtual multilínea."
 
 #: doc/classes/LineEdit.xml doc/classes/OS.xml
 msgid "Virtual number keypad, useful for PIN entry."
-msgstr ""
+msgstr "Teclado numérico virtual, útil para introducir un PIN."
 
 #: doc/classes/LineEdit.xml doc/classes/OS.xml
 msgid "Virtual number keypad, useful for entering fractional numbers."
-msgstr ""
+msgstr "Teclado numérico virtual, útil para números fraccionarios."
 
 #: doc/classes/LineEdit.xml doc/classes/OS.xml
 msgid "Virtual phone number keypad."
-msgstr ""
+msgstr "Teclado numérico virtual de teléfono."
 
 #: doc/classes/LineEdit.xml doc/classes/OS.xml
 msgid ""
 "Virtual keyboard with additional keys to assist with typing email addresses."
 msgstr ""
+"Teclado virtual con teclas adicionales para escribir direcciones de correo."
 
 #: doc/classes/LineEdit.xml doc/classes/OS.xml
 msgid ""
@@ -48915,10 +48916,14 @@ msgid ""
 "[b]Note:[/b] This is not supported on HTML5 or below iOS version 11.0. "
 "Instead, this will behave identically to [constant KEYBOARD_TYPE_DEFAULT]."
 msgstr ""
+"Teclado virtual para introducir una contraseña. En la mayoría de plataformas "
+"desactiva el autocompletado y las mayúsculas automáticas.\n"
+"[b]Nota:[/b] No está soportado en HTML5 ni en iOS anteriores a 11.0; en ese "
+"caso se comporta igual que [constant KEYBOARD_TYPE_DEFAULT]."
 
 #: doc/classes/LineEdit.xml doc/classes/OS.xml
 msgid "Virtual keyboard with additional keys to assist with typing URLs."
-msgstr ""
+msgstr "Teclado virtual con teclas adicionales para escribir URL."
 
 #: doc/classes/LineEdit.xml
 msgid "Color used as default tint for the clear button."
@@ -59674,11 +59679,14 @@ msgid ""
 "Displays a modal dialog box using the host OS' facilities. Execution is "
 "blocked until the dialog is closed."
 msgstr ""
+"Muestra un cuadro de diálogo modal usando las facilidades del sistema "
+"operativo anfitrión. La ejecución queda bloqueada hasta que se cierre el "
+"diálogo."
 
 #: doc/classes/OS.xml
-#, fuzzy
 msgid "Returns [code]true[/code] if the host OS allows drawing."
-msgstr "Devuelve [code]true[/code] si la fuente tiene un contorno."
+msgstr ""
+"Devuelve [code]true[/code] si el sistema operativo anfitrión permite dibujar."
 
 #: doc/classes/OS.xml
 msgid ""
@@ -59689,9 +59697,8 @@ msgstr ""
 "múltiples hilos."
 
 #: doc/classes/OS.xml
-#, fuzzy
 msgid "Centers the window on the screen if in windowed mode."
-msgstr "Establece la posición del nodo especificado."
+msgstr "Centra la ventana en la pantalla si está en modo ventana."
 
 #: doc/classes/OS.xml
 msgid ""
@@ -59709,6 +59716,11 @@ msgid ""
 "order of preference) [method @GDScript.assert], [method @GDScript."
 "push_error] or [method alert]. See also [method kill]."
 msgstr ""
+"Provoca un fallo del motor (o del editor si se llama dentro de un script "
+"[code]tool[/code]). Debe usarse [i]solo[/i] para probar el gestor de fallos "
+"del sistema, no para otros fines. Para informar errores en general use (por "
+"orden de preferencia) [method @GDScript.assert], [method @GDScript."
+"push_error] o [method alert]. Vea también [method kill]."
 
 #: doc/classes/OS.xml
 msgid ""
@@ -59729,6 +59741,18 @@ msgid ""
 "the project if it is currently running (since the project is an independent "
 "child process)."
 msgstr ""
+"Retarda la ejecución del hilo actual [code]msec[/code] milisegundos. "
+"[code]msec[/code] debe ser mayor o igual que [code]0[/code]. Si no, [method "
+"delay_msec] no hará nada y mostrará un error.\n"
+"[b]Nota:[/b] [method delay_msec] es una forma [i]bloqueante[/i] de retrasar "
+"código. Para no bloquear, vea [method SceneTree.create_timer]. Hacer "
+"[code]yield[/code] con [method SceneTree.create_timer] retrasa el código "
+"situado debajo del [code]yield[/code] sin afectar al resto del proyecto (o "
+"del editor, en [EditorPlugin] y [EditorScript]).\n"
+"[b]Nota:[/b] Si [method delay_msec] se llama en el hilo principal, congelará "
+"el proyecto e impedirá redibujar y registrar entrada hasta que pase el "
+"retraso. En un [EditorPlugin] o [EditorScript] congelará el editor, pero no "
+"el proyecto en ejecución (proceso hijo independiente)."
 
 #: doc/classes/OS.xml
 msgid ""
@@ -59749,6 +59773,18 @@ msgid ""
 "the project if it is currently running (since the project is an independent "
 "child process)."
 msgstr ""
+"Retarda la ejecución del hilo actual [code]usec[/code] microsegundos. "
+"[code]usec[/code] debe ser mayor o igual que [code]0[/code]. Si no, [method "
+"delay_usec] no hará nada y mostrará un error.\n"
+"[b]Nota:[/b] [method delay_usec] es una forma [i]bloqueante[/i] de retrasar "
+"código. Para no bloquear, vea [method SceneTree.create_timer]. Hacer "
+"[code]yield[/code] con [method SceneTree.create_timer] retrasa el código "
+"situado debajo del [code]yield[/code] sin afectar al resto del proyecto (o "
+"del editor, en [EditorPlugin] y [EditorScript]).\n"
+"[b]Nota:[/b] Si [method delay_usec] se llama en el hilo principal, congelará "
+"el proyecto e impedirá redibujar y registrar entrada hasta que pase el "
+"retraso. En un [EditorPlugin] o [EditorScript] congelará el editor, pero no "
+"el proyecto en ejecución (proceso hijo independiente)."
 
 #: doc/classes/OS.xml
 msgid ""
@@ -59772,7 +59808,6 @@ msgstr ""
 "usados."
 
 #: doc/classes/OS.xml
-#, fuzzy
 msgid ""
 "Execute the file at the given path with the arguments passed as an array of "
 "strings. Platform path resolution will take place. The resolved file must "
@@ -59827,60 +59862,66 @@ msgid ""
 "executable name in [code]path[/code], [code]-c[/code] as the first argument, "
 "and the desired command as the second argument."
 msgstr ""
-"Ejecute el archivo en la ruta dada con los argumentos pasados como un "
-"conjunto de strings. La resolución de la ruta de la plataforma tendrá lugar. "
-"El archivo resuelto debe existir y ser ejecutable.\n"
-"Los argumentos se utilizan en el orden dado y separados por un espacio, así "
-"que [code]OS.execute(\"ping\", [\"-w\", \"3\", \"godotengine.org\"], false)[/"
-"code] resolverá a [code]ping -w 3 godotengine.org[/code] en el shell del "
+"Ejecuta el archivo en la ruta indicada con los argumentos pasados como un "
+"array de cadenas. Se resuelve la ruta según la plataforma. El archivo "
+"resuelto debe existir y ser ejecutable.\n"
+"Los argumentos se usan en el orden dado y separados por un espacio; así, "
+"[code]OS.execute(\"ping\", [\"-w\", \"3\", \"godotengine.org\"], false)[/"
+"code] equivale a [code]ping -w 3 godotengine.org[/code] en el intérprete del "
 "sistema.\n"
-"Este método tiene un comportamiento ligeramente diferente basado en si el "
-"modo [code]blocking[/code] está activado.\n"
-"Si [code]blocking[/code] es [code]true[/code], el hilo de Godot detendrá su "
-"ejecución mientras espera que el proceso termine. La salida del shell del "
-"proceso se escribirá en el array [code]output[/code] como una sola string. "
-"Cuando el proceso termine, el hilo de Godot reanudará su ejecución.\n"
-"Si [code]blocking[/code] es [code]false[/code], el hilo de Godot continuará "
-"mientras se ejecuta el nuevo proceso. No es posible recuperar la salida del "
-"shell en modo no bloqueante, por lo que [code]output[/code] estará vacío.\n"
-"El valor de retorno también depende del modo de bloqueo. Cuando se bloquea, "
-"el método devolverá un código de salida del proceso. Cuando no se bloquea, "
-"el método devuelve un ID de proceso, que puedes usar para monitorizar el "
-"proceso (y potencialmente terminarlo con [method kill]). Si el proceso se "
-"bifurca (sin bloquear) o se abre (bloquea), el método devolverá [code]-1[/"
-"code] u otro código de salida.\n"
-"Ejemplo de modo de bloqueo y recuperación de la salida del shell:\n"
+"El comportamiento depende de si el modo [code]blocking[/code] está "
+"activado.\n"
+"Si [code]blocking[/code] es [code]true[/code], el hilo de Godot se detiene "
+"hasta que termine el proceso. La salida del shell se escribe en el array "
+"[code]output[/code] como una sola cadena. Al terminar el proceso, el hilo de "
+"Godot continúa.\n"
+"Si [code]blocking[/code] es [code]false[/code], el hilo de Godot sigue "
+"mientras el nuevo proceso corre. No se puede obtener la salida del shell en "
+"modo no bloqueante; [code]output[/code] quedará vacío.\n"
+"En Windows, si [code]open_console[/code] es [code]true[/code] y el proceso "
+"es de consola, se abrirá una nueva ventana de terminal; en otras plataformas "
+"se ignora.\n"
+"El valor devuelto también depende del modo: en bloqueante devuelve el código "
+"de salida del proceso; en no bloqueante devuelve un PID para monitorizarlo "
+"(y terminarlo con [method kill] si hace falta). Si falla la creación del "
+"proceso, devuelve [code]-1[/code] u otro código de salida.\n"
+"Ejemplo en modo bloqueante leyendo la salida:\n"
 "[codeblock]\n"
 "var output = []\n"
 "var exit_code = OS.execute(\"ls\", [\"-l\", \"/tmp\"], true, output)\n"
 "[/codeblock]\n"
-"Ejemplo de modo no bloqueante, ejecutando otra instancia del proyecto y "
-"almacenando su ID de proceso:\n"
+"Ejemplo en modo no bloqueante, otra instancia del proyecto:\n"
 "[codeblock]\n"
 "var pid = OS.execute(OS.get_executable_path(), [], false)\n"
 "[/codeblock]\n"
-"Si desea acceder a un shell incorporado o realizar un comando compuesto, se "
-"puede invocar un shell específico de la plataforma. Por ejemplo:\n"
+"Para usar órdenes internas del shell o comandos compuestos, invoque el shell "
+"de la plataforma. Por ejemplo:\n"
 "[codeblock]\n"
 "OS.execute(\"CMD.exe\", [\"/C\", \"cd %TEMP% && dir\"], true, output)\n"
 "[/codeblock]\n"
-"[b]Nota:[/b] Este método está implementado en Android, iOS, Linux, macOS y "
-"Windows."
+"[b]Nota:[/b] Implementado en Android, iOS, Linux, macOS y Windows.\n"
+"[b]Nota:[/b] Para una orden interna del intérprete de comandos de Windows, "
+"use [code]cmd.exe[/code] en [code]path[/code], [code]/c[/code] como primer "
+"argumento y el comando como segundo.\n"
+"[b]Nota:[/b] Para PowerShell, use [code]powershell.exe[/code] en [code]path[/"
+"code], [code]-Command[/code] como primer argumento y el comando como "
+"segundo.\n"
+"[b]Nota:[/b] Para una orden interna del shell Unix, indique el ejecutable "
+"del shell en [code]path[/code], [code]-c[/code] como primer argumento y el "
+"comando como segundo."
 
 #: doc/classes/OS.xml
-#, fuzzy
 msgid "Returns the scancode of the given string (e.g. \"Escape\")."
-msgstr "Devuelve el código clave de la string dada (por ejemplo, \"Escape\")."
+msgstr ""
+"Devuelve el código de tecla (scancode) de la cadena dada (p. ej. «Escape»)."
 
 #: doc/classes/OS.xml
-#, fuzzy
 msgid "Returns the total number of available audio drivers."
-msgstr "Devuelve el número total de vértices en [Mesh]."
+msgstr "Devuelve el número total de controladores de audio disponibles."
 
 #: doc/classes/OS.xml
-#, fuzzy
 msgid "Returns the audio driver name for the given index."
-msgstr "Devuelve el vértice en un índice determinado."
+msgstr "Devuelve el nombre del controlador de audio para el índice dado."
 
 #: doc/classes/OS.xml
 msgid ""
@@ -59893,9 +59934,15 @@ msgid ""
 "Not to be confused with [method get_user_data_dir], which returns the "
 "[i]project-specific[/i] user data path."
 msgstr ""
+"Devuelve el directorio [i]global[/i] de caché según las convenciones del "
+"sistema. En Linux puede sobrescribirse con la variable de entorno "
+"[code]XDG_CACHE_HOME[/code] antes de iniciar. Vea [url=$DOCS_URL/tutorials/"
+"io/data_paths.html]Rutas de archivos en proyectos Godot[/url]. Vea también "
+"[method get_config_dir] y [method get_data_dir].\n"
+"No confundir con [method get_user_data_dir], que devuelve la ruta [i]del "
+"proyecto[/i]."
 
 #: doc/classes/OS.xml
-#, fuzzy
 msgid ""
 "Returns the command-line arguments passed to the engine.\n"
 "Command-line arguments can be written in any form, including both [code]--"
@@ -59920,26 +59967,24 @@ msgid ""
 "        arguments[argument.lstrip(\"--\")] = \"\"\n"
 "[/codeblock]"
 msgstr ""
-"Devuelve los argumentos de la línea de mando pasados al motor.\n"
-"Los argumentos de línea de comandos pueden escribirse en cualquier forma, "
-"incluyendo tanto la forma [code]--key value[/code] como [code]--key=valor[/"
-"code] para que puedan ser analizados correctamente, siempre que los "
-"argumentos de línea de comandos personalizados no entren en conflicto con "
-"los argumentos del motor.\n"
-"También puedes incorporar variables de entorno usando el método [method "
-"get_environment].\n"
-"Puedes establecer [code]editor/main_run_args[/code] en la Configuración del "
-"proyecto para definir los argumentos de la línea de comandos que el editor "
-"debe pasar cuando se ejecuta el proyecto.\n"
-"Aquí tienes un ejemplo mínimo de cómo analizar los argumentos de la línea de "
-"comandos en un diccionario utilizando el formulario [code]--key=valor[/code] "
-"para los argumentos:\n"
+"Devuelve los argumentos de línea de comandos pasados al motor.\n"
+"Pueden escribirse como [code]--clave valor[/code] o [code]--clave=valor[/"
+"code] para analizarlos bien, siempre que no entren en conflicto con los del "
+"motor.\n"
+"También puede incorporar variables de entorno con [method get_environment].\n"
+"Puede definir [member ProjectSettings.editor/main_run_args] para que el "
+"editor pase argumentos al ejecutar el proyecto.\n"
+"Ejemplo mínimo para analizar argumentos [code]--clave=valor[/code] en un "
+"diccionario:\n"
 "[codeblock]\n"
-"var argumentos = {}\n"
-"para el argumento en OS.get_cmdline_args():\n"
-"    si el argumento.find(\"=\") > -1:\n"
-"        var valor_clave = argumento.split(\"=\")\n"
-"        argumentos[valor_clave[0].lstrip(\"--\")]] = valor_clave[1]\n"
+"var arguments = {}\n"
+"for argument in OS.get_cmdline_args():\n"
+"    if argument.find(\"=\") > -1:\n"
+"        var key_value = argument.split(\"=\")\n"
+"        arguments[key_value[0].lstrip(\"--\")] = key_value[1]\n"
+"    else:\n"
+"        # Opciones sin argumento quedan en el diccionario con valor vacío.\n"
+"        arguments[argument.lstrip(\"--\")] = \"\"\n"
 "[/codeblock]"
 
 #: doc/classes/OS.xml
@@ -59953,6 +59998,13 @@ msgid ""
 "Not to be confused with [method get_user_data_dir], which returns the "
 "[i]project-specific[/i] user data path."
 msgstr ""
+"Devuelve el directorio [i]global[/i] de configuración de usuario según el "
+"SO. En Linux puede sobrescribirse con [code]XDG_CONFIG_HOME[/code] antes de "
+"iniciar. Vea [url=$DOCS_URL/tutorials/io/data_paths.html]Rutas de archivos "
+"en proyectos Godot[/url]. Vea también [method get_cache_dir] y [method "
+"get_data_dir].\n"
+"No confundir con [method get_user_data_dir], que es la ruta [i]del proyecto[/"
+"i]."
 
 #: doc/classes/OS.xml
 msgid ""
@@ -59967,13 +60019,12 @@ msgstr ""
 "[b]Nota:[/b] Este método está implementado en Linux, macOS y Windows."
 
 #: doc/classes/OS.xml
-#, fuzzy
 msgid ""
 "Returns the currently used video driver, using one of the values from [enum "
 "VideoDriver]."
 msgstr ""
-"Devuelve el artículo actualmente editado. Esto sólo está disponible para el "
-"modo de celdas personalizadas."
+"Devuelve el controlador de vídeo en uso, según un valor de [enum "
+"VideoDriver]."
 
 #: doc/classes/OS.xml
 msgid ""
@@ -59986,21 +60037,27 @@ msgid ""
 "Not to be confused with [method get_user_data_dir], which returns the "
 "[i]project-specific[/i] user data path."
 msgstr ""
+"Devuelve el directorio [i]global[/i] de datos de usuario según el SO. En "
+"Linux puede sobrescribirse con [code]XDG_DATA_HOME[/code] antes de iniciar. "
+"Vea [url=$DOCS_URL/tutorials/io/data_paths.html]Rutas de archivos en "
+"proyectos Godot[/url]. Vea también [method get_cache_dir] y [method "
+"get_config_dir].\n"
+"No confundir con [method get_user_data_dir], que es la ruta [i]del proyecto[/"
+"i]."
 
 #: doc/classes/OS.xml
-#, fuzzy
 msgid ""
 "Deprecated, use [method Time.get_date_dict_from_system] instead.\n"
 "Returns current date as a dictionary of keys: [code]year[/code], "
 "[code]month[/code], [code]day[/code], [code]weekday[/code], [code]dst[/code] "
 "(Daylight Savings Time)."
 msgstr ""
-"Devuelve la fecha actual como un diccionario de claves: [code]year[/code], "
+"Obsoleto; use [method Time.get_date_dict_from_system].\n"
+"Devuelve la fecha actual como diccionario con claves: [code]year[/code], "
 "[code]month[/code], [code]day[/code], [code]weekday[/code], [code]dst[/code] "
-"(Horario de verano)."
+"(horario de verano)."
 
 #: doc/classes/OS.xml
-#, fuzzy
 msgid ""
 "Deprecated, use [method Time.get_datetime_dict_from_system] instead.\n"
 "Returns current datetime as a dictionary of keys: [code]year[/code], "
@@ -60008,13 +60065,13 @@ msgid ""
 "(Daylight Savings Time), [code]hour[/code], [code]minute[/code], "
 "[code]second[/code]."
 msgstr ""
-"Devuelve la fecha actual como un diccionario de claves: [code]year[/code], "
-"[code]month[/code], [code]day[/code], [code]weekday[/code], [code]dst[/code] "
-"(horario de verano), [code]hora[/code], [code]minute[/code], [code]second[/"
+"Obsoleto; use [method Time.get_datetime_dict_from_system].\n"
+"Devuelve fecha y hora actuales como diccionario con claves: [code]year[/"
+"code], [code]month[/code], [code]day[/code], [code]weekday[/code], "
+"[code]dst[/code], [code]hour[/code], [code]minute[/code], [code]second[/"
 "code]."
 
 #: doc/classes/OS.xml
-#, fuzzy
 msgid ""
 "Deprecated, use [method Time.get_datetime_dict_from_unix_time] instead.\n"
 "Gets a dictionary of time values corresponding to the given UNIX epoch time "
@@ -60023,11 +60080,11 @@ msgid ""
 "with the exception of Daylight Savings Time as it cannot be determined from "
 "the epoch."
 msgstr ""
-"Obtiene un diccionario de valores de tiempo correspondientes al tiempo de "
-"época UNIX dado (en segundos).\n"
-"Los valores del diccionario devueltos serán los mismos que los de [method "
-"get_datetime], con la excepción del horario de verano, ya que no puede "
-"determinarse a partir de la época."
+"Obsoleto; use [method Time.get_datetime_dict_from_unix_time].\n"
+"Obtiene un diccionario de valores de tiempo para el tiempo UNIX en "
+"segundos.\n"
+"Los valores coinciden con [method get_datetime], salvo [code]dst[/code], que "
+"no puede deducirse del instante UNIX."
 
 #: doc/classes/OS.xml
 msgid ""
@@ -60038,13 +60095,16 @@ msgid ""
 "[b]Note:[/b] Currently only implemented on Android. Other platforms will "
 "return an empty array even if they do have display cutouts or notches."
 msgstr ""
+"Devuelve un [Array] de [Rect2], cada uno el rectángulo delimitador de un "
+"recorte o muesca de pantalla. Son zonas no funcionales en pantallas sin "
+"marcos (cámaras, sensores). Devuelve un array vacío si no hay recortes. Vea "
+"[method get_window_safe_area].\n"
+"[b]Nota:[/b] Por ahora solo en Android; otras plataformas devuelven array "
+"vacío aunque tengan muesca."
 
 #: doc/classes/OS.xml
-#, fuzzy
 msgid "Returns the total amount of dynamic memory used (only works in debug)."
-msgstr ""
-"Devuelve la cantidad máxima de memoria estática utilizada (sólo funciona en "
-"la depuración)."
+msgstr "Devuelve la memoria dinámica usada en total (solo en depuración)."
 
 #: doc/classes/OS.xml
 msgid ""
@@ -60053,21 +60113,23 @@ msgid ""
 "[b]Note:[/b] Double-check the casing of [code]variable[/code]. Environment "
 "variable names are case-sensitive on all platforms except Windows."
 msgstr ""
+"Devuelve el valor de una variable de entorno. Cadena vacía si no existe.\n"
+"[b]Nota:[/b] Respete mayúsculas en [code]variable[/code]; en casi todas las "
+"plataformas los nombres distinguen mayúsculas (excepto Windows)."
 
 #: doc/classes/OS.xml
 msgid "Returns the path to the current engine executable."
 msgstr "Devuelve la ruta al ejecutable del motor actual."
 
 #: doc/classes/OS.xml
-#, fuzzy
 msgid ""
 "With this function, you can get the list of dangerous permissions that have "
 "been granted to the Android application.\n"
 "[b]Note:[/b] This method is implemented on Android."
 msgstr ""
-"Con esta función se puede obtener la lista de permisos peligrosos que se han "
-"concedido a la aplicación Android.\n"
-"[b]Nota:[/b] Este método está implementado en Android."
+"Con esta función obtiene la lista de permisos peligrosos concedidos a la "
+"aplicación Android.\n"
+"[b]Nota:[/b] Solo en Android."
 
 #: doc/classes/OS.xml
 msgid ""
@@ -60077,6 +60139,10 @@ msgid ""
 "notify it of changes to the IME cursor position.\n"
 "[b]Note:[/b] This method is implemented on macOS."
 msgstr ""
+"Devuelve la posición del cursor IME (la parte del texto en edición) respecto "
+"a los caracteres de la cadena de composición.\n"
+"Se envía [constant MainLoop.NOTIFICATION_OS_IME_UPDATE] cuando cambia.\n"
+"[b]Nota:[/b] Solo en macOS."
 
 #: doc/classes/OS.xml
 msgid ""
@@ -60085,9 +60151,11 @@ msgid ""
 "notify it of changes to the IME composition string.\n"
 "[b]Note:[/b] This method is implemented on macOS."
 msgstr ""
+"Devuelve la cadena intermedia de composición IME.\n"
+"Se envía [constant MainLoop.NOTIFICATION_OS_IME_UPDATE] cuando cambia.\n"
+"[b]Nota:[/b] Solo en macOS."
 
 #: doc/classes/OS.xml
-#, fuzzy
 msgid ""
 "Returns the current latin keyboard variant as a String.\n"
 "Possible return values are: [code]\"QWERTY\"[/code], [code]\"AZERTY\"[/"
@@ -60096,10 +60164,12 @@ msgid ""
 "[b]Note:[/b] This method is implemented on Linux, macOS and Windows. Returns "
 "[code]\"QWERTY\"[/code] on unsupported platforms."
 msgstr ""
-"Devuelve el nombre del sistema operativo anfitrión. Los posibles valores "
-"son: [code]\"Android\"[/code], [code]\"iOS\"[/code], [code]\"HTML5\"[/code], "
-"[code]\"OSX\"[/code], [code]\"Server\"[/code], [code]\"Windows\"[/code], "
-"[code]\"UWP\"[/code], [code]\"X11\"[/code]."
+"Devuelve la variante de teclado latino actual como cadena.\n"
+"Valores posibles: [code]\"QWERTY\"[/code], [code]\"AZERTY\"[/code], "
+"[code]\"QZERTY\"[/code], [code]\"DVORAK\"[/code], [code]\"NEO\"[/code], "
+"[code]\"COLEMAK\"[/code] o [code]\"ERROR\"[/code].\n"
+"[b]Nota:[/b] En Linux, macOS y Windows. En el resto devuelve "
+"[code]\"QWERTY\"[/code]."
 
 #: doc/classes/OS.xml
 msgid ""
@@ -60118,6 +60188,17 @@ msgid ""
 "[code]extra[/code] - optional, semicolon separated list of additional key "
 "words. Currency, calendar, sort order and numbering system information."
 msgstr ""
+"Devuelve la configuración regional del SO como "
+"[code]lang_Script_COUNTRY_VARIANT@extra[/code]. Para solo el idioma use "
+"[method get_locale_language].\n"
+"[code]language[/code]: código de idioma de 2 o 3 letras en minúsculas (ISO "
+"639-1).\n"
+"[code]Script[/code]: opcional, código de escritura de 4 letras (ISO 15924).\n"
+"[code]COUNTRY[/code]: opcional, código de país de 2 o 3 letras en mayúsculas "
+"(ISO 3166-1).\n"
+"[code]VARIANT[/code]: opcional, variante regional u ordenación.\n"
+"[code]extra[/code]: opcional, lista separada por punto y coma con claves "
+"adicionales (moneda, calendario, etc.)."
 
 #: doc/classes/OS.xml
 msgid ""
@@ -60130,6 +60211,12 @@ msgid ""
 "about country code or variants. For example, for a French Canadian user with "
 "[code]fr_CA[/code] locale, this would return [code]fr[/code]."
 msgstr ""
+"Devuelve el [url=https://en.wikipedia.org/"
+"wiki/List_of_ISO_639-1_codes]código de idioma[/url] de 2 o 3 letras (ISO 639-1) de la configuración "
+"regional del SO, coherente entre plataformas. Equivale a la parte "
+"[code]language[/code] de [method get_locale].\n"
+"Sirve para reducir una configuración regional completa al código de idioma; "
+"p. ej. para [code]fr_CA[/code] devuelve [code]fr[/code]."
 
 #: doc/classes/OS.xml
 msgid ""
@@ -60137,6 +60224,10 @@ msgid ""
 "[b]Note:[/b] Thread IDs are not deterministic and may be reused across "
 "application restarts."
 msgstr ""
+"Devuelve el identificador del hilo principal. Vea [method "
+"get_thread_caller_id].\n"
+"[b]Nota:[/b] Los IDs de hilo no son deterministas y pueden reutilizarse "
+"entre ejecuciones."
 
 #: doc/classes/OS.xml
 msgid ""
@@ -60161,47 +60252,42 @@ msgstr ""
 "[code]\"UWP\"[/code], [code]\"X11\"[/code]."
 
 #: doc/classes/OS.xml
-#, fuzzy
 msgid ""
 "Returns internal structure pointers for use in GDNative plugins.\n"
 "[b]Note:[/b] This method is implemented on Linux and Windows (other OSs will "
 "soon be supported)."
 msgstr ""
-"Devuelve el número de disposiciones del teclado.\n"
-"[b]Nota:[/b] Este método está implementado en Linux, macOS y Windows."
+"Devuelve punteros internos para complementos GDNative.\n"
+"[b]Nota:[/b] Implementado en Linux y Windows (pronto en otros sistemas)."
 
 #: doc/classes/OS.xml
-#, fuzzy
 msgid ""
 "Returns the amount of battery left in the device as a percentage. Returns "
 "[code]-1[/code] if power state is unknown.\n"
 "[b]Note:[/b] This method is implemented on Linux, macOS and Windows."
 msgstr ""
-"Devuelve el nombre localizado de la disposición del teclado en la posición "
-"[code]index[/code].\n"
-"[b]Nota:[/b] Este método está implementado en Linux, macOS y Windows."
+"Devuelve el porcentaje de batería restante. [code]-1[/code] si el estado "
+"energético es desconocido.\n"
+"[b]Nota:[/b] Linux, macOS y Windows."
 
 #: doc/classes/OS.xml
-#, fuzzy
 msgid ""
 "Returns an estimate of the time left in seconds before the device runs out "
 "of battery. Returns [code]-1[/code] if power state is unknown.\n"
 "[b]Note:[/b] This method is implemented on Linux, macOS and Windows."
 msgstr ""
-"Devuelve el nombre localizado de la disposición del teclado en la posición "
-"[code]index[/code].\n"
-"[b]Nota:[/b] Este método está implementado en Linux, macOS y Windows."
+"Devuelve una estimación de los segundos restantes antes de agotarse la "
+"batería. [code]-1[/code] si el estado es desconocido.\n"
+"[b]Nota:[/b] Linux, macOS y Windows."
 
 #: doc/classes/OS.xml
-#, fuzzy
 msgid ""
 "Returns the current state of the device regarding battery and power. See "
 "[enum PowerState] constants.\n"
 "[b]Note:[/b] This method is implemented on Linux, macOS and Windows."
 msgstr ""
-"Devuelve el nombre localizado de la disposición del teclado en la posición "
-"[code]index[/code].\n"
-"[b]Nota:[/b] Este método está implementado en Linux, macOS y Windows."
+"Devuelve el estado de energía del dispositivo. Vea [enum PowerState].\n"
+"[b]Nota:[/b] Linux, macOS y Windows."
 
 #: doc/classes/OS.xml
 msgid ""
@@ -60219,6 +60305,9 @@ msgid ""
 "machine. On CPUs with HyperThreading enabled, this number will be greater "
 "than the number of [i]physical[/i] CPU cores."
 msgstr ""
+"Devuelve el número de núcleos [i]lógicos[/i] de CPU en la máquina "
+"anfitriona. Con HyperThreading, será mayor que el número de núcleos "
+"[i]físicos[/i]."
 
 #: doc/classes/OS.xml
 msgid ""
@@ -60228,11 +60317,14 @@ msgid ""
 "iOS. On Android, HTML5 and UWP, [method get_processor_name] returns an empty "
 "string."
 msgstr ""
+"Devuelve el nombre del modelo de CPU en el anfitrión (p. ej. «Intel(R) "
+"Core(TM) i7-6700K CPU @ 4.00GHz»).\n"
+"[b]Nota:[/b] Solo en Windows, macOS, Linux e iOS. En Android, HTML5 y UWP "
+"devuelve cadena vacía."
 
 #: doc/classes/OS.xml
-#, fuzzy
 msgid "Returns the window size including decorations like window borders."
-msgstr "Devuelve la identificación del nodo de entrada de una función."
+msgstr "Devuelve el tamaño de la ventana incluyendo decoraciones (bordes)."
 
 #: doc/classes/OS.xml
 msgid ""
@@ -60240,24 +60332,25 @@ msgid ""
 "project automatically restarts using [method set_restart_on_exit]. See also "
 "[method is_restart_on_exit_set]."
 msgstr ""
+"Devuelve la lista de argumentos de línea de comandos que se usarán al "
+"reiniciar el proyecto automáticamente con [method set_restart_on_exit]. Vea "
+"[method is_restart_on_exit_set]."
 
 #: doc/classes/OS.xml
-#, fuzzy
 msgid ""
 "Returns the given scancode as a string (e.g. Return values: "
 "[code]\"Escape\"[/code], [code]\"Shift+Escape\"[/code]).\n"
 "See also [member InputEventKey.scancode] and [method InputEventKey."
 "get_scancode_with_modifiers]."
 msgstr ""
-"Devuelve el código clave dado como una string (por ejemplo, valores de "
-"retorno: [code]\"Escape\"[/code], [code]\"Shift+Escape\"[/code]).\n"
-"Véase también [member InputEventKey.keycode] y [method InputEventKey."
-"get_keycode_with_modifiers]."
+"Devuelve el código de tecla como cadena (p. ej. [code]\"Escape\"[/code], "
+"[code]\"Shift+Escape\"[/code]).\n"
+"Vea [member InputEventKey.scancode] y [method InputEventKey."
+"get_scancode_with_modifiers]."
 
 #: doc/classes/OS.xml
-#, fuzzy
 msgid "Returns the number of displays attached to the host machine."
-msgstr "Devuelve el número de hilos disponibles en el host."
+msgstr "Devuelve el número de pantallas conectadas al anfitrión."
 
 #: doc/classes/OS.xml
 msgid ""
@@ -60279,6 +60372,23 @@ msgid ""
 "[b]Note:[/b] This method is implemented on Android, Linux, macOS and "
 "Windows. Returns [code]72[/code] on unsupported platforms."
 msgstr ""
+"Devuelve los puntos por pulgada (puntos por pulgada) de la pantalla "
+"indicada. Si [code]screen[/code] es [code]-1[/code] (por defecto), se usa la "
+"pantalla actual.\n"
+"[b]Nota:[/b] En macOS el valor puede ser inexacto con escalado "
+"fraccionario.\n"
+"[b]Nota:[/b] En Android las densidades se agrupan en seis niveles "
+"generales.\n"
+"[codeblock]\n"
+"   ldpi - 120 dpi\n"
+"   mdpi - 160 dpi\n"
+"   hdpi - 240 dpi\n"
+"  xhdpi - 320 dpi\n"
+" xxhdpi - 480 dpi\n"
+"xxxhdpi - 640 dpi\n"
+"[/codeblock]\n"
+"[b]Nota:[/b] Implementado en Android, Linux, macOS y Windows; en otros "
+"devuelve [code]72[/code]."
 
 #: doc/classes/OS.xml
 msgid ""
@@ -60295,16 +60405,13 @@ msgstr ""
 "[b]Nota:[/b] Este método está implementado en el MacOS."
 
 #: doc/classes/OS.xml
-#, fuzzy
 msgid ""
 "Returns the position of the specified screen by index. If [code]screen[/"
 "code] is [code]-1[/code] (the default value), the current screen will be "
 "used."
 msgstr ""
-"Devuelve el factor de escala de la pantalla especificada por índice.\n"
-"[b]Nota:[/b] En macOS el valor devuelto es [code]2.0[/code] para la pantalla "
-"hiDPI (Retina), y [code]1.0[/code] para todos los demás casos.\n"
-"[b]Nota:[/b] Este método está implementado en macOS."
+"Devuelve la posición de la pantalla indicada por índice. Si [code]screen[/"
+"code] es [code]-1[/code] (por defecto), se usa la pantalla actual."
 
 #: doc/classes/OS.xml
 msgid ""
@@ -60322,9 +60429,18 @@ msgid ""
 "    refresh_rate = 60.0\n"
 "[/codeblock]"
 msgstr ""
+"Devuelve la frecuencia de refresco actual de la pantalla indicada. Si "
+"[code]screen[/code] es [code]-1[/code], se usa la pantalla actual.\n"
+"[b]Nota:[/b] Devuelve [code]-1.0[/code] si falla. En HTML5 siempre "
+"devuelve [code]-1.0[/code].\n"
+"Reserva con frecuencia por defecto si falla:\n"
+"[codeblock]\n"
+"var refresh_rate = OS.get_screen_refresh_rate()\n"
+"if refresh_rate < 0:\n"
+"    refresh_rate = 60.0\n"
+"[/codeblock]"
 
 #: doc/classes/OS.xml
-#, fuzzy
 msgid ""
 "Return the scale factor of the specified screen by index. If [code]screen[/"
 "code] is [code]-1[/code] (the default value), the current screen will be "
@@ -60333,10 +60449,11 @@ msgid ""
 "screen, and [code]1.0[/code] for all other cases.\n"
 "[b]Note:[/b] This method is implemented on macOS."
 msgstr ""
-"Devuelve el factor de escala de la pantalla especificada por índice.\n"
-"[b]Nota:[/b] En macOS el valor devuelto es [code]2.0[/code] para la pantalla "
-"hiDPI (Retina), y [code]1.0[/code] para todos los demás casos.\n"
-"[b]Nota:[/b] Este método está implementado en macOS."
+"Devuelve el factor de escala de la pantalla indicada. Si [code]screen[/code] "
+"es [code]-1[/code], se usa la pantalla actual.\n"
+"[b]Nota:[/b] En macOS el valor es [code]2.0[/code] en pantallas Retina hiDPI "
+"y [code]1.0[/code] en el resto.\n"
+"[b]Nota:[/b] Solo implementado en macOS."
 
 #: doc/classes/OS.xml
 msgid ""
@@ -60344,6 +60461,8 @@ msgid ""
 "code] is [code]-1[/code] (the default value), the current screen will be "
 "used."
 msgstr ""
+"Devuelve las dimensiones en píxeles de la pantalla indicada. Si "
+"[code]screen[/code] es [code]-1[/code], se usa la pantalla actual."
 
 #: doc/classes/OS.xml
 msgid ""
@@ -60359,16 +60478,14 @@ msgstr ""
 "la depuración)."
 
 #: doc/classes/OS.xml
-#, fuzzy
 msgid ""
 "Returns the amount of static memory being used by the program in bytes (only "
 "works in debug)."
 msgstr ""
-"Devuelve la cantidad de memoria estática que está siendo utilizada por el "
-"programa en bytes."
+"Devuelve la memoria estática usada por el programa en bytes (solo en "
+"depuración)."
 
 #: doc/classes/OS.xml
-#, fuzzy
 msgid ""
 "Returns the actual path to commonly used folders across different platforms. "
 "Available locations are specified in [enum SystemDir].\n"
@@ -60378,21 +60495,19 @@ msgid ""
 "differentiate between app specific and shared directories. Shared "
 "directories have additional restrictions on Android."
 msgstr ""
-"Devuelve el camino real a las carpetas de uso común a través de diferentes "
-"plataformas. Las ubicaciones disponibles se especifican en [enum "
-"SystemDir].\n"
-"[b]Nota:[/b] Este método está implementado en Android, Linux, macOS y "
-"Windows."
+"Devuelve la ruta real a carpetas habituales según plataforma. Las "
+"ubicaciones están en [enum SystemDir].\n"
+"[b]Nota:[/b] Android, Linux, macOS y Windows.\n"
+"[b]Nota:[/b] En Android el almacenamiento compartido distingue directorios "
+"de app y compartidos, con restricciones extra en compartidos."
 
 #: doc/classes/OS.xml
-#, fuzzy
 msgid "Returns the epoch time of the operating system in milliseconds."
-msgstr "Devuelve la duración del flujo de audio en segundos."
+msgstr "Devuelve la hora epoch del sistema en milisegundos."
 
 #: doc/classes/OS.xml
-#, fuzzy
 msgid "Returns the epoch time of the operating system in seconds."
-msgstr "Devuelve la duración del flujo de audio en segundos."
+msgstr "Devuelve la hora epoch del sistema en segundos."
 
 #: doc/classes/OS.xml
 msgid ""
@@ -60417,32 +60532,34 @@ msgid ""
 "[b]Note:[/b] Thread IDs are not deterministic and may be reused across "
 "application restarts."
 msgstr ""
+"Devuelve el identificador del hilo actual. Útil en registros para depurar "
+"aplicaciones multihilo.\n"
+"[b]Nota:[/b] Los IDs no son deterministas y pueden reutilizarse entre "
+"ejecuciones."
 
 #: doc/classes/OS.xml
-#, fuzzy
 msgid ""
 "Deprecated, use [method Time.get_ticks_msec] instead.\n"
 "Returns the amount of time passed in milliseconds since the engine started."
 msgstr ""
-"Devuelve el tiempo transcurrido en milisegundos desde que el motor se puso "
-"en marcha."
+"Obsoleto; use [method Time.get_ticks_msec].\n"
+"Devuelve el tiempo transcurrido en milisegundos desde el arranque del motor."
 
 #: doc/classes/OS.xml
-#, fuzzy
 msgid ""
 "Deprecated, use [method Time.get_ticks_usec] instead.\n"
 "Returns the amount of time passed in microseconds since the engine started."
 msgstr ""
-"Devuelve la cantidad de tiempo transcurrido en microsegundos desde que el "
-"motor se puso en marcha."
+"Obsoleto; use [method Time.get_ticks_usec].\n"
+"Devuelve el tiempo transcurrido en microsegundos desde el arranque del motor."
 
 #: doc/classes/OS.xml
-#, fuzzy
 msgid ""
 "Deprecated, use [method Time.get_time_dict_from_system] instead.\n"
 "Returns current time as a dictionary of keys: hour, minute, second."
 msgstr ""
-"Devuelve la hora actual como un diccionario de claves: hora, minuto, segundo."
+"Obsoleto; use [method Time.get_time_dict_from_system].\n"
+"Devuelve la hora actual como diccionario con claves: hora, minuto, segundo."
 
 #: doc/classes/OS.xml
 msgid ""
@@ -60463,6 +60580,11 @@ msgid ""
 "[b]Note:[/b] Returns an empty string and prints an error on HTML5, as this "
 "method cannot be implemented on this platform."
 msgstr ""
+"Devuelve una cadena única para el dispositivo.\n"
+"[b]Nota:[/b] Puede cambiar si el usuario reinstala o actualiza el SO o el "
+"hardware; no debe usarse para cifrar datos persistentes. La cadena también "
+"puede falsificarse; no confíe en ella para seguridad.\n"
+"[b]Nota:[/b] En HTML5 devuelve cadena vacía y muestra error."
 
 #: doc/classes/OS.xml
 msgid ""
@@ -60476,9 +60598,14 @@ msgid ""
 "[b]Note:[/b] To get a floating point timestamp with sub-second precision, "
 "use [method Time.get_unix_time_from_system]."
 msgstr ""
+"Devuelve la marca de tiempo UNIX actual en segundos.\n"
+"[b]Importante:[/b] Es el reloj del sistema que el usuario puede cambiar. "
+"[b]No[/b] la use para tiempo preciso; use [method get_ticks_usec] o [method "
+"get_ticks_msec], que son monótonos.\n"
+"[b]Nota:[/b] Para tiempo con fracciones de segundo use [method Time."
+"get_unix_time_from_system]."
 
 #: doc/classes/OS.xml
-#, fuzzy
 msgid ""
 "Gets an epoch time value from a dictionary of time values.\n"
 "[code]datetime[/code] must be populated with the following keys: [code]year[/"
@@ -60491,16 +60618,16 @@ msgid ""
 "into this function. Daylight Savings Time ([code]dst[/code]), if present, is "
 "ignored."
 msgstr ""
-"Obtiene un valor de tiempo de época de un diccionario de valores de tiempo.\n"
-"[code]datetime[/code] debe ser rellenado con las siguientes teclas: "
-"[code]year[/code], [code]month[/code], [code]day[/code], [code]hour[/code], "
-"[code]minute[/code], [code]second[/code].\n"
-"Puedes pasar la salida de [method get_datetime_from_unix_time] directamente "
-"a esta función. El horario de verano ([code]dst[/code]), si está presente, "
-"es ignorado."
+"Obtiene un instante UNIX a partir de un diccionario de fecha y hora.\n"
+"[code]datetime[/code] debe incluir: [code]year[/code], [code]month[/code], "
+"[code]day[/code], [code]hour[/code], [code]minute[/code], [code]second[/"
+"code].\n"
+"Si el diccionario está vacío devuelve [code]0[/code]. Las claves omitidas "
+"toman valores equivalentes al instante UNIX 0 (1970-01-01 00:00:00 UTC).\n"
+"Puede pasar directamente la salida de [method get_datetime_from_unix_time]. "
+"[code]dst[/code], si existe, se ignora."
 
 #: doc/classes/OS.xml
-#, fuzzy
 msgid ""
 "Returns the absolute directory path where user data is written ([code]user://"
 "[/code]).\n"
@@ -60519,25 +60646,27 @@ msgid ""
 "Not to be confused with [method get_data_dir], which returns the [i]global[/"
 "i] (non-project-specific) user data directory."
 msgstr ""
-"Devuelve la ruta absoluta del directorio donde se escriben los datos del "
-"usuario ([code]user://[/code]).\n"
-"En Linux, esto es [code]~/.local/share/godot/app_userdata/[project_name][/"
-"code], o [code]~/.local/share/[custom_name][/code] si se establece "
-"[code]use_custom_user_dir[/code].\n"
-"En macOS, esto es [code]~/Library/Application Support/Godot/app_userdata/"
+"Devuelve la ruta absoluta del directorio de datos de usuario ([code]user://[/"
+"code]).\n"
+"En Linux: [code]~/.local/share/godot/app_userdata/[project_name][/code], o "
+"[code]~/.local/share/[custom_name][/code] si [code]use_custom_user_dir[/"
+"code].\n"
+"En macOS: [code]~/Library/Application Support/Godot/app_userdata/"
 "[project_name][/code], o [code]~/Library/Application Support/[custom_name][/"
-"code] si se establece [code]use_custom_user_dir[/code].\n"
-"En Windows, esto es [code]%APPDATA%\\Godot\\app_userdata\\[project_name][/"
-"code], o [code]%APPDATA%\\[custom_name][/code] si [code]use_custom_user_dir[/"
-"code] está configurado. [code]%APPDATA%[/code] se expande a "
+"code] si aplica.\n"
+"En Windows: [code]%APPDATA%\\Godot\\app_userdata\\[project_name][/code], o "
+"[code]%APPDATA%\\[custom_name][/code]; [code]%APPDATA%[/code] expande a "
 "[code]%USERPROFILE%\\AppData\\Roaming[/code].\n"
 "Si el nombre del proyecto está vacío, [code]user://[/code] vuelve a "
-"[code]res://[/code]."
+"[code]res://[/code].\n"
+"No confundir con [method get_data_dir], que es el directorio [i]global[/i] "
+"de datos de usuario."
 
 #: doc/classes/OS.xml
-#, fuzzy
 msgid "Returns the number of video drivers supported on the current platform."
-msgstr "Devuelve el número de pestañas ocultas desplazadas a la izquierda."
+msgstr ""
+"Devuelve el número de controladores de vídeo soportados en la plataforma "
+"actual."
 
 #: doc/classes/OS.xml
 msgid ""
@@ -60545,6 +60674,9 @@ msgid ""
 "index. This index is a value from [enum VideoDriver], and you can use "
 "[method get_current_video_driver] to get the current backend's index."
 msgstr ""
+"Devuelve el nombre del controlador de vídeo para el índice [code]driver[/"
+"code]. El índice corresponde a [enum VideoDriver]; use [method "
+"get_current_video_driver] para el índice del backend activo."
 
 #: doc/classes/OS.xml
 msgid ""
@@ -60559,6 +60691,8 @@ msgid ""
 "Returns unobscured area of the window where interactive controls should be "
 "rendered."
 msgstr ""
+"Devuelve el área libre de la ventana donde deben dibujarse los controles "
+"interactivos."
 
 #: doc/classes/OS.xml
 msgid ""
@@ -60566,40 +60700,40 @@ msgid ""
 "item to the macOS dock icon menu.\n"
 "[b]Note:[/b] This method is implemented on macOS."
 msgstr ""
+"Añade un elemento con texto «label» al menú global. Use el menú «_dock» para "
+"el menú del icono del dock en macOS.\n"
+"[b]Nota:[/b] Solo en macOS."
 
 #: doc/classes/OS.xml
-#, fuzzy
 msgid ""
 "Add a separator between items. Separators also occupy an index.\n"
 "[b]Note:[/b] This method is implemented on macOS."
 msgstr ""
-"Añade un separador entre los objetos. Los separadores también ocupan un "
-"índice."
+"Añade un separador entre elementos. Los separadores también ocupan un "
+"índice.\n"
+"[b]Nota:[/b] Solo en macOS."
 
 #: doc/classes/OS.xml
-#, fuzzy
 msgid ""
 "Clear the global menu, in effect removing all items.\n"
 "[b]Note:[/b] This method is implemented on macOS."
 msgstr ""
-"Devuelve el número total de controladores de tabletas disponibles.\n"
-"[b]Nota:[/b] Este método está implementado en Windows."
+"Vacía el menú global, eliminando todos los elementos.\n"
+"[b]Nota:[/b] Solo en macOS."
 
 #: doc/classes/OS.xml
-#, fuzzy
 msgid ""
 "Removes the item at index \"idx\" from the global menu. Note that the "
 "indexes of items after the removed item are going to be shifted by one.\n"
 "[b]Note:[/b] This method is implemented on macOS."
 msgstr ""
-"Elimina el elemento en el índice [code]idx[/code] del menú.\n"
-"[b]Nota:[/b] Los índices de los ítems después del ítem removido serán "
-"desplazados por uno."
+"Elimina el elemento en el índice [code]idx[/code] del menú global. Los "
+"índices posteriores se desplazan.\n"
+"[b]Nota:[/b] Solo en macOS."
 
 #: doc/classes/OS.xml
-#, fuzzy
 msgid "Returns [code]true[/code] if there is content on the clipboard."
-msgstr "Devuelve [code]true[/code] si el archivo está actualmente abierto."
+msgstr "Devuelve [code]true[/code] si el portapapeles tiene contenido."
 
 #: doc/classes/OS.xml
 msgid ""
@@ -60608,9 +60742,12 @@ msgid ""
 "[b]Note:[/b] Double-check the casing of [code]variable[/code]. Environment "
 "variable names are case-sensitive on all platforms except Windows."
 msgstr ""
+"Devuelve [code]true[/code] si existe la variable de entorno [code]variable[/"
+"code].\n"
+"[b]Nota:[/b] Respete mayúsculas; los nombres distinguen mayúsculas salvo en "
+"Windows."
 
 #: doc/classes/OS.xml
-#, fuzzy
 msgid ""
 "Returns [code]true[/code] if the feature for the given feature tag is "
 "supported in the currently running instance, depending on the platform, "
@@ -60620,30 +60757,26 @@ msgid ""
 "details.\n"
 "[b]Note:[/b] Tag names are case-sensitive."
 msgstr ""
-"Devuelve [code]true[/code] si la característica para la etiqueta de la "
-"característica dada está soportada en la instancia que se está ejecutando "
-"actualmente, dependiendo de la plataforma, la construcción, etc. Se puede "
-"usar para comprobar si actualmente se está ejecutando una compilación de "
-"depuración, en una determinada plataforma o arco, etc. Consulte la "
-"documentación [url=https://docs.godotengine.org/es/latest/getting_started/"
-"workflow/export/feature_tags.html]Etiquetas de características[/url] para "
-"obtener más detalles.\n"
-"[b]Nota:[/b] Los nombres de las etiquetas distinguen entre mayúsculas y "
-"minúsculas."
+"Devuelve [code]true[/code] si la etiqueta de característica indicada está "
+"soportada en esta instancia (plataforma, compilación, etc.). Sirve para "
+"comprobar compilación de depuración, plataforma, arquitectura, etc. Vea "
+"[url=$DOCS_URL/tutorials/export/feature_tags.html]Etiquetas de "
+"características[/url].\n"
+"[b]Nota:[/b] Las etiquetas distinguen mayúsculas."
 
 #: doc/classes/OS.xml
-#, fuzzy
 msgid ""
 "Returns [code]true[/code] if the device has a touchscreen or emulates one."
-msgstr "Devuelve [code]true[/code] si este dispositivo rastrea la orientación."
+msgstr ""
+"Devuelve [code]true[/code] si el dispositivo tiene pantalla táctil o la "
+"emula."
 
 #: doc/classes/OS.xml
-#, fuzzy
 msgid ""
 "Returns [code]true[/code] if the platform has a virtual keyboard, "
 "[code]false[/code] otherwise."
 msgstr ""
-"Devuelve [code]true[/code] si los scripts de dominio están cargados, "
+"Devuelve [code]true[/code] si la plataforma dispone de teclado virtual, "
 "[code]false[/code] en caso contrario."
 
 #: doc/classes/OS.xml
@@ -60670,15 +60803,14 @@ msgstr ""
 "[code]OS.has_feature(\"standalone\")[/code]."
 
 #: doc/classes/OS.xml
-#, fuzzy
 msgid ""
 "Returns [code]true[/code] if the [b]OK[/b] button should appear on the left "
 "and [b]Cancel[/b] on the right."
 msgstr ""
-"Devuelve [code]true[/code] si la acción tiene asociado el [InputEvent] dado."
+"Devuelve [code]true[/code] si el botón [b]Aceptar[/b] debe ir a la izquierda "
+"y [b]Cancelar[/b] a la derecha."
 
 #: doc/classes/OS.xml
-#, fuzzy
 msgid ""
 "Returns [code]true[/code] if the child process ID ([code]pid[/code]) is "
 "still running or [code]false[/code] if it has terminated.\n"
@@ -60686,13 +60818,10 @@ msgid ""
 "[b]Note:[/b] This method is implemented on Android, iOS, Linux, macOS and "
 "Windows."
 msgstr ""
-"Matar (terminar) el proceso identificado por el ID de proceso dado "
-"([code]pid[/code]), por ejemplo el devuelto por [method execute] en modo no "
-"bloqueante.\n"
-"[b]Nota:[/b] Este método también puede utilizarse para matar procesos que no "
-"fueron generados por el juego.\n"
-"[b]Nota:[/b] Este método está implementado en Android, iOS, Linux, macOS y "
-"Windows."
+"Devuelve [code]true[/code] si el proceso con PID [code]pid[/code] sigue en "
+"ejecución, [code]false[/code] si terminó.\n"
+"Debe ser un PID válido devuelto por [method execute].\n"
+"[b]Nota:[/b] Android, iOS, Linux, macOS y Windows."
 
 #: doc/classes/OS.xml
 msgid ""
@@ -60700,15 +60829,17 @@ msgid ""
 "exits for any reason, [code]false[/code] otherwise. See also [method "
 "set_restart_on_exit] and [method get_restart_on_exit_arguments]."
 msgstr ""
+"Devuelve [code]true[/code] si el proyecto se reiniciará automáticamente al "
+"salir por cualquier motivo; [code]false[/code] en caso contrario. Vea "
+"[method set_restart_on_exit] y [method get_restart_on_exit_arguments]."
 
 #: doc/classes/OS.xml
-#, fuzzy
 msgid ""
 "Returns [code]true[/code] if the input scancode corresponds to a Unicode "
 "character."
 msgstr ""
-"Devuelve [code]true[/code] si el código clave de entrada corresponde a un "
-"carácter Unicode."
+"Devuelve [code]true[/code] si el código de tecla corresponde a un carácter "
+"Unicode."
 
 #: doc/classes/OS.xml
 msgid ""
@@ -60730,23 +60861,22 @@ msgstr ""
 "donde esta persistencia puede no estar disponible."
 
 #: doc/classes/OS.xml
-#, fuzzy
 msgid ""
 "Returns [code]true[/code] if the window should always be on top of other "
 "windows."
 msgstr ""
-"Devuelve [code]true[/code] si el nodo está plegado (colapsado) en el muelle "
-"de la escena."
+"Devuelve [code]true[/code] si la ventana debe permanecer siempre encima de "
+"las demás."
 
 #: doc/classes/OS.xml
-#, fuzzy
 msgid ""
 "Returns [code]true[/code] if the window is currently focused.\n"
 "[b]Note:[/b] Only implemented on desktop platforms. On other platforms, it "
 "will always return [code]true[/code]."
 msgstr ""
-"Devuelve [code]true[/code] si el addon está listo para responder a las "
-"llamadas de la función, si no, devuelve [code]false[/code]."
+"Devuelve [code]true[/code] si la ventana tiene el foco.\n"
+"[b]Nota:[/b] Solo en escritorio; en otras plataformas siempre [code]true[/"
+"code]."
 
 #: doc/classes/OS.xml
 msgid ""
@@ -60785,14 +60915,14 @@ msgstr ""
 "[b]Nota:[/b] Este método está implementado en Linux, macOS y Windows."
 
 #: doc/classes/OS.xml
-#, fuzzy
 msgid ""
 "Converts a physical (US QWERTY) [code]scancode[/code] to one in the active "
 "keyboard layout.\n"
 "[b]Note:[/b] This method is implemented on Linux, macOS and Windows."
 msgstr ""
-"Establece una disposición de teclado activa.\n"
-"[b]Nota:[/b] Este método está implementado en Linux, macOS y Windows."
+"Convierte un [code]scancode[/code] físico (QWERTY US) al de la distribución "
+"de teclado activa.\n"
+"[b]Nota:[/b] Linux, macOS y Windows."
 
 #: doc/classes/OS.xml
 msgid ""
@@ -60803,7 +60933,6 @@ msgstr ""
 "[b]Nota:[/b] Este método está implementado en Linux, macOS y Windows."
 
 #: doc/classes/OS.xml
-#, fuzzy
 msgid ""
 "Kill (terminate) the process identified by the given process ID ([code]pid[/"
 "code]), e.g. the one returned by [method execute] in non-blocking mode. See "
@@ -60813,13 +60942,10 @@ msgid ""
 "[b]Note:[/b] This method is implemented on Android, iOS, Linux, macOS and "
 "Windows."
 msgstr ""
-"Matar (terminar) el proceso identificado por el ID de proceso dado "
-"([code]pid[/code]), por ejemplo el devuelto por [method execute] en modo no "
-"bloqueante.\n"
-"[b]Nota:[/b] Este método también puede utilizarse para matar procesos que no "
-"fueron generados por el juego.\n"
-"[b]Nota:[/b] Este método está implementado en Android, iOS, Linux, macOS y "
-"Windows."
+"Termina el proceso con identificador [code]pid[/code] (p. ej. el devuelto "
+"por [method execute] en modo no bloqueante). Vea [method crash].\n"
+"[b]Nota:[/b] También puede terminar procesos no iniciados por el juego.\n"
+"[b]Nota:[/b] Android, iOS, Linux, macOS y Windows."
 
 #: doc/classes/OS.xml
 msgid ""
@@ -60835,34 +60961,41 @@ msgid ""
 "OS.move_to_trash(ProjectSettings.globalize_path(file_to_remove))\n"
 "[/codeblock]"
 msgstr ""
+"Mueve el archivo o directorio a la papelera del sistema. Vea [method "
+"Directory.remove].\n"
+"Solo rutas globales; puede necesitar [method ProjectSettings."
+"globalize_path]. No use con archivos en [code]res://[/code] en el "
+"exportado.\n"
+"[b]Nota:[/b] Si el usuario desactivó la papelera, el archivo se borrará de "
+"forma permanente.\n"
+"[codeblock]\n"
+"var file_to_remove = \"user://slot1.sav\"\n"
+"OS.move_to_trash(ProjectSettings.globalize_path(file_to_remove))\n"
+"[/codeblock]"
 
 #: doc/classes/OS.xml
-#, fuzzy
 msgid ""
 "Moves the window to the front.\n"
 "[b]Note:[/b] This method is implemented on Linux, macOS and Windows."
 msgstr ""
-"Devuelve el número de disposiciones del teclado.\n"
-"[b]Nota:[/b] Este método está implementado en Linux, macOS y Windows."
+"Trae la ventana al frente.\n"
+"[b]Nota:[/b] Linux, macOS y Windows."
 
 #: doc/classes/OS.xml
-#, fuzzy
 msgid ""
 "Returns [code]true[/code] if native video is playing.\n"
 "[b]Note:[/b] This method is only implemented on iOS."
 msgstr ""
-"Devuelve [code]true[/code] si el video se está reproduciendo.\n"
-"[b]Nota:[/b] El vídeo sigue considerándose en reproducción si se interrumpe "
-"durante la reproducción."
+"Devuelve [code]true[/code] si el vídeo nativo se está reproduciendo.\n"
+"[b]Nota:[/b] Solo en iOS."
 
 #: doc/classes/OS.xml
-#, fuzzy
 msgid ""
 "Pauses native video playback.\n"
 "[b]Note:[/b] This method is only implemented on iOS."
 msgstr ""
-"Establece una disposición de teclado activa.\n"
-"[b]Nota:[/b] Este método está implementado en Linux, macOS y Windows."
+"Pausa la reproducción de vídeo nativo.\n"
+"[b]Nota:[/b] Solo en iOS."
 
 #: doc/classes/OS.xml
 msgid ""
@@ -60870,24 +61003,25 @@ msgid ""
 "audio and subtitle tracks.\n"
 "[b]Note:[/b] This method is only implemented on iOS."
 msgstr ""
+"Reproduce vídeo nativo desde la ruta indicada, con volumen y pistas de audio "
+"y subtítulos.\n"
+"[b]Nota:[/b] Solo en iOS."
 
 #: doc/classes/OS.xml
-#, fuzzy
 msgid ""
 "Stops native video playback.\n"
 "[b]Note:[/b] This method is implemented on iOS."
 msgstr ""
-"Establece una disposición de teclado activa.\n"
-"[b]Nota:[/b] Este método está implementado en Linux, macOS y Windows."
+"Detiene la reproducción de vídeo nativo.\n"
+"[b]Nota:[/b] Solo en iOS."
 
 #: doc/classes/OS.xml
-#, fuzzy
 msgid ""
 "Resumes native video playback.\n"
 "[b]Note:[/b] This method is implemented on iOS."
 msgstr ""
-"Establece una disposición de teclado activa.\n"
-"[b]Nota:[/b] Este método está implementado en Linux, macOS y Windows."
+"Reanuda la reproducción de vídeo nativo.\n"
+"[b]Nota:[/b] Solo en iOS."
 
 #: doc/classes/OS.xml
 msgid ""
@@ -60930,17 +61064,21 @@ msgid ""
 "[kbd]Enter[/kbd]).\n"
 "[b]Note:[/b] This method is implemented on Linux, macOS and Windows."
 msgstr ""
+"Lee una cadena de la entrada estándar (normalmente la terminal). La "
+"operación es [i]bloqueante[/i] y congela la ventana si se llama en el hilo "
+"principal. El hilo queda bloqueado hasta recibir un salto de línea (p. ej. "
+"[kbd]Intro[/kbd]).\n"
+"[b]Nota:[/b] Linux, macOS y Windows."
 
 #: doc/classes/OS.xml
-#, fuzzy
 msgid ""
 "Request the user attention to the window. It'll flash the taskbar button on "
 "Windows or bounce the dock icon on OSX.\n"
 "[b]Note:[/b] This method is implemented on Linux, macOS and Windows."
 msgstr ""
-"Devuelve el nombre localizado de la disposición del teclado en la posición "
-"[code]index[/code].\n"
-"[b]Nota:[/b] Este método está implementado en Linux, macOS y Windows."
+"Solicita la atención del usuario sobre la ventana (parpadeo en la barra de "
+"tareas en Windows, rebote en el dock en macOS).\n"
+"[b]Nota:[/b] Linux, macOS y Windows."
 
 #: doc/classes/OS.xml
 msgid ""
@@ -60951,17 +61089,15 @@ msgstr ""
 "code] para pedir permiso para [code]RECORD_AUDIO[/code] en Android."
 
 #: doc/classes/OS.xml
-#, fuzzy
 msgid ""
 "With this function, you can request dangerous permissions since normal "
 "permissions are automatically granted at install time in Android "
 "applications.\n"
 "[b]Note:[/b] This method is implemented on Android."
 msgstr ""
-"Con esta función puede solicitar permisos peligrosos, ya que los permisos "
-"normales se conceden automáticamente en el momento de la instalación en la "
-"aplicación Android.\n"
-"[b]Nota:[/b] Este método está implementado en Android."
+"Con esta función puede solicitar permisos peligrosos; los permisos normales "
+"se conceden al instalar en Android.\n"
+"[b]Nota:[/b] Solo en Android."
 
 #: doc/classes/OS.xml
 msgid ""
@@ -60973,6 +61109,11 @@ msgid ""
 "[b]Note:[/b] Double-check the casing of [code]variable[/code]. Environment "
 "variable names are case-sensitive on all platforms except Windows."
 msgstr ""
+"Establece la variable de entorno [code]variable[/code] a [code]value[/code] "
+"para el proceso de Godot y los procesos lanzados con [method execute] tras "
+"[method set_environment]. [i]No[/i] persiste tras cerrar Godot.\n"
+"[b]Nota:[/b] Respete mayúsculas en [code]variable[/code]; en casi todas las "
+"plataformas distinguen mayúsculas (excepto Windows)."
 
 #: doc/classes/OS.xml
 msgid ""
@@ -60981,6 +61122,10 @@ msgid ""
 "dialog. Image is scaled as needed.\n"
 "[b]Note:[/b] This method is implemented on HTML5, Linux, macOS and Windows."
 msgstr ""
+"Establece el icono del juego con un recurso [Image].\n"
+"La misma imagen se usa para título, barra de tareas/dock y diálogo de "
+"selección; se escala según haga falta.\n"
+"[b]Nota:[/b] HTML5, Linux, macOS y Windows."
 
 #: doc/classes/OS.xml
 msgid ""
@@ -60992,15 +61137,22 @@ msgid ""
 "Completed composition string is committed when input is finished.\n"
 "[b]Note:[/b] This method is implemented on Linux, macOS and Windows."
 msgstr ""
+"Activa o desactiva el modo de entrada IME.\n"
+"Si está activo, el IME procesa el teclado antes que la aplicación y crea "
+"cadena de composición y sugerencias.\n"
+"Los métodos [method get_ime_selection] y [method get_ime_text] devuelven el "
+"estado de composición.\n"
+"La cadena compuesta se confirma al terminar la entrada.\n"
+"[b]Nota:[/b] Linux, macOS y Windows."
 
 #: doc/classes/OS.xml
-#, fuzzy
 msgid ""
 "Sets position of IME suggestion list popup (in window coordinates).\n"
 "[b]Note:[/b] This method is implemented on Linux, macOS and Windows."
 msgstr ""
-"Apaga el controlador MIDI del sistema.\n"
-"[b]Nota:[/b] Este método está implementado en Linux, macOS y Windows."
+"Establece la posición del popup de sugerencias IME (coordenadas de "
+"ventana).\n"
+"[b]Nota:[/b] Linux, macOS y Windows."
 
 #: doc/classes/OS.xml
 msgid ""
@@ -61010,6 +61162,11 @@ msgid ""
 "window selection dialog.\n"
 "[b]Note:[/b] This method is implemented on macOS and Windows."
 msgstr ""
+"Establece el icono del juego con un archivo multi-resolución ( [code]*.ico[/"
+"code] en Windows, [code]*.icns[/code] en macOS).\n"
+"Se usan subiconos del tamaño adecuado para título, barra de tareas/dock y "
+"diálogo.\n"
+"[b]Nota:[/b] macOS y Windows."
 
 #: doc/classes/OS.xml
 msgid ""
@@ -61029,6 +61186,17 @@ msgid ""
 "(by sending [code]SIGKILL[/code] instead of the usual [code]SIGTERM[/code]), "
 "the project won't restart automatically."
 msgstr ""
+"Si [code]restart[/code] es [code]true[/code], reinicia el proyecto al salir "
+"con [method SceneTree.quit] o [constant Node.NOTIFICATION_WM_QUIT_REQUEST]. "
+"Puede pasar [code]arguments[/code]. Para reutilizar los argumentos de "
+"arranque, pase [method get_cmdline_args] como [code]arguments[/code].\n"
+"[method set_restart_on_exit] sirve para cambios que requieren reinicio. Vea "
+"[method is_restart_on_exit_set] y [method get_restart_on_exit_arguments].\n"
+"[b]Nota:[/b] Solo tiene efecto en escritorio y cuando el proyecto no se "
+"inicia desde el editor. No aplica en móvil/web ni al ejecutar desde el "
+"editor.\n"
+"[b]Nota:[/b] Si el proceso falla o termina con [code]SIGKILL[/code] en lugar "
+"de [code]SIGTERM[/code], no habrá reinicio automático."
 
 #: doc/classes/OS.xml
 msgid "Sets the name of the current thread."
@@ -61041,13 +61209,12 @@ msgstr ""
 "code]."
 
 #: doc/classes/OS.xml
-#, fuzzy
 msgid ""
 "Sets whether the window should always be on top.\n"
 "[b]Note:[/b] This method is implemented on Linux, macOS and Windows."
 msgstr ""
-"Establece una disposición de teclado activa.\n"
-"[b]Nota:[/b] Este método está implementado en Linux, macOS y Windows."
+"Establece si la ventana debe permanecer siempre encima.\n"
+"[b]Nota:[/b] Linux, macOS y Windows."
 
 #: doc/classes/OS.xml
 msgid ""
@@ -61069,6 +61236,23 @@ msgid ""
 "region is not drawn, while on Linux and macOS it is.\n"
 "[b]Note:[/b] This method is implemented on Linux, macOS and Windows."
 msgstr ""
+"Establece una región poligonal de la ventana que acepta eventos del ratón. "
+"Fuera de la región los eventos atraviesan la ventana.\n"
+"Un array vacío desactiva el modo (por defecto la ventana intercepta todos "
+"los eventos).\n"
+"[codeblock]\n"
+"# Región con Path2D.\n"
+"OS.set_window_mouse_passthrough($Path2D.curve.get_baked_points())\n"
+"\n"
+"# Región con Polygon2D.\n"
+"OS.set_window_mouse_passthrough($Polygon2D.polygon)\n"
+"\n"
+"# Restablecer.\n"
+"OS.set_window_mouse_passthrough([])\n"
+"[/codeblock]\n"
+"[b]Nota:[/b] En Windows la parte fuera de la región no se dibuja; en Linux y "
+"macOS sí.\n"
+"[b]Nota:[/b] Linux, macOS y Windows."
 
 #: doc/classes/OS.xml
 msgid ""
@@ -61077,6 +61261,10 @@ msgid ""
 "as that will negatively affect performance on some window managers.\n"
 "[b]Note:[/b] This method is implemented on HTML5, Linux, macOS and Windows."
 msgstr ""
+"Establece el título de la ventana.\n"
+"[b]Nota:[/b] Úselo con moderación; cambiarlo cada fotograma perjudica el "
+"rendimiento en algunos gestores de ventanas.\n"
+"[b]Nota:[/b] HTML5, Linux, macOS y Windows."
 
 #: doc/classes/OS.xml
 msgid ""
@@ -61100,6 +61288,19 @@ msgid ""
 "[b]Note:[/b] This method is implemented on Android, iOS, HTML5, Linux, macOS "
 "and Windows."
 msgstr ""
+"Pide al SO abrir un recurso con el programa más adecuado. Por ejemplo:\n"
+"- [code]OS.shell_open(\"C:\\\\Users\\\\nombre\\\\Descargas\")[/code] en "
+"Windows abre el explorador en Descargas.\n"
+"- [code]OS.shell_open(\"https://godotengine.org\")[/code] abre el navegador "
+"en el sitio de Godot.\n"
+"- [code]OS.shell_open(\"mailto:ejemplo@ejemplo.com\")[/code] abre el cliente "
+"de correo. Vea [url=https://datatracker.ietf.org/doc/html/rfc2368]RFC 2368[/"
+"url].\n"
+"Use [method ProjectSettings.globalize_path] para convertir rutas [code]res://"
+"[/code] o [code]user://[/code].\n"
+"[b]Nota:[/b] Use [method String.percent_encode] para URLs seguras (p. ej. "
+"saltos de línea). En exportación web es importante.\n"
+"[b]Nota:[/b] Android, iOS, HTML5, Linux, macOS y Windows."
 
 #: doc/classes/OS.xml
 msgid ""
@@ -61117,6 +61318,14 @@ msgid ""
 "show_virtual_keyboard_type].\n"
 "[b]Note:[/b] This method is implemented on Android, iOS, UWP, and HTML5."
 msgstr ""
+"Muestra el teclado virtual si la plataforma lo tiene.\n"
+"[code]existing_text[/code] ayuda a implementar [LineEdit] o [TextEdit] "
+"propios (autocorrección y predicciones).\n"
+"[code]multiline[/code] true permite varias líneas como en [TextEdit].\n"
+"[b]Nota:[/b] Equivale a [method show_virtual_keyboard_type] con tipo "
+"predeterminado o multilínea; se mantiene por compatibilidad. Prefiera "
+"[method show_virtual_keyboard_type].\n"
+"[b]Nota:[/b] Android, iOS, UWP y HTML5."
 
 #: doc/classes/OS.xml
 msgid ""
@@ -61129,6 +61338,11 @@ msgid ""
 "show.\n"
 "[b]Note:[/b] This method is implemented on Android, iOS, UWP, and HTML5."
 msgstr ""
+"Muestra el teclado virtual si la plataforma lo tiene.\n"
+"[code]existing_text[/code] ayuda a implementar [LineEdit] o [TextEdit] "
+"propios.\n"
+"[code]type[/code] elige el tipo de teclado.\n"
+"[b]Nota:[/b] Android, iOS, UWP y HTML5."
 
 #: doc/classes/OS.xml
 msgid ""
@@ -61145,6 +61359,15 @@ msgid ""
 "[b]Note:[/b] [member ProjectSettings.audio/general/text_to_speech] should be "
 "[code]true[/code] to use text-to-speech."
 msgstr ""
+"Devuelve un [Array] de diccionarios con información de voces.\n"
+"Cada [Dictionary] tiene dos entradas de tipo [String]:\n"
+"- [code]name[/code]: nombre de la voz.\n"
+"- [code]id[/code]: identificador de la voz.\n"
+"- [code]language[/code]: código de idioma en formato [code]lang_Variant[/"
+"code] (ISO 639 en minúsculas y variante dependiente del motor).\n"
+"[b]Nota:[/b] Android, iOS, HTML5, Linux, macOS y Windows.\n"
+"[b]Nota:[/b] [member ProjectSettings.audio/general/text_to_speech] debe ser "
+"[code]true[/code] para texto a voz."
 
 #: doc/classes/OS.xml
 msgid ""
@@ -61155,6 +61378,11 @@ msgid ""
 "[b]Note:[/b] [member ProjectSettings.audio/general/text_to_speech] should be "
 "[code]true[/code] to use text-to-speech."
 msgstr ""
+"Devuelve un [PoolStringArray] de identificadores de voz para el "
+"[code]language[/code] indicado.\n"
+"[b]Nota:[/b] Android, iOS, HTML5, Linux, macOS y Windows.\n"
+"[b]Nota:[/b] [member ProjectSettings.audio/general/text_to_speech] debe ser "
+"[code]true[/code]."
 
 #: doc/classes/OS.xml
 msgid ""
@@ -61164,6 +61392,10 @@ msgid ""
 "[b]Note:[/b] [member ProjectSettings.audio/general/text_to_speech] should be "
 "[code]true[/code] to use text-to-speech."
 msgstr ""
+"Devuelve [code]true[/code] si el sintetizador está en pausa.\n"
+"[b]Nota:[/b] Plataformas de arriba.\n"
+"[b]Nota:[/b] [member ProjectSettings.audio/general/text_to_speech] debe ser "
+"[code]true[/code]."
 
 #: doc/classes/OS.xml
 msgid ""
@@ -61174,6 +61406,11 @@ msgid ""
 "[b]Note:[/b] [member ProjectSettings.audio/general/text_to_speech] should be "
 "[code]true[/code] to use text-to-speech."
 msgstr ""
+"Devuelve [code]true[/code] si el sintetizador está generando voz o tiene "
+"enunciados en cola.\n"
+"[b]Nota:[/b] Plataformas de arriba.\n"
+"[b]Nota:[/b] [member ProjectSettings.audio/general/text_to_speech] debe ser "
+"[code]true[/code]."
 
 #: doc/classes/OS.xml
 msgid ""
@@ -61183,6 +61420,10 @@ msgid ""
 "[b]Note:[/b] [member ProjectSettings.audio/general/text_to_speech] should be "
 "[code]true[/code] to use text-to-speech."
 msgstr ""
+"Pone el sintetizador en pausa.\n"
+"[b]Nota:[/b] Plataformas de arriba.\n"
+"[b]Nota:[/b] [member ProjectSettings.audio/general/text_to_speech] debe ser "
+"[code]true[/code]."
 
 #: doc/classes/OS.xml
 msgid ""
@@ -61192,6 +61433,10 @@ msgid ""
 "[b]Note:[/b] [member ProjectSettings.audio/general/text_to_speech] should be "
 "[code]true[/code] to use text-to-speech."
 msgstr ""
+"Reanuda el sintetizador si estaba en pausa.\n"
+"[b]Nota:[/b] Plataformas de arriba.\n"
+"[b]Nota:[/b] [member ProjectSettings.audio/general/text_to_speech] debe ser "
+"[code]true[/code]."
 
 #: doc/classes/OS.xml
 msgid ""
@@ -61208,6 +61453,17 @@ msgid ""
 "[b]Note:[/b] [member ProjectSettings.audio/general/text_to_speech] should be "
 "[code]true[/code] to use text-to-speech."
 msgstr ""
+"Añade una función de llamada cuando el enunciado empiece, termine, se "
+"cancele o llegue a un límite de texto.\n"
+"- [code]TTS_UTTERANCE_STARTED[/code], [code]TTS_UTTERANCE_ENDED[/code] y "
+"[code]TTS_UTTERANCE_CANCELED[/code] reciben un [int] con el id del "
+"enunciado.\n"
+"- [code]TTS_UTTERANCE_BOUNDARY[/code] recibe dos [int]: índice de carácter e "
+"id del enunciado.\n"
+"[b]Nota:[/b] La granularidad depende del motor.\n"
+"[b]Nota:[/b] Plataformas de arriba.\n"
+"[b]Nota:[/b] [member ProjectSettings.audio/general/text_to_speech] debe ser "
+"[code]true[/code]."
 
 #: doc/classes/OS.xml
 msgid ""
@@ -61236,6 +61492,23 @@ msgid ""
 "[b]Note:[/b] [member ProjectSettings.audio/general/text_to_speech] should be "
 "[code]true[/code] to use text-to-speech."
 msgstr ""
+"Añade un enunciado a la cola. Si [code]interrupt[/code] es [code]true[/"
+"code], vacía la cola antes.\n"
+"- [code]voice[/code] es [code]\"id\"[/code] de [method tts_get_voices] o de "
+"[method tts_get_voices_for_language].\n"
+"- [code]volume[/code] de [code]0[/code] a [code]100[/code].\n"
+"- [code]pitch[/code] de [code]0.0[/code] a [code]2.0[/code] ([code]1.0[/"
+"code] por defecto).\n"
+"- [code]rate[/code] de [code]0.1[/code] a [code]10.0[/code] ([code]1.0[/"
+"code] velocidad normal).\n"
+"- [code]utterance_id[/code] se pasa a las funciones de callback.\n"
+"[b]Nota:[/b] En Windows y Linux el texto puede usar SSML; si el motor no lo "
+"soporta, elimine el marcado antes de [method tts_speak].\n"
+"[b]Nota:[/b] La precisión de tono, velocidad y volumen depende del motor y "
+"la voz.\n"
+"[b]Nota:[/b] Plataformas de arriba.\n"
+"[b]Nota:[/b] [member ProjectSettings.audio/general/text_to_speech] debe ser "
+"[code]true[/code]."
 
 #: doc/classes/OS.xml
 msgid ""
@@ -61245,14 +61518,20 @@ msgid ""
 "[b]Note:[/b] [member ProjectSettings.audio/general/text_to_speech] should be "
 "[code]true[/code] to use text-to-speech."
 msgstr ""
+"Detiene la síntesis y vacía la cola de enunciados.\n"
+"[b]Nota:[/b] Plataformas de arriba.\n"
+"[b]Nota:[/b] [member ProjectSettings.audio/general/text_to_speech] debe ser "
+"[code]true[/code]."
 
 #: doc/classes/OS.xml
 msgid "The clipboard from the host OS. Might be unavailable on some platforms."
 msgstr ""
+"Portapapeles del sistema operativo anfitrión. Puede no estar disponible en "
+"algunas plataformas."
 
 #: doc/classes/OS.xml
 msgid "The current screen index (starting from 0)."
-msgstr ""
+msgstr "Índice de pantalla actual (empezando en 0)."
 
 #: doc/classes/OS.xml
 msgid ""
@@ -61260,6 +61539,8 @@ msgid ""
 "each frame, and attempts to compensate for random variation. This will only "
 "operate on systems where V-Sync is active."
 msgstr ""
+"Si es [code]true[/code], el motor filtra el delta entre fotogramas e intenta "
+"compensar variaciones. Solo actúa con V-Sync activo."
 
 #: doc/classes/OS.xml
 msgid ""
@@ -61279,13 +61560,12 @@ msgstr ""
 "con un argumento [code]exit_code[/code] pasado."
 
 #: doc/classes/OS.xml
-#, fuzzy
 msgid ""
 "If [code]true[/code], the engine tries to keep the screen on while the game "
 "is running. Useful on mobile."
 msgstr ""
-"Si es [code]true[/code], el motor generará mallas de alambre para su uso con "
-"el modo de depuración de mallas de alambre."
+"Si es [code]true[/code], el motor intenta mantener la pantalla encendida "
+"mientras el juego corre. Útil en móviles."
 
 #: doc/classes/OS.xml
 msgid ""
@@ -61311,6 +61591,9 @@ msgid ""
 "decorations). Does not affect fullscreen mode. Set to [code](0, 0)[/code] to "
 "reset to the system default value."
 msgstr ""
+"Tamaño máximo de la ventana (sin decoraciones del gestor). No afecta a "
+"pantalla completa. Use [code](0, 0)[/code] para el valor por defecto del "
+"sistema."
 
 #: doc/classes/OS.xml
 msgid ""
@@ -61321,23 +61604,26 @@ msgid ""
 "[code]Vector2(64, 64)[/code]. This prevents issues that can arise when the "
 "window is resized to a near-zero size."
 msgstr ""
+"Tamaño mínimo de la ventana en píxeles (sin decoraciones). No afecta a "
+"pantalla completa. Use [code](0, 0)[/code] para el valor por defecto del "
+"sistema.\n"
+"[b]Nota:[/b] Por defecto la ventana tiene mínimo [code]Vector2(64, 64)[/"
+"code] para evitar problemas al redimensionar a casi cero."
 
 #: doc/classes/OS.xml
-#, fuzzy
 msgid "The current screen orientation."
-msgstr "La escena actual."
+msgstr "Orientación actual de la pantalla."
 
 #: doc/classes/OS.xml
 msgid "The current tablet driver in use."
 msgstr "El actual controlador de la tableta en uso."
 
 #: doc/classes/OS.xml
-#, fuzzy
 msgid "If [code]true[/code], vertical synchronization (Vsync) is enabled."
-msgstr "Si es [code]true[/code], se habilita el mapeado normal."
+msgstr ""
+"Si es [code]true[/code], la sincronización vertical (V-Sync) está activada."
 
 #: doc/classes/OS.xml
-#, fuzzy
 msgid ""
 "If [code]true[/code] and [code]vsync_enabled[/code] is true, the operating "
 "system's window compositor will be used for vsync when the compositor is "
@@ -61347,15 +61633,12 @@ msgid ""
 "framerate halving (e.g. from 60 FPS to 30 FPS) when using it.\n"
 "[b]Note:[/b] This property is only implemented on Windows."
 msgstr ""
-"Si se activa [code]Use Vsync[/code] y este ajuste es [code]true[/code], "
-"permite la sincronización vertical a través del compositor de ventanas del "
-"sistema operativo cuando está en modo de ventanas y el compositor está "
-"activado. Esto evitará el tartamudeo en ciertas situaciones. (Sólo en "
-"Windows).\n"
-"[b]Nota:[/b] Esta opción es experimental y está pensada para aliviar el "
-"tartamudeo que experimentan algunos usuarios. Sin embargo, algunos usuarios "
-"han experimentado una reducción de la mitad de la velocidad de los cuadros "
-"Vsync (por ejemplo, de 60 FPS a 30 FPS) al usarla."
+"Si es [code]true[/code] y [code]vsync_enabled[/code] es [code]true[/code], "
+"el compositor del SO usará V-Sync para sincronizar cuando el compositor esté "
+"activo y el juego en ventana.\n"
+"[b]Nota:[/b] Opción experimental para reducir tirones; algunos usuarios ven "
+"la mitad de FPS (p. ej. 60 a 30).\n"
+"[b]Nota:[/b] Solo en Windows."
 
 #: doc/classes/OS.xml
 msgid ""
@@ -61363,22 +61646,25 @@ msgid ""
 "[b]Note:[/b] Setting [code]window_borderless[/code] to [code]false[/code] "
 "disables per-pixel transparency."
 msgstr ""
+"Si es [code]true[/code], quita el marco de la ventana.\n"
+"[b]Nota:[/b] Poner [code]window_borderless[/code] en [code]false[/code] "
+"desactiva la transparencia por píxel."
 
 #: doc/classes/OS.xml
 msgid ""
 "If [code]true[/code], the window is fullscreen. See also [member "
 "window_use_nonexclusive_fullscreen]."
 msgstr ""
+"Si es [code]true[/code], la ventana está a pantalla completa. Vea [member "
+"window_use_nonexclusive_fullscreen]."
 
 #: doc/classes/OS.xml
-#, fuzzy
 msgid "If [code]true[/code], the window is maximized."
-msgstr "Si es [code]true[/code], el video se pausa."
+msgstr "Si es [code]true[/code], la ventana está maximizada."
 
 #: doc/classes/OS.xml
-#, fuzzy
 msgid "If [code]true[/code], the window is minimized."
-msgstr "Si es [code]true[/code], el video se pausa."
+msgstr "Si es [code]true[/code], la ventana está minimizada."
 
 #: doc/classes/OS.xml
 msgid ""
@@ -61394,21 +61680,32 @@ msgid ""
 "ProjectSettings.display/window/per_pixel_transparency/enabled] to set it at "
 "startup instead."
 msgstr ""
+"Si es [code]true[/code], el fondo de la ventana es transparente y se quita "
+"el marco.\n"
+"Active [member ProjectSettings.rendering/viewport/transparent_background] o "
+"llame [code]get_tree().get_root().set_transparent_background(true)[/code] "
+"para no dibujar fondo en el [Viewport] raíz.\n"
+"[b]Nota:[/b] No tiene efecto si [member ProjectSettings.display/window/"
+"per_pixel_transparency/allowed] está desactivado.\n"
+"[b]Nota:[/b] HTML5, Linux, macOS, Windows y Android; en Android no se puede "
+"cambiar en tiempo de ejecución; use [member ProjectSettings.display/window/"
+"per_pixel_transparency/enabled] al inicio."
 
 #: doc/classes/OS.xml
 msgid ""
 "The window position relative to the screen, the origin is the top left "
 "corner, +Y axis goes to the bottom and +X axis goes to the right."
 msgstr ""
+"Posición de la ventana respecto a la pantalla: origen arriba a la izquierda, "
+"eje +Y hacia abajo y +X hacia la derecha."
 
 #: doc/classes/OS.xml
-#, fuzzy
 msgid "If [code]true[/code], the window is resizable by the user."
-msgstr "Si es [code]true[/code], el video se pausa."
+msgstr "Si es [code]true[/code], el usuario puede redimensionar la ventana."
 
 #: doc/classes/OS.xml
 msgid "The size of the window (without counting window manager decorations)."
-msgstr ""
+msgstr "Tamaño de la ventana (sin decoraciones del gestor)."
 
 #: doc/classes/OS.xml
 msgid ""
@@ -61421,6 +61718,12 @@ msgid ""
 "recording software.\n"
 "[b]Note:[/b] This property is only implemented on Windows."
 msgstr ""
+"Si es [code]true[/code] y [member window_fullscreen] está activo, se usa "
+"pantalla completa con soporte multi-ventana.\n"
+"Si es [code]false[/code] con [member window_fullscreen], modo de una sola "
+"ventana a pantalla completa (menos coste, una ventana por pantalla; el "
+"selector de aplicaciones puede forzar transición).\n"
+"[b]Nota:[/b] Solo en Windows."
 
 #: doc/classes/OS.xml
 msgid ""
@@ -61431,13 +61734,12 @@ msgstr ""
 "móviles, OpenGL 2.1 en las plataformas de escritorio y WebGL 1.0 en la web."
 
 #: doc/classes/OS.xml
-#, fuzzy
 msgid ""
 "The GLES3 rendering backend. It uses OpenGL ES 3.0 on mobile devices, OpenGL "
 "3.3 on desktop platforms and WebGL 2.0 on the web."
 msgstr ""
-"El GLES2 renderiza el backend. Utiliza OpenGL ES 2.0 en los dispositivos "
-"móviles, OpenGL 2.1 en las plataformas de escritorio y WebGL 1.0 en la web."
+"Backend de renderizado GLES3. Usa OpenGL ES 3.0 en móviles, OpenGL 3.3 en "
+"escritorio y WebGL 2.0 en la web."
 
 #: doc/classes/OS.xml
 msgid "Sunday."
@@ -61523,12 +61825,18 @@ msgid ""
 "implemented)\n"
 "- Android: [code]JNIEnv*[/code] of the application (not yet implemented)"
 msgstr ""
+"Identificador de aplicación:\n"
+"- Windows: [code]HINSTANCE[/code] de la aplicación\n"
+"- macOS: [code]NSApplication*[/code] (aún no implementado)\n"
+"- Android: [code]JNIEnv*[/code] (aún no implementado)"
 
 #: doc/classes/OS.xml
 msgid ""
 "Display handle:\n"
 "- Linux: [code]X11::Display*[/code] for the display"
 msgstr ""
+"Identificador de pantalla:\n"
+"- Linux: [code]X11::Display*[/code] de la pantalla"
 
 #: doc/classes/OS.xml
 msgid ""
@@ -61539,6 +61847,12 @@ msgid ""
 "- Android: [code]jObject[/code] the main android activity (not yet "
 "implemented)"
 msgstr ""
+"Identificador de ventana:\n"
+"- Windows: [code]HWND[/code] de la ventana principal\n"
+"- Linux: [code]X11::Window*[/code] de la ventana principal\n"
+"- macOS: [code]NSWindow*[/code] (aún no implementado)\n"
+"- Android: [code]jObject[/code] de la actividad principal (aún no "
+"implementado)"
 
 #: doc/classes/OS.xml
 msgid ""
@@ -61546,6 +61860,9 @@ msgid ""
 "- Windows: [code]HDC[/code] of the main window drawing context\n"
 "- MacOS: [code]NSView*[/code] of the main windows view (not yet implemented)"
 msgstr ""
+"Vista de ventana:\n"
+"- Windows: [code]HDC[/code] del contexto de dibujo de la ventana principal\n"
+"- macOS: [code]NSView*[/code] (aún no implementado)"
 
 #: doc/classes/OS.xml
 msgid ""
@@ -61554,37 +61871,38 @@ msgid ""
 "- Linux: [code]X11::GLXContext[/code]\n"
 "- MacOS: [code]NSOpenGLContext*[/code] (not yet implemented)"
 msgstr ""
+"Contexto OpenGL:\n"
+"- Windows: [code]HGLRC[/code]\n"
+"- Linux: [code]X11::GLXContext[/code]\n"
+"- macOS: [code]NSOpenGLContext*[/code] (aún no implementado)"
 
 #: doc/classes/OS.xml
 msgid "Landscape screen orientation."
-msgstr ""
+msgstr "Orientación de pantalla horizontal (paisaje)."
 
 #: doc/classes/OS.xml
-#, fuzzy
 msgid "Portrait screen orientation."
-msgstr "Modo de orientación isométrica."
+msgstr "Orientación de pantalla vertical (retrato)."
 
 #: doc/classes/OS.xml
-#, fuzzy
 msgid "Reverse landscape screen orientation."
-msgstr "Invierte la última acción de deshacer."
+msgstr "Orientación horizontal invertida (paisaje invertido)."
 
 #: doc/classes/OS.xml
-#, fuzzy
 msgid "Reverse portrait screen orientation."
-msgstr "Invierte la última acción de deshacer."
+msgstr "Orientación vertical invertida (retrato invertido)."
 
 #: doc/classes/OS.xml
 msgid "Uses landscape or reverse landscape based on the hardware sensor."
-msgstr ""
+msgstr "Usa paisaje o paisaje invertido según el sensor."
 
 #: doc/classes/OS.xml
 msgid "Uses portrait or reverse portrait based on the hardware sensor."
-msgstr ""
+msgstr "Usa retrato o retrato invertido según el sensor."
 
 #: doc/classes/OS.xml
 msgid "Uses most suitable orientation based on the hardware sensor."
-msgstr ""
+msgstr "Usa la orientación más adecuada según el sensor."
 
 #: doc/classes/OS.xml
 msgid "Desktop directory path."
@@ -61619,41 +61937,40 @@ msgid "Ringtones directory path."
 msgstr "Ruta de directorio de tonos."
 
 #: doc/classes/OS.xml
-#, fuzzy
 msgid "Unknown powerstate."
-msgstr "Nodo desconocido."
+msgstr "Estado energético desconocido."
 
 #: doc/classes/OS.xml
 msgid "Unplugged, running on battery."
-msgstr ""
+msgstr "Desenchufado, funcionando con batería."
 
 #: doc/classes/OS.xml
 msgid "Plugged in, no battery available."
-msgstr ""
+msgstr "Enchufado, sin batería disponible."
 
 #: doc/classes/OS.xml
 msgid "Plugged in, battery charging."
-msgstr ""
+msgstr "Enchufado, batería cargando."
 
 #: doc/classes/OS.xml
 msgid "Plugged in, battery fully charged."
-msgstr ""
+msgstr "Enchufado, batería cargada por completo."
 
 #: doc/classes/OS.xml
 msgid "Utterance has begun to be spoken."
-msgstr ""
+msgstr "El enunciado ha comenzado a pronunciarse."
 
 #: doc/classes/OS.xml
 msgid "Utterance was successfully finished."
-msgstr ""
+msgstr "El enunciado terminó correctamente."
 
 #: doc/classes/OS.xml
 msgid "Utterance was canceled, or TTS service was unable to process it."
-msgstr ""
+msgstr "El enunciado se canceló o el servicio TTS no pudo procesarlo."
 
 #: doc/classes/OS.xml
 msgid "Utterance reached a word or sentence boundary."
-msgstr ""
+msgstr "El enunciado alcanzó un límite de palabra o frase."
 
 #: doc/classes/PackedDataContainerRef.xml
 msgid "Reference version of [PackedDataContainer]."

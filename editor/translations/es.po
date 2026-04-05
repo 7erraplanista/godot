@@ -12846,11 +12846,11 @@ msgstr "Mapa de Tiles"
 #: editor/plugins/tile_map_editor_plugin.cpp
 #: modules/gridmap/grid_map_editor_plugin.cpp
 msgid "Palette Min Width"
-msgstr "Ancho Mínimo de la Paleta"
+msgstr "Ancho Mínimo de la Paleta (requiere reinicio)"
 
 #: editor/plugins/tile_map_editor_plugin.cpp
 msgid "Palette Item H Separation"
-msgstr "Separación del Elemento H de la Paleta"
+msgstr "Separación Horizontal en Paleta"
 
 #: editor/plugins/tile_map_editor_plugin.cpp
 msgid "Show Tile Names"
@@ -12858,7 +12858,7 @@ msgstr "Mostrar Nombres de Tiles"
 
 #: editor/plugins/tile_map_editor_plugin.cpp
 msgid "Show Tile IDs"
-msgstr "Mostrar identificadores de casillas"
+msgstr "Mostrar Identificadores de Tiles"
 
 #: editor/plugins/tile_map_editor_plugin.cpp
 msgid "Sort Tiles by Name"
@@ -12871,7 +12871,7 @@ msgstr "Vista previa del Bote de Relleno"
 #: editor/plugins/tile_map_editor_plugin.cpp
 #: modules/gridmap/grid_map_editor_plugin.cpp
 msgid "Editor Side"
-msgstr "Lado del Editor"
+msgstr "Ubicación de la Paleta en el Editor"
 
 #: editor/plugins/tile_map_editor_plugin.cpp
 msgid "Display Grid"

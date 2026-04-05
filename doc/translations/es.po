@@ -8023,16 +8023,16 @@ msgid ""
 "stay in place. See also [method get_root_motion_transform] and "
 "[RootMotionView]."
 msgstr ""
-"La ruta a la pista de animación utilizada para «root motion». Las rutas "
-"deben ser rutas válidas del árbol de escena a un nodo, y deben especificarse "
-"empezando desde el nodo padre del nodo que reproducirá la animación. Para "
-"especificar una pista que controla propiedades o huesos, añade su nombre "
-"tras la ruta, separado por [code]\":\"[/code]. Por ejemplo, "
-"[code]\"character/skeleton:ankle\"[/code] o [code]\"character/mesh:transform/"
-"local\"[/code].\n"
+"La ruta a la pista de animación (Animation track) utilizada para el root "
+"motion. Las rutas deben ser rutas de árbol de escena válidas hacia un nodo, "
+"y deben especificarse partiendo desde el nodo padre del nodo que reproducirá "
+"la animación. Para especificar una pista que controle propiedades o huesos, "
+"añada su nombre después de la ruta, separado por [code]":"[/code]. Por "
+"ejemplo, [code]"character/skeleton:ankle"[/code] o "
+"[code]"character/mesh:transform/local"[/code].\n"
 "Si la pista es de tipo [constant Animation.TYPE_TRANSFORM], la "
-"transformación se cancelará visualmente y la animación parecerá quedarse en "
-"el sitio. Consulta también [method get_root_motion_transform] y "
+"transformación se cancelará visualmente y la animación parecerá permanecer "
+"en su lugar. Consulte también [method get_root_motion_transform] y "
 "[RootMotionView]."
 
 #: doc/classes/AnimationTree.xml
@@ -60444,7 +60444,7 @@ msgid ""
 "Inherits pause mode from the node's parent. For the root node, it is "
 "equivalent to [constant PAUSE_MODE_STOP]. Default."
 msgstr ""
-"Heredó el modo de pausa del padre del nodo. Para el nodo raíz, es "
+"Hereda el modo de pausa del nodo padre. Para el nodo raíz, es "
 "equivalente a [constant PAUSE_MODE_STOP]. Por defecto."
 
 #: doc/classes/Node.xml
@@ -60516,10 +60516,10 @@ msgid ""
 "Node2D as a parent node to move, scale and rotate children in a 2D project. "
 "Also gives control of the node's render order."
 msgstr ""
-"Un objeto de juego 2D, con una transformada (posición, rotación y escala). "
+"Un objeto de juego 2D, con una transformación (posición, rotación y escala). "
 "Todos los nodos 2D, incluyendo los objetos de física y los sprites, heredan "
-"de Node2D. Utiliza Node2D como nodo padre para mover, escalar y rotar a los "
-"niños en un proyecto 2D. También da control del orden de renderización del "
+"de Node2D. Utiliza Node2D como nodo padre para mover, escalar y rotar a sus "
+"hijos en un proyecto 2D. También da control del orden de renderización del "
 "nodo."
 
 #: doc/classes/Node2D.xml doc/classes/Vector2.xml
@@ -60641,15 +60641,15 @@ msgstr "[Transform2D] Global."
 
 #: doc/classes/Node2D.xml
 msgid "Position, relative to the node's parent."
-msgstr "Posición, relativa al padre del nodo."
+msgstr "Posición, relativa al nodo padre."
 
 #: doc/classes/Node2D.xml
 msgid "Rotation in radians, relative to the node's parent."
-msgstr "Rotación en radianes, en relación con el padre del nodo."
+msgstr "Rotación en radianes, relativa al nodo padre."
 
 #: doc/classes/Node2D.xml
 msgid "Rotation in degrees, relative to the node's parent."
-msgstr "Rotación en grados, en relación con el padre del nodo."
+msgstr "Rotación en grados, relativa al nodo padre."
 
 #: doc/classes/Node2D.xml
 msgid ""
@@ -87197,7 +87197,7 @@ msgid ""
 "Inherits merging mode from the node's parent. For the root node, it is "
 "equivalent to [constant MERGING_MODE_ON]. Default."
 msgstr ""
-"Hereda el modo de fusión del padre del nodo. Para el nodo raíz, equivale a "
+"Hereda el modo de fusión del nodo padre. Para el nodo raíz, equivale a "
 "[constant MERGING_MODE_ON]. Por defecto."
 
 #: doc/classes/Spatial.xml

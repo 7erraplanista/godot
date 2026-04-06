@@ -12322,6 +12322,10 @@ msgid "Palette Item H Separation"
 msgstr ""
 
 #: editor/plugins/tile_map_editor_plugin.cpp
+msgid "Palette Keep Tileset Layout"
+msgstr ""
+
+#: editor/plugins/tile_map_editor_plugin.cpp
 msgid "Show Tile Names"
 msgstr ""
 

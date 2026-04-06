@@ -2427,7 +2427,8 @@ msgstr "Ya existe una carpeta con ese nombre."
 
 #: editor/directory_create_dialog.cpp
 msgid "Using slashes in folder names will create subfolders recursively."
-msgstr "Usar barras en el nombre de la carpeta creará subcarpetas de forma recursiva."
+msgstr ""
+"Usar barras en el nombre de la carpeta creará subcarpetas de forma recursiva."
 
 #: editor/directory_create_dialog.cpp
 msgid "Folder name is valid."
@@ -5088,8 +5089,8 @@ msgstr ""
 "Esto configurará tu proyecto para las compilaciones personalizadas de "
 "Android instalando la plantilla base en \"res://android/build\".\n"
 "Luego podrás aplicar las modificaciones y compilar tu propio APK "
-"personalizado al exportarlo (agregando módulos, cambiando el "
-"AndroidManifest.xml, etc.).\n"
+"personalizado al exportarlo (agregando módulos, cambiando el AndroidManifest."
+"xml, etc.).\n"
 "Ten en cuenta que para realizar compilaciones personalizadas en lugar de "
 "usar APKs predefinidos, la opción \"Usar Compilación Personalizada\" debería "
 "estar habilitada en la configuración de exportación de Android."
@@ -5951,7 +5952,7 @@ msgstr "Tamaño de Fuente del Título de Ayuda"
 
 #: editor/editor_settings.cpp modules/gridmap/grid_map_editor_plugin.cpp
 msgid "Grid Map"
-msgstr "Mapeo de Cuadrícula"
+msgstr "Mapa de Cuadrícula"
 
 #: editor/editor_settings.cpp modules/gridmap/grid_map_editor_plugin.cpp
 msgid "Pick Distance"
@@ -6969,11 +6970,13 @@ msgstr "Ordenar por Última Modificación"
 msgid "Sort by First Modified"
 msgstr "Ordenar por Primera Modificación"
 
-#: editor/filesystem_dock.cpp editor/plugins/animation_player_editor_plugin.cpp
+#: editor/filesystem_dock.cpp
+#: editor/plugins/animation_player_editor_plugin.cpp
 msgid "Duplicate..."
 msgstr "Duplicar..."
 
-#: editor/filesystem_dock.cpp editor/plugins/animation_player_editor_plugin.cpp
+#: editor/filesystem_dock.cpp
+#: editor/plugins/animation_player_editor_plugin.cpp
 msgid "Rename..."
 msgstr "Renombrar..."
 
@@ -10306,8 +10309,7 @@ msgstr "Se requiere un material procesador del tipo 'ParticlesMaterial'."
 
 #: editor/plugins/particles_editor_plugin.cpp
 msgid "Generating Visibility AABB (Waiting for Particle Simulation)"
-msgstr ""
-"Generando AABB de visibilidad (esperando simulación de partículas)"
+msgstr "Generando AABB de visibilidad (esperando simulación de partículas)"
 
 #: editor/plugins/particles_editor_plugin.cpp
 msgid "Generate Visibility AABB"
@@ -12853,6 +12855,10 @@ msgid "Palette Item H Separation"
 msgstr "Separación Horizontal en Paleta"
 
 #: editor/plugins/tile_map_editor_plugin.cpp
+msgid "Palette Keep Tileset Layout"
+msgstr "Mantener disposición del Tileset en la Paleta"
+
+#: editor/plugins/tile_map_editor_plugin.cpp
 msgid "Show Tile Names"
 msgstr "Mostrar Nombres de Tiles"
 
@@ -14604,8 +14610,8 @@ msgstr "Error al abrir el archivo del paquete (no está en formato ZIP)."
 msgid ""
 "Invalid \".zip\" project file; it doesn't contain a \"project.godot\" file."
 msgstr ""
-"Archivo de proyecto \".zip\" inválido; no contiene un archivo "
-"\"project.godot\"."
+"Archivo de proyecto \".zip\" inválido; no contiene un archivo \"project."
+"godot\"."
 
 #: editor/project_manager.cpp
 msgid "Please choose an empty folder."
@@ -18883,7 +18889,8 @@ msgstr "Vincular IP"
 msgid "Private Key"
 msgstr "Clave Privada"
 
-#: modules/websocket/websocket_server.cpp platform/javascript/export/export.cpp
+#: modules/websocket/websocket_server.cpp
+#: platform/javascript/export/export.cpp
 msgid "SSL Certificate"
 msgstr "Certificado SSL"
 
@@ -19740,8 +19747,7 @@ msgstr ""
 
 #: platform/iphone/export/export.cpp
 msgid "At least one disk space access reason should be selected."
-msgstr ""
-"Debe seleccionarse al menos un motivo de acceso al espacio en disco."
+msgstr "Debe seleccionarse al menos un motivo de acceso al espacio en disco."
 
 #: platform/iphone/export/export.cpp
 msgid "At least one system boot time access reason should be selected."
@@ -20192,7 +20198,8 @@ msgstr ""
 
 #: platform/osx/export/export.cpp
 msgid "App Store Connect issuer ID name not specified."
-msgstr "No se ha especificado el nombre del emisor (issuer ID) de App Store Connect."
+msgstr ""
+"No se ha especificado el nombre del emisor (issuer ID) de App Store Connect."
 
 #: platform/osx/export/export.cpp
 msgid "App Store Connect API key ID not specified."
@@ -20448,13 +20455,11 @@ msgstr ""
 
 #: platform/osx/export/export.cpp
 msgid "Code signing is required for App Store distribution."
-msgstr ""
-"Se requiere firma de código para la distribución en App Store."
+msgstr "Se requiere firma de código para la distribución en App Store."
 
 #: platform/osx/export/export.cpp
 msgid "App Store distribution with ad-hoc code signing is not supported."
-msgstr ""
-"No se admite la distribución en App Store con firma de código ad hoc."
+msgstr "No se admite la distribución en App Store con firma de código ad hoc."
 
 #: platform/osx/export/export.cpp
 msgid "Notarization: Notarization with an ad-hoc signature is not supported."
@@ -21299,7 +21304,8 @@ msgstr "Modo de Compilación"
 #: scene/2d/collision_polygon_2d.cpp scene/2d/collision_shape_2d.cpp
 #: scene/3d/collision_polygon.cpp scene/3d/collision_shape.cpp
 #: scene/animation/animation_node_state_machine.cpp scene/gui/base_button.cpp
-#: scene/gui/texture_button.cpp scene/resources/default_theme/default_theme.cpp
+#: scene/gui/texture_button.cpp
+#: scene/resources/default_theme/default_theme.cpp
 msgid "Disabled"
 msgstr "Desactivado"
 
@@ -21797,8 +21803,8 @@ msgid ""
 "instead."
 msgstr ""
 "El nodo 'Navigation2D' y 'Navigation2D.get_simple_path()' están deprecados y "
-"serán eliminados en una versión future. En su lugar, usa "
-"'Navigation2DServer.map_get_path()'."
+"serán eliminados en una versión future. En su lugar, usa 'Navigation2DServer."
+"map_get_path()'."
 
 #: scene/2d/navigation_agent_2d.cpp scene/3d/navigation_agent.cpp
 msgid "Pathfinding"
@@ -25085,7 +25091,8 @@ msgstr "Detección de Inactividad en la Edición de Texto (seg.)"
 msgid "Text Edit Undo Stack Max Size"
 msgstr "Número máximo de acciones recordados para deshacer"
 
-#: scene/gui/texture_button.cpp scene/resources/default_theme/default_theme.cpp
+#: scene/gui/texture_button.cpp
+#: scene/resources/default_theme/default_theme.cpp
 msgid "Hover"
 msgstr "Hover"
 

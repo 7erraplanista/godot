@@ -490,16 +490,23 @@ Vector<int> TileMapEditor::get_selected_tiles() const {
 
 void TileMapEditor::set_selected_tiles(Vector<int> p_tiles) {
 	palette->unselect_all();
+	int current_index = -1;
 
 	for (int i = p_tiles.size() - 1; i >= 0; i--) {
 		int idx = palette->find_metadata(p_tiles[i]);
 
 		if (idx >= 0) {
+			if (current_index == -1) {
+				current_index = idx;
+			}
 			palette->select(idx, false);
 		}
 	}
 
-	palette->ensure_current_is_visible();
+	if (current_index >= 0) {
+		palette->set_current(current_index);
+		palette->ensure_current_is_visible();
+	}
 }
 
 Dictionary TileMapEditor::_create_cell_dictionary(int tile, bool flip_x, bool flip_y, bool transpose, Vector2 autotile_coord) {
@@ -912,15 +919,49 @@ void TileMapEditor::_pick_tile(const Point2 &p_pos) {
 	flip_h = node->is_cell_x_flipped(p_pos.x, p_pos.y);
 	flip_v = node->is_cell_y_flipped(p_pos.x, p_pos.y);
 	transpose = node->is_cell_transposed(p_pos.x, p_pos.y);
-	autotile_coord = node->get_cell_autotile_coord(p_pos.x, p_pos.y);
+	const Point2i picked_subtile = node->get_cell_autotile_coord(p_pos.x, p_pos.y);
+	autotile_coord = picked_subtile;
 
 	Vector<int> selected;
 	selected.push_back(id);
 	set_selected_tiles(selected);
 	_update_palette();
+	autotile_coord = picked_subtile;
 
 	if ((manual_autotile && node->get_tileset()->tile_get_tile_mode(id) == TileSet::AUTO_TILE) || (!priority_atlastile && node->get_tileset()->tile_get_tile_mode(id) == TileSet::ATLAS_TILE)) {
-		manual_palette->select(manual_palette->find_metadata((Point2)autotile_coord));
+		const int manual_index = manual_palette->find_metadata((Point2)picked_subtile);
+		if (manual_index >= 0) {
+			manual_palette->unselect_all();
+			manual_palette->select(manual_index, false);
+			manual_palette->set_current(manual_index);
+
+			const bool keep_layout = bool(EDITOR_GET("editors/tile_map/palette_keep_tileset_layout"));
+			if (keep_layout) {
+				// In keep_tileset_layout mode the ItemList expands to full height and the
+				// ScrollContainer manages both scroll axes.  Compute the pixel position of
+				// the picked item and center the viewport on it.
+				const int col_count = MAX(1, manual_palette->get_max_columns());
+				const Size2 isize = manual_palette->get_fixed_icon_size();
+				const float iscale = manual_palette->get_icon_scale();
+				// Use the same cell-size formula as _update_palette.
+				const int cell_w = MAX(1, int(Math::ceil(isize.x * iscale))) + MAX(0, manual_palette->get_constant("hseparation"));
+				const int cell_h = MAX(1, int(Math::ceil(isize.y * iscale))) + MAX(0, manual_palette->get_constant("vseparation"));
+				const int item_col = manual_index % col_count;
+				const int item_row = manual_index / col_count;
+				const Size2 viewport = manual_palette_scroll->get_size();
+				// Target scroll: item centered in the viewport.
+				// MAX(0,...) because ScrollContainer already clamps the upper bound.
+				manual_palette_scroll->set_h_scroll(MAX(0, item_col * cell_w - (int(viewport.x) - cell_w) / 2));
+				manual_palette_scroll->set_v_scroll(MAX(0, item_row * cell_h - (int(viewport.y) - cell_h) / 2));
+			} else {
+				// Without keep_tileset_layout the ItemList manages its own vertical
+				// scroll; bring the item into view (centering is not needed here since
+				// items form a single-column list).
+				manual_palette->ensure_current_is_visible();
+			}
+
+			_sync_manual_palette_brush_preview();
+		}
 	}
 
 	CanvasItemEditor::get_singleton()->update_viewport();

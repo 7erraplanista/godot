@@ -129,6 +129,7 @@ class TileMapEditor : public VBoxContainer {
 	bool *bucket_cache_visited;
 	Rect2i bucket_cache_rect;
 	int bucket_cache_tile;
+	Vector2 bucket_cache_autotile_coord;
 	PoolVector<Vector2> bucket_cache;
 	List<Point2i> bucket_queue;
 

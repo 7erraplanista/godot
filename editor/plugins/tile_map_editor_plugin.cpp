@@ -996,6 +996,20 @@ PoolVector<Vector2> TileMapEditor::_bucket_fill(const Point2i &p_start, bool era
 		}
 	}
 
+	// For ATLAS_TILE, the fill must only expand to cells that share the exact
+	// same subtile coord as the start cell. Otherwise all subtile variants of
+	// the atlas would be treated as identical and get overwritten.
+	bool fill_match_autotile = false;
+	Vector2 prev_autotile_coord;
+	if (!erase && prev_id != TileMap::INVALID_CELL) {
+		Ref<TileSet> tileset = node->get_tileset();
+		if (tileset.is_valid() && tileset->has_tile(prev_id) &&
+				tileset->tile_get_tile_mode(prev_id) == TileSet::ATLAS_TILE) {
+			fill_match_autotile = true;
+			prev_autotile_coord = node->get_cell_autotile_coord(p_start.x, p_start.y);
+		}
+	}
+
 	Rect2i r = node->get_used_rect();
 
 	int area = r.get_area();
@@ -1014,7 +1028,7 @@ PoolVector<Vector2> TileMapEditor::_bucket_fill(const Point2i &p_start, bool era
 		// Tile ID changed or position wasn't visited by the previous fill
 		const int loc = (p_start.x - r.position.x) + (p_start.y - r.position.y) * r.get_size().x;
 		const bool in_range = 0 <= loc && loc < area;
-		if (prev_id != bucket_cache_tile || (in_range && !bucket_cache_visited[loc])) {
+		if (prev_id != bucket_cache_tile || (fill_match_autotile && prev_autotile_coord != bucket_cache_autotile_coord) || (in_range && !bucket_cache_visited[loc])) {
 			invalidate_cache = true;
 		}
 		if (invalidate_cache) {
@@ -1023,6 +1037,7 @@ PoolVector<Vector2> TileMapEditor::_bucket_fill(const Point2i &p_start, bool era
 			}
 			bucket_cache = PoolVector<Vector2>();
 			bucket_cache_tile = prev_id;
+			bucket_cache_autotile_coord = prev_autotile_coord;
 			bucket_cache_rect = r;
 			bucket_queue.clear();
 		}
@@ -1049,7 +1064,8 @@ PoolVector<Vector2> TileMapEditor::_bucket_fill(const Point2i &p_start, bool era
 			continue;
 		}
 
-		if (node->get_cell(n.x, n.y) == prev_id) {
+		if (node->get_cell(n.x, n.y) == prev_id &&
+				(!fill_match_autotile || node->get_cell_autotile_coord(n.x, n.y) == prev_autotile_coord)) {
 			if (preview) {
 				int loc = (n.x - r.position.x) + (n.y - r.position.y) * r.get_size().x;
 				if (bucket_cache_visited[loc]) {
@@ -2368,6 +2384,7 @@ TileMapEditor::TileMapEditor(EditorNode *p_editor) {
 	transpose = false;
 
 	bucket_cache_tile = -1;
+	bucket_cache_autotile_coord = Vector2(-1, -1);
 	bucket_cache_visited = nullptr;
 	manual_palette_tile_id = TileMap::INVALID_CELL;
 	manual_palette_drag_selecting = false;

@@ -70,7 +70,9 @@
 #include "scene/main/window.h"
 #include "scene/theme/theme_db.h"
 #include "servers/display/display_server.h"
+#ifndef NAVIGATION_3D_DISABLED
 #include "servers/navigation_3d/navigation_server_3d.h"
+#endif // NAVIGATION_3D_DISABLED
 
 #ifndef PHYSICS_2D_DISABLED
 #include "servers/physics_2d/physics_server_2d.h"
@@ -1327,9 +1329,15 @@ ProjectManager::ProjectManager() {
 	singleton = this;
 
 	// Turn off some servers we aren't going to be using in the Project Manager.
+#ifndef NAVIGATION_3D_DISABLED
 	NavigationServer3D::get_singleton()->set_active(false);
+#endif // NAVIGATION_3D_DISABLED
+#ifndef PHYSICS_3D_DISABLED
 	PhysicsServer3D::get_singleton()->set_active(false);
+#endif // PHYSICS_3D_DISABLED
+#ifndef PHYSICS_2D_DISABLED
 	PhysicsServer2D::get_singleton()->set_active(false);
+#endif // PHYSICS_2D_DISABLED
 
 	// Initialize settings.
 	{

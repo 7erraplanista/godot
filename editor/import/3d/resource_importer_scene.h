@@ -316,6 +316,7 @@ template <typename M>
 Vector<Ref<Shape3D>> ResourceImporterScene::get_collision_shapes(const Ref<ImporterMesh> &p_mesh, const M &p_options, float p_applied_root_scale) {
 	ERR_FAIL_COND_V(p_mesh.is_null(), Vector<Ref<Shape3D>>());
 
+#ifndef PHYSICS_3D_DISABLED
 	ShapeType generate_shape_type = SHAPE_TYPE_AUTOMATIC;
 	if (p_options.has(SNAME("physics/shape_type"))) {
 		generate_shape_type = (ShapeType)p_options[SNAME("physics/shape_type")].operator int();
@@ -477,6 +478,9 @@ Vector<Ref<Shape3D>> ResourceImporterScene::get_collision_shapes(const Ref<Impor
 		return shapes;
 	}
 	return Vector<Ref<Shape3D>>();
+#else
+	return Vector<Ref<Shape3D>>();
+#endif // PHYSICS_3D_DISABLED
 }
 
 template <typename M>

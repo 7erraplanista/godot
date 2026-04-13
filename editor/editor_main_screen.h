@@ -71,6 +71,7 @@ public:
 	void load_layout_from_config(Ref<ConfigFile> p_config_file, const String &p_section);
 
 	void set_button_enabled(int p_index, bool p_enabled);
+	void set_button_enabled_by_plugin_name(const String &p_plugin_name, bool p_enabled);
 	bool is_button_enabled(int p_index) const;
 
 	void select_next();

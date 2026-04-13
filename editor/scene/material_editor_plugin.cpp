@@ -49,10 +49,11 @@
 #include "scene/resources/sky.h"
 #include "servers/rendering/rendering_server.h"
 
-// 3D.
+#ifndef _3D_DISABLED
 #include "scene/3d/camera_3d.h"
 #include "scene/3d/light_3d.h"
 #include "scene/3d/mesh_instance_3d.h"
+#endif
 
 Ref<ShaderMaterial> MaterialEditor::make_shader_material(const Ref<Material> &p_from, bool p_copy_params) {
 	ERR_FAIL_COND_V(p_from.is_null(), Ref<ShaderMaterial>());
@@ -85,7 +86,7 @@ Ref<ShaderMaterial> MaterialEditor::make_shader_material(const Ref<Material> &p_
 
 void MaterialEditor::gui_input(const Ref<InputEvent> &p_event) {
 	ERR_FAIL_COND(p_event.is_null());
-
+#ifndef _3D_DISABLED
 	Ref<InputEventMouseMotion> mm = p_event;
 	if (mm.is_valid() && (mm->get_button_mask().has_flag(MouseButtonMask::LEFT))) {
 		rot.x -= mm->get_relative().y * 0.01;
@@ -100,6 +101,7 @@ void MaterialEditor::gui_input(const Ref<InputEvent> &p_event) {
 		_update_rotation();
 		_store_rotation_metadata();
 	}
+#endif
 }
 
 void MaterialEditor::_update_theme_item_cache() {
@@ -118,12 +120,14 @@ void MaterialEditor::_update_theme_item_cache() {
 void MaterialEditor::_notification(int p_what) {
 	switch (p_what) {
 		case NOTIFICATION_THEME_CHANGED: {
+#ifndef _3D_DISABLED
 			light_1_switch->set_button_icon(theme_cache.light_1_icon);
 			light_2_switch->set_button_icon(theme_cache.light_2_icon);
 
 			sphere_switch->set_button_icon(theme_cache.sphere_icon);
 			box_switch->set_button_icon(theme_cache.box_icon);
 			quad_switch->set_button_icon(theme_cache.quad_icon);
+#endif
 
 			error_label->add_theme_color_override(SceneStringName(font_color), get_theme_color(SNAME("error_color"), EditorStringName(Editor)));
 		} break;
@@ -138,27 +142,35 @@ void MaterialEditor::_notification(int p_what) {
 }
 
 void MaterialEditor::_set_rotation(real_t p_x_degrees, real_t p_y_degrees) {
+#ifndef _3D_DISABLED
 	rot.x = Math::deg_to_rad(p_x_degrees);
 	rot.y = Math::deg_to_rad(p_y_degrees);
 	_update_rotation();
+#endif
 }
 
 // Store the rotation so it can persist when switching between materials.
 void MaterialEditor::_store_rotation_metadata() {
+#ifndef _3D_DISABLED
 	Vector2 rotation_degrees = Vector2(Math::rad_to_deg(rot.x), Math::rad_to_deg(rot.y));
 	EditorSettings::get_singleton()->set_project_metadata("inspector_options", "material_preview_rotation", rotation_degrees);
+#endif
 }
 
 void MaterialEditor::_update_rotation() {
+#ifndef _3D_DISABLED
 	Transform3D t;
 	t.basis.rotate(Vector3(0, 1, 0), -rot.y);
 	t.basis.rotate(Vector3(1, 0, 0), -rot.x);
 	rotation->set_transform(t);
+#endif
 }
 
 void MaterialEditor::edit(Ref<Material> p_material, const Ref<Environment> &p_env) {
 	material = p_material;
+#ifndef _3D_DISABLED
 	camera->set_environment(p_env);
+#endif
 
 	is_unsupported_shader_mode = false;
 	if (material.is_valid()) {
@@ -166,12 +178,17 @@ void MaterialEditor::edit(Ref<Material> p_material, const Ref<Environment> &p_en
 		switch (mode) {
 			case Shader::MODE_CANVAS_ITEM:
 				layout_error->hide();
+#ifndef _3D_DISABLED
 				layout_3d->hide();
+#endif
 				layout_2d->show();
 				rect_instance->set_material(material);
+#ifndef _3D_DISABLED
 				vc->hide();
+#endif
 				break;
 			case Shader::MODE_SPATIAL:
+#ifndef _3D_DISABLED
 				layout_error->hide();
 				layout_2d->hide();
 				layout_3d->show();
@@ -179,13 +196,20 @@ void MaterialEditor::edit(Ref<Material> p_material, const Ref<Environment> &p_en
 				box_instance->set_material_override(material);
 				quad_instance->set_material_override(material);
 				vc->show();
+#else
+				layout_error->show();
+				layout_2d->hide();
+				is_unsupported_shader_mode = true;
+#endif
 				break;
 			default:
 				layout_error->show();
 				layout_2d->hide();
-				layout_3d->hide();
 				is_unsupported_shader_mode = true;
+#ifndef _3D_DISABLED
+				layout_3d->hide();
 				vc->hide();
+#endif
 				break;
 		}
 	} else {
@@ -194,14 +218,19 @@ void MaterialEditor::edit(Ref<Material> p_material, const Ref<Environment> &p_en
 }
 
 void MaterialEditor::_on_light_1_switch_pressed() {
+#ifndef _3D_DISABLED
 	light1->set_visible(light_1_switch->is_pressed());
+#endif
 }
 
 void MaterialEditor::_on_light_2_switch_pressed() {
+#ifndef _3D_DISABLED
 	light2->set_visible(light_2_switch->is_pressed());
+#endif
 }
 
 void MaterialEditor::_on_sphere_switch_pressed() {
+#ifndef _3D_DISABLED
 	sphere_instance->show();
 	box_instance->hide();
 	quad_instance->hide();
@@ -210,9 +239,11 @@ void MaterialEditor::_on_sphere_switch_pressed() {
 	_set_rotation(-15.0, 30.0);
 	_store_rotation_metadata();
 	EditorSettings::get_singleton()->set_project_metadata("inspector_options", "material_preview_mesh", "sphere");
+#endif
 }
 
 void MaterialEditor::_on_box_switch_pressed() {
+#ifndef _3D_DISABLED
 	sphere_instance->hide();
 	box_instance->show();
 	quad_instance->hide();
@@ -221,9 +252,11 @@ void MaterialEditor::_on_box_switch_pressed() {
 	_set_rotation(-15.0, 30.0);
 	_store_rotation_metadata();
 	EditorSettings::get_singleton()->set_project_metadata("inspector_options", "material_preview_mesh", "box");
+#endif
 }
 
 void MaterialEditor::_on_quad_switch_pressed() {
+#ifndef _3D_DISABLED
 	sphere_instance->hide();
 	box_instance->hide();
 	quad_instance->show();
@@ -232,6 +265,7 @@ void MaterialEditor::_on_quad_switch_pressed() {
 	_set_rotation(0.0, 0.0);
 	_store_rotation_metadata();
 	EditorSettings::get_singleton()->set_project_metadata("inspector_options", "material_preview_mesh", "quad");
+#endif
 }
 
 MaterialEditor::MaterialEditor() {
@@ -275,6 +309,7 @@ MaterialEditor::MaterialEditor() {
 	layout_error->hide();
 	add_child(layout_error);
 
+#ifndef _3D_DISABLED
 	// Spatial
 
 	vc = memnew(SubViewportContainer);
@@ -402,6 +437,7 @@ MaterialEditor::MaterialEditor() {
 	_set_rotation(stored_rot.x, stored_rot.y);
 
 	EditorNode::get_singleton()->register_hdr_viewport(viewport);
+#endif
 	EditorNode::get_singleton()->register_hdr_viewport(viewport_2d);
 }
 
@@ -413,7 +449,11 @@ bool EditorInspectorPluginMaterial::can_handle(Object *p_object) {
 		return false;
 	}
 	Shader::Mode mode = material->get_shader_mode();
-	return mode == Shader::MODE_SPATIAL || mode == Shader::MODE_CANVAS_ITEM;
+	return mode == Shader::MODE_CANVAS_ITEM
+#ifndef _3D_DISABLED
+			|| mode == Shader::MODE_SPATIAL
+#endif
+			;
 }
 
 void EditorInspectorPluginMaterial::parse_begin(Object *p_object) {
@@ -434,6 +474,7 @@ void EditorInspectorPluginMaterial::_undo_redo_inspector_callback(Object *p_undo
 
 	// For BaseMaterial3D, if a roughness or metallic textures is being assigned to an empty slot,
 	// set the respective metallic or roughness factor to 1.0 as a convenience feature
+#ifndef _3D_DISABLED
 	BaseMaterial3D *base_material = Object::cast_to<StandardMaterial3D>(p_edited);
 	if (base_material) {
 		Texture2D *texture = Object::cast_to<Texture2D>(p_new_value);
@@ -461,6 +502,7 @@ void EditorInspectorPluginMaterial::_undo_redo_inspector_callback(Object *p_undo
 			}
 		}
 	}
+#endif
 }
 
 EditorInspectorPluginMaterial::EditorInspectorPluginMaterial() {

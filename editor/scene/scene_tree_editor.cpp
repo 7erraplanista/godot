@@ -50,6 +50,9 @@
 #include "editor/settings/editor_settings.h"
 #include "editor/themes/editor_scale.h"
 #include "scene/2d/node_2d.h"
+#ifndef _3D_DISABLED
+#include "scene/3d/node_3d.h"
+#endif
 #include "scene/gui/check_box.h"
 #include "scene/gui/check_button.h"
 #include "scene/gui/flow_container.h"
@@ -76,12 +79,14 @@ PackedStringArray SceneTreeEditor::_get_node_configuration_warnings(Node *p_node
 				warnings.append(TTR("The root node of a scene is recommended to not be transformed, since instances of the scene will usually override this. Reset the transform and reload the scene to remove this warning."));
 			}
 		}
+#ifndef _3D_DISABLED
 		Node3D *node_3d = Object::cast_to<Node3D>(p_node);
 		if (node_3d) {
 			if (!node_3d->get_position().is_zero_approx()) {
 				warnings.append(TTR("The root node of a scene is recommended to not be transformed, since instances of the scene will usually override this. Reset the transform and reload the scene to remove this warning."));
 			}
 		}
+#endif
 	}
 	return warnings;
 }
@@ -156,7 +161,11 @@ void SceneTreeEditor::_cell_button_pressed(Object *p_item, int p_column, int p_i
 	} else if (p_id == BUTTON_GROUP) {
 		undo_redo->create_action(TTR("Ungroup Children"));
 
-		if (n->is_class("CanvasItem") || n->is_class("Node3D")) {
+		if (n->is_class("CanvasItem")
+#ifndef _3D_DISABLED
+				|| n->is_class("Node3D")
+#endif
+		) {
 			undo_redo->add_do_method(n, "remove_meta", "_edit_group_");
 			undo_redo->add_undo_method(n, "set_meta", "_edit_group_", true);
 			undo_redo->add_do_method(this, "emit_signal", "node_changed");

@@ -34,7 +34,11 @@
 #include "editor/editor_data.h"
 #include "editor/inspector/editor_properties.h"
 #include "editor/inspector/property_selector.h"
+#ifndef _3D_DISABLED
 #include "scene/3d/node_3d.h"
+#else
+class Node3D;
+#endif
 #include "scene/gui/control.h"
 #include "scene/gui/menu_button.h"
 #include "scene/gui/scroll_bar.h"

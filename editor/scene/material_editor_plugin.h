@@ -33,14 +33,19 @@
 #include "editor/inspector/editor_inspector.h"
 #include "editor/plugins/editor_plugin.h"
 #include "editor/plugins/editor_resource_conversion_plugin.h"
+#ifndef _3D_DISABLED
 #include "scene/resources/3d/primitive_meshes.h"
+#endif
 #include "scene/resources/material.h"
 
+#ifndef _3D_DISABLED
 class Camera3D;
-class ColorRect;
 class DirectionalLight3D;
-class HBoxContainer;
 class MeshInstance3D;
+class Node3D;
+#endif
+class ColorRect;
+class HBoxContainer;
 class SubViewport;
 class SubViewportContainer;
 class Button;
@@ -51,8 +56,10 @@ class MaterialEditor : public Control {
 
 	// Both 2D and 3D materials.
 	Ref<Material> material;
+#ifndef _3D_DISABLED
 	SubViewportContainer *vc = nullptr;
 	SubViewport *viewport = nullptr;
+#endif
 	VBoxContainer *layout_error = nullptr;
 	Label *error_label = nullptr;
 	bool is_unsupported_shader_mode = false;
@@ -73,6 +80,7 @@ class MaterialEditor : public Control {
 	ColorRect *rect_instance = nullptr;
 
 	// 3D spatial materials.
+#ifndef _3D_DISABLED
 	Vector2 rot;
 	Node3D *rotation = nullptr;
 	MeshInstance3D *sphere_instance = nullptr;
@@ -92,6 +100,7 @@ class MaterialEditor : public Control {
 	Button *quad_switch = nullptr;
 	Button *light_1_switch = nullptr;
 	Button *light_2_switch = nullptr;
+#endif
 
 	void _on_light_1_switch_pressed();
 	void _on_light_2_switch_pressed();

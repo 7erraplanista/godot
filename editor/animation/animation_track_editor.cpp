@@ -51,7 +51,9 @@
 #include "editor/script/script_editor_plugin.h"
 #include "editor/settings/editor_settings.h"
 #include "editor/themes/editor_scale.h"
+#ifndef _3D_DISABLED
 #include "scene/3d/mesh_instance_3d.h"
+#endif
 #include "scene/animation/animation_player.h"
 #include "scene/animation/tween.h"
 #include "scene/gui/check_box.h"
@@ -4553,6 +4555,7 @@ void AnimationTrackEditor::_insert_track(bool p_reset_wanted, bool p_create_bezi
 }
 
 void AnimationTrackEditor::insert_transform_key(Node3D *p_node, const String &p_sub, const Animation::TrackType p_type, const Variant &p_value) {
+#ifndef _3D_DISABLED
 	if (read_only) {
 		popup_read_only_dialog();
 		return;
@@ -4598,9 +4601,16 @@ void AnimationTrackEditor::insert_transform_key(Node3D *p_node, const String &p_
 	id.value = p_value;
 	id.type = p_type;
 	_query_insert(id);
+#else
+	(void)p_node;
+	(void)p_sub;
+	(void)p_type;
+	(void)p_value;
+#endif
 }
 
 bool AnimationTrackEditor::has_track(Node3D *p_node, const String &p_sub, const Animation::TrackType p_type) {
+#ifndef _3D_DISABLED
 	ERR_FAIL_NULL_V(root, false);
 	if (!keying) {
 		return false;
@@ -4620,6 +4630,12 @@ bool AnimationTrackEditor::has_track(Node3D *p_node, const String &p_sub, const 
 		return true;
 	}
 	return false;
+#else
+	(void)p_node;
+	(void)p_sub;
+	(void)p_type;
+	return false;
+#endif
 }
 
 void AnimationTrackEditor::_insert_animation_key(NodePath p_path, const Variant &p_value) {
@@ -5748,6 +5764,7 @@ void AnimationTrackEditor::_new_track_node_selected(NodePath p_path) {
 	ERR_FAIL_NULL(node);
 	NodePath path_to = root->get_path_to(node, true);
 
+#ifndef _3D_DISABLED
 	if (adding_track_type == Animation::TYPE_BLEND_SHAPE && !node->is_class("MeshInstance3D")) {
 		EditorNode::get_singleton()->show_warning(TTR("Blend Shape tracks only apply to MeshInstance3D nodes."));
 		return;
@@ -5757,6 +5774,7 @@ void AnimationTrackEditor::_new_track_node_selected(NodePath p_path) {
 		EditorNode::get_singleton()->show_warning(TTR("Position/Rotation/Scale 3D tracks only apply to 3D-based nodes."));
 		return;
 	}
+#endif
 
 	switch (adding_track_type) {
 		case Animation::TYPE_VALUE: {
@@ -5764,6 +5782,7 @@ void AnimationTrackEditor::_new_track_node_selected(NodePath p_path) {
 			prop_selector->set_type_filter(Vector<Variant::Type>());
 			prop_selector->select_property_from_instance(node);
 		} break;
+#ifndef _3D_DISABLED
 		case Animation::TYPE_BLEND_SHAPE: {
 			adding_track_path = path_to;
 			Vector<Variant::Type> filter;
@@ -5774,6 +5793,7 @@ void AnimationTrackEditor::_new_track_node_selected(NodePath p_path) {
 		case Animation::TYPE_POSITION_3D:
 		case Animation::TYPE_ROTATION_3D:
 		case Animation::TYPE_SCALE_3D:
+#endif
 		case Animation::TYPE_METHOD: {
 			EditorUndoRedoManager *undo_redo = EditorUndoRedoManager::get_singleton();
 			undo_redo->create_action(TTR("Add Track"));
@@ -5848,6 +5868,7 @@ void AnimationTrackEditor::_add_track(int p_type) {
 	String title_text = TTRC("Pick a node to animate:");
 	Vector<StringName> valid_types;
 	switch (adding_track_type) {
+#ifndef _3D_DISABLED
 		case Animation::TYPE_BLEND_SHAPE: {
 			// Blend Shape is a property of MeshInstance3D.
 			valid_types.push_back(SNAME("MeshInstance3D"));
@@ -5858,6 +5879,7 @@ void AnimationTrackEditor::_add_track(int p_type) {
 			// 3D Properties come from nodes inheriting Node3D.
 			valid_types.push_back(SNAME("Node3D"));
 		} break;
+#endif
 		case Animation::TYPE_METHOD: {
 			title_text = TTRC("Pick a node to select method:");
 		} break;
@@ -6054,6 +6076,7 @@ void AnimationTrackEditor::_insert_key_from_track(float p_ofs, int p_track) {
 	// id.value is filled in each case handled below.
 
 	switch (animation->track_get_type(p_track)) {
+#ifndef _3D_DISABLED
 		case Animation::TYPE_POSITION_3D: {
 			Node3D *base = Object::cast_to<Node3D>(node);
 
@@ -6094,6 +6117,7 @@ void AnimationTrackEditor::_insert_key_from_track(float p_ofs, int p_track) {
 
 			id.value = base->get_blend_shape_value(base->find_blend_shape_by_name(id.path.get_subname(0)));
 		} break;
+#endif
 		case Animation::TYPE_VALUE: {
 			NodePath bp;
 			_find_hint_for_track(p_track, bp, &id.value);

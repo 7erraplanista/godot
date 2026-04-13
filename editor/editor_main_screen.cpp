@@ -43,11 +43,13 @@ void EditorMainScreen::_notification(int p_what) {
 	switch (p_what) {
 		case NOTIFICATION_READY: {
 			set_accessibility_region(true);
+#ifndef _3D_DISABLED
 			if (EDITOR_3D < buttons.size() && buttons[EDITOR_3D]->is_visible()) {
 				// If the 3D editor is enabled, use this as the default.
 				select(EDITOR_3D);
 				return;
 			}
+#endif // _3D_DISABLED
 
 			// Switch to the first main screen plugin that is enabled. Usually this is
 			// 2D, but may be subsequent ones if 2D is disabled in the feature profile.
@@ -99,6 +101,18 @@ void EditorMainScreen::save_layout_to_config(Ref<ConfigFile> p_config_file, cons
 void EditorMainScreen::load_layout_from_config(Ref<ConfigFile> p_config_file, const String &p_section) {
 	int selected_main_editor_idx = p_config_file->get_value(p_section, "selected_main_editor_idx", -1);
 	if (selected_main_editor_idx >= 0 && selected_main_editor_idx < buttons.size()) {
+		if (!buttons[selected_main_editor_idx]->is_visible()) {
+			// Saved tab (e.g. 3D) may be hidden by build or feature profile; pick first visible main editor.
+			selected_main_editor_idx = -1;
+			for (int i = 0; i < buttons.size(); i++) {
+				if (buttons[i]->is_visible()) {
+					selected_main_editor_idx = i;
+					break;
+				}
+			}
+		}
+	}
+	if (selected_main_editor_idx >= 0 && selected_main_editor_idx < buttons.size()) {
 		callable_mp(this, &EditorMainScreen::select).call_deferred(selected_main_editor_idx);
 	}
 }
@@ -114,6 +128,16 @@ void EditorMainScreen::set_button_enabled(int p_index, bool p_enabled) {
 bool EditorMainScreen::is_button_enabled(int p_index) const {
 	ERR_FAIL_INDEX_V(p_index, buttons.size(), false);
 	return buttons[p_index]->is_visible();
+}
+
+void EditorMainScreen::set_button_enabled_by_plugin_name(const String &p_plugin_name, bool p_enabled) {
+	if (!main_editor_plugins.has(p_plugin_name)) {
+		return;
+	}
+	EditorPlugin *ep = main_editor_plugins[p_plugin_name];
+	int idx = get_plugin_index(ep);
+	ERR_FAIL_INDEX(idx, buttons.size());
+	set_button_enabled(idx, p_enabled);
 }
 
 int EditorMainScreen::_get_current_main_editor() const {
@@ -186,6 +210,11 @@ void EditorMainScreen::select(int p_index) {
 	ERR_FAIL_NULL(new_editor);
 
 	if (selected_plugin == new_editor) {
+		// Already on this screen; still refresh. Otherwise, after project load the 2D viewport can stay
+		// stale: NOTIFICATION_READY selects 2D before scenes restore, then layout calls select() again
+		// with the same index and we would return here without re-applying visibility (no 3D default
+		// means we never take the "switch from 3D to 2D" path that runs a full make_visible cycle).
+		selected_plugin->make_visible(true);
 		return;
 	}
 
@@ -295,7 +324,7 @@ void EditorMainScreen::remove_main_plugin(EditorPlugin *p_editor) {
 	for (int i = buttons.size() - 1; i >= 0; i--) {
 		if (p_editor->get_plugin_name() == buttons[i]->get_text()) {
 			if (buttons[i]->is_pressed()) {
-				select(EDITOR_SCRIPT);
+				select_by_name("Script");
 			}
 
 			memdelete(buttons[i]);

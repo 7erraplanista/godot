@@ -526,7 +526,7 @@ void GameView::_play_pressed() {
 		EditorNode::get_singleton()->set_unfocused_low_processor_usage_mode_enabled(false);
 		_update_embed_window_size();
 		if (!window_wrapper->get_window_enabled()) {
-			EditorNode::get_singleton()->get_editor_main_screen()->select(EditorMainScreen::EDITOR_GAME);
+			EditorNode::get_singleton()->get_editor_main_screen()->select_by_name("Game");
 			// Reset the normal size of the bottom panel when fully expanded.
 			EditorNode::get_singleton()->get_bottom_panel()->set_expanded(false);
 
@@ -555,7 +555,8 @@ void GameView::_stop_pressed() {
 		window_wrapper->set_window_enabled(false);
 	}
 
-	if (screen_index_before_start >= 0 && EditorNode::get_singleton()->get_editor_main_screen()->get_selected_index() == EditorMainScreen::EDITOR_GAME) {
+	EditorPlugin *selected_main = EditorNode::get_singleton()->get_editor_main_screen()->get_selected_plugin();
+	if (screen_index_before_start >= 0 && selected_main && selected_main->get_plugin_name() == "Game") {
 		// We go back to the screen where the user was before starting the game.
 		EditorNode::get_singleton()->get_editor_main_screen()->select(screen_index_before_start);
 	}
@@ -584,7 +585,7 @@ void GameView::_embedded_process_updated() {
 
 void GameView::_embedded_process_focused() {
 	if (embed_on_play && !window_wrapper->get_window_enabled()) {
-		EditorNode::get_singleton()->get_editor_main_screen()->select(EditorMainScreen::EDITOR_GAME);
+		EditorNode::get_singleton()->get_editor_main_screen()->select_by_name("Game");
 	}
 }
 
@@ -976,7 +977,9 @@ void GameView::_notification(int p_what) {
 
 			node_type_button[RuntimeNodeSelect::NODE_TYPE_NONE]->set_button_icon(get_editor_theme_icon(SNAME("InputEventJoypadMotion")));
 			node_type_button[RuntimeNodeSelect::NODE_TYPE_2D]->set_button_icon(get_editor_theme_icon(SNAME("2DNodes")));
+#ifndef _3D_DISABLED
 			node_type_button[RuntimeNodeSelect::NODE_TYPE_3D]->set_button_icon(get_editor_theme_icon(SNAME("Node3D")));
+#endif
 
 			select_mode_button[RuntimeNodeSelect::SELECT_MODE_SINGLE]->set_button_icon(get_editor_theme_icon(SNAME("ToolSelect")));
 			select_mode_button[RuntimeNodeSelect::SELECT_MODE_LIST]->set_button_icon(get_editor_theme_icon(SNAME("ListSelect")));
@@ -1264,6 +1267,9 @@ void GameView::_feature_profile_changed() {
 	is_feature_enabled = is_profile_null || !profile->is_feature_disabled(EditorFeatureProfile::FEATURE_GAME);
 
 	bool is_3d_enabled = is_profile_null || !profile->is_feature_disabled(EditorFeatureProfile::FEATURE_3D);
+#ifdef _3D_DISABLED
+	is_3d_enabled = false;
+#endif
 	if (!is_3d_enabled && node_type_button[RuntimeNodeSelect::NODE_TYPE_3D]->is_pressed()) {
 		_node_type_pressed(RuntimeNodeSelect::NODE_TYPE_NONE);
 	}
@@ -1353,6 +1359,9 @@ GameView::GameView(Ref<GameViewDebugger> p_debugger, EmbeddedProcessBase *p_embe
 	node_type_button[RuntimeNodeSelect::NODE_TYPE_3D]->set_theme_type_variation("FlatButtonNoIconTint");
 	node_type_button[RuntimeNodeSelect::NODE_TYPE_3D]->connect(SceneStringName(pressed), callable_mp(this, &GameView::_node_type_pressed).bind(RuntimeNodeSelect::NODE_TYPE_3D));
 	node_type_button[RuntimeNodeSelect::NODE_TYPE_3D]->set_tooltip_text(TTRC("Disable game input and allow to select Node3Ds and manipulate the 3D camera."));
+#ifdef _3D_DISABLED
+	node_type_button[RuntimeNodeSelect::NODE_TYPE_3D]->hide();
+#endif
 
 	input_hb->add_child(memnew(VSeparator));
 
@@ -1365,7 +1374,12 @@ GameView::GameView(Ref<GameViewDebugger> p_debugger, EmbeddedProcessBase *p_embe
 	select_mode_button[RuntimeNodeSelect::SELECT_MODE_SINGLE]->set_pressed(true);
 	select_mode_button[RuntimeNodeSelect::SELECT_MODE_SINGLE]->set_theme_type_variation(SceneStringName(FlatButton));
 	select_mode_button[RuntimeNodeSelect::SELECT_MODE_SINGLE]->connect(SceneStringName(pressed), callable_mp(this, &GameView::_select_mode_pressed).bind(RuntimeNodeSelect::SELECT_MODE_SINGLE));
+#ifndef _3D_DISABLED
 	select_mode_button[RuntimeNodeSelect::SELECT_MODE_SINGLE]->set_shortcut(ED_GET_SHORTCUT("spatial_editor/tool_select"));
+#else
+	// Spatial editor shortcuts are not registered when 3D is disabled; mirror 2D canvas select (Q).
+	select_mode_button[RuntimeNodeSelect::SELECT_MODE_SINGLE]->set_shortcut(ED_SHORTCUT("canvas_item_editor/select_mode", TTRC("Select Mode"), Key::Q, true));
+#endif
 	select_mode_button[RuntimeNodeSelect::SELECT_MODE_SINGLE]->set_shortcut_context(this);
 
 	select_mode_button[RuntimeNodeSelect::SELECT_MODE_LIST] = memnew(Button);
@@ -1603,7 +1617,7 @@ void GameViewPluginBase::_save_last_editor(const String &p_editor) {
 void GameViewPluginBase::_focus_another_editor() {
 	if (_is_window_wrapper_enabled()) {
 		if (last_editor.is_empty()) {
-			EditorNode::get_singleton()->get_editor_main_screen()->select(EditorMainScreen::EDITOR_2D);
+			EditorNode::get_singleton()->get_editor_main_screen()->select_by_name("2D");
 		} else {
 			EditorInterface::get_singleton()->set_main_screen_editor(last_editor);
 		}

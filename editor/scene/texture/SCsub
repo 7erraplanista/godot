@@ -3,4 +3,17 @@ from misc.utility.scons_hints import *
 
 Import("env")
 
-env.add_source_files(env.editor_sources, "*.cpp")
+if env["disable_3d"]:
+    env.add_source_files(
+        env.editor_sources,
+        [
+            "bit_map_editor_plugin.cpp",
+            "color_channel_selector.cpp",
+            "gradient_texture_2d_editor_plugin.cpp",
+            "texture_editor_plugin.cpp",
+            "texture_layered_editor_plugin.cpp",
+            "texture_region_editor_plugin.cpp",
+        ],
+    )
+else:
+    env.add_source_files(env.editor_sources, "*.cpp")
